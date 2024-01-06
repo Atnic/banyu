@@ -14,7 +14,7 @@ function MyButton() {
   return (
     <div>
       <Button
-        className="bg-red-500 p-4"
+        className="bg-red-500"
         label={'Button'}
         size={'small'}
         primary
