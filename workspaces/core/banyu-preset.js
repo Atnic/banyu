@@ -18,15 +18,72 @@ module.exports = {
                         lineHeight: '1rem',
                     },
                 ],
+                'jds-text-sm': [
+                    '0.857rem',
+                    {
+                        lineHeight: '1.143rem',
+                    },
+                ],
+                'jds-text-base': [
+                    '1rem',
+                    {
+                        lineHeight: '1.429rem',
+                    },
+                ],
+                'jds-text-lg': [
+                    '1rem',
+                    {
+                        lineHeight: '1.714rem',
+                    },
+                ],
+                'jds-text-xl': [
+                    '1.286rem',
+                    {
+                        lineHeight: '2rem',
+                    },
+                ],
+                'jds-text-2xl': [
+                    '1.429rem',
+                    {
+                        lineHeight: '2rem',
+                    },
+                ],
+                'jds-text-3xl': [
+                    '1.714rem',
+                    {
+                        lineHeight: '2.286rem',
+                    },
+                ],
+                'jds-text-4xl': [
+                    '2.143rem',
+                    {
+                        lineHeight: '2.571rem',
+                    },
+                ],
+                'jds-text-5xl': [
+                    '2.571rem',
+                    {
+                        lineHeight: '2.857rem',
+                    },
+                ],
+                'jds-text-6xl': [
+                    '3.429rem',
+                    {
+                        lineHeight: '4rem',
+                    },
+                ],
             },
             borderRadius: {
-                'moon-i-xs': 'var(--radius-i-xs)',
-                'moon-i-sm': 'var(--radius-i-sm)',
-                'moon-i-md': 'var(--radius-i-md)',
-                'moon-s-xs': 'var(--radius-s-xs)',
-                'moon-s-sm': 'var(--radius-s-sm)',
-                'moon-s-md': 'var(--radius-s-md)',
-                'moon-s-lg': 'var(--radius-s-lg)',
+                'rounded-sm': 'var(--jla-rounded-sm)',
+                'rounded': 'var(--jla-rounded)',
+                'rounded-md': 'var(--jla-rounded-md)',
+                'rounded-lg': 'var(--jla-rounded-lg)',
+                'rounded-xl': 'var(--jla-rounded-xl)',
+                'rounded-2xl': 'var(--jla-rounded-2xl)',
+                'rounded-3xl': 'var(--jla-rounded-3xl)',
+                'rounded-4xl': 'var(--jla-rounded-4xl)',
+                'rounded-5xl': 'var(--jla-rounded-5xl)',
+                'rounded-full': 'var(--jla-rounded-full)',
             },
             zIndex: {
                 1: '1',

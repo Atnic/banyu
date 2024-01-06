@@ -170,4 +170,36 @@
     --code--code-sm: 12px;
     --misc--keyboard: 10px;
     --misc--block-quote: 12px;
+
+    /* border-radius */
+    --jla-rounded-sm: 0.143rem;
+    --jla-rounded: 0.286rem;
+    --jla-rounded-md: 0.429rem;
+    --jla-rounded-lg: 0.571rem;
+    --jla-rounded-xl: 0.857rem;
+    --jla-rounded-2xl: 1.143rem;
+    --jla-rounded-3xl: 1.714rem;
+    --jla-rounded-4xl: 2.286rem;
+    --jla-rounded-5xl: 4.571rem;
+    --jla-rounded-full: 714.214rem;
+
+    /* border-width */
+    --border-width: 0.0625rem; /* 1px */
+    --border-i-width: 0.125rem; /* 2px */
+
+    /* opacity */
+    --opacity-moon: 0.6;
+
+    /* fonts */
+    --inter: 'Inter';
+    --ui-serif: 'ui-serif';
+    --ibm-mono-plex:'IBM Mono Plex';
+
+    /* box-shadow */
+    --shadow-xs: 0 4px 12px -6px rgb(0 0 0 / 0.06);
+    --shadow-sm: 0 6px 6px -6px rgb(0 0 0 / 0.16), 0 0 1px rgb(0 0 0 / 0.4);
+    --shadow-md: 0 12px 12px -6px rgb(0 0 0 / 0.16), 0 0 1px rgb(0 0 0 / 0.4);
+    --shadow-lg: 0 8px 24px -6px rgb(0 0 0 / 0.16), 0 0 1px rgb(0 0 0 / 0.4);
+    --shadow-xl: 0 32px 32px -8px rgb(0 0 0 / 0.08),
+    0 0 32px -8px rgb(0 0 0 / 0.12), 0 0 1px rgb(0 0 0 / 0.2);
 }
