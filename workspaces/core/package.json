@@ -6,11 +6,8 @@
   "module": "lib/es/index.js",
   "typings": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "build:code": "pnpm run build:js:es && pnpm run build:js:commonjs",
     "build": "pnpm run build:index && pnpm run build:code",
+    "build:code": "pnpm run build:js:es && pnpm run build:js:commonjs",
     "build:index": "barrelsby --config ../../.config/barrelsby/barrelsby.json --directory src",
     "build:js:commonjs": "tsc --project tsconfig.cjs.json",
     "build:js:es": "tsc --project tsconfig.esm.json",
@@ -32,7 +29,6 @@
     "@storybook/theming": "^7.6.7",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "storybook": "^7.6.7"
+    "react-dom": "^18.2.0"
   }
 }
