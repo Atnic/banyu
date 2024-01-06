@@ -14,11 +14,11 @@ function MyButton() {
   return (
     <div>
       <Button
-        backgroundColor={'#000'}
+        className="bg-red-500 p-4"
         label={'Button'}
         size={'small'}
         primary
-      >a</Button>
+      >button</Button>
       <button onClick={handleClick} className={styles.counter}>
         Clicked {count} times
       </button>
