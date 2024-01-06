@@ -1,12 +1,20 @@
 {
-  "name": "banyu-core",
+  "name": "@banyu/core",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "module": "lib/es/index.js",
+  "typings": "lib/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "build:code": "pnpm run build:js:es && pnpm run build:js:commonjs",
+    "build": "pnpm run build:index && pnpm run build:code",
+    "build:index": "barrelsby --config ../../.config/barrelsby/barrelsby.json --directory src",
+    "build:js:commonjs": "tsc --project tsconfig.cjs.json",
+    "build:js:es": "tsc --project tsconfig.esm.json",
+    "chokidar": "chokidar \"**/*.tsx\" \"**/*.ts\" -i \"lib/**/*.d.ts\" -c \"pnpm run build:code\" "
   },
   "keywords": [],
   "author": "",

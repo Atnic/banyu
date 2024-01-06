@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import styles from './counters.module.css'
+import {Button} from '@banyu/core';
 
 function MyButton() {
   const [count, setCount] = useState(0)
@@ -12,6 +13,12 @@ function MyButton() {
 
   return (
     <div>
+      <Button
+        backgroundColor={'#000'}
+        label={'Button'}
+        size={'small'}
+        primary
+      >a</Button>
       <button onClick={handleClick} className={styles.counter}>
         Clicked {count} times
       </button>
