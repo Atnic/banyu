@@ -1,1 +1,0 @@
-import './banyu.css';

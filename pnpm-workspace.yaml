@@ -1,7 +1,0 @@
-packages:
-  # new docs using latest NextJs
-  - 'docs'
-  # all packages in subdirs of workspaces/
-  - 'workspaces/**'
-  # exclude packages that are inside test directories
-  - '!**/test/**'

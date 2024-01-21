@@ -1,1 +1,0 @@
-# jala-design-radix
