@@ -1,0 +1,51 @@
+{
+  "name": "banyu",
+  "version": "1.0.0",
+  "description": "React Components library by Banyu",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "banyu",
+    "react",
+    "design system"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Muhammad Amien",
+    "email": "muhammadamien23@gmail.com"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.4",
+    "@babel/core": "^7.23.7",
+    "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
+    "@babel/plugin-transform-runtime": "^7.23.7",
+    "@babel/preset-env": "^7.23.8",
+    "@babel/preset-react": "^7.23.3",
+    "@babel/preset-typescript": "^7.23.3",
+    "@react-bootstrap/babel-preset": "^2.2.0",
+    "@react-types/link": "^3.5.2",
+    "@react-types/shared": "^3.22.0",
+    "@swc-node/jest": "^1.6.8",
+    "@swc/core": "^1.3.103",
+    "@swc/jest": "^0.2.29",
+    "@testing-library/dom": "^9.3.4",
+    "@testing-library/jest-dom": "^6.2.0",
+    "@testing-library/react": "^14.1.2",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/jest": "^29.5.11",
+    "@types/node": "^20.11.3",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "chalk": "^5.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rimraf": "^5.0.5",
+    "tsup": "^8.0.1",
+    "tsx": "^4.7.0",
+    "turbo": "^1.11.3",
+    "typescript": "^5.3.3"
+  }
+}
