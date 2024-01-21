@@ -4,7 +4,9 @@
   "description": "React Components library by Banyu",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "turbo build",
+    "build:fast": "turbo build:fast",
+    "storybook": "pnpm --filter @banyu/storybook storybook"
   },
   "keywords": [
     "banyu",
