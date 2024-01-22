@@ -16,6 +16,13 @@ export type ColorScale =
     }>
   | string;
 
+export type NeutralScale =
+  | Partial<{
+      foreground: string;
+      DEFAULT: string;
+    }>
+  | string;
+
 export type BaseColors = {
   background: ColorScale;
   foreground: ColorScale;
@@ -26,12 +33,15 @@ export type BaseColors = {
   content2: ColorScale;
   content3: ColorScale;
   content4: ColorScale;
+  black: NeutralScale;
+  white: NeutralScale;
+  transparent: NeutralScale;
 };
 
 export type ThemeColors = BaseColors & {
-  default: ColorScale;
+  // default: ColorScale;
+  // neutral: ColorScale;
   brand: ColorScale;
-  neutral: ColorScale;
   critical: ColorScale;
   success: ColorScale;
   warning: ColorScale;

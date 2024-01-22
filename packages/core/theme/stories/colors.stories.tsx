@@ -46,7 +46,7 @@ const Swatch = ({color, index, title}: {color: string, index: number, title:stri
   return (
     <div className="flex flex-col rounded-xl shadow-lg border border-[#0000001A]">
       <div
-        className="flex flex-col items-center rounded-t-[0.70rem] justify-center w-24 h-12"
+        className="flex flex-col items-center rounded-t-[0.70rem] justify-center w-24 h-12 py-8 min-w-[160px]"
         style={{
           backgroundColor: color,
         }}
@@ -78,27 +78,27 @@ const SematicSwatch = ({
   className?: string;
   textClassName?: string;
 }) => {
-  console.log(color,
-      className,
-      textClassName,)
   return (
       <div className="flex flex-col items-center justify-center rounded-xl shadow-lg border border-[#0000001A]">
         <div
-            className={`flex flex-col items-center rounded-t-xl justify-center w-full h-12 ${className}`}
+            className={`flex flex-col items-center rounded-t-[0.70rem] justify-center w-full h-12 py-8 min-w-[160px] ${className}`}
         >
           <span className={`${textClassName} text-sm`}>{color}</span>
         </div>
-        <span
-            className="text-[#667085] text-sm p-2"
-        >
-        {textClassName}
-      </span>
+        <div className={`flex flex-col text-gray-600 text-sm p-2 text-left`}>
+          <span className="text-left">
+            .{className}
+          </span>
+          <span className="text-left">
+            .{textClassName}
+          </span>
+        </div>
       </div>
   );
 };
 
 const SwatchSet = ({colors, isSematic = false}: SwatchSetProps) => (
-  <div className="flex flex-row flex-wrap items-center justify-center w-full h-full p-2">
+  <div className="flex flex-row flex-wrap items-center justify-center w-full h-full p-8">
     {colors.map(({title, items}) => (
       <div key={title} className="flex flex-col items-start w-full h-full">
         <h2 className="text-xl font-bold text-gray-700">{title}</h2>
@@ -141,73 +141,83 @@ export const PrimaryColors = {
   args: {
     isSematic: true,
     colors: [
+      // {
+      //   title: "Layout ⚠️",
+      //   items: [
+      //     {
+      //       color: "background",
+      //       className: "bg-background",
+      //       textClassName: "text-foreground",
+      //     },
+      //     {
+      //       color: "foreground",
+      //       className: "bg-foreground",
+      //       textClassName: "text-background",
+      //     },
+      //     {
+      //       color: "divider",
+      //       className: "bg-divider",
+      //       textClassName: "text-foreground",
+      //     },
+      //     {
+      //       color: "focus",
+      //       className: "bg-focus",
+      //       textClassName: "text-primary-foreground",
+      //     },
+      //   ],
+      // },
+      // {
+      //   title: "Content ⚠️",
+      //   items: [
+      //     {
+      //       color: "content1",
+      //       className: "bg-content1",
+      //       textClassName: "text-content1-foreground",
+      //     },
+      //     {
+      //       color: "content2",
+      //       className: "bg-content2",
+      //       textClassName: "text-content2-foreground",
+      //     },
+      //     {
+      //       color: "content3",
+      //       className: "bg-content3",
+      //       textClassName: "text-content3-foreground",
+      //     },
+      //     {
+      //       color: "content4",
+      //       className: "bg-content4",
+      //       textClassName: "text-content4-foreground",
+      //     },
+      //   ],
+      // },
       {
-        title: "Layout ⚠️",
+        title: "Neutral",
         items: [
           {
-            color: "background",
-            className: "bg-background",
-            textClassName: "text-foreground",
+            color: "white",
+            className: "bg-white",
+            textClassName: "text-white-foreground",
           },
           {
-            color: "foreground",
-            className: "bg-foreground",
-            textClassName: "text-background",
+            color: "black",
+            className: "bg-black",
+            textClassName: "text-black-foreground",
           },
           {
-            color: "divider",
-            className: "bg-divider",
-            textClassName: "text-foreground",
+            color: "transparent",
+            className: "bg-transparent",
+            textClassName: "text-white-foreground",
           },
-          {
-            color: "focus",
-            className: "bg-focus",
-            textClassName: "text-primary-foreground",
-          },
-        ],
+        ]
       },
       {
-        title: "Content ⚠️",
+        title: "Primary",
         items: [
-          {
-            color: "content1",
-            className: "bg-content1",
-            textClassName: "text-content1-foreground",
-          },
-          {
-            color: "content2",
-            className: "bg-content2",
-            textClassName: "text-content2-foreground",
-          },
-          {
-            color: "content3",
-            className: "bg-content3",
-            textClassName: "text-content3-foreground",
-          },
-          {
-            color: "content4",
-            className: "bg-content4",
-            textClassName: "text-content4-foreground",
-          },
-        ],
-      },
-      {
-        title: "Base ⚠️",
-        items: [
-          {
-            color: "default",
-            className: "bg-default",
-            textClassName: "text-default-foreground",
-          },
           {
             color: "brand",
             className: "bg-brand",
             textClassName: "text-brand-foreground",
-          },
-          {
-            color: "neutral",
-            className: "bg-neutral",
-            textClassName: "text-neutral-foreground",
           },
           {
             color: "success",
@@ -223,61 +233,6 @@ export const PrimaryColors = {
             color: "critical",
             className: "bg-critical",
             textClassName: "text-critical-foreground",
-          },
-        ],
-      },
-      {
-        title: "Default ⚠️",
-        items: [
-          {
-            color: "default-50",
-            className: "bg-default-50",
-            textClassName: "text-default-900",
-          },
-          {
-            color: "default-100",
-            className: "bg-default-100",
-            textClassName: "text-default-900",
-          },
-          {
-            color: "default-200",
-            className: "bg-default-200",
-            textClassName: "text-default-800",
-          },
-          {
-            color: "default-300",
-            className: "bg-default-300",
-            textClassName: "text-default-800",
-          },
-          {
-            color: "default-400",
-            className: "bg-default-400",
-            textClassName: "text-default-800",
-          },
-          {
-            color: "default-500",
-            className: "bg-default-500",
-            textClassName: "text-default-foreground",
-          },
-          {
-            color: "default-600",
-            className: "bg-default-600",
-            textClassName: "text-default-50",
-          },
-          {
-            color: "default-700",
-            className: "bg-default-700",
-            textClassName: "text-default-100",
-          },
-          {
-            color: "default-800",
-            className: "bg-default-800",
-            textClassName: "text-default-100",
-          },
-          {
-            color: "default-900",
-            className: "bg-default-900",
-            textClassName: "text-default-100",
           },
         ],
       },
@@ -527,6 +482,10 @@ export const PrimaryColors = {
 export const SecondaryColors = {
   args: {
     colors: [
+      {
+        title: "Gray",
+        items: getCommonItems([...Object.values(commonColors.gray)]),
+      },
       {
         title: "Blue",
         items: getCommonItems([...Object.values(commonColors.blue)]),
