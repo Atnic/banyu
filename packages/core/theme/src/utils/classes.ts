@@ -60,12 +60,11 @@ export const absoluteFullClasses = ["absolute", "inset-0"];
  * It includes classes for different variants like default, primary, secondary, etc.
  */
 export const collapseAdjacentVariantBorders = {
-  basic: ["[&+.border-medium.border-default]:ms-[calc(theme(borderWidth.medium)*-1)]"],
   primary: ["[&+.border-medium.border-primary]:ms-[calc(theme(borderWidth.medium)*-1)]"],
-  secondary: ["[&+.border-medium.border-secondary]:ms-[calc(theme(borderWidth.medium)*-1)]"],
+  danger: ["[&+.border-medium.border-danger]:ms-[calc(theme(borderWidth.medium)*-1)]"],
   success: ["[&+.border-medium.border-success]:ms-[calc(theme(borderWidth.medium)*-1)]"],
   warning: ["[&+.border-medium.border-warning]:ms-[calc(theme(borderWidth.medium)*-1)]"],
-  critical: ["[&+.border-medium.border-danger]:ms-[calc(theme(borderWidth.medium)*-1)]"],
+  basic: ["[&+.border-medium.border-default]:ms-[calc(theme(borderWidth.medium)*-1)]"],
   transparent: ["[&+.border-medium.border-danger]:ms-[calc(theme(borderWidth.medium)*-1)]"],
   white: ["[&+.border-medium.border-danger]:ms-[calc(theme(borderWidth.medium)*-1)]"],
 };

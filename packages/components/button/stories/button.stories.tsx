@@ -1,4 +1,5 @@
 import React from "react";
+// @ts-ignore
 import {Meta} from "@storybook/react";
 import {button} from "@banyu/theme";
 import {Camera, HeadphonesIcon, Notification} from "@banyu/shared-icons";
@@ -13,13 +14,13 @@ export default {
       control: {
         type: "select",
       },
-      options: ["solid", "outline", "ghost", "transparent", "white", "link"],
+      options: ["solid", "outline", "ghost", "rounded", "iconOnly"],
     },
     color: {
       control: {
         type: "select",
       },
-      options: ["primary", "critical", "success", "warning", "transparent", "white"],
+      options: ["primary", "danger", "success", "warning", "transparent", "white", "basic"],
     },
     size: {
       control: {
@@ -54,11 +55,11 @@ export default {
         type: "boolean",
       },
     },
-    disableAnimation: {
-      control: {
-        type: "boolean",
-      },
-    },
+    // disableAnimation: {
+    //   control: {
+    //     type: "boolean",
+    //   },
+    // },
   },
 } as Meta<typeof Button>;
 
@@ -78,17 +79,55 @@ const StateTemplate = (args: ButtonProps) => {
   };
 
   return (
-    <Button {...args} aria-label="Open" aria-pressed={isOpen} onPress={handlePress}>
-      {isOpen ? "Close" : "Open"}
-    </Button>
+      <div className="h-screen">
+        <Button {...args} aria-label="Open" aria-pressed={isOpen} onPress={handlePress}>
+          {isOpen ? "Close" : "Open"}
+        </Button>
+      </div>
   );
 };
 
-export const Primary = {
+export const Solid = {
   args: {
     ...defaultProps,
   },
 };
+export const Outline = {
+  args: {
+    ...defaultProps,
+    variant:'outline'
+  },
+};
+export const Ghost = {
+  args: {
+    ...defaultProps,
+    variant:'ghost'
+  },
+};
+export const rounded = {
+  args: {
+    ...defaultProps,
+    radius: "full",
+    variant: 'rounded'
+  },
+};
+export const IconOnly = {
+  args: {
+    ...defaultProps,
+    isIconOnly: true,
+    variant: "iconOnly",
+    children: <HeadphonesIcon className="w-5 h-5" />,
+  },
+};
+
+export const IsLoading = {
+  args: {
+    ...defaultProps,
+    color: "primary",
+    isLoading: true,
+  },
+};
+
 
 // export const WithState = {
 //   render: StateTemplate,
@@ -117,22 +156,6 @@ export const Primary = {
 //     ...defaultProps,
 //     startContent: <Notification className="fill-current" />,
 //     endContent: <Camera className="fill-current" />,
-//   },
-// };
-//
-// export const IconButton = {
-//   args: {
-//     ...defaultProps,
-//     isIconOnly: true,
-//     children: <HeadphonesIcon className="w-5 h-5" />,
-//   },
-// };
-//
-// export const IsLoading = {
-//   args: {
-//     ...defaultProps,
-//     color: "primary",
-//     isLoading: true,
 //   },
 // };
 //

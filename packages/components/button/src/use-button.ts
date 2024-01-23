@@ -82,7 +82,7 @@ export function useButton(props: UseButtonProps) {
     variant = groupContext?.variant ?? "solid",
     disableAnimation = groupContext?.disableAnimation ?? false,
     radius = groupContext?.radius ?? "md",
-    disableRipple = groupContext?.disableRipple ?? false,
+    disableRipple = groupContext?.disableRipple ?? true,
     isDisabled: isDisabledProp = groupContext?.isDisabled ?? false,
     isIconOnly = groupContext?.isIconOnly ?? false,
     isLoading = false,

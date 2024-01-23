@@ -43,10 +43,10 @@
   "dependencies": {
     "@banyu/system-rsc": "workspace:*",
     "@banyu/shared-utils": "workspace:*",
-    "@banyu/react-utils": "workspace:*"
+    "@banyu/react-utils": "workspace:*",
+    "@banyu/theme": "workspace:*"
   },
   "devDependencies": {
-    "@banyu/theme": "workspace:*",
     "clean-package": "2.2.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"

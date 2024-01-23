@@ -1,5 +1,7 @@
 import React from "react";
+// @ts-ignore
 import {Meta} from "@storybook/react";
+// @ts-ignore
 import {button, buttonGroup} from "@banyu/theme";
 
 import {Button, ButtonGroup, ButtonGroupProps} from "../src";
@@ -12,13 +14,13 @@ export default {
       control: {
         type: "select",
       },
-      options: ["solid", "outline", "ghost", "transparent", "white", "link"],
+      options: ["solid", "outline", "ghost", "transparent", "white", "basic"],
     },
     color: {
       control: {
         type: "select",
       },
-      options: ["primary", "critical", "success", "warning", "transparent", "white"],
+      options: ["primary", "danger", "success", "warning", "transparent", "white"],
     },
     radius: {
       control: {
@@ -42,11 +44,11 @@ export default {
         type: "boolean",
       },
     },
-    disableAnimation: {
-      control: {
-        type: "boolean",
-      },
-    },
+    // disableAnimation: {
+    //   control: {
+    //     type: "boolean",
+    //   },
+    // },
   },
 } as Meta<typeof ButtonGroup>;
 

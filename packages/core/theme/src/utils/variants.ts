@@ -1,37 +1,56 @@
 const solid = {
-  primary: "bg-brand text-brand-foreground",
-  critical: "bg-critical text-critical-foreground",
-  warning: "bg-warning text-warning-foreground",
-  success: "bg-success text-success-foreground",
-  white: "bg-danger text-danger-foreground",
-  basic: "bg-danger text-danger-foreground",
-  transparent: "bg-danger text-danger-foreground",
+  primary: "bg-brand text-white",
+  danger: "bg-danger text-white",
+  warning: "bg-warning text-white",
+  success: "bg-success text-white",
+  white: "bg-white text-neutral-800 border-neutral-300",
+  basic: "bg-neutral-50 border-neutral-50 text-neutral-800",
+  transparent: "bg-none text-brand-800 border-transparent",
 };
 
 const outline = {
-  primary: "bg-transparent border-blue-500 text-brand-foreground",
-  critical: "bg-transparent border-critical text-critical",
-  success: "bg-transparent border-success text-success",
-  warning: "bg-transparent border-warning text-warning",
-  basic: "bg-transparent border-foreground text-foreground",
+  primary: "border-brand text-brand",
+  danger: "border-danger text-danger",
+  warning: "border-warning text-warning-800",
+  success: "border-success text-success",
+  white: "border-white text-white",
+  basic: "border-gray text-gray-800",
+  transparent: "border-transparent text-brand",
 };
 
 const ghost = {
-  default: "border-default text-default-foreground hover:!bg-default",
-  primary: "border-primary text-primary hover:!text-primary-foreground hover:!bg-primary",
-  secondary: "border-secondary text-secondary hover:text-secondary-foreground hover:!bg-secondary",
-  success: "border-success text-success hover:!text-success-foreground hover:!bg-success",
-  warning: "border-warning text-warning hover:!text-warning-foreground hover:!bg-warning",
-  danger: "border-danger text-danger hover:!text-danger-foreground hover:!bg-danger",
-  foreground: "border-foreground text-foreground hover:!bg-foreground",
+  primary: "text-brand-800",
+  danger: "text-danger-800",
+  warning: "text-warning-800",
+  success: "text-success-800",
+  white: "text-white",
+  basic: "text-white",
+  transparent: "text-white",
 };
 
+const rounded = {
+  primary: "border-brand text-brand",
+  danger: "border-danger text-danger",
+  warning: "border-warning text-warning-800",
+  success: "border-success text-success",
+  white: "border-white text-white",
+  basic: "border-gray text-gray-800",
+  transparent: "border-transparent text-brand",
+};
+
+const iconOnly = {
+  primary: "text-brand-800",
+  danger: "text-danger-800",
+  warning: "text-warning-800",
+  success: "text-success-800",
+  white: "text-white",
+  basic: "text-white",
+  transparent: "text-white",
+};
 export const colorVariants = {
   solid,
-  // shadow,
   outline,
-  // flat,
-  // faded,
-  // light,
+  rounded,
   ghost,
+  iconOnly
 };

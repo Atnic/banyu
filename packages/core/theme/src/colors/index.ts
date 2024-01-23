@@ -1,4 +1,4 @@
-import {commonColors} from "./common";
+     import {commonColors} from "./common";
 import {semanticColors} from "./semantic";
 
 export * from "./types";

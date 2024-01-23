@@ -130,14 +130,16 @@ const card = tv({
     },
     disableAnimation: {
       true: "",
-      false: {base: "transition-transform-background motion-reduce:transition-none"},
+      // false: {base: "transition-transform-background motion-reduce:transition-none"},
+      false: {base: "ease-out duration-300"},
     },
   },
   compoundVariants: [
     {
       isPressable: true,
       disableAnimation: false,
-      class: "data-[pressed=true]:scale-95 tap-highlight-transparent",
+      // class: "data-[pressed=true]:scale-95 tap-highlight-transparent",
+      class: "ease-out duration-300"
     },
   ],
   defaultVariants: {

@@ -192,10 +192,10 @@ importers:
       '@banyu/system-rsc':
         specifier: workspace:*
         version: link:../../core/system-rsc
-    devDependencies:
       '@banyu/theme':
         specifier: workspace:*
         version: link:../../core/theme
+    devDependencies:
       clean-package:
         specifier: 2.2.0
         version: 2.2.0

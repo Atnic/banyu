@@ -51,7 +51,7 @@ export function useButtonGroup(originalProps: UseButtonGroupProps) {
     radius,
     isDisabled = false,
     disableAnimation = false,
-    disableRipple = false,
+    disableRipple = true,
     isIconOnly = false,
     className,
     ...otherProps
