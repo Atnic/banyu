@@ -18,8 +18,38 @@ export type ColorScale =
 
 export type NeutralScale =
   | Partial<{
-      foreground: string;
-      DEFAULT: string;
+        50: string;
+        100: string;
+        200: string;
+        300: string;
+        400: string;
+        500: string;
+        600: string;
+        700: string;
+        800: string;
+        900: string;
+        950: string;
+        black: string;
+        white: string;
+        foreground: string;
+        DEFAULT: string;
+    }>
+  | string;
+export type AplhaScale =
+  | Partial<{
+        "5a": string;
+        "10a": string;
+        "20a": string;
+        "30a": string;
+        "40a": string;
+        "50a": string;
+        "60a": string;
+        "70a": string;
+        "80a": string;
+        "90a": string;
+        "100a": string;
+        foreground: string;
+        DEFAULT: string;
     }>
   | string;
 
@@ -33,16 +63,15 @@ export type BaseColors = {
   content2: ColorScale;
   content3: ColorScale;
   content4: ColorScale;
-  black: NeutralScale;
-  white: NeutralScale;
-  transparent: NeutralScale;
+  neutral: NeutralScale;
+  black: AplhaScale;
+  white: AplhaScale;
+  transparent: AplhaScale;
 };
 
 export type ThemeColors = BaseColors & {
-  // default: ColorScale;
-  // neutral: ColorScale;
   brand: ColorScale;
-  critical: ColorScale;
+  danger: ColorScale;
   success: ColorScale;
   warning: ColorScale;
 };

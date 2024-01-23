@@ -2,7 +2,7 @@ import React from "react";
 import {Meta} from "@storybook/react";
 import {parseToRgba, readableColor} from "color2k";
 
-import {commonColors} from "../src/colors";
+import {commonColors} from "../src";
 
 type ColorsItem = {
   color: string;
@@ -61,7 +61,7 @@ const Swatch = ({color, index, title}: {color: string, index: number, title:stri
         </span>
       </div>
       <span
-        className="text-[#667085] text-sm p-2"
+        className="text-gray-800 text-sm p-2"
       >
         {colorText}
       </span>
@@ -73,19 +73,23 @@ const SematicSwatch = ({
   color,
   className,
   textClassName,
+  alphaColor,
+  title
 }: {
   color: string;
   className?: string;
   textClassName?: string;
+  title?: string;
+  alphaColor?: boolean
 }) => {
   return (
       <div className="flex flex-col items-center justify-center rounded-xl shadow-lg border border-[#0000001A]">
         <div
             className={`flex flex-col items-center rounded-t-[0.70rem] justify-center w-full h-12 py-8 min-w-[160px] ${className}`}
         >
-          <span className={`${textClassName} text-sm`}>{color}</span>
+          {!alphaColor && <span className={`${textClassName} text-sm`}>{color}</span>}
         </div>
-        <div className={`flex flex-col text-gray-600 text-sm p-2 text-left`}>
+        <div className={`flex flex-col ${title === "White Alpha" ? 'text-white' : 'text-black'} text-sm p-2 text-left`}>
           <span className="text-left">
             .{className}
           </span>
@@ -102,20 +106,35 @@ const SwatchSet = ({colors, isSematic = false}: SwatchSetProps) => (
     {colors.map(({title, items}) => (
       <div key={title} className="flex flex-col items-start w-full h-full">
         <h2 className="text-xl font-bold text-gray-700">{title}</h2>
-        <div className="flex flex-row flex-wrap items-center justify-start w-full h-full gap-4 my-4">
-          {items.map((c, index) =>
-            isSematic ? (
+        {title === 'White Alpha' || title === 'Black Alpha' ?
+          <div className={`${title === "White Alpha" && "bg-gray-900"} ${title === "Black Alpha" && "bg-gray-200"} rounded-xl p-4 flex flex-row flex-wrap items-center justify-start w-full h-full gap-4 my-4`}>
+            {items.map((c, index) =>
               <SematicSwatch
-                key={`${c.color}-${index}`}
-                className={c.className}
-                color={c.color}
-                textClassName={c.textClassName}
+                  title={title}
+                  alphaColor={true}
+                  key={`${c.color}-${index}`}
+                  className={c.className}
+                  color={c.color}
+                  textClassName={c.textClassName}
               />
-            ) : (
-              <Swatch key={`${c.color}-${index}`} color={c.color} index={index} title={title}/>
-            ),
-          )}
-        </div>
+            )}
+          </div>
+        :
+          <div className="flex flex-row flex-wrap items-center justify-start w-full h-full gap-4 my-4">
+            {items.map((c, index) =>
+              isSematic ? (
+                <SematicSwatch
+                  key={`${c.color}-${index}`}
+                  className={c.className}
+                  color={c.color}
+                  textClassName={c.textClassName}
+                />
+              ) : (
+                <Swatch key={`${c.color}-${index}`} color={c.color} index={index} title={title}/>
+              ),
+            )}
+          </div>
+        }
       </div>
     ))}
   </div>
@@ -141,79 +160,204 @@ export const PrimaryColors = {
   args: {
     isSematic: true,
     colors: [
-      // {
-      //   title: "Layout ⚠️",
-      //   items: [
-      //     {
-      //       color: "background",
-      //       className: "bg-background",
-      //       textClassName: "text-foreground",
-      //     },
-      //     {
-      //       color: "foreground",
-      //       className: "bg-foreground",
-      //       textClassName: "text-background",
-      //     },
-      //     {
-      //       color: "divider",
-      //       className: "bg-divider",
-      //       textClassName: "text-foreground",
-      //     },
-      //     {
-      //       color: "focus",
-      //       className: "bg-focus",
-      //       textClassName: "text-primary-foreground",
-      //     },
-      //   ],
-      // },
-      // {
-      //   title: "Content ⚠️",
-      //   items: [
-      //     {
-      //       color: "content1",
-      //       className: "bg-content1",
-      //       textClassName: "text-content1-foreground",
-      //     },
-      //     {
-      //       color: "content2",
-      //       className: "bg-content2",
-      //       textClassName: "text-content2-foreground",
-      //     },
-      //     {
-      //       color: "content3",
-      //       className: "bg-content3",
-      //       textClassName: "text-content3-foreground",
-      //     },
-      //     {
-      //       color: "content4",
-      //       className: "bg-content4",
-      //       textClassName: "text-content4-foreground",
-      //     },
-      //   ],
-      // },
+      {
+        title: "White Alpha",
+        items: [
+          {
+            color: "white-5a",
+            className: "bg-white-5a",
+            textClassName: "text-white",
+          },
+          {
+            color: "white-10a",
+            className: "bg-white-10a",
+            textClassName: "text-white",
+          },
+          {
+            color: "white-20a",
+            className: "bg-white-20a",
+            textClassName: "text-white",
+          },
+          {
+            color: "white-30a",
+            className: "bg-white-30a",
+            textClassName: "text-white",
+          },
+          {
+            color: "white-40a",
+            className: "bg-white-40a",
+            textClassName: "text-white",
+          },
+          {
+            color: "white-50a",
+            className: "bg-white-50a",
+            textClassName: "text-white",
+          },
+          {
+            color: "white-60a",
+            className: "bg-white-60a",
+            textClassName: "text-white",
+          },
+          {
+            color: "white-70a",
+            className: "bg-white-70a",
+            textClassName: "text-white",
+          },
+          {
+            color: "white-80a",
+            className: "bg-white-80a",
+            textClassName: "text-white",
+          },
+          {
+            color: "white-90a",
+            className: "bg-white-90a",
+            textClassName: "text-white",
+          },
+          {
+            color: "white-100a",
+            className: "bg-white-100a",
+            textClassName: "text-white",
+          },
+        ]
+      },
+      {
+        title: "Black Alpha",
+        items: [
+          {
+            color: "black-5a",
+            className: "bg-black-5a",
+            textClassName: "text-white",
+          },
+          {
+            color: "black-10a",
+            className: "bg-black-10a",
+            textClassName: "text-white",
+          },
+          {
+            color: "black-20a",
+            className: "bg-black-20a",
+            textClassName: "text-white",
+          },
+          {
+            color: "black-30a",
+            className: "bg-black-30a",
+            textClassName: "text-white",
+          },
+          {
+            color: "black-40a",
+            className: "bg-black-40a",
+            textClassName: "text-white",
+          },
+          {
+            color: "black-50a",
+            className: "bg-black-50a",
+            textClassName: "text-white",
+          },
+          {
+            color: "black-60a",
+            className: "bg-black-60a",
+            textClassName: "text-white",
+          },
+          {
+            color: "black-70a",
+            className: "bg-black-70a",
+            textClassName: "text-white",
+          },
+          {
+            color: "black-80a",
+            className: "bg-black-80a",
+            textClassName: "text-white",
+          },
+          {
+            color: "black-90a",
+            className: "bg-black-90a",
+            textClassName: "text-white",
+          },
+          {
+            color: "black-100a",
+            className: "bg-black-100a",
+            textClassName: "text-white",
+          },
+        ]
+      },
       {
         title: "Neutral",
         items: [
           {
             color: "white",
             className: "bg-white",
-            textClassName: "text-white-foreground",
+            textClassName: "text-black",
           },
           {
             color: "black",
             className: "bg-black",
-            textClassName: "text-black-foreground",
+            textClassName: "text-white",
           },
           {
-            color: "transparent",
-            className: "bg-transparent",
-            textClassName: "text-white-foreground",
+            color: "neutral-50",
+            className: "bg-neutral-50",
+            textClassName: "text-neutral-900",
+          },
+          {
+            color: "neutral-100",
+            className: "bg-neutral-100",
+            textClassName: "text-neutral-900",
+          },
+          {
+            color: "neutral-200",
+            className: "bg-neutral-200",
+            textClassName: "text-neutral-800",
+          },
+          {
+            color: "neutral-300",
+            className: "bg-neutral-300",
+            textClassName: "text-neutral-800",
+          },
+          {
+            color: "neutral-400",
+            className: "bg-neutral-400",
+            textClassName: "text-neutral-800",
+          },
+          {
+            color: "neutral-500",
+            className: "bg-neutral-500",
+            textClassName: "text-neutral-foreground",
+          },
+          {
+            color: "neutral-600",
+            className: "bg-neutral-600",
+            textClassName: "text-neutral-50",
+          },
+          {
+            color: "neutral-700",
+            className: "bg-neutral-700",
+            textClassName: "text-neutral-100",
+          },
+          {
+            color: "neutral-800",
+            className: "bg-neutral-800",
+            textClassName: "text-neutral-100",
+          },
+          {
+            color: "neutral-900",
+            className: "bg-neutral-900",
+            textClassName: "text-neutral-100",
+          },
+          {
+            color: "neutral-950",
+            className: "bg-neutral-950",
+            textClassName: "text-neutral-100",
           },
         ]
       },
       {
         title: "Primary",
         items: [
+          {
+            color: "neutral",
+            className: "bg-neutral",
+            textClassName: "text-neutral-foreground",
+          },
           {
             color: "brand",
             className: "bg-brand",
@@ -230,9 +374,9 @@ export const PrimaryColors = {
             textClassName: "text-warning-foreground",
           },
           {
-            color: "critical",
-            className: "bg-critical",
-            textClassName: "text-critical-foreground",
+            color: "danger",
+            className: "bg-danger",
+            textClassName: "text-danger-foreground",
           },
         ],
       },
@@ -297,62 +441,62 @@ export const PrimaryColors = {
         ],
       },
       {
-        title: "Critical",
+        title: "Danger",
         items: [
           {
-            color: "critical-50",
-            className: "bg-critical-50",
-            textClassName: "text-critical-900",
+            color: "danger-50",
+            className: "bg-danger-50",
+            textClassName: "text-danger-900",
           },
           {
-            color: "critical-100",
-            className: "bg-critical-100",
-            textClassName: "text-critical-900",
+            color: "danger-100",
+            className: "bg-danger-100",
+            textClassName: "text-danger-900",
           },
           {
-            color: "critical-200",
-            className: "bg-critical-200",
-            textClassName: "text-critical-800",
+            color: "danger-200",
+            className: "bg-danger-200",
+            textClassName: "text-danger-800",
           },
           {
-            color: "critical-300",
-            className: "bg-critical-300",
-            textClassName: "text-critical-800",
+            color: "danger-300",
+            className: "bg-danger-300",
+            textClassName: "text-danger-800",
           },
           {
-            color: "critical-400",
-            className: "bg-critical-400",
-            textClassName: "text-critical-800",
+            color: "danger-400",
+            className: "bg-danger-400",
+            textClassName: "text-danger-800",
           },
           {
-            color: "critical-500",
-            className: "bg-critical-500",
-            textClassName: "text-critical-foreground",
+            color: "danger-500",
+            className: "bg-danger-500",
+            textClassName: "text-danger-foreground",
           },
           {
-            color: "critical-600",
-            className: "bg-critical-600",
-            textClassName: "text-critical-50",
+            color: "danger-600",
+            className: "bg-danger-600",
+            textClassName: "text-danger-50",
           },
           {
-            color: "critical-700",
-            className: "bg-critical-700",
-            textClassName: "text-critical-100",
+            color: "danger-700",
+            className: "bg-danger-700",
+            textClassName: "text-danger-100",
           },
           {
-            color: "critical-800",
-            className: "bg-critical-800",
-            textClassName: "text-critical-100",
+            color: "danger-800",
+            className: "bg-danger-800",
+            textClassName: "text-danger-100",
           },
           {
-            color: "critical-900",
-            className: "bg-critical-900",
-            textClassName: "text-critical-100",
+            color: "danger-900",
+            className: "bg-danger-900",
+            textClassName: "text-danger-100",
           },
           {
-            color: "critical-950",
-            className: "bg-critical-950",
-            textClassName: "text-critical-100",
+            color: "danger-950",
+            className: "bg-danger-950",
+            textClassName: "text-danger-100",
           },
         ],
       },
