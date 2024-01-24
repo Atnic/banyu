@@ -123,6 +123,7 @@ export const IconOnly = {
 export const IsLoading = {
   args: {
     ...defaultProps,
+    children: "",
     color: "primary",
     isLoading: true,
   },

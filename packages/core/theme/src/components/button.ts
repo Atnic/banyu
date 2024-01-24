@@ -78,11 +78,11 @@ const button = tv({
       true: "disabled:opacity-50 disabled:pointer-events-none disabled:cursor-not-allowed",
     },
     isInGroup: {
-      true: "[&:not(:first-child):not(:last-child)]:rounded-none",
+      true: "[&:not(:first-child):not(:last-child)]:rounded-none data-[focus=true]:!ring-0",
     },
     isIconOnly: {
-      true: "px-unit-0 !gap-unit-0",
-      false: "[&>svg]:max-w-[theme(spacing.unit-8)]",
+      true: "px-unit-0 !gap-unit-0 h-8",
+      false: "[&>svg]:max-w-[theme(spacing.unit-4)]",
     },
     disableAnimation: {
       true: "!transition-none",
@@ -665,7 +665,7 @@ const button = tv({
     {
       variant: ["outline", "rounded"],
       color: "basic",
-      class: "data-[focus=true]:focus:outline-none data-[focus=true]:focus:ring-1 data-[focus=true]:focus:bg-gray-800 data-[focus=true]:focus:border-gray-800 data-[focus=true]:focus:text-white data-[focus=true]:focus:ring-gray/60",
+      class: "data-[focus=true]:focus:outline-none data-[focus=true]:focus:ring-1 data-[focus=true]:focus:bg-neutral-300 data-[focus=true]:focus:border-neutral-300 data-[focus=true]:focus:text-neutral-800 data-[focus=true]:focus:ring-neutral/60",
     },
     //   transparent
     {

@@ -14,7 +14,7 @@ const outline = {
   warning: "border-warning text-warning-800",
   success: "border-success text-success",
   white: "border-white text-white",
-  basic: "border-gray text-gray-800",
+  basic: "border-neutral text-neutral-800",
   transparent: "border-transparent text-brand",
 };
 

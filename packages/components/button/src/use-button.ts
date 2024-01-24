@@ -39,7 +39,6 @@ interface Props extends HTMLNextUIProps<"button"> {
   endContent?: ReactNode;
   /**
    * Spinner to display when loading.
-   * @see https://nextui.org/components/spinner
    */
   spinner?: ReactNode;
   /**
@@ -81,7 +80,7 @@ export function useButton(props: UseButtonProps) {
     color = groupContext?.color ?? "primary",
     variant = groupContext?.variant ?? "solid",
     disableAnimation = groupContext?.disableAnimation ?? false,
-    radius = groupContext?.radius ?? "md",
+    radius = groupContext?.radius ?? "sm",
     disableRipple = groupContext?.disableRipple ?? true,
     isDisabled: isDisabledProp = groupContext?.isDisabled ?? false,
     isIconOnly = groupContext?.isIconOnly ?? false,

@@ -1,12 +1,17 @@
 {
   "name": "banyu",
   "version": "1.0.0",
-  "description": "React Components library by Banyu",
+  "description": "Banyu components library for React",
   "main": "index.js",
   "scripts": {
     "build": "turbo build",
     "build:fast": "turbo build:fast",
-    "storybook": "pnpm --filter @banyu/storybook storybook"
+    "storybook": "pnpm --filter @banyu/storybook storybook",
+    "clean": "pnpm turbo:clean && pnpm clean:jest && pnpm clean:node-modules && pnpm clean:lock && pnpm install --hoist",
+    "clean:node-modules": "rimraf ./apps/**/node_modules && rimraf ./packages/**/**/node_modules && rm -rf ./node_modules",
+    "clean:changelogs": "rimraf ./packages/**/**/CHANGELOG.md",
+    "clean:lock": "rm ./pnpm-lock.yaml",
+    "clean:jest": "jest --clearCache"
   },
   "keywords": [
     "banyu",
@@ -42,6 +47,10 @@
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
     "chalk": "^5.3.0",
+    "husky": "^8.0.1",
+    "jest": "^28.1.1",
+    "jest-environment-jsdom": "^28.1.1",
+    "jest-watch-typeahead": "1.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rimraf": "^5.0.5",
@@ -49,5 +58,16 @@
     "tsx": "^4.7.0",
     "turbo": "^1.11.3",
     "typescript": "^5.3.3"
-  }
+  },
+  "pnpm": {
+    "overrides": {
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0"
+    }
+  },
+  "engines": {
+    "node": ">=16.x",
+    "pnpm": ">=8.x"
+  },
+  "packageManager": "pnpm@8.7.0"
 }

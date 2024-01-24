@@ -1,15 +1,20 @@
 {
   "name": "@banyu/theme",
   "version": "1.0.0",
-  "author": {
-    "name": "Muhammad Amien",
-    "email": "muhammadamien23@gmail.com"
-  },
-  "description": "#",
-  "keywords": [],
+  "description": "The default theme for NextUI components",
+  "keywords": [
+    "theme",
+    "theming",
+    "design",
+    "ui",
+    "components",
+    "classNames",
+    "css"
+  ],
+  "author": "Muhammad Amien <muhammadamien23@gmail.com>",
   "homepage": "#",
   "license": "MIT",
-  "main": "dist/index.js",
+  "main": "src/index.ts",
   "sideEffects": false,
   "files": [
     "dist",
@@ -22,6 +27,14 @@
   ],
   "publishConfig": {
     "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhamien/jala-design.git",
+    "directory": "packages/core/theme"
+  },
+  "bugs": {
+    "url": "https://github.com/muhamien/jala-design/issues"
   },
   "scripts": {
     "build": "tsup src --dts",
@@ -65,25 +78,5 @@
       "cjs",
       "esm"
     ]
-  },
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
-    },
-    "./plugin": {
-      "types": "./dist/plugin.d.ts",
-      "import": "./dist/plugin.mjs",
-      "require": "./dist/plugin.js"
-    },
-    "./colors": {
-      "types": "./dist/colors.d.ts",
-      "import": "./dist/colors.mjs",
-      "require": "./dist/colors.js"
-    },
-    "./package.json": "./package.json"
   }
 }

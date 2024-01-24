@@ -3,7 +3,7 @@ import React from "react";
 import {Meta} from "@storybook/react";
 // @ts-ignore
 import {button, buttonGroup} from "@banyu/theme";
-
+import {ChevronDownIcon, EyeIcon, MailIcon, SunIcon} from "@banyu/shared-icons";
 import {Button, ButtonGroup, ButtonGroupProps} from "../src";
 
 export default {
@@ -59,41 +59,80 @@ const defaultProps = {
 
 const Template = (args: ButtonGroupProps) => (
   <ButtonGroup {...args}>
-    <Button>One</Button>
-    <Button>Two</Button>
-    <Button>Three</Button>
+    <Button>Active</Button>
+    <Button>Middle</Button>
+    <Button>Trailing</Button>
   </ButtonGroup>
 );
 
 const VariantButtonTemplate = (args: ButtonGroupProps) => (
   <ButtonGroup {...args}>
-    <Button>One</Button>
-    <Button>Two</Button>
-    <Button>Three</Button>
-    <Button variant="outline">Four</Button>
-    <Button>Five</Button>
-    <Button>Six</Button>
+    <Button variant="solid" color="primary">Active</Button>
+    <Button variant="outline" color="danger">Middle</Button>
+    <Button variant="ghost" color="success">Trailing</Button>
+  </ButtonGroup>
+);
+const VariantIconButtonTemplate = (args: ButtonGroupProps) => (
+  <ButtonGroup {...args}>
+    <Button><MailIcon className="text-xl"/></Button>
+    <Button><SunIcon className="text-xl"/></Button>
+    <Button><EyeIcon className="text-xl"/></Button>
   </ButtonGroup>
 );
 
 const VariantButtonsTemplate = (args: ButtonGroupProps) => (
   <ButtonGroup {...args}>
-    <Button color="success" variant="outline">
-      One
+    <Button color="basic" variant="outline" size="md">
+      Active
     </Button>
-    <Button color="success">Two</Button>
-    <Button variant="outline">Three</Button>
-    <Button variant="outline">Four</Button>
-    <Button variant="outline">Five</Button>
-    <Button variant="outline">Six</Button>
+    <Button color="basic" isIconOnly variant="outline">
+      <ChevronDownIcon className="text-xl"/>
+    </Button>
   </ButtonGroup>
 );
 
-export const Default = {
+export const solid = {
   render: Template,
 
   args: {
     ...defaultProps,
+  },
+};
+export const outline = {
+  render: Template,
+
+  args: {
+    ...defaultProps,
+    variant: "outline",
+  },
+};
+export const ghost = {
+  render: Template,
+
+  args: {
+    ...defaultProps,
+    variant: "ghost",
+  },
+};
+export const iconOnly = {
+  render: VariantIconButtonTemplate,
+
+  args: {
+    ...defaultProps,
+    variant: "iconOnly",
+    color: "basic",
+    isIconOnly: true
+  },
+};
+
+export const iconWithText = {
+  render: VariantIconButtonTemplate,
+
+  args: {
+    ...defaultProps,
+    children: "Button",
+    variant: "outline",
+    color: "basic",
   },
 };
 
@@ -102,7 +141,7 @@ export const VariantButton = {
 
   args: {
     ...defaultProps,
-    variant: "solid",
+    variant: "outline",
   },
 };
 
@@ -111,6 +150,6 @@ export const VariantButtons = {
 
   args: {
     ...defaultProps,
-    variant: "solid",
+    variant: "outline",
   },
 };
