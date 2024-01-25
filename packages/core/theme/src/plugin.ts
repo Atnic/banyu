@@ -21,7 +21,7 @@ import {ConfigTheme, ConfigThemes, DefaultThemeType, BanyuThemePluginConfig} fro
 import {lightLayout, darkLayout, defaultLayout} from "./default-layout";
 import {baseStyles} from "./utils/classes";
 
-const DEFAULT_PREFIX = "banyu";
+const DEFAULT_PREFIX = "jds";
 
 const parsedColorsCache: Record<string, number[]> = {};
 

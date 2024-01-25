@@ -1,9 +1,9 @@
 {
-  "name": "@banyu/use-aria-press",
-  "version": "1.0.0",
-  "description": "Handles press interactions across mouse, touch, keyboard, and screen readers.",
+  "name": "@banyu/use-aria-link",
+  "version": "2.0.15",
+  "description": "Internal hook to handle link a11y and events, this is based on react-aria link hook but without the onClick warning",
   "keywords": [
-    "use-aria-press"
+    "use-aria-link"
   ],
   "author": "Muhammad Amien <muhammadamien23@gmail.com>",
   "homepage": "#",
@@ -19,7 +19,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/muhamien/jala-design.git",
-    "directory": "packages/hooks/use-aria-press"
+    "directory": "packages/hooks/use-aria-link"
   },
   "bugs": {
     "url": "https://github.com/muhamien/jala-design/issues"
@@ -33,14 +33,16 @@
     "prepack": "clean-package",
     "postpack": "clean-package restore"
   },
-  "dependencies": {
-    "@react-aria/utils": "^3.21.1",
-    "@react-aria/ssr": "^3.8.0",
-    "@react-types/shared": "^3.21.0",
-    "@react-aria/interactions": "^3.19.1"
-  },
   "peerDependencies": {
     "react": ">=18"
+  },
+  "dependencies": {
+    "@banyu/use-aria-press": "workspace:*",
+    "@react-types/link": "^3.5.1",
+    "@react-types/shared": "^3.21.0",
+    "@react-aria/utils": "^3.21.1",
+    "@react-aria/focus": "^3.14.3",
+    "@react-aria/interactions": "^3.19.1"
   },
   "devDependencies": {
     "clean-package": "2.2.0",

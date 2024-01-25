@@ -1,7 +1,7 @@
 {
   "name": "@banyu/theme",
   "version": "1.0.0",
-  "description": "The default theme for NextUI components",
+  "description": "Banyu theme",
   "keywords": [
     "theme",
     "theming",

@@ -1,4 +1,4 @@
-# @banyu/use-aria-press
+# @nextui-org/use-aria-link
 
 A Quick description of the component
 
@@ -7,9 +7,9 @@ A Quick description of the component
 ## Installation
 
 ```sh
-yarn add @banyu/use-aria-press
+yarn add @nextui-org/use-aria-link
 # or
-npm i @banyu/use-aria-press
+npm i @nextui-org/use-aria-link
 ```
 
 ## Contribution

@@ -1,9 +1,9 @@
 {
-  "name": "@banyu/use-aria-press",
+  "name": "@banyu/link",
   "version": "1.0.0",
-  "description": "Handles press interactions across mouse, touch, keyboard, and screen readers.",
+  "description": "Links allow users to click their way from page to page. This component is styled to resemble a hyperlink and semantically renders an &lt;a&gt;",
   "keywords": [
-    "use-aria-press"
+    "link"
   ],
   "author": "Muhammad Amien <muhammadamien23@gmail.com>",
   "homepage": "#",
@@ -19,40 +19,40 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/muhamien/jala-design.git",
-    "directory": "packages/hooks/use-aria-press"
+    "directory": "packages/components/link"
   },
   "bugs": {
     "url": "https://github.com/muhamien/jala-design/issues"
   },
   "scripts": {
     "build": "tsup src --dts",
-    "build:fast": "tsup src",
     "dev": "yarn build:fast -- --watch",
     "clean": "rimraf dist .turbo",
     "typecheck": "tsc --noEmit",
+    "build:fast": "tsup src",
     "prepack": "clean-package",
     "postpack": "clean-package restore"
   },
-  "dependencies": {
-    "@react-aria/utils": "^3.21.1",
-    "@react-aria/ssr": "^3.8.0",
-    "@react-types/shared": "^3.21.0",
-    "@react-aria/interactions": "^3.19.1"
-  },
   "peerDependencies": {
-    "react": ">=18"
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "dependencies": {
+    "@banyu/shared-utils": "workspace:*",
+    "@banyu/shared-icons": "workspace:*",
+    "@banyu/react-utils": "workspace:*",
+    "@banyu/use-aria-link": "workspace:*",
+    "@react-aria/link": "^3.6.1",
+    "@react-aria/utils": "^3.21.1",
+    "@react-aria/focus": "^3.14.3",
+    "@react-types/link": "^3.5.1"
   },
   "devDependencies": {
+    "@banyu/theme": "workspace:*",
+    "@banyu/system": "workspace:*",
     "clean-package": "2.2.0",
-    "react": "^18.0.0"
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
-  "clean-package": "../../../clean-package.config.json",
-  "tsup": {
-    "clean": true,
-    "target": "es2019",
-    "format": [
-      "cjs",
-      "esm"
-    ]
-  }
+  "clean-package": "../../../clean-package.config.json"
 }

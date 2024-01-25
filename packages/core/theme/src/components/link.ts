@@ -22,9 +22,10 @@ const link = tv({
       lg: "text-large",
     },
     color: {
-      foreground: "text-foreground",
-      primary: "text-primary",
-      secondary: "text-secondary",
+      dark: "text-neutral-800",
+      gray: "text-neutral-500",
+      white: "text-white",
+      primary: "text-brand",
       success: "text-success",
       warning: "text-warning",
       danger: "text-danger",
@@ -62,18 +63,23 @@ const link = tv({
   compoundVariants: [
     {
       isBlock: true,
-      color: "foreground",
-      class: "hover:after:bg-foreground/10",
+      color: "dark",
+      class: "hover:after:bg-neutral-800/10",
+    },
+    {
+      isBlock: true,
+      color: "gray",
+      class: "hover:after:bg-neutral-700/10",
+    },
+    {
+      isBlock: true,
+      color: "white",
+      class: "hover:after:bg-white-7a",
     },
     {
       isBlock: true,
       color: "primary",
       class: "hover:after:bg-primary/20",
-    },
-    {
-      isBlock: true,
-      color: "secondary",
-      class: "hover:after:bg-secondary/20",
     },
     {
       isBlock: true,
@@ -99,7 +105,7 @@ const link = tv({
     color: "primary",
     size: "md",
     isBlock: false,
-    underline: "none",
+    underline: "hover",
     isDisabled: false,
     disableAnimation: false,
   },

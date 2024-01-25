@@ -185,6 +185,11 @@ export interface LayoutTheme {
    *
    */
   heading?: BaseHeadingUnit;
+
+  /*
+  *
+  */
+  fontFamily?: object;
 }
 
 export type ConfigTheme = {

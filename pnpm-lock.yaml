@@ -163,6 +163,52 @@ importers:
       '@banyu/theme':
         specifier: workspace:*
         version: link:../../core/theme
+      '@muhamien/jala-icons':
+        specifier: ^1.0.1
+        version: 1.0.1
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+
+  packages/components/link:
+    dependencies:
+      '@banyu/react-utils':
+        specifier: workspace:*
+        version: link:../../utilities/react-utils
+      '@banyu/shared-icons':
+        specifier: workspace:*
+        version: link:../../utilities/shared-icons
+      '@banyu/shared-utils':
+        specifier: workspace:*
+        version: link:../../utilities/shared-utils
+      '@banyu/use-aria-link':
+        specifier: workspace:*
+        version: link:../../hooks/use-aria-link
+      '@react-aria/focus':
+        specifier: ^3.14.3
+        version: 3.16.0(react@18.2.0)
+      '@react-aria/link':
+        specifier: ^3.6.1
+        version: 3.6.3(react@18.2.0)
+      '@react-aria/utils':
+        specifier: ^3.21.1
+        version: 3.23.0(react@18.2.0)
+      '@react-types/link':
+        specifier: ^3.5.1
+        version: 3.5.2(react@18.2.0)
+    devDependencies:
+      '@banyu/system':
+        specifier: workspace:*
+        version: link:../../core/system
+      '@banyu/theme':
+        specifier: workspace:*
+        version: link:../../core/theme
       clean-package:
         specifier: 2.2.0
         version: 2.2.0
@@ -390,6 +436,34 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0
 
+  packages/hooks/use-aria-link:
+    dependencies:
+      '@banyu/use-aria-press':
+        specifier: workspace:*
+        version: link:../use-aria-press
+      '@react-aria/focus':
+        specifier: ^3.14.3
+        version: 3.16.0(react@18.2.0)
+      '@react-aria/interactions':
+        specifier: ^3.19.1
+        version: 3.20.1(react@18.2.0)
+      '@react-aria/utils':
+        specifier: ^3.21.1
+        version: 3.23.0(react@18.2.0)
+      '@react-types/link':
+        specifier: ^3.5.1
+        version: 3.5.2(react@18.2.0)
+      '@react-types/shared':
+        specifier: ^3.21.0
+        version: 3.22.0(react@18.2.0)
+    devDependencies:
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+
   packages/hooks/use-aria-press:
     dependencies:
       '@react-aria/interactions':
@@ -430,6 +504,9 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
     devDependencies:
+      '@muhamien/jala-icons':
+        specifier: ^1.0.1
+        version: 1.0.1
       '@storybook/addon-essentials':
         specifier: ^7.6.8
         version: 7.6.10(@types/react-dom@18.2.18)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
@@ -3089,6 +3166,12 @@ packages:
       react: 18.2.0
     dev: true
 
+  /@muhamien/jala-icons@1.0.1:
+    resolution: {integrity: sha512-kB6rVq60nrumvTvTH5rUxRBOwNzDFTVhq5taHtPIKkTpK051RB2hOSngQ2wMaSYwit/ALjNV++Af/CV+dZmMZg==}
+    dependencies:
+      '@babel/runtime': 7.23.8
+    dev: true
+
   /@napi-rs/wasm-runtime@0.1.1:
     resolution: {integrity: sha512-ATj9ua659JgrkICjJscaeZdmPr44cb/KFjNWuD0N6pux0SpzaM7+iOuuK11mAnQM2N9q0DT4REu6NkL8ZEhopw==}
     requiresBuild: true
@@ -3900,6 +3983,20 @@ packages:
       react: 18.2.0
     dev: false
 
+  /@react-aria/link@3.6.3(react@18.2.0):
+    resolution: {integrity: sha512-8kPWc4u/lDow3Ll0LDxeMgaxt9Y3sl8UldKLGli8tzRSltYFugNh/n+i9sCnmo4Qv9Tp9kYv+yxBK50Uk9sINw==}
+    peerDependencies:
+      react: ^18.2.0
+    dependencies:
+      '@react-aria/focus': 3.16.0(react@18.2.0)
+      '@react-aria/interactions': 3.20.1(react@18.2.0)
+      '@react-aria/utils': 3.23.0(react@18.2.0)
+      '@react-types/link': 3.5.2(react@18.2.0)
+      '@react-types/shared': 3.22.0(react@18.2.0)
+      '@swc/helpers': 0.5.3
+      react: 18.2.0
+    dev: false
+
   /@react-aria/overlays@3.20.0(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-2m7MpRJL5UucbEuu08lMHsiFJoDowkJV4JAIFBZYK1NzVH0vF/A+w9HRNM7jRwx2DUxE+iIsZnl8yKV/7KY8OQ==}
     peerDependencies:
@@ -4042,7 +4139,6 @@ packages:
     dependencies:
       '@react-types/shared': 3.22.0(react@18.2.0)
       react: 18.2.0
-    dev: true
 
   /@react-types/overlays@3.8.4(react@18.2.0):
     resolution: {integrity: sha512-pfgNlQnbF6RB/R2oSxyqAP3Uzz0xE/k5q4n5gUeCDNLjY5qxFHGE8xniZZ503nZYw6VBa9XMN1efDOKQyeiO0w==}
