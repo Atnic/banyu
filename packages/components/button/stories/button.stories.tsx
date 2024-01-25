@@ -116,7 +116,7 @@ export const IconOnly = {
     ...defaultProps,
     isIconOnly: true,
     variant: "iconOnly",
-    children: <HeadphonesIcon className="w-5 h-5" />,
+    children: <HeadphonesIcon className="w-max h-max" />,
   },
 };
 

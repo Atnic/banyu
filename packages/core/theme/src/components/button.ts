@@ -44,7 +44,7 @@ const button = tv({
     variant: {
       solid: "border border-transparent",
       outline: "border bg-transparent",
-      ghost: "bg-transparent border-transparent",
+      ghost: "bg-transparent border border-transparent",
       rounded: "border bg-transparent",
       iconOnly: ""
     },
@@ -81,7 +81,7 @@ const button = tv({
       true: "[&:not(:first-child):not(:last-child)]:rounded-none data-[focus=true]:!ring-0",
     },
     isIconOnly: {
-      true: "px-unit-0 !gap-unit-0 h-8",
+      true: "px-unit-0 !gap-unit-0",
       false: "[&>svg]:max-w-[theme(spacing.unit-4)]",
     },
     disableAnimation: {

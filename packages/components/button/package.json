@@ -5,8 +5,8 @@
   "keywords": [
     "button"
   ],
-  "author": "Junior Garcia <jrgarciadev@gmail.com>",
-  "homepage": "https://nextui.org",
+  "author": "Muhammad Amien <muhammadamien23@gmail.com>",
+  "homepage": "#",
   "license": "MIT",
   "main": "src/index.ts",
   "sideEffects": false,
@@ -18,11 +18,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nextui-org/nextui.git",
+    "url": "git+https://github.com/muhamien/jala-design.git",
     "directory": "packages/components/button"
   },
   "bugs": {
-    "url": "https://github.com/nextui-org/nextui/issues"
+    "url": "https://github.com/muhamien/jala-design/issues"
   },
   "scripts": {
     "build": "tsup src --dts",
@@ -34,27 +34,28 @@
     "postpack": "clean-package restore"
   },
   "peerDependencies": {
+    "framer-motion": ">=4.0.0",
     "react": ">=18",
-    "react-dom": ">=18",
-    "framer-motion": ">=4.0.0"
+    "react-dom": ">=18"
   },
   "dependencies": {
-    "@banyu/shared-utils": "workspace:*",
     "@banyu/react-utils": "workspace:*",
-    "@banyu/use-aria-button": "workspace:*",
     "@banyu/ripple": "workspace:*",
+    "@banyu/shared-utils": "workspace:*",
     "@banyu/spinner": "workspace:*",
+    "@banyu/use-aria-button": "workspace:*",
     "@react-aria/button": "^3.8.4",
+    "@react-aria/focus": "^3.14.3",
     "@react-aria/interactions": "^3.19.1",
     "@react-aria/utils": "^3.21.1",
-    "@react-aria/focus": "^3.14.3",
-    "@react-types/shared": "^3.21.0",
-    "@react-types/button": "^3.9.0"
+    "@react-types/button": "^3.9.0",
+    "@react-types/shared": "^3.21.0"
   },
   "devDependencies": {
-    "@banyu/theme": "workspace:*",
-    "@banyu/system": "workspace:*",
     "@banyu/shared-icons": "workspace:*",
+    "@muhamien/jala-icons": "^1.0.1",
+    "@banyu/system": "workspace:*",
+    "@banyu/theme": "workspace:*",
     "clean-package": "2.2.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"

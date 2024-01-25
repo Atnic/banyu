@@ -5,6 +5,8 @@ import {Meta} from "@storybook/react";
 import {button, buttonGroup} from "@banyu/theme";
 import {ChevronDownIcon, EyeIcon, MailIcon, SunIcon} from "@banyu/shared-icons";
 import {Button, ButtonGroup, ButtonGroupProps} from "../src";
+// @ts-ignore
+import {JalaBiomass,JalaFeed,JalaHarvest} from "@muhamien/jala-icons";
 
 export default {
   title: "Components/ButtonGroup",
@@ -69,14 +71,22 @@ const VariantButtonTemplate = (args: ButtonGroupProps) => (
   <ButtonGroup {...args}>
     <Button variant="solid" color="primary">Active</Button>
     <Button variant="outline" color="danger">Middle</Button>
-    <Button variant="ghost" color="success">Trailing</Button>
+    <Button variant="outline" color="success">Trailing</Button>
   </ButtonGroup>
 );
+const VariantIconOnlyButtonTemplate = (args: ButtonGroupProps) => (
+  <ButtonGroup {...args}>
+    <Button><JalaBiomass className="text-xl"/></Button>
+    <Button><JalaFeed className="text-xl"/></Button>
+    <Button><JalaHarvest className="text-xl"/></Button>
+  </ButtonGroup>
+);
+
 const VariantIconButtonTemplate = (args: ButtonGroupProps) => (
   <ButtonGroup {...args}>
-    <Button><MailIcon className="text-xl"/></Button>
-    <Button><SunIcon className="text-xl"/></Button>
-    <Button><EyeIcon className="text-xl"/></Button>
+    <Button><JalaBiomass className="text-xl"/>Biomass</Button>
+    <Button><JalaFeed className="text-xl"/>Feed</Button>
+    <Button><JalaHarvest className="text-xl"/>Harvest</Button>
   </ButtonGroup>
 );
 
@@ -115,12 +125,12 @@ export const ghost = {
   },
 };
 export const iconOnly = {
-  render: VariantIconButtonTemplate,
+  render: VariantIconOnlyButtonTemplate,
 
   args: {
     ...defaultProps,
     variant: "iconOnly",
-    color: "basic",
+    color: "primary",
     isIconOnly: true
   },
 };
@@ -136,20 +146,20 @@ export const iconWithText = {
   },
 };
 
-export const VariantButton = {
-  render: VariantButtonTemplate,
+// export const VariantButton = {
+//   render: VariantButtonTemplate,
+//
+//   args: {
+//     ...defaultProps,
+//     variant: "outline",
+//   },
+// };
 
-  args: {
-    ...defaultProps,
-    variant: "outline",
-  },
-};
-
-export const VariantButtons = {
-  render: VariantButtonsTemplate,
-
-  args: {
-    ...defaultProps,
-    variant: "outline",
-  },
-};
+// export const VariantButtons = {
+//   render: VariantButtonsTemplate,
+//
+//   args: {
+//     ...defaultProps,
+//     variant: "outline",
+//   },
+// };
