@@ -56,6 +56,7 @@ interface Props extends HTMLNextUIProps<"button"> {
    * use `onPress` instead.
    */
   onClick?: MouseEventHandler<HTMLButtonElement>;
+
 }
 
 export type UseButtonProps = Props &

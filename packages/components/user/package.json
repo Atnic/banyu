@@ -1,0 +1,56 @@
+{
+  "name": "@banyu/user",
+  "version": "1.0.0",
+  "description": "Flexible User Profile Component.",
+  "keywords": [
+    "user"
+  ],
+  "author": "Muhammad Amien <muhammadamien23@gmail.com>",
+  "homepage": "https://Banyu.org",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhamien/jala-design.git",
+    "directory": "packages/components/user"
+  },
+  "bugs": {
+    "url": "https://github.com/muhamien/jala-design/issues"
+  },
+  "scripts": {
+    "build": "tsup src --dts",
+    "dev": "yarn build:fast -- --watch",
+    "clean": "rimraf dist .turbo",
+    "typecheck": "tsc --noEmit",
+    "build:fast": "tsup src",
+    "prepack": "clean-package",
+    "postpack": "clean-package restore"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "dependencies": {
+    "@banyu/avatar": "workspace:*",
+    "@banyu/shared-utils": "workspace:*",
+    "@banyu/react-utils": "workspace:*",
+    "@react-aria/focus": "^3.14.3",
+    "@react-aria/utils": "^3.21.1"
+  },
+  "devDependencies": {
+    "@banyu/theme": "workspace:*",
+    "@banyu/system": "workspace:*",
+    "@banyu/link": "workspace:*",
+    "clean-package": "2.2.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "clean-package": "../../../clean-package.config.json"
+}

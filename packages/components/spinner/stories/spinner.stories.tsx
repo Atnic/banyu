@@ -40,15 +40,15 @@ const defaultProps = {
   ...spinner.defaultVariants,
 };
 
-export const Default = {
-  args: {
-    ...defaultProps,
-  },
-};
-
-export const WithLabel = {
-  args: {
-    ...defaultProps,
-    label: "Loading...",
-  },
-};
+// export const Default = {
+//   args: {
+//     ...defaultProps,
+//   },
+// };
+//
+// export const WithLabel = {
+//   args: {
+//     ...defaultProps,
+//     label: "Loading...",
+//   },
+// };

@@ -11,6 +11,9 @@ const preview: Preview = {
       },
     },
   },
+  globalTypes: {
+
+  },
 };
 
 export default preview;

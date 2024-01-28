@@ -1,0 +1,66 @@
+{
+  "name": "@banyu/tooltip",
+  "version": "1.0.0",
+  "description": "A React Component for rendering dynamically positioned Tooltips",
+  "keywords": [
+    "tooltip"
+  ],
+  "author": "Muhammad Amien <muhammadamien23@gmail.com>",
+  "homepage": "#",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhamien/jala-design.git",
+    "directory": "packages/components/tooltip"
+  },
+  "bugs": {
+    "url": "https://github.com/muhamien/jala-design/issues"
+  },
+  "scripts": {
+    "build": "tsup src --dts",
+    "build:fast": "tsup src",
+    "dev": "yarn build:fast -- --watch",
+    "clean": "rimraf dist .turbo",
+    "typecheck": "tsc --noEmit",
+    "prepack": "clean-package",
+    "postpack": "clean-package restore"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18",
+    "framer-motion": ">=4.0.0"
+  },
+  "dependencies": {
+    "@banyu/shared-utils": "workspace:*",
+    "@banyu/react-utils": "workspace:*",
+    "@banyu/aria-utils": "workspace:*",
+    "@banyu/framer-transitions": "workspace:*",
+    "@banyu/use-safe-layout-effect": "workspace:*",
+    "@banyu/kbd": "workspace:*",
+    "@react-aria/overlays": "^3.18.1",
+    "@react-aria/tooltip": "^3.6.4",
+    "@react-stately/tooltip": "^3.4.5",
+    "@react-aria/interactions": "^3.19.1",
+    "@react-aria/utils": "^3.21.1",
+    "@react-types/tooltip": "^3.4.5",
+    "@react-types/overlays": "^3.8.3"
+  },
+  "devDependencies": {
+    "@banyu/theme": "workspace:*",
+    "@banyu/system": "workspace:*",
+    "@banyu/button": "workspace:*",
+    "framer-motion": "^10.16.4",
+    "clean-package": "2.2.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "clean-package": "../../../clean-package.config.json"
+}

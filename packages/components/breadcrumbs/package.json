@@ -1,0 +1,61 @@
+{
+  "name": "@banyu/breadcrumbs",
+  "version": "1.0.0",
+  "description": "Breadcrumbs display a hierarchy of links to the current page or resource in an application.",
+  "keywords": [
+    "breadcrumbs"
+  ],
+  "author": "Muhammad Amien <muhammadamien23@gmail.com>",
+  "homepage": "#",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhamien/jala-design.git",
+    "directory": "packages/components/breadcrumbs"
+  },
+  "bugs": {
+    "url": "https://github.com/muhamien/jala-design/issues"
+  },
+  "scripts": {
+    "build": "tsup src --dts",
+    "build:fast": "tsup src",
+    "dev": "yarn build:fast -- --watch",
+    "clean": "rimraf dist .turbo",
+    "typecheck": "tsc --noEmit",
+    "prepack": "clean-package",
+    "postpack": "clean-package restore"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "dependencies": {
+    "@banyu/react-utils": "workspace:*",
+    "@banyu/shared-utils": "workspace:*",
+    "@banyu/shared-icons": "workspace:*",
+    "@react-aria/focus": "^3.14.3",
+    "@react-aria/breadcrumbs": "^3.5.7",
+    "@react-aria/utils": "^3.21.1",
+    "@react-types/breadcrumbs": "^3.7.1",
+    "@react-types/shared": "^3.21.0"
+  },
+  "devDependencies": {
+    "@banyu/theme": "workspace:*",
+    "@banyu/system": "workspace:*",
+    "@banyu/dropdown": "workspace:*",
+    "@banyu/tooltip": "workspace:*",
+    "@banyu/button": "workspace:*",
+    "clean-package": "2.2.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "clean-package": "../../../clean-package.config.json"
+}

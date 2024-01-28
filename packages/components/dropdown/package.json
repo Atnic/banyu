@@ -1,0 +1,65 @@
+{
+  "name": "@banyu/dropdown",
+  "version": "1.0.0",
+  "description": "A dropdown displays a list of actions or options that a user can choose.",
+  "keywords": [
+    "dropdown"
+  ],
+  "author": "Muhammad Amien <muhammadamien23@gmail.com>",
+  "homepage": "#",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhamien/jala-design.git",
+    "directory": "packages/components/dropdown"
+  },
+  "bugs": {
+    "url": "https://github.com/muhamien/jala-design/issues"
+  },
+  "scripts": {
+    "build": "tsup src --dts",
+    "build:fast": "tsup src",
+    "dev": "yarn build:fast -- --watch",
+    "clean": "rimraf dist .turbo",
+    "typecheck": "tsc --noEmit",
+    "prepack": "clean-package",
+    "postpack": "clean-package restore"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18",
+    "framer-motion": ">=4.0.0"
+  },
+  "dependencies": {
+    "@banyu/menu": "workspace:*",
+    "@banyu/popover": "workspace:*",
+    "@banyu/shared-utils": "workspace:*",
+    "@banyu/react-utils": "workspace:*",
+    "@react-aria/menu": "^3.11.1",
+    "@react-aria/utils": "^3.21.1",
+    "@react-stately/menu": "^3.5.6",
+    "@react-aria/focus": "^3.14.3",
+    "@react-types/menu": "^3.9.5"
+  },
+  "devDependencies": {
+    "@banyu/theme": "workspace:*",
+    "@banyu/system": "workspace:*",
+    "@banyu/button": "workspace:*",
+    "@banyu/avatar": "workspace:*",
+    "@banyu/user": "workspace:*",
+    "@banyu/shared-icons": "workspace:*",
+    "framer-motion": "^10.16.4",
+    "clean-package": "2.2.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "clean-package": "../../../clean-package.config.json"
+}

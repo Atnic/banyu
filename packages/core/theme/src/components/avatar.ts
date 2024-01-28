@@ -51,51 +51,84 @@ const avatar = tv({
       "w-full",
       "h-full",
     ],
+
   },
   variants: {
+    status:{
+      none:{
+        base: ""
+      },
+      offline:{
+        base: "bg-slate-400 ring ring-2 ring-white"
+      },
+      online:{
+        base: "bg-teal-500 ring ring-2 ring-white"
+      },
+      away:{
+        base: "bg-yellow-500 ring ring-2 ring-white"
+      },
+      dnd:{
+        base: "bg-red-500 ring ring-2 ring-white"
+      },
+      custom:{
+        base: ""
+      },
+    },
+    statusPlacement:{
+      "top-right":{
+        base: "absolute top-0 end-0 block h-1.5 w-1.5 rounded-full"
+      },
+      "bottom-right":{
+        base: "absolute bottom-0 end-0 block h-1.5 w-1.5 rounded-full"
+      },
+    },
+    variant: {
+      solid:{},
+      soft:{}
+    },
     size: {
       sm: {
-        base: "w-8 h-8 text-tiny",
+        base: "w-8 h-8 text-xs",
       },
       md: {
-        base: "w-10 h-10 text-tiny",
+        base: "w-10 h-10 text-xs",
       },
       lg: {
-        base: "w-14 h-14 text-small",
+        base: "w-14 h-14 text-sm",
       },
     },
     color: {
-      default: {
-        base: colorVariants.solid.default,
-      },
       primary: {
-        base: colorVariants.solid.primary,
-      },
-      secondary: {
-        base: colorVariants.solid.secondary,
+        base: "",
       },
       success: {
-        base: colorVariants.solid.success,
+        base: "",
       },
       warning: {
-        base: colorVariants.solid.warning,
+        base: "",
       },
       danger: {
-        base: colorVariants.solid.danger,
+        base: "",
+      },
+      dark: {
+        base: "",
+      },
+      gray: {
+        base: "",
       },
     },
     radius: {
       none: {
-        base: "rounded-none",
+        base: "rounded-0",
       },
       sm: {
-        base: "rounded-small",
+        base: "rounded-sm",
       },
       md: {
-        base: "rounded-medium",
+        base: "rounded-md",
       },
       lg: {
-        base: "rounded-large",
+        base: "rounded-lg",
       },
       full: {
         base: "rounded-full",
@@ -103,7 +136,7 @@ const avatar = tv({
     },
     isBordered: {
       true: {
-        base: "ring-2 ring-offset-2 ring-offset-background dark:ring-offset-background-dark",
+        base: "!border !border-neutral-200 !ring-2 !ring-white dark:!ring-dark",
       },
     },
     isDisabled: {
@@ -114,42 +147,29 @@ const avatar = tv({
     isInGroup: {
       true: {
         base: [
-          "-ms-2 data-[hover=true]:-translate-x-3 transition-transform",
-          "data-[focus-visible=true]:-translate-x-3",
+          // "-ms-2 data-[hover=true]:-translate-x-3 transition-transform",
+          "-ms-2 data-[focus-visible=true]:-translate-x-3",
         ],
       },
     },
     isInGridGroup: {
       true: {
-        base: "m-0 data-[hover=true]:translate-x-0",
+        // base: "m-0 data-[hover=true]:translate-x-0",
+        base: "m-0"
       },
     },
   },
   defaultVariants: {
     size: "md",
-    color: "default",
+    color: "primary",
     radius: "full",
   },
   compoundVariants: [
     {
-      color: "default",
-      isBordered: true,
-      class: {
-        base: "ring-default",
-      },
-    },
-    {
       color: "primary",
       isBordered: true,
       class: {
-        base: "ring-primary",
-      },
-    },
-    {
-      color: "secondary",
-      isBordered: true,
-      class: {
-        base: "ring-secondary",
+        base: "bg-brand-50 text-brand-800",
       },
     },
     {
@@ -171,6 +191,92 @@ const avatar = tv({
       isBordered: true,
       class: {
         base: "ring-danger",
+      },
+    },
+
+    {
+      color: "primary",
+      variant: "soft",
+      class: {
+        base: "bg-brand-50 text-brand-800",
+      },
+    },
+    {
+      color: "success",
+      variant: "soft",
+      class: {
+        base: "bg-success-100 text-success-700",
+      },
+    },
+    {
+      color: "warning",
+      variant: "soft",
+      class: {
+        base: "bg-warning-100 text-warning-800",
+      },
+    },
+    {
+      color: "danger",
+      variant: "soft",
+      class: {
+        base: "bg-danger-100 text-danger-600",
+      },
+    },
+    {
+      color: "dark",
+      variant: "soft",
+      class: {
+        base: "bg-neutral-100 text-gray-800",
+      },
+    },
+    {
+      color: "gray",
+      variant: "soft",
+      class: {
+        base: "bg-neutral-50 text-gray-500",
+      },
+    },
+
+    {
+      color: "primary",
+      variant: "solid",
+      class: {
+        base: colorVariants.solid.primary,
+      },
+    },
+    {
+      color: "success",
+      variant: "solid",
+      class: {
+        base: colorVariants.solid.success,
+      },
+    },
+    {
+      color: "warning",
+      variant: "solid",
+      class: {
+        base: colorVariants.solid.warning,
+      },
+    },
+    {
+      color: "danger",
+      variant: "solid",
+      class: {
+        base: colorVariants.solid.danger,
+      },
+    },
+    {
+      color: "dark",
+      variant: "solid",
+      class: {
+        base: "bg-neutral-800 text-white",
+      },
+    },
+    {
+      color: "gray",
+      variant: "solid",
+      class: {
+      base: "bg-neutral-500 text-white",
       },
     },
   ],

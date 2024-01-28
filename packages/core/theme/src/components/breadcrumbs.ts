@@ -14,53 +14,46 @@ const breadcrumbItem = tv({
   slots: {
     base: "flex items-center",
     item: [
-      "flex gap-1 items-center",
+      "flex gap-1 items-center justify-center",
       "cursor-pointer",
       "whitespace-nowrap",
       "line-clamp-1",
       "outline-none",
       "tap-highlight-transparent",
+      "rounded-md",
       // focus ring
       ...dataFocusVisibleClasses,
     ],
-    separator: "text-default-400 px-1",
+    separator: "text-neutral-800 px-1",
   },
   variants: {
     color: {
-      foreground: {
-        item: "text-foreground/50",
-        separator: "text-foreground/50",
-      },
       primary: {
-        item: "text-primary/80",
-        separator: "text-primary/80",
-      },
-      secondary: {
-        item: "text-secondary/80",
-        separator: "text-secondary/80",
+        item: "text-neutral",
+        separator: "",
       },
       success: {
-        item: "text-success/80",
-        separator: "text-success/80",
+        item: "text-neutral",
+        separator: "",
       },
       warning: {
-        item: "text-warning/80",
-        separator: "text-warning/80",
+        item: "text-neutral",
+        separator: "",
       },
       danger: {
-        item: "text-danger/80",
-        separator: "text-danger/80",
+        item: "text-neutral",
+        separator: "",
       },
     },
     size: {
       sm: {
-        item: "text-tiny",
+        item: "text-xs !px-2 !py-1 !min-h-7 !min-w-7",
       },
       md: {
-        item: "text-small",
+        item: "text-sm !px-2 !py-1 !min-h-8 !min-w-8",
       },
       lg: {
-        item: "text-medium",
+        item: "text-md !px-2 !py-1 !min-h-8 !min-w-8",
       },
     },
     underline: {
@@ -96,7 +89,7 @@ const breadcrumbItem = tv({
     },
     disableAnimation: {
       false: {
-        item: "transition-opacity",
+        item: "!ease-out !duration-300"
       },
       true: {
         item: "transition-none",
@@ -105,8 +98,8 @@ const breadcrumbItem = tv({
   },
   defaultVariants: {
     size: "md",
-    color: "foreground",
-    underline: "hover",
+    color: "primary",
+    underline: "none",
     isDisabled: false,
     disableAnimation: false,
   },
@@ -114,23 +107,9 @@ const breadcrumbItem = tv({
     // isCurrent && color
     {
       isCurrent: true,
-      color: "foreground",
-      class: {
-        item: "text-foreground",
-      },
-    },
-    {
-      isCurrent: true,
       color: "primary",
       class: {
-        item: "text-primary",
-      },
-    },
-    {
-      isCurrent: true,
-      color: "secondary",
-      class: {
-        item: "text-secondary",
+        item: "text-brand",
       },
     },
     {
@@ -152,6 +131,42 @@ const breadcrumbItem = tv({
       color: "danger",
       class: {
         item: "text-danger",
+      },
+    },
+    // !isCurrent && underline
+    {
+      isCurrent: false,
+      underline: "none",
+      class: {
+        item: "no-underline",
+      },
+    },
+    {
+      isCurrent: false,
+      color: "primary",
+      class: {
+        item: "hover:text-white hover:bg-brand-500",
+      },
+    },
+    {
+      isCurrent: false,
+      color: "success",
+      class: {
+        item: "hover:text-white hover:bg-success-500",
+      },
+    },
+    {
+      isCurrent: false,
+      color: "warning",
+      class: {
+        item: "hover:text-white hover:bg-warning-500",
+      },
+    },
+    {
+      isCurrent: false,
+      color: "danger",
+      class: {
+        item: "hover:text-white hover:bg-danger-500",
       },
     },
     // !isCurrent && underline
@@ -195,13 +210,13 @@ const breadcrumbs = tv({
         list: "rounded-none",
       },
       sm: {
-        list: "rounded-small",
+        list: "rounded-sm",
       },
       md: {
-        list: "rounded-medium",
+        list: "rounded-md",
       },
       lg: {
-        list: "rounded-large",
+        list: "rounded-lg",
       },
       full: {
         list: "rounded-full",
@@ -209,18 +224,18 @@ const breadcrumbs = tv({
     },
     variant: {
       solid: {
-        list: "bg-default-100",
+        list: "bg-neutral-100",
       },
       bordered: {
-        list: "border-medium border-default-200 shadow-sm",
+        list: "border border-neutral-300",
       },
-      light: {},
+      default: "",
     },
   },
   defaultVariants: {
     size: "md",
     radius: "sm",
-    variant: "light",
+    variant: "default",
   },
   compoundVariants: [
     // variant

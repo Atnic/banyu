@@ -72,8 +72,9 @@ const popover = tv({
     ],
     content: [
       "z-10",
-      "px-2.5",
-      "py-1",
+      "p-[6px]",
+      // "px-2.5",
+      // "py-1",
       "w-full",
       "inline-flex",
       "flex-col",
@@ -90,26 +91,18 @@ const popover = tv({
   },
   variants: {
     size: {
-      sm: {content: "text-tiny"},
-      md: {content: "text-small"},
-      lg: {content: "text-medium"},
+      sm: {content: "text-xs"},
+      md: {content: "text-sm"},
+      lg: {content: "text-md"},
     },
     color: {
       default: {
-        base: "before:bg-content1 before:shadow-small",
-        content: "bg-content1",
-      },
-      foreground: {
-        base: "before:bg-foreground",
-        content: colorVariants.solid.foreground,
+        base: "before:bg-neutral-900 before:shadow-sm",
+        content: "bg-neutral-800 text-white",
       },
       primary: {
         base: "before:bg-primary",
         content: colorVariants.solid.primary,
-      },
-      secondary: {
-        base: "before:bg-secondary",
-        content: colorVariants.solid.secondary,
       },
       success: {
         base: "before:bg-success",
@@ -126,20 +119,20 @@ const popover = tv({
     },
     radius: {
       none: {content: "rounded-none"},
-      sm: {content: "rounded-small"},
-      md: {content: "rounded-medium"},
-      lg: {content: "rounded-large"},
+      sm: {content: "rounded-sm"},
+      md: {content: "rounded-md"},
+      lg: {content: "rounded-lg"},
       full: {content: "rounded-full"},
     },
     shadow: {
       sm: {
-        content: "shadow-small",
+        content: "shadow-sm",
       },
       md: {
-        content: "shadow-medium",
+        content: "shadow-md",
       },
       lg: {
-        content: "shadow-large",
+        content: "shadow-lg",
       },
     },
     backdrop: {
@@ -165,8 +158,8 @@ const popover = tv({
   },
   defaultVariants: {
     color: "default",
-    radius: "lg",
-    size: "md",
+    radius: "md",
+    size: "sm",
     shadow: "md",
     backdrop: "transparent",
     disableAnimation: false,

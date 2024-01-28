@@ -57,6 +57,6 @@ const Ripple: FC<RippleProps> = (props) => {
   );
 };
 
-Ripple.displayName = "NextUI.Ripple";
+Ripple.displayName = "Banyu.Ripple";
 
 export default Ripple;

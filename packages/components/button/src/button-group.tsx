@@ -20,6 +20,6 @@ const ButtonGroup = forwardRef<"div", ButtonGroupProps>((props, ref) => {
   );
 });
 
-ButtonGroup.displayName = "NextUI.ButtonGroup";
+ButtonGroup.displayName = "Banyu.ButtonGroup";
 
 export default ButtonGroup;
