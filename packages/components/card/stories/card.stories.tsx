@@ -1,12 +1,12 @@
-import React from "react";
-import {Meta} from "@storybook/react";
-import {card} from "@banyu/theme";
-import {Link} from "@banyu/link";
-import {Button} from "@banyu/button";
-import {Code} from "@banyu/code";
-import {Image} from "@banyu/image";
+import React from "react"
+import {Meta} from "@storybook/react"
+import {card} from "@banyu/theme"
+import {Link} from "@banyu/link"
+import {Button} from "@banyu/button"
+import {Code} from "@banyu/code"
+import {Image} from "@banyu/image"
 
-import {Card, CardBody, CardHeader, CardFooter, CardProps} from "../src";
+import {Card, CardBody, CardHeader, CardFooter, CardProps} from "../src"
 
 export default {
   title: "Components/Card",
@@ -67,12 +67,12 @@ export default {
       </div>
     ),
   ],
-} as Meta<typeof Card>;
+} as Meta<typeof Card>
 
 const defaultProps = {
   ...card.defaultVariants,
   disableRipple: false,
-};
+}
 
 const Template = (args: CardProps) => (
   <Card {...args} className="max-w-md">
@@ -80,7 +80,7 @@ const Template = (args: CardProps) => (
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
     </CardBody>
   </Card>
-);
+)
 
 const WithDividerTemplate = (args: CardProps) => (
   <Card {...args} className="max-w-md">
@@ -97,7 +97,7 @@ const WithDividerTemplate = (args: CardProps) => (
       </p>
     </CardFooter>
   </Card>
-);
+)
 
 const WithFooterTemplate = (args: CardProps) => (
   <Card {...args} className="p-4 max-w-md">
@@ -123,7 +123,7 @@ const WithFooterTemplate = (args: CardProps) => (
       </Link>
     </CardFooter>
   </Card>
-);
+)
 
 const WithAbsImageHeaderTemplate = (args: CardProps) => (
   <Card {...args} className="max-w-[330px]">
@@ -141,14 +141,14 @@ const WithAbsImageHeaderTemplate = (args: CardProps) => (
       width={330}
     />
   </Card>
-);
+)
 
 const WithAbsImgHeaderFooterTemplate = (args: CardProps) => (
   <Card className="w-[330px] bg-zinc-100 dark:bg-zinc-100" {...args}>
     <CardHeader className="absolute top-2 z-10">
       <div className="flex flex-col gap-2">
         <p className="text-xs text-black/40 uppercase font-bold">New</p>
-        <h4 className="text-3xl font-medium text-black">HomePod mini</h4>
+        <h4 className="text-3xl font-md text-black">HomePod mini</h4>
         <p className="text-sm text-black/80 pr-1.5">
           Room-filling sound, Intelligent assistant. Smart home control. Works seamlessly with
           iPhone. Check it out
@@ -167,19 +167,19 @@ const WithAbsImgHeaderFooterTemplate = (args: CardProps) => (
         <p className="text-xs text-black/80">Available soon.</p>
         <p className="text-xs text-black/80">Get notified.</p>
       </div>
-      <Button className="text-tiny" color="primary" radius="full" size="sm">
+      <Button className="text-xs" color="primary" radius="full" size="sm">
         Notify Me
       </Button>
     </CardFooter>
   </Card>
-);
+)
 
 const CoverImgTemplate = (args: CardProps) => (
   <div className="max-w-[900px] gap-2 grid grid-cols-12 grid-rows-2 px-8">
     <Card {...args} className="col-span-12 sm:col-span-4">
       <CardHeader className="absolute z-10 top-1 flex-col !items-start">
         <p className="text-xs text-white/60 uppercase font-bold">What to watch</p>
-        <h4 className="text-white font-medium text-lg">Stream the Acme event</h4>
+        <h4 className="text-white font-md text-lg">Stream the Acme event</h4>
       </CardHeader>
       <img
         alt="Card background"
@@ -190,7 +190,7 @@ const CoverImgTemplate = (args: CardProps) => (
     <Card {...args} className="col-span-12 sm:col-span-4">
       <CardHeader className="absolute z-10 top-1 flex-col !items-start">
         <p className="text-xs text-white/60 uppercase font-bold">Plant a tree</p>
-        <h4 className="text-white font-medium text-lg">Contribute to the planet</h4>
+        <h4 className="text-white font-md text-lg">Contribute to the planet</h4>
       </CardHeader>
       <img
         alt="Card background"
@@ -201,7 +201,7 @@ const CoverImgTemplate = (args: CardProps) => (
     <Card {...args} className="col-span-12 sm:col-span-4">
       <CardHeader className="absolute z-10 top-1 flex-col !items-start">
         <p className="text-xs text-white/60 uppercase font-bold">Supercharged</p>
-        <h4 className="text-white font-medium text-lg">Creates beauty like a beast</h4>
+        <h4 className="text-white font-md text-lg">Creates beauty like a beast</h4>
       </CardHeader>
       <img
         alt="Card background"
@@ -212,7 +212,7 @@ const CoverImgTemplate = (args: CardProps) => (
     <Card {...args} isFooterBlurred className="w-full h-[400px] col-span-12 sm:col-span-5">
       <CardHeader className="absolute z-10 top-1 flex-col items-start">
         <p className="text-xs text-white/60 uppercase font-bold">New</p>
-        <h4 className="text-black font-medium text-2xl">Acme camera</h4>
+        <h4 className="text-black font-md text-2xl">Acme camera</h4>
       </CardHeader>
       <img
         alt="Card example background"
@@ -232,7 +232,7 @@ const CoverImgTemplate = (args: CardProps) => (
     <Card {...args} isFooterBlurred className="w-full h-[400px] col-span-12 sm:col-span-7">
       <CardHeader className="absolute z-10 top-1 flex-col items-start">
         <p className="text-xs text-white/60 uppercase font-bold">Your day your way</p>
-        <h4 className="text-white/90 font-medium text-2xl">Your checklist for better sleep</h4>
+        <h4 className="text-white/90 font-md text-2xl">Your checklist for better sleep</h4>
       </CardHeader>
       <img
         alt="Relaxing app background"
@@ -255,7 +255,7 @@ const CoverImgTemplate = (args: CardProps) => (
       </CardFooter>
     </Card>
   </div>
-);
+)
 
 const CenterImgTemplate = (args: CardProps) => (
   <Card {...args} className="max-w-fit py-4 px-0">
@@ -273,7 +273,7 @@ const CenterImgTemplate = (args: CardProps) => (
       />
     </CardBody>
   </Card>
-);
+)
 
 const PrimaryActionTemplate = (args: CardProps) => {
   const list = [
@@ -317,14 +317,14 @@ const PrimaryActionTemplate = (args: CardProps) => {
       img: "/images/fruit-8.jpeg",
       price: "$12.20",
     },
-  ];
+  ]
 
-  type ListItem = (typeof list)[number];
+  type ListItem = (typeof list)[number]
 
   const handlePress = (item: ListItem) => {
     // eslint-disable-next-line no-console
-    console.log("item pressed", item);
-  };
+    console.log("item pressed", item)
+  }
 
   return (
     <div className="gap-2 grid grid-cols-2 sm:grid-cols-4">
@@ -345,8 +345,8 @@ const PrimaryActionTemplate = (args: CardProps) => {
         </Card>
       ))}
     </div>
-  );
-};
+  )
+}
 
 const CenterImgWithHeaderTemplate = (args: CardProps) => {
   const list = [
@@ -386,7 +386,7 @@ const CenterImgWithHeaderTemplate = (args: CardProps) => {
       title: "Accessories",
       img: "/images/assets/accessories.png",
     },
-  ];
+  ]
 
   return (
     <div className="flex gap-2 justify-center flex-wrap">
@@ -403,8 +403,8 @@ const CenterImgWithHeaderTemplate = (args: CardProps) => {
         </div>
       ))}
     </div>
-  );
-};
+  )
+}
 
 // export const Default = {
 //   render: Template,

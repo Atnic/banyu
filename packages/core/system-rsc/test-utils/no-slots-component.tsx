@@ -1,11 +1,11 @@
-import type {HTMLBanyuProps} from "../src/types";
+import type {HTMLBanyuProps} from "../src/types"
 
-import React, {useMemo} from "react";
-import {tv, type VariantProps} from "@banyu/theme";
-import {filterDOMProps, ReactRef, useDOMRef} from "@banyu/react-utils";
+import React, {useMemo} from "react"
+import {tv, type VariantProps} from "@banyu/theme"
+import {filterDOMProps, ReactRef, useDOMRef} from "@banyu/react-utils"
 
-import {mapPropsVariants} from "../src/utils";
-import {forwardRef} from "../src/utils";
+import {mapPropsVariants} from "../src/utils"
+import {forwardRef} from "../src/utils"
 /**
  * No slots
  */
@@ -26,9 +26,9 @@ const button = tv({
       foreground: "bg-foreground text-background",
     },
     size: {
-      sm: "px-unit-3 min-w-unit-16 h-unit-8 text-tiny gap-unit-2 rounded-small",
-      md: "px-unit-4 min-w-unit-20 h-unit-10 text-small gap-unit-2 rounded-medium",
-      lg: "px-unit-6 min-w-unit-24 h-unit-12 text-medium gap-unit-3 rounded-large",
+      sm: "px-unit-3 min-w-unit-16 h-unit-8 text-xs gap-unit-2 rounded-sm",
+      md: "px-unit-4 min-w-unit-20 h-unit-10 text-sm gap-unit-2 rounded-md",
+      lg: "px-unit-6 min-w-unit-24 h-unit-12 text-md gap-unit-3 rounded-lg",
     },
     isDisabled: {
       true: "opacity-disabled pointer-events-none",
@@ -51,30 +51,30 @@ const button = tv({
       class: "bg-primary/20 text-primary",
     },
   ],
-});
+})
 
 interface ButtonProps extends HTMLBanyuProps<"button">, VariantProps<typeof button> {
-  children: React.ReactNode;
-  disableRipple?: boolean;
-  ref?: ReactRef<HTMLButtonElement | null>;
+  children: React.ReactNode
+  disableRipple?: boolean
+  ref?: ReactRef<HTMLButtonElement | null>
 }
 
 export const Button = forwardRef<"button", ButtonProps>((originalProps, ref) => {
   // export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>((originalProps, ref) => {
-  const [props, variantProps] = mapPropsVariants(originalProps, button.variantKeys);
+  const [props, variantProps] = mapPropsVariants(originalProps, button.variantKeys)
 
   const styles = useMemo(
     () => button({...variantProps, className: originalProps?.className}),
     [...Object.values(variantProps), props.className],
-  );
+  )
 
-  const domRef = useDOMRef(ref);
+  const domRef = useDOMRef(ref)
 
   return (
     <button ref={domRef} {...filterDOMProps(props)} className={styles}>
       {props.children}
     </button>
-  );
-});
+  )
+})
 
-Button.displayName = "Button";
+Button.displayName = "Button"

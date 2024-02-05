@@ -1,7 +1,7 @@
-import type {VariantProps} from "tailwind-variants";
+import type {VariantProps} from "tailwind-variants"
 
-import {tv} from "../utils/tv";
-import {dataFocusVisibleClasses, groupDataFocusVisibleClasses} from "../utils";
+import {tv} from "../utils/tv"
+import {dataFocusVisibleClasses, groupDataFocusVisibleClasses} from "../utils"
 
 /**
  * Input wrapper **Tailwind Variants** component
@@ -31,7 +31,7 @@ const input = tv({
       "origin-top-left",
       "subpixel-antialiased",
       "block",
-      "text-small",
+      "text-sm",
       "text-foreground-500",
     ],
     mainWrapper: "h-full",
@@ -62,8 +62,8 @@ const input = tv({
       ...dataFocusVisibleClasses,
     ],
     helperWrapper: "hidden group-data-[has-helper=true]:flex p-1 relative flex-col gap-1.5",
-    description: "text-tiny text-foreground-400",
-    errorMessage: "text-tiny text-danger",
+    description: "text-xs text-foreground-400",
+    errorMessage: "text-xs text-danger",
   },
   variants: {
     variant: {
@@ -77,7 +77,7 @@ const input = tv({
       faded: {
         inputWrapper: [
           "bg-default-100",
-          "border-medium",
+          "border-md",
           "border-default-200",
           "data-[hover=true]:border-default-400",
         ],
@@ -85,7 +85,7 @@ const input = tv({
       },
       bordered: {
         inputWrapper: [
-          "border-medium",
+          "border-md",
           "border-default-200",
           "data-[hover=true]:border-default-400",
           "group-data-[focus=true]:border-default-foreground",
@@ -98,7 +98,7 @@ const input = tv({
           "!gap-0",
           "relative",
           "box-border",
-          "border-b-medium",
+          "border-b-md",
           "shadow-[0_1px_0px_0_rgba(0,0,0,0.05)]",
           "border-default-200",
           "!rounded-none",
@@ -128,20 +128,20 @@ const input = tv({
     },
     size: {
       sm: {
-        label: "text-tiny",
-        inputWrapper: "h-unit-8 min-h-unit-8 px-2 rounded-small",
-        input: "text-small",
-        clearButton: "text-medium",
+        label: "text-xs",
+        inputWrapper: "h-unit-8 min-h-unit-8 px-2 rounded-sm",
+        input: "text-sm",
+        clearButton: "text-md",
       },
       md: {
-        inputWrapper: "h-unit-10 min-h-unit-10 rounded-medium",
-        input: "text-small",
-        clearButton: "text-large",
+        inputWrapper: "h-unit-10 min-h-unit-10 rounded-md",
+        input: "text-sm",
+        clearButton: "text-lg",
       },
       lg: {
-        inputWrapper: "h-unit-12 min-h-unit-12 rounded-large",
-        input: "text-medium",
-        clearButton: "text-large",
+        inputWrapper: "h-unit-12 min-h-unit-12 rounded-lg",
+        input: "text-md",
+        clearButton: "text-lg",
       },
     },
     radius: {
@@ -149,13 +149,13 @@ const input = tv({
         inputWrapper: "rounded-none",
       },
       sm: {
-        inputWrapper: "rounded-small",
+        inputWrapper: "rounded-sm",
       },
       md: {
-        inputWrapper: "rounded-medium",
+        inputWrapper: "rounded-md",
       },
       lg: {
-        inputWrapper: "rounded-large",
+        inputWrapper: "rounded-lg",
       },
       full: {
         inputWrapper: "rounded-full",
@@ -172,7 +172,7 @@ const input = tv({
         label: "relative text-foreground pr-2",
       },
       inside: {
-        label: "text-tiny cursor-text",
+        label: "text-xs cursor-text",
         inputWrapper: "flex-col items-start justify-center gap-0",
         innerWrapper: "group-data-[has-label=true]:items-end",
       },
@@ -571,7 +571,7 @@ const input = tv({
       labelPlacement: "inside",
       size: "lg",
       class: {
-        label: "text-small",
+        label: "text-sm",
         inputWrapper: "h-16 py-2.5 gap-0",
       },
     },
@@ -647,7 +647,7 @@ const input = tv({
       labelPlacement: "inside",
       size: ["sm", "md"],
       class: {
-        label: "text-small",
+        label: "text-sm",
       },
     },
     {
@@ -656,7 +656,7 @@ const input = tv({
       size: "sm",
       class: {
         label: [
-          "group-data-[filled-within=true]:-translate-y-[calc(50%_+_theme(fontSize.tiny)/2_-_8px)]",
+          "group-data-[filled-within=true]:-translate-y-[calc(50%_+_theme(fontSize.xs)/2_-_8px)]",
         ],
       },
     },
@@ -666,7 +666,7 @@ const input = tv({
       size: "md",
       class: {
         label: [
-          "group-data-[filled-within=true]:-translate-y-[calc(50%_+_theme(fontSize.small)/2_-_6px)]",
+          "group-data-[filled-within=true]:-translate-y-[calc(50%_+_theme(fontSize.sm)/2_-_6px)]",
         ],
       },
     },
@@ -676,8 +676,8 @@ const input = tv({
       size: "lg",
       class: {
         label: [
-          "text-medium",
-          "group-data-[filled-within=true]:-translate-y-[calc(50%_+_theme(fontSize.small)/2_-_8px)]",
+          "text-md",
+          "group-data-[filled-within=true]:-translate-y-[calc(50%_+_theme(fontSize.sm)/2_-_8px)]",
         ],
       },
     },
@@ -689,7 +689,7 @@ const input = tv({
       size: "sm",
       class: {
         label: [
-          "group-data-[filled-within=true]:-translate-y-[calc(50%_+_theme(fontSize.tiny)/2_-_8px_-_theme(borderWidth.medium))]",
+          "group-data-[filled-within=true]:-translate-y-[calc(50%_+_theme(fontSize.xs)/2_-_8px_-_theme(borderWidth.md))]",
         ],
       },
     },
@@ -700,7 +700,7 @@ const input = tv({
       size: "md",
       class: {
         label: [
-          "group-data-[filled-within=true]:-translate-y-[calc(50%_+_theme(fontSize.small)/2_-_6px_-_theme(borderWidth.medium))]",
+          "group-data-[filled-within=true]:-translate-y-[calc(50%_+_theme(fontSize.sm)/2_-_6px_-_theme(borderWidth.md))]",
         ],
       },
     },
@@ -711,8 +711,8 @@ const input = tv({
       size: "lg",
       class: {
         label: [
-          "text-medium",
-          "group-data-[filled-within=true]:-translate-y-[calc(50%_+_theme(fontSize.small)/2_-_8px_-_theme(borderWidth.medium))]",
+          "text-md",
+          "group-data-[filled-within=true]:-translate-y-[calc(50%_+_theme(fontSize.sm)/2_-_8px_-_theme(borderWidth.md))]",
         ],
       },
     },
@@ -724,7 +724,7 @@ const input = tv({
       size: "sm",
       class: {
         label: [
-          "group-data-[filled-within=true]:-translate-y-[calc(50%_+_theme(fontSize.tiny)/2_-_5px)]",
+          "group-data-[filled-within=true]:-translate-y-[calc(50%_+_theme(fontSize.xs)/2_-_5px)]",
         ],
       },
     },
@@ -735,7 +735,7 @@ const input = tv({
       size: "md",
       class: {
         label: [
-          "group-data-[filled-within=true]:-translate-y-[calc(50%_+_theme(fontSize.small)/2_-_3.5px)]",
+          "group-data-[filled-within=true]:-translate-y-[calc(50%_+_theme(fontSize.sm)/2_-_3.5px)]",
         ],
       },
     },
@@ -746,8 +746,8 @@ const input = tv({
       isMultiline: false,
       class: {
         label: [
-          "text-medium",
-          "group-data-[filled-within=true]:-translate-y-[calc(50%_+_theme(fontSize.small)/2_-_4px)]",
+          "text-md",
+          "group-data-[filled-within=true]:-translate-y-[calc(50%_+_theme(fontSize.sm)/2_-_4px)]",
         ],
       },
     },
@@ -759,10 +759,10 @@ const input = tv({
       class: {
         label: [
           "left-2",
-          "text-tiny",
-          "group-data-[filled-within=true]:-translate-y-[calc(100%_+_theme(fontSize.tiny)/2_+_16px)]",
+          "text-xs",
+          "group-data-[filled-within=true]:-translate-y-[calc(100%_+_theme(fontSize.xs)/2_+_16px)]",
         ],
-        base: "data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_8px)]",
+        base: "data-[has-label=true]:mt-[calc(theme(fontSize.sm)_+_8px)]",
       },
     },
     {
@@ -772,10 +772,10 @@ const input = tv({
       class: {
         label: [
           "left-3",
-          "text-small",
-          "group-data-[filled-within=true]:-translate-y-[calc(100%_+_theme(fontSize.small)/2_+_20px)]",
+          "text-sm",
+          "group-data-[filled-within=true]:-translate-y-[calc(100%_+_theme(fontSize.sm)/2_+_20px)]",
         ],
-        base: "data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)]",
+        base: "data-[has-label=true]:mt-[calc(theme(fontSize.sm)_+_10px)]`",
       },
     },
     {
@@ -785,10 +785,10 @@ const input = tv({
       class: {
         label: [
           "left-3",
-          "text-medium",
-          "group-data-[filled-within=true]:-translate-y-[calc(100%_+_theme(fontSize.small)/2_+_24px)]",
+          "text-md",
+          "group-data-[filled-within=true]:-translate-y-[calc(100%_+_theme(fontSize.sm)/2_+_24px)]",
         ],
-        base: "data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_12px)]",
+        base: "data-[has-label=true]:mt-[calc(theme(fontSize.sm)_+_12px)]",
       },
     },
     // outside-left & size & hasHelper
@@ -858,13 +858,13 @@ const input = tv({
       isMultiline: true,
       radius: "full",
       class: {
-        inputWrapper: "data-[has-multiple-rows=true]:rounded-large",
+        inputWrapper: "data-[has-multiple-rows=true]:rounded-lg",
       },
     },
   ],
-});
+})
 
-export type InputVariantProps = VariantProps<typeof input>;
-export type InputSlots = keyof ReturnType<typeof input>;
+export type InputVariantProps = VariantProps<typeof input>
+export type InputSlots = keyof ReturnType<typeof input>
 
-export {input};
+export {input}

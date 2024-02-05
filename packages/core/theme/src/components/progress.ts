@@ -1,6 +1,6 @@
-import type {VariantProps} from "tailwind-variants";
+import type {VariantProps} from "tailwind-variants"
 
-import {tv} from "../utils/tv";
+import {tv} from "../utils/tv"
 
 /**
  * Progress **Tailwind Variants** component
@@ -53,18 +53,18 @@ const progress = tv(
       },
       size: {
         sm: {
-          label: "text-small",
-          value: "text-small",
+          label: "text-sm",
+          value: "text-sm",
           track: "h-1",
         },
         md: {
-          label: "text-medium",
-          value: "text-medium",
+          label: "text-md",
+          value: "text-md",
           track: "h-3",
         },
         lg: {
-          label: "text-large",
-          value: "text-large",
+          label: "text-lg",
+          value: "text-lg",
           track: "h-5",
         },
       },
@@ -74,16 +74,16 @@ const progress = tv(
           indicator: "rounded-none",
         },
         sm: {
-          track: "rounded-small",
-          indicator: "rounded-small",
+          track: "rounded-sm",
+          indicator: "rounded-sm",
         },
         md: {
-          track: "rounded-medium",
-          indicator: "rounded-medium",
+          track: "rounded-md",
+          indicator: "rounded-md",
         },
         lg: {
-          track: "rounded-large",
-          indicator: "rounded-large",
+          track: "rounded-lg",
+          indicator: "rounded-lg",
         },
         full: {
           track: "rounded-full",
@@ -135,9 +135,9 @@ const progress = tv(
   {
     twMerge: false,
   },
-);
+)
 
-export type ProgressVariantProps = VariantProps<typeof progress>;
-export type ProgressSlots = keyof ReturnType<typeof progress>;
+export type ProgressVariantProps = VariantProps<typeof progress>
+export type ProgressSlots = keyof ReturnType<typeof progress>
 
-export {progress};
+export {progress}

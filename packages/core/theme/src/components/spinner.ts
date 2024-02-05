@@ -1,6 +1,6 @@
-import type {VariantProps} from "tailwind-variants";
+import type {VariantProps} from "tailwind-variants"
 
-import {tv} from "../utils/tv";
+import {tv} from "../utils/tv"
 
 /**
  * Spinner wrapper **Tailwind Variants** component
@@ -51,19 +51,19 @@ const spinner = tv({
         wrapper: "w-5 h-5",
         circle1: "border-2",
         circle2: "border-2",
-        label: "text-small",
+        label: "text-sm",
       },
       md: {
         wrapper: "w-8 h-8",
         circle1: "border-3",
         circle2: "border-3",
-        label: "text-medium",
+        label: "text-md",
       },
       lg: {
         wrapper: "w-10 h-10",
         circle1: "border-3",
         circle2: "border-3",
-        label: "text-large",
+        label: "text-lg",
       },
     },
     color: {
@@ -126,9 +126,9 @@ const spinner = tv({
     color: "primary",
     labelColor: "foreground",
   },
-});
+})
 
-export type SpinnerVariantProps = VariantProps<typeof spinner>;
-export type SpinnerSlots = keyof ReturnType<typeof spinner>;
+export type SpinnerVariantProps = VariantProps<typeof spinner>
+export type SpinnerSlots = keyof ReturnType<typeof spinner>
 
-export {spinner};
+export {spinner}

@@ -1,7 +1,7 @@
-import type {VariantProps} from "tailwind-variants";
+import type {VariantProps} from "tailwind-variants"
 
-import {dataFocusVisibleClasses} from "../utils";
-import {tv} from "../utils/tv";
+import {dataFocusVisibleClasses} from "../utils"
+import {tv} from "../utils/tv"
 
 const select = tv({
   slots: {
@@ -12,7 +12,7 @@ const select = tv({
       "z-10",
       "origin-top-left",
       "subpixel-antialiased",
-      "text-small",
+      "text-sm",
       "text-foreground-500",
       "pointer-events-none",
     ],
@@ -28,8 +28,8 @@ const select = tv({
     listbox: "",
     popoverContent: "w-full p-1 overflow-hidden",
     helperWrapper: "p-1 flex relative flex-col gap-1.5",
-    description: "text-tiny text-foreground-400",
-    errorMessage: "text-tiny text-danger",
+    description: "text-xs text-foreground-400",
+    errorMessage: "text-xs text-danger",
   },
   variants: {
     variant: {
@@ -43,7 +43,7 @@ const select = tv({
       faded: {
         trigger: [
           "bg-default-100",
-          "border-medium",
+          "border-md",
           "border-default-200",
           "data-[hover=true]:border-default-400",
         ],
@@ -51,7 +51,7 @@ const select = tv({
       },
       bordered: {
         trigger: [
-          "border-medium",
+          "border-md",
           "border-default-200",
           "data-[hover=true]:border-default-400",
           "data-[open=true]:border-default-foreground",
@@ -66,7 +66,7 @@ const select = tv({
           "!gap-0",
           "relative",
           "box-border",
-          "border-b-medium",
+          "border-b-md",
           "shadow-[0_1px_0px_0_rgba(0,0,0,0.05)]",
           "border-default-200",
           "!rounded-none",
@@ -96,17 +96,17 @@ const select = tv({
     },
     size: {
       sm: {
-        label: "text-tiny",
-        trigger: "h-unit-8 min-h-unit-8 px-2 rounded-small",
-        value: "text-small",
+        label: "text-xs",
+        trigger: "h-unit-8 min-h-unit-8 px-2 rounded-sm",
+        value: "text-sm",
       },
       md: {
-        trigger: "h-unit-10 min-h-unit-10 rounded-medium",
-        value: "text-small",
+        trigger: "h-unit-10 min-h-unit-10 rounded-md",
+        value: "text-sm",
       },
       lg: {
-        trigger: "h-unit-12 min-h-unit-12 rounded-large",
-        value: "text-medium",
+        trigger: "h-unit-12 min-h-unit-12 rounded-lg",
+        value: "text-md",
       },
     },
     radius: {
@@ -114,13 +114,13 @@ const select = tv({
         trigger: "rounded-none",
       },
       sm: {
-        trigger: "rounded-small",
+        trigger: "rounded-sm",
       },
       md: {
-        trigger: "rounded-medium",
+        trigger: "rounded-md",
       },
       lg: {
-        trigger: "rounded-large",
+        trigger: "rounded-lg",
       },
       full: {
         trigger: "rounded-full",
@@ -135,7 +135,7 @@ const select = tv({
         label: "relative pr-2 text-foreground",
       },
       inside: {
-        label: "text-tiny cursor-pointer",
+        label: "text-xs cursor-pointer",
         trigger: "flex-col items-start justify-center gap-0",
       },
     },
@@ -530,7 +530,7 @@ const select = tv({
       labelPlacement: "inside",
       size: "lg",
       class: {
-        label: "text-small",
+        label: "text-sm",
         trigger: "h-16 min-h-unit-16 py-2.5 gap-0",
       },
     },
@@ -561,7 +561,7 @@ const select = tv({
       labelPlacement: "inside",
       size: ["sm", "md"],
       class: {
-        label: "text-small",
+        label: "text-sm",
       },
     },
     {
@@ -569,7 +569,7 @@ const select = tv({
       isMultiline: false,
       size: "sm",
       class: {
-        label: ["group-data-[filled=true]:-translate-y-[calc(50%_+_theme(fontSize.tiny)/2_-_8px)]"],
+        label: ["group-data-[filled=true]:-translate-y-[calc(50%_+_theme(fontSize.xs)/2_-_8px)]"],
         innerWrapper: "group-data-[has-label=true]:pt-4",
       },
     },
@@ -578,9 +578,7 @@ const select = tv({
       isMultiline: false,
       size: "md",
       class: {
-        label: [
-          "group-data-[filled=true]:-translate-y-[calc(50%_+_theme(fontSize.small)/2_-_6px)]",
-        ],
+        label: ["group-data-[filled=true]:-translate-y-[calc(50%_+_theme(fontSize.sm)/2_-_6px)]"],
         innerWrapper: "group-data-[has-label=true]:pt-4",
       },
     },
@@ -590,8 +588,8 @@ const select = tv({
       size: "lg",
       class: {
         label: [
-          "text-medium",
-          "group-data-[filled=true]:-translate-y-[calc(50%_+_theme(fontSize.small)/2_-_8px)]",
+          "text-md",
+          "group-data-[filled=true]:-translate-y-[calc(50%_+_theme(fontSize.sm)/2_-_8px)]",
         ],
         innerWrapper: "group-data-[has-label=true]:pt-5",
       },
@@ -604,7 +602,7 @@ const select = tv({
       size: "sm",
       class: {
         label: [
-          "group-data-[filled=true]:-translate-y-[calc(50%_+_theme(fontSize.tiny)/2_-_8px_-_theme(borderWidth.medium))]",
+          "group-data-[filled=true]:-translate-y-[calc(50%_+_theme(fontSize.xs)/2_-_8px_-_theme(borderWidth.md))]",
         ],
       },
     },
@@ -615,7 +613,7 @@ const select = tv({
       size: "md",
       class: {
         label: [
-          "group-data-[filled=true]:-translate-y-[calc(50%_+_theme(fontSize.small)/2_-_6px_-_theme(borderWidth.medium))]",
+          "group-data-[filled=true]:-translate-y-[calc(50%_+_theme(fontSize.sm)/2_-_6px_-_theme(borderWidth.md))]",
         ],
       },
     },
@@ -626,8 +624,8 @@ const select = tv({
       size: "lg",
       class: {
         label: [
-          "text-medium",
-          "group-data-[filled=true]:-translate-y-[calc(50%_+_theme(fontSize.small)/2_-_8px_-_theme(borderWidth.medium))]",
+          "text-md",
+          "group-data-[filled=true]:-translate-y-[calc(50%_+_theme(fontSize.sm)/2_-_8px_-_theme(borderWidth.md))]",
         ],
       },
     },
@@ -638,7 +636,7 @@ const select = tv({
       isMultiline: false,
       size: "sm",
       class: {
-        label: ["group-data-[filled=true]:-translate-y-[calc(50%_+_theme(fontSize.tiny)/2_-_5px)]"],
+        label: ["group-data-[filled=true]:-translate-y-[calc(50%_+_theme(fontSize.xs)/2_-_5px)]"],
       },
     },
     {
@@ -647,9 +645,7 @@ const select = tv({
       isMultiline: false,
       size: "md",
       class: {
-        label: [
-          "group-data-[filled=true]:-translate-y-[calc(50%_+_theme(fontSize.small)/2_-_3.5px)]",
-        ],
+        label: ["group-data-[filled=true]:-translate-y-[calc(50%_+_theme(fontSize.sm)/2_-_3.5px)]"],
       },
     },
     {
@@ -659,8 +655,8 @@ const select = tv({
       size: "lg",
       class: {
         label: [
-          "text-medium",
-          "group-data-[filled=true]:-translate-y-[calc(50%_+_theme(fontSize.small)/2_-_4px)]",
+          "text-md",
+          "group-data-[filled=true]:-translate-y-[calc(50%_+_theme(fontSize.sm)/2_-_4px)]",
         ],
       },
     },
@@ -672,10 +668,10 @@ const select = tv({
       class: {
         label: [
           "left-2",
-          "text-tiny",
-          "group-data-[filled=true]:-translate-y-[calc(100%_+_theme(fontSize.tiny)/2_+_16px)]",
+          "text-xs",
+          "group-data-[filled=true]:-translate-y-[calc(100%_+_theme(fontSize.xs)/2_+_16px)]",
         ],
-        base: "data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_8px)]",
+        base: "data-[has-label=true]:mt-[calc(theme(fontSize.sm)_+_8px)]",
       },
     },
     {
@@ -685,10 +681,10 @@ const select = tv({
       class: {
         label: [
           "left-3",
-          "text-small",
-          "group-data-[filled=true]:-translate-y-[calc(100%_+_theme(fontSize.small)/2_+_20px)]",
+          "text-sm",
+          "group-data-[filled=true]:-translate-y-[calc(100%_+_theme(fontSize.sm)/2_+_20px)]",
         ],
-        base: "data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)]",
+        base: "data-[has-label=true]:mt-[calc(theme(fontSize.sm)_+_10px)]`",
       },
     },
     {
@@ -698,10 +694,10 @@ const select = tv({
       class: {
         label: [
           "left-3",
-          "text-medium",
-          "group-data-[filled=true]:-translate-y-[calc(100%_+_theme(fontSize.small)/2_+_24px)]",
+          "text-md",
+          "group-data-[filled=true]:-translate-y-[calc(100%_+_theme(fontSize.sm)/2_+_24px)]",
         ],
-        base: "data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_12px)]",
+        base: "data-[has-label=true]:mt-[calc(theme(fontSize.sm)_+_12px)]",
       },
     },
     // isMultiline & labelPlacement="outside"
@@ -720,9 +716,9 @@ const select = tv({
       },
     },
   ],
-});
+})
 
-export type SelectVariantProps = VariantProps<typeof select>;
-export type SelectSlots = keyof ReturnType<typeof select>;
+export type SelectVariantProps = VariantProps<typeof select>
+export type SelectSlots = keyof ReturnType<typeof select>
 
-export {select};
+export {select}

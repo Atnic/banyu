@@ -1,7 +1,7 @@
-import type {VariantProps} from "tailwind-variants";
+import type {VariantProps} from "tailwind-variants"
 
-import {dataFocusVisibleClasses} from "../utils";
-import {tv} from "../utils/tv";
+import {dataFocusVisibleClasses} from "../utils"
+import {tv} from "../utils/tv"
 
 /**
  * BreadcrumbsItem wrapper **Tailwind Variants** component
@@ -89,7 +89,7 @@ const breadcrumbItem = tv({
     },
     disableAnimation: {
       false: {
-        item: "!ease-out !duration-300"
+        item: "!ease-out !duration-300",
       },
       true: {
         item: "transition-none",
@@ -183,7 +183,7 @@ const breadcrumbItem = tv({
       class: "underline-offset-4",
     },
   ],
-});
+})
 
 /**
  * Breadcrumbs wrapper **Tailwind Variants** component
@@ -196,7 +196,7 @@ const breadcrumbs = tv({
   slots: {
     base: "",
     list: "flex flex-wrap list-none",
-    ellipsis: "text-medium",
+    ellipsis: "text-md",
     separator: "text-default-400 px-1",
   },
   variants: {
@@ -268,11 +268,11 @@ const breadcrumbs = tv({
       },
     },
   ],
-});
+})
 
-export type BreadcrumbsVariantProps = VariantProps<typeof breadcrumbs>;
-export type BreadcrumbsSlots = keyof ReturnType<typeof breadcrumbs>;
-export type BreadcrumbItemVariantProps = VariantProps<typeof breadcrumbItem>;
-export type BreadcrumbItemSlots = keyof ReturnType<typeof breadcrumbItem>;
+export type BreadcrumbsVariantProps = VariantProps<typeof breadcrumbs>
+export type BreadcrumbsSlots = keyof ReturnType<typeof breadcrumbs>
+export type BreadcrumbItemVariantProps = VariantProps<typeof breadcrumbItem>
+export type BreadcrumbItemSlots = keyof ReturnType<typeof breadcrumbItem>
 
-export {breadcrumbs, breadcrumbItem};
+export {breadcrumbs, breadcrumbItem}

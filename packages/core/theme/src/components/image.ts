@@ -1,6 +1,6 @@
-import type {VariantProps} from "tailwind-variants";
+import type {VariantProps} from "tailwind-variants"
 
-import {tv} from "../utils/tv";
+import {tv} from "../utils/tv"
 
 /**
  * Image wrapper **Tailwind Variants** component
@@ -52,16 +52,16 @@ const image = tv({
         img: "shadow-none",
       },
       sm: {
-        wrapper: "shadow-small",
-        img: "shadow-small",
+        wrapper: "shadow-sm",
+        img: "shadow-sm",
       },
       md: {
-        wrapper: "shadow-medium",
-        img: "shadow-medium",
+        wrapper: "shadow-md",
+        img: "shadow-md",
       },
       lg: {
-        wrapper: "shadow-large",
-        img: "shadow-large",
+        wrapper: "shadow-lg",
+        img: "shadow-lg",
       },
     },
     isZoomed: {
@@ -131,7 +131,7 @@ const image = tv({
     {
       slots: ["wrapper", "img", "blurredImg", "zoomedWrapper"],
       radius: "sm",
-      class: "rounded-small",
+      class: "rounded-sm",
     },
     {
       slots: ["wrapper", "img", "blurredImg", "zoomedWrapper"],
@@ -141,12 +141,12 @@ const image = tv({
     {
       slots: ["wrapper", "img", "blurredImg", "zoomedWrapper"],
       radius: "lg",
-      class: "rounded-large",
+      class: "rounded-lg",
     },
   ],
-});
+})
 
-export type ImageVariantProps = VariantProps<typeof image>;
-export type ImageSlots = keyof ReturnType<typeof image>;
+export type ImageVariantProps = VariantProps<typeof image>
+export type ImageSlots = keyof ReturnType<typeof image>
 
-export {image};
+export {image}

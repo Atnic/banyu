@@ -1,7 +1,7 @@
-import type {VariantProps} from "tailwind-variants";
+import type {VariantProps} from "tailwind-variants"
 
-import {tv} from "../utils/tv";
-import {dataFocusVisibleClasses} from "../utils";
+import {tv} from "../utils/tv"
+import {dataFocusVisibleClasses} from "../utils"
 
 /**
  * Dropdown wrapper **Tailwind Variants** component
@@ -19,7 +19,7 @@ import {dataFocusVisibleClasses} from "../utils";
  */
 const dropdown = tv({
   base: ["w-full", "p-1", "min-w-[200px]"],
-});
+})
 
 /**
  * DropdownItem wrapper **Tailwind Variants** component
@@ -57,7 +57,7 @@ const dropdownItem = tv({
       "w-full",
       "h-full",
       "box-border",
-      "rounded-small",
+      "rounded-sm",
       "outline-none",
       "cursor-pointer",
       "tap-highlight-transparent",
@@ -67,8 +67,8 @@ const dropdownItem = tv({
       "data-[focus-visible=true]:dark:ring-offset-background-content1",
     ],
     wrapper: "w-full flex flex-col items-start justify-center",
-    title: "flex-1 text-small font-normal truncate",
-    description: ["w-full", "text-tiny", "text-foreground-500", "group-hover:text-current"],
+    title: "flex-1 text-sm font-normal truncate",
+    description: ["w-full", "text-xs", "text-foreground-500", "group-hover:text-current"],
     selectedIcon: ["text-inherit", "w-3", "h-3", "flex-shrink-0"],
     shortcut: [
       "px-1",
@@ -76,8 +76,8 @@ const dropdownItem = tv({
       "rounded",
       "font-sans",
       "text-foreground-500",
-      "text-tiny",
-      "border-small",
+      "text-xs",
+      "border-sm",
       "border-default-300",
       "group-hover:border-current",
     ],
@@ -88,13 +88,13 @@ const dropdownItem = tv({
         base: "",
       },
       bordered: {
-        base: "border-medium border-transparent bg-transparent",
+        base: "border-md border-transparent bg-transparent",
       },
       light: {
         base: "bg-transparent",
       },
       faded: {
-        base: "border-small border-transparent hover:border-default data-[hover=true]:bg-default-100",
+        base: "border-sm border-transparent hover:border-default data-[hover=true]:bg-default-100",
       },
       flat: {
         base: "",
@@ -386,7 +386,7 @@ const dropdownItem = tv({
       },
     },
   ],
-});
+})
 
 /**
  * Dropdown wrapper **Tailwind Variants** component
@@ -405,11 +405,11 @@ const dropdownItem = tv({
 const dropdownSection = tv({
   slots: {
     base: "relative mb-2",
-    heading: "pl-1 text-tiny text-foreground-500",
+    heading: "pl-1 text-xs text-foreground-500",
     group: "data-[has-title=true]:pt-1",
     divider: "mt-2",
   },
-});
+})
 
 /**
  * Dropdown Menu wrapper **Tailwind Variants** component
@@ -419,11 +419,11 @@ const dropdownSection = tv({
  */
 const dropdownMenu = tv({
   base: "w-full flex flex-col gap-0.5 p-1",
-});
+})
 
-export type DropdownSectionVariantProps = VariantProps<typeof dropdownSection>;
-export type DropdownSectionSlots = keyof ReturnType<typeof dropdownSection>;
-export type DropdownItemVariantProps = VariantProps<typeof dropdownItem>;
-export type DropdownItemSlots = keyof ReturnType<typeof dropdownItem>;
+export type DropdownSectionVariantProps = VariantProps<typeof dropdownSection>
+export type DropdownSectionSlots = keyof ReturnType<typeof dropdownSection>
+export type DropdownItemVariantProps = VariantProps<typeof dropdownItem>
+export type DropdownItemSlots = keyof ReturnType<typeof dropdownItem>
 
-export {dropdown, dropdownItem, dropdownSection, dropdownMenu};
+export {dropdown, dropdownItem, dropdownSection, dropdownMenu}

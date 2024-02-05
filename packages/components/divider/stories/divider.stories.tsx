@@ -1,8 +1,8 @@
-import React from "react";
-import {Meta} from "@storybook/react";
-import {divider} from "@banyu/theme";
+import React from "react"
+import {Meta} from "@storybook/react"
+import {divider} from "@banyu/theme"
 
-import {Divider, DividerProps} from "../src";
+import {Divider, DividerProps} from "../src"
 
 export default {
   title: "Components/Divider",
@@ -22,16 +22,16 @@ export default {
       </div>
     ),
   ],
-} as Meta<typeof Divider>;
+} as Meta<typeof Divider>
 
 const defaultProps = {
   ...divider.defaultVariants,
-};
+}
 
 const Template = (args: DividerProps) => (
   <div className="max-w-md">
     <div className="space-y-1">
-      <h4 className="text-base font-medium">Banyu Components</h4>
+      <h4 className="text-base font-md">Banyu Components</h4>
       <p className="text-sm text-default-400">Beautiful, fast and modern React UI library.</p>
     </div>
     <Divider className="my-4" />
@@ -43,7 +43,7 @@ const Template = (args: DividerProps) => (
       <div>Source</div>
     </div>
   </div>
-);
+)
 
 // export const Default = {
 //   render: Template,

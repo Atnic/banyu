@@ -1,7 +1,7 @@
-import type {VariantProps} from "tailwind-variants";
+import type {VariantProps} from "tailwind-variants"
 
-import {tv} from "../utils/tv";
-import {groupDataFocusVisibleClasses} from "../utils";
+import {tv} from "../utils/tv"
+import {groupDataFocusVisibleClasses} from "../utils"
 
 /**
  * Toggle (Switch) wrapper **Tailwind Variants** component
@@ -124,7 +124,7 @@ const toggle = tv({
         ],
         endContent: "text-md",
         startContent: "text-md",
-        label: "text-large",
+        label: "text-lg",
       },
     },
     isDisabled: {
@@ -185,9 +185,9 @@ const toggle = tv({
       },
     },
   ],
-});
+})
 
-export type ToggleVariantProps = VariantProps<typeof toggle>;
-export type ToggleSlots = keyof ReturnType<typeof toggle>;
+export type ToggleVariantProps = VariantProps<typeof toggle>
+export type ToggleSlots = keyof ReturnType<typeof toggle>
 
-export {toggle};
+export {toggle}

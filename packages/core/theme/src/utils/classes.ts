@@ -5,7 +5,7 @@
 export const baseStyles = (prefix: string) => ({
   color: `hsl(var(--${prefix}-foreground))`,
   backgroundColor: `hsl(var(--${prefix}-background))`,
-});
+})
 
 /**
  * focus classNames when the element is focused by keyboard.
@@ -15,7 +15,7 @@ export const focusVisibleClasses = [
   "focus-visible:outline-2",
   "focus-visible:outline-focus",
   "focus-visible:outline-offset-2",
-];
+]
 
 export const dataFocusVisibleClasses = [
   "outline-none",
@@ -23,7 +23,7 @@ export const dataFocusVisibleClasses = [
   "data-[focus-visible=true]:outline-2",
   "data-[focus-visible=true]:outline-focus",
   "data-[focus-visible=true]:outline-offset-2",
-];
+]
 
 export const groupDataFocusVisibleClasses = [
   "outline-none",
@@ -32,7 +32,7 @@ export const groupDataFocusVisibleClasses = [
   "group-data-[focus-visible=true]:ring-focus",
   "group-data-[focus-visible=true]:ring-offset-2",
   "group-data-[focus-visible=true]:ring-offset-background",
-];
+]
 
 export const ringClasses = [
   "outline-none",
@@ -40,7 +40,7 @@ export const ringClasses = [
   "ring-focus",
   "ring-offset-2",
   "ring-offset-background",
-];
+]
 
 /**
  * This classes centers the element by using absolute positioning.
@@ -51,20 +51,20 @@ export const translateCenterClasses = [
   "left-1/2",
   "-translate-x-1/2",
   "-translate-y-1/2",
-];
+]
 
-export const absoluteFullClasses = ["absolute", "inset-0"];
+export const absoluteFullClasses = ["absolute", "inset-0"]
 
 /**
  * This object defines CSS classes for collapsing adjacent variant borders.
  * It includes classes for different variants like default, primary, secondary, etc.
  */
 export const collapseAdjacentVariantBorders = {
-  primary: ["[&+.border-medium.border-primary]:ms-[calc(theme(borderWidth.medium)*-1)]"],
-  danger: ["[&+.border-medium.border-danger]:ms-[calc(theme(borderWidth.medium)*-1)]"],
-  success: ["[&+.border-medium.border-success]:ms-[calc(theme(borderWidth.medium)*-1)]"],
-  warning: ["[&+.border-medium.border-warning]:ms-[calc(theme(borderWidth.medium)*-1)]"],
-  basic: ["[&+.border-medium.border-default]:ms-[calc(theme(borderWidth.medium)*-1)]"],
-  transparent: ["[&+.border-medium.border-danger]:ms-[calc(theme(borderWidth.medium)*-1)]"],
-  white: ["[&+.border-medium.border-danger]:ms-[calc(theme(borderWidth.medium)*-1)]"],
-};
+  primary: ["[&+.border-md.border-primary]:ms-[calc(theme(borderWidth.md)*-1)]"],
+  danger: ["[&+.border-md.border-danger]:ms-[calc(theme(borderWidth.md)*-1)]"],
+  success: ["[&+.border-md.border-success]:ms-[calc(theme(borderWidth.md)*-1)]"],
+  warning: ["[&+.border-md.border-warning]:ms-[calc(theme(borderWidth.md)*-1)]"],
+  basic: ["[&+.border-md.border-default]:ms-[calc(theme(borderWidth.md)*-1)]"],
+  transparent: ["[&+.border-md.border-danger]:ms-[calc(theme(borderWidth.md)*-1)]"],
+  white: ["[&+.border-md.border-danger]:ms-[calc(theme(borderWidth.md)*-1)]"],
+}

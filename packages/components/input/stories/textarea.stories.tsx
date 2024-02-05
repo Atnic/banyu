@@ -1,9 +1,8 @@
-import React from "react";
-import {Meta} from "@storybook/react";
-import {input} from "@banyu/theme";
-import {SendFilledIcon, PlusFilledIcon} from "@banyu/shared-icons";
+import React from "react"
+import {Meta} from "@storybook/react"
+import {input} from "@banyu/theme"
 
-import {Textarea, TextAreaProps} from "../src";
+import {Textarea, TextAreaProps} from "../src"
 
 export default {
   title: "Components/Textarea",
@@ -57,31 +56,31 @@ export default {
       </div>
     ),
   ],
-} as Meta<typeof Textarea>;
+} as Meta<typeof Textarea>
 
 const defaultProps = {
   ...input.defaultVariants,
   disableAutosize: false,
   label: "Description",
   placeholder: "Enter your description",
-};
+}
 
 const Template = (args: TextAreaProps) => (
   <div className="w-full max-w-[440px]">
     <Textarea {...args} />
   </div>
-);
+)
 
 const ControlledTemplate = (args: TextAreaProps) => {
-  const [value, setValue] = React.useState("");
+  const [value, setValue] = React.useState("")
 
   return (
     <div className="w-full  flex-col gap-2 max-w-[440px]">
       <Textarea {...args} value={value} onValueChange={setValue} />
-      <p className="text-default-500 text-small">Textarea value: {value}</p>
+      <p className="text-default-500 text-sm">Textarea value: {value}</p>
     </div>
-  );
-};
+  )
+}
 
 const MinRowsTemplate = (args: TextAreaProps) => (
   <div className="w-full max-w-xl flex flex-row gap-4">
@@ -89,7 +88,7 @@ const MinRowsTemplate = (args: TextAreaProps) => (
     <Textarea {...args} description="minRows is 5" minRows={5} />
     <Textarea {...args} description="minRows is 10" minRows={10} />
   </div>
-);
+)
 
 const MaxRowsTemplate = (args: TextAreaProps) => (
   <div className="w-full max-w-xl flex flex-row gap-4">
@@ -97,7 +96,7 @@ const MaxRowsTemplate = (args: TextAreaProps) => (
     <Textarea {...args} description="maxRows is 5" maxRows={5} />
     <Textarea {...args} description="maxRows is 3" maxRows={3} />
   </div>
-);
+)
 
 // export const Default = {
 //   render: Template,

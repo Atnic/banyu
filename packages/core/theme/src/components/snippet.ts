@@ -1,7 +1,6 @@
-import type {VariantProps} from "tailwind-variants";
+import type {VariantProps} from "tailwind-variants"
 
-import {tv} from "../utils/tv";
-import {colorVariants} from "../utils";
+import {tv} from "../utils/tv"
 
 /**
  * Snippet wrapper **Tailwind Variants** component
@@ -23,7 +22,7 @@ import {colorVariants} from "../utils";
  */
 const snippet = tv({
   slots: {
-    base: "inline-flex items-center justify-between h-fit rounded-large gap-2",
+    base: "inline-flex items-center justify-between h-fit rounded-lg gap-2",
     pre: "bg-transparent text-inherit font-mono font-normal inline-block whitespace-nowrap",
     content: "flex flex-col",
     symbol: "select-none",
@@ -31,7 +30,7 @@ const snippet = tv({
       "group",
       "relative",
       "z-10",
-      "text-large",
+      "text-lg",
       "text-inherit",
       "data-[hover=true]:bg-transparent",
     ],
@@ -45,7 +44,7 @@ const snippet = tv({
   variants: {
     variant: {
       solid: "",
-      outline: "border-medium bg-transparent",
+      outline: "border-md bg-transparent",
       ghost: "",
       soft: "",
       white: "",
@@ -62,13 +61,13 @@ const snippet = tv({
     },
     size: {
       sm: {
-        base: "px-1.5 py-0.5 text-tiny rounded-small",
+        base: "px-1.5 py-0.5 text-xs rounded-sm",
       },
       md: {
-        base: "px-3 py-1.5 text-small rounded-medium",
+        base: "px-3 py-1.5 text-sm rounded-md",
       },
       lg: {
-        base: "px-4 py-2 text-medium rounded-large",
+        base: "px-4 py-2 text-md rounded-lg",
       },
     },
     radius: {
@@ -76,13 +75,13 @@ const snippet = tv({
         base: "rounded-none",
       },
       sm: {
-        base: "rounded-small",
+        base: "rounded-sm",
       },
       md: {
-        base: "rounded-medium",
+        base: "rounded-md",
       },
       lg: {
-        base: "rounded-large",
+        base: "rounded-lg",
       },
     },
     fullWidth: {
@@ -136,9 +135,9 @@ const snippet = tv({
       },
     },
   ],
-});
+})
 
-export type SnippetVariantProps = VariantProps<typeof snippet>;
-export type SnippetSlots = keyof ReturnType<typeof snippet>;
+export type SnippetVariantProps = VariantProps<typeof snippet>
+export type SnippetSlots = keyof ReturnType<typeof snippet>
 
-export {snippet};
+export {snippet}

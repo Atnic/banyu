@@ -1,7 +1,7 @@
-import type {VariantProps} from "tailwind-variants";
+import type {VariantProps} from "tailwind-variants"
 
-import {tv} from "../utils/tv";
-import {groupDataFocusVisibleClasses} from "../utils";
+import {tv} from "../utils/tv"
+import {groupDataFocusVisibleClasses} from "../utils"
 
 /**
  * Radio wrapper **Tailwind Variants** component
@@ -36,7 +36,7 @@ const radio = tv({
       "flex-shrink-0",
       "overflow-hidden",
       "border-solid",
-      "border-medium",
+      "border-md",
       "box-border",
       "border-default",
       "rounded-full",
@@ -91,22 +91,22 @@ const radio = tv({
         wrapper: "w-4 h-4",
         control: "w-1.5 h-1.5",
         labelWrapper: "ml-1",
-        label: "text-small",
-        description: "text-tiny",
+        label: "text-sm",
+        description: "text-xs",
       },
       md: {
         wrapper: "w-5 h-5",
         control: "w-2 h-2",
         labelWrapper: "ml-2",
-        label: "text-medium",
-        description: "text-small",
+        label: "text-md",
+        description: "text-sm",
       },
       lg: {
         wrapper: "w-6 h-6",
         control: "w-2.5 h-2.5",
         labelWrapper: "ml-2",
-        label: "text-large",
-        description: "text-medium",
+        label: "text-lg",
+        description: "text-md",
       },
     },
     isDisabled: {
@@ -143,7 +143,7 @@ const radio = tv({
     isInvalid: false,
     disableAnimation: false,
   },
-});
+})
 
 /**
  * RadioGroup wrapper **Tailwind Variants** component
@@ -163,8 +163,8 @@ const radioGroup = tv({
     base: "relative flex flex-col gap-2",
     label: "relative text-foreground-500",
     wrapper: "flex flex-col flex-wrap gap-2 data-[orientation=horizontal]:flex-row",
-    description: "text-tiny text-foreground-400",
-    errorMessage: "text-tiny text-danger",
+    description: "text-xs text-foreground-400",
+    errorMessage: "text-xs text-danger",
   },
   variants: {
     isRequired: {
@@ -189,11 +189,11 @@ const radioGroup = tv({
     isRequired: false,
     disableAnimation: false,
   },
-});
+})
 
-export type RadioGroupSlots = keyof ReturnType<typeof radioGroup>;
+export type RadioGroupSlots = keyof ReturnType<typeof radioGroup>
 
-export type RadioVariantProps = VariantProps<typeof radio>;
-export type RadioSlots = keyof ReturnType<typeof radio>;
+export type RadioVariantProps = VariantProps<typeof radio>
+export type RadioSlots = keyof ReturnType<typeof radio>
 
-export {radio, radioGroup};
+export {radio, radioGroup}

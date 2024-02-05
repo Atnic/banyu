@@ -1,10 +1,10 @@
-import type {HTMLBanyuProps} from "../src/types";
+import type {HTMLBanyuProps} from "../src/types"
 
-import React, {useMemo} from "react";
-import {SlotsToClasses, tv, type VariantProps} from "@banyu/theme";
-import {filterDOMProps, ReactRef, useDOMRef} from "@banyu/react-utils";
+import React, {useMemo} from "react"
+import {SlotsToClasses, tv, type VariantProps} from "@banyu/theme"
+import {filterDOMProps, ReactRef, useDOMRef} from "@banyu/react-utils"
 
-import {cn, forwardRef, mapPropsVariants} from "../src/utils";
+import {cn, forwardRef, mapPropsVariants} from "../src/utils"
 
 const card = tv({
   slots: {
@@ -64,13 +64,13 @@ const card = tv({
         base: "shadow-none",
       },
       sm: {
-        base: "shadow-small",
+        base: "shadow-sm",
       },
       md: {
-        base: "shadow-medium",
+        base: "shadow-md",
       },
       lg: {
-        base: "shadow-large",
+        base: "shadow-lg",
       },
     },
     radius: {
@@ -80,19 +80,19 @@ const card = tv({
         footer: "rounded-none",
       },
       sm: {
-        base: "rounded-small",
-        header: "rounded-t-small",
-        footer: "rounded-b-small",
+        base: "rounded-sm",
+        header: "rounded-t-sm",
+        footer: "rounded-b-sm",
       },
       md: {
-        base: "rounded-medium",
-        header: "rounded-t-medium",
-        footer: "rounded-b-medium",
+        base: "rounded-md",
+        header: "rounded-t-md",
+        footer: "rounded-b-md",
       },
       lg: {
-        base: "rounded-large",
-        header: "rounded-t-large",
-        footer: "rounded-b-large",
+        base: "rounded-lg",
+        header: "rounded-t-lg",
+        footer: "rounded-b-lg",
       },
     },
     fullWidth: {
@@ -152,29 +152,29 @@ const card = tv({
     disableAnimation: false,
     isFooterBlurred: false,
   },
-});
+})
 
-type CardVariantProps = VariantProps<typeof card>;
-type CardSlots = keyof ReturnType<typeof card>;
+type CardVariantProps = VariantProps<typeof card>
+type CardSlots = keyof ReturnType<typeof card>
 
 interface CardProps extends HTMLBanyuProps, CardVariantProps {
-  header?: React.ReactNode;
-  footer?: React.ReactNode;
-  children: React.ReactNode;
-  ref?: ReactRef<HTMLDivElement | null>;
-  classNames?: SlotsToClasses<CardSlots>;
+  header?: React.ReactNode
+  footer?: React.ReactNode
+  children: React.ReactNode
+  ref?: ReactRef<HTMLDivElement | null>
+  classNames?: SlotsToClasses<CardSlots>
 }
 
 export const Card = forwardRef<"div", CardProps>((originalProps, ref) => {
-  const [props, variantProps] = mapPropsVariants(originalProps, card.variantKeys);
+  const [props, variantProps] = mapPropsVariants(originalProps, card.variantKeys)
 
-  const {header, footer, className, children, classNames, ...otherProps} = props;
+  const {header, footer, className, children, classNames, ...otherProps} = props
 
-  const styles = useMemo(() => card({...variantProps}), [...Object.values(variantProps)]);
+  const styles = useMemo(() => card({...variantProps}), [...Object.values(variantProps)])
 
-  const baseStyles = cn(classNames?.base, className);
+  const baseStyles = cn(classNames?.base, className)
 
-  const domRef = useDOMRef(ref);
+  const domRef = useDOMRef(ref)
 
   return (
     <div
@@ -193,7 +193,7 @@ export const Card = forwardRef<"div", CardProps>((originalProps, ref) => {
         {footer}
       </div>
     </div>
-  );
-});
+  )
+})
 
-Card.displayName = "Card";
+Card.displayName = "Card"

@@ -1,7 +1,7 @@
-import type {VariantProps} from "tailwind-variants";
+import type {VariantProps} from "tailwind-variants"
 
-import {tv} from "../utils/tv";
-import {dataFocusVisibleClasses} from "../utils";
+import {tv} from "../utils/tv"
+import {dataFocusVisibleClasses} from "../utils"
 
 /**
  * Menu wrapper **Tailwind Variants** component
@@ -23,7 +23,7 @@ const menu = tv({
       "text-start",
     ],
   },
-});
+})
 
 /**
  * MenuItem wrapper **Tailwind Variants** component
@@ -61,7 +61,7 @@ const menuItem = tv({
       "w-full",
       "h-full",
       "box-border",
-      "rounded-small",
+      "rounded-sm",
       "subpixel-antialiased",
       "outline-none",
       "cursor-pointer",
@@ -71,8 +71,8 @@ const menuItem = tv({
       "data-[focus-visible=true]:dark:ring-offset-background-content1",
     ],
     wrapper: "w-full flex flex-col items-start justify-center",
-    title: "flex-1 text-small font-normal truncate",
-    description: ["w-full", "text-tiny", "text-foreground-500", "group-hover:text-neutral"],
+    title: "flex-1 text-sm font-normal truncate",
+    description: ["w-full", "text-xs", "text-foreground-500", "group-hover:text-neutral"],
     selectedIcon: ["text-inherit", "w-3", "h-3", "flex-shrink-0"],
     shortcut: [
       "px-1",
@@ -80,8 +80,8 @@ const menuItem = tv({
       "rounded",
       "font-sans",
       "text-foreground-500",
-      "text-tiny",
-      "border-small",
+      "text-xs",
+      "border-sm",
       "border-neutral-300",
       "group-hover:border-neutral",
     ],
@@ -92,14 +92,14 @@ const menuItem = tv({
         base: "",
       },
       bordered: {
-        base: "border-medium border-transparent bg-transparent",
+        base: "border-md border-transparent bg-transparent",
       },
       light: {
         base: "bg-transparent",
       },
       faded: {
         base: [
-          "border-small border-transparent hover:border-neutral data-[hover=true]:bg-neutral-100",
+          "border-sm border-transparent hover:border-neutral data-[hover=true]:bg-neutral-100",
           "data-[selectable=true]:focus:border-neutral data-[selectable=true]:focus:bg-neutral-100",
         ],
       },
@@ -490,7 +490,7 @@ const menuItem = tv({
       },
     },
   ],
-});
+})
 
 /**
  * Menu section wrapper **Tailwind Variants** component
@@ -509,17 +509,17 @@ const menuItem = tv({
 const menuSection = tv({
   slots: {
     base: "relative mb-2",
-    heading: "pl-1 text-tiny text-foreground-500",
+    heading: "pl-1 text-xs text-foreground-500",
     group: "data-[has-title=true]:pt-1",
     divider: "mt-2",
   },
-});
+})
 
-export type MenuVariantProps = VariantProps<typeof menu>;
-export type MenuSlots = keyof ReturnType<typeof menu>;
-export type MenuSectionVariantProps = VariantProps<typeof menuSection>;
-export type MenuSectionSlots = keyof ReturnType<typeof menuSection>;
-export type MenuItemVariantProps = VariantProps<typeof menuItem>;
-export type MenuItemSlots = keyof ReturnType<typeof menuItem>;
+export type MenuVariantProps = VariantProps<typeof menu>
+export type MenuSlots = keyof ReturnType<typeof menu>
+export type MenuSectionVariantProps = VariantProps<typeof menuSection>
+export type MenuSectionSlots = keyof ReturnType<typeof menuSection>
+export type MenuItemVariantProps = VariantProps<typeof menuItem>
+export type MenuItemSlots = keyof ReturnType<typeof menuItem>
 
-export {menu, menuItem, menuSection};
+export {menu, menuItem, menuSection}

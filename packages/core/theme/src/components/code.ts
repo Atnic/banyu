@@ -1,7 +1,7 @@
-import type {VariantProps} from "tailwind-variants";
+import type {VariantProps} from "tailwind-variants"
 
-import {tv} from "../utils/tv";
-import {colorVariants} from "../utils";
+import {tv} from "../utils/tv"
+import {colorVariants} from "../utils"
 
 /**
  * Code wrapper **Tailwind Variants** component
@@ -27,7 +27,7 @@ const code = tv({
     size: {
       sm: "text-sm",
       md: "text-md",
-      lg: "text-large",
+      lg: "text-lg",
     },
     radius: {
       none: "rounded-none",
@@ -42,8 +42,8 @@ const code = tv({
     size: "sm",
     radius: "sm",
   },
-});
+})
 
-export type CodeVariantProps = VariantProps<typeof code>;
+export type CodeVariantProps = VariantProps<typeof code>
 
-export {code};
+export {code}

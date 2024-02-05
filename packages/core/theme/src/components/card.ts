@@ -1,7 +1,7 @@
-import type {VariantProps} from "tailwind-variants";
+import type {VariantProps} from "tailwind-variants"
 
-import {tv} from "../utils/tv";
-import {dataFocusVisibleClasses} from "../utils";
+import {tv} from "../utils/tv"
+import {dataFocusVisibleClasses} from "../utils"
 
 /**
  * Card **Tailwind Variants** component
@@ -77,13 +77,13 @@ const card = tv({
         base: "shadow-none",
       },
       sm: {
-        base: "shadow-small",
+        base: "shadow-sm",
       },
       md: {
-        base: "shadow-medium",
+        base: "shadow-md",
       },
       lg: {
-        base: "shadow-large",
+        base: "shadow-lg",
       },
     },
     radius: {
@@ -93,19 +93,19 @@ const card = tv({
         footer: "rounded-none",
       },
       sm: {
-        base: "rounded-small",
-        header: "rounded-t-small",
-        footer: "rounded-b-small",
+        base: "rounded-sm",
+        header: "rounded-t-sm",
+        footer: "rounded-b-sm",
       },
       md: {
-        base: "rounded-medium",
-        header: "rounded-t-medium",
-        footer: "rounded-b-medium",
+        base: "rounded-md",
+        header: "rounded-t-md",
+        footer: "rounded-b-md",
       },
       lg: {
-        base: "rounded-large",
-        header: "rounded-t-large",
-        footer: "rounded-b-large",
+        base: "rounded-lg",
+        header: "rounded-t-lg",
+        footer: "rounded-b-lg",
       },
     },
     fullWidth: {
@@ -163,10 +163,10 @@ const card = tv({
     disableAnimation: false,
     isFooterBlurred: false,
   },
-});
+})
 
-export type CardVariantProps = VariantProps<typeof card>;
-export type CardSlots = keyof ReturnType<typeof card>;
-export type CardReturnType = ReturnType<typeof card>;
+export type CardVariantProps = VariantProps<typeof card>
+export type CardSlots = keyof ReturnType<typeof card>
+export type CardReturnType = ReturnType<typeof card>
 
-export {card};
+export {card}

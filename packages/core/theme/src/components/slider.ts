@@ -1,7 +1,7 @@
-import type {VariantProps} from "tailwind-variants";
+import type {VariantProps} from "tailwind-variants"
 
-import {dataFocusVisibleClasses} from "../utils";
-import {tv} from "../utils/tv";
+import {dataFocusVisibleClasses} from "../utils"
+import {tv} from "../utils/tv"
 
 /**
  * Slider wrapper **Tailwind Variants** component
@@ -43,7 +43,7 @@ const slider = tv({
     ],
     mark: [
       "absolute",
-      "text-small",
+      "text-sm",
       "cursor-default",
       "opacity-50",
       "data-[in-range=true]:opacity-100",
@@ -59,8 +59,8 @@ const slider = tv({
       "before:w-11",
       "before:h-11",
       "before:rounded-full",
-      "after:shadow-small",
-      "after:shadow-small",
+      "after:shadow-sm",
+      "after:shadow-sm",
       "after:bg-background",
       "data-[focused=true]:z-10",
       dataFocusVisibleClasses,
@@ -71,21 +71,21 @@ const slider = tv({
   variants: {
     size: {
       sm: {
-        label: "text-small",
-        value: "text-small",
+        label: "text-sm",
+        value: "text-sm",
         thumb: "w-5 h-5 after:w-4 after:h-4",
         step: "data-[in-range=false]:bg-default-200",
       },
       md: {
         thumb: "w-6 h-6 after:w-5 after:h-5",
-        label: "text-small",
-        value: "text-small",
+        label: "text-sm",
+        value: "text-sm",
       },
       lg: {
         thumb: "h-7 w-7 after:w-5 after:h-5",
         step: "w-2 h-2",
-        label: "text-medium",
-        value: "text-medium",
+        label: "text-md",
+        value: "text-md",
         mark: "mt-2",
       },
     },
@@ -95,15 +95,15 @@ const slider = tv({
       },
       sm: {
         thumb:
-          "rounded-[calc(theme(borderRadius.small)/2)] after:rounded-[calc(theme(borderRadius.small)/3)]",
+          "rounded-[calc(theme(borderRadius.sm)/2)] after:rounded-[calc(theme(borderRadius.sm)/3)]",
       },
       md: {
         thumb:
-          "rounded-[calc(theme(borderRadius.medium)/2)] after:rounded-[calc(theme(borderRadius.medium)/3)]",
+          "rounded-[calc(theme(borderRadius.md)/2)] after:rounded-[calc(theme(borderRadius.md)/3)]",
       },
       lg: {
         thumb:
-          "rounded-[calc(theme(borderRadius.large)/1.5)] after:rounded-[calc(theme(borderRadius.large)/2)]",
+          "rounded-[calc(theme(borderRadius.lg)/1.5)] after:rounded-[calc(theme(borderRadius.lg)/2)]",
       },
       full: {
         thumb: "rounded-full after:rounded-full",
@@ -214,7 +214,7 @@ const slider = tv({
       size: ["sm", "md"],
       showOutline: false,
       class: {
-        thumb: "shadow-small",
+        thumb: "shadow-sm",
       },
     },
     // size && color
@@ -420,9 +420,9 @@ const slider = tv({
     disableAnimation: false,
     showOutline: false,
   },
-});
+})
 
-export type SliderVariantProps = VariantProps<typeof slider>;
-export type SliderSlots = keyof ReturnType<typeof slider>;
+export type SliderVariantProps = VariantProps<typeof slider>
+export type SliderSlots = keyof ReturnType<typeof slider>
 
-export {slider};
+export {slider}

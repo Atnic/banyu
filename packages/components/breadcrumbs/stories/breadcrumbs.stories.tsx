@@ -1,23 +1,23 @@
-import React from "react";
+import React from "react"
 // @ts-ignore
-import {Meta} from "@storybook/react";
-import {breadcrumbItem} from "@banyu/theme";
-import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem} from "@banyu/dropdown";
-import {Button} from "@banyu/button";
-import {Tooltip} from "@banyu/tooltip";
+import {Meta} from "@storybook/react"
+import {breadcrumbItem} from "@banyu/theme"
+import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem} from "@banyu/dropdown"
+import {Button} from "@banyu/button"
 import {
-    ArrowRightIcon,
-    CheckIcon,
-    ChevronDownIcon, ChevronRightIcon,
-    HeadphonesIcon, HomeIcon,
-    InfoIcon,
-    MailFilledIcon,
-    PetBoldIcon,
-    ShoppingCartBoldIcon,
-} from "@banyu/shared-icons";
-import {clsx} from "@banyu/shared-utils";
+  ArrowRightIcon,
+  CheckIcon,
+  ChevronDownIcon,
+  ChevronRightIcon,
+  HeadphonesIcon,
+  HomeIcon,
+  InfoIcon,
+  MailFilledIcon,
+  PetBoldIcon,
+} from "@banyu/shared-icons"
+import {clsx} from "@banyu/shared-utils"
 
-import {Breadcrumbs, BreadcrumbItem, BreadcrumbsProps} from "../src";
+import {Breadcrumbs, BreadcrumbItem, BreadcrumbsProps} from "../src"
 
 export default {
   title: "Components/Breadcrumbs",
@@ -73,32 +73,26 @@ export default {
       },
     },
   },
-} as Meta<typeof Breadcrumbs>;
+} as Meta<typeof Breadcrumbs>
 
 const defaultProps = {
   ...breadcrumbItem.defaultVariants,
   variant: "default",
-};
+}
 
 const Template = (args: BreadcrumbsProps & {page: number}) => (
   <Breadcrumbs {...args}>
     <BreadcrumbItem href="#">
-        <HomeIcon className="text-xl"/>
+      <HomeIcon className="text-xl" />
     </BreadcrumbItem>
-    <BreadcrumbItem href="#">
-      Menu 1
-    </BreadcrumbItem>
-    <BreadcrumbItem href="#">
-      Menu 2
-    </BreadcrumbItem>
-    <BreadcrumbItem href="#">
-      Menu 3
-    </BreadcrumbItem>
+    <BreadcrumbItem href="#">Menu 1</BreadcrumbItem>
+    <BreadcrumbItem href="#">Menu 2</BreadcrumbItem>
+    <BreadcrumbItem href="#">Menu 3</BreadcrumbItem>
   </Breadcrumbs>
-);
+)
 
 const ControlledTemplate = (args: BreadcrumbsProps & {page: number}) => {
-  const [currentPage, setCurrentPage] = React.useState<React.Key>("song");
+  const [currentPage, setCurrentPage] = React.useState<React.Key>("song")
 
   return (
     <Breadcrumbs {...args} onAction={(key) => setCurrentPage(key)}>
@@ -118,11 +112,11 @@ const ControlledTemplate = (args: BreadcrumbsProps & {page: number}) => {
         Song
       </BreadcrumbItem>
     </Breadcrumbs>
-  );
-};
+  )
+}
 
 const MenuTypeTemplate = (args: BreadcrumbsProps & {page: number}) => {
-  const [currentPage, setCurrentPage] = React.useState<React.Key>("music");
+  const [currentPage, setCurrentPage] = React.useState<React.Key>("music")
 
   return (
     <Breadcrumbs
@@ -132,7 +126,7 @@ const MenuTypeTemplate = (args: BreadcrumbsProps & {page: number}) => {
       }}
       itemClasses={{
         item: [
-          "px-2 py-0.5 border-small border-default-400 rounded-small",
+          "px-2 py-0.5 border-sm border-default-400 rounded-sm",
           "data-[current='true']:border-foreground transition-colors",
           "data-[disabled='true']:border-default-400 data-[disabled='true']:bg-default-100",
         ],
@@ -156,8 +150,8 @@ const MenuTypeTemplate = (args: BreadcrumbsProps & {page: number}) => {
         Song
       </BreadcrumbItem>
     </Breadcrumbs>
-  );
-};
+  )
+}
 
 const WithStartContentTemplate = (args: BreadcrumbsProps & {page: number}) => (
   <Breadcrumbs {...args}>
@@ -192,7 +186,7 @@ const WithStartContentTemplate = (args: BreadcrumbsProps & {page: number}) => (
       Song
     </BreadcrumbItem>
   </Breadcrumbs>
-);
+)
 
 const WithEndContentTemplate = (args: BreadcrumbsProps & {page: number}) => (
   <Breadcrumbs {...args}>
@@ -227,7 +221,7 @@ const WithEndContentTemplate = (args: BreadcrumbsProps & {page: number}) => (
       Song
     </BreadcrumbItem>
   </Breadcrumbs>
-);
+)
 
 const WithDropdownEllipsisTemplate = (args: BreadcrumbsProps & {page: number}) => (
   <Breadcrumbs
@@ -253,7 +247,7 @@ const WithDropdownEllipsisTemplate = (args: BreadcrumbsProps & {page: number}) =
     )}
   >
     <BreadcrumbItem href="http://localhost:6006/?path=/story/components-breadcrumbs--default&args=page:1">
-        <HomeIcon className="text-xl"/>
+      <HomeIcon className="text-xl" />
     </BreadcrumbItem>
     <BreadcrumbItem href="http://localhost:6006/?path=/story/components-breadcrumbs--default&args=page:2">
       Menu 1
@@ -271,14 +265,14 @@ const WithDropdownEllipsisTemplate = (args: BreadcrumbsProps & {page: number}) =
       Menu 4
     </BreadcrumbItem>
   </Breadcrumbs>
-);
+)
 
 const WithDropdownItemTemplate = (args: BreadcrumbsProps & {page: number}) => {
   const sizeMap = {
     sm: "text-xs",
     md: "text-sm",
     lg: "text-md",
-  };
+  }
 
   return (
     <Breadcrumbs
@@ -289,7 +283,7 @@ const WithDropdownItemTemplate = (args: BreadcrumbsProps & {page: number}) => {
       }}
     >
       <BreadcrumbItem href="http://localhost:6006/?path=/story/components-breadcrumbs--default&args=page:1">
-          <HomeIcon className="text-xl"/>
+        <HomeIcon className="text-xl" />
       </BreadcrumbItem>
       <BreadcrumbItem href="http://localhost:6006/?path=/story/components-breadcrumbs--default&args=page:2">
         Music
@@ -332,14 +326,14 @@ const WithDropdownItemTemplate = (args: BreadcrumbsProps & {page: number}) => {
         </Dropdown>
       </BreadcrumbItem>
     </Breadcrumbs>
-  );
-};
+  )
+}
 
 const CustomStylesTemplate = (args: BreadcrumbsProps & {page: number}) => (
   <Breadcrumbs
     {...args}
     classNames={{
-      list: "bg-gradient-to-br from-violet-500 to-fuchsia-500 shadow-small",
+      list: "bg-gradient-to-br from-violet-500 to-fuchsia-500 shadow-sm",
     }}
     itemClasses={{
       item: "text-white/60 data-[current=true]:text-white",
@@ -348,7 +342,7 @@ const CustomStylesTemplate = (args: BreadcrumbsProps & {page: number}) => (
     variant="solid"
   >
     <BreadcrumbItem href="http://localhost:6006/?path=/story/components-breadcrumbs--default&args=page:1">
-        <HeadphonesIcon />
+      <HeadphonesIcon />
     </BreadcrumbItem>
     <BreadcrumbItem href="http://localhost:6006/?path=/story/components-breadcrumbs--default&args=page:2">
       Checkout
@@ -360,14 +354,14 @@ const CustomStylesTemplate = (args: BreadcrumbsProps & {page: number}) => (
       Delivery Address
     </BreadcrumbItem>
   </Breadcrumbs>
-);
+)
 
 export const Default = {
   render: Template,
   args: {
     ...defaultProps,
   },
-};
+}
 
 export const ArrowRightSeparator = {
   render: Template,
@@ -376,9 +370,9 @@ export const ArrowRightSeparator = {
     itemClasses: {
       separator: "px-2",
     },
-    separator: <ArrowRightIcon className="text-black text-sm"/>,
+    separator: <ArrowRightIcon className="text-black text-sm" />,
   },
-};
+}
 export const ChevronSeparator = {
   render: Template,
   args: {
@@ -386,9 +380,9 @@ export const ChevronSeparator = {
     itemClasses: {
       separator: "px-2",
     },
-    separator: <ChevronRightIcon className="text-black text-sm"/>,
+    separator: <ChevronRightIcon className="text-black text-sm" />,
   },
-};
+}
 export const CustomSeparator = {
   render: Template,
   args: {
@@ -398,7 +392,7 @@ export const CustomSeparator = {
     },
     separator: "🫰",
   },
-};
+}
 
 // export const ControlledCurrentItem = {
 //   render: ControlledTemplate,
@@ -442,7 +436,7 @@ export const WithDropdownEllipsis = {
     ...defaultProps,
     maxItems: 3,
   },
-};
+}
 
 export const WithItemsBeforeCollapse = {
   render: WithDropdownEllipsisTemplate,
@@ -452,7 +446,7 @@ export const WithItemsBeforeCollapse = {
     itemsBeforeCollapse: 2,
     itemsAfterCollapse: 1,
   },
-};
+}
 
 // export const WithDropdownItem = {
 //   render: WithDropdownItemTemplate,

@@ -1,8 +1,8 @@
-import React from "react";
-import {Meta} from "@storybook/react";
-import {image} from "@banyu/theme";
+import React from "react"
+import {Meta} from "@storybook/react"
+import {image} from "@banyu/theme"
 
-import {Image, ImageProps} from "../src";
+import {Image, ImageProps} from "../src"
 
 export default {
   title: "Components/Image",
@@ -43,32 +43,32 @@ export default {
       </div>
     ),
   ],
-} as Meta<typeof Image>;
+} as Meta<typeof Image>
 
 const defaultProps = {
   ...image.defaultVariants,
   src: "./images/local-image-1.jpeg",
   alt: "Banyu hero image",
   disableSkeleton: true,
-};
+}
 
 const LoadingTemplate = (args: ImageProps) => {
-  const [isLoading, setIsLoading] = React.useState(true);
+  const [isLoading, setIsLoading] = React.useState(true)
 
   React.useEffect(() => {
-    const time = !args.disableSkeleton ? 2500 : 500;
+    const time = !args.disableSkeleton ? 2500 : 500
 
     const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, time);
+      setIsLoading(false)
+    }, time)
 
     return () => {
-      clearTimeout(timer);
-    };
-  }, []);
+      clearTimeout(timer)
+    }
+  }, [])
 
-  return <Image {...args} isLoading={isLoading} />;
-};
+  return <Image {...args} isLoading={isLoading} />
+}
 
 // export const Default = {
 //   args: {
@@ -82,7 +82,7 @@ const LoadingTemplate = (args: ImageProps) => {
 //     ...defaultProps,
 //     width: 300,
 //     isBlurred: true,
-//     src: "/images/local-image-small.jpg",
+//     src: "/images/local-image-sm.jpg",
 //     // src:
 //     //   "https://images.unsplash.com/photo-1519638831568-d9897f54ed69?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
 //   },
@@ -105,7 +105,7 @@ const LoadingTemplate = (args: ImageProps) => {
 //     isZoomed: true,
 //     radius: "lg",
 //     shadow: "md",
-//     src: "/images/local-image-small.jpg",
+//     src: "/images/local-image-sm.jpg",
 //   },
 // };
 //

@@ -6,7 +6,9 @@
   "scripts": {
     "build": "turbo build --filter=!@banyu/storybook",
     "build:fast": "turbo build:fast --filter=!@banyu/storybook",
-    "storybook": "pnpm --filter @banyu/storybook dev",
+    "sb": "pnpm --filter @banyu/storybook dev",
+    "build:sb": "pnpm --filter @banyu/storybook build",
+    "start:sb": "pnpm --filter @banyu/storybook start",
     "clean": "pnpm turbo:clean && pnpm clean:jest && pnpm clean:node-modules && pnpm clean:lock && pnpm install --hoist",
     "clean:node-modules": "rimraf ./apps/**/node_modules && rimraf ./packages/**/**/node_modules && rm -rf ./node_modules",
     "clean:changelogs": "rimraf ./packages/**/**/CHANGELOG.md",

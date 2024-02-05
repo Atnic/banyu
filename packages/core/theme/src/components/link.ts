@@ -1,7 +1,7 @@
-import type {VariantProps} from "tailwind-variants";
+import type {VariantProps} from "tailwind-variants"
 
-import {tv} from "../utils/tv";
-import {dataFocusVisibleClasses} from "../utils";
+import {tv} from "../utils/tv"
+import {dataFocusVisibleClasses} from "../utils"
 
 /**
  * Link wrapper **Tailwind Variants** component
@@ -17,9 +17,9 @@ const link = tv({
   ],
   variants: {
     size: {
-      sm: "text-small",
-      md: "text-medium",
-      lg: "text-large",
+      sm: "text-sm",
+      md: "text-md",
+      lg: "text-lg",
     },
     color: {
       dark: "text-neutral-800",
@@ -109,10 +109,10 @@ const link = tv({
     isDisabled: false,
     disableAnimation: false,
   },
-});
+})
 
-export const linkAnchorClasses = "flex mx-1 text-current self-center";
+export const linkAnchorClasses = "flex mx-1 text-current self-center"
 
-export type LinkVariantProps = VariantProps<typeof link>;
+export type LinkVariantProps = VariantProps<typeof link>
 
-export {link};
+export {link}
