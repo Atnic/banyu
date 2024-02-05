@@ -2,7 +2,7 @@
 
 Displays a list of actions or options that a user can choose.
 
-Please refer to the [documentation](https://Banyu.org/docs/components/dropdown) for more information.
+Please refer to the [documentation](https://localhost:3000/components/dropdown) for more information.
 
 ## Installation
 

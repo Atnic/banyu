@@ -90,7 +90,8 @@ const resolveConfig = (
         resolved.utilities[cssSelector]![banyuThemeColorVariable] = `${h} ${s}% ${l}%`;
         // if an alpha value was provided in the color definition, store it in a css variable
         if (typeof defaultAlphaValue === "number") {
-          resolved.utilities[cssSelector]![banyuThemeOpacityVariable] = defaultAlphaValue.toFixed(2);
+          resolved.utilities[cssSelector]![banyuThemeOpacityVariable] =
+            defaultAlphaValue.toFixed(2);
         }
         // set the dynamic color in tailwind config theme.colors
         resolved.colors[colorName] = ({opacityVariable, opacityValue}) => {
@@ -218,7 +219,7 @@ const corePlugin = (
             divider: `var(--${prefix}-divider-weight)`,
           },
           spacing: {
-            unit: `var(--${prefix}-spacing-unit)`,
+            px: `var(--${prefix}-spacing)`,
             ...createSpacingUnits(prefix),
           },
           minWidth: {
@@ -228,33 +229,62 @@ const corePlugin = (
             ...minSizes,
           },
           fontSize: {
-            tiny: [`var(--${prefix}-font-size-tiny)`, `var(--${prefix}-line-height-tiny)`],
-            small: [`var(--${prefix}-font-size-small)`, `var(--${prefix}-line-height-small)`],
-            medium: [`var(--${prefix}-font-size-medium)`, `var(--${prefix}-line-height-medium)`],
-            large: [`var(--${prefix}-font-size-large)`, `var(--${prefix}-line-height-large)`],
+            xs: [`var(--${prefix}-font-size-xs)`, `var(--${prefix}-line-height-xs)`],
+            sm: [`var(--${prefix}-font-size-sm)`, `var(--${prefix}-line-height-sm)`],
+            md: [`var(--${prefix}-font-size-md)`, `var(--${prefix}-line-height-md)`],
+            lg: [`var(--${prefix}-font-size-lg)`, `var(--${prefix}-line-height-lg)`],
+          },
+          fontFamily: {
+            sans: [
+              "Inter",
+              "ui-sans-serif",
+              "system-ui",
+              "-apple-system",
+              "BlinkMacSystemFont",
+              "Helvetica Neue",
+              "Arial",
+              "Noto Sans",
+              "sans-serif",
+              "Apple Color Emoji",
+              "Segoe UI Emoji",
+              "Segoe UI Symbol",
+              "Noto Color Emoji",
+            ],
+            serif: ["ui-serif", "Georgia", "Cambria", "Times New Roman", "Times", "serif"],
+            mono: [
+              "IBM Mono Plex",
+              "ui-monospace",
+              "SFMono-Regular",
+              "Menlo",
+              "Monaco",
+              "Consolas",
+              "Liberation Mono",
+              "Courier New",
+              "monospace",
+            ],
           },
           borderRadius: {
-            small: `var(--${prefix}-radius-small)`,
-            medium: `var(--${prefix}-radius-medium)`,
-            large: `var(--${prefix}-radius-large)`,
+            sm: `var(--${prefix}-radius-sm)`,
+            md: `var(--${prefix}-radius-md)`,
+            lg: `var(--${prefix}-radius-lg)`,
           },
           opacity: {
             hover: `var(--${prefix}-hover-opacity)`,
             disabled: `var(--${prefix}-disabled-opacity)`,
           },
           borderWidth: {
-            small: `var(--${prefix}-border-width-small)`,
-            medium: `var(--${prefix}-border-width-medium)`,
-            large: `var(--${prefix}-border-width-large)`,
+            sm: `var(--${prefix}-border-width-sm)`,
+            md: `var(--${prefix}-border-width-md)`,
+            lg: `var(--${prefix}-border-width-lg)`,
             1: "1px",
             1.5: "1.5px",
             3: "3px",
             5: "5px",
           },
           boxShadow: {
-            small: `var(--${prefix}-box-shadow-small)`,
-            medium: `var(--${prefix}-box-shadow-medium)`,
-            large: `var(--${prefix}-box-shadow-large)`,
+            sm: `var(--${prefix}-box-shadow-sm)`,
+            md: `var(--${prefix}-box-shadow-md)`,
+            lg: `var(--${prefix}-box-shadow-lg)`,
           },
           backgroundImage: {
             "stripe-gradient":

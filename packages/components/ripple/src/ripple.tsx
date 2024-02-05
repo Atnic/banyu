@@ -1,10 +1,10 @@
 import {FC} from "react";
 import {AnimatePresence, HTMLMotionProps, motion} from "framer-motion";
-import {HTMLNextUIProps} from "@nextui-org/system";
+import {HTMLBanyuProps} from "@Banyu-org/system";
 
 import {RippleType} from "./use-ripple";
 
-export interface RippleProps extends HTMLNextUIProps<"span"> {
+export interface RippleProps extends HTMLBanyuProps<"span"> {
   ripples: RippleType[];
   color?: string;
   motionProps?: HTMLMotionProps<"span">;
@@ -28,7 +28,7 @@ const Ripple: FC<RippleProps> = (props) => {
           <AnimatePresence key={ripple.key} mode="popLayout">
             <motion.span
               animate={{transform: "scale(2)", opacity: 0}}
-              className="nextui-ripple"
+              className="Banyu-ripple"
               exit={{opacity: 0}}
               initial={{transform: "scale(0)", opacity: 0.35}}
               style={{

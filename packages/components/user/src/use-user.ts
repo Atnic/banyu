@@ -3,7 +3,7 @@ import type {AvatarProps} from "@banyu/avatar";
 
 import {ReactNode, useMemo, useCallback} from "react";
 import {useFocusRing} from "@react-aria/focus";
-import {HTMLNextUIProps, PropGetter} from "@banyu/system";
+import {HTMLBanyuProps, PropGetter} from "@banyu/system";
 import {user} from "@banyu/theme";
 import {clsx, dataAttr} from "@banyu/shared-utils";
 import {filterDOMProps, ReactRef} from "@banyu/react-utils";
@@ -29,7 +29,7 @@ interface Props {
   isFocusable?: boolean;
   /**
    * The user avatar props
-   * @see https://Banyu.org/docs/components/avatar
+   * @see https://localhost:3000/docs/components/avatar
    */
   avatarProps?: Partial<AvatarProps>;
   /**
@@ -49,7 +49,7 @@ interface Props {
   classNames?: SlotsToClasses<UserSlots>;
 }
 
-export type UseUserProps = Props & Omit<HTMLNextUIProps<"div">, "children">;
+export type UseUserProps = Props & Omit<HTMLBanyuProps<"div">, "children">;
 
 export function useUser(props: UseUserProps) {
   const {

@@ -1,4 +1,4 @@
-import type {HTMLNextUIProps} from "../src/types";
+import type {HTMLBanyuProps} from "../src/types";
 
 import React, {useMemo} from "react";
 import {SlotsToClasses, tv, type VariantProps} from "@banyu/theme";
@@ -139,7 +139,7 @@ const card = tv({
       isPressable: true,
       disableAnimation: false,
       // class: "data-[pressed=true]:scale-95 tap-highlight-transparent",
-      class: "ease-out duration-300"
+      class: "ease-out duration-300",
     },
   ],
   defaultVariants: {
@@ -157,7 +157,7 @@ const card = tv({
 type CardVariantProps = VariantProps<typeof card>;
 type CardSlots = keyof ReturnType<typeof card>;
 
-interface CardProps extends HTMLNextUIProps, CardVariantProps {
+interface CardProps extends HTMLBanyuProps, CardVariantProps {
   header?: React.ReactNode;
   footer?: React.ReactNode;
   children: React.ReactNode;

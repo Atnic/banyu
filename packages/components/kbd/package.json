@@ -6,7 +6,7 @@
     "kbd"
   ],
   "author": "Junior Garcia <jrgarciadev@gmail.com>",
-  "homepage": "https://nextui.org",
+  "homepage": "#",
   "license": "MIT",
   "main": "src/index.ts",
   "sideEffects": false,
@@ -18,11 +18,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/banyu/nextui.git",
+    "url": "git+https://github.com/banyu/Banyu.git",
     "directory": "packages/components/kbd"
   },
   "bugs": {
-    "url": "https://github.com/banyu/nextui/issues"
+    "url": "https://github.com/banyu/Banyu/issues"
   },
   "scripts": {
     "build": "tsup src --dts",
@@ -35,7 +35,9 @@
   },
   "peerDependencies": {
     "react": ">=18",
-    "react-dom": ">=18"
+    "react-dom": ">=18",
+    "@banyu/theme": "1.0.0",
+    "@banyu/system": "1.0.0"
   },
   "dependencies": {
     "@banyu/system-rsc": "workspace:*",

@@ -1,12 +1,12 @@
 import type {SpinnerVariantProps, SpinnerSlots, SlotsToClasses} from "@banyu/theme";
-import type {HTMLNextUIProps, PropGetter} from "@banyu/system-rsc";
+import type {HTMLBanyuProps, PropGetter} from "@banyu/system-rsc";
 
 import {mapPropsVariants} from "@banyu/system-rsc";
 import {spinner} from "@banyu/theme";
 import {clsx} from "@banyu/shared-utils";
 import {useMemo, useCallback, Ref} from "react";
 
-interface Props extends HTMLNextUIProps<"div"> {
+interface Props extends HTMLBanyuProps<"div"> {
   /**
    * Ref to the DOM node.
    */

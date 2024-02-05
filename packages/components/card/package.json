@@ -1,12 +1,12 @@
 {
   "name": "@banyu/card",
-  "version": "2.0.24",
+  "version": "1.0.0",
   "description": "Card is a container for text, photos, and actions in the context of a single subject.",
   "keywords": [
     "card"
   ],
-  "author": "Junior Garcia <jrgarciadev@gmail.com>",
-  "homepage": "https://Banyu.org",
+  "author": "Muhammad Amien <muhammadamien23@gmail.com>",
+  "homepage": "#",
   "license": "MIT",
   "main": "src/index.ts",
   "sideEffects": false,
@@ -18,11 +18,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nextui-org/Banyu.git",
+    "url": "git+https://github.com/muhamien/jala-design.git",
     "directory": "packages/components/card"
   },
   "bugs": {
-    "url": "https://github.com/nextui-org/nextui/issues"
+    "url": "https://github.com/muhamien/jala-design/issues"
   },
   "scripts": {
     "build": "tsup src --dts",
@@ -36,7 +36,9 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "framer-motion": ">=4.0.0"
+    "framer-motion": ">=4.0.0",
+    "@banyu/theme": "1.0.0",
+    "@banyu/system": "1.0.0"
   },
   "dependencies": {
     "@banyu/shared-utils": "workspace:*",

@@ -1,5 +1,5 @@
 import type {KbdVariantProps, KbdSlots, SlotsToClasses} from "@banyu/theme";
-import type {HTMLNextUIProps, PropGetter} from "@banyu/system-rsc";
+import type {HTMLBanyuProps, PropGetter} from "@banyu/system-rsc";
 
 import {mapPropsVariants} from "@banyu/system-rsc";
 import {kbd} from "@banyu/theme";
@@ -9,7 +9,7 @@ import {useMemo} from "react";
 
 import {KbdKey} from "./utils";
 
-interface Props extends HTMLNextUIProps<"kbd"> {
+interface Props extends HTMLBanyuProps<"kbd"> {
   /**
    * Ref to the DOM node.
    */

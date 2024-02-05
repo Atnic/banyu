@@ -1,24 +1,24 @@
-# @nextui-org/tooltip
+# @Banyu-org/tooltip
 
 Tooltips display a brief, informative message that appears when a user interacts with an element.
 
-Please refer to the [documentation](https://Banyu.org/docs/components/tooltip) for more information.
+Please refer to the [documentation](https://localhost:3000/docs/components/tooltip) for more information.
 
 ## Installation
 
 ```sh
-yarn add @nextui-org/tooltip
+yarn add @Banyu-org/tooltip
 # or
-npm i @nextui-org/tooltip
+npm i @Banyu-org/tooltip
 ```
 
 ## Contribution
 
 Yes please! See the
-[contributing guidelines](https://github.com/nextui-org/nextui/blob/master/CONTRIBUTING.md)
+[contributing guidelines](https://github.com/muhamien/jala-design/blob/master/CONTRIBUTING.md)
 for details.
 
 ## Licence
 
 This project is licensed under the terms of the
-[MIT license](https://github.com/nextui-org/nextui/blob/master/LICENSE).
+[MIT license](https://github.com/muhamien/jala-design/blob/master/LICENSE).

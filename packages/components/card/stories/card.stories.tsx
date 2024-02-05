@@ -103,14 +103,14 @@ const WithFooterTemplate = (args: CardProps) => (
   <Card {...args} className="p-4 max-w-md">
     <CardHeader className="flex gap-3">
       <Image
-        alt="nextui logo"
+        alt="Banyu logo"
         height={34}
         radius="lg"
         src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
         width={34}
       />
       <div className="flex flex-col">
-        <b className="text-lg">NextUI</b>
+        <b className="text-lg">Banyu</b>
         <p className="text-default-500">Banyu.org</p>
       </div>
     </CardHeader>
@@ -118,7 +118,7 @@ const WithFooterTemplate = (args: CardProps) => (
       <p>Make beautiful websites regardless of your design experience.</p>
     </CardBody>
     <CardFooter>
-      <Link isExternal showAnchorIcon href="https://github.com/nextui-org/nextui">
+      <Link isExternal showAnchorIcon href="https://github.com/Banyu-org/Banyu">
         Visit source code on GitHub.
       </Link>
     </CardFooter>

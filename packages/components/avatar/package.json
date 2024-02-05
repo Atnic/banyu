@@ -1,6 +1,6 @@
 {
   "name": "@banyu/avatar",
-  "version": "2.0.24",
+  "version": "1.0.0",
   "description": "The Avatar component is used to represent a user, and displays the profile picture, initials or fallback icon.",
   "keywords": [
     "avatar"
@@ -35,7 +35,9 @@
   },
   "peerDependencies": {
     "react": ">=18",
-    "react-dom": ">=18"
+    "react-dom": ">=18",
+    "@banyu/theme": "1.0.0",
+    "@banyu/system": "1.0.0"
   },
   "dependencies": {
     "@banyu/shared-utils": "workspace:*",

@@ -1,4 +1,4 @@
-import type {HTMLNextUIProps} from "../src/types";
+import type {HTMLBanyuProps} from "../src/types";
 
 import React, {useMemo} from "react";
 import {tv, type VariantProps} from "@banyu/theme";
@@ -53,7 +53,7 @@ const button = tv({
   ],
 });
 
-interface ButtonProps extends HTMLNextUIProps<"button">, VariantProps<typeof button> {
+interface ButtonProps extends HTMLBanyuProps<"button">, VariantProps<typeof button> {
   children: React.ReactNode;
   disableRipple?: boolean;
   ref?: ReactRef<HTMLButtonElement | null>;

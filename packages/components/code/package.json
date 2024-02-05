@@ -1,6 +1,6 @@
 {
   "name": "@banyu/code",
-  "version": "2.0.24",
+  "version": "1.0.0",
   "description": "Code is a component used to display inline code.",
   "keywords": [
     "code"
@@ -35,7 +35,9 @@
   },
   "peerDependencies": {
     "react": ">=18",
-    "react-dom": ">=18"
+    "react-dom": ">=18",
+    "@banyu/theme": "1.0.0",
+    "@banyu/system": "1.0.0"
   },
   "dependencies": {
     "@banyu/system-rsc": "workspace:*",

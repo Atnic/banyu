@@ -3,7 +3,7 @@ import type {LinkVariantProps} from "@banyu/theme";
 
 import {link} from "@banyu/theme";
 import {useAriaLink} from "@banyu/use-aria-link";
-import {HTMLNextUIProps, mapPropsVariants, PropGetter} from "@banyu/system";
+import {HTMLBanyuProps, mapPropsVariants, PropGetter} from "@banyu/system";
 import {useDOMRef} from "@banyu/react-utils";
 import {useFocusRing} from "@react-aria/focus";
 import {dataAttr} from "@banyu/shared-utils";
@@ -11,7 +11,7 @@ import {ReactRef} from "@banyu/react-utils";
 import {useMemo, useCallback} from "react";
 import {mergeProps} from "@react-aria/utils";
 
-interface Props extends HTMLNextUIProps<"a">, LinkVariantProps {
+interface Props extends HTMLBanyuProps<"a">, LinkVariantProps {
   /**
    * Ref to the DOM node.
    */
@@ -42,7 +42,7 @@ export function useLink(originalProps: UseLinkProps) {
     ref,
     as,
     children,
-    anchorIcon= false,
+    anchorIcon = false,
     isExternal = false,
     showAnchorIcon = false,
     autoFocus = false,

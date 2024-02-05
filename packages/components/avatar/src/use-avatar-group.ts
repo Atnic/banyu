@@ -1,7 +1,7 @@
 import type {ReactNode} from "react";
 
 import {avatarGroup} from "@banyu/theme";
-import {HTMLNextUIProps, PropGetter} from "@banyu/system";
+import {HTMLBanyuProps, PropGetter} from "@banyu/system";
 import {useDOMRef} from "@banyu/react-utils";
 import {clsx, compact} from "@banyu/shared-utils";
 import {ReactRef, getValidChildren} from "@banyu/react-utils";
@@ -9,7 +9,7 @@ import {cloneElement, useMemo} from "react";
 
 import {AvatarProps} from "./index";
 
-interface Props extends HTMLNextUIProps<"div"> {
+interface Props extends HTMLBanyuProps<"div"> {
   /**
    * Ref to the DOM node.
    */
@@ -31,11 +31,10 @@ interface Props extends HTMLNextUIProps<"div"> {
    * This allows you to render a custom count component.
    */
   renderCount?: (count: number) => ReactNode;
-
 }
 
 export type UseAvatarGroupProps = Props &
-  Partial<Pick<AvatarProps, "size"| "variant" | "color" | "radius" | "isDisabled" | "isBordered">>;
+  Partial<Pick<AvatarProps, "size" | "variant" | "color" | "radius" | "isDisabled" | "isBordered">>;
 
 export type ContextType = {
   size?: AvatarProps["size"];

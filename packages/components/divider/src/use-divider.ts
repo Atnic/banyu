@@ -1,12 +1,12 @@
 import type {DividerVariantProps} from "@banyu/theme";
-import type {HTMLNextUIProps, PropGetter} from "@banyu/system-rsc";
+import type {HTMLBanyuProps, PropGetter} from "@banyu/system-rsc";
 
 import {divider} from "@banyu/theme";
 import {Ref, useCallback, useMemo} from "react";
 
 import {SeparatorProps as AriaSeparatorProps, useSeparator} from "./use-separator";
 
-interface Props extends HTMLNextUIProps<"hr"> {
+interface Props extends HTMLBanyuProps<"hr"> {
   /**
    * Ref to the DOM node.
    */

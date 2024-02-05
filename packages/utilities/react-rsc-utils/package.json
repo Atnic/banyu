@@ -6,7 +6,7 @@
     "react-rsc-utils"
   ],
   "author": "Junior Garcia <jrgarciadev@gmail.com>",
-  "homepage": "https://nextui.org",
+  "homepage": "#",
   "license": "MIT",
   "main": "src/index.ts",
   "sideEffects": false,
@@ -22,11 +22,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nextui-org/nextui.git",
+    "url": "git+https://github.com/muhamien/jala-design.git",
     "directory": "packages/utilities/react-rsc-utils"
   },
   "bugs": {
-    "url": "https://github.com/nextui-org/nextui/issues"
+    "url": "https://github.com/muhamien/jala-design/issues"
   },
   "scripts": {
     "build": "tsup src --dts",

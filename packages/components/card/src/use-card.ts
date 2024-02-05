@@ -9,13 +9,13 @@ import {chain, mergeProps} from "@react-aria/utils";
 import {useFocusRing} from "@react-aria/focus";
 import {useHover} from "@react-aria/interactions";
 import {useAriaButton} from "@banyu/use-aria-button";
-import {HTMLNextUIProps, mapPropsVariants, PropGetter} from "@banyu/system";
+import {HTMLBanyuProps, mapPropsVariants, PropGetter} from "@banyu/system";
 import {clsx, dataAttr} from "@banyu/shared-utils";
 import {ReactRef, filterDOMProps} from "@banyu/react-utils";
 import {useDOMRef} from "@banyu/react-utils";
 import {useRipple} from "@banyu/ripple";
 
-export interface Props extends HTMLNextUIProps<"div"> {
+export interface Props extends HTMLBanyuProps<"div"> {
   /**
    * Ref to the DOM node.
    */

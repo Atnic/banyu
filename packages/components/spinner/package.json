@@ -8,7 +8,7 @@
     "progress"
   ],
   "author": "Muhammad Amien <muhammadamien23@gmail.com>",
-  "homepage": "https://Banyu.org",
+  "homepage": "#",
   "license": "MIT",
   "main": "src/index.ts",
   "sideEffects": false,
@@ -20,11 +20,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nextui-org/Banyu.git",
+    "url": "git+https://github.com/muhamien/jala-design.git",
     "directory": "packages/components/loading"
   },
   "bugs": {
-    "url": "https://github.com/nextui-org/nextui/issues"
+    "url": "https://github.com/muhamien/jala-design/issues"
   },
   "scripts": {
     "build": "tsup src --dts",
@@ -38,7 +38,8 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "@banyu/theme": ">=2.1.0"
+    "@banyu/theme": "1.0.0",
+    "@banyu/system": "1.0.0"
   },
   "dependencies": {
     "@banyu/system-rsc": "workspace:*",

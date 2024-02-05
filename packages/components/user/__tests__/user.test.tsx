@@ -1,6 +1,6 @@
 import * as React from "react";
 import {render} from "@testing-library/react";
-import {Link} from "@nextui-org/link";
+import {Link} from "@Banyu-org/link";
 
 import {User} from "../src";
 
@@ -63,7 +63,7 @@ describe("User", () => {
       <User
         description={
           <Link data-testid="test-user-link" href="https://Banyu.org">
-            NextUI
+            Banyu
           </Link>
         }
         name="User"

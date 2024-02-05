@@ -2,7 +2,7 @@ import type {BreadcrumbsVariantProps, SlotsToClasses, BreadcrumbsSlots} from "@b
 import type {AriaBreadcrumbsProps} from "@react-types/breadcrumbs";
 
 import {Children, ReactNode, Key, ReactElement} from "react";
-import {HTMLNextUIProps, mapPropsVariants, PropGetter} from "@banyu/system";
+import {HTMLBanyuProps, mapPropsVariants, PropGetter} from "@banyu/system";
 import {breadcrumbs} from "@banyu/theme";
 import {filterDOMProps, pickChildren, ReactRef, useDOMRef} from "@banyu/react-utils";
 import {mergeProps} from "@react-aria/utils";
@@ -43,7 +43,7 @@ type RenderEllipsisItemProps = {
   separator: ReactNode;
 };
 
-interface Props extends HTMLNextUIProps<"nav">, AriaBreadcrumbsProps {
+interface Props extends HTMLBanyuProps<"nav">, AriaBreadcrumbsProps {
   /**
    * Ref to the DOM node.
    */

@@ -238,7 +238,7 @@ const EndContentTemplate = (args) => (
         </div>
       }
       label="Website"
-      placeholder="nextui"
+      placeholder="Banyu"
       type="url"
     />
   </div>
@@ -253,7 +253,7 @@ const StartAndEndContentTemplate = (args) => (
           <span className="text-default-400 text-sm">@gmail.com</span>
         </div>
       }
-      placeholder="nextui"
+      placeholder="Banyu"
       startContent={
         <MailFilledIcon className="text-xl text-default-400 pointer-events-none flex-shrink-0" />
       }
@@ -293,7 +293,7 @@ const StartAndEndContentTemplate = (args) => (
         </div>
       }
       label="Website"
-      placeholder="nextui"
+      placeholder="Banyu"
       startContent={
         <div className="pointer-events-none flex items-center">
           <span className="text-default-400 text-sm">https://</span>

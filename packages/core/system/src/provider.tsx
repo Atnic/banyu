@@ -18,7 +18,7 @@ export interface ProviderProps extends Omit<ModalProviderProps, "children"> {
   navigate?: (path: string) => void;
 }
 
-export const NextUIProvider: React.FC<ProviderProps> = ({
+export const BanyuProvider: React.FC<ProviderProps> = ({
   children,
   locale = "en-US",
   navigate,

@@ -1,6 +1,6 @@
 import type {ButtonVariantProps} from "@banyu/theme";
 import type {AriaButtonProps} from "@banyu/use-aria-button";
-import type {HTMLNextUIProps, PropGetter} from "@banyu/system";
+import type {HTMLBanyuProps, PropGetter} from "@banyu/system";
 import type {ReactNode} from "react";
 import type {RippleProps} from "@banyu/ripple";
 
@@ -19,7 +19,7 @@ import {useRipple} from "@banyu/ripple";
 
 import {useButtonGroupContext} from "./button-group-context";
 
-interface Props extends HTMLNextUIProps<"button"> {
+interface Props extends HTMLBanyuProps<"button"> {
   /**
    * Ref to the DOM node.
    */
@@ -56,7 +56,6 @@ interface Props extends HTMLNextUIProps<"button"> {
    * use `onPress` instead.
    */
   onClick?: MouseEventHandler<HTMLButtonElement>;
-
 }
 
 export type UseButtonProps = Props &

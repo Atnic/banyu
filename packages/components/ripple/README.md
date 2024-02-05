@@ -1,24 +1,24 @@
-# @nextui-org/ripple
+# @Banyu-org/ripple
 
 This is a component that creates a ripple effect on the screen.
 
-Please refer to the [documentation](https://Banyu.org/docs/components/button) for more information.
+Please refer to the [documentation](https://localhost:3000/docs/components/button) for more information.
 
 ## Installation
 
 ```sh
-yarn add @nextui-org/ripple
+yarn add @Banyu-org/ripple
 # or
-npm i @nextui-org/ripple
+npm i @Banyu-org/ripple
 ```
 
 ## Contribution
 
 Yes please! See the
-[contributing guidelines](https://github.com/nextui-org/nextui/blob/master/CONTRIBUTING.md)
+[contributing guidelines](https://github.com/muhamien/jala-design/blob/master/CONTRIBUTING.md)
 for details.
 
 ## Licence
 
 This project is licensed under the terms of the
-[MIT license](https://github.com/nextui-org/nextui/blob/master/LICENSE).
+[MIT license](https://github.com/muhamien/jala-design/blob/master/LICENSE).

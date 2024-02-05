@@ -2,7 +2,7 @@
 
 A menu displays a list of options and allows a user to select one or more of them.
 
-Please refer to the [documentation](https://Banyu.org/docs/components/menu) for more information.
+Please refer to the [documentation](https://localhost:3000/docs/components/menu) for more information.
 
 ## Installation
 

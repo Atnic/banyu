@@ -48,7 +48,7 @@ export default {
 const defaultProps = {
   ...image.defaultVariants,
   src: "./images/local-image-1.jpeg",
-  alt: "NextUI hero image",
+  alt: "Banyu hero image",
   disableSkeleton: true,
 };
 
@@ -94,7 +94,7 @@ const LoadingTemplate = (args: ImageProps) => {
 //     width: 300,
 //     isZoomed: true,
 //     radius: "lg",
-//     src: "https://nextui.org/images/card-example-2.jpeg",
+//     src: "https://Banyu.org/images/card-example-2.jpeg",
 //   },
 // };
 //

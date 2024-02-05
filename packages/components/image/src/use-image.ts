@@ -1,7 +1,7 @@
 import type {ImageVariantProps, SlotsToClasses, ImageSlots} from "@banyu/theme";
 
 import {ImgHTMLAttributes, useCallback} from "react";
-import {HTMLNextUIProps, mapPropsVariants, PropGetter} from "@banyu/system";
+import {HTMLBanyuProps, mapPropsVariants, PropGetter} from "@banyu/system";
 import {image} from "@banyu/theme";
 import {useDOMRef} from "@banyu/react-utils";
 import {clsx, dataAttr} from "@banyu/shared-utils";
@@ -10,7 +10,7 @@ import {useImage as useImageBase} from "@banyu/use-image";
 import {useMemo} from "react";
 type NativeImageProps = ImgHTMLAttributes<HTMLImageElement>;
 
-interface Props extends HTMLNextUIProps<"img"> {
+interface Props extends HTMLBanyuProps<"img"> {
   /**
    * Ref to the DOM node.
    */

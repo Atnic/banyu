@@ -1,6 +1,6 @@
 import * as React from "react";
 import {render, fireEvent, act} from "@testing-library/react";
-import {Button} from "@nextui-org/button";
+import {Button} from "@Banyu-org/button";
 
 import {Popover, PopoverContent, PopoverTrigger} from "../src";
 
@@ -99,7 +99,7 @@ describe("Popover", () => {
     expect(onClose).toHaveBeenCalledTimes(1);
   });
 
-  it("should work with NextUI button", () => {
+  it("should work with Banyu button", () => {
     const onClose = jest.fn();
 
     const wrapper = render(

@@ -6,7 +6,7 @@ import {groupDataFocusVisibleClasses} from "../utils";
 /**
  * Toggle (Switch) wrapper **Tailwind Variants** component
  *
- * const {base, wrapper, thumb, thumbIcon, label, startContent, endContent} = toggle({...})
+ * const {base, wrapper, thumb, thumbIcon, label, startContent, endContent} = switch({...})
  *
  * @example
  * <label
@@ -39,7 +39,7 @@ const toggle = tv({
       "justify-start",
       "flex-shrink-0",
       "overflow-hidden",
-      "bg-default-200",
+      "bg-neutral-100",
       "rounded-full",
       // focus ring
       ...groupDataFocusVisibleClasses,
@@ -50,7 +50,7 @@ const toggle = tv({
       "items-center",
       "justify-center",
       "bg-white",
-      "shadow-small",
+      "shadow-sm",
       "rounded-full",
       "origin-right",
     ],
@@ -63,20 +63,14 @@ const toggle = tv({
     color: {
       default: {
         wrapper: [
-          "group-data-[selected=true]:bg-default-400",
-          "group-data-[selected=true]:text-default-foreground",
+          "group-data-[selected=true]:bg-neutral-400",
+          "group-data-[selected=true]:text-neutral-foreground",
         ],
       },
       primary: {
         wrapper: [
-          "group-data-[selected=true]:bg-primary",
-          "group-data-[selected=true]:text-primary-foreground",
-        ],
-      },
-      secondary: {
-        wrapper: [
-          "group-data-[selected=true]:bg-secondary",
-          "group-data-[selected=true]:text-secondary-foreground",
+          "group-data-[selected=true]:bg-brand",
+          "group-data-[selected=true]:text-brand-foreground",
         ],
       },
       success: {
@@ -102,34 +96,34 @@ const toggle = tv({
       sm: {
         wrapper: "w-10 h-6 mr-2",
         thumb: [
-          "w-4 h-4 text-tiny",
+          "w-4 h-4 text-xs",
           //selected
           "group-data-[selected=true]:ml-4",
         ],
-        endContent: "text-tiny",
-        startContent: "text-tiny",
-        label: "text-small",
+        endContent: "text-xs",
+        startContent: "text-xs",
+        label: "text-sm",
       },
       md: {
         wrapper: "w-12 h-7 mr-2",
         thumb: [
-          "w-5 h-5 text-small",
+          "w-5 h-5 text-sm",
           //selected
           "group-data-[selected=true]:ml-5",
         ],
-        endContent: "text-small",
-        startContent: "text-small",
-        label: "text-medium",
+        endContent: "text-sm",
+        startContent: "text-sm",
+        label: "text-md",
       },
       lg: {
         wrapper: "w-14 h-8 mr-2",
         thumb: [
-          "w-6 h-6 text-medium",
+          "w-6 h-6 text-md",
           //selected
           "group-data-[selected=true]:ml-6",
         ],
-        endContent: "text-medium",
-        startContent: "text-medium",
+        endContent: "text-md",
+        startContent: "text-md",
         label: "text-large",
       },
     },

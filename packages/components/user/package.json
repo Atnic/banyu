@@ -6,7 +6,7 @@
     "user"
   ],
   "author": "Muhammad Amien <muhammadamien23@gmail.com>",
-  "homepage": "https://Banyu.org",
+  "homepage": "#",
   "license": "MIT",
   "main": "src/index.ts",
   "sideEffects": false,
@@ -35,7 +35,9 @@
   },
   "peerDependencies": {
     "react": ">=18",
-    "react-dom": ">=18"
+    "react-dom": ">=18",
+    "@banyu/theme": ">=1.0.0",
+    "@banyu/system": ">=1.0.0"
   },
   "dependencies": {
     "@banyu/avatar": "workspace:*",

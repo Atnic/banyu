@@ -2,7 +2,7 @@
 
 Display user information with avatar and name.
 
-Please refer to the [documentation](https://Banyu.org/docs/components/user) for more information.
+Please refer to the [documentation](https://localhost:3000/docs/components/user) for more information.
 
 ## Installation
 

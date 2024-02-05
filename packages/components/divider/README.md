@@ -2,7 +2,7 @@
 
 Divider is a component that separates content in a page.
 
-Please refer to the [documentation](https://Banyu.org/docs/components/divider) for more information.
+Please refer to the [documentation](#) for more information.
 
 ## Installation
 

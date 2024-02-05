@@ -1,12 +1,8 @@
-import type {
-  BreadcrumbItemVariantProps,
-  SlotsToClasses,
-  BreadcrumbItemSlots,
-} from "@banyu/theme";
+import type {BreadcrumbItemVariantProps, SlotsToClasses, BreadcrumbItemSlots} from "@banyu/theme";
 import type {ReactNode} from "react";
 import type {BreadcrumbItemProps as AriaBreadcrumbItemProps} from "@react-types/breadcrumbs";
 
-import {HTMLNextUIProps, mapPropsVariants, PropGetter} from "@banyu/system";
+import {HTMLBanyuProps, mapPropsVariants, PropGetter} from "@banyu/system";
 import {useFocusRing} from "@react-aria/focus";
 import {breadcrumbItem} from "@banyu/theme";
 import {filterDOMProps, ReactRef, useDOMRef} from "@banyu/react-utils";
@@ -16,7 +12,7 @@ import {useMemo} from "react";
 import {mergeProps} from "@react-aria/utils";
 
 interface Props
-  extends Omit<HTMLNextUIProps<"li">, keyof AriaBreadcrumbItemProps>,
+  extends Omit<HTMLBanyuProps<"li">, keyof AriaBreadcrumbItemProps>,
     AriaBreadcrumbItemProps {
   /**
    * Ref to the DOM node.

@@ -1,10 +1,10 @@
-import {forwardRef, HTMLNextUIProps} from "@banyu/system";
+import {forwardRef, HTMLBanyuProps} from "@banyu/system";
 import {useDOMRef} from "@banyu/react-utils";
 import {clsx} from "@banyu/shared-utils";
 
 import {useCardContext} from "./card-context";
 
-export interface CardFooterProps extends HTMLNextUIProps<"div"> {}
+export interface CardFooterProps extends HTMLBanyuProps<"div"> {}
 
 const CardFooter = forwardRef<"div", CardFooterProps>((props, ref) => {
   const {as, className, children, ...otherProps} = props;

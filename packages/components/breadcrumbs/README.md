@@ -2,7 +2,7 @@
 
 Breadcrumbs display a hierarchy of links to the current page or resource in an application.
 
-Please refer to the [documentation](https://Banyu.org/docs/components/breadcrumbs) for more information.
+Please refer to the [documentation](#) for more information.
 
 ## Installation
 
@@ -15,10 +15,10 @@ npm i @banyu/breadcrumbs
 ## Contribution
 
 Yes please! See the
-[contributing guidelines](https://github.com/nextui-org/nextui/blob/master/CONTRIBUTING.md)
+[contributing guidelines](https://github.com/muhamien/jala-design/blob/master/CONTRIBUTING.md)
 for details.
 
 ## Licence
 
 This project is licensed under the terms of the
-[MIT license](https://github.com/nextui-org/nextui/blob/master/LICENSE).
+[MIT license](https://github.com/muhamien/jala-design/blob/master/LICENSE).

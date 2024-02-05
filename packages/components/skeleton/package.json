@@ -1,0 +1,56 @@
+{
+  "name": "@banyu/skeleton",
+  "version": "1.0.0",
+  "description": "Skeleton is used to display the loading state of some component.",
+  "keywords": [
+    "skeleton"
+  ],
+  "author": "Muhammad Amien <muhammadamien23@gmail.com>",
+  "homepage": "#",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhamien/jala-design.git",
+    "directory": "packages/components/skeleton"
+  },
+  "bugs": {
+    "url": "https://github.com/muhamien/jala-design/issues"
+  },
+  "scripts": {
+    "build": "tsup src --dts",
+    "build:fast": "tsup src",
+    "dev": "yarn build:fast -- --watch",
+    "clean": "rimraf dist .turbo",
+    "typecheck": "tsc --noEmit",
+    "prepack": "clean-package",
+    "postpack": "clean-package restore"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18",
+    "@banyu/theme": "1.0.0",
+    "@banyu/system": "1.0.0"
+  },
+  "dependencies": {
+    "@banyu/system-rsc": "workspace:*",
+    "@banyu/shared-utils": "workspace:*",
+    "@banyu/react-utils": "workspace:*"
+  },
+  "devDependencies": {
+    "@banyu/theme": "workspace:*",
+    "@banyu/card": "workspace:*",
+    "@banyu/button": "workspace:*",
+    "clean-package": "2.2.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "clean-package": "../../../clean-package.config.json"
+}

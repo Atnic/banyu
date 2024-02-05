@@ -31,6 +31,6 @@ const Kbd = forwardRef<"kbd", KbdProps>((props, ref) => {
   );
 });
 
-Kbd.displayName = "NextUI.Kbd";
+Kbd.displayName = "Banyu.Kbd";
 
 export default Kbd;

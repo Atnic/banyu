@@ -10,7 +10,7 @@ import {colorVariants} from "../utils";
  *
  * @example
  * <code className={classNames)}>
- *   npm install @nextui-org/react
+ *   npm install @Banyu-org/react
  * </code>
  */
 const code = tv({
@@ -20,20 +20,20 @@ const code = tv({
       primary: colorVariants.solid.primary,
       success: colorVariants.solid.success,
       warning: colorVariants.solid.warning,
-      critical: colorVariants.solid.critical,
+      critical: colorVariants.solid.danger,
       transparent: colorVariants.solid.transparent,
       white: colorVariants.solid.white,
     },
     size: {
-      sm: "text-small",
-      md: "text-medium",
+      sm: "text-sm",
+      md: "text-md",
       lg: "text-large",
     },
     radius: {
       none: "rounded-none",
-      sm: "rounded-small",
-      md: "rounded-medium",
-      lg: "rounded-large",
+      sm: "rounded-sm",
+      md: "rounded-md",
+      lg: "rounded-lg",
       full: "rounded-full",
     },
   },

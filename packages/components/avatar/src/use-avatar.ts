@@ -1,7 +1,7 @@
 import type {AvatarSlots, AvatarVariantProps, SlotsToClasses} from "@banyu/theme";
 
 import {avatar} from "@banyu/theme";
-import {HTMLNextUIProps, PropGetter} from "@banyu/system";
+import {HTMLBanyuProps, PropGetter} from "@banyu/system";
 import {mergeProps} from "@react-aria/utils";
 import {useDOMRef} from "@banyu/react-utils";
 import {clsx, safeText, dataAttr} from "@banyu/shared-utils";
@@ -13,7 +13,7 @@ import {useHover} from "@react-aria/interactions";
 
 import {useAvatarGroupContext} from "./avatar-group-context";
 
-interface Props extends HTMLNextUIProps<"span"> {
+interface Props extends HTMLBanyuProps<"span"> {
   /**
    * Ref to the DOM node.
    */
@@ -133,7 +133,7 @@ export function useAvatar(props: UseAvatarProps = {}) {
     color = groupContext?.color ?? "primary",
     radius = groupContext?.radius ?? "full",
     size = groupContext?.size ?? "md",
-    variant = groupContext?.variant ?? "solid" ,
+    variant = groupContext?.variant ?? "solid",
     // status = "none" ,
     // statusPlacement = "top-right" ,
     // statusCustomIcon,
@@ -184,7 +184,7 @@ export function useAvatar(props: UseAvatarProps = {}) {
         variant,
         // status,
         // statusPlacement,
-        isInGridGroup: groupContext?.isGrid ?? false
+        isInGridGroup: groupContext?.isGrid ?? false,
       }),
     [color, radius, size, variant, isBordered, isDisabled, isInGroup, groupContext?.isGrid],
   );

@@ -8,7 +8,7 @@ import {TRANSITION_VARIANTS} from "@banyu/framer-transitions";
 import {motion} from "framer-motion";
 import {useDialog} from "@react-aria/dialog";
 import {mergeProps} from "@react-aria/utils";
-import {HTMLNextUIProps} from "@banyu/system";
+import {HTMLBanyuProps} from "@banyu/system";
 import {RemoveScroll} from "react-remove-scroll";
 import {getTransformOrigins} from "@banyu/aria-utils";
 
@@ -16,7 +16,7 @@ import {usePopoverContext} from "./popover-context";
 
 export interface PopoverContentProps
   extends AriaDialogProps,
-    Omit<HTMLNextUIProps, "children" | "role"> {
+    Omit<HTMLBanyuProps, "children" | "role"> {
   children: ReactNode | ((titleProps: DOMAttributes<HTMLElement>) => ReactNode);
 }
 

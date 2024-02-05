@@ -1,5 +1,3 @@
-import {Key} from "react";
-
 import {isObject} from "./assertion";
 
 export interface MergeObject {
@@ -59,12 +57,12 @@ export const cleanObjectKeys = (obj: any, keys: string[] = []) => {
   return newObj;
 };
 
-export const getKeyValue = (obj: any, key: Key) => {
-  if (!isObject(obj)) return obj;
-  if (obj instanceof Array) return [...obj];
-
-  return obj[key];
-};
+// export const getKeyValue = (obj: any, key: Key) => {
+//   if (!isObject(obj)) return obj;
+//   if (obj instanceof Array) return [...obj];
+//
+//   return obj[key];
+// };
 
 /**
  * Get value from a deeply nested object using a string path.

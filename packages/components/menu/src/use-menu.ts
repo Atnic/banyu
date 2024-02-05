@@ -1,4 +1,4 @@
-import type {HTMLNextUIProps, PropGetter} from "@banyu/system";
+import type {HTMLBanyuProps, PropGetter} from "@banyu/system";
 import type {AriaMenuProps} from "@react-types/menu";
 
 import {AriaMenuOptions, useMenu as useAriaMenu} from "@react-aria/menu";
@@ -84,7 +84,7 @@ interface Props<T> {
 }
 
 export type UseMenuProps<T = object> = Props<T> &
-  Omit<HTMLNextUIProps<"ul">, keyof AriaMenuProps<T>> &
+  Omit<HTMLBanyuProps<"ul">, keyof AriaMenuProps<T>> &
   AriaMenuProps<T> &
   MenuVariantProps;
 

@@ -1,4 +1,4 @@
-# @nextui-org/test-utils
+# @Banyu-org/test-utils
 
 A Quick description of the component
 
@@ -7,18 +7,18 @@ A Quick description of the component
 ## Installation
 
 ```sh
-yarn add @nextui-org/test-utils
+yarn add @Banyu-org/test-utils
 # or
-npm i @nextui-org/test-utils
+npm i @Banyu-org/test-utils
 ```
 
 ## Contribution
 
 Yes please! See the
-[contributing guidelines](https://github.com/nextui-org/nextui/blob/master/CONTRIBUTING.md)
+[contributing guidelines](https://github.com/muhamien/jala-design/blob/master/CONTRIBUTING.md)
 for details.
 
 ## Licence
 
 This project is licensed under the terms of the
-[MIT license](https://github.com/nextui-org/nextui/blob/master/LICENSE).
+[MIT license](https://github.com/muhamien/jala-design/blob/master/LICENSE).

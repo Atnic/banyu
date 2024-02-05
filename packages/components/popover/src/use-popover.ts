@@ -7,7 +7,7 @@ import {OverlayTriggerState, useOverlayTriggerState} from "@react-stately/overla
 import {useFocusRing} from "@react-aria/focus";
 import {ariaHideOutside, useOverlayTrigger} from "@react-aria/overlays";
 import {OverlayTriggerProps} from "@react-types/overlays";
-import {HTMLNextUIProps, mapPropsVariants, PropGetter} from "@banyu/system";
+import {HTMLBanyuProps, mapPropsVariants, PropGetter} from "@banyu/system";
 import {getArrowPlacement, getShouldUseAxisPlacement} from "@banyu/aria-utils";
 import {popover} from "@banyu/theme";
 import {mergeProps, mergeRefs} from "@react-aria/utils";
@@ -17,7 +17,7 @@ import {PressEvent} from "@react-types/shared";
 
 import {useReactAriaPopover, ReactAriaPopoverProps} from "./use-aria-popover";
 
-export interface Props extends HTMLNextUIProps<"div"> {
+export interface Props extends HTMLBanyuProps<"div"> {
   /**
    * Ref to the DOM node.
    */

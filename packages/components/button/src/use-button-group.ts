@@ -3,10 +3,10 @@ import type {ReactRef} from "@banyu/react-utils";
 import type {ButtonGroupVariantProps} from "@banyu/theme";
 
 import {buttonGroup} from "@banyu/theme";
-import {HTMLNextUIProps, PropGetter, mapPropsVariants} from "@banyu/system";
+import {HTMLBanyuProps, PropGetter, mapPropsVariants} from "@banyu/system";
 import {useDOMRef} from "@banyu/react-utils";
 import {useMemo, useCallback} from "react";
-interface Props extends HTMLNextUIProps, ButtonGroupVariantProps {
+interface Props extends HTMLBanyuProps, ButtonGroupVariantProps {
   /**
    * Ref to the DOM node.
    */

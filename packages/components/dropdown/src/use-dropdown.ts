@@ -1,4 +1,4 @@
-import type {HTMLNextUIProps, PropGetter} from "@banyu/system";
+import type {HTMLBanyuProps, PropGetter} from "@banyu/system";
 import type {PopoverProps} from "@banyu/popover";
 import type {MenuTriggerType} from "@react-types/menu";
 import type {Ref} from "react";
@@ -12,7 +12,7 @@ import {useMemo, useRef} from "react";
 import {mergeProps} from "@react-aria/utils";
 import {MenuProps} from "@banyu/menu";
 
-interface Props extends HTMLNextUIProps<"div"> {
+interface Props extends HTMLBanyuProps<"div"> {
   /**
    * Type of overlay that is opened by the trigger.
    */

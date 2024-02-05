@@ -1,12 +1,12 @@
 import type {CodeVariantProps} from "@banyu/theme";
-import type {HTMLNextUIProps, PropGetter} from "@banyu/system-rsc";
+import type {HTMLBanyuProps, PropGetter} from "@banyu/system-rsc";
 
 import {code} from "@banyu/theme";
 import {mapPropsVariants} from "@banyu/system-rsc";
 import {ReactRef} from "@banyu/react-utils";
 import {useMemo} from "react";
 
-export interface UseCodeProps extends HTMLNextUIProps<"code">, CodeVariantProps {
+export interface UseCodeProps extends HTMLBanyuProps<"code">, CodeVariantProps {
   /**
    * Ref to the DOM node.
    */
