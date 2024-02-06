@@ -18,6 +18,7 @@ coverage
 # production
 /build
 dist/
+storybook-static
 /packages/storybook/public/tailwind.css
 
 # misc
