@@ -44,7 +44,7 @@ jobs:
       - name: Create @dev release
         if: steps.changesets.outputs.published != 'true'
         run: |
-          git checkout main
+          git checkout master
           pnpm version:dev
           pnpm release:dev
         env:
