@@ -1,6 +1,6 @@
 {
   "name": "@banyu/ripple",
-  "version": "2.0.24",
+  "version": "3.0.0",
   "description": "A simple implementation to display a ripple animation when the source component is clicked",
   "keywords": [
     "ripple"
