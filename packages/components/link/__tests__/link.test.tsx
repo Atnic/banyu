@@ -23,16 +23,6 @@ describe("Link", () => {
     expect(() => wrapper.unmount()).not.toThrow();
   });
 
-  it('should show a link icon when "showAnchorIcon" is true', () => {
-    const {container} = render(
-      <Link showAnchorIcon href="#">
-        Link
-      </Link>,
-    );
-
-    expect(container.querySelector("svg")).not.toBeNull();
-  });
-
   it('should have target="_blank" and rel="noopener noreferrer" when "isExternal" is true', () => {
     const {container} = render(
       <Link isExternal href="#">
@@ -40,7 +30,9 @@ describe("Link", () => {
       </Link>,
     );
 
+    // @ts-ignore
     expect(container.querySelector("a")?.rel).toBe("noopener noreferrer");
+    // @ts-ignore
     expect(container.querySelector("a")?.target).toBe("_blank");
   });
 

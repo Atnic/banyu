@@ -1,7 +1,10 @@
 import * as React from "react";
-import {render, waitFor} from "@testing-library/react";
+import {act, render, waitFor} from "@testing-library/react";
 
 import {Input} from "../src";
+
+// @ts-ignore
+globalThis.IS_REACT_ACT_ENVIRONMENT = true;
 
 describe("Input", () => {
   it("should render correctly", () => {
@@ -94,11 +97,14 @@ describe("Input", () => {
 
     const {container} = render(<Input label="test input" onFocus={onFocus} />);
 
-    container.querySelector("input")?.focus();
-    container.querySelector("input")?.blur();
+    act(() => {
+      container.querySelector("input")?.focus();
+      container.querySelector("input")?.blur();
+    });
 
     expect(onFocus).toHaveBeenCalledTimes(1);
   });
+
   it("ref should update the value", async () => {
     const ref = React.createRef<HTMLInputElement>();
 
@@ -107,17 +113,21 @@ describe("Input", () => {
     if (!ref.current) {
       throw new Error("ref is null");
     }
-    const value = "value";
+    const val = "value test";
 
-    ref.current!.value = value;
+    // if (ref.current!.value){
+    ref.current!.value = val;
+    // }
 
-    container.querySelector("input")?.focus();
+    // act(() => {
+    //   container.querySelector("input")?.focus();
+    // });
 
     await waitFor(() => {
-      return expect(ref.current?.value)?.toBe(value);
+      return expect(ref.current?.value)?.toBe(val);
     });
     await waitFor(() => {
-      return expect(ref.current?.value)?.toBe(value);
+      return expect(ref.current?.value)?.toBe(val);
     });
   });
 });

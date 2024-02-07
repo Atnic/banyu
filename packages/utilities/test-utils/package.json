@@ -8,7 +8,7 @@
   "author": "Junior Garcia <jrgarciadev@gmail.com>",
   "homepage": "#",
   "license": "MIT",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
   "sideEffects": false,
   "files": [
     "dist"
@@ -33,9 +33,6 @@
     "prepack": "clean-package",
     "postpack": "clean-package restore"
   },
-  "devDependencies": {
-    "clean-package": "2.2.0"
-  },
   "clean-package": "../../../clean-package.config.json",
   "tsup": {
     "clean": true,
@@ -44,5 +41,15 @@
       "cjs",
       "esm"
     ]
+  },
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
   }
 }

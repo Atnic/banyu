@@ -1,7 +1,7 @@
-import type {VariantProps} from "tailwind-variants"
+import type {VariantProps} from "tailwind-variants";
 
-import {tv} from "../utils/tv"
-import {colorVariants} from "../utils"
+import {tv} from "../utils/tv";
+import {colorVariants} from "../utils";
 
 /**
  * Code wrapper **Tailwind Variants** component
@@ -10,7 +10,7 @@ import {colorVariants} from "../utils"
  *
  * @example
  * <code className={classNames)}>
- *   npm install @Banyu-org/react
+ *   npm install @banyu/react
  * </code>
  */
 const code = tv({
@@ -42,8 +42,8 @@ const code = tv({
     size: "sm",
     radius: "sm",
   },
-})
+});
 
-export type CodeVariantProps = VariantProps<typeof code>
+export type CodeVariantProps = VariantProps<typeof code>;
 
-export {code}
+export {code};

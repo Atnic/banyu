@@ -1,6 +1,6 @@
 import * as React from "react";
 import {render, fireEvent, act} from "@testing-library/react";
-import {Button} from "@Banyu-org/button";
+import {Button} from "@banyu/button";
 
 import {Tooltip} from "../src";
 

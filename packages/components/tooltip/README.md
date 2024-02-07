@@ -1,4 +1,4 @@
-# @Banyu-org/tooltip
+# @banyu/tooltip
 
 Tooltips display a brief, informative message that appears when a user interacts with an element.
 
@@ -7,9 +7,9 @@ Please refer to the [documentation](https://localhost:3000/docs/components/toolt
 ## Installation
 
 ```sh
-yarn add @Banyu-org/tooltip
+yarn add @banyu/tooltip
 # or
-npm i @Banyu-org/tooltip
+npm i @banyu/tooltip
 ```
 
 ## Contribution

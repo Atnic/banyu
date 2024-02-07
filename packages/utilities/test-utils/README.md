@@ -1,4 +1,4 @@
-# @Banyu-org/test-utils
+# @banyu/test-utils
 
 A Quick description of the component
 
@@ -7,9 +7,9 @@ A Quick description of the component
 ## Installation
 
 ```sh
-yarn add @Banyu-org/test-utils
+yarn add @banyu/test-utils
 # or
-npm i @Banyu-org/test-utils
+npm i @banyu/test-utils
 ```
 
 ## Contribution

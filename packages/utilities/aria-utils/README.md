@@ -1,4 +1,4 @@
-# @Banyu-org/aria-utils
+# @banyu/aria-utils
 
 A Quick description of the component
 
@@ -7,9 +7,9 @@ A Quick description of the component
 ## Installation
 
 ```sh
-yarn add @Banyu-org/aria-utils
+yarn add @banyu/aria-utils
 # or
-npm i @Banyu-org/aria-utils
+npm i @banyu/aria-utils
 ```
 
 ## Contribution

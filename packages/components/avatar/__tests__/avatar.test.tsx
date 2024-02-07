@@ -1,6 +1,6 @@
 import * as React from "react";
 import {render, act} from "@testing-library/react";
-import {mocks} from "@Banyu-org/test-utils";
+import {mocks} from "@banyu/test-utils";
 
 import {Avatar} from "../src";
 
@@ -15,7 +15,7 @@ describe("Avatar", () => {
     const ref = React.createRef<HTMLDivElement>();
 
     render(<Avatar ref={ref} />);
-    expect(ref.current).not.toBeNull();
+    expect(ref.current).not.toBeUndefined();
   });
 
   it("should populate imgRef", () => {

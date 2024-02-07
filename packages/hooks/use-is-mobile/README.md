@@ -1,4 +1,4 @@
-# @Banyu-org/use-is-mobile
+# @banyu/use-is-mobile
 
 A Quick description of the component
 
@@ -7,9 +7,9 @@ A Quick description of the component
 ## Installation
 
 ```sh
-yarn add @Banyu-org/use-is-mobile
+yarn add @banyu/use-is-mobile
 # or
-npm i @Banyu-org/use-is-mobile
+npm i @banyu/use-is-mobile
 ```
 
 ## Contribution

@@ -1,4 +1,4 @@
-# @Banyu-org/react-utils
+# @banyu/react-utils
 
 A Quick description of the component
 
@@ -7,9 +7,9 @@ A Quick description of the component
 ## Installation
 
 ```sh
-yarn add @Banyu-org/react-utils
+yarn add @banyu/react-utils
 # or
-npm i @Banyu-org/react-utils
+npm i @banyu/react-utils
 ```
 
 ## Contribution
