@@ -101,7 +101,12 @@ const MaxRowsTemplate = (args: TextAreaProps) => (
 
 export const Default = {
   render: Template,
-
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=549%3A166563&mode=dev",
+    },
+  },
   args: {
     ...defaultProps,
   },
@@ -109,7 +114,12 @@ export const Default = {
 //
 // export const FullRounded = {
 //   render: Template,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     minRows: 1,
@@ -126,7 +136,12 @@ export const Default = {
 //
 // export const Required = {
 //   render: Template,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     isRequired: true,
@@ -135,7 +150,12 @@ export const Default = {
 //
 // export const Disabled = {
 //   render: Template,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     defaultValue: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -146,7 +166,12 @@ export const Default = {
 //
 // export const ReadOnly = {
 //   render: Template,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     defaultValue: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -157,7 +182,12 @@ export const Default = {
 //
 // export const WithStartContent = {
 //   render: Template,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     startContent: <PlusFilledIcon className="text-xl" />,
@@ -166,7 +196,12 @@ export const Default = {
 //
 // export const WithEndContent = {
 //   render: Template,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     minRows: 1,
@@ -188,7 +223,12 @@ export const Default = {
 //
 // export const Controlled = {
 //   render: ControlledTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //   },
@@ -196,7 +236,12 @@ export const Default = {
 //
 // export const MinRows = {
 //   render: MinRowsTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //   },
@@ -204,7 +249,12 @@ export const Default = {
 //
 // export const MaxRows = {
 //   render: MaxRowsTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     defaultValue:
@@ -214,7 +264,12 @@ export const Default = {
 //
 // export const WithErrorMessage = {
 //   render: Template,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     errorMessage: "Please enter a valid description",
@@ -223,7 +278,12 @@ export const Default = {
 //
 // export const IsInvalid = {
 //   render: Template,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     isInvalid: true,

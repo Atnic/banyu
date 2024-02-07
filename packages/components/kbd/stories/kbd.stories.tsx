@@ -1,6 +1,5 @@
 // @ts-ignore
 import {Meta} from "@storybook/react";
-import {kbd} from "@banyu/theme";
 
 import {Kbd} from "../src";
 
@@ -44,6 +43,12 @@ export default {
 // };
 //
 // export const Default = {
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     children: "K",

@@ -39,6 +39,12 @@ const defaultProps = {
 };
 
 export const Default = {
+  parameters: {
+    design: {
+      type: "figma",
+      url: "",
+    },
+  },
   args: {
     ...defaultProps,
     defaultSelected: true,
@@ -46,6 +52,12 @@ export const Default = {
 };
 
 export const IsDisabled = {
+  parameters: {
+    design: {
+      type: "figma",
+      url: "",
+    },
+  },
   args: {
     ...defaultProps,
     isDisabled: true,

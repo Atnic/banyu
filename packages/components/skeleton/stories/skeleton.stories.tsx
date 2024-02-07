@@ -103,7 +103,12 @@ const LoadedStateTemplate = (args: SkeletonProps) => {
 
 export const Default = {
   render: DefaultTemplate,
-
+  parameters: {
+    design: {
+      type: "figma",
+      url: "",
+    },
+  },
   args: {
     ...defaultProps,
   },
@@ -111,7 +116,12 @@ export const Default = {
 
 export const Standalone = {
   render: StandaloneTemplate,
-
+  parameters: {
+    design: {
+      type: "figma",
+      url: "",
+    },
+  },
   args: {
     ...defaultProps,
   },
@@ -119,7 +129,12 @@ export const Standalone = {
 
 export const LoadedState = {
   render: LoadedStateTemplate,
-
+  parameters: {
+    design: {
+      type: "figma",
+      url: "",
+    },
+  },
   args: {
     ...defaultProps,
   },

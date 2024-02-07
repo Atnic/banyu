@@ -571,7 +571,12 @@ const CustomTriggerTemplate = ({variant, ...args}) => {
 
 // export const Default = {
 //   render: Template,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //   },
@@ -587,7 +592,12 @@ const CustomTriggerTemplate = ({variant, ...args}) => {
 //
 // export const WithArrow = {
 //   render: Template,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     showArrow: true,
@@ -596,7 +606,12 @@ const CustomTriggerTemplate = ({variant, ...args}) => {
 //
 // export const WithDivider = {
 //   render: DividerTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //   },
@@ -604,7 +619,12 @@ const CustomTriggerTemplate = ({variant, ...args}) => {
 //
 // export const DisabledKeys = {
 //   render: DisabledKeysTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //   },
@@ -620,7 +640,12 @@ const CustomTriggerTemplate = ({variant, ...args}) => {
 //
 // export const MultipleSelection = {
 //   render: MultipleSelectionTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //   },
@@ -636,7 +661,12 @@ const CustomTriggerTemplate = ({variant, ...args}) => {
 //
 // export const WithStartContent = {
 //   render: WithStartContentTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     variant: "flat",
@@ -646,7 +676,12 @@ const CustomTriggerTemplate = ({variant, ...args}) => {
 //
 // export const WithEndContent = {
 //   render: WithEndContentTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     variant: "faded",
@@ -656,7 +691,12 @@ const CustomTriggerTemplate = ({variant, ...args}) => {
 //
 // export const WithDescription = {
 //   render: WithDescriptionTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     variant: "flat",
@@ -667,7 +707,12 @@ const CustomTriggerTemplate = ({variant, ...args}) => {
 //
 // export const WithSections = {
 //   render: WithSectionsTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     variant: "flat",
@@ -678,7 +723,12 @@ const CustomTriggerTemplate = ({variant, ...args}) => {
 //
 // export const WithCustomTrigger = {
 //   render: CustomTriggerTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     variant: "flat",
@@ -688,7 +738,12 @@ const CustomTriggerTemplate = ({variant, ...args}) => {
 //
 // export const DisableAnimation = {
 //   render: WithStartContentTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     showArrow: true,

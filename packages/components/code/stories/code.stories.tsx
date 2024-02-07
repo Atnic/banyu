@@ -34,6 +34,12 @@ const defaultProps = {
 };
 
 // export const Default = {
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //   },

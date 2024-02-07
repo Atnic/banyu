@@ -51,6 +51,12 @@ const Template = (args: LinkProps) => <Link {...args} href="#" />;
 
 export const Dark = {
   render: Template,
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=666%3A219466&mode=dev",
+    },
+  },
   args: {
     ...defaultProps,
     isDisabled: false,
@@ -60,6 +66,12 @@ export const Dark = {
 };
 export const Gray = {
   render: Template,
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=666%3A219466&mode=dev",
+    },
+  },
   args: {
     ...defaultProps,
     isDisabled: false,
@@ -69,6 +81,12 @@ export const Gray = {
 };
 export const white = {
   render: Template,
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=666%3A219466&mode=dev",
+    },
+  },
   args: {
     ...defaultProps,
     isDisabled: false,
@@ -78,6 +96,12 @@ export const white = {
 };
 export const primary = {
   render: Template,
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=666%3A219466&mode=dev",
+    },
+  },
   args: {
     ...defaultProps,
     isDisabled: false,
@@ -87,6 +111,12 @@ export const primary = {
 };
 export const danger = {
   render: Template,
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=666%3A219466&mode=dev",
+    },
+  },
   args: {
     ...defaultProps,
     isDisabled: false,
@@ -96,6 +126,12 @@ export const danger = {
 };
 export const warning = {
   render: Template,
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=666%3A219466&mode=dev",
+    },
+  },
   args: {
     ...defaultProps,
     isDisabled: false,
@@ -174,6 +210,12 @@ const MyLink = (props: MyLinkProps) => {
 };
 
 // export const CustomVariant = () => {
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=666%3A219466&mode=dev",
+//   },
+// },
 //   return (
 //     <MyLink isLink color="teal" href="#">
 //       Visit out new Store

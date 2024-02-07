@@ -1,13 +1,13 @@
-import React from "react"
+import React from "react";
 // @ts-ignore
-import {Meta} from "@storybook/react"
+import {Meta} from "@storybook/react";
 // @ts-ignore
-import {button, buttonGroup} from "@banyu/theme"
-import {ChevronDownIcon} from "@banyu/shared-icons"
+import {button, buttonGroup} from "@banyu/theme";
+import {ChevronDownIcon} from "@banyu/shared-icons";
 // @ts-ignore
-import {JalaBiomass, JalaFeed, JalaHarvest} from "@muhamien/jala-icons"
+import {JalaBiomass, JalaFeed, JalaHarvest} from "@muhamien/jala-icons";
 
-import {Button, ButtonGroup, ButtonGroupProps} from "../src"
+import {Button, ButtonGroup, ButtonGroupProps} from "../src";
 
 // @ts-ignore
 
@@ -55,12 +55,12 @@ export default {
     //   },
     // },
   },
-} as Meta<typeof ButtonGroup>
+} as Meta<typeof ButtonGroup>;
 
 const defaultProps = {
   ...button.defaultVariants,
   ...buttonGroup.defaultVariants,
-}
+};
 
 const Template = (args: ButtonGroupProps) => (
   <ButtonGroup {...args}>
@@ -68,7 +68,7 @@ const Template = (args: ButtonGroupProps) => (
     <Button>Middle</Button>
     <Button>Trailing</Button>
   </ButtonGroup>
-)
+);
 
 const VariantButtonTemplate = (args: ButtonGroupProps) => (
   <ButtonGroup {...args}>
@@ -82,7 +82,7 @@ const VariantButtonTemplate = (args: ButtonGroupProps) => (
       Trailing
     </Button>
   </ButtonGroup>
-)
+);
 const VariantIconOnlyButtonTemplate = (args: ButtonGroupProps) => (
   <ButtonGroup {...args}>
     <Button>
@@ -95,7 +95,7 @@ const VariantIconOnlyButtonTemplate = (args: ButtonGroupProps) => (
       <JalaHarvest className="text-xl" />
     </Button>
   </ButtonGroup>
-)
+);
 
 const VariantIconButtonTemplate = (args: ButtonGroupProps) => (
   <ButtonGroup {...args}>
@@ -112,7 +112,7 @@ const VariantIconButtonTemplate = (args: ButtonGroupProps) => (
       Harvest
     </Button>
   </ButtonGroup>
-)
+);
 
 const VariantButtonsTemplate = (args: ButtonGroupProps) => (
   <ButtonGroup {...args}>
@@ -123,52 +123,77 @@ const VariantButtonsTemplate = (args: ButtonGroupProps) => (
       <ChevronDownIcon className="text-xl" />
     </Button>
   </ButtonGroup>
-)
+);
 
 export const solid = {
   render: Template,
-
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=418%3A74930&mode=dev",
+    },
+  },
   args: {
     ...defaultProps,
   },
-}
+};
 export const outline = {
   render: Template,
-
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=418%3A74930&mode=dev",
+    },
+  },
   args: {
     ...defaultProps,
     variant: "outline",
   },
-}
+};
 export const ghost = {
   render: Template,
-
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=418%3A74930&mode=dev",
+    },
+  },
   args: {
     ...defaultProps,
     variant: "ghost",
   },
-}
+};
 export const iconOnly = {
   render: VariantIconOnlyButtonTemplate,
-
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=418%3A74930&mode=dev",
+    },
+  },
   args: {
     ...defaultProps,
     variant: "iconOnly",
     color: "primary",
     isIconOnly: true,
   },
-}
+};
 
 export const iconWithText = {
   render: VariantIconButtonTemplate,
-
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=418%3A74930&mode=dev",
+    },
+  },
   args: {
     ...defaultProps,
     children: "Button",
     variant: "outline",
     color: "basic",
   },
-}
+};
 
 // export const VariantButton = {
 //   render: VariantButtonTemplate,

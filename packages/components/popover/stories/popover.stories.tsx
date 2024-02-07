@@ -438,7 +438,12 @@ const OffsetTemplate = (args: PopoverProps) => (
 
 // export const Default = {
 //   render: Template,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //   },
@@ -446,7 +451,12 @@ const OffsetTemplate = (args: PopoverProps) => (
 //
 // export const DisableAnimation = {
 //   render: Template,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     disableAnimation: true,
@@ -455,7 +465,12 @@ const OffsetTemplate = (args: PopoverProps) => (
 //
 // export const NonDismissable = {
 //   render: Template,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     showArrow: true,
@@ -465,7 +480,12 @@ const OffsetTemplate = (args: PopoverProps) => (
 //
 // export const WithoutScaleTrigger = {
 //   render: Template,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     triggerScaleOnOpen: false,
@@ -474,7 +494,12 @@ const OffsetTemplate = (args: PopoverProps) => (
 //
 // export const WithArrow = {
 //   render: Template,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     showArrow: true,
@@ -483,7 +508,12 @@ const OffsetTemplate = (args: PopoverProps) => (
 //
 // export const OpenChange = {
 //   render: OpenChangeTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //   },
@@ -491,7 +521,12 @@ const OffsetTemplate = (args: PopoverProps) => (
 //
 // export const Placements = {
 //   render: PlacementsTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     color: "secondary",
@@ -500,7 +535,12 @@ const OffsetTemplate = (args: PopoverProps) => (
 //
 // export const WithOffset = {
 //   render: OffsetTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     color: "warning",
@@ -509,7 +549,12 @@ const OffsetTemplate = (args: PopoverProps) => (
 //
 // export const WithTitleProps = {
 //   render: WithTitlePropsTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //   },
@@ -517,7 +562,12 @@ const OffsetTemplate = (args: PopoverProps) => (
 //
 // export const WithForm = {
 //   render: WithFormTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     showArrow: true,
@@ -529,7 +579,12 @@ const OffsetTemplate = (args: PopoverProps) => (
 //
 // export const Backdrops = {
 //   render: BackdropsTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     showArrow: true,
@@ -540,7 +595,12 @@ const OffsetTemplate = (args: PopoverProps) => (
 //
 // export const WithBackdrop = {
 //   render: WithBackdropTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     showArrow: true,
@@ -552,7 +612,12 @@ const OffsetTemplate = (args: PopoverProps) => (
 //
 // export const CustomMotion = {
 //   render: Template,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     placement: "bottom",

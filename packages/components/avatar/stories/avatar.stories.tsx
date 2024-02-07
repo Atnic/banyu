@@ -1,7 +1,7 @@
 import React from "react";
 // @ts-ignore
 import {Meta} from "@storybook/react";
-import {Activity, Camera} from "@banyu/shared-icons";
+import {Camera} from "@banyu/shared-icons";
 import {avatar} from "@banyu/theme";
 
 import {Avatar} from "../src";
@@ -59,12 +59,24 @@ const defaultProps = {
 };
 
 export const Default = {
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?type=design&node-id=263-43023&mode=design&t=s35rcqtPmfgl4e7f-0",
+    },
+  },
   args: {
     ...defaultProps,
   },
 };
 
 export const WithText = {
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?type=design&node-id=263-43023&mode=design&t=s35rcqtPmfgl4e7f-0",
+    },
+  },
   args: {
     ...defaultProps,
     name: "AN",
@@ -73,6 +85,12 @@ export const WithText = {
   },
 };
 export const SolidColor = {
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?type=design&node-id=263-43023&mode=design&t=s35rcqtPmfgl4e7f-0",
+    },
+  },
   args: {
     ...defaultProps,
     name: "AN",
@@ -80,6 +98,12 @@ export const SolidColor = {
   },
 };
 export const SoftColor = {
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?type=design&node-id=263-43023&mode=design&t=s35rcqtPmfgl4e7f-0",
+    },
+  },
   args: {
     ...defaultProps,
     name: "AN",
@@ -99,12 +123,24 @@ export const SoftColor = {
 // };
 
 export const WithImage = {
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?type=design&node-id=263-43023&mode=design&t=s35rcqtPmfgl4e7f-0",
+    },
+  },
   args: {
     ...defaultProps,
     src: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
   },
 };
 export const Custom = {
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?type=design&node-id=263-43023&mode=design&t=s35rcqtPmfgl4e7f-0",
+    },
+  },
   args: {
     ...defaultProps,
     icon: <Camera fill="currentColor" size={20} />,

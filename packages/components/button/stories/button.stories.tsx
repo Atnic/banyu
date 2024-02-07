@@ -2,7 +2,7 @@ import React from "react";
 // @ts-ignore
 import {Meta} from "@storybook/react";
 import {button} from "@banyu/theme";
-import {Camera, HeadphonesIcon, Notification} from "@banyu/shared-icons";
+import {HeadphonesIcon} from "@banyu/shared-icons";
 
 import {Button, ButtonProps} from "../src";
 
@@ -79,39 +79,69 @@ const StateTemplate = (args: ButtonProps) => {
   };
 
   return (
-      <div className="h-screen">
-        <Button {...args} aria-label="Open" aria-pressed={isOpen} onPress={handlePress}>
-          {isOpen ? "Close" : "Open"}
-        </Button>
-      </div>
+    <div className="h-screen">
+      <Button {...args} aria-label="Open" aria-pressed={isOpen} onPress={handlePress}>
+        {isOpen ? "Close" : "Open"}
+      </Button>
+    </div>
   );
 };
 
 export const Solid = {
+  parameters: {
+    design: {
+      type: "figma",
+      url: "",
+    },
+  },
   args: {
     ...defaultProps,
   },
 };
 export const Outline = {
+  parameters: {
+    design: {
+      type: "figma",
+      url: "",
+    },
+  },
   args: {
     ...defaultProps,
-    variant:'outline'
+    variant: "outline",
   },
 };
 export const Ghost = {
+  parameters: {
+    design: {
+      type: "figma",
+      url: "",
+    },
+  },
   args: {
     ...defaultProps,
-    variant:'ghost'
+    variant: "ghost",
   },
 };
 export const rounded = {
+  parameters: {
+    design: {
+      type: "figma",
+      url: "",
+    },
+  },
   args: {
     ...defaultProps,
     radius: "full",
-    variant: 'rounded'
+    variant: "rounded",
   },
 };
 export const IconOnly = {
+  parameters: {
+    design: {
+      type: "figma",
+      url: "",
+    },
+  },
   args: {
     ...defaultProps,
     isIconOnly: true,
@@ -121,6 +151,12 @@ export const IconOnly = {
 };
 
 export const IsLoading = {
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=376%3A46775&mode=dev",
+    },
+  },
   args: {
     ...defaultProps,
     children: "",
@@ -128,7 +164,6 @@ export const IsLoading = {
     isLoading: true,
   },
 };
-
 
 // export const WithState = {
 //   render: StateTemplate,

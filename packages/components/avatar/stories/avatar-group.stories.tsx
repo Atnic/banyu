@@ -38,34 +38,34 @@ export default {
 const Template = (args: AvatarGroupProps) => (
   <AvatarGroup {...args}>
     <Avatar src="https://i.pravatar.cc/300?u=a042581f4e29026705d" />
-    <Avatar variant="solid" color="primary" name="FI" />
-    <Avatar variant="soft" color="danger" name="CR" />
+    <Avatar color="primary" name="FI" variant="solid" />
+    <Avatar color="danger" name="CR" variant="soft" />
     <Avatar src="https://i.pravatar.cc/300?u=a042581f4e29026706d" />
-    <Avatar variant="solid" color="success" name="GG" />
+    <Avatar color="success" name="GG" variant="solid" />
     <Avatar src="https://i.pravatar.cc/300?u=a042581f4e29026707d" />
-    <Avatar variant="soft" color="warning" name="AB" />
+    <Avatar color="warning" name="AB" variant="soft" />
     <Avatar src="https://i.pravatar.cc/300?u=a042581f4e29026709d" />
-    <Avatar variant="solid" color="primary" name="FI" />
-    <Avatar variant="soft" color="danger" name="CR" />
-    <Avatar variant="solid" color="success" name="GG" />
-    <Avatar variant="soft" color="warning" name="AB" />
+    <Avatar color="primary" name="FI" variant="solid" />
+    <Avatar color="danger" name="CR" variant="soft" />
+    <Avatar color="success" name="GG" variant="solid" />
+    <Avatar color="warning" name="AB" variant="soft" />
   </AvatarGroup>
 );
 
 const colorTemplate = (args: AvatarGroupProps) => (
   <AvatarGroup {...args}>
-    <Avatar variant="solid" color="primary" name="MA" />
-    <Avatar variant="soft" color="danger" name="NA" />
-    <Avatar variant="solid" color="warning" name="AM" />
-    <Avatar variant="soft" color="gray" name="DK" />
-    <Avatar variant="solid" color="primary" name="SY" />
-    <Avatar variant="soft" color="danger" name="RK" />
-    <Avatar variant="solid" color="success" name="JH" />
-    <Avatar variant="soft" color="gray" name="WA" />
-    <Avatar variant="solid" color="primary" name="FI" />
-    <Avatar variant="soft" color="danger" name="CR" />
-    <Avatar variant="solid" color="success" name="GG" />
-    <Avatar variant="soft" color="warning" name="AB" />
+    <Avatar color="primary" name="MA" variant="solid" />
+    <Avatar color="danger" name="NA" variant="soft" />
+    <Avatar color="warning" name="AM" variant="solid" />
+    <Avatar color="gray" name="DK" variant="soft" />
+    <Avatar color="primary" name="SY" variant="solid" />
+    <Avatar color="danger" name="RK" variant="soft" />
+    <Avatar color="success" name="JH" variant="solid" />
+    <Avatar color="gray" name="WA" variant="soft" />
+    <Avatar color="primary" name="FI" variant="solid" />
+    <Avatar color="danger" name="CR" variant="soft" />
+    <Avatar color="success" name="GG" variant="solid" />
+    <Avatar color="warning" name="AB" variant="soft" />
   </AvatarGroup>
 );
 const InitialTemplate = (args: AvatarGroupProps) => (
@@ -91,57 +91,62 @@ export const Default = {
 };
 
 export const Bordered = {
-    render: Template,
-
-    args: {
-        isBordered: true,
+  render: Template,
+  parameters: {
+    design: {
+      type: "figma",
+      url: "",
     },
+  },
+  args: {
+    isBordered: true,
+  },
 };
 export const White = {
-    render: colorTemplate,
+  render: colorTemplate,
 
-    args: {
-        color: "gray",
-        isBordered: true,
-    },
+  args: {
+    color: "gray",
+    isBordered: true,
+  },
 };
 export const Soft = {
-    render: InitialTemplate,
+  render: InitialTemplate,
 
-    args: {
-        max: 4,
-        variant: "soft",
-        color: "success",
-        isBordered: true,
-    },
+  args: {
+    max: 4,
+    variant: "soft",
+    color: "success",
+    isBordered: true,
+  },
 };
 
 export const Solid = {
-    render: InitialTemplate,
+  render: InitialTemplate,
 
-    args: {
-        max: 4,
-        variant: "solid",
-        color: "primary",
-        isBordered: true,
-    },
+  args: {
+    max: 4,
+    variant: "solid",
+    color: "primary",
+    isBordered: true,
+  },
 };
 export const MixColor = {
-    render: colorTemplate,
+  render: colorTemplate,
 
-    args: {
-        isBordered: true,
-    },
+  args: {
+    isBordered: true,
+  },
 };
 
 export const Grid = {
-    render: Template,
+  render: Template,
 
-    args: {
-        color: "primary",
-        max: 7,
-        isGrid: true,
-    },
+  args: {
+    color: "primary",
+    max: 7,
+    isGrid: true,
+  },
 };
 //
 // export const isDisabled = {

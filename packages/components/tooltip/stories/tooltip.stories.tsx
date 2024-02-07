@@ -1,13 +1,13 @@
-import React from "react"
+import React from "react";
 // @ts-ignore
-import {Meta} from "@storybook/react"
-import {popover} from "@banyu/theme"
-import {Button} from "@banyu/button"
-import {Kbd} from "@banyu/kbd"
+import {Meta} from "@storybook/react";
+import {popover} from "@banyu/theme";
+import {Button} from "@banyu/button";
+import {Kbd} from "@banyu/kbd";
 
-import {Tooltip, TooltipProps} from "../src"
+import {Tooltip, TooltipProps} from "../src";
 
-import {InfoIcon} from "./info"
+import {InfoIcon} from "./info";
 
 export default {
   title: "Components/Tooltip",
@@ -99,7 +99,7 @@ export default {
       </div>
     ),
   ],
-} as Meta<typeof Tooltip>
+} as Meta<typeof Tooltip>;
 
 const defaultProps = {
   ...popover.defaultVariants,
@@ -115,7 +115,7 @@ const defaultProps = {
       <InfoIcon />
     </Button>
   ),
-}
+};
 
 const DirectionTemplate = (args: TooltipProps) => {
   return (
@@ -146,8 +146,8 @@ const DirectionTemplate = (args: TooltipProps) => {
         </Button>
       </Tooltip>
     </div>
-  )
-}
+  );
+};
 const SecondaryContentTemplate = (args: TooltipProps) => {
   return (
     <div className="flex gap-32">
@@ -177,17 +177,29 @@ const SecondaryContentTemplate = (args: TooltipProps) => {
         </Button>
       </Tooltip>
     </div>
-  )
-}
+  );
+};
 
 export const Direction = {
   render: DirectionTemplate,
+  parameters: {
+    design: {
+      type: "figma",
+      url: "",
+    },
+  },
   args: {
     ...defaultProps,
   },
-}
+};
 export const SecondaryContent = {
   render: SecondaryContentTemplate,
+  parameters: {
+    design: {
+      type: "figma",
+      url: "",
+    },
+  },
   args: {
     ...defaultProps,
     content: (
@@ -197,10 +209,16 @@ export const SecondaryContent = {
       </div>
     ),
   },
-}
+};
 
 export const ShortcutHints = {
   render: SecondaryContentTemplate,
+  parameters: {
+    design: {
+      type: "figma",
+      url: "",
+    },
+  },
   args: {
     ...defaultProps,
     content: (
@@ -213,9 +231,15 @@ export const ShortcutHints = {
       </div>
     ),
   },
-}
+};
 export const Indicator = {
   render: SecondaryContentTemplate,
+  parameters: {
+    design: {
+      type: "figma",
+      url: "",
+    },
+  },
   args: {
     ...defaultProps,
     content: (
@@ -225,9 +249,15 @@ export const Indicator = {
       </div>
     ),
   },
-}
+};
 export const SingleIndicator = {
   render: SecondaryContentTemplate,
+  parameters: {
+    design: {
+      type: "figma",
+      url: "",
+    },
+  },
   args: {
     ...defaultProps,
     content: (
@@ -240,9 +270,15 @@ export const SingleIndicator = {
       </div>
     ),
   },
-}
+};
 export const TwoIndicator = {
   render: SecondaryContentTemplate,
+  parameters: {
+    design: {
+      type: "figma",
+      url: "",
+    },
+  },
   args: {
     ...defaultProps,
     content: (
@@ -259,4 +295,4 @@ export const TwoIndicator = {
       </div>
     ),
   },
-}
+};

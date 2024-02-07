@@ -41,12 +41,24 @@ const defaultProps = {
 };
 
 // export const Default = {
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //   },
 // };
 //
 // export const WithLabel = {
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     label: "Loading...",

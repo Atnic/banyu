@@ -1,12 +1,12 @@
-import React from "react"
-import {Meta} from "@storybook/react"
-import {card} from "@banyu/theme"
-import {Link} from "@banyu/link"
-import {Button} from "@banyu/button"
-import {Code} from "@banyu/code"
-import {Image} from "@banyu/image"
+import React from "react";
+import {Meta} from "@storybook/react";
+import {card} from "@banyu/theme";
+import {Link} from "@banyu/link";
+import {Button} from "@banyu/button";
+import {Code} from "@banyu/code";
+import {Image} from "@banyu/image";
 
-import {Card, CardBody, CardHeader, CardFooter, CardProps} from "../src"
+import {Card, CardBody, CardHeader, CardFooter, CardProps} from "../src";
 
 export default {
   title: "Components/Card",
@@ -67,12 +67,12 @@ export default {
       </div>
     ),
   ],
-} as Meta<typeof Card>
+} as Meta<typeof Card>;
 
 const defaultProps = {
   ...card.defaultVariants,
   disableRipple: false,
-}
+};
 
 const Template = (args: CardProps) => (
   <Card {...args} className="max-w-md">
@@ -80,7 +80,7 @@ const Template = (args: CardProps) => (
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
     </CardBody>
   </Card>
-)
+);
 
 const WithDividerTemplate = (args: CardProps) => (
   <Card {...args} className="max-w-md">
@@ -97,7 +97,7 @@ const WithDividerTemplate = (args: CardProps) => (
       </p>
     </CardFooter>
   </Card>
-)
+);
 
 const WithFooterTemplate = (args: CardProps) => (
   <Card {...args} className="p-4 max-w-md">
@@ -123,7 +123,7 @@ const WithFooterTemplate = (args: CardProps) => (
       </Link>
     </CardFooter>
   </Card>
-)
+);
 
 const WithAbsImageHeaderTemplate = (args: CardProps) => (
   <Card {...args} className="max-w-[330px]">
@@ -141,7 +141,7 @@ const WithAbsImageHeaderTemplate = (args: CardProps) => (
       width={330}
     />
   </Card>
-)
+);
 
 const WithAbsImgHeaderFooterTemplate = (args: CardProps) => (
   <Card className="w-[330px] bg-zinc-100 dark:bg-zinc-100" {...args}>
@@ -172,7 +172,7 @@ const WithAbsImgHeaderFooterTemplate = (args: CardProps) => (
       </Button>
     </CardFooter>
   </Card>
-)
+);
 
 const CoverImgTemplate = (args: CardProps) => (
   <div className="max-w-[900px] gap-2 grid grid-cols-12 grid-rows-2 px-8">
@@ -255,7 +255,7 @@ const CoverImgTemplate = (args: CardProps) => (
       </CardFooter>
     </Card>
   </div>
-)
+);
 
 const CenterImgTemplate = (args: CardProps) => (
   <Card {...args} className="max-w-fit py-4 px-0">
@@ -273,7 +273,7 @@ const CenterImgTemplate = (args: CardProps) => (
       />
     </CardBody>
   </Card>
-)
+);
 
 const PrimaryActionTemplate = (args: CardProps) => {
   const list = [
@@ -317,14 +317,14 @@ const PrimaryActionTemplate = (args: CardProps) => {
       img: "/images/fruit-8.jpeg",
       price: "$12.20",
     },
-  ]
+  ];
 
-  type ListItem = (typeof list)[number]
+  type ListItem = (typeof list)[number];
 
   const handlePress = (item: ListItem) => {
     // eslint-disable-next-line no-console
-    console.log("item pressed", item)
-  }
+    console.log("item pressed", item);
+  };
 
   return (
     <div className="gap-2 grid grid-cols-2 sm:grid-cols-4">
@@ -345,8 +345,8 @@ const PrimaryActionTemplate = (args: CardProps) => {
         </Card>
       ))}
     </div>
-  )
-}
+  );
+};
 
 const CenterImgWithHeaderTemplate = (args: CardProps) => {
   const list = [
@@ -386,7 +386,7 @@ const CenterImgWithHeaderTemplate = (args: CardProps) => {
       title: "Accessories",
       img: "/images/assets/accessories.png",
     },
-  ]
+  ];
 
   return (
     <div className="flex gap-2 justify-center flex-wrap">
@@ -403,8 +403,8 @@ const CenterImgWithHeaderTemplate = (args: CardProps) => {
         </div>
       ))}
     </div>
-  )
-}
+  );
+};
 
 // export const Default = {
 //   render: Template,
@@ -416,7 +416,12 @@ const CenterImgWithHeaderTemplate = (args: CardProps) => {
 //
 // export const WithDivider = {
 //   render: WithDividerTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //   },
@@ -424,7 +429,12 @@ const CenterImgWithHeaderTemplate = (args: CardProps) => {
 //
 // export const WithFooter = {
 //   render: WithFooterTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //   },
@@ -432,7 +442,12 @@ const CenterImgWithHeaderTemplate = (args: CardProps) => {
 //
 // export const WithAbsImageHeader = {
 //   render: WithAbsImageHeaderTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //   },
@@ -440,7 +455,12 @@ const CenterImgWithHeaderTemplate = (args: CardProps) => {
 //
 // export const WithAbsImgHeaderFooter = {
 //   render: WithAbsImgHeaderFooterTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //   },
@@ -448,7 +468,12 @@ const CenterImgWithHeaderTemplate = (args: CardProps) => {
 //
 // export const CoverImg = {
 //   render: CoverImgTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //   },
@@ -456,7 +481,12 @@ const CenterImgWithHeaderTemplate = (args: CardProps) => {
 //
 // export const CenterImg = {
 //   render: CenterImgTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //   },
@@ -464,7 +494,12 @@ const CenterImgWithHeaderTemplate = (args: CardProps) => {
 //
 // export const PrimaryAction = {
 //   render: PrimaryActionTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //   },
@@ -472,7 +507,12 @@ const CenterImgWithHeaderTemplate = (args: CardProps) => {
 //
 // export const CenterImgWithHeader = {
 //   render: CenterImgWithHeaderTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //   },

@@ -1,8 +1,8 @@
-import React from "react"
-import {Meta} from "@storybook/react"
-import {divider} from "@banyu/theme"
+import React from "react";
+import {Meta} from "@storybook/react";
+import {divider} from "@banyu/theme";
 
-import {Divider, DividerProps} from "../src"
+import {Divider, DividerProps} from "../src";
 
 export default {
   title: "Components/Divider",
@@ -22,11 +22,11 @@ export default {
       </div>
     ),
   ],
-} as Meta<typeof Divider>
+} as Meta<typeof Divider>;
 
 const defaultProps = {
   ...divider.defaultVariants,
-}
+};
 
 const Template = (args: DividerProps) => (
   <div className="max-w-md">
@@ -43,11 +43,16 @@ const Template = (args: DividerProps) => (
       <div>Source</div>
     </div>
   </div>
-)
+);
 
 // export const Default = {
 //   render: Template,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //   },

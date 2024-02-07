@@ -460,7 +460,12 @@ const CustomWithHooksTemplate = (args: InputProps) => {
 
 export const Default = {
   render: MirrorTemplate,
-
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=286%3A126761&mode=dev",
+    },
+  },
   args: {
     ...defaultProps,
   },
@@ -468,7 +473,12 @@ export const Default = {
 //
 // export const Required = {
 //   render: MirrorTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     isRequired: true,
@@ -477,7 +487,12 @@ export const Default = {
 //
 // export const Disabled = {
 //   render: Template,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     defaultValue: "junior@Banyu.org",
@@ -488,7 +503,12 @@ export const Default = {
 //
 // export const ReadOnly = {
 //   render: Template,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     defaultValue: "junior@Banyu.org",
@@ -499,7 +519,12 @@ export const Default = {
 //
 // export const WithoutLabel = {
 //   render: Template,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     label: null,
@@ -510,7 +535,12 @@ export const Default = {
 //
 // export const WithDescription = {
 //   render: MirrorTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     description: "We'll never share your email with anyone else.",
@@ -519,7 +549,12 @@ export const Default = {
 //
 // export const Password = {
 //   render: PasswordTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     label: "Password",
@@ -530,7 +565,12 @@ export const Default = {
 //
 // export const LabelPlacement = {
 //   render: LabelPlacementTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //   },
@@ -538,7 +578,12 @@ export const Default = {
 //
 // export const Clearable = {
 //   render: Template,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     variant: "bordered",
@@ -551,7 +596,12 @@ export const Default = {
 //
 // export const StartContent = {
 //   render: StartContentTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     labelPlacement: "outside",
@@ -560,7 +610,12 @@ export const Default = {
 //
 // export const EndContent = {
 //   render: EndContentTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     variant: "bordered",
@@ -570,7 +625,12 @@ export const Default = {
 //
 // export const StartAndEndContent = {
 //   render: StartAndEndContentTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     variant: "bordered",
@@ -580,7 +640,12 @@ export const Default = {
 //
 // export const WithErrorMessage = {
 //   render: Template,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     errorMessage: "Please enter a valid email address",
@@ -589,7 +654,12 @@ export const Default = {
 //
 // export const IsInvalid = {
 //   render: Template,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     variant: "bordered",
@@ -602,7 +672,12 @@ export const Default = {
 //
 // export const RegexValidation = {
 //   render: RegexValidationTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     variant: "faded",
@@ -611,7 +686,12 @@ export const Default = {
 //
 // export const InputTypes = {
 //   render: InputTypesTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //   },
@@ -619,7 +699,12 @@ export const Default = {
 //
 // export const Controlled = {
 //   render: ControlledTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     variant: "bordered",
@@ -628,7 +713,12 @@ export const Default = {
 //
 // export const CustomWithClassNames = {
 //   render: CustomWithClassNamesTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //   },
@@ -636,7 +726,12 @@ export const Default = {
 //
 // export const CustomWithHooks = {
 //   render: CustomWithHooksTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     label: "Search",

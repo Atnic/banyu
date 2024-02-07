@@ -1,6 +1,4 @@
-import React from "react";
 import {Meta} from "@storybook/react";
-import {Link} from "@banyu/link";
 
 import {User} from "../src";
 
@@ -12,6 +10,12 @@ export default {
 const url = "https://avatars.githubusercontent.com/u/30373425?v=4";
 
 // export const Default = {
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     name: "Junior Garcia",
 //     avatarProps: {
@@ -21,6 +25,12 @@ const url = "https://avatars.githubusercontent.com/u/30373425?v=4";
 // };
 //
 // export const isFocusable = {
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     name: "Junior Garcia",
 //     isFocusable: true,
@@ -31,6 +41,12 @@ const url = "https://avatars.githubusercontent.com/u/30373425?v=4";
 // };
 //
 // export const WithDefaultAvatar = {
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     name: "Junior Garcia",
 //     avatarProps: {
@@ -45,6 +61,12 @@ const url = "https://avatars.githubusercontent.com/u/30373425?v=4";
 // };
 //
 // export const WithDescription = {
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     name: "Junior Garcia",
 //     description: "Software Engineer",
@@ -55,6 +77,12 @@ const url = "https://avatars.githubusercontent.com/u/30373425?v=4";
 // };
 //
 // export const WithLinkDescription = {
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     name: "Junior Garcia",
 //     description: (

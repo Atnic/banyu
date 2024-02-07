@@ -1,9 +1,9 @@
-import React from "react"
+import React from "react";
 // @ts-ignore
-import {Meta} from "@storybook/react"
-import {breadcrumbItem} from "@banyu/theme"
-import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem} from "@banyu/dropdown"
-import {Button} from "@banyu/button"
+import {Meta} from "@storybook/react";
+import {breadcrumbItem} from "@banyu/theme";
+import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem} from "@banyu/dropdown";
+import {Button} from "@banyu/button";
 import {
   ArrowRightIcon,
   CheckIcon,
@@ -14,10 +14,10 @@ import {
   InfoIcon,
   MailFilledIcon,
   PetBoldIcon,
-} from "@banyu/shared-icons"
-import {clsx} from "@banyu/shared-utils"
+} from "@banyu/shared-icons";
+import {clsx} from "@banyu/shared-utils";
 
-import {Breadcrumbs, BreadcrumbItem, BreadcrumbsProps} from "../src"
+import {Breadcrumbs, BreadcrumbItem, BreadcrumbsProps} from "../src";
 
 export default {
   title: "Components/Breadcrumbs",
@@ -73,12 +73,12 @@ export default {
       },
     },
   },
-} as Meta<typeof Breadcrumbs>
+} as Meta<typeof Breadcrumbs>;
 
 const defaultProps = {
   ...breadcrumbItem.defaultVariants,
   variant: "default",
-}
+};
 
 const Template = (args: BreadcrumbsProps & {page: number}) => (
   <Breadcrumbs {...args}>
@@ -89,10 +89,10 @@ const Template = (args: BreadcrumbsProps & {page: number}) => (
     <BreadcrumbItem href="#">Menu 2</BreadcrumbItem>
     <BreadcrumbItem href="#">Menu 3</BreadcrumbItem>
   </Breadcrumbs>
-)
+);
 
 const ControlledTemplate = (args: BreadcrumbsProps & {page: number}) => {
-  const [currentPage, setCurrentPage] = React.useState<React.Key>("song")
+  const [currentPage, setCurrentPage] = React.useState<React.Key>("song");
 
   return (
     <Breadcrumbs {...args} onAction={(key) => setCurrentPage(key)}>
@@ -112,11 +112,11 @@ const ControlledTemplate = (args: BreadcrumbsProps & {page: number}) => {
         Song
       </BreadcrumbItem>
     </Breadcrumbs>
-  )
-}
+  );
+};
 
 const MenuTypeTemplate = (args: BreadcrumbsProps & {page: number}) => {
-  const [currentPage, setCurrentPage] = React.useState<React.Key>("music")
+  const [currentPage, setCurrentPage] = React.useState<React.Key>("music");
 
   return (
     <Breadcrumbs
@@ -150,8 +150,8 @@ const MenuTypeTemplate = (args: BreadcrumbsProps & {page: number}) => {
         Song
       </BreadcrumbItem>
     </Breadcrumbs>
-  )
-}
+  );
+};
 
 const WithStartContentTemplate = (args: BreadcrumbsProps & {page: number}) => (
   <Breadcrumbs {...args}>
@@ -186,7 +186,7 @@ const WithStartContentTemplate = (args: BreadcrumbsProps & {page: number}) => (
       Song
     </BreadcrumbItem>
   </Breadcrumbs>
-)
+);
 
 const WithEndContentTemplate = (args: BreadcrumbsProps & {page: number}) => (
   <Breadcrumbs {...args}>
@@ -221,7 +221,7 @@ const WithEndContentTemplate = (args: BreadcrumbsProps & {page: number}) => (
       Song
     </BreadcrumbItem>
   </Breadcrumbs>
-)
+);
 
 const WithDropdownEllipsisTemplate = (args: BreadcrumbsProps & {page: number}) => (
   <Breadcrumbs
@@ -265,14 +265,14 @@ const WithDropdownEllipsisTemplate = (args: BreadcrumbsProps & {page: number}) =
       Menu 4
     </BreadcrumbItem>
   </Breadcrumbs>
-)
+);
 
 const WithDropdownItemTemplate = (args: BreadcrumbsProps & {page: number}) => {
   const sizeMap = {
     sm: "text-xs",
     md: "text-sm",
     lg: "text-md",
-  }
+  };
 
   return (
     <Breadcrumbs
@@ -326,8 +326,8 @@ const WithDropdownItemTemplate = (args: BreadcrumbsProps & {page: number}) => {
         </Dropdown>
       </BreadcrumbItem>
     </Breadcrumbs>
-  )
-}
+  );
+};
 
 const CustomStylesTemplate = (args: BreadcrumbsProps & {page: number}) => (
   <Breadcrumbs
@@ -354,17 +354,29 @@ const CustomStylesTemplate = (args: BreadcrumbsProps & {page: number}) => (
       Delivery Address
     </BreadcrumbItem>
   </Breadcrumbs>
-)
+);
 
 export const Default = {
   render: Template,
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=327%3A122749&mode=dev",
+    },
+  },
   args: {
     ...defaultProps,
   },
-}
+};
 
 export const ArrowRightSeparator = {
   render: Template,
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=327%3A122749&mode=dev",
+    },
+  },
   args: {
     ...defaultProps,
     itemClasses: {
@@ -372,9 +384,15 @@ export const ArrowRightSeparator = {
     },
     separator: <ArrowRightIcon className="text-black text-sm" />,
   },
-}
+};
 export const ChevronSeparator = {
   render: Template,
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=327%3A122749&mode=dev",
+    },
+  },
   args: {
     ...defaultProps,
     itemClasses: {
@@ -382,9 +400,15 @@ export const ChevronSeparator = {
     },
     separator: <ChevronRightIcon className="text-black text-sm" />,
   },
-}
+};
 export const CustomSeparator = {
   render: Template,
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=327%3A122749&mode=dev",
+    },
+  },
   args: {
     ...defaultProps,
     itemClasses: {
@@ -392,7 +416,7 @@ export const CustomSeparator = {
     },
     separator: "🫰",
   },
-}
+};
 
 // export const ControlledCurrentItem = {
 //   render: ControlledTemplate,
@@ -432,21 +456,33 @@ export const CustomSeparator = {
 //
 export const WithDropdownEllipsis = {
   render: WithDropdownEllipsisTemplate,
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=327%3A122749&mode=dev",
+    },
+  },
   args: {
     ...defaultProps,
     maxItems: 3,
   },
-}
+};
 
 export const WithItemsBeforeCollapse = {
   render: WithDropdownEllipsisTemplate,
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=327%3A122749&mode=dev",
+    },
+  },
   args: {
     ...defaultProps,
     maxItems: 3,
     itemsBeforeCollapse: 2,
     itemsAfterCollapse: 1,
   },
-}
+};
 
 // export const WithDropdownItem = {
 //   render: WithDropdownItemTemplate,

@@ -1,15 +1,15 @@
-import React from "react"
-import {Meta} from "@storybook/react"
-import {menuItem} from "@banyu/theme"
+import React from "react";
+import {Meta} from "@storybook/react";
+import {menuItem} from "@banyu/theme";
 import {
   AddNoteBulkIcon,
   CopyDocumentBulkIcon,
   EditDocumentBulkIcon,
   DeleteDocumentBulkIcon,
-} from "@banyu/shared-icons"
-import {clsx} from "@banyu/shared-utils"
+} from "@banyu/shared-icons";
+import {clsx} from "@banyu/shared-utils";
 
-import {Menu, MenuItem, MenuSection, MenuProps} from "../src"
+import {Menu, MenuItem, MenuSection, MenuProps} from "../src";
 
 export default {
   title: "Components/Menu",
@@ -37,11 +37,11 @@ export default {
       </div>
     ),
   ],
-} as Meta<typeof Menu>
+} as Meta<typeof Menu>;
 
 const defaultProps = {
   ...menuItem.defaultVariants,
-}
+};
 
 const Template = ({color, variant, ...args}: MenuProps) => (
   <Menu aria-label="Actions" color={color} variant={variant} onAction={alert} {...args}>
@@ -52,7 +52,7 @@ const Template = ({color, variant, ...args}: MenuProps) => (
       Delete file
     </MenuItem>
   </Menu>
-)
+);
 
 const DisabledKeysTemplate = ({color, variant, ...args}: MenuProps) => (
   <Menu
@@ -70,10 +70,10 @@ const DisabledKeysTemplate = ({color, variant, ...args}: MenuProps) => (
       Delete file
     </MenuItem>
   </Menu>
-)
+);
 
 const SingleSelectionTemplate = ({color, variant, ...args}: MenuProps) => {
-  const [selected, setSelected] = React.useState<string | Set<React.Key>>(new Set(["text"]))
+  const [selected, setSelected] = React.useState<string | Set<React.Key>>(new Set(["text"]));
 
   return (
     <Menu
@@ -92,11 +92,11 @@ const SingleSelectionTemplate = ({color, variant, ...args}: MenuProps) => {
       <MenuItem key="single_date">Single Date</MenuItem>
       <MenuItem key="iteration">Iteration</MenuItem>
     </Menu>
-  )
-}
+  );
+};
 
 const MultipleSelectionTemplate = ({color, variant, ...args}: MenuProps) => {
-  const [selected, setSelected] = React.useState<string | Set<React.Key>>(new Set(["text"]))
+  const [selected, setSelected] = React.useState<string | Set<React.Key>>(new Set(["text"]));
 
   return (
     <Menu
@@ -116,8 +116,8 @@ const MultipleSelectionTemplate = ({color, variant, ...args}: MenuProps) => {
       <MenuItem key="single_date">Single Date</MenuItem>
       <MenuItem key="iteration">Iteration</MenuItem>
     </Menu>
-  )
-}
+  );
+};
 
 const WithShortcutTemplate = ({color, variant, ...args}) => (
   <Menu aria-label="Actions" color={color} variant={variant} onAction={alert} {...args}>
@@ -134,10 +134,10 @@ const WithShortcutTemplate = ({color, variant, ...args}) => (
       Delete file
     </MenuItem>
   </Menu>
-)
+);
 
 const WithStartContentTemplate = ({color, variant, disableAnimation, ...args}: MenuProps) => {
-  const iconClasses = "text-2xl text-secondary pointer-events-none flex-shrink-0"
+  const iconClasses = "text-2xl text-secondary pointer-events-none flex-shrink-0";
 
   return (
     <Menu
@@ -175,11 +175,11 @@ const WithStartContentTemplate = ({color, variant, disableAnimation, ...args}: M
         Delete file
       </MenuItem>
     </Menu>
-  )
-}
+  );
+};
 
 const WithEndContentTemplate = ({color, variant, disableAnimation, ...args}) => {
-  const iconClasses = "text-2xl text-default-500 pointer-events-none flex-shrink-0"
+  const iconClasses = "text-2xl text-default-500 pointer-events-none flex-shrink-0";
 
   return (
     <Menu
@@ -208,11 +208,11 @@ const WithEndContentTemplate = ({color, variant, disableAnimation, ...args}) => 
         Delete file
       </MenuItem>
     </Menu>
-  )
-}
+  );
+};
 
 const WithDescriptionTemplate = ({color, variant, disableAnimation, ...args}) => {
-  const iconClasses = "text-2xl text-secondary pointer-events-none flex-shrink-0"
+  const iconClasses = "text-2xl text-secondary pointer-events-none flex-shrink-0";
 
   return (
     <Menu
@@ -258,11 +258,11 @@ const WithDescriptionTemplate = ({color, variant, disableAnimation, ...args}) =>
         Delete file
       </MenuItem>
     </Menu>
-  )
-}
+  );
+};
 
 const WithSectionsTemplate = ({color, variant, disableAnimation, ...args}) => {
-  const iconClasses = "text-2xl text-secondary pointer-events-none flex-shrink-0"
+  const iconClasses = "text-2xl text-secondary pointer-events-none flex-shrink-0";
 
   return (
     <Menu
@@ -313,11 +313,17 @@ const WithSectionsTemplate = ({color, variant, disableAnimation, ...args}) => {
         </MenuItem>
       </MenuSection>
     </Menu>
-  )
-}
+  );
+};
 
 // export const Default = {
 //   render: Template,
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //   },
@@ -325,7 +331,12 @@ const WithSectionsTemplate = ({color, variant, disableAnimation, ...args}) => {
 //
 // export const DisabledKeys = {
 //   render: DisabledKeysTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //   },
@@ -333,7 +344,12 @@ const WithSectionsTemplate = ({color, variant, disableAnimation, ...args}) => {
 //
 // export const SingleSelection = {
 //   render: SingleSelectionTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //   },
@@ -341,7 +357,12 @@ const WithSectionsTemplate = ({color, variant, disableAnimation, ...args}) => {
 //
 // export const MultipleSelection = {
 //   render: MultipleSelectionTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //   },
@@ -349,7 +370,12 @@ const WithSectionsTemplate = ({color, variant, disableAnimation, ...args}) => {
 //
 // export const WithShortcut = {
 //   render: WithShortcutTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //   },
@@ -357,7 +383,12 @@ const WithSectionsTemplate = ({color, variant, disableAnimation, ...args}) => {
 //
 // export const WithStartContent = {
 //   render: WithStartContentTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     variant: "flat",
@@ -367,7 +398,12 @@ const WithSectionsTemplate = ({color, variant, disableAnimation, ...args}) => {
 //
 // export const WithEndContent = {
 //   render: WithEndContentTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     variant: "faded",
@@ -377,7 +413,12 @@ const WithSectionsTemplate = ({color, variant, disableAnimation, ...args}) => {
 //
 // export const WithDescription = {
 //   render: WithDescriptionTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     variant: "flat",
@@ -388,7 +429,12 @@ const WithSectionsTemplate = ({color, variant, disableAnimation, ...args}) => {
 //
 // export const WithSections = {
 //   render: WithSectionsTemplate,
-//
+// parameters: {
+//   design: {
+//     type: "figma",
+//         url: "",
+//   },
+// },
 //   args: {
 //     ...defaultProps,
 //     variant: "flat",
