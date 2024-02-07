@@ -24,7 +24,6 @@
 "@banyu/ripple": major
 "@banyu/switch": major
 "@banyu/image": major
-"@banyu/input": major
 "@banyu/card": major
 "@banyu/code": major
 "@banyu/link": major

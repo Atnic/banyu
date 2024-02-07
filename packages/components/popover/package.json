@@ -60,7 +60,6 @@
   "devDependencies": {
     "@banyu/theme": "workspace:*",
     "@banyu/system": "workspace:*",
-    "@banyu/input": "workspace:*",
     "@banyu/card": "workspace:*",
     "@banyu/kbd": "workspace:*",
     "framer-motion": "^10.16.4",

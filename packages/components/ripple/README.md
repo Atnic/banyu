@@ -1,4 +1,4 @@
-# @Banyu-org/ripple
+# @banyu/ripple
 
 This is a component that creates a ripple effect on the screen.
 
@@ -7,9 +7,9 @@ Please refer to the [documentation](https://localhost:3000/docs/components/butto
 ## Installation
 
 ```sh
-yarn add @Banyu-org/ripple
+yarn add @banyu/ripple
 # or
-npm i @Banyu-org/ripple
+npm i @banyu/ripple
 ```
 
 ## Contribution

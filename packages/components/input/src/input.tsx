@@ -1,3 +1,4 @@
+import React from "react";
 import {CloseFilledIcon} from "@banyu/shared-icons";
 import {useMemo} from "react";
 import {forwardRef} from "@banyu/system";
@@ -47,7 +48,8 @@ const Input = forwardRef<"input", InputProps>((props, ref) => {
     return (
       <div {...getHelperWrapperProps()}>
         {errorMessage ? (
-          <div {...getErrorMessageProps()}>{errorMessage}</div>
+          // <div {...getErrorMessageProps()}>{errorMessage}</div>
+          <></>
         ) : description ? (
           <div {...getDescriptionProps()}>{description}</div>
         ) : null}

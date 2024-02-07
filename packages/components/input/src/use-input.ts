@@ -112,6 +112,7 @@ export function useInput<T extends HTMLInputElement | HTMLTextAreaElement = HTML
     [onValueChange],
   );
 
+  // @ts-ignore
   const [inputValue, setInputValue] = useControlledState<string | undefined>(
     props.value,
     props.defaultValue,
@@ -142,6 +143,7 @@ export function useInput<T extends HTMLInputElement | HTMLTextAreaElement = HTML
   const {labelProps, inputProps, descriptionProps, errorMessageProps} = useTextField(
     {
       ...originalProps,
+      autoCapitalize: "none",
       value: inputValue,
       "aria-label": safeAriaLabel(
         originalProps?.["aria-label"],

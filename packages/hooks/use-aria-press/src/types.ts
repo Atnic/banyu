@@ -33,13 +33,13 @@ export interface PressState {
   activePointerId: any;
   target: FocusableElement | null;
   isOverTarget: boolean;
-  pointerType: PointerType | null;
+  pointerType?: PointerType | null;
   userSelect?: string;
   metaKeyEvents?: Map<string, KeyboardEvent> | null;
 }
 
 export interface EventBase {
-  currentTarget: EventTarget;
+  currentTarget: EventTarget | null;
   shiftKey: boolean;
   ctrlKey: boolean;
   metaKey: boolean;

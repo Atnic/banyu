@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/interactive-supports-focus */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from "react";
+// @ts-ignore
 import {Meta} from "@storybook/react";
 import {input} from "@banyu/theme";
 import {
@@ -54,7 +55,7 @@ export default {
     },
   },
   decorators: [
-    (Story) => (
+    (Story: any) => (
       <div className="flex items-center justify-center w-screen h-screen">
         <Story />
       </div>
@@ -67,20 +68,20 @@ const defaultProps = {
   label: "Email",
 };
 
-const Template = (args) => (
+const Template = (args: InputProps) => (
   <div className="w-full max-w-[240px]">
     <Input {...args} />
   </div>
 );
 
-const MirrorTemplate = (args) => (
+const MirrorTemplate = (args: InputProps) => (
   <div className="w-full max-w-xl flex flex-row items-end gap-4">
     <Input {...args} />
     <Input {...args} placeholder="Enter your email" />
   </div>
 );
 
-const PasswordTemplate = (args) => {
+const PasswordTemplate = (args: InputProps) => {
   const [isPasswordVisible, setIsPasswordVisible] = React.useState(false);
 
   const togglePasswordVisibility = () => setIsPasswordVisible(!isPasswordVisible);
@@ -109,10 +110,10 @@ const PasswordTemplate = (args) => {
   );
 };
 
-const RegexValidationTemplate = (args) => {
+const RegexValidationTemplate = (args: InputProps) => {
   const [value, setValue] = React.useState("");
 
-  const validateEmail = (value) => value.match(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$/i);
+  const validateEmail = (value: string) => value.match(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$/i);
 
   const validationState = React.useMemo(() => {
     if (value === "") return undefined;
@@ -134,7 +135,7 @@ const RegexValidationTemplate = (args) => {
   );
 };
 
-const ControlledTemplate = (args) => {
+const ControlledTemplate = (args: InputProps) => {
   const [value, setValue] = React.useState("");
 
   return (
@@ -145,7 +146,7 @@ const ControlledTemplate = (args) => {
   );
 };
 
-const LabelPlacementTemplate = (args) => (
+const LabelPlacementTemplate = (args: InputProps) => (
   <div className="w-full flex flex-col items-center gap-12">
     <div className="flex flex-col gap-3">
       <h3>Without placeholder</h3>
@@ -176,7 +177,7 @@ const LabelPlacementTemplate = (args) => (
   </div>
 );
 
-const StartContentTemplate = (args) => (
+const StartContentTemplate = (args: InputProps) => (
   <div className="w-full max-w-xl flex flex-row items-end gap-4">
     <Input
       {...args}
@@ -210,7 +211,7 @@ const StartContentTemplate = (args) => (
   </div>
 );
 
-const EndContentTemplate = (args) => (
+const EndContentTemplate = (args: InputProps) => (
   <div className="w-full max-w-xl flex flex-row items-end gap-4">
     <Input
       {...args}
@@ -244,7 +245,7 @@ const EndContentTemplate = (args) => (
   </div>
 );
 
-const StartAndEndContentTemplate = (args) => (
+const StartAndEndContentTemplate = (args: InputProps) => (
   <div className="w-full max-w-xs flex flex-col items-end gap-4">
     <Input
       {...args}
@@ -304,7 +305,7 @@ const StartAndEndContentTemplate = (args) => (
   </div>
 );
 
-const InputTypesTemplate = (args) => (
+const InputTypesTemplate = (args: InputProps) => (
   <div className="grid grid-cols-3 gap-4">
     <Input {...args} label="Text" placeholder="Enter your text" />
     <Input {...args} label="Number" placeholder="Enter your number" type="number" />
@@ -321,7 +322,7 @@ const InputTypesTemplate = (args) => (
   </div>
 );
 
-const CustomWithClassNamesTemplate = (args) => (
+const CustomWithClassNamesTemplate = (args: InputProps) => (
   <div className="w-full max-w-[340px]">
     <Input
       {...args}
@@ -377,7 +378,7 @@ const CustomWithHooksTemplate = (args: InputProps) => {
     endContent,
     shouldLabelBeOutside,
     shouldLabelBeInside,
-    errorMessage,
+    errorMessage: ReactNode,
     getBaseProps,
     getLabelProps,
     getInputProps,
@@ -443,6 +444,7 @@ const CustomWithHooksTemplate = (args: InputProps) => {
           {...getInputWrapperProps()}
           role="button"
           onClick={() => {
+            // @ts-ignore
             domRef.current?.focus();
           }}
         >
@@ -450,19 +452,19 @@ const CustomWithHooksTemplate = (args: InputProps) => {
           {innerWrapper}
         </div>
         {description && <div {...getDescriptionProps()}>{description}</div>}
-        {errorMessage && <div {...getErrorMessageProps()}>{errorMessage}</div>}
+        {/*{errorMessage && <div {...getErrorMessageProps()}>{errorMessage}</div>}*/}
       </Component>
     </div>
   );
 };
 
-// export const Default = {
-//   render: MirrorTemplate,
-//
-//   args: {
-//     ...defaultProps,
-//   },
-// };
+export const Default = {
+  render: MirrorTemplate,
+
+  args: {
+    ...defaultProps,
+  },
+};
 //
 // export const Required = {
 //   render: MirrorTemplate,

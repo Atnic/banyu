@@ -1,4 +1,4 @@
-import type {PopoverVariantProps, SlotsToClasses, PopoverSlots} from "@banyu`/theme";
+import type {PopoverVariantProps, SlotsToClasses, PopoverSlots} from "@banyu/theme";
 import type {HTMLMotionProps} from "framer-motion";
 
 import {RefObject, Ref, useEffect} from "react";

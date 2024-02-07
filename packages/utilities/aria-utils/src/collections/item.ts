@@ -1,6 +1,6 @@
 export {Item as BaseItem} from "@react-stately/collections";
 import {ItemProps as BaseItemProps} from "@react-types/shared";
-import {HTMLBanyuProps, As} from "@Banyu-org/system";
+import {HTMLBanyuProps, As} from "@banyu/system";
 
 /**
  * A modified version of the ItemProps from @react-types/shared, with the addition of the Banyu props.

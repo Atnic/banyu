@@ -18,7 +18,13 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@muhamien/jala-icons": "^1.0.1",
+    "@muhamien/jala-icons": "^2.0.2",
+    "@storybook/addon-a11y": "^7.4.6",
+    "@storybook/addon-actions": "^7.4.6",
+    "@storybook/addon-docs": "^7.4.6",
+    "@storybook/addon-mdx-gfm": "^7.4.6",
+    "@storybook/cli": "^7.4.6",
+    "@storybook/theming": "^7.4.6",
     "@storybook/addon-essentials": "^7.6.8",
     "@storybook/addon-interactions": "^7.6.8",
     "@storybook/addon-links": "^7.6.8",
