@@ -1,6 +1,6 @@
 {
   "name": "@banyu/shared-icons",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Internal icons set, commonly used in the components stories",
   "keywords": [
     "icons-utils"

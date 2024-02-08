@@ -1,5 +1,23 @@
 # @banyu/menu
 
+## 2.0.0
+
+### Major Changes
+
+- Major package 2.0.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @banyu/divider@2.0.0
+  - @banyu/system@2.0.0
+  - @banyu/theme@2.0.0
+  - @banyu/use-aria-press@2.0.0
+  - @banyu/use-is-mobile@2.0.0
+  - @banyu/aria-utils@2.0.0
+  - @banyu/react-utils@2.0.0
+  - @banyu/shared-utils@2.0.0
+
 ## 1.0.0
 
 ### Major Changes
