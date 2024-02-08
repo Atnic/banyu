@@ -440,7 +440,7 @@ importers:
         specifier: workspace:*
         version: link:../../utilities/shared-utils
       '@banyu/system':
-        specifier: 1.0.0
+        specifier: 2.0.0
         version: link:../../core/system
       '@banyu/system-rsc':
         specifier: workspace:*
@@ -468,7 +468,7 @@ importers:
         specifier: workspace:*
         version: link:../../utilities/shared-utils
       '@banyu/system':
-        specifier: 1.0.0
+        specifier: 2.0.0
         version: link:../../core/system
       '@banyu/system-rsc':
         specifier: workspace:*
@@ -640,7 +640,7 @@ importers:
         specifier: workspace:*
         version: link:../../utilities/shared-utils
       '@banyu/system':
-        specifier: 1.0.0
+        specifier: 2.0.0
         version: link:../../core/system
       '@banyu/system-rsc':
         specifier: workspace:*
@@ -879,7 +879,7 @@ importers:
         specifier: workspace:*
         version: link:../../utilities/shared-utils
       '@banyu/system':
-        specifier: 1.0.0
+        specifier: 2.0.0
         version: link:../../core/system
       '@banyu/system-rsc':
         specifier: workspace:*
@@ -913,7 +913,7 @@ importers:
         specifier: workspace:*
         version: link:../../utilities/shared-utils
       '@banyu/system':
-        specifier: 1.0.0
+        specifier: 2.0.0
         version: link:../../core/system
       '@banyu/system-rsc':
         specifier: workspace:*
