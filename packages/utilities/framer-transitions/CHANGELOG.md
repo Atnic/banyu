@@ -1,5 +1,17 @@
 # @banyu/framer-transitions
 
+## 2.3.0
+
+### Minor Changes
+
+- test
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @banyu/system@2.3.0
+  - @banyu/shared-utils@2.3.0
+
 ## 2.2.0
 
 ### Minor Changes

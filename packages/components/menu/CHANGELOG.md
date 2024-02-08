@@ -1,5 +1,23 @@
 # @banyu/menu
 
+## 5.0.0
+
+### Minor Changes
+
+- test
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @banyu/divider@5.0.0
+  - @banyu/system@2.3.0
+  - @banyu/theme@2.3.0
+  - @banyu/use-aria-press@2.3.0
+  - @banyu/use-is-mobile@2.3.0
+  - @banyu/aria-utils@2.3.0
+  - @banyu/react-utils@2.3.0
+  - @banyu/shared-utils@2.3.0
+
 ## 4.0.0
 
 ### Minor Changes

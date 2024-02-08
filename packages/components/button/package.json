@@ -1,6 +1,6 @@
 {
   "name": "@banyu/button",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "Buttons allow users to perform actions and choose with a single tap.",
   "keywords": [
     "button"
@@ -37,8 +37,8 @@
     "framer-motion": ">=4.0.0",
     "react": ">=18",
     "react-dom": ">=18",
-    "@banyu/theme": "2.2.0",
-    "@banyu/system": "2.2.0"
+    "@banyu/theme": "2.3.0",
+    "@banyu/system": "2.3.0"
   },
   "dependencies": {
     "@banyu/react-utils": "workspace: *",

@@ -1,5 +1,11 @@
 # @banyu/stories-utils
 
+## 2.3.0
+
+### Minor Changes
+
+- test
+
 ## 2.2.0
 
 ### Minor Changes
