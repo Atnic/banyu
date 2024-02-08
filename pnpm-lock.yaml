@@ -11,6 +11,10 @@ overrides:
 importers:
 
   .:
+    dependencies:
+      banyu:
+        specifier: ^2.0.0
+        version: 'link:'
     devDependencies:
       '@babel/cli':
         specifier: ^7.23.4
