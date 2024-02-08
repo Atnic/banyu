@@ -1,6 +1,6 @@
 {
   "name": "@banyu/button",
-  "version": "0.0.0-dev-v2-20240208092541",
+  "version": "1.0.0",
   "description": "Buttons allow users to perform actions and choose with a single tap.",
   "keywords": [
     "button"
@@ -37,15 +37,15 @@
     "framer-motion": ">=4.0.0",
     "react": ">=18",
     "react-dom": ">=18",
-    "@banyu/theme": "0.0.0-dev-v2-20240208092541",
-    "@banyu/system": "0.0.0-dev-v2-20240208092541"
+    "@banyu/theme": "1.0.0",
+    "@banyu/system": "1.0.0"
   },
   "dependencies": {
-    "@banyu/react-utils": "workspace:*",
-    "@banyu/ripple": "workspace:*",
-    "@banyu/shared-utils": "workspace:*",
-    "@banyu/spinner": "workspace:*",
-    "@banyu/use-aria-button": "workspace:*",
+    "@banyu/react-utils": "workspace: *",
+    "@banyu/ripple": "workspace: *",
+    "@banyu/shared-utils": "workspace: *",
+    "@banyu/spinner": "workspace: *",
+    "@banyu/use-aria-button": "workspace: *",
     "@react-aria/button": "^3.8.4",
     "@react-aria/focus": "^3.14.3",
     "@react-aria/interactions": "^3.19.1",
@@ -54,10 +54,10 @@
     "@react-types/shared": "^3.21.0"
   },
   "devDependencies": {
-    "@banyu/shared-icons": "workspace:*",
+    "@banyu/shared-icons": "workspace: *",
     "@muhamien/jala-icons": "^1.0.1",
-    "@banyu/system": "workspace:*",
-    "@banyu/theme": "workspace:*",
+    "@banyu/system": "workspace: *",
+    "@banyu/theme": "workspace: *",
     "clean-package": "2.2.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"

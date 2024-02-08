@@ -1,6 +1,6 @@
 {
   "name": "@banyu/framer-transitions",
-  "version": "0.0.0-dev-v2-20240208092541",
+  "version": "1.0.0",
   "description": "A set of framer motion transitions for react",
   "keywords": [
     "framer-transitions"
@@ -39,8 +39,8 @@
     "framer-motion": ">=4.0.0"
   },
   "dependencies": {
-    "@banyu/system": "workspace:*",
-    "@banyu/shared-utils": "workspace:*"
+    "@banyu/system": "workspace: *",
+    "@banyu/shared-utils": "workspace: *"
   },
   "devDependencies": {
     "react": "^18.0.0",

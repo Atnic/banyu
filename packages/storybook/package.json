@@ -9,9 +9,9 @@
     "start": "pnpm dlx http-server storybook-static"
   },
   "dependencies": {
-    "@banyu/react": "workspace:*",
-    "@banyu/system": "workspace:*",
-    "@banyu/theme": "workspace:*",
+    "@banyu/react": "workspace: *",
+    "@banyu/system": "workspace: *",
+    "@banyu/theme": "workspace: *",
     "@muhamien/jala-icons": "^2.0.2",
     "@storybook/addon-storysource": "^7.6.10",
     "react": "^18.2.0",

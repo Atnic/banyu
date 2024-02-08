@@ -1,6 +1,6 @@
 {
   "name": "@banyu/react-utils",
-  "version": "0.0.0-dev-v2-20240208092541",
+  "version": "1.0.0",
   "description": "A set of utilities for react on client side",
   "keywords": [
     "react-utils"
@@ -37,8 +37,8 @@
     "react": ">=18"
   },
   "dependencies": {
-    "@banyu/shared-utils": "workspace:*",
-    "@banyu/react-rsc-utils": "workspace:*"
+    "@banyu/shared-utils": "workspace: *",
+    "@banyu/react-rsc-utils": "workspace: *"
   },
   "devDependencies": {
     "clean-package": "2.2.0",

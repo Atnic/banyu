@@ -218,13 +218,13 @@ importers:
   packages/components/avatar:
     dependencies:
       '@banyu/react-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/react-utils
       '@banyu/shared-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/shared-utils
       '@banyu/use-image':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../hooks/use-image
       '@react-aria/focus':
         specifier: ^3.14.3
@@ -237,16 +237,16 @@ importers:
         version: 3.23.0(react@18.2.0)
     devDependencies:
       '@banyu/shared-icons':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/shared-icons
       '@banyu/system':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/system
       '@banyu/test-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/test-utils
       '@banyu/theme':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/theme
       clean-package:
         specifier: 2.2.0
@@ -261,13 +261,13 @@ importers:
   packages/components/breadcrumbs:
     dependencies:
       '@banyu/react-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/react-utils
       '@banyu/shared-icons':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/shared-icons
       '@banyu/shared-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/shared-utils
       '@react-aria/breadcrumbs':
         specifier: ^3.5.7
@@ -286,19 +286,19 @@ importers:
         version: 3.22.0(react@18.2.0)
     devDependencies:
       '@banyu/button':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../button
       '@banyu/dropdown':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../dropdown
       '@banyu/system':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/system
       '@banyu/theme':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/theme
       '@banyu/tooltip':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../tooltip
       clean-package:
         specifier: 2.2.0
@@ -313,19 +313,19 @@ importers:
   packages/components/button:
     dependencies:
       '@banyu/react-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/react-utils
       '@banyu/ripple':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../ripple
       '@banyu/shared-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/shared-utils
       '@banyu/spinner':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../spinner
       '@banyu/use-aria-button':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../hooks/use-aria-button
       '@react-aria/button':
         specifier: ^3.8.4
@@ -350,13 +350,13 @@ importers:
         version: 10.18.0(react-dom@18.2.0)(react@18.2.0)
     devDependencies:
       '@banyu/shared-icons':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/shared-icons
       '@banyu/system':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/system
       '@banyu/theme':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/theme
       '@muhamien/jala-icons':
         specifier: ^1.0.1
@@ -374,16 +374,16 @@ importers:
   packages/components/card:
     dependencies:
       '@banyu/react-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/react-utils
       '@banyu/ripple':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../ripple
       '@banyu/shared-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/shared-utils
       '@banyu/use-aria-button':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../hooks/use-aria-button
       '@react-aria/button':
         specifier: ^3.8.4
@@ -405,25 +405,25 @@ importers:
         version: 10.18.0(react-dom@18.2.0)(react@18.2.0)
     devDependencies:
       '@banyu/avatar':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../avatar
       '@banyu/button':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../button
       '@banyu/code':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../code
       '@banyu/image':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../image
       '@banyu/link':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../link
       '@banyu/system':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/system
       '@banyu/theme':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/theme
       clean-package:
         specifier: 2.2.0
@@ -438,20 +438,20 @@ importers:
   packages/components/code:
     dependencies:
       '@banyu/react-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/react-utils
       '@banyu/shared-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/shared-utils
       '@banyu/system':
-        specifier: 2.0.0
+        specifier: 0.0.0
         version: link:../../core/system
       '@banyu/system-rsc':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/system-rsc
     devDependencies:
       '@banyu/theme':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/theme
       clean-package:
         specifier: 2.2.0
@@ -466,23 +466,23 @@ importers:
   packages/components/divider:
     dependencies:
       '@banyu/react-rsc-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/react-rsc-utils
       '@banyu/shared-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/shared-utils
       '@banyu/system':
-        specifier: 2.0.0
+        specifier: 0.0.0
         version: link:../../core/system
       '@banyu/system-rsc':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/system-rsc
       '@react-types/shared':
         specifier: ^3.21.0
         version: 3.22.0(react@18.2.0)
     devDependencies:
       '@banyu/theme':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/theme
       clean-package:
         specifier: 2.2.0
@@ -497,16 +497,16 @@ importers:
   packages/components/dropdown:
     dependencies:
       '@banyu/menu':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../menu
       '@banyu/popover':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../popover
       '@banyu/react-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/react-utils
       '@banyu/shared-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/shared-utils
       '@react-aria/focus':
         specifier: ^3.14.3
@@ -525,22 +525,22 @@ importers:
         version: 3.9.6(react@18.2.0)
     devDependencies:
       '@banyu/avatar':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../avatar
       '@banyu/button':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../button
       '@banyu/shared-icons':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/shared-icons
       '@banyu/system':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/system
       '@banyu/theme':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/theme
       '@banyu/user':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../user
       clean-package:
         specifier: 2.2.0
@@ -558,20 +558,20 @@ importers:
   packages/components/image:
     dependencies:
       '@banyu/react-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/react-utils
       '@banyu/shared-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/shared-utils
       '@banyu/use-image':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../hooks/use-image
     devDependencies:
       '@banyu/system':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/system
       '@banyu/theme':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/theme
       clean-package:
         specifier: 2.2.0
@@ -586,13 +586,13 @@ importers:
   packages/components/input:
     dependencies:
       '@banyu/react-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/react-utils
       '@banyu/shared-icons':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/shared-icons
       '@banyu/shared-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/shared-utils
       '@react-aria/focus':
         specifier: ^3.14.3
@@ -620,10 +620,10 @@ importers:
         version: 8.5.3(@types/react@18.2.55)(react@18.2.0)
     devDependencies:
       '@banyu/system':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/system
       '@banyu/theme':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/theme
       clean-package:
         specifier: 2.2.0
@@ -638,23 +638,23 @@ importers:
   packages/components/kbd:
     dependencies:
       '@banyu/react-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/react-utils
       '@banyu/shared-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/shared-utils
       '@banyu/system':
-        specifier: 2.0.0
+        specifier: 0.0.0
         version: link:../../core/system
       '@banyu/system-rsc':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/system-rsc
       '@react-aria/utils':
         specifier: ^3.21.1
         version: 3.23.0(react@18.2.0)
     devDependencies:
       '@banyu/theme':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/theme
       clean-package:
         specifier: 2.2.0
@@ -669,16 +669,16 @@ importers:
   packages/components/link:
     dependencies:
       '@banyu/react-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/react-utils
       '@banyu/shared-icons':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/shared-icons
       '@banyu/shared-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/shared-utils
       '@banyu/use-aria-link':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../hooks/use-aria-link
       '@react-aria/focus':
         specifier: ^3.14.3
@@ -694,10 +694,10 @@ importers:
         version: 3.5.2(react@18.2.0)
     devDependencies:
       '@banyu/system':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/system
       '@banyu/theme':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/theme
       clean-package:
         specifier: 2.2.0
@@ -712,22 +712,22 @@ importers:
   packages/components/menu:
     dependencies:
       '@banyu/aria-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/aria-utils
       '@banyu/divider':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../divider
       '@banyu/react-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/react-utils
       '@banyu/shared-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/shared-utils
       '@banyu/use-aria-press':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../hooks/use-aria-press
       '@banyu/use-is-mobile':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../hooks/use-is-mobile
       '@react-aria/focus':
         specifier: ^3.14.3
@@ -755,13 +755,13 @@ importers:
         version: 3.22.0(react@18.2.0)
     devDependencies:
       '@banyu/shared-icons':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/shared-icons
       '@banyu/system':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/system
       '@banyu/theme':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/theme
       clean-package:
         specifier: 2.2.0
@@ -776,22 +776,22 @@ importers:
   packages/components/popover:
     dependencies:
       '@banyu/aria-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/aria-utils
       '@banyu/button':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../button
       '@banyu/framer-transitions':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/framer-transitions
       '@banyu/react-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/react-utils
       '@banyu/shared-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/shared-utils
       '@banyu/use-aria-button':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../hooks/use-aria-button
       '@react-aria/dialog':
         specifier: ^3.5.7
@@ -822,16 +822,16 @@ importers:
         version: 2.5.7(@types/react@18.2.55)(react@18.2.0)
     devDependencies:
       '@banyu/card':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../card
       '@banyu/kbd':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../kbd
       '@banyu/system':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/system
       '@banyu/theme':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/theme
       clean-package:
         specifier: 2.2.0
@@ -849,17 +849,17 @@ importers:
   packages/components/ripple:
     dependencies:
       '@banyu/react-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/react-utils
       '@banyu/shared-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/shared-utils
     devDependencies:
       '@banyu/system':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/system
       '@banyu/theme':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/theme
       clean-package:
         specifier: 2.2.0
@@ -877,26 +877,26 @@ importers:
   packages/components/skeleton:
     dependencies:
       '@banyu/react-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/react-utils
       '@banyu/shared-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/shared-utils
       '@banyu/system':
-        specifier: 2.0.0
+        specifier: 0.0.0
         version: link:../../core/system
       '@banyu/system-rsc':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/system-rsc
     devDependencies:
       '@banyu/button':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../button
       '@banyu/card':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../card
       '@banyu/theme':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/theme
       clean-package:
         specifier: 2.2.0
@@ -911,19 +911,19 @@ importers:
   packages/components/spinner:
     dependencies:
       '@banyu/react-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/react-utils
       '@banyu/shared-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/shared-utils
       '@banyu/system':
-        specifier: 2.0.0
+        specifier: 0.0.0
         version: link:../../core/system
       '@banyu/system-rsc':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/system-rsc
       '@banyu/theme':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/theme
     devDependencies:
       clean-package:
@@ -939,13 +939,13 @@ importers:
   packages/components/switch:
     dependencies:
       '@banyu/react-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/react-utils
       '@banyu/shared-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/shared-utils
       '@banyu/use-aria-press':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../hooks/use-aria-press
       '@react-aria/focus':
         specifier: ^3.14.3
@@ -970,13 +970,13 @@ importers:
         version: 3.22.0(react@18.2.0)
     devDependencies:
       '@banyu/shared-icons':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/shared-icons
       '@banyu/system':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/system
       '@banyu/theme':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/theme
       clean-package:
         specifier: 2.2.0
@@ -991,22 +991,22 @@ importers:
   packages/components/tooltip:
     dependencies:
       '@banyu/aria-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/aria-utils
       '@banyu/framer-transitions':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/framer-transitions
       '@banyu/kbd':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../kbd
       '@banyu/react-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/react-utils
       '@banyu/shared-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/shared-utils
       '@banyu/use-safe-layout-effect':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../hooks/use-safe-layout-effect
       '@react-aria/interactions':
         specifier: ^3.19.1
@@ -1031,13 +1031,13 @@ importers:
         version: 3.4.6(react@18.2.0)
     devDependencies:
       '@banyu/button':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../button
       '@banyu/system':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/system
       '@banyu/theme':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/theme
       clean-package:
         specifier: 2.2.0
@@ -1055,13 +1055,13 @@ importers:
   packages/components/user:
     dependencies:
       '@banyu/avatar':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../avatar
       '@banyu/react-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/react-utils
       '@banyu/shared-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/shared-utils
       '@react-aria/focus':
         specifier: ^3.14.3
@@ -1071,13 +1071,13 @@ importers:
         version: 3.23.0(react@18.2.0)
     devDependencies:
       '@banyu/link':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../link
       '@banyu/system':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/system
       '@banyu/theme':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/theme
       clean-package:
         specifier: 2.2.0
@@ -1092,10 +1092,10 @@ importers:
   packages/core/react:
     dependencies:
       '@banyu/system':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../system
       '@banyu/theme':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../theme
       '@react-aria/visually-hidden':
         specifier: ^3.8.6
@@ -1117,7 +1117,7 @@ importers:
   packages/core/system:
     dependencies:
       '@banyu/system-rsc':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../system-rsc
       '@react-aria/i18n':
         specifier: ^3.8.4
@@ -1149,10 +1149,10 @@ importers:
         version: 1.2.1
     devDependencies:
       '@banyu/react-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../utilities/react-utils
       '@banyu/theme':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../theme
       clean-package:
         specifier: 2.2.0
@@ -1228,7 +1228,7 @@ importers:
   packages/hooks/use-aria-button:
     dependencies:
       '@banyu/use-aria-press':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../use-aria-press
       '@react-aria/focus':
         specifier: ^3.14.3
@@ -1256,7 +1256,7 @@ importers:
   packages/hooks/use-aria-link:
     dependencies:
       '@banyu/use-aria-press':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../use-aria-press
       '@react-aria/focus':
         specifier: ^3.14.3
@@ -1306,7 +1306,7 @@ importers:
   packages/hooks/use-image:
     dependencies:
       '@banyu/use-safe-layout-effect':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../use-safe-layout-effect
     devDependencies:
       clean-package:
@@ -1341,13 +1341,13 @@ importers:
   packages/storybook:
     dependencies:
       '@banyu/react':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../core/react
       '@banyu/system':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../core/system
       '@banyu/theme':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../core/theme
       '@muhamien/jala-icons':
         specifier: ^2.0.2
@@ -1456,13 +1456,13 @@ importers:
   packages/utilities/aria-utils:
     dependencies:
       '@banyu/react-rsc-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../react-rsc-utils
       '@banyu/shared-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../shared-utils
       '@banyu/system':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/system
       '@react-aria/utils':
         specifier: ^3.21.1
@@ -1490,10 +1490,10 @@ importers:
   packages/utilities/framer-transitions:
     dependencies:
       '@banyu/shared-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../shared-utils
       '@banyu/system':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../../core/system
     devDependencies:
       clean-package:
@@ -1518,10 +1518,10 @@ importers:
   packages/utilities/react-utils:
     dependencies:
       '@banyu/react-rsc-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../react-rsc-utils
       '@banyu/shared-utils':
-        specifier: workspace:*
+        specifier: workspace: *
         version: link:../shared-utils
     devDependencies:
       clean-package:

@@ -1,6 +1,6 @@
 {
   "name": "@banyu/react",
-  "version": "0.0.0-dev-v2-20240208092541",
+  "version": "1.0.0",
   "description": "🚀 Beautiful and modern React UI library.",
   "author": "Muhammad Amien <muhammadamien23@gmail.com>",
   "homepage": "#",
@@ -41,8 +41,8 @@
     "postpack": "clean-package restore"
   },
   "dependencies": {
-    "@banyu/system": "workspace:*",
-    "@banyu/theme": "workspace:*",
+    "@banyu/system": "workspace: *",
+    "@banyu/theme": "workspace: *",
     "@react-aria/visually-hidden": "^3.8.6"
   },
   "peerDependencies": {

@@ -1,6 +1,6 @@
 {
   "name": "@banyu/aria-utils",
-  "version": "0.0.0-dev-v2-20240208092541",
+  "version": "1.0.0",
   "description": "A package for managing @react-aria Banyu utils.",
   "keywords": [
     "aria-utils"
@@ -38,9 +38,9 @@
     "react-dom": ">=18"
   },
   "dependencies": {
-    "@banyu/system": "workspace:*",
-    "@banyu/shared-utils": "workspace:*",
-    "@banyu/react-rsc-utils": "workspace:*",
+    "@banyu/system": "workspace: *",
+    "@banyu/shared-utils": "workspace: *",
+    "@banyu/react-rsc-utils": "workspace: *",
     "@react-aria/utils": "^3.21.1",
     "@react-stately/collections": "^3.10.2",
     "@react-types/shared": "^3.21.0",

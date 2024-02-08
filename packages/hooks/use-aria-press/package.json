@@ -1,6 +1,6 @@
 {
   "name": "@banyu/use-aria-press",
-  "version": "0.0.0-dev-v2-20240208092541",
+  "version": "1.0.0",
   "description": "Handles press interactions across mouse, touch, keyboard, and screen readers.",
   "keywords": [
     "use-aria-press"
