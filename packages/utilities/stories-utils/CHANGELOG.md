@@ -1,5 +1,11 @@
 # @banyu/stories-utils
 
+## 2.2.0
+
+### Minor Changes
+
+- minor version 2
+
 ## 2.1.0
 
 ### Minor Changes

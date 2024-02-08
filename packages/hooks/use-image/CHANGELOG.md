@@ -1,5 +1,16 @@
 # @banyu/use-image
 
+## 2.2.0
+
+### Minor Changes
+
+- minor version 2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @banyu/use-safe-layout-effect@2.2.0
+
 ## 2.1.0
 
 ### Minor Changes

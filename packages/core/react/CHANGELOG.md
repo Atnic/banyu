@@ -1,5 +1,17 @@
 # @banyu/react
 
+## 2.2.0
+
+### Minor Changes
+
+- minor version 2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @banyu/system@2.2.0
+  - @banyu/theme@2.2.0
+
 ## 2.1.0
 
 ### Minor Changes

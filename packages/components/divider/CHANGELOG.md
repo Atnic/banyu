@@ -1,5 +1,20 @@
 # @banyu/divider
 
+## 4.0.0
+
+### Minor Changes
+
+- minor version 2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @banyu/system@2.2.0
+  - @banyu/system-rsc@4.0.0
+  - @banyu/theme@2.2.0
+  - @banyu/react-rsc-utils@2.2.0
+  - @banyu/shared-utils@2.2.0
+
 ## 3.0.0
 
 ### Minor Changes

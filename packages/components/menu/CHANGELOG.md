@@ -1,5 +1,23 @@
 # @banyu/menu
 
+## 4.0.0
+
+### Minor Changes
+
+- minor version 2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @banyu/divider@4.0.0
+  - @banyu/system@2.2.0
+  - @banyu/theme@2.2.0
+  - @banyu/use-aria-press@2.2.0
+  - @banyu/use-is-mobile@2.2.0
+  - @banyu/aria-utils@2.2.0
+  - @banyu/react-utils@2.2.0
+  - @banyu/shared-utils@2.2.0
+
 ## 3.0.0
 
 ### Minor Changes

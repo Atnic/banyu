@@ -19,12 +19,9 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v3
         with:
-          node-version: 18
+          node-version: 16.x
           registry-url: 'https://registry.npmjs.org'
-      - run: npm ci
-      - run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
       - name: Install
         uses: ./.github/common-actions/install
 
@@ -39,11 +36,7 @@ jobs:
         uses: changesets/action@v1
         with:
           publish: pnpm release
-          title: "ci(changesets): :package: version packages"
-          commit: "ci(changesets): version packages"
-          setupGitUser: false
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 

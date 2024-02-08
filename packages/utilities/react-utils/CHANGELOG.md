@@ -1,5 +1,17 @@
 # @banyu/react-utils
 
+## 2.2.0
+
+### Minor Changes
+
+- minor version 2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @banyu/react-rsc-utils@2.2.0
+  - @banyu/shared-utils@2.2.0
+
 ## 2.1.0
 
 ### Minor Changes

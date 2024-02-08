@@ -1,6 +1,6 @@
 {
   "name": "@banyu/user",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Flexible User Profile Component.",
   "keywords": [
     "user"
@@ -36,8 +36,8 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "@banyu/theme": "2.1.0",
-    "@banyu/system": "2.1.0"
+    "@banyu/theme": "2.2.0",
+    "@banyu/system": "2.2.0"
   },
   "dependencies": {
     "@banyu/avatar": "workspace: *",
