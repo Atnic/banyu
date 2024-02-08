@@ -1,5 +1,16 @@
 # @banyu/system-rsc
 
+## 3.0.0
+
+### Minor Changes
+
+- minor version
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @banyu/theme@2.1.0
+
 ## 2.0.0
 
 ### Major Changes

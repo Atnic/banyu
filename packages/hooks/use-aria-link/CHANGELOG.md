@@ -1,5 +1,16 @@
 # @banyu/use-aria-link
 
+## 2.1.0
+
+### Minor Changes
+
+- minor version
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @banyu/use-aria-press@2.1.0
+
 ## 2.0.0
 
 ### Major Changes
