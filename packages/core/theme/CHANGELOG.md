@@ -1,5 +1,17 @@
 # @banyu/theme
 
+## 0.0.0-dev-v2-20240208092541
+
+### Major Changes
+
+- First major version
+
+## 0.0.0-dev-v2-20240208092322
+
+### Patch Changes
+
+- first release package
+
 ## 2.0.0
 
 ### Major Changes

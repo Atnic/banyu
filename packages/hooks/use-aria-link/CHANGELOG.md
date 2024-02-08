@@ -1,5 +1,16 @@
 # @banyu/use-aria-link
 
+## 0.0.0-dev-v2-20240208092541
+
+### Major Changes
+
+- First major version
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @banyu/use-aria-press@0.0.0-dev-v2-20240208092541
+
 ## 3.0.0
 
 ### Major Changes

@@ -1,5 +1,11 @@
 # @banyu/use-aria-press
 
+## 0.0.0-dev-v2-20240208092541
+
+### Major Changes
+
+- First major version
+
 ## 2.0.0
 
 ### Major Changes

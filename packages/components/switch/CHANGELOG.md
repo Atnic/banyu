@@ -1,5 +1,20 @@
 # @banyu/switch
 
+## 0.0.0-dev-v2-20240208092541
+
+### Major Changes
+
+- First major version
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @banyu/system@0.0.0-dev-v2-20240208092541
+  - @banyu/theme@0.0.0-dev-v2-20240208092541
+  - @banyu/use-aria-press@0.0.0-dev-v2-20240208092541
+  - @banyu/react-utils@0.0.0-dev-v2-20240208092541
+  - @banyu/shared-utils@0.0.0-dev-v2-20240208092541
+
 ## 2.0.0
 
 ### Major Changes

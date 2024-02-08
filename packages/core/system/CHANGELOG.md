@@ -1,5 +1,25 @@
 # @banyu/system
 
+## 0.0.0-dev-v2-20240208092541
+
+### Major Changes
+
+- First major version
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @banyu/system-rsc@0.0.0-dev-v2-20240208092541
+
+## 0.0.0-dev-v2-20240208092322
+
+### Patch Changes
+
+- first release package
+
+- Updated dependencies []:
+  - @banyu/system-rsc@2.0.0
+
 ## 2.0.0
 
 ### Major Changes
