@@ -1,5 +1,22 @@
 # @banyu/button
 
+## 2.0.0
+
+### Major Changes
+
+- Major package 2.0.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @banyu/ripple@2.0.0
+  - @banyu/spinner@2.0.0
+  - @banyu/system@2.0.0
+  - @banyu/theme@2.0.0
+  - @banyu/use-aria-button@2.0.0
+  - @banyu/react-utils@2.0.0
+  - @banyu/shared-utils@2.0.0
+
 ## 1.0.0
 
 ### Major Changes

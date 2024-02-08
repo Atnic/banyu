@@ -1,6 +1,6 @@
 {
   "name": "@banyu/input",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "The input component is designed for capturing user input within a text field.",
   "keywords": [
     "input"
@@ -36,8 +36,8 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "@banyu/theme": "1.0.0",
-    "@banyu/system": "1.0.0"
+    "@banyu/theme": "2.0.0",
+    "@banyu/system": "2.0.0"
   },
   "dependencies": {
     "@banyu/react-utils": "workspace: *",
