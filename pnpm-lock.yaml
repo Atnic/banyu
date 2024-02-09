@@ -346,7 +346,7 @@ importers:
         specifier: ^3.21.0
         version: 3.22.0(react@18.2.0)
       framer-motion:
-        specifier: '>=4.0.0'
+        specifier: '>=0.0.0'
         version: 10.18.0(react-dom@18.2.0)(react@18.2.0)
     devDependencies:
       '@banyu/shared-icons':
@@ -401,7 +401,7 @@ importers:
         specifier: ^3.21.0
         version: 3.22.0(react@18.2.0)
       framer-motion:
-        specifier: '>=4.0.0'
+        specifier: '>=0.0.0'
         version: 10.18.0(react-dom@18.2.0)(react@18.2.0)
     devDependencies:
       '@banyu/avatar':
@@ -444,7 +444,7 @@ importers:
         specifier: 'workspace: *'
         version: link:../../utilities/shared-utils
       '@banyu/system':
-        specifier: 4.0.0
+        specifier: 1.0.0
         version: link:../../core/system
       '@banyu/system-rsc':
         specifier: 'workspace: *'
@@ -472,7 +472,7 @@ importers:
         specifier: 'workspace: *'
         version: link:../../utilities/shared-utils
       '@banyu/system':
-        specifier: 4.0.0
+        specifier: 1.0.0
         version: link:../../core/system
       '@banyu/system-rsc':
         specifier: 'workspace: *'
@@ -644,7 +644,7 @@ importers:
         specifier: 'workspace: *'
         version: link:../../utilities/shared-utils
       '@banyu/system':
-        specifier: 4.0.0
+        specifier: 1.0.0
         version: link:../../core/system
       '@banyu/system-rsc':
         specifier: 'workspace: *'
@@ -883,7 +883,7 @@ importers:
         specifier: 'workspace: *'
         version: link:../../utilities/shared-utils
       '@banyu/system':
-        specifier: 4.0.0
+        specifier: 1.0.0
         version: link:../../core/system
       '@banyu/system-rsc':
         specifier: 'workspace: *'
@@ -917,7 +917,7 @@ importers:
         specifier: 'workspace: *'
         version: link:../../utilities/shared-utils
       '@banyu/system':
-        specifier: 4.0.0
+        specifier: 1.0.0
         version: link:../../core/system
       '@banyu/system-rsc':
         specifier: 'workspace: *'
@@ -1101,7 +1101,7 @@ importers:
         specifier: ^3.8.6
         version: 3.8.8(react@18.2.0)
       framer-motion:
-        specifier: '>=4.0.0'
+        specifier: '>=0.0.0'
         version: 10.18.0(react-dom@18.2.0)(react@18.2.0)
     devDependencies:
       clean-package:

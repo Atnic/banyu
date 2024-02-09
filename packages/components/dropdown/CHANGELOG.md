@@ -1,15 +1,15 @@
 # @banyu/dropdown
 
-## 4.0.0
+## 1.0.0
 
 ### Major Changes
 
-- first version major
+- Set to Major version 1.0.0
 
 ### Patch Changes
 
 - Updated dependencies []:
-  - @banyu/shared-utils@4.0.0
-  - @banyu/react-utils@4.0.0
-  - @banyu/popover@2.0.0
-  - @banyu/menu@2.0.0
+  - @banyu/shared-utils@1.0.0
+  - @banyu/react-utils@1.0.0
+  - @banyu/popover@1.0.0
+  - @banyu/menu@1.0.0

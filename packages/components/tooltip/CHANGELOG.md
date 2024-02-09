@@ -1,19 +1,19 @@
 # @banyu/tooltip
 
-## 2.0.0
+## 1.0.0
 
 ### Major Changes
 
-- first version major
+- Set to Major version 1.0.0
 
 ### Patch Changes
 
 - Updated dependencies []:
-  - @banyu/use-safe-layout-effect@4.0.0
-  - @banyu/framer-transitions@4.0.0
-  - @banyu/shared-utils@4.0.0
-  - @banyu/react-utils@4.0.0
-  - @banyu/aria-utils@4.0.0
-  - @banyu/kbd@2.0.0
-  - @banyu/system@4.0.0
-  - @banyu/theme@4.0.0
+  - @banyu/use-safe-layout-effect@1.0.0
+  - @banyu/framer-transitions@1.0.0
+  - @banyu/shared-utils@1.0.0
+  - @banyu/react-utils@1.0.0
+  - @banyu/aria-utils@1.0.0
+  - @banyu/kbd@1.0.0
+  - @banyu/system@1.0.0
+  - @banyu/theme@1.0.0

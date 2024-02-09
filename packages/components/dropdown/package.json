@@ -1,6 +1,6 @@
 {
   "name": "@banyu/dropdown",
-  "version": "4.0.0",
+  "version": "1.0.0",
   "description": "A dropdown displays a list of actions or options that a user can choose.",
   "keywords": [
     "dropdown"
@@ -36,7 +36,7 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "framer-motion": ">=4.0.0"
+    "framer-motion": ">=0.0.0"
   },
   "dependencies": {
     "@banyu/menu": "workspace: *",

@@ -1,6 +1,6 @@
 {
   "name": "@banyu/framer-transitions",
-  "version": "4.0.0",
+  "version": "1.0.0",
   "description": "A set of framer motion transitions for react",
   "keywords": [
     "framer-transitions"
@@ -36,7 +36,7 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "framer-motion": ">=4.0.0"
+    "framer-motion": ">=0.0.0"
   },
   "dependencies": {
     "@banyu/system": "workspace: *",

@@ -1,6 +1,6 @@
 {
   "name": "@banyu/system",
-  "version": "4.0.0",
+  "version": "1.0.0",
   "description": "Banyu system primitives",
   "keywords": [
     "system"

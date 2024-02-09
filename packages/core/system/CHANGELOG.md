@@ -1,12 +1,12 @@
 # @banyu/system
 
-## 4.0.0
+## 1.0.0
 
 ### Major Changes
 
-- first version major
+- Set to Major version 1.0.0
 
 ### Patch Changes
 
 - Updated dependencies []:
-  - @banyu/system-rsc@2.0.0
+  - @banyu/system-rsc@1.0.0

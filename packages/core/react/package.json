@@ -1,6 +1,6 @@
 {
   "name": "@banyu/react",
-  "version": "4.0.0",
+  "version": "1.0.0",
   "description": "🚀 Beautiful and modern React UI library.",
   "author": "Muhammad Amien <muhammadamien23@gmail.com>",
   "homepage": "#",
@@ -48,7 +48,7 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "framer-motion": ">=4.0.0"
+    "framer-motion": ">=0.0.0"
   },
   "devDependencies": {
     "react": "^18.0.0",
