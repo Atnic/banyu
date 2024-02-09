@@ -1,5 +1,14 @@
 # @banyu/use-aria-button
 
+## 3.0.1
+
+### Patch Changes
+
+- update version
+
+- Updated dependencies []:
+  - @banyu/use-aria-press@3.0.1
+
 ## 3.0.0
 
 ### Major Changes

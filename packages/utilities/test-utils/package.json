@@ -1,6 +1,6 @@
 {
   "name": "@banyu/test-utils",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "A set of utilities for react testing",
   "keywords": [
     "test-utils"

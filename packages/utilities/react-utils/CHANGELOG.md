@@ -1,5 +1,15 @@
 # @banyu/react-utils
 
+## 3.0.1
+
+### Patch Changes
+
+- update version
+
+- Updated dependencies []:
+  - @banyu/react-rsc-utils@3.0.1
+  - @banyu/shared-utils@3.0.1
+
 ## 3.0.0
 
 ### Major Changes
