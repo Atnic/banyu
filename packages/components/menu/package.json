@@ -1,6 +1,6 @@
 {
   "name": "@banyu/menu",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "A menu displays a list of options and allows a user to select one or more of them.",
   "keywords": [
     "menu"
@@ -36,8 +36,8 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "@banyu/theme": "3.0.1",
-    "@banyu/system": "3.0.1"
+    "@banyu/theme": "4.0.0",
+    "@banyu/system": "4.0.0"
   },
   "dependencies": {
     "@banyu/divider": "workspace: *",

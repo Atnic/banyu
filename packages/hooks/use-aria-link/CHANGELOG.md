@@ -1,21 +1,12 @@
 # @banyu/use-aria-link
 
-## 3.0.1
-
-### Patch Changes
-
-- update version
-
-- Updated dependencies []:
-  - @banyu/use-aria-press@3.0.1
-
-## 3.0.0
+## 4.0.0
 
 ### Major Changes
 
-- First major release
+- first version major
 
 ### Patch Changes
 
 - Updated dependencies []:
-  - @banyu/use-aria-press@3.0.0
+  - @banyu/use-aria-press@4.0.0

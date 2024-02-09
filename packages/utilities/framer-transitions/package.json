@@ -1,6 +1,6 @@
 {
   "name": "@banyu/framer-transitions",
-  "version": "3.0.1",
+  "version": "4.0.0",
   "description": "A set of framer motion transitions for react",
   "keywords": [
     "framer-transitions"

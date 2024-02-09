@@ -1,21 +1,12 @@
 # @banyu/use-image
 
-## 3.0.1
-
-### Patch Changes
-
-- update version
-
-- Updated dependencies []:
-  - @banyu/use-safe-layout-effect@3.0.1
-
-## 3.0.0
+## 4.0.0
 
 ### Major Changes
 
-- First major release
+- first version major
 
 ### Patch Changes
 
 - Updated dependencies []:
-  - @banyu/use-safe-layout-effect@3.0.0
+  - @banyu/use-safe-layout-effect@4.0.0

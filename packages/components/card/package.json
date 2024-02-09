@@ -1,6 +1,6 @@
 {
   "name": "@banyu/card",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Card is a container for text, photos, and actions in the context of a single subject.",
   "keywords": [
     "card"
@@ -37,8 +37,8 @@
     "react": ">=18",
     "react-dom": ">=18",
     "framer-motion": ">=4.0.0",
-    "@banyu/theme": "3.0.1",
-    "@banyu/system": "3.0.1"
+    "@banyu/theme": "4.0.0",
+    "@banyu/system": "4.0.0"
   },
   "dependencies": {
     "@banyu/shared-utils": "workspace: *",
