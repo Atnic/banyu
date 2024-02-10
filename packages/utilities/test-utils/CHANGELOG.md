@@ -1,5 +1,11 @@
 # @banyu/test-utils
 
+## 1.0.1
+
+### Patch Changes
+
+- Patch update
+
 ## 1.0.0
 
 ### Major Changes

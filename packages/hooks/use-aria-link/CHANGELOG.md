@@ -1,5 +1,14 @@
 # @banyu/use-aria-link
 
+## 1.0.1
+
+### Patch Changes
+
+- Patch update
+
+- Updated dependencies []:
+  - @banyu/use-aria-press@1.0.1
+
 ## 1.0.0
 
 ### Major Changes

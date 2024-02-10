@@ -1,6 +1,6 @@
 {
   "name": "@banyu/link",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Links allow users to click their way from page to page. This component is styled to resemble a hyperlink and semantically renders an &lt;a&gt;",
   "keywords": [
     "link"
@@ -36,8 +36,8 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "@banyu/theme": "1.0.0",
-    "@banyu/system": "1.0.0"
+    "@banyu/theme": "1.0.1",
+    "@banyu/system": "1.0.1"
   },
   "dependencies": {
     "@banyu/shared-utils": "workspace: *",
