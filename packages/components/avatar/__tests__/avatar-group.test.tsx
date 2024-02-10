@@ -30,6 +30,7 @@ describe("AvatarGroup", () => {
 
     const countAvatar = wrapper.getByLabelText("+3");
 
+    // @ts-ignore
     expect(countAvatar).toBeInTheDocument();
   });
 
@@ -43,6 +44,7 @@ describe("AvatarGroup", () => {
 
     const countAvatar = wrapper.queryByLabelText("+1");
 
+    // @ts-ignore
     expect(countAvatar).not.toBeInTheDocument();
   });
 
@@ -59,6 +61,7 @@ describe("AvatarGroup", () => {
 
     const countAvatar = wrapper.getByLabelText("+5");
 
+    // @ts-ignore
     expect(countAvatar).toBeInTheDocument();
   });
 
@@ -75,6 +78,7 @@ describe("AvatarGroup", () => {
 
     const countAvatar = wrapper.getByText("3");
 
+    // @ts-ignore
     expect(countAvatar).toBeInTheDocument();
   });
 });

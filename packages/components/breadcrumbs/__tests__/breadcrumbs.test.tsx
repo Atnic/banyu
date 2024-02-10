@@ -20,6 +20,7 @@ describe("Breadcrumbs", () => {
   it("should support aria-label", () => {
     const {container} = render(<Breadcrumbs aria-label="Routes" />);
 
+    // @ts-ignore
     expect(container.querySelector("nav")).toHaveAttribute("aria-label", "Routes");
   });
 
@@ -32,6 +33,7 @@ describe("Breadcrumbs", () => {
       </Breadcrumbs>,
     );
 
+    // @ts-ignore
     expect(container.querySelectorAll("span")).toHaveLength(3);
   });
 
@@ -44,12 +46,15 @@ describe("Breadcrumbs", () => {
       </Breadcrumbs>,
     );
 
+    // @ts-ignore
     expect(container.querySelectorAll("a")).toHaveLength(2);
 
     // The last one is not a link because it is the current page
+    // @ts-ignore
     const current = container.querySelector("[aria-current]");
 
     expect(current).not.toBeNull();
+    // @ts-ignore
     expect(current).toHaveAttribute("aria-current", "page");
 
     expect(current?.tagName.toLowerCase()).toBe("span");
@@ -86,7 +91,9 @@ describe("Breadcrumbs", () => {
       </Breadcrumbs>,
     );
 
+    // @ts-ignore
     expect(container.querySelectorAll("[data-slot='item']")).toHaveLength(3);
+    // @ts-ignore
     expect(container.querySelector("[data-slot='separator']")).toHaveTextContent("/");
   });
 
@@ -101,9 +108,11 @@ describe("Breadcrumbs", () => {
 
     const item1 = getByText("Item 1");
 
+    // @ts-ignore
     expect(item1).toHaveAttribute("aria-disabled", "true");
     const item2 = getByText("Item 2");
 
+    // @ts-ignore
     expect(item2).toHaveAttribute("aria-disabled", "true");
   });
 
@@ -119,6 +128,7 @@ describe("Breadcrumbs", () => {
 
     const breadcrumbs = getByRole("navigation");
 
+    // @ts-ignore
     expect(breadcrumbs).toHaveAttribute("aria-labelledby", "test");
   });
 
@@ -134,6 +144,7 @@ describe("Breadcrumbs", () => {
 
     const breadcrumbs = getByRole("navigation");
 
+    // @ts-ignore
     expect(breadcrumbs).toHaveAttribute("aria-describedby", "test");
   });
 

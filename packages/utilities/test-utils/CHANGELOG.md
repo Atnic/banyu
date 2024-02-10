@@ -1,5 +1,11 @@
 # @banyu/test-utils
 
+## 2.0.0
+
+### Major Changes
+
+- Major version test-utils
+
 ## 1.0.1
 
 ### Patch Changes

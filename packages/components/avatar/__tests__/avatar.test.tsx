@@ -1,5 +1,6 @@
 import * as React from "react";
 import {render, act} from "@testing-library/react";
+// @ts-ignore
 import {mocks} from "@banyu/test-utils";
 
 import {Avatar} from "../src";
@@ -31,19 +32,23 @@ describe("Avatar", () => {
   it("should render initials", () => {
     const {container} = render(<Avatar name="Junior" />);
 
+    // @ts-ignore
     expect(container.querySelector("span")).toHaveTextContent("Jun");
   });
 
   it('should work with custom "getInitials" function', () => {
     const {container} = render(<Avatar getInitials={(name) => name.charAt(0)} name="Junior" />);
 
+    // @ts-ignore
     expect(container.querySelector("span")).toHaveTextContent("J");
   });
 
   it('should be focusable if "isFocusable" is true', () => {
     const {container} = render(<Avatar isFocusable name="Junior" />);
+    // @ts-ignore
     const avatar = container.querySelector("span");
 
+    // @ts-ignore
     expect(avatar).toHaveAttribute("tabIndex", "0");
   });
 });
@@ -72,6 +77,7 @@ describe("Avatar - fallback + loading strategy", () => {
 
     const img = wrapper.getByAltText("Junior");
 
+    // @ts-ignore
     expect(img).toBeInTheDocument();
   });
 
@@ -96,12 +102,14 @@ describe("Avatar - fallback + loading strategy", () => {
   test("should render a name avatar if no src", () => {
     const {container} = render(<Avatar name="Junior" />);
 
+    // @ts-ignore
     expect(container.querySelector("span")).toHaveTextContent("Jun");
   });
 
   test("should render a default avatar if no name or src", () => {
     const {container} = render(<Avatar />);
 
+    // @ts-ignore
     expect(container.querySelector("svg")).toBeInTheDocument();
   });
 });
