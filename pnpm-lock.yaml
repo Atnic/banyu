@@ -1609,7 +1609,11 @@ importers:
         specifier: 2.2.0
         version: 2.2.0
 
-  packages/utilities/test-utils: {}
+  packages/utilities/test-utils:
+    devDependencies:
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
 
 packages:
 

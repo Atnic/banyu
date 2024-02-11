@@ -1,5 +1,11 @@
 # @banyu/test-utils
 
+## 2.0.2
+
+### Patch Changes
+
+- test utils patch update
+
 ## 2.0.1
 
 ### Patch Changes
