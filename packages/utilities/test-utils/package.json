@@ -1,6 +1,6 @@
 {
   "name": "@banyu/test-utils",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A set of utilities for react testing",
   "keywords": [
     "test-utils"
@@ -33,6 +33,9 @@
     "prepack": "clean-package",
     "postpack": "clean-package restore"
   },
+  "devDependencies": {
+    "clean-package": "2.2.0"
+  },
   "clean-package": "../../../clean-package.config.json",
   "tsup": {
     "clean": true,
@@ -49,9 +52,6 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
       "require": "./dist/index.js"
-    },
-    "devDependencies": {
-      "clean-package": "2.2.0"
     },
     "./package.json": "./package.json"
   }
