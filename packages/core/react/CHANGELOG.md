@@ -1,5 +1,11 @@
 # @banyu/react
 
+## 1.1.0
+
+### Minor Changes
+
+- Minor update banyu core
+
 ## 1.0.1
 
 ### Patch Changes

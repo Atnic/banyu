@@ -1088,17 +1088,74 @@ importers:
 
   packages/core/react:
     dependencies:
+      '@banyu/avatar':
+        specifier: 'workspace: *'
+        version: link:../../components/avatar
+      '@banyu/breadcrumbs':
+        specifier: 'workspace: *'
+        version: link:../../components/breadcrumbs
+      '@banyu/button':
+        specifier: 'workspace: *'
+        version: link:../../components/button
+      '@banyu/card':
+        specifier: 'workspace: *'
+        version: link:../../components/card
+      '@banyu/code':
+        specifier: 'workspace: *'
+        version: link:../../components/code
+      '@banyu/divider':
+        specifier: 'workspace: *'
+        version: link:../../components/divider
+      '@banyu/dropdown':
+        specifier: 'workspace: *'
+        version: link:../../components/dropdown
+      '@banyu/image':
+        specifier: 'workspace: *'
+        version: link:../../components/image
+      '@banyu/input':
+        specifier: 'workspace: *'
+        version: link:../../components/input
+      '@banyu/kbd':
+        specifier: 'workspace: *'
+        version: link:../../components/kbd
+      '@banyu/link':
+        specifier: 'workspace: *'
+        version: link:../../components/link
+      '@banyu/menu':
+        specifier: 'workspace: *'
+        version: link:../../components/menu
+      '@banyu/popover':
+        specifier: 'workspace: *'
+        version: link:../../components/popover
+      '@banyu/ripple':
+        specifier: 'workspace: *'
+        version: link:../../components/ripple
+      '@banyu/skeleton':
+        specifier: 'workspace: *'
+        version: link:../../components/skeleton
+      '@banyu/spinner':
+        specifier: 'workspace: *'
+        version: link:../../components/spinner
+      '@banyu/switch':
+        specifier: 'workspace: *'
+        version: link:../../components/switch
       '@banyu/system':
         specifier: 'workspace: *'
         version: link:../system
       '@banyu/theme':
         specifier: 'workspace: *'
         version: link:../theme
+      '@banyu/tooltip':
+        specifier: 'workspace: *'
+        version: link:../../components/tooltip
+      '@banyu/user':
+        specifier: 'workspace: *'
+        version: link:../../components/user
       '@react-aria/visually-hidden':
         specifier: ^3.8.6
         version: 3.8.8(react@18.2.0)
       framer-motion:
-        specifier: '>=0.0.0'
+        specifier: '>=4.0.0'
         version: 10.18.0(react-dom@18.2.0)(react@18.2.0)
     devDependencies:
       clean-package:

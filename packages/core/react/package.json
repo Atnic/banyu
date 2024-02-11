@@ -1,7 +1,7 @@
 {
   "name": "@banyu/react",
-  "version": "1.0.1",
-  "description": "🚀 Beautiful and modern React UI library.",
+  "version": "1.1.0",
+  "description": "Banyu core React UI library",
   "author": "Muhammad Amien <muhammadamien23@gmail.com>",
   "homepage": "#",
   "license": "MIT",
@@ -43,12 +43,31 @@
   "dependencies": {
     "@banyu/system": "workspace: *",
     "@banyu/theme": "workspace: *",
+    "@banyu/avatar": "workspace: *",
+    "@banyu/button": "workspace: *",
+    "@banyu/card": "workspace: *",
+    "@banyu/code": "workspace: *",
+    "@banyu/link": "workspace: *",
+    "@banyu/spinner": "workspace: *",
+    "@banyu/switch": "workspace: *",
+    "@banyu/tooltip": "workspace: *",
+    "@banyu/user": "workspace: *",
+    "@banyu/input": "workspace: *",
+    "@banyu/popover": "workspace: *",
+    "@banyu/dropdown": "workspace: *",
+    "@banyu/image": "workspace: *",
+    "@banyu/divider": "workspace: *",
+    "@banyu/kbd": "workspace: *",
+    "@banyu/skeleton": "workspace: *",
+    "@banyu/menu": "workspace: *",
+    "@banyu/ripple": "workspace: *",
+    "@banyu/breadcrumbs": "workspace: *",
     "@react-aria/visually-hidden": "^3.8.6"
   },
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "framer-motion": ">=0.0.0"
+    "framer-motion": ">=4.0.0"
   },
   "devDependencies": {
     "react": "^18.0.0",
