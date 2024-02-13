@@ -41,8 +41,6 @@ Visit [https://banyu.org/docs](https://banyu.org/docs) to view the full document
 We're excited to see the community adopt Banyu, raise issues, and provide feedback.
 Whether it's a feature request, bug report, or a project to showcase, please get involved!
 
-- [Discord](https://discord.gg/9b6yyZKmH4)
-- [Twitter](https://twitter.com/getBanyu)
 - [GitHub Discussions](https://github.com/Banyu-org/Banyu/discussions)
 
 ## Contributing
