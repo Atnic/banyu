@@ -1,6 +1,6 @@
 {
   "name": "@banyu/react-utils",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A set of utilities for react on client side",
   "keywords": [
     "react-utils"
@@ -18,11 +18,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/muhamien/jala-design.git",
+    "url": "git+https://github.com/Atnic/banyu.git",
     "directory": "packages/utilities/react-utils"
   },
   "bugs": {
-    "url": "https://github.com/muhamien/jala-design/issues"
+    "url": "https://github.com/Atnic/banyu/issues"
   },
   "scripts": {
     "build": "tsup src --dts",

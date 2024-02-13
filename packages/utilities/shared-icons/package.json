@@ -1,6 +1,6 @@
 {
   "name": "@banyu/shared-icons",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Internal icons set, commonly used in the components stories",
   "keywords": [
     "icons-utils"
@@ -18,11 +18,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/muhamien/jala-design.git",
+    "url": "git+https://github.com/Atnic/banyu.git",
     "directory": "packages/utilities/icons-utils"
   },
   "bugs": {
-    "url": "https://github.com/muhamien/jala-design/issues"
+    "url": "https://github.com/Atnic/banyu/issues"
   },
   "scripts": {
     "build": "tsup src --dts",

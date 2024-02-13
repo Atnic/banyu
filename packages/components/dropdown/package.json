@@ -1,6 +1,6 @@
 {
   "name": "@banyu/dropdown",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A dropdown displays a list of actions or options that a user can choose.",
   "keywords": [
     "dropdown"
@@ -18,11 +18,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/muhamien/jala-design.git",
+    "url": "git+https://github.com/Atnic/banyu.git",
     "directory": "packages/components/dropdown"
   },
   "bugs": {
-    "url": "https://github.com/muhamien/jala-design/issues"
+    "url": "https://github.com/Atnic/banyu/issues"
   },
   "scripts": {
     "build": "tsup src --dts",

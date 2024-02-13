@@ -1,5 +1,17 @@
 # @banyu/test-utils
 
+## 2.0.4
+
+### Patch Changes
+
+- fix patch version
+
+## 2.0.3
+
+### Patch Changes
+
+- Adjust after tranfer repo
+
 ## 2.0.2
 
 ### Patch Changes

@@ -84,7 +84,12 @@ const InitialTemplate = (args: AvatarGroupProps) => (
 
 export const Default = {
   render: Template,
-
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=2434%3A23413&mode=dev",
+    },
+  },
   args: {
     color: "primary",
   },
@@ -95,7 +100,7 @@ export const Bordered = {
   parameters: {
     design: {
       type: "figma",
-      url: "",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=2434%3A23413&mode=dev",
     },
   },
   args: {
@@ -104,7 +109,12 @@ export const Bordered = {
 };
 export const White = {
   render: colorTemplate,
-
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=2434%3A23413&mode=dev",
+    },
+  },
   args: {
     color: "gray",
     isBordered: true,
@@ -112,7 +122,12 @@ export const White = {
 };
 export const Soft = {
   render: InitialTemplate,
-
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=2434%3A23413&mode=dev",
+    },
+  },
   args: {
     max: 4,
     variant: "soft",
@@ -123,7 +138,12 @@ export const Soft = {
 
 export const Solid = {
   render: InitialTemplate,
-
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=2434%3A23413&mode=dev",
+    },
+  },
   args: {
     max: 4,
     variant: "solid",
@@ -133,7 +153,12 @@ export const Solid = {
 };
 export const MixColor = {
   render: colorTemplate,
-
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=2434%3A23413&mode=dev",
+    },
+  },
   args: {
     isBordered: true,
   },
@@ -141,7 +166,12 @@ export const MixColor = {
 
 export const Grid = {
   render: Template,
-
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=2434%3A23413&mode=dev",
+    },
+  },
   args: {
     color: "primary",
     max: 7,

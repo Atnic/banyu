@@ -1,6 +1,6 @@
 {
   "name": "@banyu/spinner",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Loaders express an unspecified wait time or display the length of a process.",
   "keywords": [
     "loading",
@@ -20,11 +20,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/muhamien/jala-design.git",
+    "url": "git+https://github.com/Atnic/banyu.git",
     "directory": "packages/components/loading"
   },
   "bugs": {
-    "url": "https://github.com/muhamien/jala-design/issues"
+    "url": "https://github.com/Atnic/banyu/issues"
   },
   "scripts": {
     "build": "tsup src --dts",
@@ -38,8 +38,8 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "@banyu/theme": "1.0.1",
-    "@banyu/system": "1.0.1"
+    "@banyu/theme": "1.0.3",
+    "@banyu/system": "1.0.3"
   },
   "dependencies": {
     "@banyu/system-rsc": "workspace: *",

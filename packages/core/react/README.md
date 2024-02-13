@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://Banyu.org">
+  <a href="https://banyu.org">
       <img width="20%" src="https://raw.githubusercontent.com/Banyu-org/Banyu/main/apps/docs/public/isotipo.png" alt="Banyu" />
       <h1 align="center">Banyu</h1>
   </a>
@@ -30,11 +30,11 @@
 
 ## Getting Started
 
-Visit <a aria-label="Banyu learn" href="https://Banyu.org/learn">https://Banyu.org/guide</a> to get started with Banyu.
+Visit <a aria-label="Banyu learn" href="https://banyu.org/learn">https://banyu.org/guide</a> to get started with Banyu.
 
 ## Documentation
 
-Visit [https://Banyu.org/docs](https://Banyu.org/docs) to view the full documentation.
+Visit [https://banyu.org/docs](https://banyu.org/docs) to view the full documentation.
 
 ### Community
 

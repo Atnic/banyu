@@ -8,7 +8,7 @@ type DefaultProps = {
   component?: string;
 };
 
-const Containers = ({title, desc, component}: DefaultProps) => (
+const Containers = ({title, desc}: DefaultProps) => (
   <div className="">
     <div className="border-b-2 pb-4">
       <span className="heading-600 text-gray-700">{title}</span>
@@ -33,6 +33,12 @@ export default {
 } as Meta<typeof Containers>;
 
 export const Spacing = {
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=260%3A28&mode=dev",
+    },
+  },
   args: {
     title: "Spacing",
     desc: `Consistent spacing creates visual balance that makes the user interface (UI) easier for merchants to scan. Apply consistent spacing to improve the quality of the UI.`,

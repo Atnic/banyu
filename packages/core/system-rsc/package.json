@@ -1,6 +1,6 @@
 {
   "name": "@banyu/system-rsc",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Banyu system primitives compatibles with RSC imports",
   "keywords": [
     "system-rsc"
@@ -18,11 +18,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/muhamien/jala-design.git",
+    "url": "git+https://github.com/Atnic/banyu.git",
     "directory": "packages/core/system-rsc"
   },
   "bugs": {
-    "url": "https://github.com/muhamien/jala-design/issues"
+    "url": "https://github.com/Atnic/banyu/issues"
   },
   "scripts": {
     "build": "tsup src --dts",
@@ -35,7 +35,7 @@
   },
   "peerDependencies": {
     "react": ">=18",
-    "@banyu/theme": "1.0.1",
+    "@banyu/theme": "1.0.3",
     "tailwind-variants": ">=0.1.13"
   },
   "devDependencies": {

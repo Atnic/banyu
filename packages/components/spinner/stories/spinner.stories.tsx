@@ -1,6 +1,5 @@
 import React from "react";
 import {Meta} from "@storybook/react";
-import {spinner} from "@banyu/theme";
 
 import {Spinner} from "../src";
 
@@ -36,9 +35,9 @@ export default {
   ],
 } as Meta<typeof Spinner>;
 
-const defaultProps = {
-  ...spinner.defaultVariants,
-};
+// const defaultProps = {
+//   ...spinner.defaultVariants,
+// };
 
 // export const Default = {
 // parameters: {

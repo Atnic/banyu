@@ -62,7 +62,7 @@ describe("User", () => {
     const wrapper = render(
       <User
         description={
-          <Link data-testid="test-user-link" href="https://Banyu.org">
+          <Link data-testid="test-user-link" href="#">
             Banyu
           </Link>
         }

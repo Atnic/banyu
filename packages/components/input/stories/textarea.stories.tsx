@@ -1,116 +1,111 @@
-import React from "react";
 // @ts-ignore
-import {Meta} from "@storybook/react";
-import {input} from "@banyu/theme";
 
-import {Textarea, TextAreaProps} from "../src";
+// export default {
+//   title: "Components/Textarea",
+//   component: Textarea,
+//   argTypes: {
+//     variant: {
+//       control: {
+//         type: "select",
+//       },
+//       options: ["flat", "faded", "bordered", "underlined"],
+//     },
+//     color: {
+//       control: {
+//         type: "select",
+//       },
+//       options: ["default", "primary", "secondary", "success", "warning", "danger"],
+//     },
+//     radius: {
+//       control: {
+//         type: "select",
+//       },
+//       options: ["none", "sm", "md", "lg", "full"],
+//     },
+//     size: {
+//       control: {
+//         type: "select",
+//       },
+//       options: ["sm", "md", "lg"],
+//     },
+//     labelPlacement: {
+//       control: {
+//         type: "select",
+//       },
+//       options: ["inside", "outside", "outside-left"],
+//     },
+//     disableAutosize: {
+//       control: {
+//         type: "boolean",
+//       },
+//     },
+//     isDisabled: {
+//       control: {
+//         type: "boolean",
+//       },
+//     },
+//   },
+//   decorators: [
+//     (Story: any) => (
+//       <div className="flex items-center justify-center w-screen h-screen">
+//         <Story />
+//       </div>
+//     ),
+//   ],
+// } as Meta<typeof Textarea>;
+//
+// const defaultProps = {
+//   ...input.defaultVariants,
+//   disableAutosize: false,
+//   label: "Description",
+//   placeholder: "Enter your description",
+// };
+//
+// const Template = (args: TextAreaProps) => (
+//   <div className="w-full max-w-[440px]">
+//     <Textarea {...args} />
+//   </div>
+// );
+//
+// const ControlledTemplate = (args: TextAreaProps) => {
+//   const [value, setValue] = React.useState("");
+//
+//   return (
+//     <div className="w-full  flex-col gap-2 max-w-[440px]">
+//       <Textarea {...args} value={value} onValueChange={setValue} />
+//       <p className="text-default-500 text-sm">Textarea value: {value}</p>
+//     </div>
+//   );
+// };
+//
+// const MinRowsTemplate = (args: TextAreaProps) => (
+//   <div className="w-full max-w-xl flex flex-row gap-4">
+//     <Textarea {...args} description="Default minRows is 3" />
+//     <Textarea {...args} description="minRows is 5" minRows={5} />
+//     <Textarea {...args} description="minRows is 10" minRows={10} />
+//   </div>
+// );
+//
+// const MaxRowsTemplate = (args: TextAreaProps) => (
+//   <div className="w-full max-w-xl flex flex-row gap-4">
+//     <Textarea {...args} description="Default maxRows is 8" />
+//     <Textarea {...args} description="maxRows is 5" maxRows={5} />
+//     <Textarea {...args} description="maxRows is 3" maxRows={3} />
+//   </div>
+// );
 
-export default {
-  title: "Components/Textarea",
-  component: Textarea,
-  argTypes: {
-    variant: {
-      control: {
-        type: "select",
-      },
-      options: ["flat", "faded", "bordered", "underlined"],
-    },
-    color: {
-      control: {
-        type: "select",
-      },
-      options: ["default", "primary", "secondary", "success", "warning", "danger"],
-    },
-    radius: {
-      control: {
-        type: "select",
-      },
-      options: ["none", "sm", "md", "lg", "full"],
-    },
-    size: {
-      control: {
-        type: "select",
-      },
-      options: ["sm", "md", "lg"],
-    },
-    labelPlacement: {
-      control: {
-        type: "select",
-      },
-      options: ["inside", "outside", "outside-left"],
-    },
-    disableAutosize: {
-      control: {
-        type: "boolean",
-      },
-    },
-    isDisabled: {
-      control: {
-        type: "boolean",
-      },
-    },
-  },
-  decorators: [
-    (Story: any) => (
-      <div className="flex items-center justify-center w-screen h-screen">
-        <Story />
-      </div>
-    ),
-  ],
-} as Meta<typeof Textarea>;
-
-const defaultProps = {
-  ...input.defaultVariants,
-  disableAutosize: false,
-  label: "Description",
-  placeholder: "Enter your description",
-};
-
-const Template = (args: TextAreaProps) => (
-  <div className="w-full max-w-[440px]">
-    <Textarea {...args} />
-  </div>
-);
-
-const ControlledTemplate = (args: TextAreaProps) => {
-  const [value, setValue] = React.useState("");
-
-  return (
-    <div className="w-full  flex-col gap-2 max-w-[440px]">
-      <Textarea {...args} value={value} onValueChange={setValue} />
-      <p className="text-default-500 text-sm">Textarea value: {value}</p>
-    </div>
-  );
-};
-
-const MinRowsTemplate = (args: TextAreaProps) => (
-  <div className="w-full max-w-xl flex flex-row gap-4">
-    <Textarea {...args} description="Default minRows is 3" />
-    <Textarea {...args} description="minRows is 5" minRows={5} />
-    <Textarea {...args} description="minRows is 10" minRows={10} />
-  </div>
-);
-
-const MaxRowsTemplate = (args: TextAreaProps) => (
-  <div className="w-full max-w-xl flex flex-row gap-4">
-    <Textarea {...args} description="Default maxRows is 8" />
-    <Textarea {...args} description="maxRows is 5" maxRows={5} />
-    <Textarea {...args} description="maxRows is 3" maxRows={3} />
-  </div>
-);
-
-export const Default = {
-  render: Template,
-  parameters: {
-    design: {
-      type: "figma",
-      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=549%3A166563&mode=dev",
-    },
-  },
-  args: {
-    ...defaultProps,
-  },
-};
+// export const Default = {
+//   render: Template,
+//   parameters: {
+//     design: {
+//       type: "figma",
+//       url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=549%3A166563&mode=dev",
+//     },
+//   },
+//   args: {
+//     ...defaultProps,
+//   },
+// };
 //
 // export const FullRounded = {
 //   render: Template,

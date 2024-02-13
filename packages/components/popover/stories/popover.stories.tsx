@@ -1,11 +1,9 @@
 /* eslint-disable jsx-a11y/no-autofocus */
 import React from "react";
 import {Meta} from "@storybook/react";
-import {popover, ButtonVariantProps} from "@banyu/theme";
-import {Button} from "@banyu/button";
 // import {Input} from "@banyu/input"
 
-import {Popover, PopoverTrigger, PopoverContent, PopoverProps} from "../src";
+import {Popover} from "../src";
 
 export default {
   title: "Components/Popover",
@@ -100,225 +98,225 @@ export default {
   ],
 } as Meta<typeof Popover>;
 
-const defaultProps = {
-  ...popover.defaultVariants,
-  placement: "top",
-  offset: 7,
-  defaultOpen: false,
-  disableAnimation: false,
-};
-
-const content = (
-  <PopoverContent>
-    <div className="px-1 py-2">
-      <div className="text-sm font-bold">Popover Content</div>
-      <div className="text-xs">This is a content of the popover</div>
-    </div>
-  </PopoverContent>
-);
-
-const Template = (args: PopoverProps) => {
-  return (
-    <Popover {...args}>
-      <PopoverTrigger>
-        <Button disableAnimation={!!args.disableAnimation}>Open Popover</Button>
-      </PopoverTrigger>
-      {content}
-    </Popover>
-  );
-};
-
-const WithTitlePropsTemplate = (args: PopoverProps) => {
-  return (
-    <Popover {...args}>
-      <PopoverTrigger>
-        <Button disableAnimation={!!args.disableAnimation}>Open Popover</Button>
-      </PopoverTrigger>
-      <PopoverContent>
-        {(titleProps) => (
-          <div className="px-1 py-2">
-            <h3 className="text-sm font-bold" {...titleProps}>
-              Popover Content
-            </h3>
-            <div className="text-xs">This is a content of the popover</div>
-          </div>
-        )}
-      </PopoverContent>
-    </Popover>
-  );
-};
-
-const OpenChangeTemplate = (args: PopoverProps) => {
-  const [isOpen, setIsOpen] = React.useState(false);
-
-  return (
-    <div className="flex flex-col gap-2">
-      <Popover
-        {...args}
-        style={{
-          zIndex: 10,
-        }}
-        onOpenChange={(open) => setIsOpen(open)}
-      >
-        <PopoverTrigger>
-          <Button>Open Popover</Button>
-        </PopoverTrigger>
-        <PopoverContent>
-          <div className="px-1 py-2">
-            <div className="text-sm font-bold">Popover Content</div>
-            <div className="text-xs">This is a content of the popover</div>
-          </div>
-        </PopoverContent>
-      </Popover>
-      <p className="text-sm">isOpen: {isOpen ? "true" : "false"}</p>
-    </div>
-  );
-};
-
-const PlacementsTemplate = (args: PopoverProps) => {
-  const buttonColor = args.color as ButtonVariantProps["color"];
-
-  return (
-    <div className="inline-grid grid-cols-3 gap-4">
-      <Popover {...args} placement="top-start">
-        <PopoverTrigger>
-          <Button color={buttonColor} variant="solid">
-            Top Start
-          </Button>
-        </PopoverTrigger>
-        {content}
-      </Popover>
-
-      <Popover {...args}>
-        <PopoverTrigger>
-          <Button color={buttonColor} variant="solid">
-            Top
-          </Button>
-        </PopoverTrigger>
-        {content}
-      </Popover>
-
-      <Popover {...args} placement="top-end">
-        <PopoverTrigger>
-          <Button color={buttonColor} variant="solid">
-            Top End
-          </Button>
-        </PopoverTrigger>
-        {content}
-      </Popover>
-
-      <Popover {...args} placement="bottom-start">
-        <PopoverTrigger>
-          <Button color={buttonColor} variant="solid">
-            Bottom Start
-          </Button>
-        </PopoverTrigger>
-        {content}
-      </Popover>
-
-      <Popover {...args} placement="bottom">
-        <PopoverTrigger>
-          <Button color={buttonColor} variant="solid">
-            Bottom
-          </Button>
-        </PopoverTrigger>
-        {content}
-      </Popover>
-
-      <Popover {...args} placement="bottom-end">
-        <PopoverTrigger>
-          <Button color={buttonColor} variant="solid">
-            Bottom End
-          </Button>
-        </PopoverTrigger>
-        {content}
-      </Popover>
-
-      <Popover {...args} placement="right-start">
-        <PopoverTrigger>
-          <Button color={buttonColor} variant="solid">
-            Right Start
-          </Button>
-        </PopoverTrigger>
-        {content}
-      </Popover>
-
-      <Popover {...args} placement="right">
-        <PopoverTrigger>
-          <Button color={buttonColor} variant="solid">
-            Right
-          </Button>
-        </PopoverTrigger>
-        {content}
-      </Popover>
-
-      <Popover {...args} placement="right-end">
-        <PopoverTrigger>
-          <Button color={buttonColor} variant="solid">
-            Right End
-          </Button>
-        </PopoverTrigger>
-        {content}
-      </Popover>
-
-      <Popover {...args} placement="left-start">
-        <PopoverTrigger>
-          <Button color={buttonColor} variant="solid">
-            Left Start
-          </Button>
-        </PopoverTrigger>
-        {content}
-      </Popover>
-
-      <Popover {...args} placement="left">
-        <PopoverTrigger>
-          <Button color={buttonColor} variant="solid">
-            Left
-          </Button>
-        </PopoverTrigger>
-        {content}
-      </Popover>
-
-      <Popover {...args} placement="left-end">
-        <PopoverTrigger>
-          <Button color={buttonColor} variant="solid">
-            Left End
-          </Button>
-        </PopoverTrigger>
-        {content}
-      </Popover>
-    </div>
-  );
-};
-
-const OffsetTemplate = (args: PopoverProps) => (
-  <div className="flex gap-2">
-    <Popover {...args}>
-      <PopoverTrigger>
-        <Button color="warning" variant="solid">
-          Default offset (7)
-        </Button>
-      </PopoverTrigger>
-      {content}
-    </Popover>
-    <Popover {...args} offset={15}>
-      <PopoverTrigger>
-        <Button color="warning" variant="solid">
-          15 offset
-        </Button>
-      </PopoverTrigger>
-      {content}
-    </Popover>
-    <Popover {...args} offset={-7}>
-      <PopoverTrigger>
-        <Button color="warning" variant="solid">
-          -7 offset
-        </Button>
-      </PopoverTrigger>
-      {content}
-    </Popover>
-  </div>
-);
+// const defaultProps = {
+//   ...popover.defaultVariants,
+//   placement: "top",
+//   offset: 7,
+//   defaultOpen: false,
+//   disableAnimation: false,
+// };
+//
+// const content = (
+//   <PopoverContent>
+//     <div className="px-1 py-2">
+//       <div className="text-sm font-bold">Popover Content</div>
+//       <div className="text-xs">This is a content of the popover</div>
+//     </div>
+//   </PopoverContent>
+// );
+//
+// const Template = (args: PopoverProps) => {
+//   return (
+//     <Popover {...args}>
+//       <PopoverTrigger>
+//         <Button disableAnimation={!!args.disableAnimation}>Open Popover</Button>
+//       </PopoverTrigger>
+//       {content}
+//     </Popover>
+//   );
+// };
+//
+// const WithTitlePropsTemplate = (args: PopoverProps) => {
+//   return (
+//     <Popover {...args}>
+//       <PopoverTrigger>
+//         <Button disableAnimation={!!args.disableAnimation}>Open Popover</Button>
+//       </PopoverTrigger>
+//       <PopoverContent>
+//         {(titleProps) => (
+//           <div className="px-1 py-2">
+//             <h3 className="text-sm font-bold" {...titleProps}>
+//               Popover Content
+//             </h3>
+//             <div className="text-xs">This is a content of the popover</div>
+//           </div>
+//         )}
+//       </PopoverContent>
+//     </Popover>
+//   );
+// };
+//
+// const OpenChangeTemplate = (args: PopoverProps) => {
+//   const [isOpen, setIsOpen] = React.useState(false);
+//
+//   return (
+//     <div className="flex flex-col gap-2">
+//       <Popover
+//         {...args}
+//         style={{
+//           zIndex: 10,
+//         }}
+//         onOpenChange={(open) => setIsOpen(open)}
+//       >
+//         <PopoverTrigger>
+//           <Button>Open Popover</Button>
+//         </PopoverTrigger>
+//         <PopoverContent>
+//           <div className="px-1 py-2">
+//             <div className="text-sm font-bold">Popover Content</div>
+//             <div className="text-xs">This is a content of the popover</div>
+//           </div>
+//         </PopoverContent>
+//       </Popover>
+//       <p className="text-sm">isOpen: {isOpen ? "true" : "false"}</p>
+//     </div>
+//   );
+// };
+//
+// const PlacementsTemplate = (args: PopoverProps) => {
+//   const buttonColor = args.color as ButtonVariantProps["color"];
+//
+//   return (
+//     <div className="inline-grid grid-cols-3 gap-4">
+//       <Popover {...args} placement="top-start">
+//         <PopoverTrigger>
+//           <Button color={buttonColor} variant="solid">
+//             Top Start
+//           </Button>
+//         </PopoverTrigger>
+//         {content}
+//       </Popover>
+//
+//       <Popover {...args}>
+//         <PopoverTrigger>
+//           <Button color={buttonColor} variant="solid">
+//             Top
+//           </Button>
+//         </PopoverTrigger>
+//         {content}
+//       </Popover>
+//
+//       <Popover {...args} placement="top-end">
+//         <PopoverTrigger>
+//           <Button color={buttonColor} variant="solid">
+//             Top End
+//           </Button>
+//         </PopoverTrigger>
+//         {content}
+//       </Popover>
+//
+//       <Popover {...args} placement="bottom-start">
+//         <PopoverTrigger>
+//           <Button color={buttonColor} variant="solid">
+//             Bottom Start
+//           </Button>
+//         </PopoverTrigger>
+//         {content}
+//       </Popover>
+//
+//       <Popover {...args} placement="bottom">
+//         <PopoverTrigger>
+//           <Button color={buttonColor} variant="solid">
+//             Bottom
+//           </Button>
+//         </PopoverTrigger>
+//         {content}
+//       </Popover>
+//
+//       <Popover {...args} placement="bottom-end">
+//         <PopoverTrigger>
+//           <Button color={buttonColor} variant="solid">
+//             Bottom End
+//           </Button>
+//         </PopoverTrigger>
+//         {content}
+//       </Popover>
+//
+//       <Popover {...args} placement="right-start">
+//         <PopoverTrigger>
+//           <Button color={buttonColor} variant="solid">
+//             Right Start
+//           </Button>
+//         </PopoverTrigger>
+//         {content}
+//       </Popover>
+//
+//       <Popover {...args} placement="right">
+//         <PopoverTrigger>
+//           <Button color={buttonColor} variant="solid">
+//             Right
+//           </Button>
+//         </PopoverTrigger>
+//         {content}
+//       </Popover>
+//
+//       <Popover {...args} placement="right-end">
+//         <PopoverTrigger>
+//           <Button color={buttonColor} variant="solid">
+//             Right End
+//           </Button>
+//         </PopoverTrigger>
+//         {content}
+//       </Popover>
+//
+//       <Popover {...args} placement="left-start">
+//         <PopoverTrigger>
+//           <Button color={buttonColor} variant="solid">
+//             Left Start
+//           </Button>
+//         </PopoverTrigger>
+//         {content}
+//       </Popover>
+//
+//       <Popover {...args} placement="left">
+//         <PopoverTrigger>
+//           <Button color={buttonColor} variant="solid">
+//             Left
+//           </Button>
+//         </PopoverTrigger>
+//         {content}
+//       </Popover>
+//
+//       <Popover {...args} placement="left-end">
+//         <PopoverTrigger>
+//           <Button color={buttonColor} variant="solid">
+//             Left End
+//           </Button>
+//         </PopoverTrigger>
+//         {content}
+//       </Popover>
+//     </div>
+//   );
+// };
+//
+// const OffsetTemplate = (args: PopoverProps) => (
+//   <div className="flex gap-2">
+//     <Popover {...args}>
+//       <PopoverTrigger>
+//         <Button color="warning" variant="solid">
+//           Default offset (7)
+//         </Button>
+//       </PopoverTrigger>
+//       {content}
+//     </Popover>
+//     <Popover {...args} offset={15}>
+//       <PopoverTrigger>
+//         <Button color="warning" variant="solid">
+//           15 offset
+//         </Button>
+//       </PopoverTrigger>
+//       {content}
+//     </Popover>
+//     <Popover {...args} offset={-7}>
+//       <PopoverTrigger>
+//         <Button color="warning" variant="solid">
+//           -7 offset
+//         </Button>
+//       </PopoverTrigger>
+//       {content}
+//     </Popover>
+//   </div>
+// );
 
 // const WithFormTemplate = (args: PopoverProps) => (
 //   <Popover {...args}>
@@ -396,14 +394,14 @@ const OffsetTemplate = (args: PopoverProps) => (
 //     <img
 //       alt="Relaxing app background"
 //       className="w-full h-full object-cover"
-//       src="https://Banyu.org/images/card-example-5.jpeg"
+//       src="https://banyu.org/images/card-example-5.jpeg"
 //     />
 //     <CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t border-default-600 dark:border-default-100">
 //       <div className="flex flex-grow gap-2 items-center">
 //         <img
 //           alt="Breathing app icon"
 //           className="rounded-full w-10 h-11 bg-black"
-//           src="https://Banyu.org/images/breathing-app-icon.jpeg"
+//           src="https://banyu.org/images/breathing-app-icon.jpeg"
 //         />
 //         <div className="flex flex-col">
 //           <p className="text-xs text-white/60">Breathing App</p>

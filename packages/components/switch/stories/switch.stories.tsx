@@ -1,7 +1,6 @@
 /* eslint-disable react/display-name */
 // @ts-ignore
 import {Meta} from "@storybook/react";
-import {toggle} from "@banyu/theme";
 
 import {Switch} from "../src";
 
@@ -34,33 +33,33 @@ export default {
   },
 } as Meta<typeof Switch>;
 
-const defaultProps = {
-  ...toggle.defaultVariants,
-};
-
-export const Default = {
-  parameters: {
-    design: {
-      type: "figma",
-      url: "",
-    },
-  },
-  args: {
-    ...defaultProps,
-    defaultSelected: true,
-  },
-};
-
-export const IsDisabled = {
-  parameters: {
-    design: {
-      type: "figma",
-      url: "",
-    },
-  },
-  args: {
-    ...defaultProps,
-    isDisabled: true,
-    defaultSelected: true,
-  },
-};
+// const defaultProps = {
+//   ...toggle.defaultVariants,
+// };
+//
+// export const Default = {
+//   parameters: {
+//     design: {
+//       type: "figma",
+//       url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=654%3A111633&mode=dev",
+//     },
+//   },
+//   args: {
+//     ...defaultProps,
+//     defaultSelected: true,
+//   },
+// };
+//
+// export const IsDisabled = {
+//   parameters: {
+//     design: {
+//       type: "figma",
+//       url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=654%3A111633&mode=dev",
+//     },
+//   },
+//   args: {
+//     ...defaultProps,
+//     isDisabled: true,
+//     defaultSelected: true,
+//   },
+// };

@@ -1,6 +1,6 @@
 {
   "name": "@banyu/use-is-mobile",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A hook that returns whether the device is mobile or not",
   "keywords": [
     "use-is-mobile"
@@ -18,11 +18,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/muhamien/jala-design.git",
+    "url": "git+https://github.com/Atnic/banyu.git",
     "directory": "packages/hooks/use-is-mobile"
   },
   "bugs": {
-    "url": "https://github.com/muhamien/jala-design/issues"
+    "url": "https://github.com/Atnic/banyu/issues"
   },
   "scripts": {
     "build": "tsup src --dts",

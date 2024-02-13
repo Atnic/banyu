@@ -1,6 +1,6 @@
 {
   "name": "@banyu/system",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Banyu system primitives",
   "keywords": [
     "system"
@@ -18,11 +18,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/muhamien/jala-design.git",
+    "url": "git+https://github.com/Atnic/banyu.git",
     "directory": "packages/core/system"
   },
   "bugs": {
-    "url": "https://github.com/muhamien/jala-design/issues"
+    "url": "https://github.com/Atnic/banyu/issues"
   },
   "scripts": {
     "build": "tsup src !src/extend-variants.d.ts --dts",

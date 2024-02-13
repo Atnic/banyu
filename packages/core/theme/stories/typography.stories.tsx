@@ -25,6 +25,12 @@ export default {
 } as Meta<typeof Typography>;
 
 export const Heading = {
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=111%3A11824&mode=dev",
+    },
+  },
   args: {
     title: "Heading",
     desc: `*Headings organize content and guide readers through your site. Nest headings in order from HI to H9 (e.g. H3 under an H2).
@@ -33,18 +39,18 @@ Tip: Search engines use headings to pull out important themes and topics from yo
   },
 };
 
-export const TextBlock = {
-  args: {
-    title: "Text Block",
-    desc: "*A Text block is a generic text container, great for any text that isn't a Heading, a Paragraph, or a Link.",
-  },
-};
-export const Paragraph = {
-  args: {
-    title: "Paragraph",
-    desc: "*Paragraph elements are for multiple-sentence content. You can style it to affect all paragraph elements on your site, or just one.",
-  },
-};
+// export const TextBlock = {
+//   args: {
+//     title: "Text Block",
+//     desc: "*A Text block is a generic text container, great for any text that isn't a Heading, a Paragraph, or a Link.",
+//   },
+// };
+// export const Paragraph = {
+//   args: {
+//     title: "Paragraph",
+//     desc: "*Paragraph elements are for multiple-sentence content. You can style it to affect all paragraph elements on your site, or just one.",
+//   },
+// };
 
 // Components
 

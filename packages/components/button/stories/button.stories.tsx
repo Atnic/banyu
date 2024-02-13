@@ -4,7 +4,7 @@ import {Meta} from "@storybook/react";
 import {button} from "@banyu/theme";
 import {HeadphonesIcon} from "@banyu/shared-icons";
 
-import {Button, ButtonProps} from "../src";
+import {Button} from "../src";
 
 export default {
   title: "Components/Button",
@@ -69,29 +69,29 @@ const defaultProps = {
   ...button.defaultVariants,
 };
 
-const StateTemplate = (args: ButtonProps) => {
-  const [isOpen, setIsOpen] = React.useState(false);
-
-  const handlePress = () => {
-    // eslint-disable-next-line no-console
-    console.log("Pressed");
-    setIsOpen((prev) => !prev);
-  };
-
-  return (
-    <div className="h-screen">
-      <Button {...args} aria-label="Open" aria-pressed={isOpen} onPress={handlePress}>
-        {isOpen ? "Close" : "Open"}
-      </Button>
-    </div>
-  );
-};
+// const StateTemplate = (args: ButtonProps) => {
+//   const [isOpen, setIsOpen] = React.useState(false);
+//
+//   const handlePress = () => {
+//     // eslint-disable-next-line no-console
+//     console.log("Pressed");
+//     setIsOpen((prev) => !prev);
+//   };
+//
+//   return (
+//     <div className="h-screen">
+//       <Button {...args} aria-label="Open" aria-pressed={isOpen} onPress={handlePress}>
+//         {isOpen ? "Close" : "Open"}
+//       </Button>
+//     </div>
+//   );
+// };
 
 export const Solid = {
   parameters: {
     design: {
       type: "figma",
-      url: "",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=376%3A46775&mode=dev",
     },
   },
   args: {
@@ -102,7 +102,7 @@ export const Outline = {
   parameters: {
     design: {
       type: "figma",
-      url: "",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=376%3A46775&mode=dev",
     },
   },
   args: {
@@ -114,7 +114,7 @@ export const Ghost = {
   parameters: {
     design: {
       type: "figma",
-      url: "",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=376%3A46775&mode=dev",
     },
   },
   args: {
@@ -126,7 +126,7 @@ export const rounded = {
   parameters: {
     design: {
       type: "figma",
-      url: "",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=376%3A46775&mode=dev",
     },
   },
   args: {
@@ -139,7 +139,7 @@ export const IconOnly = {
   parameters: {
     design: {
       type: "figma",
-      url: "",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=376%3A46775&mode=dev",
     },
   },
   args: {

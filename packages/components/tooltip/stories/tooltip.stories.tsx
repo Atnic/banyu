@@ -185,7 +185,7 @@ export const Direction = {
   parameters: {
     design: {
       type: "figma",
-      url: "",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=911%3A72132&mode=dev",
     },
   },
   args: {
@@ -197,7 +197,7 @@ export const SecondaryContent = {
   parameters: {
     design: {
       type: "figma",
-      url: "",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=911%3A72132&mode=dev",
     },
   },
   args: {
@@ -216,7 +216,7 @@ export const ShortcutHints = {
   parameters: {
     design: {
       type: "figma",
-      url: "",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=911%3A72132&mode=dev",
     },
   },
   args: {
@@ -237,7 +237,7 @@ export const Indicator = {
   parameters: {
     design: {
       type: "figma",
-      url: "",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=911%3A72132&mode=dev",
     },
   },
   args: {
@@ -255,7 +255,7 @@ export const SingleIndicator = {
   parameters: {
     design: {
       type: "figma",
-      url: "",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=911%3A72132&mode=dev",
     },
   },
   args: {
@@ -276,7 +276,7 @@ export const TwoIndicator = {
   parameters: {
     design: {
       type: "figma",
-      url: "",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=911%3A72132&mode=dev",
     },
   },
   args: {

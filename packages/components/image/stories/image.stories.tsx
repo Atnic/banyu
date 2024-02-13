@@ -1,8 +1,7 @@
 import React from "react";
 import {Meta} from "@storybook/react";
-import {image} from "@banyu/theme";
 
-import {Image, ImageProps} from "../src";
+import {Image} from "../src";
 
 export default {
   title: "Components/Image",
@@ -45,30 +44,30 @@ export default {
   ],
 } as Meta<typeof Image>;
 
-const defaultProps = {
-  ...image.defaultVariants,
-  src: "./images/local-image-1.jpeg",
-  alt: "Banyu hero image",
-  disableSkeleton: true,
-};
-
-const LoadingTemplate = (args: ImageProps) => {
-  const [isLoading, setIsLoading] = React.useState(true);
-
-  React.useEffect(() => {
-    const time = !args.disableSkeleton ? 2500 : 500;
-
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, time);
-
-    return () => {
-      clearTimeout(timer);
-    };
-  }, []);
-
-  return <Image {...args} isLoading={isLoading} />;
-};
+// const defaultProps = {
+//   ...image.defaultVariants,
+//   src: "./images/local-image-1.jpeg",
+//   alt: "Banyu hero image",
+//   disableSkeleton: true,
+// };
+//
+// const LoadingTemplate = (args: ImageProps) => {
+//   const [isLoading, setIsLoading] = React.useState(true);
+//
+//   React.useEffect(() => {
+//     const time = !args.disableSkeleton ? 2500 : 500;
+//
+//     const timer = setTimeout(() => {
+//       setIsLoading(false);
+//     }, time);
+//
+//     return () => {
+//       clearTimeout(timer);
+//     };
+//   }, []);
+//
+//   return <Image {...args} isLoading={isLoading} />;
+// };
 
 // export const Default = {
 // parameters: {
@@ -112,7 +111,7 @@ const LoadingTemplate = (args: ImageProps) => {
 //     width: 300,
 //     isZoomed: true,
 //     radius: "lg",
-//     src: "https://Banyu.org/images/card-example-2.jpeg",
+//     src: "https://banyu.org/images/card-example-2.jpeg",
 //   },
 // };
 //

@@ -20,8 +20,7 @@ type SwatchSetProps = {
   isSematic?: boolean;
 };
 
-
-const Swatch = ({color, index, title}: {color: string, index: number, title:string}) => {
+const Swatch = ({color, index, title}: {color: string; index: number; title: string}) => {
   let colorKey = {
     0: "50",
     1: "100",
@@ -52,19 +51,15 @@ const Swatch = ({color, index, title}: {color: string, index: number, title:stri
         }}
       >
         <span
-            className="lowercase"
-            style={{
-              color: readableColor(color),
-            }}
+          className="lowercase"
+          style={{
+            color: readableColor(color),
+          }}
         >
           {title}-{colorKey[index]}
         </span>
       </div>
-      <span
-        className="text-gray-800 text-sm p-2"
-      >
-        {colorText}
-      </span>
+      <span className="text-gray-800 text-sm p-2">{colorText}</span>
     </div>
   );
 };
@@ -74,30 +69,30 @@ const SematicSwatch = ({
   className,
   textClassName,
   alphaColor,
-  title
+  title,
 }: {
   color: string;
   className?: string;
   textClassName?: string;
   title?: string;
-  alphaColor?: boolean
+  alphaColor?: boolean;
 }) => {
   return (
-      <div className="flex flex-col items-center justify-center rounded-xl shadow-lg border border-[#0000001A]">
-        <div
-            className={`flex flex-col items-center rounded-t-[0.70rem] justify-center w-full h-12 py-8 min-w-[160px] ${className}`}
-        >
-          {!alphaColor && <span className={`${textClassName} text-sm`}>{color}</span>}
-        </div>
-        <div className={`flex flex-col ${title === "White Alpha" ? 'text-white' : 'text-black'} text-sm p-2 text-left`}>
-          <span className="text-left">
-            .{className}
-          </span>
-          <span className="text-left">
-            .{textClassName}
-          </span>
-        </div>
+    <div className="flex flex-col items-center justify-center rounded-xl shadow-lg border border-[#0000001A]">
+      <div
+        className={`flex flex-col items-center rounded-t-[0.70rem] justify-center w-full h-12 py-8 min-w-[160px] ${className}`}
+      >
+        {!alphaColor && <span className={`${textClassName} text-sm`}>{color}</span>}
       </div>
+      <div
+        className={`flex flex-col ${
+          title === "White Alpha" ? "text-white" : "text-black"
+        } text-sm p-2 text-left`}
+      >
+        <span className="text-left">.{className}</span>
+        <span className="text-left">.{textClassName}</span>
+      </div>
+    </div>
   );
 };
 
@@ -106,20 +101,24 @@ const SwatchSet = ({colors, isSematic = false}: SwatchSetProps) => (
     {colors.map(({title, items}) => (
       <div key={title} className="flex flex-col items-start w-full h-full">
         <h2 className="text-xl font-bold text-gray-700">{title}</h2>
-        {title === 'White Alpha' || title === 'Black Alpha' ?
-          <div className={`${title === "White Alpha" && "bg-gray-900"} ${title === "Black Alpha" && "bg-gray-200"} rounded-xl p-4 flex flex-row flex-wrap items-center justify-start w-full h-full gap-4 my-4`}>
-            {items.map((c, index) =>
+        {title === "White Alpha" || title === "Black Alpha" ? (
+          <div
+            className={`${title === "White Alpha" && "bg-gray-900"} ${
+              title === "Black Alpha" && "bg-gray-200"
+            } rounded-xl p-4 flex flex-row flex-wrap items-center justify-start w-full h-full gap-4 my-4`}
+          >
+            {items.map((c, index) => (
               <SematicSwatch
-                  title={title}
-                  alphaColor={true}
-                  key={`${c.color}-${index}`}
-                  className={c.className}
-                  color={c.color}
-                  textClassName={c.textClassName}
+                key={`${c.color}-${index}`}
+                alphaColor={true}
+                className={c.className}
+                color={c.color}
+                textClassName={c.textClassName}
+                title={title}
               />
-            )}
+            ))}
           </div>
-        :
+        ) : (
           <div className="flex flex-row flex-wrap items-center justify-start w-full h-full gap-4 my-4">
             {items.map((c, index) =>
               isSematic ? (
@@ -130,11 +129,11 @@ const SwatchSet = ({colors, isSematic = false}: SwatchSetProps) => (
                   textClassName={c.textClassName}
                 />
               ) : (
-                <Swatch key={`${c.color}-${index}`} color={c.color} index={index} title={title}/>
+                <Swatch key={`${c.color}-${index}`} color={c.color} index={index} title={title} />
               ),
             )}
           </div>
-        }
+        )}
       </div>
     ))}
   </div>
@@ -157,6 +156,12 @@ const getCommonItems = (colors: string[]) => {
 };
 
 export const PrimaryColors = {
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=1042%3A263018&mode=dev",
+    },
+  },
   args: {
     isSematic: true,
     colors: [
@@ -218,7 +223,7 @@ export const PrimaryColors = {
             className: "bg-white-100a",
             textClassName: "text-white",
           },
-        ]
+        ],
       },
       {
         title: "Black Alpha",
@@ -278,7 +283,7 @@ export const PrimaryColors = {
             className: "bg-black-100a",
             textClassName: "text-white",
           },
-        ]
+        ],
       },
       {
         title: "Neutral",
@@ -348,7 +353,7 @@ export const PrimaryColors = {
             className: "bg-neutral-950",
             textClassName: "text-neutral-100",
           },
-        ]
+        ],
       },
       {
         title: "Primary",
@@ -624,6 +629,12 @@ export const PrimaryColors = {
   },
 };
 export const SecondaryColors = {
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=1042%3A263018&mode=dev",
+    },
+  },
   args: {
     colors: [
       {
@@ -661,4 +672,3 @@ export const SecondaryColors = {
     ],
   },
 };
-

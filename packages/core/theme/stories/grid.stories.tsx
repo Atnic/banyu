@@ -8,7 +8,7 @@ type DefaultProps = {
   component?: string;
 };
 
-const GridContainer = ({title, desc, component}: DefaultProps) => (
+const GridContainer = ({title, desc}: DefaultProps) => (
   <div className="">
     <div className="border-b-2 pb-4">
       <span className="heading-600 text-gray-700">{title}</span>
@@ -45,6 +45,12 @@ export default {
 } as Meta<typeof GridContainer>;
 
 export const Grid = {
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=202%3A6913&mode=dev",
+    },
+  },
   args: {
     title: "Grid",
     desc: `Our color system builds on the recognition of the Shopify brand colors to make the admin interface more usable.`,

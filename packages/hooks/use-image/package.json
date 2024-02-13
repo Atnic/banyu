@@ -1,6 +1,6 @@
 {
   "name": "@banyu/use-image",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "React hook for progressing image loading",
   "keywords": [
     "use-image"
@@ -18,11 +18,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/muhamien/jala-design.git",
+    "url": "git+https://github.com/Atnic/banyu.git",
     "directory": "packages/hooks/use-image"
   },
   "bugs": {
-    "url": "https://github.com/muhamien/jala-design/issues"
+    "url": "https://github.com/Atnic/banyu/issues"
   },
   "scripts": {
     "build": "tsup src --dts",
