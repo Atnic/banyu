@@ -1,7 +1,7 @@
-import type {VariantProps} from "tailwind-variants"
+import type {VariantProps} from "tailwind-variants";
 
-import {tv} from "../utils/tv"
-import {collapseAdjacentVariantBorders, colorVariants, dataFocusVisibleClasses} from "../utils"
+import {tv} from "../utils/tv";
+import {collapseAdjacentVariantBorders, colorVariants, dataFocusVisibleClasses} from "../utils";
 
 /**
  * Button wrapper **Tailwind Variants** component
@@ -463,25 +463,29 @@ const button = tv({
     {
       variant: ["outline", "rounded"],
       color: "primary",
-      class: "data-[hover=true]:bg-brand data-[hover=true]:text-white",
+      class:
+        "data-[hover=true]:bg-brand data-[hover=true]:border-brand data-[hover=true]:text-white",
     },
     //   danger
     {
       variant: ["outline", "rounded"],
       color: "danger",
-      class: "data-[hover=true]:bg-danger-600 data-[hover=true]:text-white",
+      class:
+        "data-[hover=true]:bg-danger-600 data-[hover=true]:border-danger-600 data-[hover=true]:text-white",
     },
     //   warning
     {
       variant: ["outline", "rounded"],
       color: "warning",
-      class: "data-[hover=true]:bg-warning-500 data-[hover=true]:text-white",
+      class:
+        "data-[hover=true]:bg-warning-500 data-[hover=true]:border-warning-500 data-[hover=true]:text-white",
     },
     //   success
     {
       variant: ["outline", "rounded"],
       color: "success",
-      class: "data-[hover=true]:bg-success-500 data-[hover=true]:text-white",
+      class:
+        "data-[hover=true]:bg-success-500 data-[hover=true]:border-success-500 data-[hover=true]:text-white",
     },
     //   white
     {
@@ -494,7 +498,8 @@ const button = tv({
     {
       variant: ["outline", "rounded"],
       color: "basic",
-      class: "data-[hover=true]:bg-neutral-200 data-[hover=true]:text-black",
+      class:
+        "data-[hover=true]:bg-neutral-200 data-[hover=true]:border-neutral-300 data-[hover=true]:text-black",
     },
     //   transparent
     {
@@ -646,7 +651,7 @@ const button = tv({
       variant: ["outline", "rounded"],
       color: "primary",
       class:
-        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-brand-800 data-[focus=true]:ring-brand/60 data-[focus=true]:text-white",
+        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-brand-800 data-[focus=true]:border-brand-800 data-[focus=true]:ring-brand/60 data-[focus=true]:text-white",
     },
     //   danger
     {
@@ -791,7 +796,7 @@ const button = tv({
         "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-brand-200 data-[focus=true]:border-brand data-[focus=true]:text-brand dark:focus:ring-brand/60",
     },
   ],
-})
+});
 
 // size: {
 //   sm: "px-3 h-8 text-sm",
@@ -819,9 +824,9 @@ const buttonGroup = tv({
   defaultVariants: {
     fullWidth: false,
   },
-})
+});
 
-export type ButtonGroupVariantProps = VariantProps<typeof buttonGroup>
-export type ButtonVariantProps = VariantProps<typeof button>
+export type ButtonGroupVariantProps = VariantProps<typeof buttonGroup>;
+export type ButtonVariantProps = VariantProps<typeof button>;
 
-export {button, buttonGroup}
+export {button, buttonGroup};
