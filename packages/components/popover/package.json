@@ -36,9 +36,9 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "framer-motion": ">=0.0.0",
-    "@banyu/theme": "1.0.0",
-    "@banyu/system": "1.0.0"
+    "framer-motion": ">=4.0.0",
+    "@jala-banyu/theme": "1.0.0",
+    "@jala-banyu/system": "1.0.0"
   },
   "dependencies": {
     "@jala-banyu/aria-utils": "workspace: *",

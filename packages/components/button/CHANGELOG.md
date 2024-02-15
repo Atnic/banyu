@@ -1,5 +1,11 @@
 # @jala-banyu/button
 
+## 1.0.1
+
+### Patch Changes
+
+- WIP: change button
+
 ## 1.0.0
 
 ### Major Changes
