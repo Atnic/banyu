@@ -1,8 +1,8 @@
 import React from "react";
 // @ts-ignore
 import {Meta} from "@storybook/react";
-import {Camera} from "@banyu/shared-icons";
-import {avatar} from "@banyu/theme";
+import {Camera} from "@jala-banyu/shared-icons";
+import {avatar} from "@jala-banyu/theme";
 
 import {Avatar} from "../src";
 

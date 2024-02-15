@@ -1,4 +1,4 @@
-const { banyuTheme } = require("@banyu/theme/plugin");
+const { banyuTheme } = require("@jala-banyu/theme/plugin");
 // /** @type {import('tailwindcss').Config} */
 export default {
   content: [

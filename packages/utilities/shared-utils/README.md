@@ -1,4 +1,4 @@
-# @banyu/system
+# @jala-banyu/system
 
 A Quick description of the component
 
@@ -7,9 +7,9 @@ A Quick description of the component
 ## Installation
 
 ```sh
-yarn add @banyu/system
+yarn add @jala-banyu/system
 # or
-npm i @banyu/system
+npm i @jala-banyu/system
 ```
 
 ## Contribution

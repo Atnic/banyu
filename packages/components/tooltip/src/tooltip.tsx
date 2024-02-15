@@ -1,10 +1,10 @@
-import {forwardRef} from "@banyu/system";
+import {forwardRef} from "@jala-banyu/system";
 import {OverlayContainer} from "@react-aria/overlays";
 import {AnimatePresence, motion} from "framer-motion";
-import {TRANSITION_VARIANTS} from "@banyu/framer-transitions";
-import {warn} from "@banyu/shared-utils";
+import {TRANSITION_VARIANTS} from "@jala-banyu/framer-transitions";
+import {warn} from "@jala-banyu/shared-utils";
 import {Children, cloneElement} from "react";
-import {getTransformOrigins} from "@banyu/aria-utils";
+import {getTransformOrigins} from "@jala-banyu/aria-utils";
 import {mergeProps} from "@react-aria/utils";
 
 import {UseTooltipProps, useTooltip} from "./use-tooltip";

@@ -1,5 +1,5 @@
 import * as React from "react";
-import {isFunction} from "@banyu/shared-utils";
+import {isFunction} from "@jala-banyu/shared-utils";
 
 export type ReactRef<T> = React.RefObject<T> | React.MutableRefObject<T> | React.Ref<T>;
 

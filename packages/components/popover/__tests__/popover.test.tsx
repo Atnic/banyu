@@ -1,6 +1,6 @@
 import * as React from "react";
 import {render, fireEvent, act} from "@testing-library/react";
-import {Button} from "@banyu/button";
+import {Button} from "@jala-banyu/button";
 
 import {Popover, PopoverContent, PopoverTrigger} from "../src";
 

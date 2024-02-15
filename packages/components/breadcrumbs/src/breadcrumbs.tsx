@@ -1,7 +1,7 @@
 import {cloneElement, useMemo} from "react";
-import {forwardRef} from "@banyu/system";
-import {ArrowRightIcon, ChevronRightIcon, EllipsisIcon} from "@banyu/shared-icons";
-import {warn} from "@banyu/shared-utils";
+import {forwardRef} from "@jala-banyu/system";
+import {EllipsisIcon} from "@jala-banyu/shared-icons";
+import {warn} from "@jala-banyu/shared-utils";
 import {chain} from "@react-aria/utils";
 
 import {UseBreadcrumbsProps, useBreadcrumbs} from "./use-breadcrumbs";
@@ -68,7 +68,11 @@ const Breadcrumbs = forwardRef<"div", BreadcrumbsProps>((props, ref) => {
       return items;
     }
 
-    const ellipsisIcon = <><EllipsisIcon {...getEllipsisProps()} /></>;
+    const ellipsisIcon = (
+      <>
+        <EllipsisIcon {...getEllipsisProps()} />
+      </>
+    );
     const collapsedItem = cloneElement(itemsInEllipsis[0], {
       ...itemsInEllipsis[0].props,
       key: "ellipsis",

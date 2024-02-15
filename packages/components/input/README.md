@@ -1,4 +1,4 @@
-# @banyu/input
+# @jala-banyu/input
 
 Input is a component that allows users to enter text. It can be used to get user inputs in forms, search fields, and more.
 
@@ -9,9 +9,9 @@ Please refer to the [documentation](https://localhost:3000/docs/components/input
 ## Installation
 
 ```sh
-yarn add @banyu/input
+yarn add @jala-banyu/input
 # or
-npm i @banyu/input
+npm i @jala-banyu/input
 ```
 
 ## Contribution

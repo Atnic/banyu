@@ -1,4 +1,4 @@
-# @banyu/loading
+# @jala-banyu/loading
 
 Spinner express an unspecified wait time or display the length of a process.
 
@@ -7,9 +7,9 @@ Please refer to the [documentation](https://localhost:3000/docs/components/loadi
 ## Installation
 
 ```sh
-yarn add @banyu/loading
+yarn add @jala-banyu/loading
 # or
-npm i @banyu/loading
+npm i @jala-banyu/loading
 ```
 
 ## Contribution

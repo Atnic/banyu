@@ -1,10 +1,10 @@
 import type {ButtonProps} from "./index";
-import type {ReactRef} from "@banyu/react-utils";
-import type {ButtonGroupVariantProps} from "@banyu/theme";
+import type {ReactRef} from "@jala-banyu/react-utils";
+import type {ButtonGroupVariantProps} from "@jala-banyu/theme";
 
-import {buttonGroup} from "@banyu/theme";
-import {HTMLBanyuProps, PropGetter, mapPropsVariants} from "@banyu/system";
-import {useDOMRef} from "@banyu/react-utils";
+import {buttonGroup} from "@jala-banyu/theme";
+import {HTMLBanyuProps, PropGetter, mapPropsVariants} from "@jala-banyu/system";
+import {useDOMRef} from "@jala-banyu/react-utils";
 import {useMemo, useCallback} from "react";
 interface Props extends HTMLBanyuProps, ButtonGroupVariantProps {
   /**

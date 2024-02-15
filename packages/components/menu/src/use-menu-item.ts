@@ -1,18 +1,18 @@
 import type {MenuItemBaseProps} from "./base/menu-item-base";
 
 import {useMemo, useRef, useCallback} from "react";
-import {menuItem} from "@banyu/theme";
-import {HTMLBanyuProps, mapPropsVariants, PropGetter} from "@banyu/system";
+import {menuItem} from "@jala-banyu/theme";
+import {HTMLBanyuProps, mapPropsVariants, PropGetter} from "@jala-banyu/system";
 import {useFocusRing} from "@react-aria/focus";
 import {Node} from "@react-types/shared";
-import {filterDOMProps} from "@banyu/react-utils";
+import {filterDOMProps} from "@jala-banyu/react-utils";
 import {TreeState} from "@react-stately/tree";
-import {clsx, dataAttr, removeEvents} from "@banyu/shared-utils";
+import {clsx, dataAttr, removeEvents} from "@jala-banyu/shared-utils";
 import {useMenuItem as useAriaMenuItem} from "@react-aria/menu";
 import {chain, mergeProps} from "@react-aria/utils";
 import {useHover} from "@react-aria/interactions";
-import {usePress} from "@banyu/use-aria-press";
-import {useIsMobile} from "@banyu/use-is-mobile";
+import {usePress} from "@jala-banyu/use-aria-press";
+import {useIsMobile} from "@jala-banyu/use-is-mobile";
 
 interface Props<T extends object> extends MenuItemBaseProps<T> {
   item: Node<T>;

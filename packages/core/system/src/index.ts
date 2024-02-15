@@ -1,3 +1,3 @@
 export * from "./provider";
 
-export * from "@banyu/system-rsc";
+export * from "@jala-banyu/system-rsc";

@@ -1,55 +1,15 @@
-# @banyu/spinner
-
-## 1.0.3
-
-### Patch Changes
-
-- fix patch version
-
-- Updated dependencies []:
-  - @banyu/shared-utils@1.0.3
-  - @banyu/react-utils@1.0.3
-  - @banyu/system-rsc@1.0.3
-  - @banyu/system@1.0.3
-  - @banyu/theme@1.0.3
-
-## 1.0.2
-
-### Patch Changes
-
-- Adjust after tranfer repo
-
-- Updated dependencies []:
-  - @banyu/shared-utils@1.0.2
-  - @banyu/react-utils@1.0.2
-  - @banyu/system-rsc@1.0.2
-  - @banyu/system@1.0.2
-  - @banyu/theme@1.0.2
-
-## 1.0.1
-
-### Patch Changes
-
-- Patch update
-
-- Updated dependencies []:
-  - @banyu/system@1.0.1
-  - @banyu/system-rsc@1.0.1
-  - @banyu/theme@1.0.1
-  - @banyu/react-utils@1.0.1
-  - @banyu/shared-utils@1.0.1
+# @jala-banyu/spinner
 
 ## 1.0.0
 
 ### Major Changes
 
-- Set to Major version 1.0.0
+- First major version of Banyu Design
 
 ### Patch Changes
 
 - Updated dependencies []:
-  - @banyu/shared-utils@1.0.0
-  - @banyu/react-utils@1.0.0
-  - @banyu/system-rsc@1.0.0
-  - @banyu/system@1.0.0
-  - @banyu/theme@1.0.0
+  - @jala-banyu/shared-utils@1.0.0
+  - @jala-banyu/react-utils@1.0.0
+  - @jala-banyu/system-rsc@1.0.0
+  - @jala-banyu/theme@1.0.0

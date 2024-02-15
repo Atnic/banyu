@@ -1,8 +1,8 @@
 import React, {Children, cloneElement, useMemo} from "react";
-import {forwardRef} from "@banyu/system";
-import {pickChildren} from "@banyu/react-utils";
-import {useAriaButton} from "@banyu/use-aria-button";
-import {Button} from "@banyu/button";
+import {forwardRef} from "@jala-banyu/system";
+import {pickChildren} from "@jala-banyu/react-utils";
+import {useAriaButton} from "@jala-banyu/use-aria-button";
+import {Button} from "@jala-banyu/button";
 import {mergeProps} from "@react-aria/utils";
 
 import {usePopoverContext} from "./popover-context";

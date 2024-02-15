@@ -1,4 +1,4 @@
-# @banyu/use-image
+# @jala-banyu/use-image
 
 A Quick description of the component
 
@@ -7,9 +7,9 @@ A Quick description of the component
 ## Installation
 
 ```sh
-yarn add @banyu/use-image
+yarn add @jala-banyu/use-image
 # or
-npm i @banyu/use-image
+npm i @jala-banyu/use-image
 ```
 
 ## Contribution

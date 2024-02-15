@@ -1,5 +1,5 @@
 import {cloneElement} from "react";
-import {forwardRef} from "@banyu/system";
+import {forwardRef} from "@jala-banyu/system";
 
 import {UseImageProps, useImage} from "./use-image";
 

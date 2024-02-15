@@ -4,7 +4,7 @@
 
 import type {AriaLabelingProps, DOMAttributes, DOMProps, Orientation} from "@react-types/shared";
 
-import {filterDOMProps} from "@banyu/react-rsc-utils";
+import {filterDOMProps} from "@jala-banyu/react-rsc-utils";
 
 export interface SeparatorProps extends DOMProps, AriaLabelingProps {
   /**

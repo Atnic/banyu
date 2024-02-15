@@ -4,7 +4,7 @@
 import type {ImgHTMLAttributes, SyntheticEvent} from "react";
 
 import {useCallback, useEffect, useRef, useState} from "react";
-import {useSafeLayoutEffect} from "@banyu/use-safe-layout-effect";
+import {useSafeLayoutEffect} from "@jala-banyu/use-safe-layout-effect";
 
 type NativeImageProps = ImgHTMLAttributes<HTMLImageElement>;
 

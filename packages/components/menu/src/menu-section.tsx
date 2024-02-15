@@ -1,12 +1,12 @@
-import {menuSection} from "@banyu/theme";
+import {menuSection} from "@jala-banyu/theme";
 import {Node} from "@react-types/shared";
 import {TreeState} from "@react-stately/tree";
 import {useMenuSection} from "@react-aria/menu";
 import {useMemo, Key} from "react";
-import {forwardRef} from "@banyu/system";
+import {forwardRef} from "@jala-banyu/system";
 import {mergeProps} from "@react-aria/utils";
-import {clsx} from "@banyu/shared-utils";
-import {Divider} from "@banyu/divider";
+import {clsx} from "@jala-banyu/shared-utils";
+import {Divider} from "@jala-banyu/divider";
 
 import MenuItem, {MenuItemProps} from "./menu-item";
 import {MenuSectionBaseProps} from "./base/menu-section-base";

@@ -1,10 +1,10 @@
-import type {KbdVariantProps, KbdSlots, SlotsToClasses} from "@banyu/theme";
-import type {HTMLBanyuProps, PropGetter} from "@banyu/system-rsc";
+import type {KbdVariantProps, KbdSlots, SlotsToClasses} from "@jala-banyu/theme";
+import type {HTMLBanyuProps, PropGetter} from "@jala-banyu/system-rsc";
 
-import {mapPropsVariants} from "@banyu/system-rsc";
-import {kbd} from "@banyu/theme";
-import {clsx} from "@banyu/shared-utils";
-import {ReactRef} from "@banyu/react-utils";
+import {mapPropsVariants} from "@jala-banyu/system-rsc";
+import {kbd} from "@jala-banyu/theme";
+import {clsx} from "@jala-banyu/shared-utils";
+import {ReactRef} from "@jala-banyu/react-utils";
 import {useMemo} from "react";
 
 import {KbdKey} from "./utils";

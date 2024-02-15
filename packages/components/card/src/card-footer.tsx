@@ -1,6 +1,6 @@
-import {forwardRef, HTMLBanyuProps} from "@banyu/system";
-import {useDOMRef} from "@banyu/react-utils";
-import {clsx} from "@banyu/shared-utils";
+import {forwardRef, HTMLBanyuProps} from "@jala-banyu/system";
+import {useDOMRef} from "@jala-banyu/react-utils";
+import {clsx} from "@jala-banyu/shared-utils";
 
 import {useCardContext} from "./card-context";
 

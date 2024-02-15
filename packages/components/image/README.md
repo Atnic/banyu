@@ -1,4 +1,4 @@
-# @banyu/image
+# @jala-banyu/image
 
 The Image component is used to display images with support for fallback.
 
@@ -7,9 +7,9 @@ Please refer to the [documentation](https://localhost:3000/docs/components/image
 ## Installation
 
 ```sh
-yarn add @banyu/image
+yarn add @jala-banyu/image
 # or
-npm i @banyu/image
+npm i @jala-banyu/image
 ```
 
 ## Contribution

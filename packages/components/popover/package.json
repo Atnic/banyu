@@ -1,6 +1,6 @@
 {
-  "name": "@banyu/popover",
-  "version": "1.0.3",
+  "name": "@jala-banyu/popover",
+  "version": "1.0.0",
   "description": "A popover is an overlay element positioned relative to a trigger.",
   "keywords": [
     "popover"
@@ -37,16 +37,16 @@
     "react": ">=18",
     "react-dom": ">=18",
     "framer-motion": ">=0.0.0",
-    "@banyu/theme": "1.0.3",
-    "@banyu/system": "1.0.3"
+    "@banyu/theme": "1.0.0",
+    "@banyu/system": "1.0.0"
   },
   "dependencies": {
-    "@banyu/aria-utils": "workspace: *",
-    "@banyu/framer-transitions": "workspace: *",
-    "@banyu/use-aria-button": "workspace: *",
-    "@banyu/button": "workspace: *",
-    "@banyu/shared-utils": "workspace: *",
-    "@banyu/react-utils": "workspace: *",
+    "@jala-banyu/aria-utils": "workspace: *",
+    "@jala-banyu/framer-transitions": "workspace: *",
+    "@jala-banyu/use-aria-button": "workspace: *",
+    "@jala-banyu/button": "workspace: *",
+    "@jala-banyu/shared-utils": "workspace: *",
+    "@jala-banyu/react-utils": "workspace: *",
     "@react-aria/dialog": "^3.5.7",
     "@react-aria/interactions": "^3.19.1",
     "@react-aria/overlays": "^3.18.1",
@@ -58,10 +58,10 @@
     "react-remove-scroll": "^2.5.6"
   },
   "devDependencies": {
-    "@banyu/theme": "workspace: *",
-    "@banyu/system": "workspace: *",
-    "@banyu/card": "workspace: *",
-    "@banyu/kbd": "workspace: *",
+    "@jala-banyu/theme": "workspace: *",
+    "@jala-banyu/system": "workspace: *",
+    "@jala-banyu/card": "workspace: *",
+    "@jala-banyu/kbd": "workspace: *",
     "framer-motion": "^10.16.4",
     "clean-package": "2.2.0",
     "react": "^18.0.0",

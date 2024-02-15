@@ -6,7 +6,7 @@ import {
   useOverlayPosition,
   AriaOverlayProps,
 } from "@react-aria/overlays";
-import {OverlayPlacement, ariaHideOutside, toReactAriaPlacement} from "@banyu/aria-utils";
+import {OverlayPlacement, ariaHideOutside, toReactAriaPlacement} from "@jala-banyu/aria-utils";
 import {OverlayTriggerState} from "@react-stately/overlays";
 import {mergeProps} from "@react-aria/utils";
 

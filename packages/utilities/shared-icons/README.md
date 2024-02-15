@@ -1,4 +1,4 @@
-# @banyu/shared-icons
+# @jala-banyu/shared-icons
 
 A Quick description of the component
 
@@ -7,9 +7,9 @@ A Quick description of the component
 ## Installation
 
 ```sh
-yarn add @banyu/shared-icons
+yarn add @jala-banyu/shared-icons
 # or
-npm i @banyu/shared-icons
+npm i @jala-banyu/shared-icons
 ```
 
 ## Contribution

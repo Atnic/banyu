@@ -9,11 +9,11 @@
 
 import * as React from "react";
 import {DismissButton, Overlay} from "@react-aria/overlays";
-import {forwardRef} from "@banyu/system";
+import {forwardRef} from "@jala-banyu/system";
 import {HTMLMotionProps, motion} from "framer-motion";
 import {mergeProps} from "@react-aria/utils";
-import {getTransformOrigins} from "@banyu/aria-utils";
-import {TRANSITION_VARIANTS} from "@banyu/framer-transitions";
+import {getTransformOrigins} from "@jala-banyu/aria-utils";
+import {TRANSITION_VARIANTS} from "@jala-banyu/framer-transitions";
 
 import {usePopover, UsePopoverProps, UsePopoverReturn} from "./use-popover";
 

@@ -1,6 +1,6 @@
 {
-  "name": "@banyu/kbd",
-  "version": "1.0.3",
+  "name": "@jala-banyu/kbd",
+  "version": "1.0.0",
   "description": "The keyboard key components indicates which key or set of keys used to execute a specificv  action",
   "keywords": [
     "kbd"
@@ -36,17 +36,17 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "@banyu/theme": "1.0.3",
-    "@banyu/system": "1.0.3"
+    "@banyu/theme": "1.0.0",
+    "@banyu/system": "1.0.0"
   },
   "dependencies": {
-    "@banyu/system-rsc": "workspace: *",
-    "@banyu/shared-utils": "workspace: *",
-    "@banyu/react-utils": "workspace: *",
+    "@jala-banyu/system-rsc": "workspace: *",
+    "@jala-banyu/shared-utils": "workspace: *",
+    "@jala-banyu/react-utils": "workspace: *",
     "@react-aria/utils": "^3.21.1"
   },
   "devDependencies": {
-    "@banyu/theme": "workspace: *",
+    "@jala-banyu/theme": "workspace: *",
     "clean-package": "2.2.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"

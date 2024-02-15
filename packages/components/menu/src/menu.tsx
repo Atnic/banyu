@@ -1,4 +1,4 @@
-import {forwardRef} from "@banyu/system";
+import {forwardRef} from "@jala-banyu/system";
 import {ForwardedRef, ReactElement, Ref} from "react";
 
 import {UseMenuProps, useMenu} from "./use-menu";

@@ -1,12 +1,12 @@
-import type {HTMLBanyuProps, PropGetter} from "@banyu/system";
+import type {HTMLBanyuProps, PropGetter} from "@jala-banyu/system";
 import type {AriaMenuProps} from "@react-types/menu";
 
 import {AriaMenuOptions, useMenu as useAriaMenu} from "@react-aria/menu";
-import {menu, MenuVariantProps, SlotsToClasses, MenuSlots} from "@banyu/theme";
+import {menu, MenuVariantProps, SlotsToClasses, MenuSlots} from "@jala-banyu/theme";
 import {TreeState, useTreeState} from "@react-stately/tree";
-import {ReactRef, filterDOMProps, useDOMRef} from "@banyu/react-utils";
+import {ReactRef, filterDOMProps, useDOMRef} from "@jala-banyu/react-utils";
 import {ReactNode, useMemo} from "react";
-import {clsx} from "@banyu/shared-utils";
+import {clsx} from "@jala-banyu/shared-utils";
 
 import {MenuItemProps} from "./menu-item";
 

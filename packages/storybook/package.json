@@ -1,5 +1,5 @@
 {
-  "name": "@banyu/storybook",
+  "name": "@jala-banyu/storybook",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -9,9 +9,9 @@
     "start": "pnpm dlx http-server storybook-static"
   },
   "dependencies": {
-    "@banyu/react": "workspace: *",
-    "@banyu/system": "workspace: *",
-    "@banyu/theme": "workspace: *",
+    "@jala-banyu/react": "workspace: *",
+    "@jala-banyu/system": "workspace: *",
+    "@jala-banyu/theme": "workspace: *",
     "@muhamien/jala-icons": "^2.0.2",
     "@storybook/addon-storysource": "^7.6.10",
     "react": "^18.2.0",

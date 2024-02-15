@@ -1,4 +1,4 @@
-import {getUniqueID} from "@banyu/shared-utils";
+import {getUniqueID} from "@jala-banyu/shared-utils";
 import React, {useCallback, useState} from "react";
 
 export type RippleType = {

@@ -3,7 +3,7 @@ import {DOMAttributes, FocusableElement} from "@react-types/shared";
 import {filterDOMProps, mergeProps, useRouter, shouldClientNavigate} from "@react-aria/utils";
 import {RefObject} from "react";
 import {useFocusable} from "@react-aria/focus";
-import {usePress} from "@banyu/use-aria-press";
+import {usePress} from "@jala-banyu/use-aria-press";
 
 export interface AriaLinkOptions extends AriaLinkProps {
   /** Indicates the element that represents the current item within a container or set of related elements. */

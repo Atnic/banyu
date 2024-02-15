@@ -1,15 +1,7 @@
 import React from "react";
 import {Meta} from "@storybook/react";
-import {menuItem} from "@banyu/theme";
-import {
-  AddNoteBulkIcon,
-  CopyDocumentBulkIcon,
-  EditDocumentBulkIcon,
-  DeleteDocumentBulkIcon,
-} from "@banyu/shared-icons";
-import {clsx} from "@banyu/shared-utils";
 
-import {Menu, MenuItem, MenuSection, MenuProps} from "../src";
+import {Menu} from "../src";
 
 export default {
   title: "Components/Menu",
@@ -39,282 +31,282 @@ export default {
   ],
 } as Meta<typeof Menu>;
 
-const defaultProps = {
-  ...menuItem.defaultVariants,
-};
-
-const Template = ({color, variant, ...args}: MenuProps) => (
-  <Menu aria-label="Actions" color={color} variant={variant} onAction={alert} {...args}>
-    <MenuItem key="new">New file</MenuItem>
-    <MenuItem key="copy">Copy link</MenuItem>
-    <MenuItem key="edit">Edit file</MenuItem>
-    <MenuItem key="delete" className="text-danger" color="danger">
-      Delete file
-    </MenuItem>
-  </Menu>
-);
-
-const DisabledKeysTemplate = ({color, variant, ...args}: MenuProps) => (
-  <Menu
-    aria-label="Actions"
-    color={color}
-    disabledKeys={["edit", "delete"]}
-    variant={variant}
-    onAction={alert}
-    {...args}
-  >
-    <MenuItem key="new">New file</MenuItem>
-    <MenuItem key="copy">Copy link</MenuItem>
-    <MenuItem key="edit">Edit file</MenuItem>
-    <MenuItem key="delete" className="text-danger" color="danger">
-      Delete file
-    </MenuItem>
-  </Menu>
-);
-
-const SingleSelectionTemplate = ({color, variant, ...args}: MenuProps) => {
-  const [selected, setSelected] = React.useState<string | Set<React.Key>>(new Set(["text"]));
-
-  return (
-    <Menu
-      disallowEmptySelection
-      aria-label="Actions"
-      color={color}
-      selectedKeys={selected}
-      selectionMode="single"
-      variant={variant}
-      onSelectionChange={setSelected}
-      {...args}
-    >
-      <MenuItem key="text">Text</MenuItem>
-      <MenuItem key="number">Number</MenuItem>
-      <MenuItem key="date">Date</MenuItem>
-      <MenuItem key="single_date">Single Date</MenuItem>
-      <MenuItem key="iteration">Iteration</MenuItem>
-    </Menu>
-  );
-};
-
-const MultipleSelectionTemplate = ({color, variant, ...args}: MenuProps) => {
-  const [selected, setSelected] = React.useState<string | Set<React.Key>>(new Set(["text"]));
-
-  return (
-    <Menu
-      disallowEmptySelection
-      aria-label="Actions"
-      closeOnSelect={false}
-      color={color}
-      selectedKeys={selected}
-      selectionMode="multiple"
-      variant={variant}
-      onSelectionChange={setSelected}
-      {...args}
-    >
-      <MenuItem key="text">Text</MenuItem>
-      <MenuItem key="number">Number</MenuItem>
-      <MenuItem key="date">Date</MenuItem>
-      <MenuItem key="single_date">Single Date</MenuItem>
-      <MenuItem key="iteration">Iteration</MenuItem>
-    </Menu>
-  );
-};
-
-const WithShortcutTemplate = ({color, variant, ...args}) => (
-  <Menu aria-label="Actions" color={color} variant={variant} onAction={alert} {...args}>
-    <MenuItem key="new" shortcut="⌘N">
-      New file
-    </MenuItem>
-    <MenuItem key="copy" shortcut="⌘C">
-      Copy link
-    </MenuItem>
-    <MenuItem key="edit" shortcut="⌘⇧E">
-      Edit file
-    </MenuItem>
-    <MenuItem key="delete" className="text-danger" color="danger" shortcut="⌘⇧D">
-      Delete file
-    </MenuItem>
-  </Menu>
-);
-
-const WithStartContentTemplate = ({color, variant, disableAnimation, ...args}: MenuProps) => {
-  const iconClasses = "text-2xl text-secondary pointer-events-none flex-shrink-0";
-
-  return (
-    <Menu
-      aria-label="Actions"
-      color={color}
-      disableAnimation={disableAnimation}
-      variant={variant}
-      onAction={alert}
-      {...args}
-    >
-      <MenuItem key="new" shortcut="⌘N" startContent={<AddNoteBulkIcon className={iconClasses} />}>
-        New file
-      </MenuItem>
-      <MenuItem
-        key="copy"
-        shortcut="⌘C"
-        startContent={<CopyDocumentBulkIcon className={iconClasses} />}
-      >
-        Copy link
-      </MenuItem>
-      <MenuItem
-        key="edit"
-        shortcut="⌘⇧E"
-        startContent={<EditDocumentBulkIcon className={iconClasses} />}
-      >
-        Edit file
-      </MenuItem>
-      <MenuItem
-        key="delete"
-        className="text-danger"
-        color="danger"
-        shortcut="⌘⇧D"
-        startContent={<DeleteDocumentBulkIcon className={clsx(iconClasses, "!text-danger")} />}
-      >
-        Delete file
-      </MenuItem>
-    </Menu>
-  );
-};
-
-const WithEndContentTemplate = ({color, variant, disableAnimation, ...args}) => {
-  const iconClasses = "text-2xl text-default-500 pointer-events-none flex-shrink-0";
-
-  return (
-    <Menu
-      aria-label="Actions"
-      color={color}
-      disableAnimation={disableAnimation}
-      variant={variant}
-      onAction={alert}
-      {...args}
-    >
-      <MenuItem key="new" endContent={<AddNoteBulkIcon className={iconClasses} />}>
-        New file
-      </MenuItem>
-      <MenuItem key="copy" endContent={<CopyDocumentBulkIcon className={iconClasses} />}>
-        Copy link
-      </MenuItem>
-      <MenuItem key="edit" endContent={<EditDocumentBulkIcon className={iconClasses} />}>
-        Edit file
-      </MenuItem>
-      <MenuItem
-        key="delete"
-        className="text-danger"
-        color="danger"
-        endContent={<DeleteDocumentBulkIcon className={clsx(iconClasses, "!text-danger")} />}
-      >
-        Delete file
-      </MenuItem>
-    </Menu>
-  );
-};
-
-const WithDescriptionTemplate = ({color, variant, disableAnimation, ...args}) => {
-  const iconClasses = "text-2xl text-secondary pointer-events-none flex-shrink-0";
-
-  return (
-    <Menu
-      aria-label="Actions"
-      color={color}
-      disableAnimation={disableAnimation}
-      variant={variant}
-      onAction={alert}
-      {...args}
-    >
-      <MenuItem
-        key="new"
-        description="Create a new file"
-        shortcut="⌘N"
-        startContent={<AddNoteBulkIcon className={iconClasses} />}
-      >
-        New file
-      </MenuItem>
-      <MenuItem
-        key="copy"
-        description="Copy the file link"
-        shortcut="⌘C"
-        startContent={<CopyDocumentBulkIcon className={iconClasses} />}
-      >
-        Copy link
-      </MenuItem>
-      <MenuItem
-        key="edit"
-        description="Allows you to edit the file"
-        shortcut="⌘⇧E"
-        startContent={<EditDocumentBulkIcon className={iconClasses} />}
-      >
-        Edit file
-      </MenuItem>
-      <MenuItem
-        key="delete"
-        className="text-danger"
-        color="danger"
-        description="Permanently delete the file"
-        shortcut="⌘⇧D"
-        startContent={<DeleteDocumentBulkIcon className={clsx(iconClasses, "!text-danger")} />}
-      >
-        Delete file
-      </MenuItem>
-    </Menu>
-  );
-};
-
-const WithSectionsTemplate = ({color, variant, disableAnimation, ...args}) => {
-  const iconClasses = "text-2xl text-secondary pointer-events-none flex-shrink-0";
-
-  return (
-    <Menu
-      aria-label="Actions"
-      closeOnSelect={false}
-      color={color}
-      disableAnimation={disableAnimation}
-      variant={variant}
-      onAction={alert}
-      {...args}
-    >
-      <MenuSection title="Actions">
-        <MenuItem
-          key="new"
-          description="Create a new file"
-          shortcut="⌘N"
-          startContent={<AddNoteBulkIcon className={iconClasses} />}
-        >
-          New file
-        </MenuItem>
-        <MenuItem
-          key="copy"
-          description="Copy the file link"
-          shortcut="⌘C"
-          startContent={<CopyDocumentBulkIcon className={iconClasses} />}
-        >
-          Copy link
-        </MenuItem>
-        <MenuItem
-          key="edit"
-          description="Allows you to edit the file"
-          shortcut="⌘⇧E"
-          startContent={<EditDocumentBulkIcon className={iconClasses} />}
-        >
-          Edit file
-        </MenuItem>
-      </MenuSection>
-      <MenuSection title="Danger zone">
-        <MenuItem
-          key="delete"
-          className="text-danger"
-          color="danger"
-          description="Permanently delete the file"
-          shortcut="⌘⇧D"
-          startContent={<DeleteDocumentBulkIcon className={clsx(iconClasses, "!text-danger")} />}
-        >
-          Delete file
-        </MenuItem>
-      </MenuSection>
-    </Menu>
-  );
-};
+// const defaultProps = {
+//   ...menuItem.defaultVariants,
+// };
+//
+// const Template = ({color, variant, ...args}: MenuProps) => (
+//   <Menu aria-label="Actions" color={color} variant={variant} onAction={alert} {...args}>
+//     <MenuItem key="new">New file</MenuItem>
+//     <MenuItem key="copy">Copy link</MenuItem>
+//     <MenuItem key="edit">Edit file</MenuItem>
+//     <MenuItem key="delete" className="text-danger" color="danger">
+//       Delete file
+//     </MenuItem>
+//   </Menu>
+// );
+//
+// const DisabledKeysTemplate = ({color, variant, ...args}: MenuProps) => (
+//   <Menu
+//     aria-label="Actions"
+//     color={color}
+//     disabledKeys={["edit", "delete"]}
+//     variant={variant}
+//     onAction={alert}
+//     {...args}
+//   >
+//     <MenuItem key="new">New file</MenuItem>
+//     <MenuItem key="copy">Copy link</MenuItem>
+//     <MenuItem key="edit">Edit file</MenuItem>
+//     <MenuItem key="delete" className="text-danger" color="danger">
+//       Delete file
+//     </MenuItem>
+//   </Menu>
+// );
+//
+// const SingleSelectionTemplate = ({color, variant, ...args}: MenuProps) => {
+//   const [selected, setSelected] = React.useState<string | Set<React.Key>>(new Set(["text"]));
+//
+//   return (
+//     <Menu
+//       disallowEmptySelection
+//       aria-label="Actions"
+//       color={color}
+//       selectedKeys={selected}
+//       selectionMode="single"
+//       variant={variant}
+//       onSelectionChange={setSelected}
+//       {...args}
+//     >
+//       <MenuItem key="text">Text</MenuItem>
+//       <MenuItem key="number">Number</MenuItem>
+//       <MenuItem key="date">Date</MenuItem>
+//       <MenuItem key="single_date">Single Date</MenuItem>
+//       <MenuItem key="iteration">Iteration</MenuItem>
+//     </Menu>
+//   );
+// };
+//
+// const MultipleSelectionTemplate = ({color, variant, ...args}: MenuProps) => {
+//   const [selected, setSelected] = React.useState<string | Set<React.Key>>(new Set(["text"]));
+//
+//   return (
+//     <Menu
+//       disallowEmptySelection
+//       aria-label="Actions"
+//       closeOnSelect={false}
+//       color={color}
+//       selectedKeys={selected}
+//       selectionMode="multiple"
+//       variant={variant}
+//       onSelectionChange={setSelected}
+//       {...args}
+//     >
+//       <MenuItem key="text">Text</MenuItem>
+//       <MenuItem key="number">Number</MenuItem>
+//       <MenuItem key="date">Date</MenuItem>
+//       <MenuItem key="single_date">Single Date</MenuItem>
+//       <MenuItem key="iteration">Iteration</MenuItem>
+//     </Menu>
+//   );
+// };
+//
+// const WithShortcutTemplate = ({color, variant, ...args}) => (
+//   <Menu aria-label="Actions" color={color} variant={variant} onAction={alert} {...args}>
+//     <MenuItem key="new" shortcut="⌘N">
+//       New file
+//     </MenuItem>
+//     <MenuItem key="copy" shortcut="⌘C">
+//       Copy link
+//     </MenuItem>
+//     <MenuItem key="edit" shortcut="⌘⇧E">
+//       Edit file
+//     </MenuItem>
+//     <MenuItem key="delete" className="text-danger" color="danger" shortcut="⌘⇧D">
+//       Delete file
+//     </MenuItem>
+//   </Menu>
+// );
+//
+// const WithStartContentTemplate = ({color, variant, disableAnimation, ...args}: MenuProps) => {
+//   const iconClasses = "text-2xl text-secondary pointer-events-none flex-shrink-0";
+//
+//   return (
+//     <Menu
+//       aria-label="Actions"
+//       color={color}
+//       disableAnimation={disableAnimation}
+//       variant={variant}
+//       onAction={alert}
+//       {...args}
+//     >
+//       <MenuItem key="new" shortcut="⌘N" startContent={<AddNoteBulkIcon className={iconClasses} />}>
+//         New file
+//       </MenuItem>
+//       <MenuItem
+//         key="copy"
+//         shortcut="⌘C"
+//         startContent={<CopyDocumentBulkIcon className={iconClasses} />}
+//       >
+//         Copy link
+//       </MenuItem>
+//       <MenuItem
+//         key="edit"
+//         shortcut="⌘⇧E"
+//         startContent={<EditDocumentBulkIcon className={iconClasses} />}
+//       >
+//         Edit file
+//       </MenuItem>
+//       <MenuItem
+//         key="delete"
+//         className="text-danger"
+//         color="danger"
+//         shortcut="⌘⇧D"
+//         startContent={<DeleteDocumentBulkIcon className={clsx(iconClasses, "!text-danger")} />}
+//       >
+//         Delete file
+//       </MenuItem>
+//     </Menu>
+//   );
+// };
+//
+// const WithEndContentTemplate = ({color, variant, disableAnimation, ...args}) => {
+//   const iconClasses = "text-2xl text-default-500 pointer-events-none flex-shrink-0";
+//
+//   return (
+//     <Menu
+//       aria-label="Actions"
+//       color={color}
+//       disableAnimation={disableAnimation}
+//       variant={variant}
+//       onAction={alert}
+//       {...args}
+//     >
+//       <MenuItem key="new" endContent={<AddNoteBulkIcon className={iconClasses} />}>
+//         New file
+//       </MenuItem>
+//       <MenuItem key="copy" endContent={<CopyDocumentBulkIcon className={iconClasses} />}>
+//         Copy link
+//       </MenuItem>
+//       <MenuItem key="edit" endContent={<EditDocumentBulkIcon className={iconClasses} />}>
+//         Edit file
+//       </MenuItem>
+//       <MenuItem
+//         key="delete"
+//         className="text-danger"
+//         color="danger"
+//         endContent={<DeleteDocumentBulkIcon className={clsx(iconClasses, "!text-danger")} />}
+//       >
+//         Delete file
+//       </MenuItem>
+//     </Menu>
+//   );
+// };
+//
+// const WithDescriptionTemplate = ({color, variant, disableAnimation, ...args}) => {
+//   const iconClasses = "text-2xl text-secondary pointer-events-none flex-shrink-0";
+//
+//   return (
+//     <Menu
+//       aria-label="Actions"
+//       color={color}
+//       disableAnimation={disableAnimation}
+//       variant={variant}
+//       onAction={alert}
+//       {...args}
+//     >
+//       <MenuItem
+//         key="new"
+//         description="Create a new file"
+//         shortcut="⌘N"
+//         startContent={<AddNoteBulkIcon className={iconClasses} />}
+//       >
+//         New file
+//       </MenuItem>
+//       <MenuItem
+//         key="copy"
+//         description="Copy the file link"
+//         shortcut="⌘C"
+//         startContent={<CopyDocumentBulkIcon className={iconClasses} />}
+//       >
+//         Copy link
+//       </MenuItem>
+//       <MenuItem
+//         key="edit"
+//         description="Allows you to edit the file"
+//         shortcut="⌘⇧E"
+//         startContent={<EditDocumentBulkIcon className={iconClasses} />}
+//       >
+//         Edit file
+//       </MenuItem>
+//       <MenuItem
+//         key="delete"
+//         className="text-danger"
+//         color="danger"
+//         description="Permanently delete the file"
+//         shortcut="⌘⇧D"
+//         startContent={<DeleteDocumentBulkIcon className={clsx(iconClasses, "!text-danger")} />}
+//       >
+//         Delete file
+//       </MenuItem>
+//     </Menu>
+//   );
+// };
+//
+// const WithSectionsTemplate = ({color, variant, disableAnimation, ...args}) => {
+//   const iconClasses = "text-2xl text-secondary pointer-events-none flex-shrink-0";
+//
+//   return (
+//     <Menu
+//       aria-label="Actions"
+//       closeOnSelect={false}
+//       color={color}
+//       disableAnimation={disableAnimation}
+//       variant={variant}
+//       onAction={alert}
+//       {...args}
+//     >
+//       <MenuSection title="Actions">
+//         <MenuItem
+//           key="new"
+//           description="Create a new file"
+//           shortcut="⌘N"
+//           startContent={<AddNoteBulkIcon className={iconClasses} />}
+//         >
+//           New file
+//         </MenuItem>
+//         <MenuItem
+//           key="copy"
+//           description="Copy the file link"
+//           shortcut="⌘C"
+//           startContent={<CopyDocumentBulkIcon className={iconClasses} />}
+//         >
+//           Copy link
+//         </MenuItem>
+//         <MenuItem
+//           key="edit"
+//           description="Allows you to edit the file"
+//           shortcut="⌘⇧E"
+//           startContent={<EditDocumentBulkIcon className={iconClasses} />}
+//         >
+//           Edit file
+//         </MenuItem>
+//       </MenuSection>
+//       <MenuSection title="Danger zone">
+//         <MenuItem
+//           key="delete"
+//           className="text-danger"
+//           color="danger"
+//           description="Permanently delete the file"
+//           shortcut="⌘⇧D"
+//           startContent={<DeleteDocumentBulkIcon className={clsx(iconClasses, "!text-danger")} />}
+//         >
+//           Delete file
+//         </MenuItem>
+//       </MenuSection>
+//     </Menu>
+//   );
+// };
 
 // export const Default = {
 //   render: Template,

@@ -1,8 +1,8 @@
-import type {MenuItemVariantProps, MenuItemSlots, SlotsToClasses} from "@banyu/theme";
+import type {MenuItemVariantProps, MenuItemSlots, SlotsToClasses} from "@jala-banyu/theme";
 import type {AriaMenuItemProps} from "@react-aria/menu";
 import type {FocusableProps, PressEvents} from "@react-types/shared";
 
-import {BaseItem, ItemProps} from "@banyu/aria-utils";
+import {BaseItem, ItemProps} from "@jala-banyu/aria-utils";
 import {ReactNode} from "react";
 
 export type MenuItemSelectedIconProps = {

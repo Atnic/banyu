@@ -1,4 +1,4 @@
-# @banyu/divider
+# @jala-banyu/divider
 
 Divider is a component that separates content in a page.
 
@@ -7,9 +7,9 @@ Please refer to the [documentation](#) for more information.
 ## Installation
 
 ```sh
-yarn add @banyu/divider
+yarn add @jala-banyu/divider
 # or
-npm i @banyu/divider
+npm i @jala-banyu/divider
 ```
 
 ## Contribution

@@ -1,9 +1,9 @@
-import type {SkeletonVariantProps, SkeletonSlots, SlotsToClasses} from "@banyu/theme";
-import type {HTMLBanyuProps, PropGetter} from "@banyu/system-rsc";
+import type {SkeletonVariantProps, SkeletonSlots, SlotsToClasses} from "@jala-banyu/theme";
+import type {HTMLBanyuProps, PropGetter} from "@jala-banyu/system-rsc";
 
-import {mapPropsVariants} from "@banyu/system-rsc";
-import {skeleton} from "@banyu/theme";
-import {clsx, dataAttr} from "@banyu/shared-utils";
+import {mapPropsVariants} from "@jala-banyu/system-rsc";
+import {skeleton} from "@jala-banyu/theme";
+import {clsx, dataAttr} from "@jala-banyu/shared-utils";
 import {useMemo, Ref} from "react";
 
 interface Props extends HTMLBanyuProps<"div"> {

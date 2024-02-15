@@ -1,14 +1,14 @@
-import type {AvatarSlots, AvatarVariantProps, SlotsToClasses} from "@banyu/theme";
+import type {AvatarSlots, AvatarVariantProps, SlotsToClasses} from "@jala-banyu/theme";
 
-import {avatar} from "@banyu/theme";
-import {HTMLBanyuProps, PropGetter} from "@banyu/system";
+import {avatar} from "@jala-banyu/theme";
+import {HTMLBanyuProps, PropGetter} from "@jala-banyu/system";
 import {mergeProps} from "@react-aria/utils";
-import {useDOMRef} from "@banyu/react-utils";
-import {clsx, safeText, dataAttr} from "@banyu/shared-utils";
-import {ReactRef} from "@banyu/react-utils";
+import {useDOMRef} from "@jala-banyu/react-utils";
+import {clsx, safeText, dataAttr} from "@jala-banyu/shared-utils";
+import {ReactRef} from "@jala-banyu/react-utils";
 import {useFocusRing} from "@react-aria/focus";
 import {useMemo, useCallback} from "react";
-import {useImage} from "@banyu/use-image";
+import {useImage} from "@jala-banyu/use-image";
 import {useHover} from "@react-aria/interactions";
 
 import {useAvatarGroupContext} from "./avatar-group-context";
@@ -154,7 +154,7 @@ export function useAvatar(props: UseAvatarProps = {}) {
 
   const domRef = useDOMRef(ref);
   const imgRef = useDOMRef(imgRefProp);
-  const statusRef = useDOMRef(ref);
+  // const statusRef = useDOMRef(ref);
 
   const {isFocusVisible, isFocused, focusProps} = useFocusRing();
   const {isHovered, hoverProps} = useHover({isDisabled});

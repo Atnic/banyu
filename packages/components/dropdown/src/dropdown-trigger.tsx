@@ -1,5 +1,5 @@
-import {forwardRef} from "@banyu/system";
-import {PopoverTrigger} from "@banyu/popover";
+import {forwardRef} from "@jala-banyu/system";
+import {PopoverTrigger} from "@jala-banyu/popover";
 
 import {useDropdownContext} from "./dropdown-context";
 

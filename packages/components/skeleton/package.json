@@ -1,6 +1,6 @@
 {
-  "name": "@banyu/skeleton",
-  "version": "1.0.3",
+  "name": "@jala-banyu/skeleton",
+  "version": "1.0.0",
   "description": "Skeleton is used to display the loading state of some component.",
   "keywords": [
     "skeleton"
@@ -36,18 +36,18 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "@banyu/theme": "1.0.3",
-    "@banyu/system": "1.0.3"
+    "@banyu/theme": "1.0.0",
+    "@banyu/system": "1.0.0"
   },
   "dependencies": {
-    "@banyu/system-rsc": "workspace: *",
-    "@banyu/shared-utils": "workspace: *",
-    "@banyu/react-utils": "workspace: *"
+    "@jala-banyu/system-rsc": "workspace: *",
+    "@jala-banyu/shared-utils": "workspace: *",
+    "@jala-banyu/react-utils": "workspace: *"
   },
   "devDependencies": {
-    "@banyu/theme": "workspace: *",
-    "@banyu/card": "workspace: *",
-    "@banyu/button": "workspace: *",
+    "@jala-banyu/theme": "workspace: *",
+    "@jala-banyu/card": "workspace: *",
+    "@jala-banyu/button": "workspace: *",
     "clean-package": "2.2.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"

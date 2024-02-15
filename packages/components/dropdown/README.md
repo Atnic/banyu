@@ -1,4 +1,4 @@
-# @banyu/dropdown
+# @jala-banyu/dropdown
 
 Displays a list of actions or options that a user can choose.
 
@@ -7,9 +7,9 @@ Please refer to the [documentation](https://localhost:3000/components/dropdown) 
 ## Installation
 
 ```sh
-yarn add @banyu/dropdown
+yarn add @jala-banyu/dropdown
 # or
-npm i @banyu/dropdown
+npm i @jala-banyu/dropdown
 ```
 
 ## Contribution

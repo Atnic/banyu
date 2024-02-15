@@ -1,5 +1,5 @@
 import * as React from "react";
-import {tv} from "@banyu/theme";
+import {tv} from "@jala-banyu/theme";
 
 import {cn, mapPropsVariants} from "./utils";
 

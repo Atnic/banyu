@@ -21,7 +21,7 @@ export const tv: TV = (options, config) =>
         ...config?.twMergeConfig?.classGroups,
         shadow: [{shadow: COMMON_UNITS}],
         heading: [{heading: HEADING_UNITS}],
-        "font-size": [{text: ['xs','base', ...COMMON_UNITS, '6xl']}],
+        "font-size": [{text: ["xs", "base", ...COMMON_UNITS, "6xl"]}],
         "bg-image": ["bg-stripe-gradient"],
         "min-w": [
           {

@@ -18,8 +18,8 @@ describe("Code", () => {
   });
 
   it("should include the code", () => {
-    const wrapper = render(<Code data-testid="code-test">npm install @banyu/react</Code>);
+    const wrapper = render(<Code data-testid="code-test">npm install @jala-banyu/react</Code>);
 
-    expect(wrapper.getByTestId("code-test")).toHaveTextContent("npm install @banyu/react");
+    expect(wrapper.getByTestId("code-test")).toHaveTextContent("npm install @jala-banyu/react");
   });
 });

@@ -1,14 +1,14 @@
 {
-  "name": "banyu",
-  "version": "2.0.0",
-  "description": "Banyu components library for React",
+  "name": "banyu-design",
+  "version": "1.0.0",
+  "description": "Banyu design components library for React by JALA Tech",
   "main": "index.js",
   "scripts": {
-    "build": "turbo build --filter=!@banyu/storybook",
-    "build:fast": "turbo build:fast --filter=!@banyu/storybook",
-    "sb": "pnpm --filter @banyu/storybook dev",
-    "build:sb": "pnpm --filter @banyu/storybook build",
-    "start:sb": "pnpm --filter @banyu/storybook start",
+    "build": "turbo build --filter=!@jala-banyu/storybook",
+    "build:fast": "turbo build:fast --filter=!@jala-banyu/storybook",
+    "sb": "pnpm --filter @jala-banyu/storybook dev",
+    "build:sb": "pnpm --filter @jala-banyu/storybook build",
+    "start:sb": "pnpm --filter @jala-banyu/storybook start",
     "clean": "pnpm turbo:clean && pnpm clean:jest && pnpm clean:node-modules && pnpm clean:lock && pnpm install --hoist",
     "clean:node-modules": "rimraf ./apps/**/node_modules && rimraf ./packages/**/**/node_modules && rm -rf ./node_modules",
     "clean:changelogs": "rimraf ./packages/**/**/CHANGELOG.md",
@@ -20,11 +20,12 @@
     "turbo:clean": "turbo clean && rimraf ./node_modules/.cache/turbo",
     "turbo:graph": "pnpm build --graph=dependency-graph.png",
     "test": "jest --verbose --config ./jest.config.js",
-    "version": "changeset version",
-    "release": "changeset publish",
+    "version:add": "changeset add",
+    "version:gen": "changeset version",
+    "version:pub": "changeset publish",
     "version:dev": "changeset version --snapshot dev-v2",
     "release:dev": "changeset publish --snapshot --no-git-tag --tag dev-v2",
-    "postinstall": "husky install && pnpm --filter @banyu/theme build",
+    "postinstall": "husky install && pnpm --filter @jala-banyu/theme build",
     "lint": "pnpm lint:pkg",
     "lint:pkg": "eslint -c .eslintrc.json ./packages/**/**/*.{ts,tsx}",
     "lint:fix": "eslint --fix -c .eslintrc.json ./packages/**/**/*.{ts,tsx}"
@@ -116,8 +117,5 @@
     "node": ">=16.x",
     "pnpm": ">=8.x"
   },
-  "packageManager": "pnpm@8.7.0",
-  "dependencies": {
-    "banyu": "^2.0.0"
-  }
+  "packageManager": "pnpm@8.7.0"
 }

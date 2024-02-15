@@ -4,7 +4,7 @@ export type DefaultThemeType = "light" | "dark";
 
 export type BaseThemeUnit = {
   DEFAULT?: string;
-  none?:string;
+  none?: string;
   xs?: string;
   sm?: string;
   md?: string;
@@ -32,7 +32,7 @@ export type BaseHeadingUnit = {
   "300": string;
   "200": string;
   "100": string;
-}
+};
 export const spacingScaleKeys = [
   "0",
   "xs",
@@ -48,6 +48,7 @@ export const spacingScaleKeys = [
   "7xl",
   "8xl",
   "9xl",
+  "0.5",
   "1",
   "2",
   "3",
@@ -187,8 +188,8 @@ export interface LayoutTheme {
   heading?: BaseHeadingUnit;
 
   /*
-  *
-  */
+   *
+   */
   fontFamily?: object;
 }
 

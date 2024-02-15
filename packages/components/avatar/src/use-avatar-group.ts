@@ -1,10 +1,10 @@
 import type {ReactNode} from "react";
 
-import {avatarGroup} from "@banyu/theme";
-import {HTMLBanyuProps, PropGetter} from "@banyu/system";
-import {useDOMRef} from "@banyu/react-utils";
-import {clsx, compact} from "@banyu/shared-utils";
-import {ReactRef, getValidChildren} from "@banyu/react-utils";
+import {avatarGroup} from "@jala-banyu/theme";
+import {HTMLBanyuProps, PropGetter} from "@jala-banyu/system";
+import {useDOMRef} from "@jala-banyu/react-utils";
+import {clsx, compact} from "@jala-banyu/shared-utils";
+import {ReactRef, getValidChildren} from "@jala-banyu/react-utils";
 import {cloneElement, useMemo} from "react";
 
 import {AvatarProps} from "./index";
@@ -90,7 +90,7 @@ export function useAvatarGroup(props: UseAvatarGroupProps = {}) {
 
   const clones = childrenWithinMax.map((child, index) => {
     const isFirstAvatar = index === 0;
-    const isLastAvatar = index === childrenWithinMax.length - 1;
+    // const isLastAvatar = index === childrenWithinMax.length - 1;
 
     const childProps = {
       className: clsx(

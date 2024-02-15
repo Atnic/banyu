@@ -1,9 +1,9 @@
-import type {CodeVariantProps} from "@banyu/theme";
-import type {HTMLBanyuProps, PropGetter} from "@banyu/system-rsc";
+import type {CodeVariantProps} from "@jala-banyu/theme";
+import type {HTMLBanyuProps, PropGetter} from "@jala-banyu/system-rsc";
 
-import {code} from "@banyu/theme";
-import {mapPropsVariants} from "@banyu/system-rsc";
-import {ReactRef} from "@banyu/react-utils";
+import {code} from "@jala-banyu/theme";
+import {mapPropsVariants} from "@jala-banyu/system-rsc";
+import {ReactRef} from "@jala-banyu/react-utils";
 import {useMemo} from "react";
 
 export interface UseCodeProps extends HTMLBanyuProps<"code">, CodeVariantProps {

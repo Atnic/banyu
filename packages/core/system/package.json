@@ -1,6 +1,6 @@
 {
-  "name": "@banyu/system",
-  "version": "1.0.3",
+  "name": "@jala-banyu/system",
+  "version": "1.0.0",
   "description": "Banyu system primitives",
   "keywords": [
     "system"
@@ -52,7 +52,7 @@
     ]
   },
   "dependencies": {
-    "@banyu/system-rsc": "workspace: *",
+    "@jala-banyu/system-rsc": "workspace: *",
     "@react-aria/i18n": "^3.8.4",
     "@react-aria/overlays": "^3.18.1",
     "@react-aria/utils": "^3.21.1",

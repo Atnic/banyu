@@ -1,5 +1,5 @@
 import {Children, ReactNode} from "react";
-import {forwardRef} from "@banyu/system";
+import {forwardRef} from "@jala-banyu/system";
 import {Overlay} from "@react-aria/overlays";
 import {AnimatePresence} from "framer-motion";
 

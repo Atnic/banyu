@@ -2,15 +2,15 @@ import type {AriaDialogProps} from "@react-aria/dialog";
 import type {HTMLMotionProps} from "framer-motion";
 
 import {DOMAttributes, ReactNode, useMemo, useRef} from "react";
-import {forwardRef} from "@banyu/system";
+import {forwardRef} from "@jala-banyu/system";
 import {DismissButton} from "@react-aria/overlays";
-import {TRANSITION_VARIANTS} from "@banyu/framer-transitions";
+import {TRANSITION_VARIANTS} from "@jala-banyu/framer-transitions";
 import {motion} from "framer-motion";
 import {useDialog} from "@react-aria/dialog";
 import {mergeProps} from "@react-aria/utils";
-import {HTMLBanyuProps} from "@banyu/system";
+import {HTMLBanyuProps} from "@jala-banyu/system";
 import {RemoveScroll} from "react-remove-scroll";
-import {getTransformOrigins} from "@banyu/aria-utils";
+import {getTransformOrigins} from "@jala-banyu/aria-utils";
 
 import {usePopoverContext} from "./popover-context";
 

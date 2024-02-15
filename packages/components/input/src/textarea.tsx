@@ -1,5 +1,5 @@
-import {dataAttr} from "@banyu/shared-utils";
-import {forwardRef} from "@banyu/system";
+import {dataAttr} from "@jala-banyu/shared-utils";
+import {forwardRef} from "@jala-banyu/system";
 import {mergeProps} from "@react-aria/utils";
 import {useMemo, useState} from "react";
 import TextareaAutosize from "react-textarea-autosize";

@@ -1,11 +1,11 @@
-import type {HTMLBanyuProps} from "../src/types"
+import type {HTMLBanyuProps} from "../src/types";
 
-import React, {useMemo} from "react"
-import {tv, type VariantProps} from "@banyu/theme"
-import {filterDOMProps, ReactRef, useDOMRef} from "@banyu/react-utils"
+import React, {useMemo} from "react";
+import {tv, type VariantProps} from "@jala-banyu/theme";
+import {filterDOMProps, ReactRef, useDOMRef} from "@jala-banyu/react-utils";
 
-import {mapPropsVariants} from "../src/utils"
-import {forwardRef} from "../src/utils"
+import {mapPropsVariants} from "../src/utils";
+import {forwardRef} from "../src/utils";
 /**
  * No slots
  */
@@ -51,30 +51,30 @@ const button = tv({
       class: "bg-primary/20 text-primary",
     },
   ],
-})
+});
 
 interface ButtonProps extends HTMLBanyuProps<"button">, VariantProps<typeof button> {
-  children: React.ReactNode
-  disableRipple?: boolean
-  ref?: ReactRef<HTMLButtonElement | null>
+  children: React.ReactNode;
+  disableRipple?: boolean;
+  ref?: ReactRef<HTMLButtonElement | null>;
 }
 
 export const Button = forwardRef<"button", ButtonProps>((originalProps, ref) => {
   // export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>((originalProps, ref) => {
-  const [props, variantProps] = mapPropsVariants(originalProps, button.variantKeys)
+  const [props, variantProps] = mapPropsVariants(originalProps, button.variantKeys);
 
   const styles = useMemo(
     () => button({...variantProps, className: originalProps?.className}),
     [...Object.values(variantProps), props.className],
-  )
+  );
 
-  const domRef = useDOMRef(ref)
+  const domRef = useDOMRef(ref);
 
   return (
     <button ref={domRef} {...filterDOMProps(props)} className={styles}>
       {props.children}
     </button>
-  )
-})
+  );
+});
 
-Button.displayName = "Button"
+Button.displayName = "Button";

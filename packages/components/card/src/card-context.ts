@@ -1,4 +1,4 @@
-import {createContext} from "@banyu/react-utils";
+import {createContext} from "@jala-banyu/react-utils";
 
 import {ContextType} from "./use-card";
 

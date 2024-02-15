@@ -1,5 +1,5 @@
 import React, {ReactNode} from "react";
-import {Popover} from "@banyu/popover";
+import {Popover} from "@jala-banyu/popover";
 
 import {DropdownProvider} from "./dropdown-context";
 import {UseDropdownProps, useDropdown} from "./use-dropdown";

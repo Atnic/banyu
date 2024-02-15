@@ -1,21 +1,21 @@
-import type {ButtonVariantProps} from "@banyu/theme";
-import type {AriaButtonProps} from "@banyu/use-aria-button";
-import type {HTMLBanyuProps, PropGetter} from "@banyu/system";
+import type {ButtonVariantProps} from "@jala-banyu/theme";
+import type {AriaButtonProps} from "@jala-banyu/use-aria-button";
+import type {HTMLBanyuProps, PropGetter} from "@jala-banyu/system";
 import type {ReactNode} from "react";
-import type {RippleProps} from "@banyu/ripple";
+import type {RippleProps} from "@jala-banyu/ripple";
 
-import {dataAttr} from "@banyu/shared-utils";
-import {ReactRef} from "@banyu/react-utils";
+import {dataAttr} from "@jala-banyu/shared-utils";
+import {ReactRef} from "@jala-banyu/react-utils";
 import {MouseEventHandler, useCallback} from "react";
 import {useFocusRing} from "@react-aria/focus";
 import {chain, mergeProps} from "@react-aria/utils";
-import {useDOMRef, filterDOMProps} from "@banyu/react-utils";
-import {button} from "@banyu/theme";
+import {useDOMRef, filterDOMProps} from "@jala-banyu/react-utils";
+import {button} from "@jala-banyu/theme";
 import {isValidElement, cloneElement, useMemo} from "react";
-import {useAriaButton} from "@banyu/use-aria-button";
+import {useAriaButton} from "@jala-banyu/use-aria-button";
 import {useHover} from "@react-aria/interactions";
-import {SpinnerProps} from "@banyu/spinner";
-import {useRipple} from "@banyu/ripple";
+import {SpinnerProps} from "@jala-banyu/spinner";
+import {useRipple} from "@jala-banyu/ripple";
 
 import {useButtonGroupContext} from "./button-group-context";
 

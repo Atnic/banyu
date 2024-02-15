@@ -1,4 +1,4 @@
-# @banyu/link
+# @jala-banyu/link
 
 Links allow users to click their way from page to page. This component is styled to resemble a hyperlink and semantically renders an `<a>` tag.
 
@@ -7,9 +7,9 @@ Please refer to the [documentation](https://localhost:3000/docs/components/link)
 ## Installation
 
 ```sh
-yarn add @banyu/link
+yarn add @jala-banyu/link
 # or
-npm i @banyu/link
+npm i @jala-banyu/link
 ```
 
 ## Contribution

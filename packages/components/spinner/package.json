@@ -1,6 +1,6 @@
 {
-  "name": "@banyu/spinner",
-  "version": "1.0.3",
+  "name": "@jala-banyu/spinner",
+  "version": "1.0.0",
   "description": "Loaders express an unspecified wait time or display the length of a process.",
   "keywords": [
     "loading",
@@ -38,14 +38,14 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "@banyu/theme": "1.0.3",
-    "@banyu/system": "1.0.3"
+    "@banyu/theme": "1.0.0",
+    "@banyu/system": "1.0.0"
   },
   "dependencies": {
-    "@banyu/system-rsc": "workspace: *",
-    "@banyu/shared-utils": "workspace: *",
-    "@banyu/react-utils": "workspace: *",
-    "@banyu/theme": "workspace: *"
+    "@jala-banyu/system-rsc": "workspace: *",
+    "@jala-banyu/shared-utils": "workspace: *",
+    "@jala-banyu/react-utils": "workspace: *",
+    "@jala-banyu/theme": "workspace: *"
   },
   "devDependencies": {
     "clean-package": "2.2.0",

@@ -1,7 +1,7 @@
-import {PopoverContent} from "@banyu/popover";
+import {PopoverContent} from "@jala-banyu/popover";
 import {FocusScope} from "@react-aria/focus";
-import {forwardRef} from "@banyu/system";
-import {Menu, MenuProps} from "@banyu/menu";
+import {forwardRef} from "@jala-banyu/system";
+import {Menu, MenuProps} from "@jala-banyu/menu";
 import {ForwardedRef, ReactElement, Ref} from "react";
 
 import {useDropdownContext} from "./dropdown-context";

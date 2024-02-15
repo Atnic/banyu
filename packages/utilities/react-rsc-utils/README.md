@@ -1,4 +1,4 @@
-# @banyu/react-rsc-utils
+# @jala-banyu/react-rsc-utils
 
 A Quick description of the component
 
@@ -7,9 +7,9 @@ A Quick description of the component
 ## Installation
 
 ```sh
-yarn add @banyu/react-rsc-utils
+yarn add @jala-banyu/react-rsc-utils
 # or
-npm i @banyu/react-rsc-utils
+npm i @jala-banyu/react-rsc-utils
 ```
 
 ## Contribution

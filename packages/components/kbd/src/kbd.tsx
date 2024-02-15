@@ -1,5 +1,5 @@
 import {useMemo} from "react";
-import {forwardRef} from "@banyu/system-rsc";
+import {forwardRef} from "@jala-banyu/system-rsc";
 
 import {UseKbdProps, useKbd} from "./use-kbd";
 import {kbdKeysLabelMap, kbdKeysMap} from "./utils";

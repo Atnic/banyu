@@ -1,5 +1,5 @@
 import {useMemo} from "react";
-import {forwardRef} from "@banyu/system";
+import {forwardRef} from "@jala-banyu/system";
 
 import {AvatarIcon} from "./avatar-icon";
 import {useAvatar, UseAvatarProps} from "./use-avatar";

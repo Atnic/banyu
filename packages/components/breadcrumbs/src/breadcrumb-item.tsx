@@ -1,4 +1,4 @@
-import {forwardRef} from "@banyu/system";
+import {forwardRef} from "@jala-banyu/system";
 
 import {UseBreadcrumbItemProps, useBreadcrumbItem} from "./use-breadcrumb-item";
 

@@ -1,7 +1,7 @@
-import type {DividerVariantProps} from "@banyu/theme";
-import type {HTMLBanyuProps, PropGetter} from "@banyu/system-rsc";
+import type {DividerVariantProps} from "@jala-banyu/theme";
+import type {HTMLBanyuProps, PropGetter} from "@jala-banyu/system-rsc";
 
-import {divider} from "@banyu/theme";
+import {divider} from "@jala-banyu/theme";
 import {Ref, useCallback, useMemo} from "react";
 
 import {SeparatorProps as AriaSeparatorProps, useSeparator} from "./use-separator";

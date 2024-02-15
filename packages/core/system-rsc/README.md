@@ -1,4 +1,4 @@
-# @banyu/system-rsc
+# @jala-banyu/system-rsc
 
 A Quick description of the component
 
@@ -7,9 +7,9 @@ A Quick description of the component
 ## Installation
 
 ```sh
-yarn add @banyu/system-rsc
+yarn add @jala-banyu/system-rsc
 # or
-npm i @banyu/system-rsc
+npm i @jala-banyu/system-rsc
 ```
 
 ## Contribution

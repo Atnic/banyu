@@ -1,4 +1,4 @@
-import {forwardRef} from "@banyu/system";
+import {forwardRef} from "@jala-banyu/system";
 
 import {ButtonGroupProvider} from "./button-group-context";
 import {UseButtonGroupProps, useButtonGroup} from "./use-button-group";

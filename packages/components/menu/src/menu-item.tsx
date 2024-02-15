@@ -1,5 +1,5 @@
 import {useMemo, ReactNode} from "react";
-import {forwardRef} from "@banyu/system";
+import {forwardRef} from "@jala-banyu/system";
 
 import {UseMenuItemProps, useMenuItem} from "./use-menu-item";
 import {MenuSelectedIcon} from "./menu-selected-icon";

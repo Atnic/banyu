@@ -1,13 +1,13 @@
 import type {AriaLinkProps} from "@react-types/link";
-import type {LinkVariantProps} from "@banyu/theme";
+import type {LinkVariantProps} from "@jala-banyu/theme";
 
-import {link} from "@banyu/theme";
-import {useAriaLink} from "@banyu/use-aria-link";
-import {HTMLBanyuProps, mapPropsVariants, PropGetter} from "@banyu/system";
-import {useDOMRef} from "@banyu/react-utils";
+import {link} from "@jala-banyu/theme";
+import {useAriaLink} from "@jala-banyu/use-aria-link";
+import {HTMLBanyuProps, mapPropsVariants, PropGetter} from "@jala-banyu/system";
+import {useDOMRef} from "@jala-banyu/react-utils";
 import {useFocusRing} from "@react-aria/focus";
-import {dataAttr} from "@banyu/shared-utils";
-import {ReactRef} from "@banyu/react-utils";
+import {dataAttr} from "@jala-banyu/shared-utils";
+import {ReactRef} from "@jala-banyu/react-utils";
 import {useMemo, useCallback} from "react";
 import {mergeProps} from "@react-aria/utils";
 

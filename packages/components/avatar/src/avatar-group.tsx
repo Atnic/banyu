@@ -1,4 +1,4 @@
-import {forwardRef} from "@banyu/system";
+import {forwardRef} from "@jala-banyu/system";
 
 import {AvatarGroupProvider} from "./avatar-group-context";
 import {useAvatarGroup, UseAvatarGroupProps} from "./use-avatar-group";
@@ -12,7 +12,9 @@ const AvatarGroup = forwardRef<"div", AvatarGroupProps>((props, ref) => {
     clones,
     context,
     remainingCount,
-    renderCount = (count) => <Avatar variant="soft" color="gray" className="hover:-translate-x-0" name={`+${count}`} />,
+    renderCount = (count) => (
+      <Avatar className="hover:-translate-x-0" color="gray" name={`+${count}`} variant="soft" />
+    ),
     getAvatarGroupProps,
   } = useAvatarGroup({
     ...props,

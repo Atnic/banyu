@@ -1,6 +1,6 @@
-import {Spinner} from "@banyu/spinner";
-import {Ripple} from "@banyu/ripple";
-import {forwardRef} from "@banyu/system";
+import {Spinner} from "@jala-banyu/spinner";
+import {Ripple} from "@jala-banyu/ripple";
+import {forwardRef} from "@jala-banyu/system";
 
 import {UseButtonProps, useButton} from "./use-button";
 

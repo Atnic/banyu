@@ -1,7 +1,7 @@
 import * as React from "react";
 import {render, act} from "@testing-library/react";
 // @ts-ignore
-import {mocks} from "@banyu/test-utils";
+import {mocks} from "@jala-banyu/test-utils";
 
 import {Avatar} from "../src";
 

@@ -1,4 +1,4 @@
-# @banyu/menu
+# @jala-banyu/menu
 
 A menu displays a list of options and allows a user to select one or more of them.
 
@@ -7,9 +7,9 @@ Please refer to the [documentation](https://localhost:3000/docs/components/menu)
 ## Installation
 
 ```sh
-yarn add @banyu/menu
+yarn add @jala-banyu/menu
 # or
-npm i @banyu/menu
+npm i @jala-banyu/menu
 ```
 
 ## Contribution

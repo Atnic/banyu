@@ -1,7 +1,7 @@
-import type {MenuSectionSlots, SlotsToClasses} from "@banyu/theme";
+import type {MenuSectionSlots, SlotsToClasses} from "@jala-banyu/theme";
 
-import {BaseSection, SectionProps} from "@banyu/aria-utils";
-import {DividerProps} from "@banyu/divider";
+import {BaseSection, SectionProps} from "@jala-banyu/aria-utils";
+import {DividerProps} from "@jala-banyu/divider";
 
 import {MenuItemProps} from "../menu-item";
 

@@ -1,6 +1,6 @@
 import * as React from "react";
 import {render} from "@testing-library/react";
-import {Link} from "@banyu/link";
+import {Link} from "@jala-banyu/link";
 
 import {User} from "../src";
 

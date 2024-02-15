@@ -1,6 +1,6 @@
 {
-  "name": "@banyu/input",
-  "version": "1.0.3",
+  "name": "@jala-banyu/input",
+  "version": "1.0.0",
   "description": "The input component is designed for capturing user input within a text field.",
   "keywords": [
     "input"
@@ -36,13 +36,13 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "@banyu/theme": "1.0.3",
-    "@banyu/system": "1.0.3"
+    "@banyu/theme": "1.0.0",
+    "@banyu/system": "1.0.0"
   },
   "dependencies": {
-    "@banyu/react-utils": "workspace: *",
-    "@banyu/shared-icons": "workspace: *",
-    "@banyu/shared-utils": "workspace: *",
+    "@jala-banyu/react-utils": "workspace: *",
+    "@jala-banyu/shared-icons": "workspace: *",
+    "@jala-banyu/shared-utils": "workspace: *",
     "@react-aria/focus": "^3.14.3",
     "@react-aria/interactions": "^3.19.1",
     "@react-aria/textfield": "^3.12.2",
@@ -53,8 +53,8 @@
     "react-textarea-autosize": "^8.5.2"
   },
   "devDependencies": {
-    "@banyu/theme": "workspace: *",
-    "@banyu/system": "workspace: *",
+    "@jala-banyu/theme": "workspace: *",
+    "@jala-banyu/system": "workspace: *",
     "clean-package": "2.2.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"

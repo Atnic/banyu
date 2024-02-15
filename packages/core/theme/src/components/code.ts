@@ -10,7 +10,7 @@ import {colorVariants} from "../utils";
  *
  * @example
  * <code className={classNames)}>
- *   npm install @banyu/react
+ *   npm install @jala-banyu/react
  * </code>
  */
 const code = tv({

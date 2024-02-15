@@ -47,10 +47,11 @@ const iconOnly = {
   basic: "text-white",
   transparent: "text-white",
 };
+
 export const colorVariants = {
   solid,
   outline,
   rounded,
   ghost,
-  iconOnly
+  iconOnly,
 };

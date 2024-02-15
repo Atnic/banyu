@@ -1,22 +1,22 @@
-import type {PopoverVariantProps, SlotsToClasses} from "@banyu/theme";
+import type {PopoverVariantProps, SlotsToClasses} from "@jala-banyu/theme";
 import type {AriaTooltipProps} from "@react-types/tooltip";
 import type {OverlayTriggerProps} from "@react-types/overlays";
 import type {HTMLMotionProps} from "framer-motion";
-import type {OverlayOptions} from "@banyu/aria-utils";
+import type {OverlayOptions} from "@jala-banyu/aria-utils";
 
 import {ReactNode, Ref, useId, useImperativeHandle} from "react";
 import {useTooltipTriggerState} from "@react-stately/tooltip";
 import {mergeProps} from "@react-aria/utils";
 import {useTooltip as useReactAriaTooltip, useTooltipTrigger} from "@react-aria/tooltip";
 import {useOverlayPosition, useOverlay, AriaOverlayProps} from "@react-aria/overlays";
-import {HTMLBanyuProps, mapPropsVariants, PropGetter} from "@banyu/system";
-import {popover} from "@banyu/theme";
-import {clsx, dataAttr} from "@banyu/shared-utils";
-import {ReactRef, mergeRefs} from "@banyu/react-utils";
-import {createDOMRef} from "@banyu/react-utils";
+import {HTMLBanyuProps, mapPropsVariants, PropGetter} from "@jala-banyu/system";
+import {popover} from "@jala-banyu/theme";
+import {clsx, dataAttr} from "@jala-banyu/shared-utils";
+import {ReactRef, mergeRefs} from "@jala-banyu/react-utils";
+import {createDOMRef} from "@jala-banyu/react-utils";
 import {useMemo, useRef, useCallback} from "react";
-import {toReactAriaPlacement, getArrowPlacement} from "@banyu/aria-utils";
-import {useSafeLayoutEffect} from "@banyu/use-safe-layout-effect";
+import {toReactAriaPlacement, getArrowPlacement} from "@jala-banyu/aria-utils";
+import {useSafeLayoutEffect} from "@jala-banyu/use-safe-layout-effect";
 
 interface Props extends Omit<HTMLBanyuProps, "content"> {
   /**

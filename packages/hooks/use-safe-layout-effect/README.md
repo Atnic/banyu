@@ -1,4 +1,4 @@
-# @banyu/use-safe-layout-effect
+# @jala-banyu/use-safe-layout-effect
 
 A Quick description of the component
 
@@ -7,9 +7,9 @@ A Quick description of the component
 ## Installation
 
 ```sh
-yarn add @banyu/use-safe-layout-effect
+yarn add @jala-banyu/use-safe-layout-effect
 # or
-npm i @banyu/use-safe-layout-effect
+npm i @jala-banyu/use-safe-layout-effect
 ```
 
 ## Contribution

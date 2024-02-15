@@ -1,6 +1,6 @@
 {
-  "name": "@banyu/ripple",
-  "version": "1.0.3",
+  "name": "@jala-banyu/ripple",
+  "version": "1.0.0",
   "description": "A simple implementation to display a ripple animation when the source component is clicked",
   "keywords": [
     "ripple"
@@ -37,16 +37,16 @@
     "react": ">=18",
     "react-dom": ">=18",
     "framer-motion": ">=0.0.0",
-    "@banyu/theme": "1.0.3",
-    "@banyu/system": "1.0.3"
+    "@banyu/theme": "1.0.0",
+    "@banyu/system": "1.0.0"
   },
   "dependencies": {
-    "@banyu/shared-utils": "workspace: *",
-    "@banyu/react-utils": "workspace: *"
+    "@jala-banyu/shared-utils": "workspace: *",
+    "@jala-banyu/react-utils": "workspace: *"
   },
   "devDependencies": {
-    "@banyu/theme": "workspace: *",
-    "@banyu/system": "workspace: *",
+    "@jala-banyu/theme": "workspace: *",
+    "@jala-banyu/system": "workspace: *",
     "clean-package": "2.2.0",
     "framer-motion": "^10.16.4",
     "react": "^18.0.0",

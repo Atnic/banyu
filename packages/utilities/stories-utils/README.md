@@ -1,4 +1,4 @@
-# @banyu/stories-utils
+# @jala-banyu/stories-utils
 
 A Quick description of the component
 
@@ -7,9 +7,9 @@ A Quick description of the component
 ## Installation
 
 ```sh
-yarn add @banyu/stories-utils
+yarn add @jala-banyu/stories-utils
 # or
-npm i @banyu/stories-utils
+npm i @jala-banyu/stories-utils
 ```
 
 ## Contribution

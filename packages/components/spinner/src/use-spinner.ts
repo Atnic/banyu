@@ -1,9 +1,9 @@
-import type {SpinnerVariantProps, SpinnerSlots, SlotsToClasses} from "@banyu/theme";
-import type {HTMLBanyuProps, PropGetter} from "@banyu/system-rsc";
+import type {SpinnerVariantProps, SpinnerSlots, SlotsToClasses} from "@jala-banyu/theme";
+import type {HTMLBanyuProps, PropGetter} from "@jala-banyu/system-rsc";
 
-import {mapPropsVariants} from "@banyu/system-rsc";
-import {spinner} from "@banyu/theme";
-import {clsx} from "@banyu/shared-utils";
+import {mapPropsVariants} from "@jala-banyu/system-rsc";
+import {spinner} from "@jala-banyu/theme";
+import {clsx} from "@jala-banyu/shared-utils";
 import {useMemo, useCallback, Ref} from "react";
 
 interface Props extends HTMLBanyuProps<"div"> {

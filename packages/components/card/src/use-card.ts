@@ -1,19 +1,19 @@
 import type {FocusableProps, PressEvents} from "@react-types/shared";
-import type {SlotsToClasses, CardSlots, CardReturnType, CardVariantProps} from "@banyu/theme";
-import type {AriaButtonProps} from "@banyu/use-aria-button";
-import type {RippleProps} from "@banyu/ripple";
+import type {SlotsToClasses, CardSlots, CardReturnType, CardVariantProps} from "@jala-banyu/theme";
+import type {AriaButtonProps} from "@jala-banyu/use-aria-button";
+import type {RippleProps} from "@jala-banyu/ripple";
 
-import {card} from "@banyu/theme";
+import {card} from "@jala-banyu/theme";
 import {MouseEvent, ReactNode, useCallback, useMemo} from "react";
 import {chain, mergeProps} from "@react-aria/utils";
 import {useFocusRing} from "@react-aria/focus";
 import {useHover} from "@react-aria/interactions";
-import {useAriaButton} from "@banyu/use-aria-button";
-import {HTMLBanyuProps, mapPropsVariants, PropGetter} from "@banyu/system";
-import {clsx, dataAttr} from "@banyu/shared-utils";
-import {ReactRef, filterDOMProps} from "@banyu/react-utils";
-import {useDOMRef} from "@banyu/react-utils";
-import {useRipple} from "@banyu/ripple";
+import {useAriaButton} from "@jala-banyu/use-aria-button";
+import {HTMLBanyuProps, mapPropsVariants, PropGetter} from "@jala-banyu/system";
+import {clsx, dataAttr} from "@jala-banyu/shared-utils";
+import {ReactRef, filterDOMProps} from "@jala-banyu/react-utils";
+import {useDOMRef} from "@jala-banyu/react-utils";
+import {useRipple} from "@jala-banyu/ripple";
 
 export interface Props extends HTMLBanyuProps<"div"> {
   /**

@@ -1,5 +1,5 @@
-import {forwardRef} from "@banyu/system";
-import {Ripple} from "@banyu/ripple";
+import {forwardRef} from "@jala-banyu/system";
+import {Ripple} from "@jala-banyu/ripple";
 
 import {CardProvider} from "./card-context";
 import {useCard, UseCardProps} from "./use-card";

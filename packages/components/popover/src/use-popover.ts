@@ -1,17 +1,17 @@
-import type {PopoverVariantProps, SlotsToClasses, PopoverSlots} from "@banyu/theme";
+import type {PopoverVariantProps, SlotsToClasses, PopoverSlots} from "@jala-banyu/theme";
 import type {HTMLMotionProps} from "framer-motion";
 
 import {RefObject, Ref, useEffect} from "react";
-import {ReactRef, useDOMRef} from "@banyu/react-utils";
+import {ReactRef, useDOMRef} from "@jala-banyu/react-utils";
 import {OverlayTriggerState, useOverlayTriggerState} from "@react-stately/overlays";
 import {useFocusRing} from "@react-aria/focus";
 import {ariaHideOutside, useOverlayTrigger} from "@react-aria/overlays";
 import {OverlayTriggerProps} from "@react-types/overlays";
-import {HTMLBanyuProps, mapPropsVariants, PropGetter} from "@banyu/system";
-import {getArrowPlacement, getShouldUseAxisPlacement} from "@banyu/aria-utils";
-import {popover} from "@banyu/theme";
+import {HTMLBanyuProps, mapPropsVariants, PropGetter} from "@jala-banyu/system";
+import {getArrowPlacement, getShouldUseAxisPlacement} from "@jala-banyu/aria-utils";
+import {popover} from "@jala-banyu/theme";
 import {mergeProps, mergeRefs} from "@react-aria/utils";
-import {clsx, dataAttr} from "@banyu/shared-utils";
+import {clsx, dataAttr} from "@jala-banyu/shared-utils";
 import {useMemo, useCallback, useRef} from "react";
 import {PressEvent} from "@react-types/shared";
 

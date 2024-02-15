@@ -1,4 +1,4 @@
-# @banyu/skeleton
+# @jala-banyu/skeleton
 
 Skeleton is a placeholder to show a loading state and the expected shape of a component.
 
@@ -7,9 +7,9 @@ Please refer to the [documentation](#) for more information.
 ## Installation
 
 ```sh
-yarn add @banyu/skeleton
+yarn add @jala-banyu/skeleton
 # or
-npm i @banyu/skeleton
+npm i @jala-banyu/skeleton
 ```
 
 ## Contribution

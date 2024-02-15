@@ -1,6 +1,6 @@
 import {FC} from "react";
 import {AnimatePresence, HTMLMotionProps, motion} from "framer-motion";
-import {HTMLBanyuProps} from "@banyu/system";
+import {HTMLBanyuProps} from "@jala-banyu/system";
 
 import {RippleType} from "./use-ripple";
 

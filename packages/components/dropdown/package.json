@@ -1,6 +1,6 @@
 {
-  "name": "@banyu/dropdown",
-  "version": "1.0.3",
+  "name": "@jala-banyu/dropdown",
+  "version": "1.0.0",
   "description": "A dropdown displays a list of actions or options that a user can choose.",
   "keywords": [
     "dropdown"
@@ -39,10 +39,10 @@
     "framer-motion": ">=0.0.0"
   },
   "dependencies": {
-    "@banyu/menu": "workspace: *",
-    "@banyu/popover": "workspace: *",
-    "@banyu/shared-utils": "workspace: *",
-    "@banyu/react-utils": "workspace: *",
+    "@jala-banyu/menu": "workspace: *",
+    "@jala-banyu/popover": "workspace: *",
+    "@jala-banyu/shared-utils": "workspace: *",
+    "@jala-banyu/react-utils": "workspace: *",
     "@react-aria/menu": "^3.11.1",
     "@react-aria/utils": "^3.21.1",
     "@react-stately/menu": "^3.5.6",
@@ -50,12 +50,12 @@
     "@react-types/menu": "^3.9.5"
   },
   "devDependencies": {
-    "@banyu/theme": "workspace: *",
-    "@banyu/system": "workspace: *",
-    "@banyu/button": "workspace: *",
-    "@banyu/avatar": "workspace: *",
-    "@banyu/user": "workspace: *",
-    "@banyu/shared-icons": "workspace: *",
+    "@jala-banyu/theme": "workspace: *",
+    "@jala-banyu/system": "workspace: *",
+    "@jala-banyu/button": "workspace: *",
+    "@jala-banyu/avatar": "workspace: *",
+    "@jala-banyu/user": "workspace: *",
+    "@jala-banyu/shared-icons": "workspace: *",
     "framer-motion": "^10.16.4",
     "clean-package": "2.2.0",
     "react": "^18.0.0",

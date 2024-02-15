@@ -1,16 +1,16 @@
-import type {ToggleVariantProps, ToggleSlots, SlotsToClasses} from "@banyu/theme";
+import type {ToggleVariantProps, ToggleSlots, SlotsToClasses} from "@jala-banyu/theme";
 import type {FocusableRef} from "@react-types/shared";
 import type {AriaSwitchProps} from "@react-aria/switch";
-import type {HTMLBanyuProps, PropGetter} from "@banyu/system";
+import type {HTMLBanyuProps, PropGetter} from "@jala-banyu/system";
 
 import {ReactNode, Ref, useCallback, useId, useRef, useState} from "react";
-import {mapPropsVariants} from "@banyu/system";
+import {mapPropsVariants} from "@jala-banyu/system";
 import {useHover} from "@react-aria/interactions";
-import {usePress} from "@banyu/use-aria-press";
-import {toggle} from "@banyu/theme";
+import {usePress} from "@jala-banyu/use-aria-press";
+import {toggle} from "@jala-banyu/theme";
 import {chain, mergeProps} from "@react-aria/utils";
-import {clsx, dataAttr} from "@banyu/shared-utils";
-import {useFocusableRef} from "@banyu/react-utils";
+import {clsx, dataAttr} from "@jala-banyu/shared-utils";
+import {useFocusableRef} from "@jala-banyu/react-utils";
 import {useSwitch as useReactAriaSwitch} from "@react-aria/switch";
 import {useMemo} from "react";
 import {useToggleState} from "@react-stately/toggle";

@@ -1,6 +1,6 @@
 {
-  "name": "@banyu/divider",
-  "version": "1.0.3",
+  "name": "@jala-banyu/divider",
+  "version": "1.0.0",
   "description": ". A separator is a visual divider between two groups of content",
   "keywords": [
     "divider"
@@ -36,17 +36,17 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "@banyu/theme": "1.0.3",
-    "@banyu/system": "1.0.3"
+    "@banyu/theme": "1.0.0",
+    "@banyu/system": "1.0.0"
   },
   "dependencies": {
-    "@banyu/shared-utils": "workspace: *",
-    "@banyu/react-rsc-utils": "workspace: *",
-    "@banyu/system-rsc": "workspace: *",
+    "@jala-banyu/shared-utils": "workspace: *",
+    "@jala-banyu/react-rsc-utils": "workspace: *",
+    "@jala-banyu/system-rsc": "workspace: *",
     "@react-types/shared": "^3.21.0"
   },
   "devDependencies": {
-    "@banyu/theme": "workspace: *",
+    "@jala-banyu/theme": "workspace: *",
     "clean-package": "2.2.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"

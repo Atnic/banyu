@@ -1,14 +1,14 @@
-import type {BreadcrumbsVariantProps, SlotsToClasses, BreadcrumbsSlots} from "@banyu/theme";
+import type {BreadcrumbsVariantProps, SlotsToClasses, BreadcrumbsSlots} from "@jala-banyu/theme";
 import type {AriaBreadcrumbsProps} from "@react-types/breadcrumbs";
 
 import {Children, ReactNode, Key, ReactElement} from "react";
-import {HTMLBanyuProps, mapPropsVariants, PropGetter} from "@banyu/system";
-import {breadcrumbs} from "@banyu/theme";
-import {filterDOMProps, pickChildren, ReactRef, useDOMRef} from "@banyu/react-utils";
+import {HTMLBanyuProps, mapPropsVariants, PropGetter} from "@jala-banyu/system";
+import {breadcrumbs} from "@jala-banyu/theme";
+import {filterDOMProps, pickChildren, ReactRef, useDOMRef} from "@jala-banyu/react-utils";
 import {mergeProps} from "@react-aria/utils";
 import {useBreadcrumbs as useAriaBreadcrumbs} from "@react-aria/breadcrumbs";
 import {useMemo} from "react";
-import {clsx, dataAttr} from "@banyu/shared-utils";
+import {clsx, dataAttr} from "@jala-banyu/shared-utils";
 
 import BreadcrumbItem, {BreadcrumbItemProps} from "./breadcrumb-item";
 

@@ -1,4 +1,4 @@
-# @banyu/card
+# @jala-banyu/card
 
 Card is a container for text, photos, and actions in the context of a single subject.
 
@@ -7,9 +7,9 @@ Please refer to the [documentation](#) for more information.
 ## Installation
 
 ```sh
-yarn add @banyu/card
+yarn add @jala-banyu/card
 # or
-npm i @banyu/card
+npm i @jala-banyu/card
 ```
 
 ## Contribution

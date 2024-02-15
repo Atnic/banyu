@@ -1,4 +1,4 @@
-# @banyu/user
+# @jala-banyu/user
 
 Display user information with avatar and name.
 
@@ -7,9 +7,9 @@ Please refer to the [documentation](https://localhost:3000/docs/components/user)
 ## Installation
 
 ```sh
-yarn add @banyu/user
+yarn add @jala-banyu/user
 # or
-npm i @banyu/user
+npm i @jala-banyu/user
 ```
 
 ## Contribution

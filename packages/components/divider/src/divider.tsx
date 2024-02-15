@@ -1,4 +1,4 @@
-import {forwardRef} from "@banyu/system-rsc";
+import {forwardRef} from "@jala-banyu/system-rsc";
 
 import {UseDividerProps, useDivider} from "./use-divider";
 

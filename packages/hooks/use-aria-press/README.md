@@ -1,4 +1,4 @@
-# @banyu/use-aria-press
+# @jala-banyu/use-aria-press
 
 A Quick description of the component
 
@@ -7,9 +7,9 @@ A Quick description of the component
 ## Installation
 
 ```sh
-yarn add @banyu/use-aria-press
+yarn add @jala-banyu/use-aria-press
 # or
-npm i @banyu/use-aria-press
+npm i @jala-banyu/use-aria-press
 ```
 
 ## Contribution

@@ -1,7 +1,7 @@
 // @ts-ignore
 import {Meta} from "@storybook/react";
 import React from "react";
-import {link} from "@banyu/theme";
+import {link} from "@jala-banyu/theme";
 
 import {Link, LinkProps} from "../src";
 

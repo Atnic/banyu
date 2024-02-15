@@ -1,12 +1,12 @@
-import type {InputVariantProps, SlotsToClasses, InputSlots} from "@banyu/theme";
+import type {InputVariantProps, SlotsToClasses, InputSlots} from "@jala-banyu/theme";
 
-import {HTMLBanyuProps, mapPropsVariants, PropGetter} from "@banyu/system";
+import {HTMLBanyuProps, mapPropsVariants, PropGetter} from "@jala-banyu/system";
 import {AriaTextFieldProps} from "@react-types/textfield";
 import {useFocusRing} from "@react-aria/focus";
-import {input} from "@banyu/theme";
-import {useDOMRef, filterDOMProps} from "@banyu/react-utils";
+import {input} from "@jala-banyu/theme";
+import {useDOMRef, filterDOMProps} from "@jala-banyu/react-utils";
 import {useFocusWithin, useHover, usePress} from "@react-aria/interactions";
-import {clsx, dataAttr, safeAriaLabel} from "@banyu/shared-utils";
+import {clsx, dataAttr, safeAriaLabel} from "@jala-banyu/shared-utils";
 import {useControlledState} from "@react-stately/utils";
 import {useMemo, Ref, useCallback, useState} from "react";
 import {chain, mergeProps} from "@react-aria/utils";

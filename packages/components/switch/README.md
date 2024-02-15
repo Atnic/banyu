@@ -1,4 +1,4 @@
-# @banyu/switch
+# @jala-banyu/switch
 
 The Switch component is used as an alternative between checked and not checked states.
 
@@ -7,9 +7,9 @@ Please refer to the [documentation](#) for more information.
 ## Installation
 
 ```sh
-yarn add @banyu/switch
+yarn add @jala-banyu/switch
 # or
-npm i @banyu/switch
+npm i @jala-banyu/switch
 ```
 
 ## Contribution

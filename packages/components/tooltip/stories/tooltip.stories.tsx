@@ -1,9 +1,9 @@
 import React from "react";
 // @ts-ignore
 import {Meta} from "@storybook/react";
-import {popover} from "@banyu/theme";
-import {Button} from "@banyu/button";
-import {Kbd} from "@banyu/kbd";
+import {popover} from "@jala-banyu/theme";
+import {Button} from "@jala-banyu/button";
+import {Kbd} from "@jala-banyu/kbd";
 
 import {Tooltip, TooltipProps} from "../src";
 

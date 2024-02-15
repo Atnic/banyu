@@ -1,5 +1,4 @@
 import {Meta} from "@storybook/react";
-import {code} from "@banyu/theme";
 
 import {Code} from "../src";
 
@@ -28,10 +27,10 @@ export default {
   },
 } as Meta<typeof Code>;
 
-const defaultProps = {
-  children: "npm install @banyu/react",
-  ...code.defaultVariants,
-};
+// const defaultProps = {
+//   children: "npm install @jala-banyu/react",
+//   ...code.defaultVariants,
+// };
 
 // export const Default = {
 // parameters: {

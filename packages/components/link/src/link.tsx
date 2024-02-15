@@ -1,6 +1,6 @@
-import {forwardRef} from "@banyu/system";
-import {LinkIcon} from "@banyu/shared-icons";
-import {linkAnchorClasses} from "@banyu/theme";
+import {forwardRef} from "@jala-banyu/system";
+import {LinkIcon} from "@jala-banyu/shared-icons";
+import {linkAnchorClasses} from "@jala-banyu/theme";
 
 import {UseLinkProps, useLink} from "./use-link";
 

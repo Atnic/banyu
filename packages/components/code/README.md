@@ -1,4 +1,4 @@
-# @banyu/code
+# @jala-banyu/code
 
 Code is a component used to display inline code.
 
@@ -7,9 +7,9 @@ Please refer to the [documentation](#) for more information.
 ## Installation
 
 ```sh
-yarn add @banyu/code
+yarn add @jala-banyu/code
 # or
-npm i @banyu/code
+npm i @jala-banyu/code
 ```
 
 ## Contribution

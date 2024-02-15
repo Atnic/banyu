@@ -1,4 +1,4 @@
-# @banyu/button
+# @jala-banyu/button
 
 Buttons allow users to perform actions and choose with a single tap.
 
@@ -7,9 +7,9 @@ Please refer to the [documentation](#) for more information.
 ## Installation
 
 ```sh
-yarn add @banyu/button
+yarn add @jala-banyu/button
 # or
-npm i @banyu/button
+npm i @jala-banyu/button
 ```
 
 ## Contribution

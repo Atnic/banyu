@@ -1,7 +1,7 @@
 import React from "react";
-import {CloseFilledIcon} from "@banyu/shared-icons";
+import {CloseFilledIcon} from "@jala-banyu/shared-icons";
 import {useMemo} from "react";
-import {forwardRef} from "@banyu/system";
+import {forwardRef} from "@jala-banyu/system";
 
 import {UseInputProps, useInput} from "./use-input";
 

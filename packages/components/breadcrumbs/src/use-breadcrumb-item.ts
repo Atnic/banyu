@@ -1,13 +1,17 @@
-import type {BreadcrumbItemVariantProps, SlotsToClasses, BreadcrumbItemSlots} from "@banyu/theme";
+import type {
+  BreadcrumbItemVariantProps,
+  SlotsToClasses,
+  BreadcrumbItemSlots,
+} from "@jala-banyu/theme";
 import type {ReactNode} from "react";
 import type {BreadcrumbItemProps as AriaBreadcrumbItemProps} from "@react-types/breadcrumbs";
 
-import {HTMLBanyuProps, mapPropsVariants, PropGetter} from "@banyu/system";
+import {HTMLBanyuProps, mapPropsVariants, PropGetter} from "@jala-banyu/system";
 import {useFocusRing} from "@react-aria/focus";
-import {breadcrumbItem} from "@banyu/theme";
-import {filterDOMProps, ReactRef, useDOMRef} from "@banyu/react-utils";
+import {breadcrumbItem} from "@jala-banyu/theme";
+import {filterDOMProps, ReactRef, useDOMRef} from "@jala-banyu/react-utils";
 import {useBreadcrumbItem as useAriaBreadcrumbItem} from "@react-aria/breadcrumbs";
-import {clsx, dataAttr} from "@banyu/shared-utils";
+import {clsx, dataAttr} from "@jala-banyu/shared-utils";
 import {useMemo} from "react";
 import {mergeProps} from "@react-aria/utils";
 

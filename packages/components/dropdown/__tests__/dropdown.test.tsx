@@ -1,6 +1,6 @@
 import * as React from "react";
 import {act, render} from "@testing-library/react";
-import {Button} from "@banyu/button";
+import {Button} from "@jala-banyu/button";
 import userEvent from "@testing-library/user-event";
 
 import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, DropdownSection} from "../src";

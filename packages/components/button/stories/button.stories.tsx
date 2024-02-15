@@ -1,8 +1,8 @@
 import React from "react";
 // @ts-ignore
 import {Meta} from "@storybook/react";
-import {button} from "@banyu/theme";
-import {HeadphonesIcon} from "@banyu/shared-icons";
+import {button} from "@jala-banyu/theme";
+import {HeadphonesIcon} from "@jala-banyu/shared-icons";
 
 import {Button} from "../src";
 

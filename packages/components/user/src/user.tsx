@@ -1,5 +1,5 @@
-import {forwardRef} from "@banyu/system";
-import {Avatar} from "@banyu/avatar";
+import {forwardRef} from "@jala-banyu/system";
+import {Avatar} from "@jala-banyu/avatar";
 
 import {UseUserProps, useUser} from "./use-user";
 

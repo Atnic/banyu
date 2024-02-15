@@ -1,4 +1,4 @@
-# @banyu/use-aria-button
+# @jala-banyu/use-aria-button
 
 A Quick description of the component
 
@@ -7,9 +7,9 @@ A Quick description of the component
 ## Installation
 
 ```sh
-yarn add @banyu/use-aria-button
+yarn add @jala-banyu/use-aria-button
 # or
-npm i @banyu/use-aria-button
+npm i @jala-banyu/use-aria-button
 ```
 
 ## Contribution

@@ -1,6 +1,6 @@
-import type {MenuItemProps, MenuSectionProps} from "@banyu/menu";
+import type {MenuItemProps, MenuSectionProps} from "@jala-banyu/menu";
 
-import {MenuItem, MenuSection} from "@banyu/menu";
+import {MenuItem, MenuSection} from "@jala-banyu/menu";
 
 import Dropdown from "./dropdown";
 import DropdownTrigger from "./dropdown-trigger";

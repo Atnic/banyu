@@ -1,12 +1,12 @@
-import type {ImageVariantProps, SlotsToClasses, ImageSlots} from "@banyu/theme";
+import type {ImageVariantProps, SlotsToClasses, ImageSlots} from "@jala-banyu/theme";
 
 import {ImgHTMLAttributes, useCallback} from "react";
-import {HTMLBanyuProps, mapPropsVariants, PropGetter} from "@banyu/system";
-import {image} from "@banyu/theme";
-import {useDOMRef} from "@banyu/react-utils";
-import {clsx, dataAttr} from "@banyu/shared-utils";
-import {ReactRef} from "@banyu/react-utils";
-import {useImage as useImageBase} from "@banyu/use-image";
+import {HTMLBanyuProps, mapPropsVariants, PropGetter} from "@jala-banyu/system";
+import {image} from "@jala-banyu/theme";
+import {useDOMRef} from "@jala-banyu/react-utils";
+import {clsx, dataAttr} from "@jala-banyu/shared-utils";
+import {ReactRef} from "@jala-banyu/react-utils";
+import {useImage as useImageBase} from "@jala-banyu/use-image";
 import {useMemo} from "react";
 type NativeImageProps = ImgHTMLAttributes<HTMLImageElement>;
 

@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/no-autofocus */
 import React from "react";
 import {Meta} from "@storybook/react";
-// import {Input} from "@banyu/input"
+// import {Input} from "@jala-banyu/input"
 
 import {Popover} from "../src";
 

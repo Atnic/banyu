@@ -1,13 +1,13 @@
-import type {SlotsToClasses, UserSlots} from "@banyu/theme";
-import type {AvatarProps} from "@banyu/avatar";
+import type {SlotsToClasses, UserSlots} from "@jala-banyu/theme";
+import type {AvatarProps} from "@jala-banyu/avatar";
 
 import {ReactNode, useMemo, useCallback} from "react";
 import {useFocusRing} from "@react-aria/focus";
-import {HTMLBanyuProps, PropGetter} from "@banyu/system";
-import {user} from "@banyu/theme";
-import {clsx, dataAttr} from "@banyu/shared-utils";
-import {filterDOMProps, ReactRef} from "@banyu/react-utils";
-import {useDOMRef} from "@banyu/react-utils";
+import {HTMLBanyuProps, PropGetter} from "@jala-banyu/system";
+import {user} from "@jala-banyu/theme";
+import {clsx, dataAttr} from "@jala-banyu/shared-utils";
+import {filterDOMProps, ReactRef} from "@jala-banyu/react-utils";
+import {useDOMRef} from "@jala-banyu/react-utils";
 import {mergeProps} from "@react-aria/utils";
 interface Props {
   /**

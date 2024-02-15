@@ -1,4 +1,4 @@
-import {forwardRef} from "@banyu/system-rsc";
+import {forwardRef} from "@jala-banyu/system-rsc";
 
 import {UseSpinnerProps, useSpinner} from "./use-spinner";
 
@@ -6,7 +6,7 @@ export interface SpinnerProps extends UseSpinnerProps {}
 
 const Spinner = forwardRef<"div", SpinnerProps>((props, ref) => {
   const {slots, classNames, label, getSpinnerProps} = useSpinner({...props});
-    console.log(slots, classNames, label, getSpinnerProps)
+
   return (
     <div ref={ref} {...getSpinnerProps()}>
       <div className={slots.wrapper({class: classNames?.wrapper})}>

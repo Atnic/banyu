@@ -1,6 +1,6 @@
 import {VisuallyHidden} from "@react-aria/visually-hidden";
 import {cloneElement, ReactElement} from "react";
-import {forwardRef} from "@banyu/system";
+import {forwardRef} from "@jala-banyu/system";
 
 import {UseSwitchProps, useSwitch} from "./use-switch";
 
