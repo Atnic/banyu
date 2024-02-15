@@ -110,24 +110,22 @@ describe("Input", () => {
 
     const {container} = render(<Input ref={ref} type="text" />);
 
+    act(() => {
+      container.querySelector("input")?.focus();
+    });
+
     if (!ref.current) {
       throw new Error("ref is null");
     }
     const val = "value test";
 
-    // if (ref.current!.value){
     ref.current!.value = val;
-    // }
-
-    // act(() => {
-    //   container.querySelector("input")?.focus();
-    // });
 
     await waitFor(() => {
-      return expect(ref.current?.value)?.toBe(val);
+      return expect(ref.current!.value)?.toBe(val);
     });
     await waitFor(() => {
-      return expect(ref.current?.value)?.toBe(val);
+      return expect(ref.current!.value)?.toBe(val);
     });
   });
 });
