@@ -1,11 +1,11 @@
 {
-  "name": "@jala-banyu/system-rsc",
-  "version": "2.0.0",
-  "description": "Banyu system primitives compatibles with RSC imports",
+  "name": "@jala-banyu/spacer",
+  "version": "1.0.0",
+  "description": "Spacer is a component used to add space between components.",
   "keywords": [
-    "system-rsc"
+    "spacer"
   ],
-  "author": "Muhammad Amien <muhammadamien23@gmail.com>",
+  "author": "Dika Mahendra <dika@jala.tech>",
   "homepage": "#",
   "license": "MIT",
   "main": "src/index.ts",
@@ -19,7 +19,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Atnic/banyu.git",
-    "directory": "packages/core/system-rsc"
+    "directory": "packages/components/spacer"
   },
   "bugs": {
     "url": "https://github.com/Atnic/banyu/issues"
@@ -35,26 +35,21 @@
   },
   "peerDependencies": {
     "react": ">=18",
-    "@jala-banyu/theme": "1.1.0",
-    "tailwind-variants": ">=0.1.13"
-  },
-  "devDependencies": {
-    "react": "^18.0.0",
-    "tailwind-variants": "^0.1.18",
-    "@jala-banyu/theme": "workspace: *",
-    "@jala-banyu/react-utils": "workspace: *",
-    "clean-package": "2.2.0"
+    "react-dom": ">=18",
+    "@jala-banyu/theme": ">=1.0.0",
+    "@jala-banyu/system": ">=1.0.0"
   },
   "dependencies": {
-    "clsx": "^1.2.1"
+    "@jala-banyu/system-rsc": "workspace: *",
+    "@jala-banyu/shared-utils": "workspace: *",
+    "@jala-banyu/react-utils": "workspace: *"
   },
-  "clean-package": "../../../clean-package.config.json",
-  "tsup": {
-    "clean": true,
-    "target": "es2019",
-    "format": [
-      "cjs",
-      "esm"
-    ]
-  }
+  "devDependencies": {
+    "@jala-banyu/theme": "workspace: *",
+    "@jala-banyu/system": "workspace: *",
+    "clean-package": "2.2.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "clean-package": "../../../clean-package.config.json"
 }
