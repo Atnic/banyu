@@ -22,7 +22,7 @@
     "test": "jest --verbose --config ./jest.config.js",
     "version:add": "changeset add",
     "version:gen": "changeset version",
-    "version:pub": "changeset publish",
+    "release:prod": "changeset publish",
     "version:dev": "changeset version --snapshot dev-v2",
     "release:dev": "changeset publish --snapshot --no-git-tag --tag dev-v2",
     "postinstall": "husky install && pnpm --filter @jala-banyu/theme build",
