@@ -210,12 +210,6 @@ importers:
 
   packages/components/avatar:
     dependencies:
-      '@banyu/system':
-        specifier: 1.0.0
-        version: 1.0.0(@banyu/theme@1.0.0)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.1.20)
-      '@banyu/theme':
-        specifier: 1.0.0
-        version: 1.0.0(tailwindcss@3.4.1)
       '@jala-banyu/react-utils':
         specifier: 'workspace: *'
         version: link:../../utilities/react-utils
@@ -259,12 +253,6 @@ importers:
 
   packages/components/breadcrumbs:
     dependencies:
-      '@banyu/system':
-        specifier: 1.0.0
-        version: 1.0.0(@banyu/theme@1.0.0)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.1.20)
-      '@banyu/theme':
-        specifier: 1.0.0
-        version: 1.0.0(tailwindcss@3.4.1)
       '@jala-banyu/react-utils':
         specifier: 'workspace: *'
         version: link:../../utilities/react-utils
@@ -317,12 +305,6 @@ importers:
 
   packages/components/button:
     dependencies:
-      '@banyu/system':
-        specifier: 1.0.0
-        version: 1.0.0(@banyu/theme@1.0.0)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.1.20)
-      '@banyu/theme':
-        specifier: 1.0.0
-        version: 1.0.0(tailwindcss@3.4.1)
       '@jala-banyu/react-utils':
         specifier: 'workspace: *'
         version: link:../../utilities/react-utils
@@ -384,12 +366,6 @@ importers:
 
   packages/components/card:
     dependencies:
-      '@banyu/system':
-        specifier: 1.0.0
-        version: 1.0.0(@banyu/theme@1.0.0)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.1.20)
-      '@banyu/theme':
-        specifier: 1.0.0
-        version: 1.0.0(tailwindcss@3.4.1)
       '@jala-banyu/react-utils':
         specifier: 'workspace: *'
         version: link:../../utilities/react-utils
@@ -454,18 +430,15 @@ importers:
 
   packages/components/code:
     dependencies:
-      '@banyu/system':
-        specifier: 1.0.0
-        version: 1.0.0(@banyu/theme@1.0.0)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.1.20)
-      '@banyu/theme':
-        specifier: 1.0.0
-        version: 1.0.0(tailwindcss@3.4.1)
       '@jala-banyu/react-utils':
         specifier: 'workspace: *'
         version: link:../../utilities/react-utils
       '@jala-banyu/shared-utils':
         specifier: 'workspace: *'
         version: link:../../utilities/shared-utils
+      '@jala-banyu/system':
+        specifier: 1.0.0
+        version: link:../../core/system
       '@jala-banyu/system-rsc':
         specifier: 'workspace: *'
         version: link:../../core/system-rsc
@@ -485,18 +458,15 @@ importers:
 
   packages/components/divider:
     dependencies:
-      '@banyu/system':
-        specifier: 1.0.0
-        version: 1.0.0(@banyu/theme@1.0.0)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.1.20)
-      '@banyu/theme':
-        specifier: 1.0.0
-        version: 1.0.0(tailwindcss@3.4.1)
       '@jala-banyu/react-rsc-utils':
         specifier: 'workspace: *'
         version: link:../../utilities/react-rsc-utils
       '@jala-banyu/shared-utils':
         specifier: 'workspace: *'
         version: link:../../utilities/shared-utils
+      '@jala-banyu/system':
+        specifier: 1.0.0
+        version: link:../../core/system
       '@jala-banyu/system-rsc':
         specifier: 'workspace: *'
         version: link:../../core/system-rsc
@@ -580,12 +550,6 @@ importers:
 
   packages/components/image:
     dependencies:
-      '@banyu/system':
-        specifier: 1.0.0
-        version: 1.0.0(@banyu/theme@1.0.0)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.1.20)
-      '@banyu/theme':
-        specifier: 1.0.0
-        version: 1.0.0(tailwindcss@3.4.1)
       '@jala-banyu/react-utils':
         specifier: 'workspace: *'
         version: link:../../utilities/react-utils
@@ -614,12 +578,6 @@ importers:
 
   packages/components/input:
     dependencies:
-      '@banyu/system':
-        specifier: 1.0.0
-        version: 1.0.0(@banyu/theme@1.0.0)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.1.20)
-      '@banyu/theme':
-        specifier: 1.0.0
-        version: 1.0.0(tailwindcss@3.4.1)
       '@jala-banyu/react-utils':
         specifier: 'workspace: *'
         version: link:../../utilities/react-utils
@@ -672,18 +630,15 @@ importers:
 
   packages/components/kbd:
     dependencies:
-      '@banyu/system':
-        specifier: 1.0.0
-        version: 1.0.0(@banyu/theme@1.0.0)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.1.20)
-      '@banyu/theme':
-        specifier: 1.0.0
-        version: 1.0.0(tailwindcss@3.4.1)
       '@jala-banyu/react-utils':
         specifier: 'workspace: *'
         version: link:../../utilities/react-utils
       '@jala-banyu/shared-utils':
         specifier: 'workspace: *'
         version: link:../../utilities/shared-utils
+      '@jala-banyu/system':
+        specifier: 1.0.0
+        version: link:../../core/system
       '@jala-banyu/system-rsc':
         specifier: 'workspace: *'
         version: link:../../core/system-rsc
@@ -706,12 +661,6 @@ importers:
 
   packages/components/link:
     dependencies:
-      '@banyu/system':
-        specifier: 1.0.0
-        version: 1.0.0(@banyu/theme@1.0.0)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.1.20)
-      '@banyu/theme':
-        specifier: 1.0.0
-        version: 1.0.0(tailwindcss@3.4.1)
       '@jala-banyu/react-utils':
         specifier: 'workspace: *'
         version: link:../../utilities/react-utils
@@ -755,12 +704,6 @@ importers:
 
   packages/components/menu:
     dependencies:
-      '@banyu/system':
-        specifier: 1.0.0
-        version: 1.0.0(@banyu/theme@1.0.0)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.1.20)
-      '@banyu/theme':
-        specifier: 1.0.0
-        version: 1.0.0(tailwindcss@3.4.1)
       '@jala-banyu/aria-utils':
         specifier: 'workspace: *'
         version: link:../../utilities/aria-utils
@@ -825,12 +768,6 @@ importers:
 
   packages/components/popover:
     dependencies:
-      '@banyu/system':
-        specifier: 1.0.0
-        version: 1.0.0(@banyu/theme@1.0.0)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.1.20)
-      '@banyu/theme':
-        specifier: 1.0.0
-        version: 1.0.0(tailwindcss@3.4.1)
       '@jala-banyu/aria-utils':
         specifier: 'workspace: *'
         version: link:../../utilities/aria-utils
@@ -904,12 +841,6 @@ importers:
 
   packages/components/ripple:
     dependencies:
-      '@banyu/system':
-        specifier: 1.0.0
-        version: 1.0.0(@banyu/theme@1.0.0)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.1.20)
-      '@banyu/theme':
-        specifier: 1.0.0
-        version: 1.0.0(tailwindcss@3.4.1)
       '@jala-banyu/react-utils':
         specifier: 'workspace: *'
         version: link:../../utilities/react-utils
@@ -938,18 +869,15 @@ importers:
 
   packages/components/skeleton:
     dependencies:
-      '@banyu/system':
-        specifier: 1.0.0
-        version: 1.0.0(@banyu/theme@1.0.0)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.1.20)
-      '@banyu/theme':
-        specifier: 1.0.0
-        version: 1.0.0(tailwindcss@3.4.1)
       '@jala-banyu/react-utils':
         specifier: 'workspace: *'
         version: link:../../utilities/react-utils
       '@jala-banyu/shared-utils':
         specifier: 'workspace: *'
         version: link:../../utilities/shared-utils
+      '@jala-banyu/system':
+        specifier: 1.0.0
+        version: link:../../core/system
       '@jala-banyu/system-rsc':
         specifier: 'workspace: *'
         version: link:../../core/system-rsc
@@ -975,18 +903,15 @@ importers:
 
   packages/components/spinner:
     dependencies:
-      '@banyu/system':
-        specifier: 1.0.0
-        version: 1.0.0(@banyu/theme@1.0.0)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.1.20)
-      '@banyu/theme':
-        specifier: 1.0.0
-        version: 1.0.0(tailwindcss@3.4.1)
       '@jala-banyu/react-utils':
         specifier: 'workspace: *'
         version: link:../../utilities/react-utils
       '@jala-banyu/shared-utils':
         specifier: 'workspace: *'
         version: link:../../utilities/shared-utils
+      '@jala-banyu/system':
+        specifier: 1.0.0
+        version: link:../../core/system
       '@jala-banyu/system-rsc':
         specifier: 'workspace: *'
         version: link:../../core/system-rsc
@@ -1006,12 +931,6 @@ importers:
 
   packages/components/switch:
     dependencies:
-      '@banyu/system':
-        specifier: 1.0.0
-        version: 1.0.0(@banyu/theme@1.0.0)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.1.20)
-      '@banyu/theme':
-        specifier: 1.0.0
-        version: 1.0.0(tailwindcss@3.4.1)
       '@jala-banyu/react-utils':
         specifier: 'workspace: *'
         version: link:../../utilities/react-utils
@@ -1064,12 +983,6 @@ importers:
 
   packages/components/tooltip:
     dependencies:
-      '@banyu/system':
-        specifier: 1.0.0
-        version: 1.0.0(@banyu/theme@1.0.0)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.1.20)
-      '@banyu/theme':
-        specifier: 1.0.0
-        version: 1.0.0(tailwindcss@3.4.1)
       '@jala-banyu/aria-utils':
         specifier: 'workspace: *'
         version: link:../../utilities/aria-utils
@@ -1134,12 +1047,6 @@ importers:
 
   packages/components/user:
     dependencies:
-      '@banyu/system':
-        specifier: 1.0.0
-        version: 1.0.0(@banyu/theme@1.0.0)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.1.20)
-      '@banyu/theme':
-        specifier: 1.0.0
-        version: 1.0.0(tailwindcss@3.4.1)
       '@jala-banyu/avatar':
         specifier: 'workspace: *'
         version: link:../avatar
@@ -3182,55 +3089,6 @@ packages:
       '@babel/helper-string-parser': 7.23.4
       '@babel/helper-validator-identifier': 7.22.20
       to-fast-properties: 2.0.0
-
-  /@banyu/system-rsc@1.0.0(@banyu/theme@1.0.0)(react@18.2.0)(tailwind-variants@0.1.20):
-    resolution: {integrity: sha512-Hdy0iucf+9saRWFAdt7ThU2IGgxkFhy91JaXTqLp3ARZ6BIWFxfHa/9g+hFW2iFp6423ZgdTUpn1w6VqmyGtGw==}
-    peerDependencies:
-      '@banyu/theme': 1.0.0
-      react: ^18.2.0
-      tailwind-variants: '>=0.1.13'
-    dependencies:
-      '@banyu/theme': 1.0.0(tailwindcss@3.4.1)
-      clsx: 1.2.1
-      react: 18.2.0
-      tailwind-variants: 0.1.20(tailwindcss@3.4.1)
-    dev: false
-
-  /@banyu/system@1.0.0(@banyu/theme@1.0.0)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.1.20):
-    resolution: {integrity: sha512-RkBEQtyARiRwDEGaT/AfcVwNX4uBNyxiAJAuaS9FITBH3rObTNuYubhTEgk86JnsobNJzeFWDYOr9EUSN5p8zg==}
-    peerDependencies:
-      react: ^18.2.0
-      react-dom: ^18.2.0
-    dependencies:
-      '@banyu/system-rsc': 1.0.0(@banyu/theme@1.0.0)(react@18.2.0)(tailwind-variants@0.1.20)
-      '@react-aria/i18n': 3.10.1(react@18.2.0)
-      '@react-aria/overlays': 3.21.0(react-dom@18.2.0)(react@18.2.0)
-      '@react-aria/utils': 3.23.1(react@18.2.0)
-      '@react-stately/utils': 3.9.0(react@18.2.0)
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    transitivePeerDependencies:
-      - '@banyu/theme'
-      - tailwind-variants
-    dev: false
-
-  /@banyu/theme@1.0.0(tailwindcss@3.4.1):
-    resolution: {integrity: sha512-HtiYp39oqlkbiywvrxhBQWtRHBFFjsAMgmI08TP4LFwTMXgjs35UhbUOt4FBFm4o+AYufwEo3OfD29XsQ4vDNQ==}
-    peerDependencies:
-      tailwindcss: '*'
-    dependencies:
-      color: 4.2.3
-      color2k: 2.0.3
-      deepmerge: 4.3.1
-      flat: 5.0.2
-      lodash.foreach: 4.5.0
-      lodash.get: 4.4.2
-      lodash.kebabcase: 4.1.1
-      lodash.mapkeys: 4.6.0
-      lodash.omit: 4.5.0
-      tailwind-variants: 0.1.20(tailwindcss@3.4.1)
-      tailwindcss: 3.4.1(ts-node@10.9.2)
-    dev: false
 
   /@base2/pretty-print-object@1.0.1:
     resolution: {integrity: sha512-4iri8i1AqYHJE2DstZYkyEprg6Pq6sKx3xn5FpySk9sNhH7qN2LLlHJCfDTZRILNwQNPD7mATWM0TBui7uC1pA==}
