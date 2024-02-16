@@ -427,12 +427,15 @@ importers:
       react-dom:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
-
   packages/components/checkbox:
+  packages/components/chip:
     dependencies:
       '@jala-banyu/react-utils':
         specifier: 'workspace: *'
         version: link:../../utilities/react-utils
+      '@jala-banyu/shared-icons':
+        specifier: 'workspace: *'
+        version: link:../../utilities/shared-icons
       '@jala-banyu/shared-utils':
         specifier: 'workspace: *'
         version: link:../../utilities/shared-utils
@@ -952,6 +955,34 @@ importers:
       '@jala-banyu/card':
         specifier: 'workspace: *'
         version: link:../card
+      '@jala-banyu/theme':
+        specifier: 'workspace: *'
+        version: link:../../core/theme
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+
+  packages/components/spacer:
+    dependencies:
+      '@jala-banyu/react-utils':
+        specifier: 'workspace: *'
+        version: link:../../utilities/react-utils
+      '@jala-banyu/shared-utils':
+        specifier: 'workspace: *'
+        version: link:../../utilities/shared-utils
+      '@jala-banyu/system-rsc':
+        specifier: 'workspace: *'
+        version: link:../../core/system-rsc
+    devDependencies:
+      '@jala-banyu/system':
+        specifier: 'workspace: *'
+        version: link:../../core/system
       '@jala-banyu/theme':
         specifier: 'workspace: *'
         version: link:../../core/theme
@@ -5404,7 +5435,6 @@ packages:
       '@swc/helpers': 0.5.6
       react: 18.2.0
     dev: false
-
   /@react-aria/dialog@3.5.12(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-7UJR/h/Y364u6Ltpw0bT51B48FybTuIBacGpEJN5IxZlpxvQt0KQcBDiOWfAa/GQogw4B5hH6agaOO0nJcP49Q==}
     peerDependencies:
