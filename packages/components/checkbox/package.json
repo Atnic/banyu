@@ -1,11 +1,11 @@
 {
-  "name": "@jala-banyu/tooltip",
-  "version": "2.0.0",
-  "description": "A React Component for rendering dynamically positioned Tooltips",
+  "name": "@jala-banyu/checkbox",
+  "version": "1.0.0",
+  "description": "Checkboxes allow users to select multiple items from a list of individual items, or to mark one individual item as selected.",
   "keywords": [
-    "tooltip"
+    "checkbox"
   ],
-  "author": "Muhammad Amien <muhammadamien23@gmail.com>",
+  "author": "Dika Mahendra <dika@jala.tech>",
   "homepage": "#",
   "license": "MIT",
   "main": "src/index.ts",
@@ -19,7 +19,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Atnic/banyu.git",
-    "directory": "packages/components/tooltip"
+    "directory": "packages/components/checkbox"
   },
   "bugs": {
     "url": "https://github.com/Atnic/banyu/issues"
@@ -36,30 +36,29 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "framer-motion": ">=0.0.0",
-    "@jala-banyu/theme": "1.1.0",
-    "@jala-banyu/system": "1.0.0"
+    "@jala-banyu/theme": ">=1.0.0",
+    "@jala-banyu/system": ">=1.0.0"
   },
   "dependencies": {
     "@jala-banyu/shared-utils": "workspace: *",
     "@jala-banyu/react-utils": "workspace: *",
-    "@jala-banyu/aria-utils": "workspace: *",
-    "@jala-banyu/framer-transitions": "workspace: *",
-    "@jala-banyu/use-safe-layout-effect": "workspace: *",
-    "@jala-banyu/kbd": "workspace: *",
-    "@react-aria/overlays": "^3.18.1",
-    "@react-aria/tooltip": "^3.6.4",
-    "@react-stately/tooltip": "^3.4.5",
+    "@jala-banyu/use-aria-press": "workspace:*",
+    "@react-aria/checkbox": "^3.11.2",
+    "@react-aria/focus": "^3.14.3",
     "@react-aria/interactions": "^3.19.1",
+    "@react-aria/visually-hidden": "^3.8.6",
+    "@react-stately/checkbox": "^3.5.1",
+    "@react-stately/toggle": "^3.6.3",
     "@react-aria/utils": "^3.21.1",
-    "@react-types/tooltip": "^3.4.5",
-    "@react-types/overlays": "^3.8.3"
+    "@react-types/checkbox": "^3.5.2",
+    "@react-types/shared": "^3.21.0"
   },
   "devDependencies": {
     "@jala-banyu/theme": "workspace: *",
     "@jala-banyu/system": "workspace: *",
-    "@jala-banyu/button": "workspace: *",
-    "framer-motion": "^10.16.4",
+    "@jala-banyu/shared-icons": "workspace:*",
+    "@jala-banyu/user": "workspace:*",
+    "@jala-banyu/link": "workspace:*",
     "clean-package": "2.2.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
