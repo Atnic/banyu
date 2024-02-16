@@ -172,7 +172,7 @@ export const iconOnly = {
   },
   args: {
     ...defaultProps,
-    variant: "iconOnly",
+    variant: "outline",
     color: "primary",
     isIconOnly: true,
   },
@@ -191,6 +191,7 @@ export const iconWithText = {
     children: "Button",
     variant: "outline",
     color: "basic",
+    isIconOnly: true,
   },
 };
 

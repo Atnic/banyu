@@ -1,5 +1,16 @@
 # @jala-banyu/button
 
+## 1.0.2
+
+### Patch Changes
+
+- Update Button style
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.0.1
+  - @jala-banyu/ripple@1.0.1
+  - @jala-banyu/spinner@1.0.1
+
 ## 1.0.1
 
 ### Patch Changes

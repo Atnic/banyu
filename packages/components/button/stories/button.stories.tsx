@@ -2,7 +2,7 @@ import React from "react";
 // @ts-ignore
 import {Meta} from "@storybook/react";
 import {button} from "@jala-banyu/theme";
-import {HeadphonesIcon} from "@jala-banyu/shared-icons";
+import {JalaBiomass} from "@muhamien/jala-icons";
 
 import {Button} from "../src";
 
@@ -14,13 +14,13 @@ export default {
       control: {
         type: "select",
       },
-      options: ["solid", "outline", "ghost", "rounded", "iconOnly"],
+      options: ["solid", "outline", "ghost"],
     },
     color: {
       control: {
         type: "select",
       },
-      options: ["primary", "danger", "success", "warning", "transparent", "white", "basic"],
+      options: ["primary", "danger", "success", "warning", "transparent", "basic", "white"],
     },
     size: {
       control: {
@@ -145,8 +145,27 @@ export const IconOnly = {
   args: {
     ...defaultProps,
     isIconOnly: true,
-    variant: "iconOnly",
-    children: <HeadphonesIcon className="w-max h-max" />,
+    variant: "outline",
+    children: <JalaBiomass className="h-max w-max text-lg" />,
+  },
+};
+export const IconWithText = {
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=376%3A46775&mode=dev",
+    },
+  },
+  args: {
+    ...defaultProps,
+    isIconOnly: false,
+    variant: "outline",
+    children: (
+      <>
+        <JalaBiomass className="h-max w-max text-lg" />
+        Biomass
+      </>
+    ),
   },
 };
 
