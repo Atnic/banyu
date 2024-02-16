@@ -1,5 +1,11 @@
 # @jala-banyu/checkbox
 
+## 1.0.1
+
+### Patch Changes
+
+- Change peer dependencies version
+
 ## 1.0.0
 
 ### Major Changes
