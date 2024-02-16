@@ -1,12 +1,12 @@
 # @jala-banyu/card
 
-## 2.0.0
+## 1.0.1
 
 ### Patch Changes
 
 - Updated dependencies []:
-  - @jala-banyu/theme@1.1.0
-  - @jala-banyu/ripple@2.0.0
+  - @jala-banyu/theme@1.0.1
+  - @jala-banyu/ripple@1.0.1
 
 ## 1.0.0
 

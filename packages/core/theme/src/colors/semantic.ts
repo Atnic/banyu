@@ -38,7 +38,7 @@ const base: SemanticBaseColors = {
     },
     transparent: {
       foreground: readableColor("rgba(10, 10, 10, 0.02)"),
-      DEFAULT: "rgba(10, 10, 10, 0.02)",
+      DEFAULT: "rgba(0, 0, 0, 0)",
     },
     neutral: {
       50: "rgba(249, 250, 251, 1)",
@@ -52,7 +52,9 @@ const base: SemanticBaseColors = {
       800: "rgba(24, 34, 48, 1)",
       900: "rgba(16, 24, 40, 1)",
       950: "rgba(12, 17, 29, 1)",
-      foreground: readableColorIsBlack(readableColor("rgba(52, 64, 84, 1)")) ? "rgba(0, 0, 0, 1)" : readableColor("rgba(52, 64, 84, 1)"), //700
+      foreground: readableColorIsBlack(readableColor("rgba(52, 64, 84, 1)"))
+        ? "rgba(0, 0, 0, 1)"
+        : readableColor("rgba(52, 64, 84, 1)"), //700
       DEFAULT: "rgba(52, 64, 84, 1)", //700
     },
     background: {
@@ -121,7 +123,7 @@ const base: SemanticBaseColors = {
     },
     transparent: {
       foreground: readableColor("rgba(10, 10, 10, 0.02)"),
-      DEFAULT: "rgba(10,10,10,0)",
+      DEFAULT: "rgba(0, 0, 0, 0)",
     },
     neutral: {
       50: "rgba(249, 250, 251, 1)",

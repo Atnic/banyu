@@ -1,6 +1,6 @@
 {
   "name": "@jala-banyu/skeleton",
-  "version": "2.0.0",
+  "version": "1.0.1",
   "description": "Skeleton is used to display the loading state of some component.",
   "keywords": [
     "skeleton"
@@ -36,7 +36,7 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "@jala-banyu/theme": "1.1.0",
+    "@jala-banyu/theme": "1.0.1",
     "@jala-banyu/system": "1.0.0"
   },
   "dependencies": {
