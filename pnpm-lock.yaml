@@ -901,6 +901,34 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
 
+  packages/components/spacer:
+    dependencies:
+      '@jala-banyu/react-utils':
+        specifier: 'workspace: *'
+        version: link:../../utilities/react-utils
+      '@jala-banyu/shared-utils':
+        specifier: 'workspace: *'
+        version: link:../../utilities/shared-utils
+      '@jala-banyu/system-rsc':
+        specifier: 'workspace: *'
+        version: link:../../core/system-rsc
+    devDependencies:
+      '@jala-banyu/system':
+        specifier: 'workspace: *'
+        version: link:../../core/system
+      '@jala-banyu/theme':
+        specifier: 'workspace: *'
+        version: link:../../core/theme
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+
   packages/components/spinner:
     dependencies:
       '@jala-banyu/react-utils':
