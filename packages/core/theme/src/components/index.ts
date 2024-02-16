@@ -23,7 +23,7 @@ export * from "./image";
 // export * from "./modal";
 // export * from "./navbar";
 // export * from "./table";
-// export * from "./spacer";
+export * from "./spacer";
 export * from "./divider";
 export * from "./kbd";
 // export * from "./tabs";
