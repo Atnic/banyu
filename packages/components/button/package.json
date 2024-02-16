@@ -1,6 +1,6 @@
 {
   "name": "@jala-banyu/button",
-  "version": "1.0.2",
+  "version": "2.0.1",
   "description": "Buttons allow users to perform actions and choose with a single tap.",
   "keywords": [
     "button",
@@ -39,7 +39,7 @@
     "framer-motion": ">=4.0.0",
     "react": ">=18",
     "react-dom": ">=18",
-    "@jala-banyu/theme": "1.0.1",
+    "@jala-banyu/theme": "1.1.1",
     "@jala-banyu/system": "1.0.0"
   },
   "dependencies": {

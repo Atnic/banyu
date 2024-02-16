@@ -1,6 +1,6 @@
 {
   "name": "@jala-banyu/popover",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A popover is an overlay element positioned relative to a trigger.",
   "keywords": [
     "popover"
@@ -36,8 +36,8 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "framer-motion": ">=0.0.0",
-    "@jala-banyu/theme": "1.0.0",
+    "framer-motion": ">=4.0.0",
+    "@jala-banyu/theme": "1.1.1",
     "@jala-banyu/system": "1.0.0"
   },
   "dependencies": {

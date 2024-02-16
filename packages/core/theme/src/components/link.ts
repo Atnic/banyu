@@ -1,7 +1,7 @@
-import type {VariantProps} from "tailwind-variants"
+import type {VariantProps} from "tailwind-variants";
 
-import {tv} from "../utils/tv"
-import {dataFocusVisibleClasses} from "../utils"
+import {tv} from "../utils/tv";
+import {dataFocusVisibleClasses} from "../utils";
 
 /**
  * Link wrapper **Tailwind Variants** component
@@ -11,24 +11,28 @@ import {dataFocusVisibleClasses} from "../utils"
  */
 const link = tv({
   base: [
-    "relative inline-flex items-center outline-none tap-highlight-transparent",
+    "relative inline-flex items-center outline-none tap-highlight-transparent font-semibold",
     // focus ring
     ...dataFocusVisibleClasses,
   ],
   variants: {
     size: {
-      sm: "text-sm",
-      md: "text-md",
-      lg: "text-lg",
+      sm: "text-md",
+      md: "text-lg",
+      lg: "text-xl",
     },
     color: {
-      dark: "text-neutral-800",
-      gray: "text-neutral-500",
-      white: "text-white",
-      primary: "text-brand",
-      success: "text-success",
-      warning: "text-warning",
-      danger: "text-danger",
+      dark: "text-neutral-800 focus:ring-1 focus:ring-brand-50 px-1 rounded-lg",
+      gray: "text-neutral-500 focus:ring-1 focus:ring-brand-50 px-1 rounded-lg",
+      white: "text-white focus:ring-1 focus:ring-brand-50 px-1 rounded-lg",
+      primary:
+        "text-brand-800 hover:text-brand-900 focus:ring-1 focus:ring-brand-50 px-1 rounded-lg",
+      success:
+        "text-success-700 hover:text-success-800 focus:ring-1 focus:ring-success-500 px-1 rounded-lg",
+      warning:
+        "text-warning-800 hover:text-warning-800 focus:ring-1 focus:ring-warning-300 px-1 rounded-lg",
+      danger:
+        "text-danger-600 hover:text-danger-700 focus:ring-1 focus:ring-danger-400 px-1 rounded-lg",
     },
     underline: {
       none: "no-underline",
@@ -109,10 +113,10 @@ const link = tv({
     isDisabled: false,
     disableAnimation: false,
   },
-})
+});
 
-export const linkAnchorClasses = "flex mx-1 text-current self-center"
+export const linkAnchorClasses = "flex mx-1 text-current self-center";
 
-export type LinkVariantProps = VariantProps<typeof link>
+export type LinkVariantProps = VariantProps<typeof link>;
 
-export {link}
+export {link};
