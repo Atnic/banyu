@@ -427,15 +427,12 @@ importers:
       react-dom:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
+
   packages/components/checkbox:
-  packages/components/chip:
     dependencies:
       '@jala-banyu/react-utils':
         specifier: 'workspace: *'
         version: link:../../utilities/react-utils
-      '@jala-banyu/shared-icons':
-        specifier: 'workspace: *'
-        version: link:../../utilities/shared-icons
       '@jala-banyu/shared-utils':
         specifier: 'workspace: *'
         version: link:../../utilities/shared-utils
@@ -485,6 +482,52 @@ importers:
       '@jala-banyu/user':
         specifier: workspace:*
         version: link:../user
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+
+  packages/components/chip:
+    dependencies:
+      '@jala-banyu/react-utils':
+        specifier: 'workspace: *'
+        version: link:../../utilities/react-utils
+      '@jala-banyu/shared-icons':
+        specifier: 'workspace: *'
+        version: link:../../utilities/shared-icons
+      '@jala-banyu/shared-utils':
+        specifier: 'workspace: *'
+        version: link:../../utilities/shared-utils
+      '@jala-banyu/use-aria-press':
+        specifier: 'workspace: *'
+        version: link:../../hooks/use-aria-press
+      '@react-aria/focus':
+        specifier: ^3.14.3
+        version: 3.16.2(react@18.2.0)
+      '@react-aria/interactions':
+        specifier: ^3.19.1
+        version: 3.21.1(react@18.2.0)
+      '@react-aria/utils':
+        specifier: ^3.21.1
+        version: 3.23.2(react@18.2.0)
+      '@react-types/checkbox':
+        specifier: ^3.5.2
+        version: 3.7.1(react@18.2.0)
+    devDependencies:
+      '@jala-banyu/avatar':
+        specifier: 'workspace: *'
+        version: link:../avatar
+      '@jala-banyu/system':
+        specifier: 'workspace: *'
+        version: link:../../core/system
+      '@jala-banyu/theme':
+        specifier: 'workspace: *'
+        version: link:../../core/theme
       clean-package:
         specifier: 2.2.0
         version: 2.2.0
@@ -5435,6 +5478,7 @@ packages:
       '@swc/helpers': 0.5.6
       react: 18.2.0
     dev: false
+
   /@react-aria/dialog@3.5.12(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-7UJR/h/Y364u6Ltpw0bT51B48FybTuIBacGpEJN5IxZlpxvQt0KQcBDiOWfAa/GQogw4B5hH6agaOO0nJcP49Q==}
     peerDependencies:
