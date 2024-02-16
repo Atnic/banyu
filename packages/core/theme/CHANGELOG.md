@@ -1,10 +1,10 @@
 # @jala-banyu/theme
 
-## 1.1.0
+## 1.0.1
 
-### Minor Changes
+### Patch Changes
 
-- Uncomment Spacer Component
+- Update Button style
 
 ## 1.0.0
 

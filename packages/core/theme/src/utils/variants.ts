@@ -9,13 +9,13 @@ const solid = {
 };
 
 const outline = {
-  primary: "border-brand text-brand",
-  danger: "border-danger text-danger",
+  primary: "border-brand text-brand-800",
+  danger: "border-danger text-danger-800",
   warning: "border-warning text-warning-800",
-  success: "border-success text-success",
+  success: "border-success text-success-800",
   white: "border-white text-white",
   basic: "border-neutral text-neutral-800",
-  transparent: "border-transparent text-brand",
+  transparent: "border-transparent text-brand-800",
 };
 
 const ghost = {
@@ -24,8 +24,8 @@ const ghost = {
   warning: "text-warning-800",
   success: "text-success-800",
   white: "text-white",
-  basic: "text-white",
-  transparent: "text-white",
+  basic: "text-black",
+  transparent: "text-neutral",
 };
 
 const rounded = {
