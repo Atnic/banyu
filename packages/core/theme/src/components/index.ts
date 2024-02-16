@@ -8,7 +8,7 @@ export * from "./spinner";
 export * from "./code";
 export * from "./popover";
 // export * from "./snippet";
-// export * from "./chip";
+export * from "./chip";
 // export * from "./badge";
 // export * from "./checkbox";
 // export * from "./radio";
