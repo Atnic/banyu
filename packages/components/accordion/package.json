@@ -1,6 +1,6 @@
 {
   "name": "@jala-banyu/accordion",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Collapse display a list of high-level options that can expand/collapse to reveal more information.",
   "keywords": [
     "react",
@@ -68,6 +68,7 @@
     "@jala-banyu/system": "workspace:*",
     "@jala-banyu/button": "workspace:*",
     "@jala-banyu/avatar": "workspace:*",
+    "@jala-banyu/chip": "workspace:*",
     "@jala-banyu/input": "workspace:*",
     "@jala-banyu/test-utils": "workspace:*",
     "framer-motion": "^10.16.4",

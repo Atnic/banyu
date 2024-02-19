@@ -262,6 +262,9 @@ importers:
       '@jala-banyu/button':
         specifier: workspace:*
         version: link:../button
+      '@jala-banyu/chip':
+        specifier: workspace:*
+        version: link:../chip
       '@jala-banyu/input':
         specifier: workspace:*
         version: link:../input

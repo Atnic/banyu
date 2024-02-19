@@ -77,11 +77,12 @@ const accordionItem = tv({
       ...dataFocusVisibleClasses,
     ],
     startContent: "pl-4 flex-shrink-0",
-    indicator: "px-4 text-default-400",
-    titleWrapper: "px-4 flex-1 flex flex-col text-start",
-    title: "text-foreground text-lg",
+    indicator: "text-default-400",
+    titleWrapper: "px-4 flex-1 flex flex-col text-start hover:text-brand-800 focus:text-brand-800",
+    title: "text-md data-[open=true]:text-brand-800 font-semibold",
     subtitle: "text-sm text-foreground-500 font-normal",
-    content: "px-4 py-2 bg-neutral-100 border-t border-divider text-md",
+    content: "px-4 py-2 bg-neutral-50 border-t border-divider text-sm",
+    endContent: "flex-shrink-0",
   },
   variants: {
     isCompact: {
@@ -94,7 +95,7 @@ const accordionItem = tv({
       },
     },
     isDisabled: {
-      true: "pointer-events-none group-[.is-splitted]:bg-neutral-300",
+      true: "pointer-events-none group-[.is-splitted]:bg-neutral-300 text-neutral-400",
     },
     hideIndicator: {
       true: {

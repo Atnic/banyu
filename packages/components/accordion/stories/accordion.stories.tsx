@@ -7,6 +7,7 @@ import {accordionItem, button} from "@jala-banyu/theme";
 import {AnchorIcon, MoonIcon, SunIcon} from "@jala-banyu/shared-icons";
 import {Avatar} from "@jala-banyu/avatar";
 import {Input} from "@jala-banyu/input";
+import {Chip} from "@jala-banyu/chip";
 import {Button} from "@jala-banyu/button";
 
 import {Accordion, AccordionProps, AccordionItem} from "../src";
@@ -287,6 +288,59 @@ const WithFormTemplate = (args: AccordionProps) => {
   );
 };
 
+const WithBadgeTemplate = (args: AccordionProps) => (
+  <Accordion {...args}>
+    <AccordionItem
+      key="1"
+      aria-label="Accordion 1"
+      endContent={
+        <Chip color={"base"} radius={"md"} size={"sm"} variant={"outline"}>
+          Badge
+        </Chip>
+      }
+      startContent={
+        <Chip color={"base"} radius={"md"} size={"sm"} variant={"outline"}>
+          Badge
+        </Chip>
+      }
+      subtitle="Press to expand"
+      title="Accordion 1"
+    >
+      {defaultContent}
+    </AccordionItem>
+    <AccordionItem
+      key="2"
+      aria-label="Accordion 2"
+      startContent={
+        <Chip color={"base"} radius={"md"} size={"sm"} variant={"outline"}>
+          Badge
+        </Chip>
+      }
+      subtitle={
+        <span>
+          Press to expand <strong>key 2</strong>
+        </span>
+      }
+      title="Accordion 2"
+    >
+      {defaultContent}
+    </AccordionItem>
+    <AccordionItem
+      key="3"
+      aria-label="Accordion 3"
+      endContent={
+        <Chip color={"base"} radius={"md"} size={"sm"} variant={"outline"}>
+          Badge
+        </Chip>
+      }
+      subtitle="Press to expand"
+      title="Accordion 3"
+    >
+      {defaultContent}
+    </AccordionItem>
+  </Accordion>
+);
+
 export const Default = {
   render: Template,
 
@@ -435,6 +489,13 @@ export const CustomIndicator = {
 export const Controlled = {
   render: ControlledTemplate,
 
+  args: {
+    ...defaultProps,
+  },
+};
+
+export const WithBadge = {
+  render: WithBadgeTemplate,
   args: {
     ...defaultProps,
   },

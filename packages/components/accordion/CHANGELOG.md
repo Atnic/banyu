@@ -1,5 +1,11 @@
 # @jala-banyu/accordion
 
+## 1.0.1
+
+### Patch Changes
+
+- Fix font sizes and color, adds endContent
+
 ## 1.0.0
 
 ### Major Changes
