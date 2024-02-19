@@ -1,5 +1,11 @@
 # @jala-banyu/theme
 
+## 1.2.0
+
+### Minor Changes
+
+- Add Accordion Component
+
 ## 1.1.1
 
 ### Patch Changes
