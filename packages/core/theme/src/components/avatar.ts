@@ -41,7 +41,7 @@ const avatar = tv({
       "data-[loaded=true]:opacity-100",
     ],
     fallback: [...translateCenterClasses, "flex", "items-center", "justify-center"],
-    name: [...translateCenterClasses, "font-normal", "text-center", "text-inherit"],
+    name: [...translateCenterClasses, "font-semibold", "text-center", "text-inherit"],
     icon: [
       ...translateCenterClasses,
       "flex",
@@ -51,40 +51,39 @@ const avatar = tv({
       "w-full",
       "h-full",
     ],
-
   },
   variants: {
-    status:{
-      none:{
-        base: ""
+    status: {
+      none: {
+        base: "",
       },
-      offline:{
-        base: "bg-slate-400 ring ring-2 ring-white"
+      offline: {
+        base: "bg-slate-400 ring ring-2 ring-white",
       },
-      online:{
-        base: "bg-teal-500 ring ring-2 ring-white"
+      online: {
+        base: "bg-teal-500 ring ring-2 ring-white",
       },
-      away:{
-        base: "bg-yellow-500 ring ring-2 ring-white"
+      away: {
+        base: "bg-yellow-500 ring ring-2 ring-white",
       },
-      dnd:{
-        base: "bg-red-500 ring ring-2 ring-white"
+      dnd: {
+        base: "bg-red-500 ring ring-2 ring-white",
       },
-      custom:{
-        base: ""
+      custom: {
+        base: "",
       },
     },
-    statusPlacement:{
-      "top-right":{
-        base: "absolute top-0 end-0 block h-1.5 w-1.5 rounded-full"
+    statusPlacement: {
+      "top-right": {
+        base: "absolute top-0 end-0 block h-1.5 w-1.5 rounded-full",
       },
-      "bottom-right":{
-        base: "absolute bottom-0 end-0 block h-1.5 w-1.5 rounded-full"
+      "bottom-right": {
+        base: "absolute bottom-0 end-0 block h-1.5 w-1.5 rounded-full",
       },
     },
     variant: {
-      solid:{},
-      soft:{}
+      solid: {},
+      soft: {},
     },
     size: {
       sm: {
@@ -155,7 +154,7 @@ const avatar = tv({
     isInGridGroup: {
       true: {
         // base: "m-0 data-[hover=true]:translate-x-0",
-        base: "m-0"
+        base: "m-0",
       },
     },
   },
@@ -276,7 +275,7 @@ const avatar = tv({
       color: "gray",
       variant: "solid",
       class: {
-      base: "bg-neutral-500 text-white",
+        base: "bg-neutral-500 text-white",
       },
     },
   ],
