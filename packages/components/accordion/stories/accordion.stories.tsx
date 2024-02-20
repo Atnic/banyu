@@ -14,6 +14,12 @@ import {Accordion, AccordionProps, AccordionItem} from "../src";
 
 export default {
   title: "Components/Accordion",
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=429%3A127415&mode=dev",
+    },
+  },
   component: Accordion,
   argTypes: {
     isDisabled: {
@@ -294,12 +300,12 @@ const WithBadgeTemplate = (args: AccordionProps) => (
       key="1"
       aria-label="Accordion 1"
       endContent={
-        <Chip color={"base"} radius={"md"} size={"sm"} variant={"outline"}>
+        <Chip color={"basic"} radius={"md"} size={"sm"} variant={"outline"}>
           Badge
         </Chip>
       }
       startContent={
-        <Chip color={"base"} radius={"md"} size={"sm"} variant={"outline"}>
+        <Chip color={"basic"} radius={"md"} size={"sm"} variant={"outline"}>
           Badge
         </Chip>
       }
@@ -312,7 +318,7 @@ const WithBadgeTemplate = (args: AccordionProps) => (
       key="2"
       aria-label="Accordion 2"
       startContent={
-        <Chip color={"base"} radius={"md"} size={"sm"} variant={"outline"}>
+        <Chip color={"basic"} radius={"md"} size={"sm"} variant={"outline"}>
           Badge
         </Chip>
       }
@@ -329,7 +335,7 @@ const WithBadgeTemplate = (args: AccordionProps) => (
       key="3"
       aria-label="Accordion 3"
       endContent={
-        <Chip color={"base"} radius={"md"} size={"sm"} variant={"outline"}>
+        <Chip color={"basic"} radius={"md"} size={"sm"} variant={"outline"}>
           Badge
         </Chip>
       }
