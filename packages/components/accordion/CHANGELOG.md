@@ -1,5 +1,12 @@
 # @jala-banyu/accordion
 
+## 1.0.2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/divider@3.1.0
+
 ## 1.0.1
 
 ### Patch Changes

@@ -1,33 +1,38 @@
-import type {DividerVariantProps} from "@jala-banyu/theme";
+import type {DividerSlots, DividerVariantProps, SlotsToClasses} from "@jala-banyu/theme";
 import type {HTMLBanyuProps, PropGetter} from "@jala-banyu/system-rsc";
 
 import {divider} from "@jala-banyu/theme";
 import {Ref, useCallback, useMemo} from "react";
 
-import {SeparatorProps as AriaSeparatorProps, useSeparator} from "./use-separator";
+import {SeparatorProps as AriaSeparatorProps} from "./use-separator";
 
 interface Props extends HTMLBanyuProps<"hr"> {
   /**
    * Ref to the DOM node.
    */
   ref?: Ref<HTMLElement> | undefined;
+  /**
+   * The label to be announced to screen readers.
+   */
+  label?: string;
+  /**
+   * The position of the label in relation to the divider.
+   */
+  labelPosition?: "start" | "middle" | "end";
+  /**
+   * Classname or List of classes to change the classNames of the element.
+   */
+  classNames?: SlotsToClasses<DividerSlots>;
 }
 
 export type UseDividerProps = Props & DividerVariantProps & Omit<AriaSeparatorProps, "elementType">;
 
 export function useDivider(props: UseDividerProps) {
-  const {as, className, orientation, ...otherProps} = props;
+  const {label, labelPosition, className, classNames, orientation, ...otherProps} = props;
 
-  let Component = as || "hr";
+  let Component = "div";
 
-  if (Component === "hr" && orientation === "vertical") {
-    Component = "div";
-  }
-
-  const {separatorProps} = useSeparator({
-    elementType: typeof Component === "string" ? Component : "hr",
-    orientation,
-  });
+  labelPosition === undefined ? "middle" : labelPosition;
 
   const styles = useMemo(
     () =>
@@ -38,19 +43,52 @@ export function useDivider(props: UseDividerProps) {
     [orientation, className],
   );
 
-  const getDividerProps: PropGetter = useCallback(
-    (props = {}) => ({
-      className: styles,
-      role: "separator",
-      "data-orientation": orientation,
-      ...separatorProps,
-      ...otherProps,
-      ...props,
-    }),
-    [styles, orientation, separatorProps, otherProps],
+  const getWrapperProps: PropGetter = useCallback(
+    (props = {}) => {
+      return {
+        className: styles.base({class: classNames?.base}),
+        role: "separator",
+        "data-orientation": orientation,
+        ...otherProps,
+        ...props,
+      };
+    },
+    [styles, orientation, otherProps],
   );
 
-  return {Component, getDividerProps};
+  const getDividerProps: PropGetter = useCallback(
+    (props = {}) => {
+      return {
+        className: styles.divider({class: classNames?.divider}),
+        role: "separator",
+        "data-orientation": orientation,
+        ...otherProps,
+        ...props,
+      };
+    },
+    [styles, orientation, otherProps],
+  );
+
+  const getLabelProps: PropGetter = useCallback(
+    (props = {}) => {
+      return {
+        "data-slot": "label",
+        className: styles.label({class: classNames?.label}),
+        ...props,
+      };
+    },
+    [styles, classNames],
+  );
+
+  return {
+    Component,
+    label,
+    labelPosition,
+    classNames,
+    getLabelProps,
+    getWrapperProps,
+    getDividerProps,
+  };
 }
 
 export type UseDividerReturn = ReturnType<typeof useDivider>;
