@@ -1,5 +1,11 @@
 # @jala-banyu/divider
 
+## 3.1.0
+
+### Minor Changes
+
+- Adds label component
+
 ## 3.0.0
 
 ### Patch Changes

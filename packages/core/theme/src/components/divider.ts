@@ -12,18 +12,39 @@ import {tv} from "../utils/tv";
  * <span className={styles} />
  */
 const divider = tv({
-  base: "shrink-0 bg-divider border-none",
+  base: "flex data-[orientation=vertical]:flex-col h-full items-center",
+  slots: {
+    label: "flex-shrink text-sm text-neutral-800",
+    divider: "flex-grow border-divider",
+  },
   variants: {
     orientation: {
-      horizontal: "w-full h-divider",
-      vertical: "h-full w-divider",
+      horizontal: "",
+      vertical: "",
     },
   },
   defaultVariants: {
     orientation: "horizontal",
   },
+  compoundVariants: [
+    {
+      orientation: "vertical",
+      class: {
+        label: "my-2",
+        divider: "border-l",
+      },
+    },
+    {
+      orientation: "horizontal",
+      class: {
+        label: "mx-2",
+        divider: "border-t",
+      },
+    },
+  ],
 });
 
 export type DividerVariantProps = VariantProps<typeof divider>;
+export type DividerSlots = keyof ReturnType<typeof divider>;
 
 export {divider};

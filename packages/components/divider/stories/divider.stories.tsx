@@ -1,17 +1,24 @@
 import React from "react";
+// @ts-ignore
 import {Meta} from "@storybook/react";
 
-import {Divider} from "../src";
+import {Divider, DividerProps} from "../src";
 
 export default {
   title: "Components/Divider",
   component: Divider,
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=1236%3A29324&mode=dev",
+    },
+  },
   argTypes: {
-    orientation: {
+    labelPosition: {
       control: {
         type: "select",
       },
-      options: ["horizontal", "vertical"],
+      options: ["start", "middle", "end"],
     },
   },
   decorators: [
@@ -23,36 +30,66 @@ export default {
   ],
 } as Meta<typeof Divider>;
 
-// const defaultProps = {
-//   ...divider.defaultVariants,
-// };
+const defaultProps = {};
 
-// const Template = (args: DividerProps) => (
-//   <div className="max-w-md">
-//     <div className="space-y-1">
-//       <h4 className="text-base font-md">Banyu Components</h4>
-//       <p className="text-sm text-default-400">Beautiful, fast and modern React UI library.</p>
-//     </div>
-//     <Divider className="my-4" />
-//     <div className="flex h-5 items-center space-x-4 text-sm">
-//       <div>Blog</div>
-//       <Divider {...args} orientation="vertical" />
-//       <div>Docs</div>
-//       <Divider {...args} orientation="vertical" />
-//       <div>Source</div>
-//     </div>
-//   </div>
-// );
+const DefaultTemplate = (args: DividerProps) => (
+  <div className="w-1/2">
+    <div className="rounded-lg shadow-md bg-neutral-50 w-full h-24 mb-4" />
+    <Divider {...args} />
+    <div className="rounded-lg shadow-md bg-neutral-50 w-full h-24 mt-4" />
+  </div>
+);
 
-// export const Default = {
-//   render: Template,
-// parameters: {
-//   design: {
-//     type: "figma",
-//         url: "",
-//   },
-// },
-//   args: {
-//     ...defaultProps,
-//   },
-// };
+const WithLabelTemplate = (args: DividerProps) => (
+  <div className="w-1/2">
+    <div className="rounded-lg shadow-md bg-neutral-50 w-full h-24 mb-4" />
+    <Divider {...args} label={"Text"} />
+    <div className="rounded-lg shadow-md bg-neutral-50 w-full h-24 mt-4" />
+  </div>
+);
+
+const VerticalTemplate = (args: DividerProps) => (
+  <div className="flex w-1/2 gap-4">
+    <div className="rounded-lg shadow-md bg-neutral-50 w-full h-24" />
+    <Divider {...args} orientation={"vertical"} />
+    <div className="rounded-lg shadow-md bg-neutral-50 w-full h-24" />
+  </div>
+);
+
+const VerticalWithLabelTemplate = (args: DividerProps) => (
+  <div className="flex w-1/2 gap-4">
+    <div className="rounded-lg shadow-md bg-neutral-50 w-full h-24" />
+    <Divider {...args} label={"Text"} orientation={"vertical"} />
+    <div className="rounded-lg shadow-md bg-neutral-50 w-full h-24" />
+  </div>
+);
+
+export const Default = {
+  render: DefaultTemplate,
+  args: {
+    ...defaultProps,
+  },
+};
+
+export const WithLabel = {
+  render: WithLabelTemplate,
+  args: {
+    ...defaultProps,
+    labelPosition: "middle",
+  },
+};
+
+export const Vertical = {
+  render: VerticalTemplate,
+  args: {
+    ...defaultProps,
+  },
+};
+
+export const VerticalWithLabel = {
+  render: VerticalWithLabelTemplate,
+  args: {
+    ...defaultProps,
+    labelPosition: "middle",
+  },
+};
