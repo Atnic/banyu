@@ -8,6 +8,12 @@ import {Checkbox, CheckboxIconProps, CheckboxProps} from "../src";
 
 export default {
   title: "Components/Checkbox",
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=654%3A92089&mode=dev",
+    },
+  },
   component: Checkbox,
   argTypes: {
     variant: {
