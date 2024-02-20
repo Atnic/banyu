@@ -1,5 +1,11 @@
 # @jala-banyu/theme
 
+## 1.3.0
+
+### Minor Changes
+
+- Add Tabs Component
+
 ## 1.2.0
 
 ### Minor Changes

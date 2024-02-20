@@ -5,7 +5,7 @@
 ### Patch Changes
 
 - Updated dependencies []:
-  - @jala-banyu/divider@3.1.0
+  - @jala-banyu/divider@4.0.0
 - Add figma design to storybook
 
 ## 1.0.1
