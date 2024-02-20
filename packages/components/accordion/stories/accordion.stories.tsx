@@ -15,6 +15,12 @@ import {Accordion, AccordionProps, AccordionItem} from "../src";
 export default {
   title: "Components/Accordion",
   component: Accordion,
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=429%3A127415&mode=dev",
+    },
+  },
   argTypes: {
     isDisabled: {
       control: {

@@ -1,6 +1,6 @@
 {
   "name": "@jala-banyu/chip",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Chip is a small block of essential information that represent an input, attribute, or action.",
   "keywords": [
     "chip"

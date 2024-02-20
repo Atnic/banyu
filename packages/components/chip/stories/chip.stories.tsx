@@ -10,6 +10,12 @@ import {Chip, ChipProps} from "../src";
 export default {
   title: "Components/Chip",
   component: Chip,
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=263%3A60262&mode=dev",
+    },
+  },
   argTypes: {
     variant: {
       control: {

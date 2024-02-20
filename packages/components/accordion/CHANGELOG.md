@@ -1,5 +1,11 @@
 # @jala-banyu/accordion
 
+## 1.0.2
+
+### Patch Changes
+
+- Add figma design to storybook
+
 ## 1.0.1
 
 ### Patch Changes
