@@ -1,7 +1,7 @@
-import type {VariantProps} from "tailwind-variants"
+import type {VariantProps} from "tailwind-variants";
 
-import {dataFocusVisibleClasses} from "../utils"
-import {tv} from "../utils/tv"
+import {dataFocusVisibleClasses} from "../utils";
+import {tv} from "../utils/tv";
 
 /**
  * BreadcrumbsItem wrapper **Tailwind Variants** component
@@ -109,28 +109,28 @@ const breadcrumbItem = tv({
       isCurrent: true,
       color: "primary",
       class: {
-        item: "text-brand",
+        item: "text-neutral",
       },
     },
     {
       isCurrent: true,
       color: "success",
       class: {
-        item: "text-success",
+        item: "text-neutral",
       },
     },
     {
       isCurrent: true,
       color: "warning",
       class: {
-        item: "text-warning",
+        item: "text-neutral",
       },
     },
     {
       isCurrent: true,
       color: "danger",
       class: {
-        item: "text-danger",
+        item: "text-neutral",
       },
     },
     // !isCurrent && underline
@@ -145,28 +145,28 @@ const breadcrumbItem = tv({
       isCurrent: false,
       color: "primary",
       class: {
-        item: "hover:text-white hover:bg-brand-500",
+        item: "hover:text-white text-brand hover:bg-brand-500",
       },
     },
     {
       isCurrent: false,
       color: "success",
       class: {
-        item: "hover:text-white hover:bg-success-500",
+        item: "hover:text-white text-success hover:bg-success-500",
       },
     },
     {
       isCurrent: false,
       color: "warning",
       class: {
-        item: "hover:text-white hover:bg-warning-500",
+        item: "hover:text-white text-warning hover:bg-warning-500",
       },
     },
     {
       isCurrent: false,
       color: "danger",
       class: {
-        item: "hover:text-white hover:bg-danger-500",
+        item: "hover:text-white text-danger hover:bg-danger-500",
       },
     },
     // !isCurrent && underline
@@ -183,7 +183,7 @@ const breadcrumbItem = tv({
       class: "underline-offset-4",
     },
   ],
-})
+});
 
 /**
  * Breadcrumbs wrapper **Tailwind Variants** component
@@ -196,8 +196,8 @@ const breadcrumbs = tv({
   slots: {
     base: "",
     list: "flex flex-wrap list-none",
-    ellipsis: "text-md",
-    separator: "text-default-400 px-1",
+    ellipsis: "text-neutral-800",
+    separator: "text-neutral-800 px-1",
   },
   variants: {
     size: {
@@ -268,11 +268,11 @@ const breadcrumbs = tv({
       },
     },
   ],
-})
+});
 
-export type BreadcrumbsVariantProps = VariantProps<typeof breadcrumbs>
-export type BreadcrumbsSlots = keyof ReturnType<typeof breadcrumbs>
-export type BreadcrumbItemVariantProps = VariantProps<typeof breadcrumbItem>
-export type BreadcrumbItemSlots = keyof ReturnType<typeof breadcrumbItem>
+export type BreadcrumbsVariantProps = VariantProps<typeof breadcrumbs>;
+export type BreadcrumbsSlots = keyof ReturnType<typeof breadcrumbs>;
+export type BreadcrumbItemVariantProps = VariantProps<typeof breadcrumbItem>;
+export type BreadcrumbItemSlots = keyof ReturnType<typeof breadcrumbItem>;
 
-export {breadcrumbs, breadcrumbItem}
+export {breadcrumbs, breadcrumbItem};
