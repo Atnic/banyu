@@ -1,6 +1,6 @@
 import {cloneElement, useMemo} from "react";
 import {forwardRef} from "@jala-banyu/system";
-import {EllipsisIcon} from "@jala-banyu/shared-icons";
+import {JalaEllipsisIcon} from "@jala-banyu/shared-icons";
 import {warn} from "@jala-banyu/shared-utils";
 import {chain} from "@react-aria/utils";
 
@@ -70,7 +70,7 @@ const Breadcrumbs = forwardRef<"div", BreadcrumbsProps>((props, ref) => {
 
     const ellipsisIcon = (
       <>
-        <EllipsisIcon {...getEllipsisProps()} />
+        <JalaEllipsisIcon {...getEllipsisProps()} />
       </>
     );
     const collapsedItem = cloneElement(itemsInEllipsis[0], {
