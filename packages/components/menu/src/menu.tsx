@@ -12,11 +12,9 @@ function Menu<T extends object>(props: Props<T>, ref: ForwardedRef<HTMLUListElem
     Component,
     state,
     closeOnSelect,
-    color,
     disableAnimation,
     hideSelectedIcon,
     hideEmptyContent,
-    variant,
     onClose,
     onAction,
     topContent,
@@ -37,11 +35,9 @@ function Menu<T extends object>(props: Props<T>, ref: ForwardedRef<HTMLUListElem
       {[...state.collection].map((item) => {
         const itemProps = {
           closeOnSelect,
-          color,
           disableAnimation,
           item,
           state,
-          variant,
           onClose,
           onAction,
           hideSelectedIcon,

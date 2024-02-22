@@ -186,7 +186,7 @@ describe("Menu", () => {
     });
   });
 
-  it("should show checkmarks if selectionMode is single and has a selected item", () => {
+  it("should show brand colored text on item if selectionMode is single and has a selected item", () => {
     const wrapper = render(
       <Menu aria-label="Actions" selectedKeys={["new"]} selectionMode="single">
         <MenuItem key="new">New file</MenuItem>
@@ -207,14 +207,10 @@ describe("Menu", () => {
     expect(menuItems[2].getAttribute("aria-checked")).toBe("false");
     expect(menuItems[3].getAttribute("aria-checked")).toBe("false");
 
-    let svg = menuItems[0].querySelector("svg");
-
-    expect(svg).toBeTruthy();
-
-    expect(svg?.getAttribute("data-selected")).toBe("true");
+    expect(menuItems[0].getAttribute("class")).toContain("text-brand");
   });
 
-  it("should show multiple checkmarks if selectionMode is multiple and has selected items", () => {
+  it("should show multiple brand colored text on item if selectionMode is multiple and has selected items", () => {
     const wrapper = render(
       <Menu aria-label="Actions" selectedKeys={["new", "copy"]} selectionMode="multiple">
         <MenuItem key="new">New file</MenuItem>
@@ -235,17 +231,8 @@ describe("Menu", () => {
     expect(menuItems[2].getAttribute("aria-checked")).toBe("false");
     expect(menuItems[3].getAttribute("aria-checked")).toBe("false");
 
-    let checkmark1 = menuItems[0].querySelector("svg");
-
-    expect(checkmark1).toBeTruthy();
-
-    expect(checkmark1?.getAttribute("data-selected")).toBe("true");
-
-    let checkmark2 = menuItems[1].querySelector("svg");
-
-    expect(checkmark2).toBeTruthy();
-
-    expect(checkmark2?.getAttribute("data-selected")).toBe("true");
+    expect(menuItems[0].getAttribute("class")).toContain("text-brand");
+    expect(menuItems[1].getAttribute("class")).toContain("text-brand");
   });
 
   it("should not show checkmarks if selectionMode not defined", () => {

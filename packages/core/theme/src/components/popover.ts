@@ -73,8 +73,8 @@ const popover = tv({
     content: [
       "z-10",
       "p-[6px]",
-      // "px-2.5",
-      // "py-1",
+      "px-2.5",
+      "py-1",
       "w-full",
       "inline-flex",
       "flex-col",
@@ -97,8 +97,8 @@ const popover = tv({
     },
     color: {
       default: {
-        base: "before:bg-neutral-900 before:shadow-sm",
-        content: "bg-neutral-800 text-white",
+        base: "before:bg-content1 before:shadow-sm",
+        content: "bg-content1",
       },
       primary: {
         base: "before:bg-primary",

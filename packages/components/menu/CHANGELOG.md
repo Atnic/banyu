@@ -1,5 +1,11 @@
 # @jala-banyu/menu
 
+## 4.2.0
+
+### Minor Changes
+
+- Adjust for select component
+
 ## 4.0.0
 
 ### Patch Changes

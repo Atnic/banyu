@@ -1,6 +1,6 @@
 {
   "name": "@jala-banyu/menu",
-  "version": "4.0.0",
+  "version": "4.2.0",
   "description": "A menu displays a list of options and allows a user to select one or more of them.",
   "keywords": [
     "menu"
