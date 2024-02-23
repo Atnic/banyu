@@ -1,15 +1,15 @@
-# @jala-banyu/accordion
+# @nextui-org/use-clipboard
 
-Accordion display a list of high-level options that can expand/collapse to reveal more information.
+A Quick description of the component
 
-Please refer to the [documentation](https://nextui.org//docs/components/accordion) for more information.
+> This is an internal utility, not intended for public usage.
 
 ## Installation
 
 ```sh
-yarn add @jala-banyu/accordion
+yarn add @nextui-org/use-clipboard
 # or
-npm i @jala-banyu/accordion
+npm i @nextui-org/use-clipboard
 ```
 
 ## Contribution
