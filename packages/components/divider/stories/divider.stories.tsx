@@ -35,7 +35,7 @@ const defaultProps = {};
 const DefaultTemplate = (args: DividerProps) => (
   <div className="w-1/2">
     <div className="rounded-lg shadow-md bg-neutral-50 w-full h-24 mb-4" />
-    <Divider {...args} />
+    <Divider {...args} className={"border-4"} />
     <div className="rounded-lg shadow-md bg-neutral-50 w-full h-24 mt-4" />
   </div>
 );

@@ -19,7 +19,6 @@ import {
   useMultiSelectState,
 } from "@jala-banyu/use-aria-multiselect";
 import {SpinnerProps} from "@jala-banyu/spinner";
-import {CollectionChildren} from "@react-types/shared";
 
 export type SelectedItemProps<T = object> = {
   /** A unique key for the item. */
@@ -209,7 +208,7 @@ export function useSelect<T extends object>(originalProps: UseSelectProps<T>) {
     isOpen,
     selectionMode,
     disallowEmptySelection,
-    children: children as CollectionChildren<T>,
+    children,
     isRequired: originalProps?.isRequired,
     isDisabled: originalProps?.isDisabled,
     defaultOpen,
@@ -465,6 +464,7 @@ export function useSelect<T extends object>(originalProps: UseSelectProps<T>) {
           }),
         },
         ...mergeProps(slotsProps.popoverProps, props),
+        placement: "bottom-end",
         offset:
           state.selectedItems && state.selectedItems.length > 0
             ? // forces the popover to update its position when the selected items change

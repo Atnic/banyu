@@ -11,9 +11,7 @@ describe("Listbox", () => {
         <ListboxItem key="new">New file</ListboxItem>
         <ListboxItem key="copy">Copy link</ListboxItem>
         <ListboxItem key="edit">Edit file</ListboxItem>
-        <ListboxItem key="delete" color="danger">
-          Delete file
-        </ListboxItem>
+        <ListboxItem key="delete">Delete file</ListboxItem>
       </Listbox>,
     );
 
@@ -28,9 +26,7 @@ describe("Listbox", () => {
         <ListboxItem key="new">New file</ListboxItem>
         <ListboxItem key="copy">Copy link</ListboxItem>
         <ListboxItem key="edit">Edit file</ListboxItem>
-        <ListboxItem key="delete" color="danger">
-          Delete file
-        </ListboxItem>
+        <ListboxItem key="delete">Delete file</ListboxItem>
       </Listbox>,
     );
     expect(ref.current).not.toBeNull();
@@ -42,9 +38,7 @@ describe("Listbox", () => {
         <ListboxItem key="new">New file</ListboxItem>
         <ListboxItem key="copy">Copy link</ListboxItem>
         <ListboxItem key="edit">Edit file</ListboxItem>
-        <ListboxItem key="delete" color="danger">
-          Delete file
-        </ListboxItem>
+        <ListboxItem key="delete">Delete file</ListboxItem>
       </Listbox>,
     );
 
@@ -77,9 +71,7 @@ describe("Listbox", () => {
         </ListboxSection>
         <ListboxSection title="Danger Zone">
           <ListboxItem key="edit">Edit file</ListboxItem>
-          <ListboxItem key="delete" color="danger">
-            Delete file
-          </ListboxItem>
+          <ListboxItem key="delete">Delete file</ListboxItem>
         </ListboxSection>
       </Listbox>,
     );
@@ -131,9 +123,7 @@ describe("Listbox", () => {
         <ListboxItem key="new">New file</ListboxItem>
         <ListboxItem key="copy">Copy link</ListboxItem>
         <ListboxItem key="edit">Edit file</ListboxItem>
-        <ListboxItem key="delete" color="danger">
-          Delete file
-        </ListboxItem>
+        <ListboxItem key="delete">Delete file</ListboxItem>
       </Listbox>,
     );
 
@@ -165,9 +155,7 @@ describe("Listbox", () => {
         <ListboxItem key="new">New file</ListboxItem>
         <ListboxItem key="copy">Copy link</ListboxItem>
         <ListboxItem key="edit">Edit file</ListboxItem>
-        <ListboxItem key="delete" color="danger">
-          Delete file
-        </ListboxItem>
+        <ListboxItem key="delete">Delete file</ListboxItem>
       </Listbox>,
     );
 
@@ -186,15 +174,13 @@ describe("Listbox", () => {
     });
   });
 
-  it("should show checkmarks if selectionMode is single and has a selected item", () => {
+  it("should show brand colored text on listbox item if selectionMode is single and has a selected item", () => {
     const wrapper = render(
       <Listbox aria-label="Actions" selectedKeys={["new"]} selectionMode="single">
         <ListboxItem key="new">New file</ListboxItem>
         <ListboxItem key="copy">Copy link</ListboxItem>
         <ListboxItem key="edit">Edit file</ListboxItem>
-        <ListboxItem key="delete" color="danger">
-          Delete file
-        </ListboxItem>
+        <ListboxItem key="delete">Delete file</ListboxItem>
       </Listbox>,
     );
 
@@ -207,11 +193,7 @@ describe("Listbox", () => {
     expect(listboxItems[2].getAttribute("aria-selected")).toBe("false");
     expect(listboxItems[3].getAttribute("aria-selected")).toBe("false");
 
-    let svg = listboxItems[0].querySelector("svg");
-
-    expect(svg).toBeTruthy();
-
-    expect(svg?.getAttribute("data-selected")).toBe("true");
+    expect(listboxItems[0].getAttribute("class")).toContain("text-brand");
   });
 
   it("should show multiple checkmarks if selectionMode is multiple and has selected items", () => {
@@ -220,9 +202,7 @@ describe("Listbox", () => {
         <ListboxItem key="new">New file</ListboxItem>
         <ListboxItem key="copy">Copy link</ListboxItem>
         <ListboxItem key="edit">Edit file</ListboxItem>
-        <ListboxItem key="delete" color="danger">
-          Delete file
-        </ListboxItem>
+        <ListboxItem key="delete">Delete file</ListboxItem>
       </Listbox>,
     );
 
@@ -235,17 +215,8 @@ describe("Listbox", () => {
     expect(listboxItems[2].getAttribute("aria-selected")).toBe("false");
     expect(listboxItems[3].getAttribute("aria-selected")).toBe("false");
 
-    let checkmark1 = listboxItems[0].querySelector("svg");
-
-    expect(checkmark1).toBeTruthy();
-
-    expect(checkmark1?.getAttribute("data-selected")).toBe("true");
-
-    let checkmark2 = listboxItems[1].querySelector("svg");
-
-    expect(checkmark2).toBeTruthy();
-
-    expect(checkmark2?.getAttribute("data-selected")).toBe("true");
+    expect(listboxItems[0].getAttribute("class")).toContain("text-brand");
+    expect(listboxItems[1].getAttribute("class")).toContain("text-brand");
   });
 
   it("should not show checkmarks if selectionMode not defined", () => {
@@ -254,9 +225,7 @@ describe("Listbox", () => {
         <ListboxItem key="new">New file</ListboxItem>
         <ListboxItem key="copy">Copy link</ListboxItem>
         <ListboxItem key="edit">Edit file</ListboxItem>
-        <ListboxItem key="delete" color="danger">
-          Delete file
-        </ListboxItem>
+        <ListboxItem key="delete">Delete file</ListboxItem>
       </Listbox>,
     );
 

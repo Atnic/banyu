@@ -5,7 +5,7 @@ import {tv} from "../utils/tv";
 
 const select = tv({
   slots: {
-    base: ["group inline-flex flex-col relative w-full min-w-80"],
+    base: ["group inline-flex flex-col relative w-full"],
     label: [
       "block",
       "absolute",
@@ -43,7 +43,7 @@ const select = tv({
     ],
     listboxWrapper: "scroll-py-6 max-h-64 w-full overflow-y-auto",
     listbox: "rounded-none",
-    popoverContent: "w-full p-0 overflow-hidden",
+    popoverContent: "w-full p-0 overflow-hidden min-w-80",
     helperWrapper: "p-1 flex relative flex-col gap-1.5",
     description: "z-0 text-xs text-neutral-400",
     errorMessage: "text-xs text-danger",
@@ -64,6 +64,14 @@ const select = tv({
           "border-neutral-300",
           "data-[hover=true]:border-neutral-400",
           "data-[focus=true]:border-brand",
+        ],
+      },
+      dropdown: {
+        trigger: [
+          "border-[1px]",
+          "border-neutral-200",
+          "data-[hover=true]:border-brand/60",
+          "group-data-[focus=true]:bg-neutral-100",
         ],
       },
     },
@@ -202,7 +210,7 @@ const select = tv({
     disableSelectorIconRotation: false,
   },
   compoundVariants: [
-    // flat & color
+    // ghost & color
     {
       variant: "ghost",
       class: {
@@ -222,6 +230,27 @@ const select = tv({
       variant: "default",
       class: {
         trigger: ["data-[focus=true]:ring-4", "data-[focus=true]:ring-brand/60"],
+      },
+    },
+    // dropdown & color
+    {
+      variant: "dropdown",
+      class: {
+        base: "max-w-fit",
+        innerWrapper: "w-fit min-w-12",
+        trigger: [
+          "w-fit",
+          "px-1",
+          "shadow-none",
+          "border-neutral-200",
+          "data-[hover=true]:border-brand",
+          "data-[focus=true]:border-brand",
+          "data-[open=true]:border-brand",
+        ],
+        selectorIcon: "right-1",
+        value: "min-w-fit font-semibold",
+        label: "min-w-fit font-semibold",
+        popoverContent: "w-fit min-w-0",
       },
     },
     // labelPlacement=outside & default
@@ -488,6 +517,7 @@ const select = tv({
     },
     // text truncate labelPlacement=[inside,outside]
     {
+      variant: ["default", "ghost"],
       labelPlacement: ["inside", "outside"],
       class: {
         label: ["pe-2", "max-w-full", "text-ellipsis", "overflow-hidden"],
@@ -496,7 +526,7 @@ const select = tv({
     // isDisabled & ghost
     {
       isDisabled: true,
-      variant: "ghost",
+      variant: ["ghost", "dropdown"],
       class: {
         trigger: "bg-neutral-300",
       },

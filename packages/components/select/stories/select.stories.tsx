@@ -15,6 +15,7 @@ import {
   Animal,
   User,
 } from "@jala-banyu/stories-utils";
+import {JalaEsp, JalaIdn, JalaUsa, JalaVie} from "@jala-banyu/icons";
 
 import {Select, SelectItem, SelectProps, SelectSection} from "../src";
 
@@ -26,7 +27,7 @@ export default {
       control: {
         type: "select",
       },
-      options: ["default", "ghost"],
+      options: ["default", "ghost", "dropdown"],
     },
     radius: {
       control: {
@@ -76,6 +77,33 @@ const Template = ({variant, ...args}: SelectProps) => (
     {items}
   </Select>
 );
+
+const DropDownTemplate = ({variant, ...args}: SelectProps) => {
+  const regions = [
+    {key: "idn", label: "IDN", icon: <JalaIdn className={"text-2xl"} />},
+    {key: "usa", label: "USA", icon: <JalaUsa className={"text-2xl"} />},
+    {key: "esp", label: "ESP", icon: <JalaEsp className={"text-2xl"} />},
+    {key: "vie", label: "VIE", icon: <JalaVie className={"text-2xl"} />},
+  ];
+
+  return (
+    <Select
+      renderValue={(items) => {
+        return items.map((item) => item.props?.startContent);
+      }}
+      selectionMode={"single"}
+      variant={variant}
+      {...args}
+    >
+      {regions.map((item) => (
+        <SelectItem key={item.key} startContent={item.icon} value={item.key}>
+          {item.label}
+        </SelectItem>
+      ))}
+    </Select>
+  );
+};
+
 const ItemStartContentTemplate = ({variant, ...args}: SelectProps<Animal>) => {
   const [startContent, setStartContent] = React.useState<ReactNode | null>(null);
 
@@ -481,5 +509,15 @@ export const WithAriaLabel = {
     ...defaultProps,
     label: "Select an animal 🐹",
     "aria-label": "Select an animal",
+  },
+};
+
+export const DropdownSelect = {
+  render: DropDownTemplate,
+
+  args: {
+    ...defaultProps,
+    variant: "dropdown",
+    defaultSelectedKeys: ["idn"],
   },
 };
