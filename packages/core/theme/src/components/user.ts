@@ -1,5 +1,5 @@
-import {tv} from "../utils/tv"
-import {dataFocusVisibleClasses} from "../utils"
+import {tv} from "../utils/tv";
+import {dataFocusVisibleClasses} from "../utils";
 
 /**
  * User wrapper **Tailwind Variants** component
@@ -23,11 +23,11 @@ const user = tv({
       ...dataFocusVisibleClasses,
     ],
     wrapper: "inline-flex flex-col items-start",
-    name: "text-sm text-inherit",
-    description: "text-xs text-foreground-400",
+    name: "text-xs text-black font-semibold",
+    description: "text-xs text-neutral-500 font-normal",
   },
-})
+});
 
-export type UserSlots = keyof ReturnType<typeof user>
+export type UserSlots = keyof ReturnType<typeof user>;
 
-export {user}
+export {user};
