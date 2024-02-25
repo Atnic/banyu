@@ -1,5 +1,11 @@
 # @jala-banyu/spinner
 
+## 4.1.0
+
+### Minor Changes
+
+- Apply Banyu Design System to Spinner
+
 ## 4.0.0
 
 ### Patch Changes

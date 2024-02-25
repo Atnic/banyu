@@ -17,4 +17,10 @@ export default {
   ".tap-highlight-transparent": {
     "-webkit-tap-highlight-color": "transparent",
   },
+  ".progress-spinner": {
+    "stroke-dasharray": "400, 400",
+    transition: "stroke-dashoffset 0.35s",
+    transform: "rotate(-90deg)",
+    "transform-origin": "50% 50%",
+  },
 };

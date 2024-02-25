@@ -1,6 +1,6 @@
-import type {VariantProps} from "tailwind-variants"
+import type {VariantProps} from "tailwind-variants";
 
-import {tv} from "../utils/tv"
+import {tv} from "../utils/tv";
 
 /**
  * Spinner wrapper **Tailwind Variants** component
@@ -9,7 +9,7 @@ import {tv} from "../utils/tv"
  *
  * @example
  * <div className={base())}>
- *    <i className={circle1()}/>
+ *    <i className={circle()}/>
  *    <i className={circle2()}/>
  *    <span className={label()}/>
  * </div>
@@ -18,117 +18,69 @@ const spinner = tv({
   slots: {
     base: "relative inline-flex flex-col gap-2 items-center justify-center",
     wrapper: "relative flex",
-    circle1: [
-      "absolute",
-      "w-full",
-      "h-full",
-      "rounded-full",
-      "animate-spinner-ease-spin",
-      "border-2",
-      "border-solid",
-      "border-t-transparent",
-      "border-l-transparent",
-      "border-r-transparent",
-    ],
-    circle2: [
-      "absolute",
-      "w-full",
-      "h-full",
-      "rounded-full",
-      "opacity-75",
-      "animate-spinner-linear-spin",
-      "border-2",
-      "border-dotted",
-      "border-t-transparent",
-      "border-l-transparent",
-      "border-r-transparent",
-    ],
-    label: "text-foreground dark:text-foreground-dark font-regular",
+    circle: "progress-spinner stroke-current",
+    circleBackground: "text-neutral-200 stroke-current",
+    label: "text-neutral-800 font-regular",
   },
   variants: {
     size: {
+      xs: {
+        wrapper: "w-8 h-8",
+        label: "text-xs",
+      },
       sm: {
-        wrapper: "w-5 h-5",
-        circle1: "border-2",
-        circle2: "border-2",
+        wrapper: "w-10 h-10",
         label: "text-sm",
       },
       md: {
-        wrapper: "w-8 h-8",
-        circle1: "border-3",
-        circle2: "border-3",
+        wrapper: "w-12 h-12",
         label: "text-md",
       },
       lg: {
-        wrapper: "w-10 h-10",
-        circle1: "border-3",
-        circle2: "border-3",
+        wrapper: "w-16 h-16",
         label: "text-lg",
       },
     },
     color: {
       current: {
-        circle1: "border-b-current",
-        circle2: "border-b-current",
+        circle: "text-current",
       },
       white: {
-        circle1: "border-b-white",
-        circle2: "border-b-white",
+        circle: "text-white",
       },
       default: {
-        circle1: "border-b-default",
-        circle2: "border-b-default",
+        circle: "text-neutral-800",
       },
       primary: {
-        circle1: "border-b-primary",
-        circle2: "border-b-primary",
-      },
-      secondary: {
-        circle1: "border-b-secondary",
-        circle2: "border-b-secondary",
+        circle: "text-brand",
       },
       success: {
-        circle1: "border-b-success",
-        circle2: "border-b-success",
+        circle: "text-success",
       },
       warning: {
-        circle1: "border-b-warning",
-        circle2: "border-b-warning",
+        circle: "text-warning",
       },
       danger: {
-        circle1: "border-b-danger",
-        circle2: "border-b-danger",
+        circle: "text-danger",
       },
     },
-    labelColor: {
-      foreground: {
-        label: "text-foreground",
+    isProgress: {
+      true: {
+        circleBackground: "hidden",
       },
-      primary: {
-        label: "text-primary",
-      },
-      secondary: {
-        label: "text-secondary",
-      },
-      success: {
-        label: "text-success",
-      },
-      warning: {
-        label: "text-warning",
-      },
-      danger: {
-        label: "text-danger",
+      false: {
+        circle: "animate-spinner-ease-spin",
       },
     },
   },
   defaultVariants: {
     size: "md",
     color: "primary",
-    labelColor: "foreground",
+    isProgress: false,
   },
-})
+});
 
-export type SpinnerVariantProps = VariantProps<typeof spinner>
-export type SpinnerSlots = keyof ReturnType<typeof spinner>
+export type SpinnerVariantProps = VariantProps<typeof spinner>;
+export type SpinnerSlots = keyof ReturnType<typeof spinner>;
 
-export {spinner}
+export {spinner};

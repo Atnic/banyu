@@ -16,6 +16,14 @@ interface Props extends HTMLBanyuProps<"div"> {
    */
   label?: string;
   /**
+   * If `true` the spinner will act as a progress spinner.
+   */
+  isProgress?: boolean;
+  /**
+   * Progress value from 0 to 100.
+   */
+  progress?: number;
+  /**
    * Classname or List of classes to change the classNames of the element.
    * if `className` is passed, it will be added to the base slot.
    *
@@ -24,8 +32,8 @@ interface Props extends HTMLBanyuProps<"div"> {
    * <Spinner classNames={{
    *    base:"base-classes",
    *    wrapper: "wrapper-classes",
-   *    circle1: "circle1-classes",
-   *    circle2: "circle2-classes",
+   *    circle: "circle-classes",
+   *    circleBackground: "circle-background-classes",
    *    label: "label-classes"
    * }} />
    * ```
@@ -38,9 +46,12 @@ export type UseSpinnerProps = Props & SpinnerVariantProps;
 export function useSpinner(originalProps: UseSpinnerProps) {
   const [props, variantProps] = mapPropsVariants(originalProps, spinner.variantKeys);
 
-  const {children, className, classNames, label: labelProp, ...otherProps} = props;
+  const {children, className, progress, classNames, label: labelProp, ...otherProps} = props;
 
-  const slots = useMemo(() => spinner({...variantProps}), [...Object.values(variantProps)]);
+  const slots = useMemo(
+    () => spinner({...variantProps, isProgress: progress !== undefined}),
+    [...Object.values(variantProps), progress],
+  );
 
   const baseStyles = clsx(classNames?.base, className);
 
@@ -65,7 +76,7 @@ export function useSpinner(originalProps: UseSpinnerProps) {
     [ariaLabel, slots, baseStyles, otherProps],
   );
 
-  return {label, slots, classNames, getSpinnerProps};
+  return {label, slots, progress, classNames, getSpinnerProps};
 }
 
 export type UseSpinnerReturn = ReturnType<typeof useSpinner>;

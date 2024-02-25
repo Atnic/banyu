@@ -1,6 +1,6 @@
 {
   "name": "@jala-banyu/spinner",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "description": "Loaders express an unspecified wait time or display the length of a process.",
   "keywords": [
     "loading",
