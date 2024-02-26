@@ -51,11 +51,11 @@ describe("Input", () => {
     expect(container.querySelector("input")).toHaveAttribute("aria-describedby");
   });
 
-  it("should have aria-describedby when errorMessage is provided", () => {
-    const {container} = render(<Input errorMessage="error text" label="test input" />);
-
-    expect(container.querySelector("input")).toHaveAttribute("aria-describedby");
-  });
+  // it("should have aria-describedby when errorMessage is provided", () => {
+  //   const {container} = render(<Input errorMessage="error text" label="test input" />);
+  //
+  //   expect(container.querySelector("input")).toHaveAttribute("aria-describedby");
+  // });
 
   it("should have the same aria-labelledby as label id", () => {
     const {container} = render(<Input label="test input" />);

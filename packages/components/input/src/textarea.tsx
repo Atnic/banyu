@@ -1,8 +1,9 @@
 import {dataAttr} from "@jala-banyu/shared-utils";
 import {forwardRef} from "@jala-banyu/system";
 import {mergeProps} from "@react-aria/utils";
-import {useMemo, useState} from "react";
+import React, {useMemo, useState} from "react";
 import TextareaAutosize from "react-textarea-autosize";
+import {CheckIcon, ExclamationIcon} from "@jala-banyu/shared-icons";
 
 import {UseInputProps, useInput} from "./use-input";
 
@@ -41,6 +42,11 @@ export interface TextAreaProps extends Omit<UseInputProps<HTMLTextAreaElement>, 
    */
   maxRows?: number;
   /**
+   * Maximum number of rows up to which the textarea can grow
+   * @default 8
+   */
+  maxLength?: number | undefined;
+  /**
    * Reuse previously computed measurements when computing height of textarea.
    * @default false
    */
@@ -65,6 +71,7 @@ const Textarea = forwardRef<"textarea", TextAreaProps>(
       cacheMeasurements = false,
       disableAutosize = false,
       onHeightChange,
+      maxLength,
       ...otherProps
     },
     ref,
@@ -75,24 +82,28 @@ const Textarea = forwardRef<"textarea", TextAreaProps>(
       description,
       startContent,
       endContent,
+      isInvalid,
+      isValid,
       hasHelper,
       shouldLabelBeOutside,
-      shouldLabelBeInside,
+      maxLengthContent,
       errorMessage,
       getBaseProps,
       getLabelProps,
-      getInputProps,
       getInnerWrapperProps,
       getInputWrapperProps,
       getHelperWrapperProps,
       getDescriptionProps,
       getErrorMessageProps,
+      getTextareaProps,
+      getInvalidIconProps,
+      getValidIconProps,
     } = useInput<HTMLTextAreaElement>({...otherProps, ref, isMultiline: true});
 
     const [hasMultipleRows, setIsHasMultipleRows] = useState(minRows > 1);
     const [isLimitReached, setIsLimitReached] = useState(false);
     const labelContent = label ? <label {...getLabelProps()}>{label}</label> : null;
-    const inputProps = getInputProps();
+    const textareaProps = getTextareaProps();
 
     const handleHeightChange = (height: number, meta: TextareaHeightChangeMeta) => {
       if (minRows === 1) {
@@ -107,41 +118,59 @@ const Textarea = forwardRef<"textarea", TextAreaProps>(
       onHeightChange?.(height, meta);
     };
 
+    const invalid = useMemo(() => {
+      return (
+        <div {...getInvalidIconProps()}>
+          <ExclamationIcon />
+        </div>
+      );
+    }, [isInvalid, getInvalidIconProps]);
+
+    const valid = useMemo(() => {
+      return (
+        <div {...getValidIconProps()}>
+          <CheckIcon />
+        </div>
+      );
+    }, [isValid, getValidIconProps]);
+
     const content = disableAutosize ? (
-      <textarea {...inputProps} style={mergeProps(inputProps.style, style ?? {})} />
+      <textarea
+        {...textareaProps}
+        maxLength={maxLength}
+        style={mergeProps(textareaProps.style, style ?? {})}
+      />
     ) : (
       <TextareaAutosize
-        {...inputProps}
+        {...textareaProps}
         cacheMeasurements={cacheMeasurements}
         data-hide-scroll={dataAttr(!isLimitReached)}
+        maxLength={maxLength}
         maxRows={maxRows}
         minRows={minRows}
-        style={mergeProps(inputProps.style as TextareaAutoSizeStyle, style ?? {})}
+        style={mergeProps(textareaProps.style as TextareaAutoSizeStyle, style ?? {})}
         onHeightChange={handleHeightChange}
       />
     );
 
     const innerWrapper = useMemo(() => {
-      if (startContent || endContent) {
-        return (
-          <div {...getInnerWrapperProps()}>
-            {startContent}
-            {content}
-            {endContent}
-          </div>
-        );
-      }
-
-      return <div {...getInnerWrapperProps()}>{content}</div>;
-    }, [startContent, inputProps, endContent, getInnerWrapperProps]);
+      return (
+        <div {...getInnerWrapperProps()}>
+          {startContent}
+          {content}
+          {isInvalid && !isValid ? invalid : valid}
+          {endContent}
+        </div>
+      );
+    }, [startContent, textareaProps, endContent, getInnerWrapperProps]);
 
     return (
       <Component {...getBaseProps()}>
         {shouldLabelBeOutside ? labelContent : null}
         <div {...getInputWrapperProps()} data-has-multiple-rows={dataAttr(hasMultipleRows)}>
-          {shouldLabelBeInside ? labelContent : null}
           {innerWrapper}
         </div>
+        {maxLengthContent}
         {hasHelper ? (
           <div {...getHelperWrapperProps()}>
             {errorMessage ? (

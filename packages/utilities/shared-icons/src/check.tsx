@@ -4,36 +4,20 @@ export interface CheckIconProps extends IconSvgProps {
   filled?: boolean;
 }
 
-export const CheckIcon = ({filled = false, ...props}: CheckIconProps) =>
-  filled ? (
-    <svg
-      aria-hidden="true"
-      fill="none"
-      focusable="false"
-      height="1em"
-      viewBox="0 0 24 24"
-      width="1em"
-      {...props}
-    >
-      <path
-        d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.4 16.78 9.7Z"
-        fill="currentColor"
-      />
-    </svg>
-  ) : (
-    <svg
-      aria-hidden="true"
-      fill="none"
-      focusable="false"
-      height="1em"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      viewBox="0 0 24 24"
-      width="1em"
-      {...props}
-    >
-      <polyline points="20 6 9 17 4 12" />
-    </svg>
-  );
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const CheckIcon = ({filled = false, ...props}: CheckIconProps) => (
+  <svg
+    aria-hidden="true"
+    fill="none"
+    focusable="false"
+    height="1em"
+    viewBox="0 0 16 16"
+    width="1em"
+    {...props}
+  >
+    <path
+      d="M12.736 3.97C12.8042 3.90036 12.8857 3.84504 12.9756 3.80728C13.0655 3.76951 13.162 3.75006 13.2595 3.75006C13.357 3.75006 13.4535 3.76951 13.5434 3.80728C13.6333 3.84504 13.7147 3.90036 13.783 3.97C14.069 4.259 14.073 4.72599 13.793 5.01999L7.87998 12.01C7.81285 12.0837 7.73138 12.143 7.64056 12.1841C7.54974 12.2253 7.45148 12.2475 7.35179 12.2493C7.2521 12.2512 7.15307 12.2327 7.06077 12.195C6.96847 12.1573 6.88483 12.1011 6.81498 12.03L3.21698 8.384C3.07822 8.24248 3.00049 8.05219 3.00049 7.854C3.00049 7.6558 3.07822 7.46551 3.21698 7.32399C3.28523 7.25436 3.36668 7.19904 3.45657 7.16128C3.54646 7.12351 3.64298 7.10406 3.74048 7.10406C3.83798 7.10406 3.9345 7.12351 4.02439 7.16128C4.11428 7.19904 4.19573 7.25436 4.26398 7.32399L7.31598 10.417L12.716 3.992C12.7222 3.98427 12.7289 3.97692 12.736 3.97Z"
+      fill="currentColor"
+    />
+  </svg>
+);

@@ -1,11 +1,11 @@
 import React from "react";
-import {CloseFilledIcon} from "@jala-banyu/shared-icons";
+import {CheckIcon, CloseFilledIcon, ExclamationIcon} from "@jala-banyu/shared-icons";
 import {useMemo} from "react";
 import {forwardRef} from "@jala-banyu/system";
 
 import {UseInputProps, useInput} from "./use-input";
 
-export interface InputProps extends Omit<UseInputProps, "isMultiline"> {}
+export interface InputProps extends Omit<UseInputProps, "onChange"> {}
 
 const Input = forwardRef<"input", InputProps>((props, ref) => {
   const {
@@ -15,6 +15,8 @@ const Input = forwardRef<"input", InputProps>((props, ref) => {
     isClearable,
     startContent,
     endContent,
+    isInvalid,
+    isValid,
     labelPlacement,
     hasHelper,
     isOutsideLeft,
@@ -30,24 +32,44 @@ const Input = forwardRef<"input", InputProps>((props, ref) => {
     getDescriptionProps,
     getErrorMessageProps,
     getClearButtonProps,
+    getInvalidIconProps,
+    getValidIconProps,
+    getStartContentWrapperProps,
+    getEndContentWrapperProps,
   } = useInput({...props, ref});
 
   const labelContent = label ? <label {...getLabelProps()}>{label}</label> : null;
 
-  const end = useMemo(() => {
+  const clearable = useMemo(() => {
     if (isClearable) {
-      return <span {...getClearButtonProps()}>{endContent || <CloseFilledIcon />}</span>;
+      return <CloseFilledIcon {...getClearButtonProps()} />;
     }
 
-    return endContent;
+    return null;
   }, [isClearable, getClearButtonProps]);
+
+  const invalid = useMemo(() => {
+    return (
+      <div {...getInvalidIconProps()}>
+        <ExclamationIcon />
+      </div>
+    );
+  }, [isInvalid, getInvalidIconProps]);
+
+  const valid = useMemo(() => {
+    return (
+      <div {...getValidIconProps()}>
+        <CheckIcon />
+      </div>
+    );
+  }, [isValid, getValidIconProps]);
 
   const helperWrapper = useMemo(() => {
     if (!hasHelper) return null;
 
     return (
       <div {...getHelperWrapperProps()}>
-        {errorMessage ? (
+        {errorMessage && isInvalid && !isValid ? (
           <div {...getErrorMessageProps()}>
             <>{errorMessage}</>
           </div>
@@ -65,32 +87,40 @@ const Input = forwardRef<"input", InputProps>((props, ref) => {
     getDescriptionProps,
   ]);
 
-  const innerWrapper = useMemo(() => {
-    if (startContent || end) {
-      return (
-        <div {...getInnerWrapperProps()}>
-          {startContent}
-          <input {...getInputProps()} />
-          {end}
-        </div>
-      );
-    }
+  const startWrapper = useMemo(() => {
+    return startContent && <div {...getStartContentWrapperProps()}>{startContent}</div>;
+  }, [startContent, getStartContentWrapperProps]);
 
+  const endWrapper = useMemo(() => {
+    return endContent && <div {...getEndContentWrapperProps()}>{endContent}</div>;
+  }, [endContent, getEndContentWrapperProps]);
+
+  const innerWrapper = useMemo(() => {
     return (
       <div {...getInnerWrapperProps()}>
+        {startWrapper}
         <input {...getInputProps()} />
+        {/*{isInvalid ? invalid : isValid && valid}*/}
+        {isInvalid && !isValid ? invalid : valid}
+        {clearable}
+        {endWrapper}
       </div>
     );
-  }, [startContent, end, getInputProps, getInnerWrapperProps]);
+  }, [
+    startContent,
+    endContent,
+    getInputProps,
+    getInnerWrapperProps,
+    getStartContentWrapperProps,
+    getEndContentWrapperProps,
+  ]);
 
   const mainWrapper = useMemo(() => {
     if (shouldLabelBeOutside) {
       return (
         <div {...getMainWrapperProps()}>
-          <div {...getInputWrapperProps()}>
-            {!isOutsideLeft ? labelContent : null}
-            {innerWrapper}
-          </div>
+          {!isOutsideLeft ? labelContent : null}
+          <div {...getInputWrapperProps()}>{innerWrapper}</div>
           {helperWrapper}
         </div>
       );
@@ -117,6 +147,8 @@ const Input = forwardRef<"input", InputProps>((props, ref) => {
     getInputWrapperProps,
     getErrorMessageProps,
     getDescriptionProps,
+    getEndContentWrapperProps,
+    getStartContentWrapperProps,
   ]);
 
   return (

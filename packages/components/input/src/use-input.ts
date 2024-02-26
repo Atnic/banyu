@@ -33,10 +33,18 @@ export interface Props<T extends HTMLInputElement | HTMLTextAreaElement = HTMLIn
    * This is the element that wraps the input and the start/end content when passed.
    */
   innerWrapperRef?: Ref<HTMLDivElement>;
+
+  startContentWrapper?: Ref<HTMLDivElement>;
+
+  endContentWrapper?: Ref<HTMLDivElement>;
+
+  maxLengthWrapper?: Ref<HTMLDivElement>;
   /**
    * Element to be rendered in the left side of the input.
    */
   startContent?: React.ReactNode;
+
+  maxLengthContent?: React.ReactNode;
   /**
    * Element to be rendered in the right side of the input.
    * if you pass this prop and the `onClear` prop, the passed element
@@ -91,6 +99,7 @@ export function useInput<T extends HTMLInputElement | HTMLTextAreaElement = HTML
     baseRef,
     wrapperRef,
     description,
+    maxLengthContent,
     errorMessage,
     className,
     classNames,
@@ -175,13 +184,14 @@ export function useInput<T extends HTMLInputElement | HTMLTextAreaElement = HTML
   });
 
   const isInvalid = validationState === "invalid" || originalProps.isInvalid;
+  const isValid = validationState === "valid" || originalProps.isValid;
 
   const labelPlacement = useMemo<InputVariantProps["labelPlacement"]>(() => {
-    if ((!originalProps.labelPlacement || originalProps.labelPlacement === "inside") && !label) {
+    if (!originalProps.labelPlacement && !label) {
       return "outside";
     }
 
-    return originalProps.labelPlacement ?? "inside";
+    return originalProps.labelPlacement ?? "outside";
   }, [originalProps.labelPlacement, label]);
 
   const isClearable = !!onClear || originalProps.isClearable;
@@ -190,7 +200,7 @@ export function useInput<T extends HTMLInputElement | HTMLTextAreaElement = HTML
   const hasLabel = !!label;
   const hasHelper = !!description || !!errorMessage;
   const shouldLabelBeOutside = labelPlacement === "outside" || labelPlacement === "outside-left";
-  const shouldLabelBeInside = labelPlacement === "inside";
+  // const shouldLabelBeInside = labelPlacement === "inside";
   const isPlaceholderShown = domRef.current
     ? (!domRef.current.value || domRef.current.value === "" || !inputValue || inputValue === "") &&
       hasPlaceholder
@@ -290,6 +300,50 @@ export function useInput<T extends HTMLInputElement | HTMLTextAreaElement = HTML
         "data-has-start-content": dataAttr(hasStartContent),
         "data-has-end-content": dataAttr(!!endContent),
         className: slots.input({class: clsx(classNames?.input, !!inputValue ? "is-filled" : "")}),
+        ...mergeProps(
+          focusProps,
+          inputProps,
+          filterDOMProps(otherProps, {
+            enabled: true,
+            labelable: true,
+            omitEventNames: new Set(Object.keys(inputProps)),
+          }),
+          props,
+        ),
+        required: originalProps.isRequired,
+        "aria-readonly": dataAttr(originalProps.isReadOnly),
+        "aria-required": dataAttr(originalProps.isRequired),
+        onChange: chain(inputProps.onChange, onChange),
+      };
+    },
+    [
+      slots,
+      inputValue,
+      focusProps,
+      inputProps,
+      otherProps,
+      isFilled,
+      isFilledWithin,
+      hasStartContent,
+      endContent,
+      classNames?.input,
+      originalProps.isReadOnly,
+      originalProps.isRequired,
+      onChange,
+    ],
+  );
+  const getTextareaProps: PropGetter = useCallback(
+    (props = {}) => {
+      return {
+        ref: domRef,
+        "data-slot": "textarea",
+        "data-filled": dataAttr(isFilled),
+        "data-filled-within": dataAttr(isFilledWithin),
+        "data-has-start-content": dataAttr(hasStartContent),
+        "data-has-end-content": dataAttr(!!endContent),
+        className: slots.textarea({
+          class: clsx(classNames?.textarea, !!inputValue ? "is-filled" : ""),
+        }),
         ...mergeProps(
           focusProps,
           inputProps,
@@ -433,6 +487,65 @@ export function useInput<T extends HTMLInputElement | HTMLTextAreaElement = HTML
     [slots, isClearButtonFocusVisible, clearPressProps, clearFocusProps, classNames?.clearButton],
   );
 
+  const getInvalidIconProps: PropGetter = useCallback(
+    (props = {}) => {
+      return {
+        ...props,
+        className: slots.inValidIcon({class: clsx(classNames?.inValidIcon, props?.className)}),
+      };
+    },
+    [slots, classNames?.inValidIcon],
+  );
+
+  const getValidIconProps: PropGetter = useCallback(
+    (props = {}) => {
+      return {
+        ...props,
+        className: slots.validIcon({class: clsx(classNames?.validIcon, props?.className)}),
+      };
+    },
+    [slots, classNames?.validIcon],
+  );
+
+  const getStartContentWrapperProps: PropGetter = useCallback(
+    (props = {}) => {
+      return {
+        ...props,
+        "data-slot": "start-content-wrapper",
+        className: slots.startContentWrapper({
+          class: clsx(classNames?.startContentWrapper, props?.className),
+        }),
+      };
+    },
+    [slots, classNames?.startContentWrapper],
+  );
+
+  const getEndContentWrapperProps: PropGetter = useCallback(
+    (props = {}) => {
+      return {
+        ...props,
+        "data-slot": "end-content-wrapper",
+        className: slots.endContentWrapper({
+          class: clsx(classNames?.endContentWrapper, props?.className),
+        }),
+      };
+    },
+    [slots, classNames?.endContentWrapper],
+  );
+
+  const getMaxLengthWrapperProps: PropGetter = useCallback(
+    (props = {}) => {
+      return {
+        ...props,
+        "data-slot": "max-length-wrapper",
+        className: slots.maxLengthWrapper({
+          class: clsx(classNames?.maxLengthWrapper, props?.className),
+        }),
+      };
+    },
+    [slots, classNames?.maxLengthWrapper],
+  );
+
   return {
     Component,
     classNames,
@@ -444,13 +557,14 @@ export function useInput<T extends HTMLInputElement | HTMLTextAreaElement = HTML
     labelPlacement,
     isClearable,
     isInvalid,
+    maxLengthContent,
+    isValid,
     hasHelper,
     hasStartContent,
     isLabelOutside,
     isOutsideLeft,
     isLabelOutsideAsPlaceholder,
     shouldLabelBeOutside,
-    shouldLabelBeInside,
     hasPlaceholder,
     errorMessage,
     getBaseProps,
@@ -458,11 +572,17 @@ export function useInput<T extends HTMLInputElement | HTMLTextAreaElement = HTML
     getInputProps,
     getMainWrapperProps,
     getInputWrapperProps,
+    getTextareaProps,
     getInnerWrapperProps,
     getHelperWrapperProps,
     getDescriptionProps,
     getErrorMessageProps,
     getClearButtonProps,
+    getInvalidIconProps,
+    getValidIconProps,
+    getStartContentWrapperProps,
+    getEndContentWrapperProps,
+    getMaxLengthWrapperProps,
   };
 }
 
