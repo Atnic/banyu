@@ -9,6 +9,7 @@ export * from "./chevron-down";
 export * from "./chevron-right";
 export * from "./chevron-up";
 export * from "./ellipsis";
+export * from "./exclamation";
 export * from "./jala-ellipsis";
 export * from "./forward";
 export * from "./sun";
