@@ -1,29 +1,48 @@
 import React from "react";
 import {Meta} from "@storybook/react";
+import {spinner} from "@jala-banyu/theme";
 
 import {Spinner} from "../src";
 
 export default {
   title: "Components/Spinner",
   component: Spinner,
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=589%3A107692&mode=dev",
+    },
+  },
   argTypes: {
     color: {
       control: {
         type: "select",
       },
-      options: ["default", "primary", "secondary", "success", "warning", "danger"],
-    },
-    labelColor: {
-      control: {
-        type: "select",
-      },
-      options: ["default", "primary", "secondary", "success", "warning", "danger"],
+      options: ["current", "white", "primary", "success", "warning", "danger"],
     },
     size: {
       control: {
         type: "select",
       },
-      options: ["sm", "md", "lg"],
+      options: ["xs", "sm", "md", "lg"],
+    },
+    isProgress: {
+      control: {
+        type: "boolean",
+      },
+    },
+    label: {
+      control: {
+        type: "text",
+      },
+    },
+    progress: {
+      control: {
+        type: "range",
+        step: 10,
+      },
+      min: 0,
+      max: 100,
     },
   },
   decorators: [
@@ -35,31 +54,27 @@ export default {
   ],
 } as Meta<typeof Spinner>;
 
-// const defaultProps = {
-//   ...spinner.defaultVariants,
-// };
+const defaultProps = {
+  ...spinner.defaultVariants,
+};
 
-// export const Default = {
-// parameters: {
-//   design: {
-//     type: "figma",
-//         url: "",
-//   },
-// },
-//   args: {
-//     ...defaultProps,
-//   },
-// };
-//
-// export const WithLabel = {
-// parameters: {
-//   design: {
-//     type: "figma",
-//         url: "",
-//   },
-// },
-//   args: {
-//     ...defaultProps,
-//     label: "Loading...",
-//   },
-// };
+export const Default = {
+  args: {
+    ...defaultProps,
+  },
+};
+
+export const WithLabel = {
+  args: {
+    ...defaultProps,
+    label: "Loading...",
+  },
+};
+
+export const CircularProgress = {
+  args: {
+    ...defaultProps,
+    isProgress: true,
+    progress: 50,
+  },
+};
