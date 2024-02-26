@@ -103,10 +103,11 @@ export function useMenuItem<T extends object>(originalProps: UseMenuItemProps<T>
     () =>
       menuItem({
         ...variantProps,
+        isSelected,
         isDisabled,
         disableAnimation,
       }),
-    [...Object.values(variantProps), isDisabled, disableAnimation],
+    [...Object.values(variantProps), isSelected, isDisabled, disableAnimation],
   );
 
   const baseStyles = clsx(classNames?.base, className);

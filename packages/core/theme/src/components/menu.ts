@@ -1,7 +1,6 @@
-import type {VariantProps} from "tailwind-variants"
+import type {VariantProps} from "tailwind-variants";
 
-import {tv} from "../utils/tv"
-import {dataFocusVisibleClasses} from "../utils"
+import {tv} from "../utils/tv";
 
 /**
  * Menu wrapper **Tailwind Variants** component
@@ -11,7 +10,7 @@ import {dataFocusVisibleClasses} from "../utils"
  */
 const menu = tv({
   slots: {
-    base: "w-full relative flex flex-col gap-1 p-1",
+    base: "w-full relative flex flex-col gap-1 py-1",
     list: "w-full flex flex-col gap-0.5 outline-none",
     emptyContent: [
       "h-10",
@@ -23,7 +22,7 @@ const menu = tv({
       "text-start",
     ],
   },
-})
+});
 
 /**
  * MenuItem wrapper **Tailwind Variants** component
@@ -56,23 +55,27 @@ const menuItem = tv({
       "items-center",
       "justify-between",
       "relative",
-      "px-2",
-      "py-1.5",
+      "px-4",
+      "py-2",
       "w-full",
       "h-full",
       "box-border",
-      "rounded-sm",
+      // "rounded-sm",
       "subpixel-antialiased",
       "outline-none",
       "cursor-pointer",
-      "tap-highlight-transparent",
+      "text-neutral-800",
       // focus ring
-      ...dataFocusVisibleClasses,
-      "data-[focus-visible=true]:dark:ring-offset-background-content1",
+      "tap-highlight-transparent",
+      "outline-none",
+      "data-[focus-visible=true]:z-10",
+      "data-[focus-visible=true]:ring-2",
+      "data-[focus-visible=true]:ring-brand-50",
+      "data-[focus-visible=true]:bg-neutral-200",
     ],
     wrapper: "w-full flex flex-col items-start justify-center",
     title: "flex-1 text-sm font-normal truncate",
-    description: ["w-full", "text-xs", "text-foreground-500", "group-hover:text-neutral"],
+    description: ["w-full", "text-xs", "text-foreground-500", "group-hover:text-neutral-800"],
     selectedIcon: ["text-inherit", "w-3", "h-3", "flex-shrink-0"],
     shortcut: [
       "px-1",
@@ -87,37 +90,6 @@ const menuItem = tv({
     ],
   },
   variants: {
-    variant: {
-      solid: {
-        base: "",
-      },
-      bordered: {
-        base: "border-md border-transparent bg-transparent",
-      },
-      light: {
-        base: "bg-transparent",
-      },
-      faded: {
-        base: [
-          "border-sm border-transparent hover:border-neutral data-[hover=true]:bg-neutral-100",
-          "data-[selectable=true]:focus:border-neutral data-[selectable=true]:focus:bg-neutral-100",
-        ],
-      },
-      flat: {
-        base: "",
-      },
-      shadow: {
-        base: "data-[hover=true]:shadow-lg",
-      },
-    },
-    color: {
-      default: {},
-      brand: {},
-      secondary: {},
-      success: {},
-      warning: {},
-      danger: {},
-    },
     showDivider: {
       true: {
         base: [
@@ -133,6 +105,27 @@ const menuItem = tv({
       },
       false: {},
     },
+    isSelected: {
+      true: {
+        base: [
+          "bg-neutral-50",
+          "text-brand-800",
+          "data-[hover=true]:bg-neutral-50",
+          "data-[hover=true]:text-brand-800",
+          "data-[selectable=true]:focus:bg-neutral-50",
+          "data-[selectable=true]:focus:text-brand-800",
+        ],
+      },
+      false: {
+        base: [
+          "text-neutral-800",
+          "data-[hover=true]:bg-neutral-200",
+          "data-[hover=true]:text-neutral-800",
+          "data-[selectable=true]:focus:bg-neutral-200",
+          "data-[selectable=true]:focus:text-neutral-800",
+        ],
+      },
+    },
     isDisabled: {
       true: {
         base: "opacity-disabled pointer-events-none",
@@ -146,351 +139,19 @@ const menuItem = tv({
     },
   },
   defaultVariants: {
-    variant: "solid",
-    color: "default",
     disableAnimation: false,
     showDivider: false,
   },
   compoundVariants: [
-    // solid / color
     {
-      variant: "solid",
-      color: "default",
-      class: {
-        base: [
-          "data-[hover=true]:bg-neutral",
-          "data-[hover=true]:text-neutral-foreground",
-          "data-[selectable=true]:focus:bg-neutral",
-          "data-[selectable=true]:focus:text-neutral-foreground",
-        ],
-      },
-    },
-    {
-      variant: "solid",
-      color: "brand",
-      class: {
-        base: [
-          "data-[hover=true]:bg-brand data-[hover=true]:text-brand-foreground",
-          "data-[selectable=true]:focus:bg-brand data-[selectable=true]:focus:text-brand-foreground",
-        ],
-      },
-    },
-    {
-      variant: "solid",
-      color: "secondary",
-      class: {
-        base: [
-          "data-[hover=true]:bg-secondary data-[hover=true]:text-secondary-foreground",
-          "data-[selectable=true]:focus:bg-secondary data-[selectable=true]:focus:text-secondary-foreground",
-        ],
-      },
-    },
-    {
-      variant: "solid",
-      color: "success",
-      class: {
-        base: [
-          "data-[hover=true]:bg-success data-[hover=true]:text-success-foreground",
-          "data-[selectable=true]:focus:bg-success data-[selectable=true]:focus:text-success-foreground",
-        ],
-      },
-    },
-    {
-      variant: "solid",
-      color: "warning",
-      class: {
-        base: [
-          "data-[hover=true]:bg-warning data-[hover=true]:text-warning-foreground",
-          "data-[selectable=true]:focus:bg-warning data-[selectable=true]:focus:text-warning-foreground",
-        ],
-      },
-    },
-    {
-      variant: "solid",
-      color: "danger",
-      class: {
-        base: [
-          "data-[hover=true]:bg-danger data-[hover=true]:text-danger-foreground",
-          "data-[selectable=true]:focus:bg-danger data-[selectable=true]:focus:text-danger-foreground",
-        ],
-      },
-    },
-    // shadow / color
-    {
-      variant: "shadow",
-      color: "default",
-      class: {
-        base: [
-          "data-[hover=true]:shadow-neutral/50 data-[hover=true]:bg-neutral data-[hover=true]:text-neutral-foreground",
-          "data-[selectable=true]:focus:shadow-neutral/50 data-[selectable=true]:focus:bg-neutral data-[selectable=true]:focus:text-neutral-foreground",
-        ],
-      },
-    },
-    {
-      variant: "shadow",
-      color: "brand",
-      class: {
-        base: [
-          "data-[hover=true]:shadow-brand/30 data-[hover=true]:bg-brand data-[hover=true]:text-brand-foreground",
-          "data-[selectable=true]:focus:shadow-brand/30 data-[selectable=true]:focus:bg-brand data-[selectable=true]:focus:text-brand-foreground",
-        ],
-      },
-    },
-    {
-      variant: "shadow",
-      color: "secondary",
-      class: {
-        base: [
-          "data-[hover=true]:shadow-secondary/30 data-[hover=true]:bg-secondary data-[hover=true]:text-secondary-foreground",
-          "data-[selectable=true]:focus:shadow-secondary/30 data-[selectable=true]:focus:bg-secondary data-[selectable=true]:focus:text-secondary-foreground",
-        ],
-      },
-    },
-    {
-      variant: "shadow",
-      color: "success",
-      class: {
-        base: [
-          "data-[hover=true]:shadow-success/30 data-[hover=true]:bg-success data-[hover=true]:text-success-foreground",
-          "data-[selectable=true]:focus:shadow-success/30 data-[selectable=true]:focus:bg-success data-[selectable=true]:focus:text-success-foreground",
-        ],
-      },
-    },
-    {
-      variant: "shadow",
-      color: "warning",
-      class: {
-        base: [
-          "data-[hover=true]:shadow-warning/30 data-[hover=true]:bg-warning data-[hover=true]:text-warning-foreground",
-          "data-[selectable=true]:focus:shadow-warning/30 data-[selectable=true]:focus:bg-warning data-[selectable=true]:focus:text-warning-foreground",
-        ],
-      },
-    },
-    {
-      variant: "shadow",
-      color: "danger",
-      class: {
-        base: [
-          "data-[hover=true]:shadow-danger/30 data-[hover=true]:bg-danger data-[hover=true]:text-danger-foreground",
-          "data-[selectable=true]:focus:shadow-danger/30 data-[selectable=true]:focus:bg-danger data-[selectable=true]:focus:text-danger-foreground",
-        ],
-      },
-    },
-    // bordered / color
-    {
-      variant: "bordered",
-      color: "default",
-      class: {
-        base: ["data-[hover=true]:border-neutral", "data-[selectable=true]:focus:border-neutral"],
-      },
-    },
-    {
-      variant: "bordered",
-      color: "brand",
-      class: {
-        base: [
-          "data-[hover=true]:border-brand data-[hover=true]:text-brand",
-          "data-[selectable=true]:focus:border-brand data-[selectable=true]:focus:text-brand",
-        ],
-      },
-    },
-    {
-      variant: "bordered",
-      color: "secondary",
-      class: {
-        base: [
-          "data-[hover=true]:border-secondary data-[hover=true]:text-secondary",
-          "data-[selectable=true]:focus:border-secondary data-[selectable=true]:focus:text-secondary",
-        ],
-      },
-    },
-    {
-      variant: "bordered",
-      color: "success",
-      class: {
-        base: [
-          "data-[hover=true]:border-success data-[hover=true]:text-success",
-          "data-[selectable=true]:focus:border-success data-[selectable=true]:focus:text-success",
-        ],
-      },
-    },
-    {
-      variant: "bordered",
-      color: "warning",
-      class: {
-        base: [
-          "data-[hover=true]:border-warning data-[hover=true]:text-warning",
-          "data-[selectable=true]:focus:border-warning data-[selectable=true]:focus:text-warning",
-        ],
-      },
-    },
-    {
-      variant: "bordered",
-      color: "danger",
-      class: {
-        base: [
-          "data-[hover=true]:border-danger data-[hover=true]:text-danger",
-          "data-[selectable=true]:focus:border-danger data-[selectable=true]:focus:text-danger",
-        ],
-      },
-    },
-    // flat / color
-    {
-      variant: "flat",
-      color: "default",
-      class: {
-        base: [
-          "data-[hover=true]:bg-neutral/40",
-          "data-[hover=true]:text-neutral-foreground",
-          "data-[selectable=true]:focus:bg-neutral/40",
-          "data-[selectable=true]:focus:text-neutral-foreground",
-        ],
-      },
-    },
-    {
-      variant: "flat",
-      color: "brand",
-      class: {
-        base: [
-          "data-[hover=true]:bg-brand/20 data-[hover=true]:text-brand",
-          "data-[selectable=true]:focus:bg-brand/20 data-[selectable=true]:focus:text-brand",
-        ],
-      },
-    },
-    {
-      variant: "flat",
-      color: "secondary",
-      class: {
-        base: [
-          "data-[hover=true]:bg-secondary/20 data-[hover=true]:text-secondary",
-          "data-[selectable=true]:focus:bg-secondary/20 data-[selectable=true]:focus:text-secondary",
-        ],
-      },
-    },
-    {
-      variant: "flat",
-      color: "success",
-      class: {
-        base: [
-          "data-[hover=true]:bg-success/20 data-[hover=true]:text-success",
-          "data-[selectable=true]:focus:bg-success/20 data-[selectable=true]:focus:text-success",
-        ],
-      },
-    },
-    {
-      variant: "flat",
-      color: "warning",
-      class: {
-        base: [
-          "data-[hover=true]:bg-warning/20 data-[hover=true]:text-warning",
-          "data-[selectable=true]:focus:bg-warning/20 data-[selectable=true]:focus:text-warning",
-        ],
-      },
-    },
-    {
-      variant: "flat",
-      color: "danger",
-      class: {
-        base: [
-          "data-[hover=true]:bg-danger/20 data-[hover=true]:text-danger",
-          "data-[selectable=true]:focus:bg-danger/20 data-[selectable=true]:focus:text-danger",
-        ],
-      },
-    },
-    // faded / color
-    {
-      variant: "faded",
-      color: "default",
-      class: {
-        base: [
-          "data-[hover=true]:text-neutral-foreground",
-          "data-[selectable=true]:focus:text-neutral-foreground",
-        ],
-      },
-    },
-    {
-      variant: "faded",
-      color: "brand",
-      class: {
-        base: ["data-[hover=true]:text-brand", "data-[selectable=true]:focus:text-brand"],
-      },
-    },
-    {
-      variant: "faded",
-      color: "secondary",
-      class: {
-        base: ["data-[hover=true]:text-secondary", "data-[selectable=true]:focus:text-secondary"],
-      },
-    },
-    {
-      variant: "faded",
-      color: "success",
-      class: {
-        base: ["data-[hover=true]:text-success", "data-[selectable=true]:focus:text-success"],
-      },
-    },
-    {
-      variant: "faded",
-      color: "warning",
-      class: {
-        base: ["data-[hover=true]:text-warning", "data-[selectable=true]:focus:text-warning"],
-      },
-    },
-    {
-      variant: "faded",
-      color: "danger",
-      class: {
-        base: ["data-[hover=true]:text-danger", "data-[selectable=true]:focus:text-danger"],
-      },
-    },
-    // light / color
-    {
-      variant: "light",
-      color: "default",
-      class: {
-        base: [
-          "data-[hover=true]:text-neutral-500",
-          "data-[selectable=true]:focus:text-neutral-500",
-        ],
-      },
-    },
-    {
-      variant: "light",
-      color: "brand",
-      class: {
-        base: ["data-[hover=true]:text-brand", "data-[selectable=true]:focus:text-brand"],
-      },
-    },
-    {
-      variant: "light",
-      color: "secondary",
-      class: {
-        base: ["data-[hover=true]:text-secondary", "data-[selectable=true]:focus:text-secondary"],
-      },
-    },
-    {
-      variant: "light",
-      color: "success",
-      class: {
-        base: ["data-[hover=true]:text-success", "data-[selectable=true]:focus:text-success"],
-      },
-    },
-    {
-      variant: "light",
-      color: "warning",
-      class: {
-        base: ["data-[hover=true]:text-warning", "data-[selectable=true]:focus:text-warning"],
-      },
-    },
-    {
-      variant: "light",
-      color: "danger",
-      class: {
-        base: ["data-[hover=true]:text-danger", "data-[selectable=true]:focus:text-danger"],
+      isSelected: true,
+      isDisabled: true,
+      className: {
+        base: "bg-neutral-0",
       },
     },
   ],
-})
+});
 
 /**
  * Menu section wrapper **Tailwind Variants** component
@@ -513,13 +174,13 @@ const menuSection = tv({
     group: "data-[has-title=true]:pt-1",
     divider: "mt-2",
   },
-})
+});
 
-export type MenuVariantProps = VariantProps<typeof menu>
-export type MenuSlots = keyof ReturnType<typeof menu>
-export type MenuSectionVariantProps = VariantProps<typeof menuSection>
-export type MenuSectionSlots = keyof ReturnType<typeof menuSection>
-export type MenuItemVariantProps = VariantProps<typeof menuItem>
-export type MenuItemSlots = keyof ReturnType<typeof menuItem>
+export type MenuVariantProps = VariantProps<typeof menu>;
+export type MenuSlots = keyof ReturnType<typeof menu>;
+export type MenuSectionVariantProps = VariantProps<typeof menuSection>;
+export type MenuSectionSlots = keyof ReturnType<typeof menuSection>;
+export type MenuItemVariantProps = VariantProps<typeof menuItem>;
+export type MenuItemSlots = keyof ReturnType<typeof menuItem>;
 
-export {menu, menuItem, menuSection}
+export {menu, menuItem, menuSection};

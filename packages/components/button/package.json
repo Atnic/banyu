@@ -53,7 +53,8 @@
     "@react-aria/interactions": "^3.19.1",
     "@react-aria/utils": "^3.21.1",
     "@react-types/button": "^3.9.0",
-    "@react-types/shared": "^3.21.0"
+    "@react-types/shared": "^3.21.0",
+    "@jala-banyu/icons" : "^1.0.0"
   },
   "devDependencies": {
     "@jala-banyu/shared-icons": "workspace: *",

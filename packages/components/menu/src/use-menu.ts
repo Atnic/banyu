@@ -24,14 +24,6 @@ interface Props<T> {
    */
   menuProps?: AriaMenuOptions<T>;
   /**
-   * The menu items variant.
-   */
-  variant?: MenuItemProps["variant"];
-  /**
-   * The menu items color.
-   */
-  color?: MenuItemProps["color"];
-  /**
    * Whether to hide the check icon when the items are selected.
    * @default false
    */
@@ -92,8 +84,6 @@ export function useMenu<T extends object>(props: UseMenuProps<T>) {
   const {
     as,
     ref,
-    variant,
-    color,
     children,
     disableAnimation,
     onAction,
@@ -160,8 +150,6 @@ export function useMenu<T extends object>(props: UseMenuProps<T>) {
   return {
     Component,
     state,
-    variant,
-    color,
     disableAnimation,
     onAction,
     onClose,

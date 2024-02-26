@@ -1,7 +1,7 @@
-import type {VariantProps} from "tailwind-variants"
+import type {VariantProps} from "tailwind-variants";
 
-import {tv} from "../utils/tv"
-import {dataFocusVisibleClasses} from "../utils"
+import {tv} from "../utils/tv";
+import {dataFocusVisibleClasses} from "../utils";
 
 /**
  * Dropdown wrapper **Tailwind Variants** component
@@ -18,8 +18,8 @@ import {dataFocusVisibleClasses} from "../utils"
  * </div>
  */
 const dropdown = tv({
-  base: ["w-full", "p-1", "min-w-[200px]"],
-})
+  base: ["w-full", "p-0", "min-w-[200px]"],
+});
 
 /**
  * DropdownItem wrapper **Tailwind Variants** component
@@ -386,7 +386,7 @@ const dropdownItem = tv({
       },
     },
   ],
-})
+});
 
 /**
  * Dropdown wrapper **Tailwind Variants** component
@@ -409,7 +409,7 @@ const dropdownSection = tv({
     group: "data-[has-title=true]:pt-1",
     divider: "mt-2",
   },
-})
+});
 
 /**
  * Dropdown Menu wrapper **Tailwind Variants** component
@@ -419,11 +419,141 @@ const dropdownSection = tv({
  */
 const dropdownMenu = tv({
   base: "w-full flex flex-col gap-0.5 p-1",
-})
+});
 
-export type DropdownSectionVariantProps = VariantProps<typeof dropdownSection>
-export type DropdownSectionSlots = keyof ReturnType<typeof dropdownSection>
-export type DropdownItemVariantProps = VariantProps<typeof dropdownItem>
-export type DropdownItemSlots = keyof ReturnType<typeof dropdownItem>
+// const dropdownTrigger = tv({
+//   base: [
+//     "z-0",
+//     "group",
+//     "relative",
+//     "inline-flex",
+//     "items-center",
+//     "justify-center",
+//     "box-border",
+//     "appearance-none",
+//     "outline-none",
+//     "select-none",
+//     "whitespace-nowrap",
+//     "min-w-max",
+//     "font-md",
+//     "subpixel-antialiased",
+//     "overflow-hidden",
+//     "tap-highlight-transparent",
+//     // focus ring
+//     ...dataFocusVisibleClasses,
+//   ],
+//   variants: {
+//     size: {
+//       sm: "px-2 min-w-12 h-6 text-xs gap-2",
+//       md: "px-3 min-w-16 h-8 text-md gap-2",
+//       lg: "px-4 min-w-20 h-10 text-lg gap-2",
+//       xl: "px-6 min-w-24 h-12 text-xl gap-3",
+//     },
+//     radius: {
+//       none: "rounded-none",
+//       sm: "rounded-sm",
+//       md: "rounded-md",
+//       lg: "rounded-lg",
+//       xl: "rounded-xl",
+//       full: "rounded-full",
+//     },
+//     fullWidth: {
+//       true: "w-full",
+//     },
+//     isDisabled: {
+//       true: "disabled:opacity-50 disabled:pointer-events-none disabled:cursor-not-allowed",
+//     },
+//     isInGroup: {
+//       true: "[&:not(:first-child):not(:last-child)]:rounded-none data-[focus=true]:!ring-0",
+//     },
+//     isIconOnly: {
+//       true: "!gap-unit-2",
+//       false: "[&>svg]:max-w-[theme(spacing.unit-4)]",
+//     },
+//     disableAnimation: {
+//       true: "!transition-none",
+//       false:
+//         // "data-[pressed=true]:scale-[0.97] transition-transform-colors-opacity motion-reduce:transition-none",
+//         "ease-out duration-300",
+//     },
+//   },
+//   defaultVariants: {
+//     size: "md",
+//     radius: "md",
+//     fullWidth: false,
+//     isDisabled: false,
+//     isInGroup: false,
+//     disableAnimation: false,
+//   },
+//   compoundVariants: [
+//     // isInGroup / radius / size <-- radius not provided
+//     {
+//       isInGroup: true,
+//       class: "rounded-none first:rounded-s-md last:rounded-e-md",
+//     },
+//     {
+//       isInGroup: true,
+//       size: "sm",
+//       class: "rounded-none first:rounded-s-sm last:rounded-e-sm",
+//     },
+//     {
+//       isInGroup: true,
+//       size: "md",
+//       class: "rounded-none first:rounded-s-md last:rounded-e-md",
+//     },
+//     {
+//       isInGroup: true,
+//       size: "lg",
+//       class: "rounded-none first:rounded-s-lg last:rounded-e-lg",
+//     },
+//     {
+//       isInGroup: true,
+//       size: "xl",
+//       class: "rounded-none first:rounded-s-lg last:rounded-e-lg",
+//     },
+//     {
+//       isInGroup: true,
+//       isRounded: true,
+//       class: "rounded-none first:rounded-s-full last:rounded-e-full",
+//     },
+//
+//     // isInGroup / radius <-- radius provided
+//     {
+//       isInGroup: true,
+//       radius: "none",
+//       class: "rounded-none first:rounded-s-none last:rounded-e-none",
+//     },
+//     {
+//       isInGroup: true,
+//       radius: "sm",
+//       class: "rounded-none first:rounded-s-sm last:rounded-e-sm",
+//     },
+//     {
+//       isInGroup: true,
+//       radius: "md",
+//       class: "rounded-none first:rounded-s-md last:rounded-e-md",
+//     },
+//     {
+//       isInGroup: true,
+//       radius: "lg",
+//       class: "rounded-none first:rounded-s-lg last:rounded-e-lg",
+//     },
+//     {
+//       isInGroup: true,
+//       radius: "xl",
+//       class: "rounded-none first:rounded-s-xl last:rounded-e-xl",
+//     },
+//     {
+//       isInGroup: true,
+//       radius: "full",
+//       class: "rounded-none first:rounded-s-full last:rounded-e-full",
+//     },
+//   ],
+// });
 
-export {dropdown, dropdownItem, dropdownSection, dropdownMenu}
+export type DropdownSectionVariantProps = VariantProps<typeof dropdownSection>;
+export type DropdownSectionSlots = keyof ReturnType<typeof dropdownSection>;
+export type DropdownItemVariantProps = VariantProps<typeof dropdownItem>;
+export type DropdownItemSlots = keyof ReturnType<typeof dropdownItem>;
+
+export {dropdown, dropdownItem, dropdownSection, dropdownMenu};

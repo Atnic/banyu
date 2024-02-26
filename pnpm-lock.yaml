@@ -391,6 +391,9 @@ importers:
 
   packages/components/button:
     dependencies:
+      '@jala-banyu/icons':
+        specifier: ^1.0.0
+        version: 1.0.7(typescript@5.3.3)
       '@jala-banyu/react-utils':
         specifier: 'workspace: *'
         version: link:../../utilities/react-utils
@@ -961,88 +964,6 @@ importers:
       react-dom:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
-
-  packages/components/modal:
-    dependencies:
-      '@jala-banyu/framer-transitions':
-        specifier: workspace:*
-        version: link:../../utilities/framer-transitions
-      '@jala-banyu/react-utils':
-        specifier: workspace:*
-        version: link:../../utilities/react-utils
-      '@jala-banyu/shared-icons':
-        specifier: workspace:*
-        version: link:../../utilities/shared-icons
-      '@jala-banyu/shared-utils':
-        specifier: workspace:*
-        version: link:../../utilities/shared-utils
-      '@jala-banyu/use-aria-button':
-        specifier: workspace:*
-        version: link:../../hooks/use-aria-button
-      '@jala-banyu/use-aria-modal-overlay':
-        specifier: workspace:*
-        version: link:../../hooks/use-aria-modal-overlay
-      '@jala-banyu/use-disclosure':
-        specifier: workspace:*
-        version: link:../../hooks/use-disclosure
-      '@react-aria/dialog':
-        specifier: ^3.5.7
-        version: 3.5.12(react-dom@18.2.0)(react@18.2.0)
-      '@react-aria/focus':
-        specifier: ^3.14.3
-        version: 3.16.2(react@18.2.0)
-      '@react-aria/interactions':
-        specifier: ^3.19.1
-        version: 3.21.1(react@18.2.0)
-      '@react-aria/overlays':
-        specifier: ^3.18.1
-        version: 3.21.1(react-dom@18.2.0)(react@18.2.0)
-      '@react-aria/utils':
-        specifier: ^3.21.1
-        version: 3.23.2(react@18.2.0)
-      '@react-stately/overlays':
-        specifier: ^3.6.3
-        version: 3.6.5(react@18.2.0)
-      '@react-types/overlays':
-        specifier: ^3.8.3
-        version: 3.8.5(react@18.2.0)
-      react-remove-scroll:
-        specifier: ^2.5.6
-        version: 2.5.7(@types/react@18.2.56)(react@18.2.0)
-    devDependencies:
-      '@jala-banyu/button':
-        specifier: workspace:*
-        version: link:../button
-      '@jala-banyu/checkbox':
-        specifier: workspace:*
-        version: link:../checkbox
-      '@jala-banyu/input':
-        specifier: workspace:*
-        version: link:../input
-      '@jala-banyu/link':
-        specifier: workspace:*
-        version: link:../link
-      '@jala-banyu/system':
-        specifier: workspace:*
-        version: link:../../core/system
-      '@jala-banyu/theme':
-        specifier: workspace:*
-        version: link:../../core/theme
-      clean-package:
-        specifier: 2.2.0
-        version: 2.2.0
-      framer-motion:
-        specifier: ^10.16.4
-        version: 10.18.0(react-dom@18.2.0)(react@18.2.0)
-      react:
-        specifier: ^18.2.0
-        version: 18.2.0
-      react-dom:
-        specifier: ^18.2.0
-        version: 18.2.0(react@18.2.0)
-      react-lorem-component:
-        specifier: 0.13.0
-        version: 0.13.0(react@18.2.0)
 
   packages/components/popover:
     dependencies:
@@ -1753,31 +1674,6 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0
 
-  packages/hooks/use-aria-modal-overlay:
-    dependencies:
-      '@react-aria/overlays':
-        specifier: ^3.18.1
-        version: 3.21.1(react-dom@18.2.0)(react@18.2.0)
-      '@react-aria/utils':
-        specifier: ^3.21.1
-        version: 3.23.2(react@18.2.0)
-      '@react-stately/overlays':
-        specifier: ^3.6.3
-        version: 3.6.5(react@18.2.0)
-      '@react-types/shared':
-        specifier: ^3.21.0
-        version: 3.22.1(react@18.2.0)
-    devDependencies:
-      clean-package:
-        specifier: 2.2.0
-        version: 2.2.0
-      react:
-        specifier: ^18.2.0
-        version: 18.2.0
-      react-dom:
-        specifier: ^18.2.0
-        version: 18.2.0(react@18.2.0)
-
   packages/hooks/use-aria-press:
     dependencies:
       '@react-aria/interactions':
@@ -1799,6 +1695,19 @@ importers:
       react:
         specifier: ^18.2.0
         version: 18.2.0
+
+  packages/hooks/use-data-scroll-overflow:
+    dependencies:
+      '@jala-banyu/shared-utils':
+        specifier: workspace:*
+        version: link:../../utilities/shared-utils
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+    devDependencies:
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
 
   packages/hooks/use-callback-ref:
     dependencies:
@@ -1846,6 +1755,22 @@ importers:
       '@jala-banyu/use-safe-layout-effect':
         specifier: 'workspace: *'
         version: link:../use-safe-layout-effect
+    devDependencies:
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+
+  packages/hooks/use-infinite-scroll:
+    dependencies:
+      '@types/lodash.debounce':
+        specifier: ^4.0.7
+        version: 4.0.9
+      lodash.debounce:
+        specifier: ^4.0.8
+        version: 4.0.8
     devDependencies:
       clean-package:
         specifier: 2.2.0

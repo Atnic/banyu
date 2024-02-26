@@ -18,8 +18,8 @@ describe("Divider", () => {
   });
 
   it("should render with custom className", () => {
-    const {container} = render(<Divider className="custom-class-name" />);
+    const {container} = render(<Divider classNames={{base: "custom-class-name"}} />);
 
-    expect(container.firstChild).toHaveClass("custom-class-name");
+    expect(container.firstChild?.firstChild).toHaveClass("custom-class-name");
   });
 });

@@ -17,22 +17,19 @@ const MenuItem = forwardRef<"li", MenuItemProps>((props, _) => {
     rendered,
     shortcut,
     description,
-    isSelectable,
     isSelected,
     isDisabled,
     selectedIcon,
     startContent,
     endContent,
     disableAnimation,
-    hideSelectedIcon,
     getItemProps,
     getLabelProps,
     getDescriptionProps,
     getKeyboardShortcutProps,
-    getSelectedIconProps,
   } = useMenuItem(props);
 
-  const selectedContent = useMemo<ReactNode | null>(() => {
+  useMemo<ReactNode | null>(() => {
     const defaultIcon = (
       <MenuSelectedIcon disableAnimation={disableAnimation} isSelected={isSelected} />
     );
@@ -58,9 +55,6 @@ const MenuItem = forwardRef<"li", MenuItemProps>((props, _) => {
         <span {...getLabelProps()}>{rendered}</span>
       )}
       {shortcut && <kbd {...getKeyboardShortcutProps()}>{shortcut}</kbd>}
-      {isSelectable && !hideSelectedIcon && (
-        <span {...getSelectedIconProps()}>{selectedContent}</span>
-      )}
       {endContent}
     </Component>
   );

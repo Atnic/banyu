@@ -1,6 +1,6 @@
 {
   "name": "@jala-banyu/dropdown",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A dropdown displays a list of actions or options that a user can choose.",
   "keywords": [
     "dropdown"
@@ -53,6 +53,7 @@
     "@jala-banyu/theme": "workspace: *",
     "@jala-banyu/system": "workspace: *",
     "@jala-banyu/button": "workspace: *",
+    "@jala-banyu/select": "workspace: *",
     "@jala-banyu/avatar": "workspace: *",
     "@jala-banyu/user": "workspace: *",
     "@jala-banyu/shared-icons": "workspace: *",

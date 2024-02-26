@@ -15,14 +15,6 @@ export interface MenuSectionProps<T extends object = object> extends MenuSection
   item: Node<T>;
   state: TreeState<T>;
   /**
-   * The menu items variant.
-   */
-  variant?: MenuItemProps["variant"];
-  /**
-   * The menu items color.
-   */
-  color?: MenuItemProps["color"];
-  /**
    * Whether to disable the items animation.
    * @default false
    */
@@ -47,8 +39,6 @@ const MenuSection = forwardRef<"li", MenuSectionProps>(
       item,
       state,
       as,
-      variant,
-      color,
       disableAnimation,
       onAction,
       closeOnSelect,
@@ -107,12 +97,10 @@ const MenuSection = forwardRef<"li", MenuSectionProps>(
                 key={nodeKey}
                 classNames={itemClasses}
                 closeOnSelect={closeOnSelect}
-                color={color}
                 disableAnimation={disableAnimation}
                 hideSelectedIcon={hideSelectedIcon}
                 item={node}
                 state={state}
-                variant={variant}
                 onAction={onAction}
                 {...nodeProps}
               />

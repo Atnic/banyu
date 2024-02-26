@@ -16,9 +16,7 @@ describe("Dropdown", () => {
           <DropdownItem key="new">New file</DropdownItem>
           <DropdownItem key="copy">Copy link</DropdownItem>
           <DropdownItem key="edit">Edit file</DropdownItem>
-          <DropdownItem key="delete" color="danger">
-            Delete file
-          </DropdownItem>
+          <DropdownItem key="delete">Delete file</DropdownItem>
         </DropdownMenu>
       </Dropdown>,
     );
@@ -61,9 +59,7 @@ describe("Dropdown", () => {
           </DropdownSection>
           <DropdownSection title="Danger Zone">
             <DropdownItem key="edit">Edit file</DropdownItem>
-            <DropdownItem key="delete" color="danger">
-              Delete file
-            </DropdownItem>
+            <DropdownItem key="delete">Delete file</DropdownItem>
           </DropdownSection>
         </DropdownMenu>
       </Dropdown>,
@@ -128,9 +124,7 @@ describe("Dropdown", () => {
           <DropdownItem key="new">New file</DropdownItem>
           <DropdownItem key="copy">Copy link</DropdownItem>
           <DropdownItem key="edit">Edit file</DropdownItem>
-          <DropdownItem key="delete" color="danger">
-            Delete file
-          </DropdownItem>
+          <DropdownItem key="delete">Delete file</DropdownItem>
         </DropdownMenu>
       </Dropdown>,
     );
@@ -182,9 +176,7 @@ describe("Dropdown", () => {
           <DropdownItem key="new">New file</DropdownItem>
           <DropdownItem key="copy">Copy link</DropdownItem>
           <DropdownItem key="edit">Edit file</DropdownItem>
-          <DropdownItem key="delete" color="danger">
-            Delete file
-          </DropdownItem>
+          <DropdownItem key="delete">Delete file</DropdownItem>
         </DropdownMenu>
       </Dropdown>,
     );
@@ -218,7 +210,7 @@ describe("Dropdown", () => {
     });
   });
 
-  it("should show checkmarks if selectionMode is single and has a selected item", () => {
+  it("should show brand colored text on menu item if selectionMode is single and has a selected item", () => {
     const wrapper = render(
       <Dropdown isOpen>
         <DropdownTrigger>
@@ -228,9 +220,7 @@ describe("Dropdown", () => {
           <DropdownItem key="new">New file</DropdownItem>
           <DropdownItem key="copy">Copy link</DropdownItem>
           <DropdownItem key="edit">Edit file</DropdownItem>
-          <DropdownItem key="delete" color="danger">
-            Delete file
-          </DropdownItem>
+          <DropdownItem key="delete">Delete file</DropdownItem>
         </DropdownMenu>
       </Dropdown>,
     );
@@ -244,14 +234,10 @@ describe("Dropdown", () => {
     expect(menuItems[2].getAttribute("aria-checked")).toBe("false");
     expect(menuItems[3].getAttribute("aria-checked")).toBe("false");
 
-    let svg = menuItems[0].querySelector("svg");
-
-    expect(svg).toBeTruthy();
-
-    expect(svg?.getAttribute("data-selected")).toBe("true");
+    expect(menuItems[0].getAttribute("class")).toContain("text-brand");
   });
 
-  it("should show multiple checkmarks if selectionMode is multiple and has selected items", () => {
+  it("should show multiple brand colored text on menu items if selectionMode is multiple and has selected items", () => {
     const wrapper = render(
       <Dropdown isOpen>
         <DropdownTrigger>
@@ -261,9 +247,7 @@ describe("Dropdown", () => {
           <DropdownItem key="new">New file</DropdownItem>
           <DropdownItem key="copy">Copy link</DropdownItem>
           <DropdownItem key="edit">Edit file</DropdownItem>
-          <DropdownItem key="delete" color="danger">
-            Delete file
-          </DropdownItem>
+          <DropdownItem key="delete">Delete file</DropdownItem>
         </DropdownMenu>
       </Dropdown>,
     );
@@ -277,17 +261,8 @@ describe("Dropdown", () => {
     expect(menuItems[2].getAttribute("aria-checked")).toBe("false");
     expect(menuItems[3].getAttribute("aria-checked")).toBe("false");
 
-    let checkmark1 = menuItems[0].querySelector("svg");
-
-    expect(checkmark1).toBeTruthy();
-
-    expect(checkmark1?.getAttribute("data-selected")).toBe("true");
-
-    let checkmark2 = menuItems[1].querySelector("svg");
-
-    expect(checkmark2).toBeTruthy();
-
-    expect(checkmark2?.getAttribute("data-selected")).toBe("true");
+    expect(menuItems[0].getAttribute("class")).toContain("text-brand");
+    expect(menuItems[1].getAttribute("class")).toContain("text-brand");
   });
 
   it("should not show checkmarks if selectionMode not defined", () => {
@@ -300,9 +275,7 @@ describe("Dropdown", () => {
           <DropdownItem key="new">New file</DropdownItem>
           <DropdownItem key="copy">Copy link</DropdownItem>
           <DropdownItem key="edit">Edit file</DropdownItem>
-          <DropdownItem key="delete" color="danger">
-            Delete file
-          </DropdownItem>
+          <DropdownItem key="delete">Delete file</DropdownItem>
         </DropdownMenu>
       </Dropdown>,
     );
@@ -333,9 +306,7 @@ describe("Dropdown", () => {
           <DropdownItem key="new">New file</DropdownItem>
           <DropdownItem key="copy">Copy link</DropdownItem>
           <DropdownItem key="edit">Edit file</DropdownItem>
-          <DropdownItem key="delete" color="danger">
-            Delete file
-          </DropdownItem>
+          <DropdownItem key="delete">Delete file</DropdownItem>
         </DropdownMenu>
       </Dropdown>,
     );
@@ -369,9 +340,7 @@ describe("Dropdown", () => {
           <DropdownItem key="new">New file</DropdownItem>
           <DropdownItem key="copy">Copy link</DropdownItem>
           <DropdownItem key="edit">Edit file</DropdownItem>
-          <DropdownItem key="delete" color="danger">
-            Delete file
-          </DropdownItem>
+          <DropdownItem key="delete">Delete file</DropdownItem>
         </DropdownMenu>
       </Dropdown>,
     );
