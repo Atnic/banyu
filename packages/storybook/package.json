@@ -12,13 +12,12 @@
     "@jala-banyu/react": "workspace: *",
     "@jala-banyu/system": "workspace: *",
     "@jala-banyu/theme": "workspace: *",
-    "@muhamien/jala-icons": "^2.0.2",
     "@storybook/addon-storysource": "^7.6.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@muhamien/jala-icons": "^2.0.2",
+    "@jala-banyu/icons": "^1.0.7",
     "@storybook/addon-a11y": "^7.4.6",
     "@storybook/addon-actions": "^7.4.6",
     "@storybook/addon-designs": "^7.0.9",

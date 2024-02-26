@@ -157,12 +157,6 @@ const modal = tv({
         base: "my-16",
       },
     },
-    isDismissable: {
-      true: "",
-      false: {
-        closeButton: "hidden",
-      },
-    },
   },
   defaultVariants: {
     size: "sm",
@@ -171,6 +165,7 @@ const modal = tv({
     placement: "auto",
     backdrop: "opaque",
     scrollBehavior: "normal",
+    isDismissable: true,
   },
   compoundVariants: [
     // backdrop (opaque/blur)
@@ -178,6 +173,12 @@ const modal = tv({
       backdrop: ["opaque", "blur"],
       class: {
         backdrop: "w-screen h-screen fixed inset-0",
+      },
+    },
+    {
+      isDismissable: false,
+      class: {
+        closeButton: "hidden",
       },
     },
   ],
