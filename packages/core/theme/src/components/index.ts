@@ -20,7 +20,7 @@ export * from "./accordion";
 export * from "./input";
 export * from "./dropdown";
 export * from "./image";
-// export * from "./modal";
+export * from "./modal";
 // export * from "./navbar";
 // export * from "./table";
 export * from "./spacer";
