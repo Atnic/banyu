@@ -15,7 +15,7 @@ export * from "./checkbox";
 // export * from "./pagination";
 export * from "./toggle";
 export * from "./accordion";
-// export * from "./progress";
+export * from "./progress";
 // export * from "./circular-progress";
 export * from "./input";
 export * from "./dropdown";

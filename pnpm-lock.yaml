@@ -1196,6 +1196,52 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
 
+  packages/components/progress:
+    dependencies:
+      '@jala-banyu/react-utils':
+        specifier: 'workspace: *'
+        version: link:../../utilities/react-utils
+      '@jala-banyu/shared-utils':
+        specifier: 'workspace: *'
+        version: link:../../utilities/shared-utils
+      '@jala-banyu/use-is-mounted':
+        specifier: workspace:*
+        version: link:../../hooks/use-is-mounted
+      '@react-aria/i18n':
+        specifier: ^3.8.4
+        version: 3.10.2(react@18.2.0)
+      '@react-aria/progress':
+        specifier: ^3.4.7
+        version: 3.4.11(react@18.2.0)
+      '@react-aria/utils':
+        specifier: ^3.21.1
+        version: 3.23.2(react@18.2.0)
+      '@react-types/progress':
+        specifier: ^3.5.0
+        version: 3.5.2(react@18.2.0)
+    devDependencies:
+      '@jala-banyu/card':
+        specifier: workspace:*
+        version: link:../card
+      '@jala-banyu/chip':
+        specifier: workspace:*
+        version: link:../chip
+      '@jala-banyu/system':
+        specifier: 'workspace: *'
+        version: link:../../core/system
+      '@jala-banyu/theme':
+        specifier: 'workspace: *'
+        version: link:../../core/theme
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+
   packages/components/ripple:
     dependencies:
       '@jala-banyu/react-utils':
@@ -6290,6 +6336,20 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
+  /@react-aria/progress@3.4.11(react@18.2.0):
+    resolution: {integrity: sha512-RePHbS15/KYFiApYLdwazwvWKsB9q0Kn5DGCSb0hqCC+k2Eui8iVVOsegswiP+xqkk/TiUCIkBEw22W3Az4kTg==}
+    peerDependencies:
+      react: ^18.2.0
+    dependencies:
+      '@react-aria/i18n': 3.10.2(react@18.2.0)
+      '@react-aria/label': 3.7.6(react@18.2.0)
+      '@react-aria/utils': 3.23.2(react@18.2.0)
+      '@react-types/progress': 3.5.2(react@18.2.0)
+      '@react-types/shared': 3.22.1(react@18.2.0)
+      '@swc/helpers': 0.5.6
+      react: 18.2.0
+    dev: false
+
   /@react-aria/selection@3.17.5(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-gO5jBUkc7WdkiFMlWt3x9pTSuj3Yeegsxfo44qU5NPlKrnGtPRZDWrlACNgkDHu645RNNPhlyoX0C+G8mUg1xA==}
     peerDependencies:
@@ -6667,6 +6727,15 @@ packages:
 
   /@react-types/select@3.9.2(react@18.2.0):
     resolution: {integrity: sha512-fGFrunednY3Pq/BBwVOf87Fsuyo/SlevL0wFIE9OOl2V5NXVaTY7/7RYA8hIOHPzmvsMbndy419BEudiNGhv4A==}
+    peerDependencies:
+      react: ^18.2.0
+    dependencies:
+      '@react-types/shared': 3.22.1(react@18.2.0)
+      react: 18.2.0
+    dev: false
+
+  /@react-types/progress@3.5.2(react@18.2.0):
+    resolution: {integrity: sha512-aQql22kusEudsHwDEzq6y/Mh29AM+ftRDKdS5E5g4MkCY5J4FMbOYco1T5So83NIvvG9+eKcxPoJUMjQQACAyA==}
     peerDependencies:
       react: ^18.2.0
     dependencies:
@@ -10604,6 +10673,7 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
     dev: true
+    bundledDependencies: false
 
   /create-require@1.1.1:
     resolution: {integrity: sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==}

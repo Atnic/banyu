@@ -202,28 +202,28 @@ const chip = tv({
       variant: "outline",
       color: "primary",
       class: {
-        base: colorVariants.outline.primary,
+        base: ["bg-brand-100", colorVariants.outline.primary],
       },
     },
     {
       variant: "outline",
       color: "success",
       class: {
-        base: colorVariants.outline.success,
+        base: ["bg-success-100", colorVariants.outline.success],
       },
     },
     {
       variant: "outline",
       color: "warning",
       class: {
-        base: colorVariants.outline.warning,
+        base: ["bg-warning-100", colorVariants.outline.warning],
       },
     },
     {
       variant: "outline",
       color: "danger",
       class: {
-        base: colorVariants.outline.danger,
+        base: ["bg-danger-100", colorVariants.outline.danger],
       },
     },
     {
@@ -237,14 +237,14 @@ const chip = tv({
       variant: "outline",
       color: "white",
       class: {
-        base: colorVariants.outline.white,
+        base: ["bg-white-100", colorVariants.outline.white],
       },
     },
     {
       variant: "outline",
       color: "basic",
       class: {
-        base: colorVariants.outline.basic,
+        base: ["bg-neutral-100", colorVariants.outline.basic],
       },
     },
     // soft

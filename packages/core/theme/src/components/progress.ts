@@ -1,6 +1,6 @@
-import type {VariantProps} from "tailwind-variants"
+import type {VariantProps} from "tailwind-variants";
 
-import {tv} from "../utils/tv"
+import {tv} from "../utils/tv";
 
 /**
  * Progress **Tailwind Variants** component
@@ -24,22 +24,21 @@ const progress = tv(
   {
     slots: {
       base: "flex flex-col gap-2 w-full",
-      label: "",
+      label: "text-neutral-800",
       labelWrapper: "flex justify-between",
-      value: "",
-      track: "z-0 relative bg-default-300/50 overflow-hidden",
+      value: "text-neutral-800",
+      floatingLabelWrapper: "inline-block",
+      progressBarWrapper: "flex flex-col gap-2",
+      track: "z-0 relative bg-neutral/20 overflow-hidden",
       indicator: "h-full",
     },
     variants: {
       color: {
         default: {
-          indicator: "bg-default-400",
+          indicator: "bg-brand",
         },
         primary: {
-          indicator: "bg-primary",
-        },
-        secondary: {
-          indicator: "bg-secondary",
+          indicator: "bg-brand",
         },
         success: {
           indicator: "bg-success",
@@ -98,6 +97,7 @@ const progress = tv(
       isIndeterminate: {
         true: {
           indicator: ["absolute", "w-full", "origin-left", "animate-indeterminate-bar"],
+          floatingLabelWrapper: "hidden",
         },
       },
       isDisabled: {
@@ -111,6 +111,20 @@ const progress = tv(
           indicator: "transition-transform !duration-500",
         },
       },
+      floatingLabel: {
+        true: {
+          value: "hidden",
+        },
+        false: {
+          floatingLabelWrapper: "hidden",
+        },
+      },
+      floatingLabelPlacement: {
+        top: {},
+        bottom: {
+          progressBarWrapper: "flex-col-reverse",
+        },
+      },
     },
     defaultVariants: {
       color: "primary",
@@ -120,6 +134,8 @@ const progress = tv(
       isIndeterminate: false,
       isDisabled: false,
       disableAnimation: false,
+      floatingLabel: false,
+      floatingLabelPlacement: "top",
     },
     compoundVariants: [
       // disableAnimation && !isIndeterminate
@@ -135,9 +151,9 @@ const progress = tv(
   {
     twMerge: false,
   },
-)
+);
 
-export type ProgressVariantProps = VariantProps<typeof progress>
-export type ProgressSlots = keyof ReturnType<typeof progress>
+export type ProgressVariantProps = VariantProps<typeof progress>;
+export type ProgressSlots = keyof ReturnType<typeof progress>;
 
-export {progress}
+export {progress};
