@@ -1,10 +1,10 @@
 const solid = {
-  primary: "bg-brand text-white",
-  danger: "bg-danger text-white",
-  warning: "bg-warning text-white",
-  success: "bg-success text-white",
+  primary: "bg-brand-700 text-white",
+  danger: "bg-danger-600 text-white",
+  warning: "bg-warning-500 text-white",
+  success: "bg-success-500 text-white",
   white: "bg-white text-neutral-800 border-neutral-300",
-  basic: "bg-neutral-50 border-neutral-50 text-neutral-800",
+  secondary: "bg-neutral-100 border-neutral-50 text-neutral-800",
   transparent: "bg-none text-brand-800 border-transparent",
 };
 
@@ -14,8 +14,8 @@ const outline = {
   warning: "border-warning text-warning-800",
   success: "border-success text-success-800",
   white: "border-white text-white",
-  basic: "border-neutral text-neutral-800",
-  transparent: "border-transparent text-brand-800",
+  secondary: "border-neutral-300 text-neutral-800",
+  transparent: "border-neutral-300 text-brand-800",
 };
 
 const ghost = {
@@ -24,7 +24,7 @@ const ghost = {
   warning: "text-warning-800",
   success: "text-success-800",
   white: "text-white",
-  basic: "text-black",
+  secondary: "text-black",
   transparent: "text-neutral",
 };
 
@@ -34,7 +34,7 @@ const rounded = {
   warning: "border-warning text-warning-800",
   success: "border-success text-success",
   white: "border-white text-white",
-  basic: "border-gray text-gray-800",
+  secondary: "border-gray text-gray-800",
   transparent: "border-transparent text-brand",
 };
 
@@ -44,7 +44,7 @@ const iconOnly = {
   warning: "text-warning-800",
   success: "text-success-800",
   white: "text-white",
-  basic: "text-white",
+  secondary: "text-white",
   transparent: "text-white",
 };
 
@@ -55,7 +55,7 @@ const shadow = {
   danger: "shadow-lg shadow-danger/40 bg-danger text-danger-foreground",
   transparent: "shadow-lg shadow-transparent/40 bg-transparent text-neutral-800",
   white: "shadow-lg shadow-white/40 bg-white text-neutral-800",
-  basic: "shadow-lg shadow-neutral/40 bg-neutral-50 text-neutral-800",
+  secondary: "shadow-lg shadow-neutral/40 bg-neutral-50 text-neutral-800",
 };
 
 const soft = {
@@ -64,7 +64,7 @@ const soft = {
   warning: "bg-warning-100 text-warning-500",
   success: "bg-success-100 text-success-500",
   white: "bg-white text-neutral-800",
-  basic: "bg-neutral-50 text-neutral-800",
+  secondary: "bg-neutral-50 text-neutral-800",
   transparent: "bg-transparent text-brand-800",
 };
 
@@ -74,7 +74,7 @@ const white = {
   warning: "bg-white text-warning shadow-lg",
   success: "bg-white text-success shadow-lg",
   white: "bg-white text-white shadow-lg",
-  basic: "bg-white text-neutral-800 shadow-lg",
+  secondary: "bg-white text-neutral-800 shadow-lg",
   transparent: "bg-white text-brand shadow-lg",
 };
 

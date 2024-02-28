@@ -12,6 +12,8 @@ import {useMemo, Ref, useCallback, useState} from "react";
 import {chain, mergeProps} from "@react-aria/utils";
 import {useTextField} from "@react-aria/textfield";
 
+import {useInputGroupContext} from "./input-group-context";
+
 export interface Props<T extends HTMLInputElement | HTMLTextAreaElement = HTMLInputElement>
   extends Omit<HTMLBanyuProps<"input">, keyof InputVariantProps> {
   /**
@@ -91,6 +93,8 @@ export function useInput<T extends HTMLInputElement | HTMLTextAreaElement = HTML
   originalProps: UseInputProps<T>,
 ) {
   const [props, variantProps] = mapPropsVariants(originalProps, input.variantKeys);
+  const groupContext = useInputGroupContext();
+  const isInGroup = !!groupContext;
 
   const {
     ref,
@@ -220,11 +224,19 @@ export function useInput<T extends HTMLInputElement | HTMLTextAreaElement = HTML
     () =>
       input({
         ...variantProps,
+        isInGroup,
         isInvalid,
         labelPlacement,
         isClearable,
       }),
-    [...Object.values(variantProps), isInvalid, labelPlacement, isClearable, hasStartContent],
+    [
+      ...Object.values(variantProps),
+      isInvalid,
+      isInGroup,
+      labelPlacement,
+      isClearable,
+      hasStartContent,
+    ],
   );
 
   const getBaseProps: PropGetter = useCallback(

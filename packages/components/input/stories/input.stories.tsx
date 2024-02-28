@@ -3,6 +3,7 @@
 import React from "react";
 import {Meta} from "@storybook/react";
 import {input} from "@jala-banyu/theme";
+import {Button} from "@jala-banyu/button";
 
 import {Input} from "../src";
 
@@ -54,7 +55,7 @@ const defaultProps = {
 };
 
 const Template = (args) => (
-  <div className="w-full max-w-[400px]">
+  <div className="w-full max-w-[600px]">
     <Input {...args} />
   </div>
 );
@@ -133,7 +134,7 @@ const EndContentTemplate = (args) => (
 );
 
 const StartAndEndContentTemplate = (args) => (
-  <div className="w-full max-w-max flex flex-col items-end gap-4">
+  <div className="w-full max-w-max flex-col items-end gap-4">
     <Input
       {...args}
       defaultValue="jala"
@@ -161,6 +162,9 @@ const StartAndEndContentTemplate = (args) => (
       }
       type="url"
     />
+    <Button radius="lg" size="md">
+      Button
+    </Button>
   </div>
 );
 
