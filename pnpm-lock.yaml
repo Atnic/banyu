@@ -461,6 +461,9 @@ importers:
       '@jala-banyu/ripple':
         specifier: 'workspace: *'
         version: link:../ripple
+      '@jala-banyu/shared-icons':
+        specifier: workspace:*
+        version: link:../../utilities/shared-icons
       '@jala-banyu/shared-utils':
         specifier: 'workspace: *'
         version: link:../../utilities/shared-utils
@@ -10604,6 +10607,7 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
     dev: true
+    bundledDependencies: false
 
   /create-require@1.1.1:
     resolution: {integrity: sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==}
