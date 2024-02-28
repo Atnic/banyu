@@ -5,6 +5,7 @@ const solid = {
   success: "bg-success-500 text-white",
   white: "bg-white text-neutral-800 border-neutral-300",
   secondary: "bg-neutral-100 border-neutral-50 text-neutral-800",
+  basic: "bg-neutral-50 border-neutral-50 text-neutral-800",
   transparent: "bg-none text-brand-800 border-transparent",
 };
 
@@ -15,6 +16,7 @@ const outline = {
   success: "border-success text-success-800",
   white: "border-white text-white",
   secondary: "border-neutral-300 text-neutral-800",
+  basic: "border-neutral text-neutral-800",
   transparent: "border-neutral-300 text-brand-800",
 };
 
@@ -25,6 +27,7 @@ const ghost = {
   success: "text-success-800",
   white: "text-white",
   secondary: "text-black",
+  basic: "text-black",
   transparent: "text-neutral",
 };
 
@@ -35,6 +38,7 @@ const rounded = {
   success: "border-success text-success",
   white: "border-white text-white",
   secondary: "border-gray text-gray-800",
+  basic: "border-gray text-gray-800",
   transparent: "border-transparent text-brand",
 };
 
@@ -45,6 +49,7 @@ const iconOnly = {
   success: "text-success-800",
   white: "text-white",
   secondary: "text-white",
+  basic: "text-white",
   transparent: "text-white",
 };
 
@@ -56,6 +61,7 @@ const shadow = {
   transparent: "shadow-lg shadow-transparent/40 bg-transparent text-neutral-800",
   white: "shadow-lg shadow-white/40 bg-white text-neutral-800",
   secondary: "shadow-lg shadow-neutral/40 bg-neutral-50 text-neutral-800",
+  basic: "shadow-lg shadow-neutral/40 bg-neutral-50 text-neutral-800",
 };
 
 const soft = {
@@ -65,6 +71,7 @@ const soft = {
   success: "bg-success-100 text-success-500",
   white: "bg-white text-neutral-800",
   secondary: "bg-neutral-50 text-neutral-800",
+  basic: "bg-neutral-50 text-neutral-800",
   transparent: "bg-transparent text-brand-800",
 };
 
@@ -75,6 +82,7 @@ const white = {
   success: "bg-white text-success shadow-lg",
   white: "bg-white text-white shadow-lg",
   secondary: "bg-white text-neutral-800 shadow-lg",
+  basic: "bg-white text-neutral-800 shadow-lg",
   transparent: "bg-white text-brand shadow-lg",
 };
 
