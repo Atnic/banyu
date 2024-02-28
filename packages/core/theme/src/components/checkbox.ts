@@ -170,7 +170,7 @@ const checkbox = tv({
       color: "primary",
       className: {
         wrapper: [
-          "after:bg-brand",
+          "after:!bg-brand",
           "after:text-white",
           "text-white",
           "group-data-[focus=true]:ring-brand/60",
@@ -183,7 +183,7 @@ const checkbox = tv({
       color: "danger",
       className: {
         wrapper: [
-          "after:bg-danger",
+          "after:!bg-danger",
           "after:text-white",
           "text-white",
           "group-data-[focus=true]:ring-danger/60",
@@ -196,7 +196,7 @@ const checkbox = tv({
       color: "warning",
       className: {
         wrapper: [
-          "after:bg-warning",
+          "after:!bg-warning",
           "after:text-white",
           "text-white",
           "group-data-[focus=true]:ring-warning/60",
@@ -209,7 +209,7 @@ const checkbox = tv({
       color: "success",
       className: {
         wrapper: [
-          "after:bg-success",
+          "after:!bg-success",
           "after:text-white",
           "text-white",
           "group-data-[focus=true]:ring-success/60",
@@ -222,7 +222,7 @@ const checkbox = tv({
       color: "white",
       className: {
         wrapper: [
-          "after:bg-white",
+          "after:!bg-white",
           "after:text-neutral-800",
           "text-neutral-800",
           "group-data-[focus=true]:ring-neutral/60",
@@ -235,7 +235,7 @@ const checkbox = tv({
       color: "transparent",
       className: {
         wrapper: [
-          "after:bg-transparent",
+          "after:!bg-transparent",
           "after:text-brand-800",
           "text-brand-800",
           "group-data-[focus=true]:ring-neutral/60",

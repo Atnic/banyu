@@ -93,7 +93,7 @@ const content = (
           </div>
         </ModalBody>
         <ModalFooter>
-          <Button fullWidth color="basic" radius="lg" size="md" onPress={onClose}>
+          <Button fullWidth color="secondary" radius="lg" size="md" onPress={onClose}>
             Cancel
           </Button>
           <Button fullWidth color="primary" radius="lg" size="md" onPress={onClose}>
@@ -228,7 +228,7 @@ const WithDividerTemplate = (args: ModalProps) => {
             </Button>
           </ModalBody>
           <ModalFooter>
-            <Button fullWidth color="basic" radius="lg" size="md" onPress={onClose}>
+            <Button fullWidth color="secondary" radius="lg" size="md" onPress={onClose}>
               Cancel
             </Button>
             <Button fullWidth color="primary" radius="lg" size="md" onPress={onClose}>

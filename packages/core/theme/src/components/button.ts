@@ -49,10 +49,10 @@ const button = tv({
       iconOnly: "",
     },
     size: {
-      sm: "px-2 min-w-12 h-6 text-xs gap-2",
-      md: "px-3 min-w-16 h-8 text-md gap-2",
-      lg: "px-4 min-w-20 h-10 text-lg gap-2",
-      xl: "px-6 min-w-24 h-12 text-xl gap-3",
+      sm: "",
+      md: "",
+      lg: "",
+      xl: "",
     },
     color: {
       primary: "",
@@ -61,7 +61,7 @@ const button = tv({
       warning: "",
       transparent: "",
       white: "",
-      basic: "",
+      secondary: "",
     },
     radius: {
       none: "rounded-none",
@@ -75,10 +75,10 @@ const button = tv({
       true: "w-full",
     },
     isDisabled: {
-      true: "disabled:opacity-50 disabled:pointer-events-none disabled:cursor-not-allowed",
+      true: "disabled:opacity-20 disabled:pointer-events-none disabled:cursor-not-allowed",
     },
     isInGroup: {
-      true: "[&:not(:first-child):not(:last-child)]:rounded-none data-[focus=true]:!ring-0",
+      true: "[&:not(:first-child):not(:last-child)]:rounded-none data-[focus=true]:!ring-0 !w-max",
     },
     isIconOnly: {
       true: "!gap-unit-2",
@@ -135,8 +135,8 @@ const button = tv({
     },
     {
       variant: "solid",
-      color: "basic",
-      class: colorVariants.solid.basic,
+      color: "secondary",
+      class: colorVariants.solid.secondary,
     },
 
     // outline / color
@@ -177,8 +177,8 @@ const button = tv({
     },
     {
       variant: "outline",
-      color: "basic",
-      class: colorVariants.outline.basic,
+      color: "secondary",
+      class: colorVariants.outline.secondary,
     },
 
     // ghost / color
@@ -219,8 +219,8 @@ const button = tv({
     },
     {
       variant: "ghost",
-      color: "basic",
-      class: colorVariants.ghost.basic,
+      color: "secondary",
+      class: colorVariants.ghost.secondary,
     },
 
     // rounded / color
@@ -256,8 +256,8 @@ const button = tv({
     },
     {
       variant: "rounded",
-      color: "basic",
-      class: colorVariants.rounded.basic,
+      color: "secondary",
+      class: colorVariants.rounded.secondary,
     },
 
     // isInGroup / radius / size <-- radius not provided
@@ -285,6 +285,7 @@ const button = tv({
       size: "xl",
       class: "rounded-none first:rounded-s-lg last:rounded-e-lg",
     },
+
     {
       isInGroup: true,
       isRounded: true,
@@ -295,32 +296,32 @@ const button = tv({
     {
       isInGroup: true,
       radius: "none",
-      class: "rounded-none first:rounded-s-none last:rounded-e-none",
+      class: "rounded-none first:!rounded-s-none last:!rounded-e-none",
     },
     {
       isInGroup: true,
       radius: "sm",
-      class: "rounded-none first:rounded-s-sm last:rounded-e-sm",
+      class: "rounded-none first:!rounded-s-sm last:!rounded-e-sm",
     },
     {
       isInGroup: true,
       radius: "md",
-      class: "rounded-none first:rounded-s-md last:rounded-e-md",
+      class: "rounded-none first:!rounded-s-md last:!rounded-e-md",
     },
     {
       isInGroup: true,
       radius: "lg",
-      class: "rounded-none first:rounded-s-lg last:rounded-e-lg",
+      class: "rounded-none first:!rounded-s-lg last:!rounded-e-lg",
     },
     {
       isInGroup: true,
       radius: "xl",
-      class: "rounded-none first:rounded-s-xl last:rounded-e-xl",
+      class: "rounded-none first:!rounded-s-xl last:!rounded-e-xl",
     },
     {
       isInGroup: true,
       radius: "full",
-      class: "rounded-none first:rounded-s-full last:rounded-e-full",
+      class: "rounded-none first:!rounded-s-full last:!rounded-e-full",
     },
 
     // isInGroup / bordered / ghost
@@ -373,24 +374,65 @@ const button = tv({
 
     // Icon Button
     {
+      isIconOnly: false,
+      size: "sm",
+      class: "px-3 min-w-12 py-2 text-[12px] leading-4 gap-2",
+    },
+    {
+      isIconOnly: false,
+      size: "md",
+      class: "px-3 min-w-16 py-2 text-[14px] leading-5 gap-2",
+    },
+    {
+      isIconOnly: false,
+      size: "lg",
+      class: "px-4 min-w-20 py-2.5 text-[14px] leading-5 gap-2",
+    },
+    {
+      isIconOnly: false,
+      size: "xl",
+      class: "px-6 min-w-24 py-3.5 text-[16px] leading-5 gap-3",
+    },
+
+    {
       isIconOnly: true,
       size: "sm",
-      class: "min-w-unit-7 h-unit-7",
+      class: "text-md min-w-unit-7 min-h-unit-7",
     },
     {
       isIconOnly: true,
       size: "md",
-      class: "min-w-unit-8 h-unit-8",
+      class: "!text-xl min-w-unit-8 min-h-unit-8",
     },
     {
       isIconOnly: true,
       size: "lg",
-      class: "min-w-unit-10 h-unit-10",
+      class: "!text-xl min-w-unit-10 min-h-unit-10",
     },
     {
       isIconOnly: true,
       size: "xl",
-      class: "min-w-unit-12 h-unit-12",
+      class: "!text-xl min-w-unit-12 min-h-unit-12",
+    },
+    {
+      isLoading: true,
+      size: "sm",
+      class: "!text-lg min-w-unit-7 min-h-unit-7",
+    },
+    {
+      isLoading: true,
+      size: "md",
+      class: "!text-xl min-w-unit-8 min-h-unit-8",
+    },
+    {
+      isLoading: true,
+      size: "lg",
+      class: "!text-xl min-w-unit-10 min-h-unit-10",
+    },
+    {
+      isLoading: true,
+      size: "xl",
+      class: "!text-xl min-w-unit-12 min-h-unit-12",
     },
 
     // variant / hover 👆
@@ -398,25 +440,25 @@ const button = tv({
     {
       variant: "solid",
       color: "primary",
-      class: "data-[hover=true]:bg-brand/60",
+      class: "bg-brand-700 data-[hover=true]:bg-brand-800",
     },
     //   danger
     {
       variant: "solid",
       color: "danger",
-      class: "data-[hover=true]:bg-danger/60",
+      class: "data-[hover=true]:bg-danger-400",
     },
     //   warning
     {
       variant: "solid",
       color: "warning",
-      class: "data-[hover=true]:bg-warning/60",
+      class: "data-[hover=true]:bg-warning-400",
     },
     //   success
     {
       variant: "solid",
       color: "success",
-      class: "data-[hover=true]:bg-success/60",
+      class: "data-[hover=true]:bg-success-400",
     },
     //   white
     {
@@ -425,12 +467,12 @@ const button = tv({
       class:
         "data-[hover=true]:bg-brand-500 data-[hover=true]:border-brand-500 data-[hover=true]:text-white",
     },
-    //   basic
+    //   secondary
     {
       variant: "solid",
-      color: "basic",
+      color: "secondary",
       class:
-        "data-[hover=true]:bg-neutral-200 data-[hover=true]:border-neutral-200 data-[hover=true]:text-neutral-700",
+        "data-[hover=true]:bg-neutral-300 data-[hover=true]:border-neutral-300 data-[hover=true]:text-neutral-700",
     },
     //   transparent
     {
@@ -441,58 +483,59 @@ const button = tv({
 
     //   primary
     {
-      variant: ["outline", "rounded"],
+      variant: ["outline"],
       color: "primary",
       class:
         "data-[hover=true]:bg-brand data-[hover=true]:border-brand data-[hover=true]:text-white",
     },
     //   danger
     {
-      variant: ["outline", "rounded"],
+      variant: ["outline"],
       color: "danger",
       class:
         "data-[hover=true]:bg-danger-400 data-[hover=true]:border-danger-400 data-[hover=true]:text-white",
     },
     //   warning
     {
-      variant: ["outline", "rounded"],
+      variant: ["outline"],
       color: "warning",
       class:
         "data-[hover=true]:bg-warning-500 data-[hover=true]:border-warning-500 data-[hover=true]:text-white",
     },
     //   success
     {
-      variant: ["outline", "rounded"],
+      variant: ["outline"],
       color: "success",
       class:
         "data-[hover=true]:bg-success-500 data-[hover=true]:border-success-500 data-[hover=true]:text-white",
     },
     //   white
     {
-      variant: ["outline", "rounded"],
+      variant: ["outline"],
       color: "white",
       class:
         "data-[hover=true]:bg-white-50a data-[hover=true]:border-white data-[hover=true]:text-white",
     },
-    //   basic
+    //   secondary
     {
-      variant: ["outline", "rounded"],
-      color: "basic",
+      variant: ["outline"],
+      color: "secondary",
       class:
-        "data-[hover=true]:bg-neutral-200 data-[hover=true]:border-neutral-300 data-[hover=true]:text-black",
+        "data-[hover=true]:bg-neutral-300 data-[hover=true]:border-neutral-300 data-[hover=true]:text-black",
     },
     //   transparent
     {
-      variant: ["outline", "rounded"],
+      variant: ["outline"],
       color: "transparent",
-      class: "data-[hover=true]:bg-transparent data-[hover=true]:text-brand",
+      class:
+        "text-neutral-800 data-[hover=true]:bg-brand-50 data-[hover=true]:border-brand-50 data-[hover=true]:text-brand  data-[hover=true]:border-brand",
     },
 
     //   primary
     {
       variant: "ghost",
       color: "primary",
-      class: "data-[hover=true]:text-brand-900 data-[hover=true]:border-brand",
+      class: "data-[hover=true]:text-brand-900",
     },
     //   danger
     {
@@ -518,11 +561,11 @@ const button = tv({
       color: "white",
       class: "data-[hover=true]:text-neutral-400",
     },
-    //   basic
+    //   secondary
     {
       variant: "ghost",
-      color: "basic",
-      class: "data-[hover=true]:text-brand-900",
+      color: "secondary",
+      class: "data-[hover=true]:text-brand-800",
     },
     //   transparent
     {
@@ -563,10 +606,10 @@ const button = tv({
       class:
         "data-[hover=true]:bg-white-5a data-[hover=true]:border-white data-[hover=true]:text-black",
     },
-    //   basic
+    //   secondary
     {
       isIconOnly: true,
-      color: "basic",
+      color: "secondary",
       class: "data-[hover=true]:bg-neutral-200 data-[hover=true]:text-black",
     },
     //   transparent
@@ -582,28 +625,28 @@ const button = tv({
       variant: "solid",
       color: "primary",
       class:
-        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-brand-800 data-[focus=true]:ring-brand/60",
+        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-brand-900 data-[focus=true]:ring-brand/60",
     },
     //   danger
     {
       variant: "solid",
       color: "danger",
       class:
-        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-danger-800 data-[focus=true]:ring-danger/60",
+        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-danger-600 data-[focus=true]:ring-danger/60",
     },
     //   warning
     {
       variant: "solid",
       color: "warning",
       class:
-        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-warning-800 data-[focus=true]:ring-warning/60",
+        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-warning-600 data-[focus=true]:ring-warning/60",
     },
     //   success
     {
       variant: "solid",
       color: "success",
       class:
-        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-success-800 data-[focus=true]:ring-success/60",
+        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-success-600 data-[focus=true]:ring-success/60",
     },
     //   white
     {
@@ -612,65 +655,65 @@ const button = tv({
       class:
         "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-brand-800 data-[focus=true]:border-brand-800 data-[focus=true]:ring-brand/60 data-[focus=true]:text-white",
     },
-    //   basic
+    //   secondary
     {
       variant: "solid",
-      color: "basic",
+      color: "secondary",
       class:
-        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:ring-neutral-200 data-[focus=true]:bg-neutral-300 data-[focus=true]:border-neutral-300",
+        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:ring-neutral-200 data-[focus=true]:bg-neutral-400 data-[focus=true]:border-neutral-400",
     },
     //   transparent
     {
       variant: "solid",
       color: "transparent",
       class:
-        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:ring-brand-50 data-[focus=true]:bg-brand-200 data-[focus=true]:border-brand-200",
+        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:ring-white-20a data-[focus=true]:bg-brand-200 data-[focus=true]:border-brand-200",
     },
 
     //   primary
     {
-      variant: ["outline", "rounded"],
+      variant: ["outline"],
       color: "primary",
       class:
-        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-brand-800 data-[focus=true]:border-brand-800 data-[focus=true]:ring-brand/60 data-[focus=true]:text-white",
+        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-brand-900 data-[focus=true]:border-brand-800 data-[focus=true]:ring-brand/60 data-[focus=true]:text-white",
     },
     //   danger
     {
-      variant: ["outline", "rounded"],
+      variant: ["outline"],
       color: "danger",
       class:
-        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-danger-800 data-[focus=true]:border-danger-800 data-[focus=true]:text-white data-[focus=true]:ring-danger/60",
+        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-danger-600 data-[focus=true]:border-danger-600 data-[focus=true]:text-white data-[focus=true]:ring-danger/60",
     },
     //   warning
     {
-      variant: ["outline", "rounded"],
+      variant: ["outline"],
       color: "warning",
       class:
-        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-warning-800 data-[focus=true]:border-warning-800 data-[focus=true]:text-white data-[focus=true]:ring-warning/60",
+        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-warning-600 data-[focus=true]:border-warning-600 data-[focus=true]:text-white data-[focus=true]:ring-warning/60",
     },
     //   success
     {
-      variant: ["outline", "rounded"],
+      variant: ["outline"],
       color: "success",
       class:
-        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-success-800 data-[focus=true]:border-success-800 data-[focus=true]:text-white data-[focus=true]:ring-success/60",
+        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-success-600 data-[focus=true]:border-success-600 data-[focus=true]:text-white data-[focus=true]:ring-success/60",
     },
     //   white
     {
-      variant: ["outline", "rounded"],
+      variant: ["outline"],
       color: "white",
       class: "data-[focus=true]:outline-none",
     },
-    //   basic
+    //   secondary
     {
-      variant: ["outline", "rounded"],
-      color: "basic",
+      variant: ["outline"],
+      color: "secondary",
       class:
-        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-neutral-300 data-[focus=true]:border-neutral-300 data-[focus=true]:text-neutral-800 data-[focus=true]:ring-transparent",
+        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-neutral-400 data-[focus=true]:border-neutral-400 data-[focus=true]:text-neutral-800 data-[focus=true]:ring-transparent",
     },
     //   transparent
     {
-      variant: ["outline", "rounded"],
+      variant: ["outline"],
       color: "transparent",
       class:
         "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-brand-200 data-[focus=true]:border-brand data-[focus=true]:text-brand dark:ring-brand/60",
@@ -710,12 +753,12 @@ const button = tv({
       color: "white",
       class: "data-[focus=true]:text-neutral-400",
     },
-    //   basic
+    //   secondary
     {
       variant: "ghost",
-      color: "basic",
+      color: "secondary",
       class:
-        "data-[focus=true]:ring-1 data-[focus=true]:bg-none data-[focus=true]:border-[#0000] data-[focus=true]:text-brand-900 data-[focus=true]:ring-transparent",
+        "data-[focus=true]:ring-1 data-[focus=true]:bg-none data-[focus=true]:border-transparent data-[focus=true]:text-brand-900 data-[focus=true]:bg-transparent data-[focus=true]:ring-black-10a",
     },
     //   transparent
     {
@@ -730,28 +773,28 @@ const button = tv({
       isIconOnly: true,
       color: "primary",
       class:
-        "data-[hover=true]:bg-brand data-[hover=true]:border-brand data-[hover=true]:text-white",
+        "border-transparent text-brand-800 h-max data-[hover=true]:bg-brand-800 data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-brand-900 data-[focus=true]:border-brand-900 data-[focus=true]:ring-brand/60 data-[focus=true]:text-white",
     },
     //   danger
     {
       isIconOnly: true,
       color: "danger",
       class:
-        "data-[hover=true]:bg-danger-400 data-[hover=true]:border-danger-400 data-[hover=true]:text-white",
+        "border-transparent text-danger-600 h-max data-[hover=true]:bg-danger-200 data-[hover=true]:border-danger-200 data-[hover=true]:text-danger-600 data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:!bg-danger-200 data-[focus=true]:!border-danger-200 data-[focus=true]:ring-danger-20a data-[focus=true]:!text-danger-600",
     },
     //   warning
     {
       isIconOnly: true,
       color: "warning",
       class:
-        "data-[hover=true]:bg-warning-500 data-[hover=true]:border-warning-500 data-[hover=true]:text-white",
+        "border-transparent text-warning-600 h-max data-[hover=true]:bg-warning-200 data-[hover=true]:border-warning-200 data-[hover=true]:text-warning-600 data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:!bg-warning-200 data-[focus=true]:!border-warning-200 data-[focus=true]:ring-warning-20a data-[focus=true]:!text-warning-600",
     },
     //   success
     {
       isIconOnly: true,
       color: "success",
       class:
-        "data-[hover=true]:bg-success-500 data-[hover=true]:border-success-500 data-[hover=true]:text-white",
+        "border-transparent text-success-600 h-max data-[hover=true]:bg-success-200 data-[hover=true]:border-success-200 data-[hover=true]:text-success-600 data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:!bg-success-200 data-[focus=true]:!border-success-200 data-[focus=true]:ring-success-20a data-[focus=true]:!text-success-600",
     },
     //   white
     {
@@ -760,10 +803,10 @@ const button = tv({
       class:
         "data-[hover=true]:bg-white-50a data-[hover=true]:border-white data-[hover=true]:text-white",
     },
-    //   basic
+    //   secondary
     {
       isIconOnly: true,
-      color: "basic",
+      color: "secondary",
       class:
         "data-[hover=true]:bg-neutral-200 data-[hover=true]:border-neutral-300 data-[hover=true]:text-black",
     },
@@ -808,10 +851,10 @@ const button = tv({
       color: "white",
       class: "data-[focus=true]:outline-none",
     },
-    //   basic
+    //   secondary
     {
       isIconOnly: true,
-      color: "basic",
+      color: "secondary",
       class:
         "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-neutral-300 data-[focus=true]:border-neutral-300 data-[focus=true]:text-neutral-800 data-[focus=true]:ring-transparent",
     },

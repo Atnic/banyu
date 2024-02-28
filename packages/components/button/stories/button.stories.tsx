@@ -20,7 +20,16 @@ export default {
       control: {
         type: "select",
       },
-      options: ["primary", "danger", "success", "warning", "transparent", "basic", "white"],
+      options: [
+        "primary",
+        "secondary",
+        "danger",
+        "success",
+        "warning",
+        "transparent",
+        // "basic",
+        "white",
+      ],
     },
     size: {
       control: {
@@ -55,37 +64,15 @@ export default {
         type: "boolean",
       },
     },
-    // disableAnimation: {
-    //   control: {
-    //     type: "boolean",
-    //   },
-    // },
   },
 } as Meta<typeof Button>;
 
 const defaultProps = {
-  children: "Button",
+  children: "Base Button",
+  size: "md",
   spinnerPlacement: "start",
   ...button.defaultVariants,
 };
-
-// const StateTemplate = (args: ButtonProps) => {
-//   const [isOpen, setIsOpen] = React.useState(false);
-//
-//   const handlePress = () => {
-//     // eslint-disable-next-line no-console
-//     console.log("Pressed");
-//     setIsOpen((prev) => !prev);
-//   };
-//
-//   return (
-//     <div className="h-screen">
-//       <Button {...args} aria-label="Open" aria-pressed={isOpen} onPress={handlePress}>
-//         {isOpen ? "Close" : "Open"}
-//       </Button>
-//     </div>
-//   );
-// };
 
 export const Solid = {
   parameters: {
@@ -132,7 +119,7 @@ export const rounded = {
   args: {
     ...defaultProps,
     radius: "full",
-    variant: "rounded",
+    variant: "outline",
   },
 };
 export const IconOnly = {
@@ -146,7 +133,7 @@ export const IconOnly = {
     ...defaultProps,
     isIconOnly: true,
     variant: "outline",
-    children: <JalaBiomass className="h-max w-max text-lg" />,
+    children: <JalaBiomass />,
   },
 };
 export const IconWithText = {
