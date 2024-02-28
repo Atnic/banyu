@@ -461,6 +461,9 @@ importers:
       '@jala-banyu/ripple':
         specifier: 'workspace: *'
         version: link:../ripple
+      '@jala-banyu/shared-icons':
+        specifier: workspace:*
+        version: link:../../utilities/shared-icons
       '@jala-banyu/shared-utils':
         specifier: 'workspace: *'
         version: link:../../utilities/shared-utils

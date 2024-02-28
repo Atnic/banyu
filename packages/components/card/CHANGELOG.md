@@ -1,5 +1,11 @@
 # @jala-banyu/card
 
+## 4.1.0
+
+### Minor Changes
+
+- Initial version of Card
+
 ## 4.0.0
 
 ### Patch Changes
