@@ -163,6 +163,9 @@ importers:
       husky:
         specifier: ^8.0.1
         version: 8.0.3
+      identity-obj-proxy:
+        specifier: ^3.0.0
+        version: 3.0.0
       jest:
         specifier: ^29.7.0
         version: 29.7.0(@types/node@20.11.19)(ts-node@10.9.2)
@@ -287,6 +290,46 @@ importers:
       framer-motion:
         specifier: ^10.16.4
         version: 10.18.0(react-dom@18.2.0)(react@18.2.0)
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+
+  packages/components/alert:
+    dependencies:
+      '@jala-banyu/avatar':
+        specifier: 'workspace: *'
+        version: link:../avatar
+      '@jala-banyu/button':
+        specifier: 'workspace: *'
+        version: link:../button
+      '@jala-banyu/react-utils':
+        specifier: 'workspace: *'
+        version: link:../../utilities/react-utils
+      '@jala-banyu/shared-icons':
+        specifier: 'workspace: *'
+        version: link:../../utilities/shared-icons
+      '@jala-banyu/shared-utils':
+        specifier: 'workspace: *'
+        version: link:../../utilities/shared-utils
+      '@react-aria/utils':
+        specifier: ^3.21.1
+        version: 3.23.2(react@18.2.0)
+      react-toastify:
+        specifier: ^10.0.4
+        version: 10.0.4(react-dom@18.2.0)(react@18.2.0)
+    devDependencies:
+      '@jala-banyu/system':
+        specifier: 'workspace: *'
+        version: link:../../core/system
+      '@jala-banyu/theme':
+        specifier: 'workspace: *'
+        version: link:../../core/theme
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -13037,6 +13080,10 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
+  /harmony-reflect@1.6.2:
+    resolution: {integrity: sha512-HIp/n38R9kQjDEziXyDTuW3vvoxxyxjxFzXLrBr18uB47GnSt+G9D29fqrpM5ZkspMcPICud3XsBJQ4Y2URg8g==}
+    dev: true
+
   /has-ansi@2.0.0:
     resolution: {integrity: sha512-C8vBJ8DwUCx19vhm7urhTuUsr4/IyP6l4VzNQDv+ryHQObW3TTTp9yB68WpYgRe2bbaGuZ/se74IqFeVnMnLZg==}
     engines: {node: '>=0.10.0'}
@@ -13245,6 +13292,13 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       safer-buffer: 2.1.2
+    dev: true
+
+  /identity-obj-proxy@3.0.0:
+    resolution: {integrity: sha512-00n6YnVHKrinT9t0d9+5yZC6UBNJANpYEQvL2LlX6Ab9lnmxzIRcEmTPuyGScvl1+jKuCICX1Z0Ab1pPKKdikA==}
+    engines: {node: '>=4'}
+    dependencies:
+      harmony-reflect: 1.6.2
     dev: true
 
   /ieee754@1.2.1:
@@ -17256,6 +17310,17 @@ packages:
       use-latest: 1.2.1(@types/react@18.2.56)(react@18.2.0)
     transitivePeerDependencies:
       - '@types/react'
+    dev: false
+
+  /react-toastify@10.0.4(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-etR3RgueY8pe88SA67wLm8rJmL1h+CLqUGHuAoNsseW35oTGJEri6eBTyaXnFKNQ80v/eO10hBYLgz036XRGgA==}
+    peerDependencies:
+      react: ^18.2.0
+      react-dom: ^18.2.0
+    dependencies:
+      clsx: 2.1.0
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
     dev: false
 
   /react@18.2.0:
