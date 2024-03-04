@@ -45,6 +45,8 @@ export interface Props<T extends HTMLInputElement | HTMLTextAreaElement = HTMLIn
    * Element to be rendered in the left side of the input.
    */
   startContent?: React.ReactNode;
+  startIcon?: React.ReactNode;
+  endIcon?: React.ReactNode;
 
   maxLengthContent?: React.ReactNode;
   /**
@@ -110,6 +112,8 @@ export function useInput<T extends HTMLInputElement | HTMLTextAreaElement = HTML
     autoFocus,
     startContent,
     endContent,
+    startIcon,
+    endIcon,
     onClear,
     onChange,
     validationState,
@@ -544,6 +548,31 @@ export function useInput<T extends HTMLInputElement | HTMLTextAreaElement = HTML
     },
     [slots, classNames?.endContentWrapper],
   );
+  const getStartIconWrapperProps: PropGetter = useCallback(
+    (props = {}) => {
+      return {
+        ...props,
+        "data-slot": "start-content-wrapper",
+        className: slots.startIconWrapper({
+          class: clsx(classNames?.startIconWrapper, props?.className),
+        }),
+      };
+    },
+    [slots, classNames?.startIconWrapper],
+  );
+
+  const getEndIconWrapperProps: PropGetter = useCallback(
+    (props = {}) => {
+      return {
+        ...props,
+        "data-slot": "end-content-wrapper",
+        className: slots.endIconWrapper({
+          class: clsx(classNames?.endIconWrapper, props?.className),
+        }),
+      };
+    },
+    [slots, classNames?.endIconWrapper],
+  );
 
   const getMaxLengthWrapperProps: PropGetter = useCallback(
     (props = {}) => {
@@ -566,6 +595,8 @@ export function useInput<T extends HTMLInputElement | HTMLTextAreaElement = HTML
     description,
     startContent,
     endContent,
+    startIcon,
+    endIcon,
     labelPlacement,
     isClearable,
     isInvalid,
@@ -594,6 +625,8 @@ export function useInput<T extends HTMLInputElement | HTMLTextAreaElement = HTML
     getValidIconProps,
     getStartContentWrapperProps,
     getEndContentWrapperProps,
+    getStartIconWrapperProps,
+    getEndIconWrapperProps,
     getMaxLengthWrapperProps,
   };
 }

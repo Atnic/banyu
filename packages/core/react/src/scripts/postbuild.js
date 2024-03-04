@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 const fs = require('fs');
 
-const filePath = './src/index.ts'; // Updated file path
+const filePath = './src/index.js'; // Updated file path
 const backupFilePath = filePath + '.backup.ts'; // Backup file
 
 // Restore the original file from the backup

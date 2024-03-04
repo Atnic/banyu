@@ -20,6 +20,7 @@ export * from "./moon";
 export * from "./moon-filled";
 export * from "./headphones";
 export * from "./anchor";
+export * from "./feather-upload-cloud";
 export * from "./info";
 export * from "./shield-security";
 export * from "./monitor-mobile";

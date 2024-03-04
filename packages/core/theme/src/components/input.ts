@@ -37,8 +37,12 @@ const input = tv({
     ],
     inValidIcon: "mr-3",
     validIcon: "mr-3",
-    startContentWrapper: "flex p-2 bg-neutral-50 border-e border-neutral-300 items-center h-full",
-    endContentWrapper: "flex p-2 bg-neutral-50 border-s border-neutral-300 items-center h-full",
+    startContentWrapper:
+      "flex p-2 bg-neutral-50 border-e border-neutral-300 items-center h-full min-w-max",
+    endContentWrapper:
+      "flex p-2 bg-neutral-50 border-s border-neutral-300 items-center h-full min-w-max",
+    startIconWrapper: "flex p-2 bg-transparent items-center h-full",
+    endIconWrapper: "flex p-2 bg-transparent items-center h-full",
     mainWrapper: "h-full",
     inputWrapper:
       "relative w-full inline-flex overflow-hidden tap-highlight-transparent flex-row items-center",
