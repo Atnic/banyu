@@ -1,7 +1,7 @@
-import type {VariantProps} from "tailwind-variants"
+import type {VariantProps} from "tailwind-variants";
 
-import {tv} from "../utils/tv"
-import {dataFocusVisibleClasses} from "../utils"
+import {tv} from "../utils/tv";
+import {dataFocusVisibleClasses} from "../utils";
 
 /**
  * Card **Tailwind Variants** component
@@ -29,12 +29,14 @@ const card = tv({
       "text-foreground",
       "box-border",
       "bg-content1",
+      "px-4 py-3",
       // focus ring
       ...dataFocusVisibleClasses,
     ],
     header: [
       "flex",
-      "p-3",
+      "pb-3",
+      "mb-2",
       "z-10",
       "w-full",
       "justify-start",
@@ -44,12 +46,13 @@ const card = tv({
       "color-inherit",
       "subpixel-antialiased",
     ],
+    headerTitle: ["text-neutral-800", "font-semibold", "text-lg"],
+    headerSubtitle: ["text-neutral-400", "text-sm"],
     body: [
       "relative",
       "flex",
       "flex-1",
       "w-full",
-      "p-3",
       "flex-auto",
       "flex-col",
       "place-content-inherit",
@@ -61,10 +64,11 @@ const card = tv({
       "subpixel-antialiased",
     ],
     footer: [
-      "p-3",
+      "pt-3",
       "h-auto",
       "flex",
       "w-full",
+      "mt-2",
       "items-center",
       "overflow-hidden",
       "color-inherit",
@@ -90,22 +94,34 @@ const card = tv({
       none: {
         base: "rounded-none",
         header: "rounded-none",
+        body: "rounded-none",
         footer: "rounded-none",
       },
       sm: {
         base: "rounded-sm",
         header: "rounded-t-sm",
+        body: "rounded-none",
         footer: "rounded-b-sm",
       },
       md: {
         base: "rounded-md",
         header: "rounded-t-md",
+        body: "rounded-md",
         footer: "rounded-b-md",
       },
       lg: {
         base: "rounded-lg",
         header: "rounded-t-lg",
+        body: "rounded-lg",
         footer: "rounded-b-lg",
+      },
+    },
+    contentFullWidth: {
+      true: {
+        base: "p-0",
+        header: "px-4 py-3 mb-0",
+        footer: "px-4 py-3 mt-0",
+        body: "rounded-none",
       },
     },
     fullWidth: {
@@ -145,6 +161,33 @@ const card = tv({
       true: "",
       false: {base: "transition-transform-background motion-reduce:transition-none"},
     },
+    withDivider: {
+      true: {
+        header: ["border-b", "border-neutral-200"],
+        footer: ["border-t", "border-neutral-200"],
+      },
+      false: {},
+    },
+    paddingType: {
+      inside: {
+        base: "p-0",
+        header: "px-4 py-3 mb-0",
+        footer: "px-4 py-3 mt-0",
+        body: "p-0 px-4 py-2",
+      },
+      outside: {},
+    },
+    footerPosition: {
+      start: {
+        footer: "justify-start",
+      },
+      center: {
+        footer: "justify-center",
+      },
+      end: {
+        footer: "justify-end",
+      },
+    },
   },
   compoundVariants: [
     {
@@ -157,16 +200,20 @@ const card = tv({
     radius: "lg",
     shadow: "md",
     fullWidth: false,
+    contentFullWidth: false,
     isHoverable: false,
     isPressable: false,
     isDisabled: false,
     disableAnimation: false,
     isFooterBlurred: false,
+    withDivider: true,
+    paddingType: "inside",
+    footerPosition: "end",
   },
-})
+});
 
-export type CardVariantProps = VariantProps<typeof card>
-export type CardSlots = keyof ReturnType<typeof card>
-export type CardReturnType = ReturnType<typeof card>
+export type CardVariantProps = VariantProps<typeof card>;
+export type CardSlots = keyof ReturnType<typeof card>;
+export type CardReturnType = ReturnType<typeof card>;
 
-export {card}
+export {card};

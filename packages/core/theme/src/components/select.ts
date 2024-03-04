@@ -38,12 +38,13 @@ const select = tv({
       "text-neutral-500",
       "font-normal",
       "w-full",
+      "min-w-12",
       "text-left",
       "group-data-[has-value=true]:text-neutral-800",
     ],
     listboxWrapper: "scroll-py-6 max-h-64 w-full overflow-y-auto",
     listbox: "rounded-none",
-    popoverContent: "w-full p-0 overflow-hidden min-w-80",
+    popoverContent: "w-full p-0 overflow-hidden min-w-12",
     helperWrapper: "p-1 flex relative flex-col gap-1.5",
     description: "z-0 text-xs text-neutral-400",
     errorMessage: "text-xs text-danger",
@@ -112,7 +113,7 @@ const select = tv({
         base: "flex flex-col",
       },
       "outside-left": {
-        base: "flex-row items-center flex-nowrap items-start",
+        base: "flex-row items-center flex-nowrap items-center",
         label: "relative pr-2 text-neutral",
       },
       inside: {

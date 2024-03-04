@@ -1,0 +1,55 @@
+{
+  "name": "@jala-banyu/use-pagination",
+  "version": "0.0.0",
+  "description": "State management hook for Pagination component, it lets you manage pagination with controlled and uncontrolled state",
+  "keywords": [
+    "use-pagination"
+  ],
+  "author": "Dika Mahendra <dika@jala.tech>",
+  "homepage": "#",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Atnic/banyu.git",
+    "directory": "packages/hooks/use-pagination"
+  },
+  "bugs": {
+    "url": "https://github.com/Atnic/banyu/issues"
+  },
+  "scripts": {
+    "build": "tsup src --dts",
+    "build:fast": "tsup src",
+    "dev": "yarn build:fast -- --watch",
+    "clean": "rimraf dist .turbo",
+    "typecheck": "tsc --noEmit",
+    "prepack": "clean-package",
+    "postpack": "clean-package restore"
+  },
+  "dependencies": {
+    "@jala-banyu/shared-utils": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "clean-package": "2.2.0",
+    "react": "^18.0.0"
+  },
+  "clean-package": "../../../clean-package.config.json",
+  "tsup": {
+    "clean": true,
+    "target": "es2019",
+    "format": [
+      "cjs",
+      "esm"
+    ]
+  }
+}

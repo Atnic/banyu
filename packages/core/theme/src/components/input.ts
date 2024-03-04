@@ -216,7 +216,7 @@ const input = tv({
         errorMessage: "text-success",
       },
       false: {
-        validIcon: "invisible",
+        validIcon: "hidden",
       },
     },
     isRequired: {
@@ -254,6 +254,11 @@ const input = tv({
           "transition-[transform,color,left,opacity]",
         ],
         clearButton: ["transition-opacity", "motion-reduce:transition-none"],
+      },
+    },
+    isInGroup: {
+      true: {
+        inputWrapper: "border-none border-neutral-300 rounded-none ring-0",
       },
     },
   },
@@ -479,10 +484,68 @@ const input = tv({
         label: ["pe-2", "max-w-full", "text-ellipsis", "overflow-hidden"],
       },
     },
+    // {
+    //   isInGroup: true,
+    //   class: {
+    //     inputWrapper: "h-full px-0",
+    //   },
+    // },
+    {
+      isInGroup: true,
+      size: "sm",
+      class: {
+        input: "!h-[30px]",
+        innerWrapper: "px-0 py-2 h-full",
+        inputWrapper: "!h-[30px]",
+        mainWrapper: "justify-center",
+      },
+    },
+    {
+      isInGroup: true,
+      size: "md",
+      class: {
+        input: "!h-[22px]",
+        innerWrapper: "px-0 py-2 h-full",
+        inputWrapper: "!h-[22px]",
+        mainWrapper: "justify-center",
+      },
+    },
+    {
+      isInGroup: true,
+      size: "md",
+      class: {
+        input: "!h-[46px]",
+        innerWrapper: "px-0 py-0 h-full",
+        inputWrapper: "!h-[46px]",
+        mainWrapper: "justify-center",
+      },
+    },
   ],
 });
 
+const inputGroup = tv({
+  base: "flex flex-row border border-neutral-300 overflow-hidden divide-x-1 divide-neutral-300",
+  variants: {
+    fullWidth: {
+      true: "w-full",
+    },
+    radius: {
+      none: "rounded-none",
+      sm: "rounded-sm",
+      md: "rounded-md",
+      lg: "rounded-lg",
+      full: "rounded-full",
+    },
+    label: "",
+  },
+  defaultVariants: {
+    fullWidth: false,
+    radius: "lg",
+  },
+});
+
+export type InputGroupVariantProps = VariantProps<typeof inputGroup>;
 export type InputVariantProps = VariantProps<typeof input>;
 export type InputSlots = keyof ReturnType<typeof input>;
 
-export {input};
+export {input, inputGroup};
