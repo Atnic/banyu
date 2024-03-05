@@ -1,6 +1,6 @@
 {
   "name": "@jala-banyu/button",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "description": "Buttons allow users to perform actions and choose with a single tap.",
   "keywords": [
     "button",
@@ -39,8 +39,8 @@
     "framer-motion": ">=4.0.0",
     "react": ">=18",
     "react-dom": ">=18",
-    "@jala-banyu/theme": "1.3.0",
-    "@jala-banyu/system": "1.0.0"
+    "@jala-banyu/theme": "1.4.0",
+    "@jala-banyu/system": "1.1.0"
   },
   "dependencies": {
     "@jala-banyu/react-utils": "workspace: *",
@@ -54,7 +54,7 @@
     "@react-aria/utils": "^3.21.1",
     "@react-types/button": "^3.9.0",
     "@react-types/shared": "^3.21.0",
-    "@jala-banyu/icons" : "^1.0.0"
+    "@jala-banyu/icons": "^1.0.0"
   },
   "devDependencies": {
     "@jala-banyu/shared-icons": "workspace: *",

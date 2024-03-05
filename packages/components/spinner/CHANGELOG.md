@@ -4,6 +4,21 @@
 
 ### Minor Changes
 
+- minor update
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/system@1.1.0
+  - @jala-banyu/system-rsc@5.0.0
+  - @jala-banyu/theme@1.4.0
+  - @jala-banyu/react-utils@1.1.0
+  - @jala-banyu/shared-utils@1.1.0
+
+## 4.1.0
+
+### Minor Changes
+
 - Apply Banyu Design System to Spinner
 
 ## 4.0.0
