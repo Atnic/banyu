@@ -37,3 +37,4 @@ export * from "./breadcrumbs";
 // export * from "./autocomplete";
 export * from "./alert";
 export * from "./pagination";
+export * from "./table";

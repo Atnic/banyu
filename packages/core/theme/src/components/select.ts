@@ -128,6 +128,7 @@ const select = tv({
     },
     hasPlaceholder: {
       false: {
+        value: "min-w-12",
         label:
           "text-neutral-500 font-normal group-data-[filled=true]:text-neutral-800 group-data-[filled=true]:font-semibold",
       },
@@ -215,7 +216,9 @@ const select = tv({
     {
       variant: "ghost",
       class: {
+        base: "w-fit",
         trigger: [
+          "w-fit",
           "shadow-none",
           // "data-[hover=false]:border-none",
           "bg-neutral-200",
@@ -230,7 +233,7 @@ const select = tv({
     {
       variant: "default",
       class: {
-        trigger: ["data-[focus=true]:ring-4", "data-[focus=true]:ring-brand/60"],
+        trigger: ["data-[focus=true]:ring-4", "data-[focus=true]:ring-brand/60", "bg-content1"],
       },
     },
     // dropdown & color

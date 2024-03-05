@@ -1,0 +1,79 @@
+{
+  "name": "@jala-banyu/table",
+  "version": "0.0.0",
+  "description": "Tables are used to display tabular data using rows and columns.",
+  "keywords": [
+    "table"
+  ],
+  "author": "Dika Mahendra <dika@jala.tech>",
+  "homepage": "#",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Atnic/banyu.git",
+    "directory": "packages/components/table"
+  },
+  "bugs": {
+    "url": "https://github.com/Atnic/banyu/issues"
+  },
+  "scripts": {
+    "build": "tsup src --dts",
+    "build:fast": "tsup src",
+    "dev": "yarn build:fast -- --watch",
+    "clean": "rimraf dist .turbo",
+    "typecheck": "tsc --noEmit",
+    "prepack": "clean-package",
+    "postpack": "clean-package restore"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18",
+    "@jala-banyu/theme": ">=1.3.0",
+    "@jala-banyu/system": ">=1.0.0"
+  },
+  "dependencies": {
+    "@jala-banyu/checkbox": "workspace:*",
+    "@jala-banyu/react-utils": "workspace:*",
+    "@jala-banyu/shared-icons": "workspace:*",
+    "@jala-banyu/shared-utils": "workspace:*",
+    "@jala-banyu/input": "workspace:*",
+    "@jala-banyu/select": "workspace:*",
+    "@jala-banyu/spacer": "workspace:*",
+    "@jala-banyu/tooltip": "workspace:*",
+    "@react-aria/focus": "^3.14.3",
+    "@react-aria/interactions": "^3.19.1",
+    "@react-aria/table": "^3.13.1",
+    "@react-aria/utils": "^3.21.1",
+    "@react-aria/visually-hidden": "^3.8.6",
+    "@react-stately/table": "^3.11.2",
+    "@react-stately/virtualizer": "^3.6.4",
+    "@react-types/grid": "^3.2.2",
+    "@react-types/table": "^3.9.0",
+    "react-feather": "^2.0.10"
+  },
+  "devDependencies": {
+    "@jala-banyu/theme": "workspace: *",
+    "@jala-banyu/system": "workspace: *",
+    "@jala-banyu/button": "workspace:*",
+    "@jala-banyu/chip": "workspace:*",
+    "@jala-banyu/pagination": "workspace:*",
+    "@jala-banyu/spinner": "workspace:*",
+    "@jala-banyu/tooltip": "workspace:*",
+    "@jala-banyu/use-infinite-scroll": "workspace:*",
+    "@jala-banyu/user": "workspace:*",
+    "@react-stately/data": "^3.10.3",
+    "clean-package": "2.2.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "swr": "^2.2.1"
+  },
+  "clean-package": "../../../clean-package.config.json"
+}
