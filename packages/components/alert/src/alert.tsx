@@ -1,8 +1,8 @@
 import {forwardRef} from "@jala-banyu/system";
 import {CloseIcon} from "@jala-banyu/shared-icons";
+import {injectStyle} from "react-toastify/dist/inject-style";
 
 import {UseAlertProps, useAlert} from "./use-alert";
-import "react-toastify/dist/ReactToastify.css";
 
 export interface AlertProps extends UseAlertProps {}
 
@@ -28,6 +28,8 @@ const Alert = forwardRef<"div", AlertProps>((props, ref) => {
     ...props,
     ref,
   });
+
+  injectStyle();
 
   const renderEndContent = endContent ? (
     <div {...getEndContentProps()}>{endContent}</div>
