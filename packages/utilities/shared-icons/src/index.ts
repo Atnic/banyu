@@ -41,3 +41,8 @@ export * from "./home";
 export * from "./bulk";
 export * from "./bold";
 export * from "./linear";
+
+//sort
+export * from "./sort";
+export * from "./sort-asc";
+export * from "./sort-desc";
