@@ -64,13 +64,12 @@ const table = tv({
       // "h-10",
       "text-left",
       "align-middle",
-      "bg-neutral-100",
       "whitespace-nowrap",
       "text-neutral-500",
       "text-sm",
       "font-semibold",
-      "first:rounded-tl-md",
-      "last:rounded-tr-md",
+      // "first:rounded-tl-md",
+      // "last:rounded-tr-md",
       "outline-none",
       "data-[sortable=true]:transition-colors",
       "data-[sortable=true]:cursor-pointer",
@@ -108,14 +107,8 @@ const table = tv({
   },
   variants: {
     color: {
-      default: {
-        td: "before:bg-neutral/40 data-[selected=true]:text-neutral",
-      },
       primary: {
-        td: "before:bg-primary/20 data-[selected=true]:text-primary",
-      },
-      secondary: {
-        td: "before:bg-secondary/20 data-[selected=true]:text-secondary",
+        td: "before:bg-brand/20 data-[selected=true]:text-brand",
       },
       success: {
         td: "before:bg-success/20 data-[selected=true]:text-success-600 dark:data-[selected=true]:text-success",
@@ -125,6 +118,23 @@ const table = tv({
       },
       danger: {
         td: "before:bg-danger/20 data-[selected=true]:text-danger dark:data-[selected=true]:text-danger-500",
+      },
+      basic: {
+        td: "before:bg-neutral/20 data-[selected=true]:text-neutral-800 dark:data-[selected=true]:text-neutral-200",
+      },
+      white: {
+        td: "before:bg-brand/20 data-[selected=true]:text-brand dark:data-[selected=true]:text-brand-200",
+      },
+      transparent: {
+        td: "before:bg-transparent data-[selected=true]:text-neutral-800 dark:data-[selected=true]:text-neutral-200",
+      },
+    },
+    headerColor: {
+      default: {
+        th: "bg-neutral-200",
+      },
+      white: {
+        th: "bg-white",
       },
     },
     layout: {
@@ -171,8 +181,14 @@ const table = tv({
     isStriped: {
       true: {
         td: [
-          "group-data-[odd=true]:before:bg-neutral-100",
-          "group-data-[odd=true]:before:opacity-100",
+          "group-data-[odd=true]:before:bg-neutral-50",
+          "group-data-[odd=true]:before:opacity-50",
+        ],
+      },
+      false: {
+        td: [
+          "group-data-[odd=true]:before:bg-transparent",
+          "group-data-[odd=true]:before:opacity-0",
         ],
       },
     },
@@ -225,7 +241,8 @@ const table = tv({
     layout: "auto",
     shadow: "sm",
     radius: "md",
-    color: "default",
+    color: "primary",
+    headerColor: "default",
     isCompact: false,
     hideHeader: false,
     isStriped: true,

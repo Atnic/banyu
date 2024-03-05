@@ -1,12 +1,13 @@
 import type {GridNode} from "@react-types/grid";
 
-import {Key, useMemo} from "react";
+import {useMemo} from "react";
 import {forwardRef, HTMLBanyuProps} from "@jala-banyu/system";
 import {useDOMRef, filterDOMProps} from "@jala-banyu/react-utils";
 import {clsx, dataAttr} from "@jala-banyu/shared-utils";
 import {useTableCell} from "@react-aria/table";
 import {mergeProps} from "@react-aria/utils";
 import {useFocusRing} from "@react-aria/focus";
+import {Key} from "@react-types/shared";
 
 import {ValuesType} from "./use-table";
 
