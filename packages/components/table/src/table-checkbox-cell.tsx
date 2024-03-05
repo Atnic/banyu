@@ -1,5 +1,4 @@
 import type {GridNode} from "@react-types/grid";
-import type {Key} from "react";
 
 import {forwardRef, HTMLBanyuProps} from "@jala-banyu/system";
 import {useDOMRef, filterDOMProps} from "@jala-banyu/react-utils";
@@ -9,6 +8,7 @@ import {mergeProps} from "@react-aria/utils";
 import {useFocusRing} from "@react-aria/focus";
 import {Checkbox} from "@jala-banyu/checkbox";
 import {VisuallyHidden} from "@react-aria/visually-hidden";
+import {Key} from "@react-types/shared";
 
 import {ValuesType} from "./use-table";
 

@@ -33,7 +33,13 @@ export default {
       control: {
         type: "select",
       },
-      options: ["default", "primary", "secondary", "success", "warning", "danger"],
+      options: ["primary", "success", "warning", "danger", "basic", "white", "transparent"],
+    },
+    headerColor: {
+      control: {
+        type: "select",
+      },
+      options: ["default", "white"],
     },
     layout: {
       control: {
@@ -886,7 +892,7 @@ export const MultipleSelection = {
   args: {
     ...defaultProps,
     selectionMode: "multiple",
-    color: "secondary",
+    color: "primary",
   },
 };
 
@@ -974,7 +980,7 @@ export const DisableAnimation = {
   args: {
     ...defaultProps,
     selectionMode: "multiple",
-    color: "secondary",
+    color: "primary",
     disableAnimation: true,
   },
 };
