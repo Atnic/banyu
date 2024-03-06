@@ -275,7 +275,8 @@ export function useSelect<T extends object>(originalProps: UseSelectProps<T>) {
     !!state.selectedItems ||
     !!startContent ||
     !!endContent ||
-    !!originalProps.isMultiline;
+    !!originalProps.isMultiline ||
+    originalProps.variant === "dropdown";
   const hasValue = !!state.selectedItems;
   const hasLabel = !!label;
 
@@ -337,6 +338,7 @@ export function useSelect<T extends object>(originalProps: UseSelectProps<T>) {
       "data-has-value": dataAttr(hasValue),
       "data-has-label": dataAttr(hasLabel),
       "data-has-helper": dataAttr(hasHelper),
+      "data-has-placeholder": dataAttr(hasPlaceholder) ?? false,
       className: slots.base({
         class: clsx(baseStyles, props.className),
       }),

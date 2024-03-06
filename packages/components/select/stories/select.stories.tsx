@@ -83,13 +83,19 @@ const Template = ({variant, ...args}: SelectProps) => (
 const DropDownTemplate = ({variant, ...args}: SelectProps) => {
   const regions = [
     {key: "idn", label: "IDN", icon: <JalaIdn className={"text-2xl"} />},
-    {key: "usa", label: "USA", icon: <JalaUsa className={"text-2xl"} />},
+    {key: "eng", label: "ENG", icon: <JalaUsa className={"text-2xl"} />},
     {key: "esp", label: "ESP", icon: <JalaEsp className={"text-2xl"} />},
     {key: "vie", label: "VIE", icon: <JalaVie className={"text-2xl"} />},
   ];
 
   return (
     <Select
+      classNames={{
+        base: "max-w-14",
+        innerWrapper: "mr-0",
+        popoverContent: "min-w-24",
+      }}
+      defaultSelectedKeys={["idn"]}
       renderValue={(items) => {
         return items.map((item) => item.props?.startContent);
       }}
@@ -550,7 +556,6 @@ export const DropdownSelect = {
   args: {
     ...defaultProps,
     variant: "dropdown",
-    defaultSelectedKeys: ["idn"],
   },
 };
 
