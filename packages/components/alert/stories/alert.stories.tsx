@@ -159,12 +159,9 @@ const WithListTemplate = (args: AlertProps & {timeout: number; position: ToastPo
 const AnnouncementBannerTemplate = (args: AlertProps) => {
   const displayToast = () => {
     toast(
-      <Alert
-        {...args}
-        startIcon={<InfoIcon />}
-        title={"Announcement Title"}
-        variant={"announcementBanner"}
-      />,
+      <Alert {...args} startIcon={<InfoIcon />} variant={"announcementBanner"}>
+        Announcement Banner
+      </Alert>,
     );
   };
 
@@ -188,9 +185,10 @@ const AnnouncementBannerWithoutCloseButtonTemplate = (args: AlertProps) => {
         {...args}
         hideCloseButton={true}
         startIcon={<InfoIcon />}
-        title={"Announcement Title"}
         variant={"announcementBanner"}
-      />
+      >
+        Announcement Banner
+      </Alert>
     </div>
   );
 };
