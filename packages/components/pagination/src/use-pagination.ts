@@ -362,7 +362,7 @@ export function usePagination(originalProps: UsePaginationProps) {
   const getItemProps: PropGetter = (props = {}) => {
     return {
       ...props,
-      ref: (node) => getItemRef(node, props.value),
+      ref: (node: HTMLElement | null) => getItemRef(node, props.value),
       "data-slot": "item",
       isActive: props.value === activePage,
       className: slots.item({class: clsx(classNames?.item, props?.className)}),
