@@ -17,7 +17,7 @@ export default {
   argTypes: {
     variant: {
       control: {type: "select"},
-      options: ["soft", "solid"],
+      options: ["soft", "solid", "announcementBanner"],
     },
     color: {
       control: {type: "select"},
@@ -159,25 +159,36 @@ const WithListTemplate = (args: AlertProps & {timeout: number; position: ToastPo
 const AnnouncementBannerTemplate = (args: AlertProps) => {
   const displayToast = () => {
     toast(
-      <Alert
-        {...args}
-        classNames={{base: "w-full m-0 sticky top-0"}}
-        color={"warning"}
-        radius={"none"}
-        startIcon={<InfoIcon />}
-        title={"Announcement Title"}
-        variant={"soft"}
-      />,
+      <Alert {...args} startIcon={<InfoIcon />} variant={"announcementBanner"}>
+        Announcement Banner
+      </Alert>,
     );
   };
 
+  // if it's mounted, then display the toast
   useEffect(() => {
     displayToast();
   }, []);
 
   return (
-    <div className="flex items-start h-full w-full">
+    <div className="flex flex-col items-start h-full w-full">
       <AnnouncementContainer autoClose={false} position={"top-right"} />
+      Component needs to be rerendered to show changes
+    </div>
+  );
+};
+
+const AnnouncementBannerWithoutCloseButtonTemplate = (args: AlertProps) => {
+  return (
+    <div className="flex flex-col items-start h-full w-full">
+      <Alert
+        {...args}
+        hideCloseButton={true}
+        startIcon={<InfoIcon />}
+        variant={"announcementBanner"}
+      >
+        Announcement Banner
+      </Alert>
     </div>
   );
 };
@@ -193,6 +204,15 @@ export const AnnouncementBanner = {
   render: AnnouncementBannerTemplate,
   args: {
     ...defaultProps,
+    radius: "none",
+  },
+};
+
+export const AnnouncementBannerWithoutCloseButton = {
+  render: AnnouncementBannerWithoutCloseButtonTemplate,
+  args: {
+    ...defaultProps,
+    radius: "none",
   },
 };
 
