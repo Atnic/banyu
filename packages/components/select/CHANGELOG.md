@@ -1,5 +1,11 @@
 # @jala-banyu/select
 
+## 1.2.1
+
+### Patch Changes
+
+- Fix issue alert, pagination & select
+
 ## 1.2.0
 
 ### Minor Changes

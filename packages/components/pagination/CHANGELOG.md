@@ -1,5 +1,15 @@
 # @jala-banyu/pagination
 
+## 1.1.1
+
+### Patch Changes
+
+- Fix issue alert, pagination & select
+
+- Updated dependencies []:
+  - @jala-banyu/select@1.0.1
+  - @jala-banyu/use-pagination@1.0.1
+
 ## 1.1.0
 
 ### Minor Changes
