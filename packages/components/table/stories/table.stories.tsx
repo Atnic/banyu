@@ -537,7 +537,7 @@ const PaginatedTemplate = (args: TableProps) => {
       </Table>
       <div className="flex flex-col md:flex-row gap-2 w-full justify-between">
         <Pagination page={page} total={pages} onChange={(page) => setPage(page)} />
-        <div className="flex gap-2 items-center">
+        <div className="flex gap-2 items-center justify-start">
           <Select
             classNames={{
               label: "font-normal group-data-[filled=true]:font-normal",
