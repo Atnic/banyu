@@ -18,6 +18,12 @@ const alert = tv({
     variant: {
       solid: {},
       soft: {},
+      announcementBanner: {
+        base: "w-full m-0 sticky top-0 p-1 items-center justify-center",
+        startContentWrapper: "flex items-center gap-2 ml-auto",
+        contentWrapper: "flex-0 grow-0 flex-col w-fit mr-auto",
+        titleWrapper: "gap-0",
+      },
     },
     radius: {
       none: {},
@@ -41,6 +47,12 @@ const alert = tv({
       danger: {},
       basic: {},
       white: {},
+    },
+    hideCloseButton: {
+      true: {
+        endContentWrapper: "hidden",
+      },
+      false: {},
     },
   },
   defaultVariants: {
@@ -187,6 +199,79 @@ const alert = tv({
         base: "bg-black/10",
         startIcon: "text-neutral-800",
         title: "text-neutral-800",
+        subtitleInfo: "text-neutral-500",
+        contentWrapper: "text-neutral-500",
+        endContentWrapper: "text-neutral-800",
+      },
+    },
+    // Announcement Banner
+    {
+      variant: "announcementBanner",
+      color: "primary",
+      class: {
+        base: [colorVariants.soft.primary, "border-2 border-brand-400"],
+        startIcon: "text-brand-800",
+        title: "text-sm text-brand-800",
+        subtitleInfo: "text-neutral-500",
+        contentWrapper: "text-neutral-500",
+        endContentWrapper: "text-neutral-800",
+      },
+    },
+    {
+      variant: "announcementBanner",
+      color: "success",
+      class: {
+        base: [colorVariants.soft.success, "border-2 border-success-400"],
+        startIcon: "text-success-800",
+        title: "text-sm text-success-800",
+        subtitleInfo: "text-neutral-500",
+        contentWrapper: "text-neutral-500",
+        endContentWrapper: "text-neutral-800",
+      },
+    },
+    {
+      variant: "announcementBanner",
+      color: "warning",
+      class: {
+        base: [colorVariants.soft.warning, "border-2 border-warning-400"],
+        startIcon: "text-warning-900",
+        title: "text-sm text-warning-900",
+        subtitleInfo: "text-neutral-500",
+        contentWrapper: "text-neutral-500",
+        endContentWrapper: "text-neutral-800",
+      },
+    },
+    {
+      variant: "announcementBanner",
+      color: "danger",
+      class: {
+        base: [colorVariants.soft.danger, "border-2 border-danger-400"],
+        startIcon: "text-danger-800",
+        title: "text-sm text-danger-800",
+        subtitleInfo: "text-neutral-500",
+        contentWrapper: "text-neutral-500",
+        endContentWrapper: "text-neutral-800",
+      },
+    },
+    {
+      variant: "announcementBanner",
+      color: "basic",
+      class: {
+        base: [colorVariants.soft.basic, "border-2 border-gray-400"],
+        startIcon: "text-gray-800",
+        title: "text-sm text-gray-800",
+        subtitleInfo: "text-neutral-800",
+        contentWrapper: "text-neutral-800",
+        endContentWrapper: "text-neutral-800",
+      },
+    },
+    {
+      variant: "announcementBanner",
+      color: "white",
+      class: {
+        base: "bg-black/10",
+        startIcon: "text-neutral-800",
+        title: "text-sm text-neutral-800",
         subtitleInfo: "text-neutral-500",
         contentWrapper: "text-neutral-500",
         endContentWrapper: "text-neutral-800",
