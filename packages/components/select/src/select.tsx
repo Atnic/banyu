@@ -3,7 +3,7 @@ import {FreeSoloPopover} from "@jala-banyu/popover";
 import {CheckIcon, ChevronDownIcon, CloseFilledIcon} from "@jala-banyu/shared-icons";
 import {Spinner} from "@jala-banyu/spinner";
 import {forwardRef} from "@jala-banyu/system";
-import {cloneElement, ForwardedRef, ReactElement, ReactNode, Ref, useMemo} from "react";
+import React, {cloneElement, ForwardedRef, ReactElement, ReactNode, Ref, useMemo} from "react";
 import {VisuallyHidden} from "@react-aria/visually-hidden";
 import {AnimatePresence} from "framer-motion";
 
@@ -26,6 +26,8 @@ function Select<T extends object>(props: Props<T>, ref: ForwardedRef<HTMLSelectE
     errorMessage,
     startContent,
     endContent,
+    topContent,
+    bottomContent,
     placeholder,
     renderValue,
     shouldLabelBeOutside,
@@ -45,6 +47,8 @@ function Select<T extends object>(props: Props<T>, ref: ForwardedRef<HTMLSelectE
     getDescriptionProps,
     getErrorMessageProps,
     getSelectorIconProps,
+    getTopContentProps,
+    getBottomContentProps,
   } = useSelect<T>({...props, ref});
 
   const labelContent = label ? <label {...getLabelProps()}>{label}</label> : null;
@@ -106,9 +110,11 @@ function Select<T extends object>(props: Props<T>, ref: ForwardedRef<HTMLSelectE
     () =>
       state.isOpen ? (
         <FreeSoloPopover {...getPopoverProps()} state={state} triggerRef={triggerRef}>
+          <div {...getTopContentProps()}>{topContent}</div>
           <div {...getListboxWrapperProps()}>
             <Listbox {...getListboxProps()} />
           </div>
+          <div {...getBottomContentProps()}>{bottomContent}</div>
         </FreeSoloPopover>
       ) : null,
     [state.isOpen, getPopoverProps, state, triggerRef, getListboxWrapperProps, getListboxProps],

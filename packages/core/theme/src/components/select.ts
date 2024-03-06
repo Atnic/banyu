@@ -48,6 +48,8 @@ const select = tv({
     helperWrapper: "p-1 flex relative flex-col gap-1.5",
     description: "z-0 text-xs text-neutral-400",
     errorMessage: "text-xs text-danger",
+    topContent: "w-full border-b-1 border-neutral-200",
+    bottomContent: "w-full border-t-1 border-neutral-200",
   },
   variants: {
     variant: {
@@ -240,8 +242,8 @@ const select = tv({
     {
       variant: "dropdown",
       class: {
-        base: "max-w-fit",
-        innerWrapper: "w-fit min-w-12",
+        // base: "max-w-fit",
+        innerWrapper: "w-fit min-w-12 mr-6",
         trigger: [
           "w-fit",
           "px-1",
@@ -252,9 +254,9 @@ const select = tv({
           "data-[open=true]:border-brand",
         ],
         selectorIcon: "right-1",
-        value: "min-w-fit font-semibold",
-        label: "min-w-fit font-semibold",
-        popoverContent: "w-fit min-w-0",
+        value: "font-semibold",
+        label: "w-max font-semibold",
+        popoverContent: "min-w-36",
       },
     },
     // labelPlacement=outside & default

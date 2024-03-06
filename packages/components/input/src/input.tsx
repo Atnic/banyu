@@ -15,6 +15,8 @@ const Input = forwardRef<"input", InputProps>((props, ref) => {
     isClearable,
     startContent,
     endContent,
+    startIcon,
+    endIcon,
     isInvalid,
     isValid,
     labelPlacement,
@@ -36,6 +38,8 @@ const Input = forwardRef<"input", InputProps>((props, ref) => {
     getValidIconProps,
     getStartContentWrapperProps,
     getEndContentWrapperProps,
+    getEndIconWrapperProps,
+    getStartIconWrapperProps,
   } = useInput({...props, ref});
 
   const labelContent = label ? <label {...getLabelProps()}>{label}</label> : null;
@@ -88,12 +92,20 @@ const Input = forwardRef<"input", InputProps>((props, ref) => {
   ]);
 
   const startWrapper = useMemo(() => {
+    if (startIcon) {
+      return <div {...getStartIconWrapperProps()}>{startIcon}</div>;
+    }
+
     return startContent && <div {...getStartContentWrapperProps()}>{startContent}</div>;
-  }, [startContent, getStartContentWrapperProps]);
+  }, [startIcon, startContent, getStartContentWrapperProps, getStartIconWrapperProps]);
 
   const endWrapper = useMemo(() => {
+    if (endIcon) {
+      return <div {...getEndIconWrapperProps()}>{endIcon}</div>;
+    }
+
     return endContent && <div {...getEndContentWrapperProps()}>{endContent}</div>;
-  }, [endContent, getEndContentWrapperProps]);
+  }, [endContent, endIcon, getEndContentWrapperProps, getEndIconWrapperProps]);
 
   const innerWrapper = useMemo(() => {
     return (
