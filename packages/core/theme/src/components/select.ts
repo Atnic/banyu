@@ -44,7 +44,7 @@ const select = tv({
     ],
     listboxWrapper: "scroll-py-6 max-h-64 w-full overflow-y-auto",
     listbox: "rounded-none",
-    popoverContent: "w-full p-0 overflow-hidden min-w-12",
+    popoverContent: "w-full p-0 overflow-hidden min-w-dvw md:min-w-[320px]",
     helperWrapper: "p-1 flex relative flex-col gap-1.5",
     description: "z-0 text-xs text-neutral-400",
     errorMessage: "text-xs text-danger",
