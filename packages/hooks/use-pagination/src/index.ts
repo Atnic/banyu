@@ -114,7 +114,7 @@ export function usePagination(props: UsePaginationProps) {
     const shouldShowRightDots = rightSiblingIndex < total - (boundaries + 1);
 
     if (!shouldShowLeftDots && shouldShowRightDots) {
-      const leftItemCount = siblings * 2 + boundaries;
+      const leftItemCount = siblings * 2 + boundaries + 2;
 
       return formatRange([
         ...range(1, leftItemCount),

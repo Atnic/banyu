@@ -1,9 +1,15 @@
-import {ToastContainer, ToastContainerProps} from "react-toastify";
+import {cssTransition, ToastContainer, ToastContainerProps} from "react-toastify";
 
 const AnnouncementContainer = (props: ToastContainerProps) => {
   /**
    * Return ToastContainer without default styles
    */
+  // disable transition on enter, dismiss when exit
+  const noneTransition = cssTransition({
+    enter: "none",
+    exit: "hidden",
+  });
+
   return (
     <ToastContainer
       {...props}
@@ -13,6 +19,7 @@ const AnnouncementContainer = (props: ToastContainerProps) => {
       closeButton={false}
       style={{width: "100dvw"}}
       toastClassName={() => ""}
+      transition={noneTransition}
     />
   );
 };
