@@ -2,7 +2,7 @@
 import React, {ChangeEvent, ReactNode} from "react";
 import {Meta} from "@storybook/react";
 import {select, button} from "@jala-banyu/theme";
-import {AvatarIcon, PetBoldIcon, SelectorIcon} from "@jala-banyu/shared-icons";
+import {AvatarIcon, PetBoldIcon, Plus, SelectorIcon} from "@jala-banyu/shared-icons";
 import {Avatar} from "@jala-banyu/avatar";
 import {Button} from "@jala-banyu/button";
 import {Selection} from "@react-types/shared";
@@ -16,6 +16,8 @@ import {
   User,
 } from "@jala-banyu/stories-utils";
 import {JalaEsp, JalaIdn, JalaUsa, JalaVie} from "@jala-banyu/icons";
+import {Input} from "@jala-banyu/input";
+import {Search} from "react-feather";
 
 import {Select, SelectItem, SelectProps, SelectSection} from "../src";
 
@@ -294,30 +296,60 @@ const CustomItemsTemplate = ({variant, ...args}: SelectProps<User>) => (
   </div>
 );
 
-const WithSectionsTemplate = ({variant, ...args}: SelectProps<User>) => (
-  <Select className="max-w-xs" label="Favorite Animal" variant={variant} {...args}>
-    <SelectSection showDivider title="Mammals">
-      <SelectItem key="Lion">Lion</SelectItem>
-      <SelectItem key="Tiger">Tiger</SelectItem>
-      <SelectItem key="Elephant">Elephant</SelectItem>
-      <SelectItem key="Kangaroo">Kangaroo</SelectItem>
-      <SelectItem key="Panda">Panda</SelectItem>
-      <SelectItem key="Giraffe">Giraffe</SelectItem>
-      <SelectItem key="Zebra">Zebra</SelectItem>
-      <SelectItem key="Cheetah">Cheetah</SelectItem>
-    </SelectSection>
-    <SelectSection title="Birds">
-      <SelectItem key="Eagle">Eagle</SelectItem>
-      <SelectItem key="Parrot">Parrot</SelectItem>
-      <SelectItem key="Penguin">Penguin</SelectItem>
-      <SelectItem key="Ostrich">Ostrich</SelectItem>
-      <SelectItem key="Peacock">Peacock</SelectItem>
-      <SelectItem key="Swan">Swan</SelectItem>
-      <SelectItem key="Falcon">Falcon</SelectItem>
-      <SelectItem key="Flamingo">Flamingo</SelectItem>
-    </SelectSection>
-  </Select>
-);
+const WithSectionsTemplate = ({variant, ...args}: SelectProps<User>) => {
+  return (
+    <Select className="max-w-xs" label="Favorite Animal" variant={variant} {...args}>
+      <SelectSection showDivider title="Mammals">
+        <SelectItem key="Lion">Lion</SelectItem>
+        <SelectItem key="Tiger">Tiger</SelectItem>
+        <SelectItem key="Elephant">Elephant</SelectItem>
+        <SelectItem key="Kangaroo">Kangaroo</SelectItem>
+        <SelectItem key="Panda">Panda</SelectItem>
+        <SelectItem key="Giraffe">Giraffe</SelectItem>
+        <SelectItem key="Zebra">Zebra</SelectItem>
+        <SelectItem key="Cheetah">Cheetah</SelectItem>
+      </SelectSection>
+      <SelectSection title="Birds">
+        <SelectItem key="Eagle">Eagle</SelectItem>
+        <SelectItem key="Parrot">Parrot</SelectItem>
+        <SelectItem key="Penguin">Penguin</SelectItem>
+        <SelectItem key="Ostrich">Ostrich</SelectItem>
+        <SelectItem key="Peacock">Peacock</SelectItem>
+        <SelectItem key="Swan">Swan</SelectItem>
+        <SelectItem key="Falcon">Falcon</SelectItem>
+        <SelectItem key="Flamingo">Flamingo</SelectItem>
+      </SelectSection>
+    </Select>
+  );
+};
+const WithTopAndBottomContentTemplate = ({variant, ...args}: SelectProps) => {
+  const topContent = (
+    <div className="p-1 w-full">
+      <Input placeholder="Search" startIcon={<Search className={"text-lg"} />} />
+    </div>
+  );
+  const bottomContent = (
+    <div className="flex justify-start">
+      <Button size="sm" variant="ghost">
+        <Plus fill={"currentColor"} />
+        Add new
+      </Button>
+    </div>
+  );
+
+  return (
+    <Select
+      className="max-w-xs"
+      label="Favorite Animal"
+      variant={variant}
+      {...args}
+      bottomContent={bottomContent}
+      topContent={topContent}
+    >
+      {items}
+    </Select>
+  );
+};
 const WithAriaLabelTemplate = ({variant, ...args}: SelectProps) => (
   <Select className="max-w-xs" label="Favorite Animal" variant={variant} {...args}>
     {items}
@@ -519,5 +551,13 @@ export const DropdownSelect = {
     ...defaultProps,
     variant: "dropdown",
     defaultSelectedKeys: ["idn"],
+  },
+};
+
+export const WithTopAndBottomContent = {
+  render: WithTopAndBottomContentTemplate,
+
+  args: {
+    ...defaultProps,
   },
 };

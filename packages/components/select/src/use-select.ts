@@ -118,6 +118,14 @@ interface Props<T> extends Omit<HTMLBanyuProps<"select">, keyof SelectVariantPro
    * Classes object to style the select and its children.
    */
   classNames?: SlotsToClasses<SelectSlots>;
+  /**
+   * Top content to be rendered in the popover.
+   */
+  topContent?: ReactNode;
+  /**
+   * Bottom content to be rendered in the popover.
+   */
+  bottomContent?: ReactNode;
 }
 
 export type UseSelectProps<T> = Omit<Props<T>, keyof MultiSelectProps<T>> &
@@ -140,6 +148,8 @@ export function useSelect<T extends object>(originalProps: UseSelectProps<T>) {
     onOpenChange,
     startContent,
     endContent,
+    topContent,
+    bottomContent,
     description,
     errorMessage,
     renderValue,
@@ -571,6 +581,28 @@ export function useSelect<T extends object>(originalProps: UseSelectProps<T>) {
     [slots, spinnerRef, spinnerProps, classNames?.spinner],
   );
 
+  const getTopContentProps: PropGetter = useCallback(
+    (props = {}) => ({
+      "data-slot": "topContent",
+      className: slots.topContent({
+        class: clsx(classNames?.topContent, props.className),
+      }),
+      ...props,
+    }),
+    [slots, classNames?.topContent],
+  );
+
+  const getBottomContentProps: PropGetter = useCallback(
+    (props = {}) => ({
+      "data-slot": "bottomContent",
+      className: slots.bottomContent({
+        class: clsx(classNames?.bottomContent, props.className),
+      }),
+      ...props,
+    }),
+    [slots, classNames?.bottomContent],
+  );
+
   return {
     Component,
     domRef,
@@ -583,6 +615,8 @@ export function useSelect<T extends object>(originalProps: UseSelectProps<T>) {
     placeholder,
     startContent,
     endContent,
+    topContent,
+    bottomContent,
     description,
     selectorIcon,
     errorMessage,
@@ -609,6 +643,8 @@ export function useSelect<T extends object>(originalProps: UseSelectProps<T>) {
     getDescriptionProps,
     getErrorMessageProps,
     getSelectorIconProps,
+    getTopContentProps,
+    getBottomContentProps,
   };
 }
 

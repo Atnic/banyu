@@ -43,6 +43,7 @@
     "@jala-banyu/react-utils": "workspace:*",
     "@jala-banyu/shared-utils": "workspace:*",
     "@jala-banyu/divider": "workspace:*",
+    "@jala-banyu/input": "workspace:*",
     "@jala-banyu/aria-utils": "workspace:*",
     "@jala-banyu/use-is-mobile": "workspace:*",
     "@jala-banyu/use-aria-press": "workspace:*",
