@@ -682,7 +682,7 @@ importers:
         specifier: 'workspace: *'
         version: link:../../utilities/shared-utils
       '@jala-banyu/system':
-        specifier: 1.0.0
+        specifier: 1.1.0
         version: link:../../core/system
       '@jala-banyu/system-rsc':
         specifier: 'workspace: *'
@@ -888,7 +888,7 @@ importers:
         specifier: 'workspace: *'
         version: link:../../utilities/shared-utils
       '@jala-banyu/system':
-        specifier: 1.0.0
+        specifier: 1.1.0
         version: link:../../core/system
       '@jala-banyu/system-rsc':
         specifier: 'workspace: *'
@@ -1502,7 +1502,7 @@ importers:
         specifier: 'workspace: *'
         version: link:../../utilities/shared-utils
       '@jala-banyu/system':
-        specifier: 1.0.0
+        specifier: 1.1.0
         version: link:../../core/system
       '@jala-banyu/system-rsc':
         specifier: 'workspace: *'
@@ -1564,7 +1564,7 @@ importers:
         specifier: 'workspace: *'
         version: link:../../utilities/shared-utils
       '@jala-banyu/system':
-        specifier: 1.0.0
+        specifier: 1.1.0
         version: link:../../core/system
       '@jala-banyu/system-rsc':
         specifier: 'workspace: *'
@@ -1823,6 +1823,12 @@ importers:
 
   packages/core/react:
     dependencies:
+      '@jala-banyu/accordion':
+        specifier: 'workspace: *'
+        version: link:../../components/accordion
+      '@jala-banyu/alert':
+        specifier: 'workspace: *'
+        version: link:../../components/alert
       '@jala-banyu/avatar':
         specifier: 'workspace: *'
         version: link:../../components/avatar
@@ -1835,6 +1841,9 @@ importers:
       '@jala-banyu/card':
         specifier: 'workspace: *'
         version: link:../../components/card
+      '@jala-banyu/chip':
+        specifier: 'workspace: *'
+        version: link:../../components/chip
       '@jala-banyu/code':
         specifier: 'workspace: *'
         version: link:../../components/code
@@ -1859,12 +1868,24 @@ importers:
       '@jala-banyu/menu':
         specifier: 'workspace: *'
         version: link:../../components/menu
+      '@jala-banyu/modal':
+        specifier: 'workspace: *'
+        version: link:../../components/modal
+      '@jala-banyu/pagination':
+        specifier: 'workspace: *'
+        version: link:../../components/pagination
       '@jala-banyu/popover':
         specifier: 'workspace: *'
         version: link:../../components/popover
+      '@jala-banyu/progress':
+        specifier: 'workspace: *'
+        version: link:../../components/progress
       '@jala-banyu/ripple':
         specifier: 'workspace: *'
         version: link:../../components/ripple
+      '@jala-banyu/select':
+        specifier: 'workspace: *'
+        version: link:../../components/select
       '@jala-banyu/skeleton':
         specifier: 'workspace: *'
         version: link:../../components/skeleton
@@ -6839,8 +6860,8 @@ packages:
       react: 18.2.0
     dev: false
 
-  /@react-types/select@3.9.2(react@18.2.0):
-    resolution: {integrity: sha512-fGFrunednY3Pq/BBwVOf87Fsuyo/SlevL0wFIE9OOl2V5NXVaTY7/7RYA8hIOHPzmvsMbndy419BEudiNGhv4A==}
+  /@react-types/progress@3.5.2(react@18.2.0):
+    resolution: {integrity: sha512-aQql22kusEudsHwDEzq6y/Mh29AM+ftRDKdS5E5g4MkCY5J4FMbOYco1T5So83NIvvG9+eKcxPoJUMjQQACAyA==}
     peerDependencies:
       react: ^18.2.0
     dependencies:
@@ -6848,8 +6869,8 @@ packages:
       react: 18.2.0
     dev: false
 
-  /@react-types/progress@3.5.2(react@18.2.0):
-    resolution: {integrity: sha512-aQql22kusEudsHwDEzq6y/Mh29AM+ftRDKdS5E5g4MkCY5J4FMbOYco1T5So83NIvvG9+eKcxPoJUMjQQACAyA==}
+  /@react-types/select@3.9.2(react@18.2.0):
+    resolution: {integrity: sha512-fGFrunednY3Pq/BBwVOf87Fsuyo/SlevL0wFIE9OOl2V5NXVaTY7/7RYA8hIOHPzmvsMbndy419BEudiNGhv4A==}
     peerDependencies:
       react: ^18.2.0
     dependencies:
@@ -10787,7 +10808,6 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
     dev: true
-    bundledDependencies: false
 
   /create-require@1.1.1:
     resolution: {integrity: sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==}

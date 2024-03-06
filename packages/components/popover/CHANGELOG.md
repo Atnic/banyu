@@ -1,5 +1,23 @@
 # @jala-banyu/popover
 
+## 3.1.0
+
+### Minor Changes
+
+- minor update
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/button@5.0.0
+  - @jala-banyu/system@1.1.0
+  - @jala-banyu/theme@1.4.0
+  - @jala-banyu/use-aria-button@1.1.0
+  - @jala-banyu/aria-utils@1.1.0
+  - @jala-banyu/framer-transitions@1.1.0
+  - @jala-banyu/react-utils@1.1.0
+  - @jala-banyu/shared-utils@1.1.0
+
 ## 3.0.0
 
 ### Patch Changes

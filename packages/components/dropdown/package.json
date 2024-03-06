@@ -1,6 +1,6 @@
 {
   "name": "@jala-banyu/dropdown",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A dropdown displays a list of actions or options that a user can choose.",
   "keywords": [
     "dropdown"
