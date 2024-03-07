@@ -1,6 +1,6 @@
 {
   "name": "@jala-banyu/menu",
-  "version": "4.3.0",
+  "version": "4.3.1",
   "description": "A menu displays a list of options and allows a user to select one or more of them.",
   "keywords": [
     "menu"
@@ -36,7 +36,7 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "@jala-banyu/theme": "1.4.0",
+    "@jala-banyu/theme": "1.4.1",
     "@jala-banyu/system": "1.1.0"
   },
   "dependencies": {

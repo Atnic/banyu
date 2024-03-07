@@ -1,6 +1,6 @@
 {
   "name": "@jala-banyu/checkbox",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Checkboxes allow users to select multiple items from a list of individual items, or to mark one individual item as selected.",
   "keywords": [
     "checkbox"
@@ -36,7 +36,7 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "@jala-banyu/theme": "1.4.0",
+    "@jala-banyu/theme": "1.4.1",
     "@jala-banyu/system": ">=1.0.0"
   },
   "dependencies": {

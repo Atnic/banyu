@@ -1,5 +1,11 @@
 # @jala-banyu/theme
 
+## 1.4.1
+
+### Patch Changes
+
+- updte component variant
+
 ## 1.4.0
 
 ### Minor Changes

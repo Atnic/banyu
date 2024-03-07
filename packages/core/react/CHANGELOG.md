@@ -1,5 +1,11 @@
 # @jala-banyu/react
 
+## 1.1.2
+
+### Patch Changes
+
+- fix variant
+
 ## 1.1.0
 
 ### Minor Changes
