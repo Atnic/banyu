@@ -1,5 +1,11 @@
 # @jala-banyu/select
 
+## 1.2.2
+
+### Patch Changes
+
+- fix prevent expanding size on hover
+
 ## 1.2.1
 
 ### Patch Changes

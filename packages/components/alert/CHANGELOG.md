@@ -1,5 +1,11 @@
 # @jala-banyu/alert
 
+## 1.1.2
+
+### Patch Changes
+
+- fix prevent expanding size on hover
+
 ## 1.1.1
 
 ### Patch Changes
