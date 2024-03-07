@@ -56,7 +56,8 @@ const select = tv({
       ghost: {
         trigger: [
           "bg-neutral-200",
-          "data-[hover=true]:border-[1px]",
+          "border-[1px]",
+          "border-transparent",
           "data-[hover=true]:border-brand",
           "group-data-[focus=true]:bg-neutral-100",
         ],
