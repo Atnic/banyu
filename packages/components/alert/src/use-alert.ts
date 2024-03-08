@@ -50,7 +50,18 @@ export type UseAlertProps = Props &
 export function useAlert(originalProps: UseAlertProps) {
   const [props, variantProps] = mapPropsVariants(originalProps, alert.variantKeys);
 
-  const {ref, as, className, classNames, ...otherProps} = props;
+  const {
+    ref,
+    as,
+    className,
+    classNames,
+    startContent,
+    startIcon,
+    endContent,
+    closeToast,
+    toastProps,
+    ...otherProps
+  } = props;
 
   // handle if ref is empty object
   const domRef = useDOMRef<HTMLDivElement>(ref);
@@ -75,9 +86,10 @@ export function useAlert(originalProps: UseAlertProps) {
   );
 
   const getBaseProps: PropGetter = useCallback(() => {
+    // delete startIcon and endContent from otherProps
     return {
-      ref: domRef,
       className: slots.base({class: baseStyles}),
+      ref: domRef,
       ...otherProps,
     };
   }, [domRef, slots, baseStyles, otherProps]);
@@ -121,6 +133,11 @@ export function useAlert(originalProps: UseAlertProps) {
     Component,
     slots,
     domRef,
+    startContent,
+    startIcon,
+    endContent,
+    closeToast,
+    toastProps,
     getBaseProps,
     getStartContentProps,
     getContentProps,
