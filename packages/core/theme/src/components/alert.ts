@@ -5,7 +5,7 @@ import {colorVariants} from "../utils";
 
 const alert = tv({
   slots: {
-    base: "flex flex-row items-start justify-between m-2 p-4 gap-2 w-fit max-w-full",
+    base: "flex flex-row items-start justify-between m-2 p-4 gap-0 md:gap-2 w-fit max-w-full",
     startContentWrapper: "flex items-start gap-2",
     contentWrapper: "flex-1 flex-grow flex-col gap-2 w-full min-w-48 list-inside",
     titleWrapper: "flex items-start gap-2",
@@ -19,9 +19,10 @@ const alert = tv({
       solid: {},
       soft: {},
       announcementBanner: {
-        base: "w-full m-0 sticky top-0 p-1 items-center justify-center",
+        base: "w-full m-0 sticky top-0 p-1 md:items-center justify-center flex-col md:flex-row px-1",
         startContentWrapper: "flex items-center gap-2 ml-auto",
-        contentWrapper: "flex-0 grow-0 flex-col w-fit mr-auto",
+        startIcon: "hidden md:block",
+        contentWrapper: "flex-none grow-0 flex-col w-fit md:mr-auto min-w-0",
         titleWrapper: "gap-0",
       },
     },
@@ -211,7 +212,7 @@ const alert = tv({
       class: {
         base: [colorVariants.soft.primary, "border-2 border-brand-400"],
         startIcon: "text-brand-800",
-        contentWrapper: "font-semibold text-sm text-brand-800",
+        contentWrapper: "font-semibold text-xs md:text-sm text-brand-800",
         endContentWrapper: "text-neutral-800",
       },
     },
@@ -221,7 +222,7 @@ const alert = tv({
       class: {
         base: [colorVariants.soft.success, "border-2 border-success-400"],
         startIcon: "text-success-800",
-        contentWrapper: "font-semibold text-sm text-success-800",
+        contentWrapper: "font-semibold text-xs md:text-sm text-success-800",
         endContentWrapper: "text-neutral-800",
       },
     },
@@ -231,7 +232,7 @@ const alert = tv({
       class: {
         base: [colorVariants.soft.warning, "border-2 border-warning-400"],
         startIcon: "text-warning-900",
-        contentWrapper: "font-semibold text-sm text-warning-900",
+        contentWrapper: "font-semibold text-xs md:text-sm text-warning-900",
         endContentWrapper: "text-neutral-800",
       },
     },
@@ -241,7 +242,7 @@ const alert = tv({
       class: {
         base: [colorVariants.soft.danger, "border-2 border-danger-400"],
         startIcon: "text-danger-800",
-        contentWrapper: "font-semibold text-sm text-danger-800",
+        contentWrapper: "font-semibold text-xs md:text-sm text-danger-800",
         endContentWrapper: "text-neutral-800",
       },
     },
@@ -251,7 +252,7 @@ const alert = tv({
       class: {
         base: [colorVariants.soft.basic, "border-2 border-gray-400"],
         startIcon: "text-gray-800",
-        contentWrapper: "font-semibold text-sm text-gray-800",
+        contentWrapper: "font-semibold text-xs md:text-sm text-gray-800",
         endContentWrapper: "text-neutral-800",
       },
     },
@@ -261,7 +262,7 @@ const alert = tv({
       class: {
         base: "bg-black/10",
         startIcon: "text-neutral-800",
-        contentWrapper: "font-semibold text-sm text-neutral-800",
+        contentWrapper: "font-semibold text-xs md:text-sm text-neutral-800",
         endContentWrapper: "text-neutral-800",
       },
     },
