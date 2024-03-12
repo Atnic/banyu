@@ -1,5 +1,12 @@
 # @jala-banyu/card
 
+## 4.2.2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/shared-icons@1.2.0
+
 ## 4.2.1
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 # @jala-banyu/select
 
+## 1.2.5
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/shared-icons@1.2.0
+  - @jala-banyu/listbox@1.1.1
+
 ## 1.2.4
 
 ### Patch Changes

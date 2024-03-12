@@ -1,5 +1,12 @@
 # @jala-banyu/accordion
 
+## 1.1.2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/shared-icons@1.2.0
+
 ## 1.1.1
 
 ### Patch Changes

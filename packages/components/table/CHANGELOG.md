@@ -1,5 +1,14 @@
 # @jala-banyu/table
 
+## 1.0.5
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/shared-icons@1.2.0
+  - @jala-banyu/checkbox@1.2.1
+  - @jala-banyu/select@1.2.5
+
 ## 1.0.4
 
 ### Patch Changes

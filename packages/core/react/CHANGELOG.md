@@ -1,5 +1,11 @@
 # @jala-banyu/react
 
+## 1.1.5
+
+### Patch Changes
+
+- update dependencies component
+
 ## 1.1.4
 
 ### Patch Changes
