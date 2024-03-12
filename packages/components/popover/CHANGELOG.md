@@ -1,5 +1,11 @@
 # @jala-banyu/popover
 
+## 3.1.2
+
+### Patch Changes
+
+- fix popover
+
 ## 3.1.1
 
 ### Patch Changes

@@ -1,5 +1,17 @@
 # @jala-banyu/react
 
+## 1.1.4
+
+### Patch Changes
+
+- fix popover
+
+- Updated dependencies []:
+  - @jala-banyu/popover@3.1.2
+  - @jala-banyu/select@1.2.4
+  - @jala-banyu/pagination@1.1.4
+  - @jala-banyu/table@1.0.4
+
 ## 1.1.3
 
 ### Patch Changes

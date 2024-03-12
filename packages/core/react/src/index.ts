@@ -34,6 +34,7 @@ export * from "@jala-banyu/progress";
 export * from "@jala-banyu/alert";
 export * from "@jala-banyu/pagination";
 export * from "@jala-banyu/checkbox";
+export * from "@jala-banyu/table";
 /**
  * React Aria - Exports
  */

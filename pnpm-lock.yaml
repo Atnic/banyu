@@ -2010,6 +2010,9 @@ importers:
       '@jala-banyu/system':
         specifier: 'workspace: *'
         version: link:../system
+      '@jala-banyu/table':
+        specifier: 'workspace: *'
+        version: link:../../components/table
       '@jala-banyu/theme':
         specifier: 'workspace: *'
         version: link:../theme
