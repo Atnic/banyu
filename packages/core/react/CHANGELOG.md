@@ -1,5 +1,11 @@
 # @jala-banyu/react
 
+## 1.1.3
+
+### Patch Changes
+
+- fix checkbox component not exported
+
 ## 1.1.2
 
 ### Patch Changes

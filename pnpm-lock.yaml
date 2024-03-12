@@ -1944,6 +1944,9 @@ importers:
       '@jala-banyu/card':
         specifier: 'workspace: *'
         version: link:../../components/card
+      '@jala-banyu/checkbox':
+        specifier: 'workspace: *'
+        version: link:../../components/checkbox
       '@jala-banyu/chip':
         specifier: 'workspace: *'
         version: link:../../components/chip
