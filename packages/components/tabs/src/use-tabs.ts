@@ -47,6 +47,10 @@ export interface Props extends Omit<HTMLBanyuProps, "children"> {
    * ``
    */
   classNames?: SlotsToClasses<TabsSlots>;
+  /**
+   * Content to be placed at the end of the tabs.
+   */
+  endContent?: React.ReactNode;
 }
 
 export type UseTabsProps<T> = Props &
@@ -79,6 +83,7 @@ export function useTabs<T extends object>(originalProps: UseTabsProps<T>) {
     disableCursorAnimation,
     shouldSelectOnPressUp = true,
     motionProps,
+    endContent,
     ...otherProps
   } = props;
 
@@ -158,6 +163,7 @@ export function useTabs<T extends object>(originalProps: UseTabsProps<T>) {
     domRef,
     state,
     values,
+    endContent,
     getBaseProps,
     getTabListProps,
   };
