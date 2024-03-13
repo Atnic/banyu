@@ -3,6 +3,7 @@ import {Meta} from "@storybook/react";
 import {tabs} from "@jala-banyu/theme";
 import Lorem from "react-lorem-component";
 import {JalaBiomass, JalaSrEstimation, JalaFinancialReport, JalaPremium} from "@jala-banyu/icons";
+import {Button} from "@jala-banyu/button";
 
 import {Tabs, Tab, TabsProps} from "../src";
 
@@ -71,6 +72,39 @@ const StaticTemplate = (args: TabsProps) => (
   </Tabs>
 );
 
+const WithEndContentTemplate = (args: TabsProps) => {
+  const endContent = (
+    <div className={"flex gap-2"}>
+      <Button color="primary" size="sm" variant="solid">
+        Button 1
+      </Button>
+      <Button color="primary" size="sm" variant="solid">
+        Button 2
+      </Button>
+      <Button color="primary" size="sm" variant="solid">
+        Button 3
+      </Button>
+    </div>
+  );
+
+  return (
+    <Tabs aria-label="Tabs example" endContent={endContent} {...args}>
+      <Tab key="all" title="All">
+        <Lorem count={1} sentenceUpperBound={20} />
+      </Tab>
+      <Tab key="operational" title="Operational">
+        <Lorem count={1} sentenceUpperBound={30} />
+      </Tab>
+      <Tab key="inventory" title="Inventory">
+        <Lorem count={1} sentenceUpperBound={10} />
+      </Tab>
+      <Tab key="fry" title="Fry">
+        <Lorem count={1} sentenceUpperBound={50} />
+      </Tab>
+    </Tabs>
+  );
+};
+
 const WithIconsTemplate = (args: TabsProps) => (
   <Tabs
     aria-label="Tabs example"
@@ -132,6 +166,13 @@ export const Horizontal = {
       url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=330%3A139059&mode=dev",
     },
   },
+  args: {
+    ...defaultProps,
+  },
+};
+
+export const WithEndContent = {
+  render: WithEndContentTemplate,
   args: {
     ...defaultProps,
   },
