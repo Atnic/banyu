@@ -8,11 +8,8 @@ import {mergeProps} from "@react-aria/utils";
 import {useFocusRing} from "@react-aria/focus";
 import {VisuallyHidden} from "@react-aria/visually-hidden";
 import {useHover} from "@react-aria/interactions";
-import {SortAscIcon} from "@jala-banyu/shared-icons/src/sort-asc";
-import {SortIcon} from "@jala-banyu/shared-icons/src/sort";
-import {SortDescIcon} from "@jala-banyu/shared-icons/src/sort-desc";
 import {Tooltip} from "@jala-banyu/tooltip";
-import {HelpCircle} from "react-feather";
+import {HelpCircleIcon, SortAscIcon, SortDescIcon, SortIcon} from "@jala-banyu/shared-icons";
 
 import {ValuesType} from "./use-table";
 
@@ -82,7 +79,9 @@ const TableColumnHeader = forwardRef<"th", TableColumnHeaderProps>((props, ref) 
   if (tooltip) {
     tooltipIndicator = (
       <Tooltip content={tooltip} placement="top">
-        <HelpCircle className={slots.tooltipIcon?.({class: classNames?.tooltipIcon})} size={16} />
+        <p className={"inline-block"}>
+          <HelpCircleIcon className={slots.tooltipIcon?.({class: classNames?.tooltipIcon})} />
+        </p>
       </Tooltip>
     );
   }

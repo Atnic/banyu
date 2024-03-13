@@ -36,6 +36,7 @@ export * from "./arrow-left";
 export * from "./link";
 export * from "./selector";
 export * from "./home";
+export * from "./help-circle";
 
 // sets
 export * from "./bulk";
