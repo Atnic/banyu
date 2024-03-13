@@ -1,5 +1,12 @@
 # @jala-banyu/menu
 
+## 4.3.3
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.4.3
+
 ## 4.3.2
 
 ### Patch Changes

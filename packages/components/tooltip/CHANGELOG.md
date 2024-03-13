@@ -1,5 +1,13 @@
 # @jala-banyu/tooltip
 
+## 4.1.3
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.4.3
+  - @jala-banyu/kbd@4.1.3
+
 ## 4.1.2
 
 ### Patch Changes

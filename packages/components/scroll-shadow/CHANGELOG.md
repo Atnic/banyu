@@ -1,5 +1,20 @@
 # @jala-banyu/scroll-shadow
 
+## 1.1.4
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.4.3
+
+## 1.1.3
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/shared-utils@1.1.1
+  - @jala-banyu/use-data-scroll-overflow@1.1.1
+
 ## 1.1.2
 
 ### Patch Changes

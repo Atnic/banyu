@@ -1,5 +1,11 @@
 # @jala-banyu/theme
 
+## 1.4.3
+
+### Patch Changes
+
+- Reponsiveness
+
 ## 1.4.2
 
 ### Patch Changes

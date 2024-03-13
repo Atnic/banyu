@@ -1,6 +1,6 @@
 {
   "name": "@jala-banyu/use-pagination",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "State management hook for Pagination component, it lets you manage pagination with controlled and uncontrolled state",
   "keywords": [
     "use-pagination"
