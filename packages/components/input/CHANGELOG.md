@@ -1,5 +1,13 @@
 # @jala-banyu/input
 
+## 4.1.2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.4.2
+  - @jala-banyu/shared-icons@1.2.1
+
 ## 4.1.1
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 # @jala-banyu/popover
 
+## 3.1.3
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.4.2
+  - @jala-banyu/button@4.1.2
+
 ## 3.1.2
 
 ### Patch Changes

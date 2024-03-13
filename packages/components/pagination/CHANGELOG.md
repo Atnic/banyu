@@ -1,5 +1,13 @@
 # @jala-banyu/pagination
 
+## 1.1.6
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/shared-icons@1.2.1
+  - @jala-banyu/select@1.2.6
+
 ## 1.1.5
 
 ### Patch Changes

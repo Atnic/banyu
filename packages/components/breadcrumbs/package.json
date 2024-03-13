@@ -1,6 +1,6 @@
 {
   "name": "@jala-banyu/breadcrumbs",
-  "version": "4.1.1",
+  "version": "4.1.2",
   "description": "Breadcrumbs display a hierarchy of links to the current page or resource in an application.",
   "keywords": [
     "breadcrumbs"
@@ -36,7 +36,7 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "@jala-banyu/theme": "1.4.1",
+    "@jala-banyu/theme": "1.4.2",
     "@jala-banyu/system": "1.1.0"
   },
   "dependencies": {

@@ -1,6 +1,6 @@
 {
   "name": "@jala-banyu/chip",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A Chip is a small block of essential information that represent an input, attribute, or action.",
   "keywords": [
     "chip"
@@ -36,7 +36,7 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "@jala-banyu/theme": "1.4.1",
+    "@jala-banyu/theme": "1.4.2",
     "@jala-banyu/system": ">=1.0.0"
   },
   "dependencies": {

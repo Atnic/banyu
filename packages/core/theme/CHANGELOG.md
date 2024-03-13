@@ -1,5 +1,11 @@
 # @jala-banyu/theme
 
+## 1.4.2
+
+### Patch Changes
+
+- fix: table tooltip, turn off dark mode
+
 ## 1.4.1
 
 ### Patch Changes

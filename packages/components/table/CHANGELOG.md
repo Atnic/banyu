@@ -1,5 +1,19 @@
 # @jala-banyu/table
 
+## 1.0.6
+
+### Patch Changes
+
+- fix: table tooltip, turn off dark mode
+
+- Updated dependencies []:
+  - @jala-banyu/shared-icons@1.2.1
+  - @jala-banyu/checkbox@1.2.2
+  - @jala-banyu/input@4.1.2
+  - @jala-banyu/select@1.2.6
+  - @jala-banyu/spacer@1.1.2
+  - @jala-banyu/tooltip@4.1.2
+
 ## 1.0.5
 
 ### Patch Changes

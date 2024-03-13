@@ -1,5 +1,39 @@
 # @jala-banyu/react
 
+## 1.1.6
+
+### Patch Changes
+
+- fix: table tooltip, turn off dark mode
+
+- Updated dependencies []:
+  - @jala-banyu/table@1.0.6
+  - @jala-banyu/theme@1.4.2
+  - @jala-banyu/accordion@1.1.3
+  - @jala-banyu/avatar@4.1.2
+  - @jala-banyu/breadcrumbs@4.1.2
+  - @jala-banyu/button@4.1.2
+  - @jala-banyu/card@4.2.3
+  - @jala-banyu/checkbox@1.2.2
+  - @jala-banyu/chip@1.1.2
+  - @jala-banyu/code@4.1.2
+  - @jala-banyu/image@4.1.2
+  - @jala-banyu/input@4.1.2
+  - @jala-banyu/kbd@4.1.2
+  - @jala-banyu/link@4.1.2
+  - @jala-banyu/menu@4.3.2
+  - @jala-banyu/modal@1.0.2
+  - @jala-banyu/popover@3.1.3
+  - @jala-banyu/ripple@4.1.2
+  - @jala-banyu/select@1.2.6
+  - @jala-banyu/skeleton@4.1.2
+  - @jala-banyu/spinner@4.2.2
+  - @jala-banyu/switch@4.1.2
+  - @jala-banyu/tooltip@4.1.2
+  - @jala-banyu/user@5.0.2
+  - @jala-banyu/pagination@1.1.6
+  - @jala-banyu/progress@1.1.0
+
 ## 1.1.5
 
 ### Patch Changes
