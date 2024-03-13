@@ -1,5 +1,55 @@
 # @jala-banyu/select
 
+## 1.2.6
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.4.2
+  - @jala-banyu/shared-icons@1.2.1
+  - @jala-banyu/listbox@1.1.2
+  - @jala-banyu/popover@3.1.3
+  - @jala-banyu/scroll-shadow@1.1.2
+  - @jala-banyu/spinner@4.2.2
+
+## 1.2.5
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/shared-icons@1.2.0
+  - @jala-banyu/listbox@1.1.1
+
+## 1.2.4
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/popover@3.1.2
+
+## 1.2.3
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.4.1
+  - @jala-banyu/listbox@1.1.1
+  - @jala-banyu/popover@3.1.1
+  - @jala-banyu/scroll-shadow@1.1.1
+  - @jala-banyu/spinner@4.2.1
+
+## 1.2.2
+
+### Patch Changes
+
+- fix prevent expanding size on hover
+
+## 1.2.1
+
+### Patch Changes
+
+- Fix issue alert, pagination & select
+
 ## 1.2.0
 
 ### Minor Changes

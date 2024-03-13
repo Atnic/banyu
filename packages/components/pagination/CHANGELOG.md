@@ -1,5 +1,52 @@
 # @jala-banyu/pagination
 
+## 1.1.6
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/shared-icons@1.2.1
+  - @jala-banyu/select@1.2.6
+
+## 1.1.5
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/shared-icons@1.2.0
+  - @jala-banyu/select@1.2.5
+
+## 1.1.4
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/select@1.2.4
+
+## 1.1.3
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/select@1.2.3
+
+## 1.1.2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/select@1.2.2
+
+## 1.1.1
+
+### Patch Changes
+
+- Fix issue alert, pagination & select
+
+- Updated dependencies []:
+  - @jala-banyu/select@1.0.1
+  - @jala-banyu/use-pagination@1.0.1
+
 ## 1.1.0
 
 ### Minor Changes

@@ -1,6 +1,6 @@
 {
   "name": "@jala-banyu/react",
-  "version": "1.1.0",
+  "version": "1.1.6",
   "description": "Banyu core React UI library",
   "author": "Muhammad Amien <muhammadamien23@gmail.com>",
   "homepage": "#",
@@ -69,6 +69,8 @@
     "@jala-banyu/progress": "workspace: *",
     "@jala-banyu/alert": "workspace: *",
     "@jala-banyu/pagination": "workspace: *",
+    "@jala-banyu/checkbox": "workspace: *",
+    "@jala-banyu/table": "workspace: *",
     "@react-aria/visually-hidden": "^3.8.6"
   },
   "peerDependencies": {

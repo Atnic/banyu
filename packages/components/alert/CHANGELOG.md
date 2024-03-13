@@ -1,5 +1,17 @@
 # @jala-banyu/alert
 
+## 1.1.2
+
+### Patch Changes
+
+- fix prevent expanding size on hover
+
+## 1.1.1
+
+### Patch Changes
+
+- Fix issue alert, pagination & select
+
 ## 1.0.0
 
 ### Major Changes

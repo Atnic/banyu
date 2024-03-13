@@ -1,5 +1,11 @@
 # @jala-banyu/use-pagination
 
+## 1.0.1
+
+### Patch Changes
+
+- Fix issue alert, pagination & select
+
 ## 1.0.0
 
 ### Major Changes

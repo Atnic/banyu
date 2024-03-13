@@ -13,7 +13,7 @@ describe("usePagination", () => {
   it("should return correct initial state", () => {
     const {result} = renderHook(() => usePagination({total: 10}));
 
-    expect(result.current.range).toStrictEqual([1, 2, 3, "dots", 10]);
+    expect(result.current.range).toStrictEqual([1, 2, 3, 4, 5, "dots", 10]);
     expect(result.current.activePage).toBe(1);
   });
 

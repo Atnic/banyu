@@ -44,17 +44,20 @@ const select = tv({
     ],
     listboxWrapper: "scroll-py-6 max-h-64 w-full overflow-y-auto",
     listbox: "rounded-none",
-    popoverContent: "w-full p-0 overflow-hidden min-w-12",
+    popoverContent: "w-full p-0 overflow-hidden min-w-dvw md:min-w-[320px]",
     helperWrapper: "p-1 flex relative flex-col gap-1.5",
     description: "z-0 text-xs text-neutral-400",
     errorMessage: "text-xs text-danger",
+    topContent: "w-full border-b-1 border-neutral-200",
+    bottomContent: "w-full border-t-1 border-neutral-200",
   },
   variants: {
     variant: {
       ghost: {
         trigger: [
           "bg-neutral-200",
-          "data-[hover=true]:border-[1px]",
+          "border-[1px]",
+          "border-transparent",
           "data-[hover=true]:border-brand",
           "group-data-[focus=true]:bg-neutral-100",
         ],
@@ -128,6 +131,7 @@ const select = tv({
     },
     hasPlaceholder: {
       false: {
+        value: "min-w-12",
         label:
           "text-neutral-500 font-normal group-data-[filled=true]:text-neutral-800 group-data-[filled=true]:font-semibold",
       },
@@ -215,7 +219,9 @@ const select = tv({
     {
       variant: "ghost",
       class: {
+        base: "w-fit",
         trigger: [
+          "w-fit",
           "shadow-none",
           // "data-[hover=false]:border-none",
           "bg-neutral-200",
@@ -230,15 +236,15 @@ const select = tv({
     {
       variant: "default",
       class: {
-        trigger: ["data-[focus=true]:ring-4", "data-[focus=true]:ring-brand/60"],
+        trigger: ["data-[focus=true]:ring-4", "data-[focus=true]:ring-brand/60", "bg-content1"],
       },
     },
     // dropdown & color
     {
       variant: "dropdown",
       class: {
-        base: "max-w-fit",
-        innerWrapper: "w-fit min-w-12",
+        // base: "max-w-fit",
+        innerWrapper: "w-fit min-w-12 mr-6",
         trigger: [
           "w-fit",
           "px-1",
@@ -249,9 +255,9 @@ const select = tv({
           "data-[open=true]:border-brand",
         ],
         selectorIcon: "right-1",
-        value: "min-w-fit font-semibold",
-        label: "min-w-fit font-semibold",
-        popoverContent: "w-fit min-w-0",
+        value: "font-semibold",
+        label: "w-max font-semibold",
+        popoverContent: "min-w-36",
       },
     },
     // labelPlacement=outside & default

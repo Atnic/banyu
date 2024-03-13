@@ -1,6 +1,6 @@
 {
   "name": "@jala-banyu/modal",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Displays a dialog with a custom content that requires attention or provides additional information.",
   "keywords": [
     "modal"
