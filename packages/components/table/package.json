@@ -56,8 +56,7 @@
     "@react-stately/table": "^3.11.2",
     "@react-stately/virtualizer": "^3.6.4",
     "@react-types/grid": "^3.2.2",
-    "@react-types/table": "^3.9.0",
-    "react-feather": "^2.0.10"
+    "@react-types/table": "^3.9.0"
   },
   "devDependencies": {
     "@jala-banyu/theme": "workspace: *",

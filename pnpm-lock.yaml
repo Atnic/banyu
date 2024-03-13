@@ -1700,9 +1700,6 @@ importers:
       '@react-types/table':
         specifier: ^3.9.0
         version: 3.9.3(react@18.2.0)
-      react-feather:
-        specifier: ^2.0.10
-        version: 2.0.10(react@18.2.0)
     devDependencies:
       '@jala-banyu/button':
         specifier: workspace:*
@@ -11099,6 +11096,7 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
     dev: true
+    bundledDependencies: false
 
   /create-require@1.1.1:
     resolution: {integrity: sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==}
