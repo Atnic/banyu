@@ -1,5 +1,13 @@
 # @jala-banyu/listbox
 
+## 1.1.5
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.4.4
+  - @jala-banyu/input@4.1.4
+
 ## 1.1.4
 
 ### Patch Changes

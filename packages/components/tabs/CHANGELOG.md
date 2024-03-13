@@ -1,5 +1,11 @@
 # @jala-banyu/tabs
 
+## 1.1.2
+
+### Patch Changes
+
+- add end content on tabs
+
 ## 1.1.1
 
 ### Patch Changes

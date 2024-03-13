@@ -1,5 +1,11 @@
 # @jala-banyu/theme
 
+## 1.4.4
+
+### Patch Changes
+
+- add end content on tabs
+
 ## 1.4.3
 
 ### Patch Changes

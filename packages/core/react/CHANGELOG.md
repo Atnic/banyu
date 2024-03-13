@@ -1,5 +1,40 @@
 # @jala-banyu/react
 
+## 1.1.9
+
+### Patch Changes
+
+- add end content on tabs
+
+- Updated dependencies []:
+  - @jala-banyu/tabs@1.1.2
+  - @jala-banyu/theme@1.4.4
+  - @jala-banyu/accordion@1.1.6
+  - @jala-banyu/avatar@4.1.4
+  - @jala-banyu/breadcrumbs@4.1.4
+  - @jala-banyu/button@4.1.4
+  - @jala-banyu/card@4.2.5
+  - @jala-banyu/checkbox@1.2.4
+  - @jala-banyu/chip@1.1.4
+  - @jala-banyu/code@4.1.4
+  - @jala-banyu/image@4.1.4
+  - @jala-banyu/input@4.1.4
+  - @jala-banyu/kbd@4.1.4
+  - @jala-banyu/link@4.1.4
+  - @jala-banyu/menu@4.3.4
+  - @jala-banyu/modal@1.0.3
+  - @jala-banyu/popover@3.1.5
+  - @jala-banyu/ripple@4.1.4
+  - @jala-banyu/select@1.2.9
+  - @jala-banyu/skeleton@4.1.4
+  - @jala-banyu/spinner@4.2.4
+  - @jala-banyu/switch@4.1.4
+  - @jala-banyu/tooltip@4.1.4
+  - @jala-banyu/user@5.0.4
+  - @jala-banyu/table@1.0.9
+  - @jala-banyu/progress@1.1.0
+  - @jala-banyu/pagination@1.1.9
+
 ## 1.1.8
 
 ### Patch Changes

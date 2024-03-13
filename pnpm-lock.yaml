@@ -2010,6 +2010,9 @@ importers:
       '@jala-banyu/table':
         specifier: 'workspace: *'
         version: link:../../components/table
+      '@jala-banyu/tabs':
+        specifier: 'workspace: *'
+        version: link:../../components/tabs
       '@jala-banyu/theme':
         specifier: 'workspace: *'
         version: link:../theme
@@ -11096,7 +11099,6 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
     dev: true
-    bundledDependencies: false
 
   /create-require@1.1.1:
     resolution: {integrity: sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==}

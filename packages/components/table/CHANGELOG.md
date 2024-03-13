@@ -1,5 +1,16 @@
 # @jala-banyu/table
 
+## 1.0.9
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/checkbox@1.2.4
+  - @jala-banyu/input@4.1.4
+  - @jala-banyu/select@1.2.9
+  - @jala-banyu/spacer@1.1.4
+  - @jala-banyu/tooltip@4.1.4
+
 ## 1.0.8
 
 ### Patch Changes
