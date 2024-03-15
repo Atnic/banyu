@@ -1,5 +1,11 @@
 # @jala-banyu/react
 
+## 1.1.12
+
+### Patch Changes
+
+- update theme
+
 ## 1.1.11
 
 ### Patch Changes

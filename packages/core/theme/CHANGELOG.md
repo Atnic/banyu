@@ -1,5 +1,11 @@
 # @jala-banyu/theme
 
+## 1.4.5
+
+### Patch Changes
+
+- fix select style
+
 ## 1.4.4
 
 ### Patch Changes
