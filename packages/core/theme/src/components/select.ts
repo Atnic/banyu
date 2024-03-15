@@ -20,8 +20,8 @@ const select = tv({
     mainWrapper: "w-full flex flex-col",
     trigger: [
       "relative",
-      "px-3",
-      "gap-3",
+      "px-2",
+      "gap-2",
       "w-full",
       "inline-flex",
       "flex-row",
@@ -32,7 +32,7 @@ const select = tv({
     ],
     innerWrapper:
       "inline-flex h-full w-[calc(100%_-_theme(spacing.unit-6))] min-h-unit-4 items-center gap-1.5 box-border text-neutral-800 text-lg",
-    selectorIcon: "absolute right-3 w-unit-6 h-unit-6",
+    selectorIcon: "absolute right-2 w-unit-6 h-unit-6",
     spinner: "absolute right-3",
     value: [
       "text-neutral-500",
@@ -44,7 +44,7 @@ const select = tv({
     ],
     listboxWrapper: "scroll-py-6 max-h-64 w-full overflow-y-auto",
     listbox: "rounded-none",
-    popoverContent: "w-full p-0 overflow-hidden min-w-dvw md:min-w-[320px]",
+    popoverContent: "flex w-full p-0 overflow-hidden min-w-dvw md:min-w-[320px]",
     helperWrapper: "p-1 flex relative flex-col gap-1.5",
     description: "z-0 text-xs text-neutral-400",
     errorMessage: "text-xs text-danger",
@@ -97,18 +97,27 @@ const select = tv({
     radius: {
       none: {
         trigger: "rounded-none",
+        popoverContent: "rounded-none",
       },
       sm: {
         trigger: "rounded-sm",
+        popoverContent: "rounded-sm",
       },
       md: {
         trigger: "rounded-md",
+        popoverContent: "rounded-md",
       },
       lg: {
         trigger: "rounded-lg",
+        popoverContent: "rounded-lg",
+      },
+      xl: {
+        trigger: "rounded-xl",
+        popoverContent: "rounded-xl",
       },
       full: {
         trigger: "rounded-full",
+        popoverContent: "rounded-xl",
       },
     },
     labelPlacement: {
