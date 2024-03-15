@@ -480,8 +480,8 @@ export function useSelect<T extends object>(originalProps: UseSelectProps<T>) {
         offset:
           state.selectedItems && state.selectedItems.length > 0
             ? // forces the popover to update its position when the selected items change
-              state.selectedItems.length * 0.00000001 + (slotsProps.popoverProps?.offset || 0)
-            : slotsProps.popoverProps?.offset,
+              state.selectedItems.length * 0.00000001 + (slotsProps.popoverProps?.offset || 4)
+            : slotsProps.popoverProps?.offset || 4,
       } as PopoverProps;
     },
     [

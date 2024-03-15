@@ -35,7 +35,7 @@ export default {
       control: {
         type: "select",
       },
-      options: ["none", "sm", "md", "lg", "full"],
+      options: ["none", "sm", "md", "lg", "xl", "full"],
     },
     size: {
       control: {
