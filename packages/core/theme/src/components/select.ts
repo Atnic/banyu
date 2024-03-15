@@ -208,9 +208,7 @@ const select = tv({
     },
     disableSelectorIconRotation: {
       true: {},
-      false: {
-        selectorIcon: "data-[open=true]:rotate-180",
-      },
+      false: {},
     },
   },
   defaultVariants: {
@@ -222,6 +220,8 @@ const select = tv({
     isMultiline: false,
     disableAnimation: false,
     disableSelectorIconRotation: false,
+    isInvalid: false,
+    isSuccess: false,
   },
   compoundVariants: [
     // ghost & color
@@ -545,6 +545,15 @@ const select = tv({
       variant: ["ghost", "dropdown"],
       class: {
         trigger: "bg-neutral-300",
+      },
+    },
+    // !disableSelectorIconRotation & !isSuccess & !isInvalid
+    {
+      disableSelectorIconRotation: false,
+      isInvalid: false,
+      isSuccess: false,
+      class: {
+        selectorIcon: "data-[open=true]:rotate-180",
       },
     },
   ],
