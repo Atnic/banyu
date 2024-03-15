@@ -1,5 +1,23 @@
 # @jala-banyu/react
 
+## 1.1.11
+
+### Patch Changes
+
+- fix select & alert
+
+- Updated dependencies []:
+  - @jala-banyu/alert@1.1.3
+  - @jala-banyu/select@1.2.10
+  - @jala-banyu/pagination@1.1.10
+  - @jala-banyu/table@1.0.10
+
+## 1.1.10
+
+### Patch Changes
+
+- fix tabs component
+
 ## 1.1.9
 
 ### Patch Changes

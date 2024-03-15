@@ -1,5 +1,11 @@
 # @jala-banyu/select
 
+## 1.2.10
+
+### Patch Changes
+
+- fix select & alert
+
 ## 1.2.9
 
 ### Patch Changes
