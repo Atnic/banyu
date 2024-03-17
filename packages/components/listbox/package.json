@@ -1,6 +1,6 @@
 {
   "name": "@jala-banyu/listbox",
-  "version": "1.0.0",
+  "version": "1.1.5",
   "description": "A listbox displays a list of options and allows a user to select one or more of them.",
   "keywords": [
     "listbox"
@@ -36,13 +36,14 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "@jala-banyu/theme": "1.3.0",
+    "@jala-banyu/theme": "1.4.4",
     "@jala-banyu/system": ">=1.0.0"
   },
   "dependencies": {
     "@jala-banyu/react-utils": "workspace:*",
     "@jala-banyu/shared-utils": "workspace:*",
     "@jala-banyu/divider": "workspace:*",
+    "@jala-banyu/input": "workspace:*",
     "@jala-banyu/aria-utils": "workspace:*",
     "@jala-banyu/use-is-mobile": "workspace:*",
     "@jala-banyu/use-aria-press": "workspace:*",

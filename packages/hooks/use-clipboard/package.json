@@ -1,6 +1,6 @@
 {
   "name": "@jala-banyu/use-clipboard",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Wrapper around navigator.clipboard with feedback timeout",
   "keywords": [
     "banyu-clipboard"

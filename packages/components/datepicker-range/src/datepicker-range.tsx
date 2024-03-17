@@ -33,6 +33,7 @@ function DatePickerRange<T extends DateValue>({
 }: DatePickerRangeProps<T>) {
   const [range, setRange] = React.useState();
 
+  // @ts-ignore
   let value = !!range?.start && !!range?.end ? `${range?.start} - ${range?.end}` : "";
 
   return (
@@ -52,7 +53,7 @@ function DatePickerRange<T extends DateValue>({
               size={size}
               startIcon={<CalendarRangeIcon aria-hidden className="w-4 h-4 text-neutral-800" />}
               value={value}
-              onClear={setRange}
+              // onClear={setRange}
             />
           </div>
         </PopoverTrigger>

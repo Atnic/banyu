@@ -11,7 +11,7 @@ import {tv} from "../utils/tv";
 const menu = tv({
   slots: {
     base: "w-full relative flex flex-col gap-1 py-1",
-    list: "w-full flex flex-col gap-0.5 outline-none",
+    list: "w-full flex flex-col outline-none",
     emptyContent: [
       "h-10",
       "px-2",
@@ -169,10 +169,10 @@ const menuItem = tv({
  */
 const menuSection = tv({
   slots: {
-    base: "relative mb-2",
-    heading: "pl-1 text-xs text-foreground-500",
-    group: "data-[has-title=true]:pt-1",
-    divider: "mt-2",
+    base: "relative",
+    heading: "pl-4 py-2 text-sm font-semibold text-neutral-800 w-full bg-neutral-100",
+    group: "data-[has-title=true]:pt-1 [&>li]:px-6",
+    divider: "",
   },
 });
 

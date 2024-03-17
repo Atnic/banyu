@@ -1,5 +1,52 @@
 # @jala-banyu/user
 
+## 5.0.4
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.4.4
+  - @jala-banyu/avatar@4.1.4
+
+## 5.0.3
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.4.3
+  - @jala-banyu/avatar@4.1.3
+
+## 5.0.2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.4.2
+  - @jala-banyu/avatar@4.1.2
+
+## 5.0.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.4.1
+  - @jala-banyu/avatar@4.1.1
+
+## 4.1.0
+
+### Minor Changes
+
+- minor update
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/avatar@5.0.0
+  - @jala-banyu/system@1.1.0
+  - @jala-banyu/theme@1.4.0
+  - @jala-banyu/react-utils@1.1.0
+  - @jala-banyu/shared-utils@1.1.0
+
 ## 4.0.0
 
 ### Patch Changes

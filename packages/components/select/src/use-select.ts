@@ -118,6 +118,14 @@ interface Props<T> extends Omit<HTMLBanyuProps<"select">, keyof SelectVariantPro
    * Classes object to style the select and its children.
    */
   classNames?: SlotsToClasses<SelectSlots>;
+  /**
+   * Top content to be rendered in the popover.
+   */
+  topContent?: ReactNode;
+  /**
+   * Bottom content to be rendered in the popover.
+   */
+  bottomContent?: ReactNode;
 }
 
 export type UseSelectProps<T> = Omit<Props<T>, keyof MultiSelectProps<T>> &
@@ -140,6 +148,8 @@ export function useSelect<T extends object>(originalProps: UseSelectProps<T>) {
     onOpenChange,
     startContent,
     endContent,
+    topContent,
+    bottomContent,
     description,
     errorMessage,
     renderValue,
@@ -265,7 +275,8 @@ export function useSelect<T extends object>(originalProps: UseSelectProps<T>) {
     !!state.selectedItems ||
     !!startContent ||
     !!endContent ||
-    !!originalProps.isMultiline;
+    !!originalProps.isMultiline ||
+    originalProps.variant === "dropdown";
   const hasValue = !!state.selectedItems;
   const hasLabel = !!label;
 
@@ -327,6 +338,7 @@ export function useSelect<T extends object>(originalProps: UseSelectProps<T>) {
       "data-has-value": dataAttr(hasValue),
       "data-has-label": dataAttr(hasLabel),
       "data-has-helper": dataAttr(hasHelper),
+      "data-has-placeholder": dataAttr(hasPlaceholder) ?? false,
       className: slots.base({
         class: clsx(baseStyles, props.className),
       }),
@@ -468,8 +480,8 @@ export function useSelect<T extends object>(originalProps: UseSelectProps<T>) {
         offset:
           state.selectedItems && state.selectedItems.length > 0
             ? // forces the popover to update its position when the selected items change
-              state.selectedItems.length * 0.00000001 + (slotsProps.popoverProps?.offset || 0)
-            : slotsProps.popoverProps?.offset,
+              state.selectedItems.length * 0.00000001 + (slotsProps.popoverProps?.offset || 4)
+            : slotsProps.popoverProps?.offset || 4,
       } as PopoverProps;
     },
     [
@@ -571,6 +583,28 @@ export function useSelect<T extends object>(originalProps: UseSelectProps<T>) {
     [slots, spinnerRef, spinnerProps, classNames?.spinner],
   );
 
+  const getTopContentProps: PropGetter = useCallback(
+    (props = {}) => ({
+      "data-slot": "topContent",
+      className: slots.topContent({
+        class: clsx(classNames?.topContent, props.className),
+      }),
+      ...props,
+    }),
+    [slots, classNames?.topContent],
+  );
+
+  const getBottomContentProps: PropGetter = useCallback(
+    (props = {}) => ({
+      "data-slot": "bottomContent",
+      className: slots.bottomContent({
+        class: clsx(classNames?.bottomContent, props.className),
+      }),
+      ...props,
+    }),
+    [slots, classNames?.bottomContent],
+  );
+
   return {
     Component,
     domRef,
@@ -583,6 +617,8 @@ export function useSelect<T extends object>(originalProps: UseSelectProps<T>) {
     placeholder,
     startContent,
     endContent,
+    topContent,
+    bottomContent,
     description,
     selectorIcon,
     errorMessage,
@@ -609,6 +645,8 @@ export function useSelect<T extends object>(originalProps: UseSelectProps<T>) {
     getDescriptionProps,
     getErrorMessageProps,
     getSelectorIconProps,
+    getTopContentProps,
+    getBottomContentProps,
   };
 }
 

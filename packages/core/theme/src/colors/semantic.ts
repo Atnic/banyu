@@ -339,7 +339,8 @@ export const themeColorsDark: ThemeColors = {
   },
 };
 
+// turn off dark mode for now
 export const semanticColors = {
   light: themeColorsLight,
-  dark: themeColorsDark,
+  dark: themeColorsLight,
 };

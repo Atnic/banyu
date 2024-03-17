@@ -78,4 +78,4 @@ export type HTMLBanyuProps<T extends As = "div", OmitKeys extends keyof any = ne
 export type PropGetter<P = Record<string, unknown>, R = DOMAttributes> = (
   props?: Merge<DOMAttributes, P>,
   ref?: React.Ref<any>,
-) => R & React.RefAttributes<any>;
+) => R;

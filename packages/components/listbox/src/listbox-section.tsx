@@ -65,13 +65,13 @@ const ListboxSection = forwardRef<"li", ListboxSectionProps>(
         className={slots.base({class: baseStyles})}
       >
         {item.rendered && (
-          <span
+          <div
             {...headingProps}
             className={slots.heading({class: classNames?.heading})}
             data-slot="heading"
           >
             {item.rendered}
-          </span>
+          </div>
         )}
         <ul
           {...groupProps}

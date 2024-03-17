@@ -2,7 +2,7 @@ import React from "react";
 // @ts-ignore
 import {Meta} from "@storybook/react";
 import {button} from "@jala-banyu/theme";
-import {JalaBiomass} from "@muhamien/jala-icons";
+import {JalaBiomass} from "@jala-banyu/icons";
 
 import {Button} from "../src";
 

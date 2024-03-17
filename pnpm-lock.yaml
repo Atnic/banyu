@@ -163,6 +163,9 @@ importers:
       husky:
         specifier: ^8.0.1
         version: 8.0.3
+      identity-obj-proxy:
+        specifier: ^3.0.0
+        version: 3.0.0
       jest:
         specifier: ^29.7.0
         version: 29.7.0(@types/node@20.11.19)(ts-node@10.9.2)
@@ -287,6 +290,46 @@ importers:
       framer-motion:
         specifier: ^10.16.4
         version: 10.18.0(react-dom@18.2.0)(react@18.2.0)
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+
+  packages/components/alert:
+    dependencies:
+      '@jala-banyu/avatar':
+        specifier: 'workspace: *'
+        version: link:../avatar
+      '@jala-banyu/button':
+        specifier: 'workspace: *'
+        version: link:../button
+      '@jala-banyu/react-utils':
+        specifier: 'workspace: *'
+        version: link:../../utilities/react-utils
+      '@jala-banyu/shared-icons':
+        specifier: 'workspace: *'
+        version: link:../../utilities/shared-icons
+      '@jala-banyu/shared-utils':
+        specifier: 'workspace: *'
+        version: link:../../utilities/shared-utils
+      '@react-aria/utils':
+        specifier: ^3.21.1
+        version: 3.23.2(react@18.2.0)
+      react-toastify:
+        specifier: ^10.0.4
+        version: 10.0.5(react-dom@18.2.0)(react@18.2.0)
+    devDependencies:
+      '@jala-banyu/system':
+        specifier: 'workspace: *'
+        version: link:../../core/system
+      '@jala-banyu/theme':
+        specifier: 'workspace: *'
+        version: link:../../core/theme
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -501,6 +544,9 @@ importers:
       '@jala-banyu/ripple':
         specifier: 'workspace: *'
         version: link:../ripple
+      '@jala-banyu/shared-icons':
+        specifier: workspace:*
+        version: link:../../utilities/shared-icons
       '@jala-banyu/shared-utils':
         specifier: 'workspace: *'
         version: link:../../utilities/shared-utils
@@ -676,7 +722,7 @@ importers:
         specifier: 'workspace: *'
         version: link:../../utilities/shared-utils
       '@jala-banyu/system':
-        specifier: 1.0.0
+        specifier: 1.1.0
         version: link:../../core/system
       '@jala-banyu/system-rsc':
         specifier: 'workspace: *'
@@ -1041,7 +1087,7 @@ importers:
         specifier: 'workspace: *'
         version: link:../../utilities/shared-utils
       '@jala-banyu/system':
-        specifier: 1.0.0
+        specifier: 1.1.0
         version: link:../../core/system
       '@jala-banyu/system-rsc':
         specifier: 'workspace: *'
@@ -1114,6 +1160,9 @@ importers:
       '@jala-banyu/divider':
         specifier: workspace:*
         version: link:../divider
+      '@jala-banyu/input':
+        specifier: workspace:*
+        version: link:../input
       '@jala-banyu/react-utils':
         specifier: workspace:*
         version: link:../../utilities/react-utils
@@ -1325,6 +1374,58 @@ importers:
         specifier: 0.13.0
         version: 0.13.0(react@18.2.0)
 
+  packages/components/pagination:
+    dependencies:
+      '@jala-banyu/react-utils':
+        specifier: 'workspace: *'
+        version: link:../../utilities/react-utils
+      '@jala-banyu/select':
+        specifier: workspace:*
+        version: link:../select
+      '@jala-banyu/shared-icons':
+        specifier: workspace:*
+        version: link:../../utilities/shared-icons
+      '@jala-banyu/shared-utils':
+        specifier: 'workspace: *'
+        version: link:../../utilities/shared-utils
+      '@jala-banyu/use-aria-press':
+        specifier: workspace:*
+        version: link:../../hooks/use-aria-press
+      '@jala-banyu/use-pagination':
+        specifier: workspace:*
+        version: link:../../hooks/use-pagination
+      '@react-aria/focus':
+        specifier: ^3.14.3
+        version: 3.16.2(react@18.2.0)
+      '@react-aria/interactions':
+        specifier: ^3.19.1
+        version: 3.21.1(react@18.2.0)
+      '@react-aria/utils':
+        specifier: ^3.21.1
+        version: 3.23.2(react@18.2.0)
+      react-feather:
+        specifier: ^2.0.10
+        version: 2.0.10(react@18.2.0)
+      scroll-into-view-if-needed:
+        specifier: 3.0.10
+        version: 3.0.10
+    devDependencies:
+      '@jala-banyu/system':
+        specifier: 'workspace: *'
+        version: link:../../core/system
+      '@jala-banyu/theme':
+        specifier: 'workspace: *'
+        version: link:../../core/theme
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+
   packages/components/popover:
     dependencies:
       '@jala-banyu/aria-utils':
@@ -1345,6 +1446,9 @@ importers:
       '@jala-banyu/use-aria-button':
         specifier: 'workspace: *'
         version: link:../../hooks/use-aria-button
+      '@jala-banyu/use-safe-layout-effect':
+        specifier: workspace:*
+        version: link:../../hooks/use-safe-layout-effect
       '@react-aria/dialog':
         specifier: ^3.5.7
         version: 3.5.12(react-dom@18.2.0)(react@18.2.0)
@@ -1376,6 +1480,9 @@ importers:
       '@jala-banyu/card':
         specifier: 'workspace: *'
         version: link:../card
+      '@jala-banyu/input':
+        specifier: 'workspace: *'
+        version: link:../input
       '@jala-banyu/kbd':
         specifier: 'workspace: *'
         version: link:../kbd
@@ -1550,6 +1657,9 @@ importers:
       '@react-types/shared':
         specifier: ^3.21.0
         version: 3.22.1(react@18.2.0)
+      react-feather:
+        specifier: ^2.0.10
+        version: 2.0.10(react@18.2.0)
     devDependencies:
       '@jala-banyu/avatar':
         specifier: workspace:*
@@ -1603,7 +1713,7 @@ importers:
         specifier: 'workspace: *'
         version: link:../../utilities/shared-utils
       '@jala-banyu/system':
-        specifier: 1.0.0
+        specifier: 1.1.0
         version: link:../../core/system
       '@jala-banyu/system-rsc':
         specifier: 'workspace: *'
@@ -1665,7 +1775,7 @@ importers:
         specifier: 'workspace: *'
         version: link:../../utilities/shared-utils
       '@jala-banyu/system':
-        specifier: 1.0.0
+        specifier: 1.1.0
         version: link:../../core/system
       '@jala-banyu/system-rsc':
         specifier: 'workspace: *'
@@ -1735,6 +1845,100 @@ importers:
       react-dom:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
+
+  packages/components/table:
+    dependencies:
+      '@jala-banyu/checkbox':
+        specifier: workspace:*
+        version: link:../checkbox
+      '@jala-banyu/input':
+        specifier: workspace:*
+        version: link:../input
+      '@jala-banyu/react-utils':
+        specifier: workspace:*
+        version: link:../../utilities/react-utils
+      '@jala-banyu/select':
+        specifier: workspace:*
+        version: link:../select
+      '@jala-banyu/shared-icons':
+        specifier: workspace:*
+        version: link:../../utilities/shared-icons
+      '@jala-banyu/shared-utils':
+        specifier: workspace:*
+        version: link:../../utilities/shared-utils
+      '@jala-banyu/spacer':
+        specifier: workspace:*
+        version: link:../spacer
+      '@jala-banyu/tooltip':
+        specifier: workspace:*
+        version: link:../tooltip
+      '@react-aria/focus':
+        specifier: ^3.14.3
+        version: 3.16.2(react@18.2.0)
+      '@react-aria/interactions':
+        specifier: ^3.19.1
+        version: 3.21.1(react@18.2.0)
+      '@react-aria/table':
+        specifier: ^3.13.1
+        version: 3.13.5(react-dom@18.2.0)(react@18.2.0)
+      '@react-aria/utils':
+        specifier: ^3.21.1
+        version: 3.23.2(react@18.2.0)
+      '@react-aria/visually-hidden':
+        specifier: ^3.8.6
+        version: 3.8.10(react@18.2.0)
+      '@react-stately/table':
+        specifier: ^3.11.2
+        version: 3.11.6(react@18.2.0)
+      '@react-stately/virtualizer':
+        specifier: ^3.6.4
+        version: 3.6.8(react@18.2.0)
+      '@react-types/grid':
+        specifier: ^3.2.2
+        version: 3.2.4(react@18.2.0)
+      '@react-types/table':
+        specifier: ^3.9.0
+        version: 3.9.3(react@18.2.0)
+    devDependencies:
+      '@jala-banyu/button':
+        specifier: workspace:*
+        version: link:../button
+      '@jala-banyu/chip':
+        specifier: workspace:*
+        version: link:../chip
+      '@jala-banyu/pagination':
+        specifier: workspace:*
+        version: link:../pagination
+      '@jala-banyu/spinner':
+        specifier: workspace:*
+        version: link:../spinner
+      '@jala-banyu/system':
+        specifier: 'workspace: *'
+        version: link:../../core/system
+      '@jala-banyu/theme':
+        specifier: 'workspace: *'
+        version: link:../../core/theme
+      '@jala-banyu/use-infinite-scroll':
+        specifier: workspace:*
+        version: link:../../hooks/use-infinite-scroll
+      '@jala-banyu/user':
+        specifier: workspace:*
+        version: link:../user
+      '@react-stately/data':
+        specifier: ^3.10.3
+        version: 3.11.2(react@18.2.0)
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+      swr:
+        specifier: ^2.2.1
+        version: 2.2.5(react@18.2.0)
 
   packages/components/tabs:
     dependencies:
@@ -1924,6 +2128,12 @@ importers:
 
   packages/core/react:
     dependencies:
+      '@jala-banyu/accordion':
+        specifier: 'workspace: *'
+        version: link:../../components/accordion
+      '@jala-banyu/alert':
+        specifier: 'workspace: *'
+        version: link:../../components/alert
       '@jala-banyu/avatar':
         specifier: 'workspace: *'
         version: link:../../components/avatar
@@ -1936,6 +2146,12 @@ importers:
       '@jala-banyu/card':
         specifier: 'workspace: *'
         version: link:../../components/card
+      '@jala-banyu/checkbox':
+        specifier: 'workspace: *'
+        version: link:../../components/checkbox
+      '@jala-banyu/chip':
+        specifier: 'workspace: *'
+        version: link:../../components/chip
       '@jala-banyu/code':
         specifier: 'workspace: *'
         version: link:../../components/code
@@ -1960,12 +2176,24 @@ importers:
       '@jala-banyu/menu':
         specifier: 'workspace: *'
         version: link:../../components/menu
+      '@jala-banyu/modal':
+        specifier: 'workspace: *'
+        version: link:../../components/modal
+      '@jala-banyu/pagination':
+        specifier: 'workspace: *'
+        version: link:../../components/pagination
       '@jala-banyu/popover':
         specifier: 'workspace: *'
         version: link:../../components/popover
+      '@jala-banyu/progress':
+        specifier: 'workspace: *'
+        version: link:../../components/progress
       '@jala-banyu/ripple':
         specifier: 'workspace: *'
         version: link:../../components/ripple
+      '@jala-banyu/select':
+        specifier: 'workspace: *'
+        version: link:../../components/select
       '@jala-banyu/skeleton':
         specifier: 'workspace: *'
         version: link:../../components/skeleton
@@ -1978,6 +2206,12 @@ importers:
       '@jala-banyu/system':
         specifier: 'workspace: *'
         version: link:../system
+      '@jala-banyu/table':
+        specifier: 'workspace: *'
+        version: link:../../components/table
+      '@jala-banyu/tabs':
+        specifier: 'workspace: *'
+        version: link:../../components/tabs
       '@jala-banyu/theme':
         specifier: 'workspace: *'
         version: link:../theme
@@ -2398,6 +2632,19 @@ importers:
         version: 18.2.0
 
   packages/hooks/use-is-mounted:
+    devDependencies:
+      clean-package:
+        specifier: 2.2.0
+        version: 2.2.0
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+
+  packages/hooks/use-pagination:
+    dependencies:
+      '@jala-banyu/shared-utils':
+        specifier: workspace:*
+        version: link:../../utilities/shared-utils
     devDependencies:
       clean-package:
         specifier: 2.2.0
@@ -11197,7 +11444,6 @@ packages:
 
   /client-only@0.0.1:
     resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
-    dev: false
 
   /cliui@5.0.0:
     resolution: {integrity: sha512-PYeGSEmmHM6zvoef2w8TPzlrnNpXIjTipYK780YswmIP9vjxmd6Y2a3CB2Ks6/AU8NHjZugXvo8w3oWM2qnwXA==}
@@ -13850,6 +14096,10 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
+  /harmony-reflect@1.6.2:
+    resolution: {integrity: sha512-HIp/n38R9kQjDEziXyDTuW3vvoxxyxjxFzXLrBr18uB47GnSt+G9D29fqrpM5ZkspMcPICud3XsBJQ4Y2URg8g==}
+    dev: true
+
   /has-ansi@2.0.0:
     resolution: {integrity: sha512-C8vBJ8DwUCx19vhm7urhTuUsr4/IyP6l4VzNQDv+ryHQObW3TTTp9yB68WpYgRe2bbaGuZ/se74IqFeVnMnLZg==}
     engines: {node: '>=0.10.0'}
@@ -14058,6 +14308,13 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       safer-buffer: 2.1.2
+    dev: true
+
+  /identity-obj-proxy@3.0.0:
+    resolution: {integrity: sha512-00n6YnVHKrinT9t0d9+5yZC6UBNJANpYEQvL2LlX6Ab9lnmxzIRcEmTPuyGScvl1+jKuCICX1Z0Ab1pPKKdikA==}
+    engines: {node: '>=4'}
+    dependencies:
+      harmony-reflect: 1.6.2
     dev: true
 
   /ieee754@1.2.1:
@@ -17719,7 +17976,6 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
       react-is: 16.13.1
-    dev: true
 
   /proto-list@1.2.4:
     resolution: {integrity: sha512-vtK/94akxsTMhe0/cbfpR+syPuszcuwhqVjJq26CuNDgFGj682oRBXOP5MJpv2r7JtE8MsiepGIqvvOTBwn2vA==}
@@ -18032,9 +18288,17 @@ packages:
       react: 18.2.0
     dev: true
 
+  /react-feather@2.0.10(react@18.2.0):
+    resolution: {integrity: sha512-BLhukwJ+Z92Nmdcs+EMw6dy1Z/VLiJTzEQACDUEnWMClhYnFykJCGWQx+NmwP/qQHGX/5CzQ+TGi8ofg2+HzVQ==}
+    peerDependencies:
+      react: ^18.2.0
+    dependencies:
+      prop-types: 15.8.1
+      react: 18.2.0
+    dev: false
+
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
-    dev: true
 
   /react-is@17.0.2:
     resolution: {integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==}
@@ -18177,6 +18441,17 @@ packages:
       use-latest: 1.2.1(@types/react@18.2.56)(react@18.2.0)
     transitivePeerDependencies:
       - '@types/react'
+    dev: false
+
+  /react-toastify@10.0.5(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-mNKt2jBXJg4O7pSdbNUfDdTsK9FIdikfsIE/yUCxbAEXl4HMyJaivrVFcn3Elvt5xvCQYhUZm+hqTIu1UXM3Pw==}
+    peerDependencies:
+      react: ^18.2.0
+      react-dom: ^18.2.0
+    dependencies:
+      clsx: 2.1.0
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
     dev: false
 
   /react@18.2.0:
@@ -19372,6 +19647,16 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
+  /swr@2.2.5(react@18.2.0):
+    resolution: {integrity: sha512-QtxqyclFeAsxEUeZIYmsaQ0UjimSq1RZ9Un7I68/0ClKK/U3LoyQunwkQfJZr2fc22DfIXLNDc2wFyTEikCUpg==}
+    peerDependencies:
+      react: ^18.2.0
+    dependencies:
+      client-only: 0.0.1
+      react: 18.2.0
+      use-sync-external-store: 1.2.0(react@18.2.0)
+    dev: true
+
   /symbol-tree@3.2.4:
     resolution: {integrity: sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==}
     dev: true
@@ -20358,7 +20643,6 @@ packages:
       react: ^18.2.0
     dependencies:
       react: 18.2.0
-    dev: false
 
   /util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}

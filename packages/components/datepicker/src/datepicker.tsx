@@ -49,14 +49,14 @@ function DatePicker<T extends DateValue>({
               size={size}
               startIcon={<CalendarIcon aria-hidden className="w-4 h-4 text-neutral-800" />}
               value={date}
-              onClear={setDate}
+              // onClear={setDate}
             />
             {description && <span>{description}</span>}
             <span className="text-danger">{errorMessage}</span>
           </div>
         </PopoverTrigger>
         <PopoverContent className="p-4 rounded-lg mt-0">
-          <Calendar value={date} onChange={setDate} />
+          <Calendar value={date} onChange={() => setDate()} />
         </PopoverContent>
       </Popover>
     </AriaDatePicker>

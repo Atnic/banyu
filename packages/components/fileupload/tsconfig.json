@@ -2,9 +2,10 @@
   "extends": "../../../tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
+    "lib": ["dom.iterable"],
     "paths": {
       "tailwind-variants": ["../../../node_modules/tailwind-variants"]
-    },
+    }
   },
   "include": ["src", "index.js"]
 }

@@ -22,7 +22,7 @@ import {colorVariants, dataFocusVisibleClasses} from "../utils";
  */
 const tabs = tv({
   slots: {
-    base: "inline-flex",
+    base: "inline-flex justify-between w-full flex-wrap gap-2",
     tabList: [
       "flex",
       "p-1",

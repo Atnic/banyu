@@ -1,4 +1,3 @@
-"use client";
 // only for developments, client directive  this is removed in production builds
 
 export * from "@jala-banyu/system";
@@ -22,7 +21,21 @@ export * from "@jala-banyu/skeleton";
 export * from "@jala-banyu/menu";
 export * from "@jala-banyu/ripple";
 export * from "@jala-banyu/breadcrumbs";
-
+export * from "@jala-banyu/avatar";
+export * from "@jala-banyu/user";
+export * from "@jala-banyu/skeleton";
+export * from "@jala-banyu/dropdown";
+export * from "@jala-banyu/card";
+export * from "@jala-banyu/modal";
+export * from "@jala-banyu/chip";
+export * from "@jala-banyu/accordion";
+export * from "@jala-banyu/select";
+export * from "@jala-banyu/progress";
+export * from "@jala-banyu/alert";
+export * from "@jala-banyu/pagination";
+export * from "@jala-banyu/checkbox";
+export * from "@jala-banyu/table";
+export * from "@jala-banyu/tabs";
 /**
  * React Aria - Exports
  */
