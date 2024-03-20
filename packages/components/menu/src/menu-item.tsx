@@ -1,8 +1,8 @@
 import {useMemo, ReactNode} from "react";
 import {forwardRef} from "@jala-banyu/system";
+import {Checkbox} from "@jala-banyu/checkbox";
 
 import {UseMenuItemProps, useMenuItem} from "./use-menu-item";
-import {MenuSelectedIcon} from "./menu-selected-icon";
 
 export interface MenuItemProps<T extends object = object> extends UseMenuItemProps<T> {}
 
@@ -23,15 +23,23 @@ const MenuItem = forwardRef<"li", MenuItemProps>((props, _) => {
     startContent,
     endContent,
     disableAnimation,
+    isSelectable,
+    hideSelectedIcon,
     getItemProps,
     getLabelProps,
     getDescriptionProps,
     getKeyboardShortcutProps,
   } = useMenuItem(props);
 
-  useMemo<ReactNode | null>(() => {
+  const selectedContent = useMemo<ReactNode | null>(() => {
     const defaultIcon = (
-      <MenuSelectedIcon disableAnimation={disableAnimation} isSelected={isSelected} />
+      <Checkbox
+        checked={isSelected}
+        className="pr-0"
+        disableAnimation={disableAnimation}
+        disabled={isDisabled}
+        isSelected={isSelected}
+      />
     );
 
     if (typeof selectedIcon === "function") {
@@ -45,6 +53,7 @@ const MenuItem = forwardRef<"li", MenuItemProps>((props, _) => {
 
   return (
     <Component {...getItemProps()}>
+      {isSelectable && !hideSelectedIcon && selectedContent}
       {startContent}
       {description ? (
         <div className={slots.wrapper({class: classNames?.wrapper})}>

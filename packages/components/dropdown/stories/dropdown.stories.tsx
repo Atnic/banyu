@@ -11,6 +11,7 @@ import {
 import {clsx} from "@jala-banyu/shared-utils";
 import {Avatar} from "@jala-banyu/avatar";
 import {Selection} from "@react-types/shared";
+import {Link} from "@jala-banyu/link";
 
 import {
   Dropdown,
@@ -18,6 +19,7 @@ import {
   DropdownMenu,
   DropdownMenuProps,
   DropdownProps,
+  DropdownSection,
   DropdownTrigger,
 } from "../src";
 
@@ -248,16 +250,41 @@ const MultipleSelectionTemplate = ({...args}: DropdownProps & DropdownMenuProps)
       <DropdownMenu
         disallowEmptySelection
         aria-label="Actions"
+        classNames={{
+          list: "max-h-64 w-full overflow-y-auto",
+        }}
         closeOnSelect={false}
         selectedKeys={selected}
         selectionMode="multiple"
+        topContent={
+          <div className="px-3 py-2 flex items-center justify-between border-b-[1px] border-neutral-200">
+            <p className="font-semibold text-[14px] text-neutral-800">Dropdown</p>
+            <Link
+              className={
+                "font-semibold text-[14px] cursor-pointer data-[focus-visible=true]:outline-0"
+              }
+              size="sm"
+              underline={"none"}
+              onClick={() => setSelected(new Set())}
+            >
+              Reset
+            </Link>
+          </div>
+        }
         onSelectionChange={setSelected}
       >
-        <DropdownItem key="text">Text</DropdownItem>
-        <DropdownItem key="number">Number</DropdownItem>
-        <DropdownItem key="date">Date</DropdownItem>
-        <DropdownItem key="single_date">Single Date</DropdownItem>
-        <DropdownItem key="iteration">Iteration</DropdownItem>
+        <DropdownSection showDivider title="Select Section 1">
+          <DropdownItem key="1">Select 1</DropdownItem>
+          <DropdownItem key="2">Select 2</DropdownItem>
+          <DropdownItem key="3">Select 3</DropdownItem>
+          <DropdownItem key="4">Select 4</DropdownItem>
+        </DropdownSection>
+        <DropdownSection title="Select Section 2">
+          <DropdownItem key="5">Select 5</DropdownItem>
+          <DropdownItem key="6">Select 6</DropdownItem>
+          <DropdownItem key="7">Select 7</DropdownItem>
+          <DropdownItem key="8">Select 8</DropdownItem>
+        </DropdownSection>
       </DropdownMenu>
     </Dropdown>
   );

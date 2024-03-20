@@ -61,7 +61,6 @@ const MenuSection = forwardRef<"li", MenuSectionProps>(
     const slots = useMemo(() => menuSection(), []);
 
     const baseStyles = clsx(classNames?.base, className);
-    const dividerStyles = clsx(classNames?.divider, dividerProps?.className);
 
     const {itemProps, headingProps, groupProps} = useMenuSection({
       heading: item.rendered,
@@ -75,13 +74,15 @@ const MenuSection = forwardRef<"li", MenuSectionProps>(
         className={slots.base({class: baseStyles})}
       >
         {item.rendered && (
-          <span
-            {...headingProps}
-            className={slots.heading({class: classNames?.heading})}
-            data-slot="heading"
-          >
-            {item.rendered}
-          </span>
+          <div className="px-4 py-2">
+            <span
+              {...headingProps}
+              className={slots.heading({class: classNames?.heading})}
+              data-slot="heading"
+            >
+              {item.rendered}
+            </span>
+          </div>
         )}
         <ul
           {...groupProps}
@@ -114,10 +115,9 @@ const MenuSection = forwardRef<"li", MenuSectionProps>(
           })}
           {showDivider && (
             <Divider
-              as="li"
-              className={slots.divider({
-                class: dividerStyles,
-              })}
+              classNames={{
+                base: "py-2",
+              }}
               {...dividerProps}
             />
           )}
