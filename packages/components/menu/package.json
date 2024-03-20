@@ -40,6 +40,7 @@
     "@jala-banyu/system": "1.1.0"
   },
   "dependencies": {
+    "@jala-banyu/checkbox": "workspace: *",
     "@jala-banyu/divider": "workspace: *",
     "@jala-banyu/aria-utils": "workspace: *",
     "@jala-banyu/use-is-mobile": "workspace: *",

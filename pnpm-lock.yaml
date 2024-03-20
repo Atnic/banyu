@@ -768,6 +768,9 @@ importers:
       '@jala-banyu/button':
         specifier: 'workspace: *'
         version: link:../button
+      '@jala-banyu/link':
+        specifier: 'workspace: *'
+        version: link:../link
       '@jala-banyu/select':
         specifier: 'workspace: *'
         version: link:../select
@@ -1034,6 +1037,9 @@ importers:
       '@jala-banyu/aria-utils':
         specifier: 'workspace: *'
         version: link:../../utilities/aria-utils
+      '@jala-banyu/checkbox':
+        specifier: 'workspace: *'
+        version: link:../checkbox
       '@jala-banyu/divider':
         specifier: 'workspace: *'
         version: link:../divider
@@ -11099,6 +11105,7 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
     dev: true
+    bundledDependencies: false
 
   /create-require@1.1.1:
     resolution: {integrity: sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==}

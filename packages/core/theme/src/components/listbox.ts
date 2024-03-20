@@ -1,5 +1,7 @@
 // Listbox is based on menu component
 
+import {tv} from "../utils/tv";
+
 ////////
 
 /**
@@ -48,7 +50,14 @@ export {menuItem as listboxItem} from "./menu";
  *  </div>
  * </div>
  */
-export {menuSection as listboxSection} from "./menu";
+const listboxSection = tv({
+  slots: {
+    base: "relative",
+    heading: "pl-4 py-2 text-sm font-semibold text-neutral-800 w-full bg-neutral-100",
+    group: "data-[has-title=true]:pt-1 [&>li]:px-6",
+    divider: "",
+  },
+});
 
 // export types
 export type {
@@ -59,3 +68,5 @@ export type {
   MenuItemSlots as ListboxItemSlots,
   MenuVariantProps as ListboxVariantProps,
 } from "./menu";
+
+export {listboxSection};

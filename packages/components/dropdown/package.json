@@ -54,6 +54,7 @@
     "@jala-banyu/system": "workspace: *",
     "@jala-banyu/button": "workspace: *",
     "@jala-banyu/select": "workspace: *",
+    "@jala-banyu/link": "workspace: *",
     "@jala-banyu/avatar": "workspace: *",
     "@jala-banyu/user": "workspace: *",
     "@jala-banyu/shared-icons": "workspace: *",
