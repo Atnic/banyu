@@ -1,5 +1,11 @@
 # @jala-banyu/react
 
+## 1.1.13
+
+### Patch Changes
+
+- add checkbox dropdown
+
 ## 1.1.12
 
 ### Patch Changes

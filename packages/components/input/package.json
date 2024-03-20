@@ -1,6 +1,6 @@
 {
   "name": "@jala-banyu/input",
-  "version": "4.1.5",
+  "version": "4.1.6",
   "description": "The input component is designed for capturing user input within a text field.",
   "keywords": [
     "input"
@@ -36,7 +36,7 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "@jala-banyu/theme": "1.4.5",
+    "@jala-banyu/theme": "1.4.6",
     "@jala-banyu/system": "1.1.0"
   },
   "dependencies": {

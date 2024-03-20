@@ -1,6 +1,6 @@
 {
   "name": "@jala-banyu/spinner",
-  "version": "4.2.5",
+  "version": "4.2.6",
   "description": "Loaders express an unspecified wait time or display the length of a process.",
   "keywords": [
     "loading",
@@ -38,7 +38,7 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "@jala-banyu/theme": "1.4.5",
+    "@jala-banyu/theme": "1.4.6",
     "@jala-banyu/system": "1.1.0"
   },
   "dependencies": {

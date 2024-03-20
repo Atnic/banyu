@@ -1,6 +1,6 @@
 {
   "name": "@jala-banyu/system-rsc",
-  "version": "4.1.5",
+  "version": "4.1.6",
   "description": "Banyu system primitives compatibles with RSC imports",
   "keywords": [
     "system-rsc"
@@ -35,7 +35,7 @@
   },
   "peerDependencies": {
     "react": ">=18",
-    "@jala-banyu/theme": "1.4.5",
+    "@jala-banyu/theme": "1.4.6",
     "tailwind-variants": ">=0.1.13"
   },
   "devDependencies": {

@@ -1,5 +1,15 @@
 # @jala-banyu/dropdown
 
+## 1.2.1
+
+### Patch Changes
+
+- add checkbox dropdown
+
+- Updated dependencies []:
+  - @jala-banyu/menu@4.3.6
+  - @jala-banyu/popover@3.1.7
+
 ## 1.2.0
 
 ### Minor Changes

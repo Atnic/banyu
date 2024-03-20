@@ -1,5 +1,12 @@
 # @jala-banyu/accordion
 
+## 1.1.8
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.4.6
+
 ## 1.1.7
 
 ### Patch Changes

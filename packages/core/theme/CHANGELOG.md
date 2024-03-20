@@ -1,5 +1,11 @@
 # @jala-banyu/theme
 
+## 1.4.6
+
+### Patch Changes
+
+- add checkbox dropdown
+
 ## 1.4.5
 
 ### Patch Changes

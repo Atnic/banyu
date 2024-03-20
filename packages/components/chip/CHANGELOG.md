@@ -1,5 +1,12 @@
 # @jala-banyu/chip
 
+## 1.1.6
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.4.6
+
 ## 1.1.5
 
 ### Patch Changes

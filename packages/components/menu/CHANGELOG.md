@@ -1,5 +1,15 @@
 # @jala-banyu/menu
 
+## 4.3.6
+
+### Patch Changes
+
+- add checkbox dropdown
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.4.6
+  - @jala-banyu/checkbox@1.2.6
+
 ## 4.3.5
 
 ### Patch Changes
