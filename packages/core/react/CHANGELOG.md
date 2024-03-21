@@ -1,5 +1,14 @@
 # @jala-banyu/react
 
+## 1.2.2
+
+### Patch Changes
+
+- update dependencies
+
+- Updated dependencies []:
+  - @jala-banyu/radio@1.0.1
+
 ## 1.2.1
 
 ### Patch Changes
