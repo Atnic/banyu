@@ -1,5 +1,14 @@
 # @jala-banyu/react
 
+## 1.2.1
+
+### Patch Changes
+
+- fix alert document is not defined
+
+- Updated dependencies []:
+  - @jala-banyu/alert@1.1.4
+
 ## 1.2.0
 
 ### Minor Changes
