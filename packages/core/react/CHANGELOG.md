@@ -1,5 +1,11 @@
 # @jala-banyu/react
 
+## 1.2.0
+
+### Minor Changes
+
+- add radio component
+
 ## 1.1.13
 
 ### Patch Changes
