@@ -1,5 +1,11 @@
 # @jala-banyu/theme
 
+## 1.5.0
+
+### Minor Changes
+
+- add radio variant
+
 ## 1.4.6
 
 ### Patch Changes
