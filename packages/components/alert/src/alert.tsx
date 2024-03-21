@@ -1,6 +1,9 @@
+"use client";
+
 import {forwardRef} from "@jala-banyu/system";
 import {CloseIcon} from "@jala-banyu/shared-icons";
 import {injectStyle} from "react-toastify/dist/inject-style";
+import React from "react";
 
 import {UseAlertProps, useAlert} from "./use-alert";
 
@@ -29,7 +32,11 @@ const Alert = forwardRef<"div", AlertProps>((props, ref) => {
     ref,
   });
 
-  injectStyle();
+  React.useEffect(() => {
+    if (typeof document !== "undefined") {
+      injectStyle();
+    }
+  }, []);
 
   const renderEndContent = endContent ? (
     <div {...getEndContentProps()}>{endContent}</div>
