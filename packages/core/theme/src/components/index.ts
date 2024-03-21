@@ -11,7 +11,7 @@ export * from "./popover";
 export * from "./chip";
 // export * from "./badge";
 export * from "./checkbox";
-// export * from "./radio";
+export * from "./radio";
 // export * from "./pagination";
 export * from "./toggle";
 export * from "./accordion";
