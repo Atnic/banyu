@@ -108,30 +108,30 @@ const table = tv({
   variants: {
     color: {
       primary: {
-        td: "before:bg-brand/20 data-[selected=true]:text-brand",
+        td: "data-[selected=true]:bg-neutral-100 data-[selected=true]:text-neutral-800",
       },
       success: {
-        td: "before:bg-success/20 data-[selected=true]:text-success-600 dark:data-[selected=true]:text-success",
+        td: "data-[selected=true]:bg-neutral-100 data-[selected=true]:text-neutral-800",
       },
       warning: {
-        td: "before:bg-warning/20 data-[selected=true]:text-warning-600 dark:data-[selected=true]:text-warning",
+        td: "data-[selected=true]:bg-neutral-100 data-[selected=true]:text-neutral-800",
       },
       danger: {
-        td: "before:bg-danger/20 data-[selected=true]:text-danger dark:data-[selected=true]:text-danger-500",
+        td: "data-[selected=true]:bg-neutral-100 data-[selected=true]:text-neutral-800",
       },
       basic: {
-        td: "before:bg-neutral/20 data-[selected=true]:text-neutral-800 dark:data-[selected=true]:text-neutral-200",
+        td: "data-[selected=true]:bg-neutral-100 data-[selected=true]:text-neutral-800",
       },
       white: {
-        td: "before:bg-brand/20 data-[selected=true]:text-brand dark:data-[selected=true]:text-brand-200",
+        td: "data-[selected=true]:bg-neutral-100 data-[selected=true]:text-neutral-800",
       },
       transparent: {
-        td: "before:bg-transparent data-[selected=true]:text-neutral-800 dark:data-[selected=true]:text-neutral-200",
+        td: "data-[selected=true]:bg-neutral-100 data-[selected=true]:text-neutral-800",
       },
     },
     headerColor: {
       default: {
-        th: "bg-neutral-200",
+        th: "bg-neutral-100",
       },
       white: {
         th: "bg-white",
@@ -183,6 +183,8 @@ const table = tv({
         td: [
           "group-data-[odd=true]:before:bg-neutral-50",
           "group-data-[odd=true]:before:opacity-50",
+          "group-data-[odd=true]:data-[selected=true]:before:bg-neutral-100",
+          "group-data-[odd=true]:data-[selected=true]:before:text-neutral-800",
         ],
       },
       false: {
@@ -194,7 +196,7 @@ const table = tv({
     },
     isCompact: {
       true: {
-        td: "py-1",
+        td: "",
       },
       false: {},
     },

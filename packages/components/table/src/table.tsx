@@ -1,5 +1,4 @@
 import {useCallback} from "react";
-import {Spacer} from "@jala-banyu/spacer";
 import {forwardRef} from "@jala-banyu/system";
 
 import {UseTableProps, useTable} from "./use-table";
@@ -82,7 +81,6 @@ const Table = forwardRef<"table", TableProps>((props, ref) => {
                   )}
                 </TableHeaderRow>
               ))}
-              <Spacer as="tr" tabIndex={-1} y={1} />
             </TableRowGroup>
             <TableBody
               checkboxesProps={values.checkboxesProps}
