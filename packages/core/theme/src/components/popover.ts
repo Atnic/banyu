@@ -163,7 +163,7 @@ const popover = tv({
     shadow: "md",
     backdrop: "transparent",
     disableAnimation: false,
-    triggerScaleOnOpen: true,
+    triggerScaleOnOpen: false,
   },
   compoundVariants: [
     // backdrop (opaque/blur)

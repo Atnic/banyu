@@ -1,6 +1,6 @@
 import {IconSvgProps} from "./types";
 
-export const ChevronDownIcon = ({strokeWidth = 1.5, ...props}: IconSvgProps) => (
+export const ChevronDownIcon = ({strokeWidth = 2, ...props}: IconSvgProps) => (
   <svg
     aria-hidden="true"
     fill="none"
@@ -13,8 +13,9 @@ export const ChevronDownIcon = ({strokeWidth = 1.5, ...props}: IconSvgProps) => 
     strokeWidth={strokeWidth}
     viewBox="0 0 24 24"
     width="1em"
+    xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
-    <path d="m6 9 6 6 6-6" />
+    <polyline points="6 9 12 15 18 9" />
   </svg>
 );

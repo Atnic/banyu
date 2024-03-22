@@ -26,13 +26,13 @@ const select = tv({
       "inline-flex",
       "flex-row",
       "items-center",
-      "shadow-sm",
+      "shadow-100",
       "outline-none",
       "tap-highlight-transparent",
     ],
     innerWrapper:
       "inline-flex h-full w-[calc(100%_-_theme(spacing.unit-6))] min-h-unit-4 items-center gap-1.5 box-border text-neutral-800 text-lg",
-    selectorIcon: "absolute right-1 w-6 h-6",
+    selectorIcon: "absolute right-1 w-6 h-6 !text-sm",
     spinner: "absolute right-3",
     value: [
       "text-neutral-500",
@@ -50,9 +50,18 @@ const select = tv({
     errorMessage: "text-xs text-danger",
     topContent: "w-full border-b-1 border-neutral-200",
     bottomContent: "w-full border-t-1 border-neutral-200",
+    loadingStateContentWrapper: "py-2 px-4 flex justify-start min-h-[140px]",
   },
   variants: {
     variant: {
+      default: {
+        trigger: [
+          "border-[1px]",
+          "border-neutral-300",
+          "data-[hover=true]:border-brand/60",
+          "data-[focus=true]:border-brand",
+        ],
+      },
       ghost: {
         trigger: [
           "bg-neutral-200",
@@ -60,14 +69,6 @@ const select = tv({
           "border-transparent",
           "data-[hover=true]:border-brand",
           "group-data-[focus=true]:bg-neutral-100",
-        ],
-      },
-      default: {
-        trigger: [
-          "border-[1px]",
-          "border-neutral-300",
-          "data-[hover=true]:border-neutral-400",
-          "data-[focus=true]:border-brand",
         ],
       },
       dropdown: {
@@ -216,6 +217,7 @@ const select = tv({
   defaultVariants: {
     variant: "default",
     size: "md",
+    radius: "lg",
     labelPlacement: "outside",
     fullWidth: true,
     isDisabled: false,
@@ -239,6 +241,7 @@ const select = tv({
         ],
         value: "font-semibold",
         label: "font-semibold",
+        selectorIcon: "!right-1 text-sm",
       },
     },
     // default & color
@@ -246,6 +249,7 @@ const select = tv({
       variant: "default",
       class: {
         trigger: ["data-[focus=true]:ring-2", "data-[focus=true]:ring-brand-200", "bg-content1"],
+        selectorIcon: "!right-1 text-sm",
       },
     },
     // dropdown & color
@@ -263,7 +267,7 @@ const select = tv({
           "data-[focus=true]:border-brand",
           "data-[open=true]:border-brand",
         ],
-        selectorIcon: "!right-1",
+        selectorIcon: "!right-1 text-sm",
         value: "font-semibold",
         label: "w-max font-semibold",
         popoverContent: "min-w-36",

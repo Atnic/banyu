@@ -1,6 +1,6 @@
 {
   "name": "@jala-banyu/user",
-  "version": "6.0.3",
+  "version": "6.0.4",
   "description": "Flexible User Profile Component.",
   "keywords": [
     "user"
@@ -36,7 +36,7 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "@jala-banyu/theme": "1.5.3",
+    "@jala-banyu/theme": "1.5.4",
     "@jala-banyu/system": "1.1.0"
   },
   "dependencies": {

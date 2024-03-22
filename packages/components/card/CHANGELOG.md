@@ -1,5 +1,14 @@
 # @jala-banyu/card
 
+## 5.0.4
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/shared-icons@1.2.2
+  - @jala-banyu/theme@1.5.4
+  - @jala-banyu/ripple@5.0.4
+
 ## 5.0.3
 
 ### Patch Changes

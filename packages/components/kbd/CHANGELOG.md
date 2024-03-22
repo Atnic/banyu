@@ -1,5 +1,13 @@
 # @jala-banyu/kbd
 
+## 5.0.4
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.5.4
+  - @jala-banyu/system-rsc@5.0.4
+
 ## 5.0.3
 
 ### Patch Changes

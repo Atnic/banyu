@@ -1,5 +1,19 @@
 # @jala-banyu/table
 
+## 1.0.18
+
+### Patch Changes
+
+- fix select, table & popover props
+
+- Updated dependencies []:
+  - @jala-banyu/shared-icons@1.2.2
+  - @jala-banyu/select@2.0.4
+  - @jala-banyu/checkbox@2.0.4
+  - @jala-banyu/input@5.0.4
+  - @jala-banyu/spacer@2.0.4
+  - @jala-banyu/tooltip@5.0.4
+
 ## 1.0.17
 
 ### Patch Changes

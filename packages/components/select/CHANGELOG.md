@@ -1,5 +1,19 @@
 # @jala-banyu/select
 
+## 2.0.4
+
+### Patch Changes
+
+- fix select, table & popover props
+
+- Updated dependencies []:
+  - @jala-banyu/shared-icons@1.2.2
+  - @jala-banyu/theme@1.5.4
+  - @jala-banyu/listbox@2.0.4
+  - @jala-banyu/popover@4.0.4
+  - @jala-banyu/scroll-shadow@2.0.4
+  - @jala-banyu/spinner@5.0.4
+
 ## 2.0.3
 
 ### Patch Changes

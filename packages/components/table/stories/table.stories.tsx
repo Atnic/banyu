@@ -150,7 +150,7 @@ const StaticTemplate = (args: TableProps) => (
         <TableCell>Senior Developer</TableCell>
         <TableCell>Active</TableCell>
       </TableRow>
-      <TableRow key="4">
+      <TableRow key="4" aria-colspan={3}>
         <TableCell>William Howard</TableCell>
         <TableCell>Community Manager</TableCell>
         <TableCell>Vacation</TableCell>

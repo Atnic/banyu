@@ -1,5 +1,12 @@
 # @jala-banyu/modal
 
+## 1.0.4
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/shared-icons@1.2.2
+
 ## 1.0.3
 
 ### Patch Changes

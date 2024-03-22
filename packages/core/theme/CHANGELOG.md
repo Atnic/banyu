@@ -1,5 +1,11 @@
 # @jala-banyu/theme
 
+## 1.5.4
+
+### Patch Changes
+
+- fix select, table & popover props
+
 ## 1.5.3
 
 ### Patch Changes

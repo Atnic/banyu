@@ -1,5 +1,11 @@
 # @jala-banyu/react
 
+## 1.2.7
+
+### Patch Changes
+
+- fix component
+
 ## 1.2.6
 
 ### Patch Changes

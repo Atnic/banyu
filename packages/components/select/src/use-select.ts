@@ -126,6 +126,7 @@ interface Props<T> extends Omit<HTMLBanyuProps<"select">, keyof SelectVariantPro
    * Bottom content to be rendered in the popover.
    */
   bottomContent?: ReactNode;
+  loadingStateContent?: ReactNode;
 }
 
 export type UseSelectProps<T> = Omit<Props<T>, keyof MultiSelectProps<T>> &
@@ -150,6 +151,7 @@ export function useSelect<T extends object>(originalProps: UseSelectProps<T>) {
     endContent,
     topContent,
     bottomContent,
+    loadingStateContent,
     description,
     errorMessage,
     renderValue,
@@ -605,6 +607,16 @@ export function useSelect<T extends object>(originalProps: UseSelectProps<T>) {
     [slots, classNames?.bottomContent],
   );
 
+  const getLoadingStateWrapperProps: PropGetter = useCallback(
+    (props = {}) => ({
+      "data-slot": "loadingStateContent",
+      className: slots.loadingStateContentWrapper({
+        class: clsx(classNames?.loadingStateContentWrapper, props.className),
+      }),
+    }),
+    [slots, classNames?.loadingStateContentWrapper],
+  );
+
   return {
     Component,
     domRef,
@@ -619,6 +631,7 @@ export function useSelect<T extends object>(originalProps: UseSelectProps<T>) {
     endContent,
     topContent,
     bottomContent,
+    loadingStateContent,
     description,
     selectorIcon,
     errorMessage,
@@ -647,6 +660,7 @@ export function useSelect<T extends object>(originalProps: UseSelectProps<T>) {
     getSelectorIconProps,
     getTopContentProps,
     getBottomContentProps,
+    getLoadingStateWrapperProps,
   };
 }
 

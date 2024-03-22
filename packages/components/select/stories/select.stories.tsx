@@ -188,20 +188,15 @@ const RequiredTemplate = ({variant, ...args}: SelectProps) => {
 };
 
 const MirrorTemplate = ({variant, ...args}: SelectProps) => (
-  <div className="w-full max-w-xl flex flex-row gap-4">
-    {/*<Select className="max-w-xs" label="Select an animal" variant={variant} {...args}>*/}
-    {/*  {items}*/}
-    {/*</Select>*/}
-    <Select
-      className="max-w-xs"
-      label="Favorite Animal"
-      placeholder="Select an animal"
-      variant={variant}
-      {...args}
-    >
-      {items}
-    </Select>
-  </div>
+  <Select
+    className="max-w-xs"
+    label="Favorite Animal"
+    placeholder="Select an animal"
+    variant={variant}
+    {...args}
+  >
+    {items}
+  </Select>
 );
 
 const LabelPlacementTemplate = ({variant, ...args}: SelectProps) => (
@@ -343,6 +338,12 @@ const WithTopAndBottomContentTemplate = ({variant, ...args}: SelectProps) => {
     </div>
   );
 
+  const loadingStateContent = (
+    <div className="flex gap-3 items-start h-5">
+      <span>Loading...</span>
+    </div>
+  );
+
   return (
     <Select
       className="max-w-xs"
@@ -350,6 +351,42 @@ const WithTopAndBottomContentTemplate = ({variant, ...args}: SelectProps) => {
       variant={variant}
       {...args}
       bottomContent={bottomContent}
+      loadingStateContent={loadingStateContent}
+      topContent={topContent}
+    >
+      {items}
+    </Select>
+  );
+};
+const EmptyContentTemplate = ({variant, ...args}: SelectProps) => {
+  const topContent = (
+    <div className="p-1 w-full">
+      <Input placeholder="Search" startIcon={<Search className={"text-lg"} />} />
+    </div>
+  );
+  const bottomContent = (
+    <div className="flex justify-start">
+      <Button size="sm" variant="ghost">
+        <Plus fill={"currentColor"} />
+        Add new
+      </Button>
+    </div>
+  );
+
+  const loadingStateContent = (
+    <div className="flex gap-3 items-start h-5">
+      <span>Loading...</span>
+    </div>
+  );
+
+  return (
+    <Select
+      className="max-w-xs"
+      label="Favorite Animal"
+      variant={variant}
+      {...args}
+      bottomContent={bottomContent}
+      loadingStateContent={loadingStateContent}
       topContent={topContent}
     >
       {items}
@@ -564,5 +601,23 @@ export const WithTopAndBottomContent = {
 
   args: {
     ...defaultProps,
+  },
+};
+export const IsLoadingContent = {
+  render: WithTopAndBottomContentTemplate,
+
+  args: {
+    ...defaultProps,
+    isLoading: true,
+    labelPlacement: "outside",
+  },
+};
+
+export const IsEmptyContent = {
+  render: EmptyContentTemplate,
+
+  args: {
+    ...defaultProps,
+    labelPlacement: "outside",
   },
 };

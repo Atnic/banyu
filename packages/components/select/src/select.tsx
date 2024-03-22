@@ -1,7 +1,6 @@
 import {Listbox} from "@jala-banyu/listbox";
 import {FreeSoloPopover} from "@jala-banyu/popover";
 import {CheckIcon, ChevronDownIcon, CloseFilledIcon} from "@jala-banyu/shared-icons";
-import {Spinner} from "@jala-banyu/spinner";
 import {forwardRef} from "@jala-banyu/system";
 import React, {cloneElement, ForwardedRef, ReactElement, ReactNode, Ref, useMemo} from "react";
 import {VisuallyHidden} from "@react-aria/visually-hidden";
@@ -28,6 +27,7 @@ function Select<T extends object>(props: Props<T>, ref: ForwardedRef<HTMLSelectE
     endContent,
     topContent,
     bottomContent,
+    loadingStateContent,
     placeholder,
     renderValue,
     shouldLabelBeOutside,
@@ -49,6 +49,7 @@ function Select<T extends object>(props: Props<T>, ref: ForwardedRef<HTMLSelectE
     getSelectorIconProps,
     getTopContentProps,
     getBottomContentProps,
+    getLoadingStateWrapperProps,
   } = useSelect<T>({...props, ref});
 
   const labelContent = label ? <label {...getLabelProps()}>{label}</label> : null;
@@ -99,9 +100,9 @@ function Select<T extends object>(props: Props<T>, ref: ForwardedRef<HTMLSelectE
   }, [state.selectedItems, renderValue, placeholder]);
 
   const renderIndicator = useMemo(() => {
-    if (isLoading) {
-      return <Spinner {...getSpinnerProps()} />;
-    }
+    // if (isLoading) {
+    //   return <Spinner {...getSpinnerProps()} />;
+    // }
 
     return clonedIcon;
   }, [isLoading, clonedIcon, getSpinnerProps]);
@@ -111,9 +112,29 @@ function Select<T extends object>(props: Props<T>, ref: ForwardedRef<HTMLSelectE
       state.isOpen ? (
         <FreeSoloPopover {...getPopoverProps()} state={state} triggerRef={triggerRef}>
           <div {...getTopContentProps()}>{topContent}</div>
-          <div {...getListboxWrapperProps()}>
-            <Listbox {...getListboxProps()} />
-          </div>
+          {isLoading ? (
+            <div {...getListboxWrapperProps()}>
+              <div {...getLoadingStateWrapperProps()}>{loadingStateContent || "Loading"}</div>
+              <VisuallyHidden>
+                <Listbox {...getListboxProps()} />
+              </VisuallyHidden>
+            </div>
+          ) : (
+            <div {...getListboxWrapperProps()}>
+              {state.selectedItems && state.selectedItems.length == 0 ? (
+                <div>
+                  <div {...getLoadingStateWrapperProps()}>
+                    Data not found! {state.selectedItems && state.selectedItems.length}
+                  </div>
+                  <VisuallyHidden>
+                    <Listbox {...getListboxProps()} />
+                  </VisuallyHidden>
+                </div>
+              ) : (
+                <Listbox {...getListboxProps()} />
+              )}
+            </div>
+          )}
           <div {...getBottomContentProps()}>{bottomContent}</div>
         </FreeSoloPopover>
       ) : null,

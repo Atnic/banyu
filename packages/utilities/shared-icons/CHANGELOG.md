@@ -1,5 +1,11 @@
 # @jala-banyu/shared-icons
 
+## 1.2.2
+
+### Patch Changes
+
+- fix select, table & popover props
+
 ## 1.2.1
 
 ### Patch Changes
