@@ -173,7 +173,7 @@ const checkbox = tv({
           "after:!bg-brand",
           "after:text-white",
           "text-white",
-          "group-data-[focus=true]:ring-brand/60",
+          "group-data-[focus=true]:ring-brand-200",
           "after:" + colorVariants.solid.primary,
         ],
       },

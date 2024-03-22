@@ -1,5 +1,13 @@
 # @jala-banyu/menu
 
+## 5.0.3
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.5.3
+  - @jala-banyu/checkbox@2.0.3
+
 ## 5.0.2
 
 ### Patch Changes

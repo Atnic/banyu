@@ -189,9 +189,9 @@ const RequiredTemplate = ({variant, ...args}: SelectProps) => {
 
 const MirrorTemplate = ({variant, ...args}: SelectProps) => (
   <div className="w-full max-w-xl flex flex-row gap-4">
-    <Select className="max-w-xs" label="Select an animal" variant={variant} {...args}>
-      {items}
-    </Select>
+    {/*<Select className="max-w-xs" label="Select an animal" variant={variant} {...args}>*/}
+    {/*  {items}*/}
+    {/*</Select>*/}
     <Select
       className="max-w-xs"
       label="Favorite Animal"

@@ -32,7 +32,7 @@ const select = tv({
     ],
     innerWrapper:
       "inline-flex h-full w-[calc(100%_-_theme(spacing.unit-6))] min-h-unit-4 items-center gap-1.5 box-border text-neutral-800 text-lg",
-    selectorIcon: "absolute right-2 w-unit-6 h-unit-6",
+    selectorIcon: "absolute right-1 w-6 h-6",
     spinner: "absolute right-3",
     value: [
       "text-neutral-500",
@@ -82,15 +82,15 @@ const select = tv({
     size: {
       sm: {
         label: "text-xs",
-        trigger: "h-unit-8 min-h-unit-8 px-2 rounded-sm",
+        trigger: "h-8 min-h-8 px-2 rounded-sm",
         value: "text-xs",
       },
       md: {
-        trigger: "h-unit-10 min-h-unit-10 rounded-md",
+        trigger: "h-9 min-h-9 rounded-md",
         value: "text-sm",
       },
       lg: {
-        trigger: "h-unit-12 min-h-unit-12 rounded-lg",
+        trigger: "h-12 min-h-12 rounded-lg",
         value: "text-md",
       },
     },
@@ -245,7 +245,7 @@ const select = tv({
     {
       variant: "default",
       class: {
-        trigger: ["data-[focus=true]:ring-4", "data-[focus=true]:ring-brand/60", "bg-content1"],
+        trigger: ["data-[focus=true]:ring-2", "data-[focus=true]:ring-brand-200", "bg-content1"],
       },
     },
     // dropdown & color
@@ -263,7 +263,7 @@ const select = tv({
           "data-[focus=true]:border-brand",
           "data-[open=true]:border-brand",
         ],
-        selectorIcon: "right-1",
+        selectorIcon: "!right-1",
         value: "font-semibold",
         label: "w-max font-semibold",
         popoverContent: "min-w-36",

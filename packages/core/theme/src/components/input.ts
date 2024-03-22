@@ -134,7 +134,7 @@ const input = tv({
     size: {
       sm: {
         label: "text-xs top-[18px] left-0",
-        inputWrapper: "h-unit-6 min-h-unit-6 rounded-sm",
+        inputWrapper: "h-8 min-h-8 rounded-sm",
         input: "text-xs",
         clearButton: "!text-md",
         inValidIcon: "!text-md",
@@ -142,7 +142,7 @@ const input = tv({
       },
       md: {
         label: "text-sm top-[24px] left-0",
-        inputWrapper: "h-unit-9 min-h-unit-9 rounded-md",
+        inputWrapper: "h-9 min-h-9 rounded-md",
         input: "text-sm p-2",
         clearButton: "!text-lg",
         inValidIcon: "!text-lg",
@@ -150,7 +150,7 @@ const input = tv({
       },
       lg: {
         label: "text-base top-[28px] left-0",
-        inputWrapper: "h-unit-12 min-h-unit-12 rounded-lg",
+        inputWrapper: "h-12 min-h-12 rounded-lg",
         input: "text-base",
         clearButton: "!text-xl",
         inValidIcon: "!text-xl",
@@ -473,21 +473,21 @@ const input = tv({
       isMultiline: true,
       size: "sm",
       class: {
-        textarea: "min-h-unit-8",
+        textarea: "min-h-8",
       },
     },
     {
       isMultiline: true,
       size: "md",
       class: {
-        textarea: "min-h-unit-10",
+        textarea: "min-h-10",
       },
     },
     {
       isMultiline: true,
       size: "lg",
       class: {
-        textarea: "min-h-unit-12",
+        textarea: "min-h-12",
       },
     },
     // text truncate labelPlacement=[inside,outside]

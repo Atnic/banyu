@@ -1,5 +1,12 @@
 # @jala-banyu/switch
 
+## 5.0.4
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.5.3
+
 ## 5.0.3
 
 ### Patch Changes

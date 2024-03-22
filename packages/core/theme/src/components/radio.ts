@@ -41,9 +41,10 @@ const radio = tv(
         "border-neutral-300",
         "rounded-full",
         "ring-0",
-        "group-data-[hover=true]:ring-4",
-        "group-data-[hover=true]:ring-neutral-200",
+        // "group-data-[hover=true]:ring-2",
+        // "group-data-[hover=true]:ring-brand-200",
         "group-data-[focus=true]:ring-4",
+        "group-data-[focus=true]:ring-brand-200",
         // focus ring
       ],
       labelWrapper: "flex flex-col ml-1",

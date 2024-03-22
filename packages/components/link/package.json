@@ -1,6 +1,6 @@
 {
   "name": "@jala-banyu/link",
-  "version": "5.0.2",
+  "version": "5.0.3",
   "description": "Links allow users to click their way from page to page. This component is styled to resemble a hyperlink and semantically renders an &lt;a&gt;",
   "keywords": [
     "link"
@@ -36,7 +36,7 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "@jala-banyu/theme": "1.5.2",
+    "@jala-banyu/theme": "1.5.3",
     "@jala-banyu/system": "1.1.0"
   },
   "dependencies": {
