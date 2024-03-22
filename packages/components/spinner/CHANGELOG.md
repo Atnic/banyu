@@ -1,5 +1,13 @@
 # @jala-banyu/spinner
 
+## 5.0.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.5.1
+  - @jala-banyu/system-rsc@5.0.1
+
 ## 5.0.0
 
 ### Patch Changes

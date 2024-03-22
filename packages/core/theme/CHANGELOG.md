@@ -1,5 +1,11 @@
 # @jala-banyu/theme
 
+## 1.5.1
+
+### Patch Changes
+
+- fix table
+
 ## 1.5.0
 
 ### Minor Changes

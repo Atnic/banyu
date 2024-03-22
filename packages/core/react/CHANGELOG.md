@@ -1,5 +1,50 @@
 # @jala-banyu/react
 
+## 1.2.4
+
+### Patch Changes
+
+- fix table variant
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.5.1
+  - @jala-banyu/accordion@2.0.1
+  - @jala-banyu/avatar@5.0.1
+  - @jala-banyu/breadcrumbs@5.0.1
+  - @jala-banyu/button@5.0.1
+  - @jala-banyu/card@5.0.1
+  - @jala-banyu/checkbox@2.0.1
+  - @jala-banyu/chip@2.0.1
+  - @jala-banyu/code@5.0.1
+  - @jala-banyu/image@5.0.1
+  - @jala-banyu/input@5.0.1
+  - @jala-banyu/kbd@5.0.1
+  - @jala-banyu/link@5.0.1
+  - @jala-banyu/menu@5.0.1
+  - @jala-banyu/modal@1.0.3
+  - @jala-banyu/popover@4.0.1
+  - @jala-banyu/radio@1.0.1
+  - @jala-banyu/ripple@5.0.1
+  - @jala-banyu/select@2.0.1
+  - @jala-banyu/skeleton@5.0.1
+  - @jala-banyu/spinner@5.0.1
+  - @jala-banyu/switch@5.0.2
+  - @jala-banyu/tabs@1.1.2
+  - @jala-banyu/tooltip@5.0.1
+  - @jala-banyu/user@6.0.1
+  - @jala-banyu/table@1.0.15
+  - @jala-banyu/progress@1.1.0
+  - @jala-banyu/pagination@1.1.14
+
+## 1.2.3
+
+### Patch Changes
+
+- update alert
+
+- Updated dependencies []:
+  - @jala-banyu/switch@5.0.1
+
 ## 1.2.2
 
 ### Patch Changes
