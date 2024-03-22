@@ -134,7 +134,7 @@ const input = tv({
     size: {
       sm: {
         label: "text-xs top-[18px] left-0",
-        inputWrapper: "h-unit-8 min-h-unit-8 rounded-sm",
+        inputWrapper: "h-unit-6 min-h-unit-6 rounded-sm",
         input: "text-xs",
         clearButton: "!text-md",
         inValidIcon: "!text-md",
@@ -142,7 +142,7 @@ const input = tv({
       },
       md: {
         label: "text-sm top-[24px] left-0",
-        inputWrapper: "h-unit-10 min-h-unit-10 rounded-md",
+        inputWrapper: "h-unit-9 min-h-unit-9 rounded-md",
         input: "text-sm p-2",
         clearButton: "!text-lg",
         inValidIcon: "!text-lg",
@@ -172,6 +172,14 @@ const input = tv({
       },
       full: {
         inputWrapper: "rounded-full",
+      },
+    },
+    textAlign: {
+      start: {
+        input: "!text-left",
+      },
+      end: {
+        input: "!text-right",
       },
     },
     labelPlacement: {
@@ -271,8 +279,9 @@ const input = tv({
     color: "default",
     size: "md",
     radius: "lg",
-    fullWidth: true,
+    textAlign: "start",
     labelPlacement: "outside",
+    fullWidth: true,
     isDisabled: false,
     disableAnimation: false,
     isInvalid: false,

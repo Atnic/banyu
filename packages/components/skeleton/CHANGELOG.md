@@ -1,5 +1,13 @@
 # @jala-banyu/skeleton
 
+## 5.0.2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.5.2
+  - @jala-banyu/system-rsc@5.0.2
+
 ## 5.0.1
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @jala-banyu/theme
 
+## 1.5.2
+
+### Patch Changes
+
+- add text alignment on input
+
 ## 1.5.1
 
 ### Patch Changes

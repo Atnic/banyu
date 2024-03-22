@@ -1,6 +1,6 @@
 {
   "name": "@jala-banyu/spacer",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Spacer is a component used to add space between components.",
   "keywords": [
     "spacer"
@@ -36,7 +36,7 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "@jala-banyu/theme": "1.5.1",
+    "@jala-banyu/theme": "1.5.2",
     "@jala-banyu/system": ">=1.0.0"
   },
   "dependencies": {

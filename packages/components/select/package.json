@@ -1,6 +1,6 @@
 {
   "name": "@jala-banyu/select",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A select displays a collapsible list of options and allows a user to select one of them.",
   "keywords": [
     "select"
@@ -35,7 +35,7 @@
   },
   "peerDependencies": {
     "@jala-banyu/system": ">=1.0.0",
-    "@jala-banyu/theme": "1.5.1",
+    "@jala-banyu/theme": "1.5.2",
     "framer-motion": ">=4.0.0",
     "react": ">=18",
     "react-dom": ">=18"

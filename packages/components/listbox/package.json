@@ -1,6 +1,6 @@
 {
   "name": "@jala-banyu/listbox",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A listbox displays a list of options and allows a user to select one or more of them.",
   "keywords": [
     "listbox"
@@ -36,7 +36,7 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "@jala-banyu/theme": "1.5.1",
+    "@jala-banyu/theme": "1.5.2",
     "@jala-banyu/system": ">=1.0.0"
   },
   "dependencies": {

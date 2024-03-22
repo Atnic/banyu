@@ -194,6 +194,7 @@ export function useInput<T extends HTMLInputElement | HTMLTextAreaElement = HTML
   const isInvalid = validationState === "invalid" || originalProps.isInvalid;
   const isValid = validationState === "valid" || originalProps.isValid;
 
+  const textAlign = originalProps.textAlign;
   const labelPlacement = useMemo<InputVariantProps["labelPlacement"]>(() => {
     if (!originalProps.labelPlacement && !label) {
       return "outside";
@@ -592,6 +593,7 @@ export function useInput<T extends HTMLInputElement | HTMLTextAreaElement = HTML
     classNames,
     domRef,
     label,
+    textAlign,
     description,
     startContent,
     endContent,

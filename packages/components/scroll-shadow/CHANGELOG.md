@@ -1,5 +1,12 @@
 # @jala-banyu/scroll-shadow
 
+## 2.0.2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.5.2
+
 ## 2.0.1
 
 ### Patch Changes

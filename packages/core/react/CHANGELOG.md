@@ -1,5 +1,11 @@
 # @jala-banyu/react
 
+## 1.2.5
+
+### Patch Changes
+
+- add text align input compoennt
+
 ## 1.2.4
 
 ### Patch Changes

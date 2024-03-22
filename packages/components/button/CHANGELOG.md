@@ -1,5 +1,14 @@
 # @jala-banyu/button
 
+## 5.0.2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.5.2
+  - @jala-banyu/ripple@5.0.2
+  - @jala-banyu/spinner@5.0.2
+
 ## 5.0.1
 
 ### Patch Changes

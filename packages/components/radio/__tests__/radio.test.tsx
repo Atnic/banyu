@@ -153,10 +153,12 @@ describe("Radio", () => {
       </RadioGroup>,
     );
 
+    // @ts-ignore
     let radio2 = container
       .querySelector(".radio-test-2")
       ?.querySelector("input") as HTMLInputElement;
 
+    // @ts-ignore
     expect(radio2?.required).toBe(true);
   });
 
