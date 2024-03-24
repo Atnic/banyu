@@ -532,12 +532,12 @@ export const IsInvalid = {
   },
 };
 
-export const IsSuccess = {
+export const IsValid = {
   render: Template,
 
   args: {
     ...defaultProps,
-    isSuccess: true,
+    isValid: true,
     variant: "default",
     defaultSelectedKeys: ["dog"],
   },

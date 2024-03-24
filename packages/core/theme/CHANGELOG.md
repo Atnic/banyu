@@ -1,5 +1,11 @@
 # @jala-banyu/theme
 
+## 1.5.5
+
+### Patch Changes
+
+- update select status
+
 ## 1.5.4
 
 ### Patch Changes

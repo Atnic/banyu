@@ -1,6 +1,6 @@
 {
   "name": "@jala-banyu/kbd",
-  "version": "5.0.4",
+  "version": "5.0.5",
   "description": "The keyboard key components indicates which key or set of keys used to execute a specificv  action",
   "keywords": [
     "kbd"
@@ -36,7 +36,7 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "@jala-banyu/theme": "1.5.4",
+    "@jala-banyu/theme": "1.5.5",
     "@jala-banyu/system": "1.1.0"
   },
   "dependencies": {

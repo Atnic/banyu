@@ -33,6 +33,8 @@ const select = tv({
     innerWrapper:
       "inline-flex h-full w-[calc(100%_-_theme(spacing.unit-6))] min-h-unit-4 items-center gap-1.5 box-border text-neutral-800 text-lg",
     selectorIcon: "absolute right-1 w-6 h-6 !text-sm",
+    inValidIcon: "mr-6",
+    validIcon: "mr-6",
     spinner: "absolute right-3",
     value: [
       "text-neutral-500",
@@ -159,18 +161,22 @@ const select = tv({
     },
     isInvalid: {
       true: {
-        label: "!text-danger",
-        value: "!text-neutral-500",
-        selectorIcon: "text-danger",
-        trigger: ["!border-danger", "data-[hover=true]:border-danger"],
+        trigger: "!border-danger group-data-[focus=true]:ring-danger-200",
+        inValidIcon: "text-danger",
+        errorMessage: "text-danger",
+      },
+      false: {
+        inValidIcon: "invisible",
       },
     },
-    isSuccess: {
+    isValid: {
       true: {
-        label: "!text-success",
-        value: "!text-neutral-500",
-        selectorIcon: "text-success",
-        trigger: ["!border-success", "data-[hover=true]:border-success"],
+        trigger: "!border-success group-data-[focus=true]:ring-success-200",
+        validIcon: "text-success",
+        errorMessage: "text-success",
+      },
+      false: {
+        validIcon: "hidden",
       },
     },
     isRequired: {
@@ -248,7 +254,7 @@ const select = tv({
     {
       variant: "default",
       class: {
-        trigger: ["data-[focus=true]:ring-2", "data-[focus=true]:ring-brand-200", "bg-content1"],
+        trigger: ["data-[focus=true]:ring-1", "data-[focus=true]:ring-brand-200", "bg-content1"],
         selectorIcon: "!right-1 text-sm",
       },
     },
@@ -343,12 +349,16 @@ const select = tv({
       isInvalid: true,
       variant: "default",
       class: {
-        trigger: ["!border-danger", "data-[focus=true]:ring-4", "data-[focus=true]:ring-danger/60"],
+        trigger: [
+          "!border-danger",
+          "data-[focus=true]:ring-2",
+          "data-[focus=true]:ring-danger-200",
+        ],
       },
     },
-    // isSuccess & variant
+    // isValid & variant
     {
-      isSuccess: true,
+      isValid: true,
       variant: "ghost",
       class: {
         trigger: [
@@ -359,13 +369,13 @@ const select = tv({
       },
     },
     {
-      isSuccess: true,
+      isValid: true,
       variant: "default",
       class: {
         trigger: [
           "!border-success",
-          "data-[focus=true]:ring-4",
-          "data-[focus=true]:ring-success/60",
+          "data-[focus=true]:ring-2",
+          "data-[focus=true]:ring-success-200",
         ],
       },
     },

@@ -265,6 +265,7 @@ export function useSelect<T extends object>(originalProps: UseSelectProps<T>) {
   const hasHelper = !!description || !!errorMessage;
   const hasPlaceholder = !!placeholder;
   const isInvalid = validationState === "invalid" || originalProps.isInvalid;
+  const isValid = validationState === "valid" || originalProps.isValid;
   const isSuccess = originalProps.isSuccess;
   const shouldLabelBeOutside =
     labelPlacement === "outside-left" ||
@@ -290,6 +291,7 @@ export function useSelect<T extends object>(originalProps: UseSelectProps<T>) {
         ...variantProps,
         isFocused,
         isInvalid,
+        isValid,
         hasPlaceholder,
         labelPlacement,
         className,
@@ -298,6 +300,7 @@ export function useSelect<T extends object>(originalProps: UseSelectProps<T>) {
       ...Object.values(variantProps),
       isFocused,
       isInvalid,
+      isValid,
       labelPlacement,
       hasPlaceholder,
       className,
@@ -617,12 +620,34 @@ export function useSelect<T extends object>(originalProps: UseSelectProps<T>) {
     [slots, classNames?.loadingStateContentWrapper],
   );
 
+  const getInvalidIconProps: PropGetter = useCallback(
+    (props = {}) => {
+      return {
+        ...props,
+        className: slots.inValidIcon({class: clsx(classNames?.inValidIcon, props?.className)}),
+      };
+    },
+    [slots, classNames?.inValidIcon],
+  );
+
+  const getValidIconProps: PropGetter = useCallback(
+    (props = {}) => {
+      return {
+        ...props,
+        className: slots.validIcon({class: clsx(classNames?.validIcon, props?.className)}),
+      };
+    },
+    [slots, classNames?.validIcon],
+  );
+
   return {
     Component,
     domRef,
     state,
     label,
     name,
+    isInvalid,
+    isValid,
     triggerRef,
     isLoading,
     isSuccess,
@@ -661,6 +686,8 @@ export function useSelect<T extends object>(originalProps: UseSelectProps<T>) {
     getTopContentProps,
     getBottomContentProps,
     getLoadingStateWrapperProps,
+    getInvalidIconProps,
+    getValidIconProps,
   };
 }
 

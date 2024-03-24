@@ -1,5 +1,11 @@
 # @jala-banyu/react
 
+## 1.2.8
+
+### Patch Changes
+
+- fix select invalid props
+
 ## 1.2.7
 
 ### Patch Changes

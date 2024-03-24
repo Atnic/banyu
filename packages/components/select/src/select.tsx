@@ -1,6 +1,6 @@
 import {Listbox} from "@jala-banyu/listbox";
 import {FreeSoloPopover} from "@jala-banyu/popover";
-import {CheckIcon, ChevronDownIcon, CloseFilledIcon} from "@jala-banyu/shared-icons";
+import {CheckIcon, ChevronDownIcon, ExclamationIcon} from "@jala-banyu/shared-icons";
 import {forwardRef} from "@jala-banyu/system";
 import React, {cloneElement, ForwardedRef, ReactElement, ReactNode, Ref, useMemo} from "react";
 import {VisuallyHidden} from "@react-aria/visually-hidden";
@@ -18,11 +18,12 @@ function Select<T extends object>(props: Props<T>, ref: ForwardedRef<HTMLSelectE
     label,
     hasHelper,
     isLoading,
-    isSuccess,
     triggerRef,
     selectorIcon = <ChevronDownIcon />,
     description,
     errorMessage,
+    isInvalid = false,
+    isValid = false,
     startContent,
     endContent,
     topContent,
@@ -50,11 +51,29 @@ function Select<T extends object>(props: Props<T>, ref: ForwardedRef<HTMLSelectE
     getTopContentProps,
     getBottomContentProps,
     getLoadingStateWrapperProps,
+    getInvalidIconProps,
+    getValidIconProps,
   } = useSelect<T>({...props, ref});
 
   const labelContent = label ? <label {...getLabelProps()}>{label}</label> : null;
 
-  let selector = errorMessage ? <CloseFilledIcon /> : isSuccess ? <CheckIcon /> : selectorIcon;
+  let selector = selectorIcon;
+
+  const invalid = useMemo(() => {
+    return (
+      <div {...getInvalidIconProps()}>
+        <ExclamationIcon />
+      </div>
+    );
+  }, [isInvalid, getInvalidIconProps]);
+
+  const valid = useMemo(() => {
+    return (
+      <div {...getValidIconProps()}>
+        <CheckIcon />
+      </div>
+    );
+  }, [isValid, getValidIconProps]);
 
   const clonedIcon = cloneElement(selector as ReactElement, getSelectorIconProps());
 
@@ -107,6 +126,14 @@ function Select<T extends object>(props: Props<T>, ref: ForwardedRef<HTMLSelectE
     return clonedIcon;
   }, [isLoading, clonedIcon, getSpinnerProps]);
 
+  const renderStatusIcon = useMemo(() => {
+    if (isInvalid) {
+      return invalid;
+    } else {
+      return valid;
+    }
+  }, [isInvalid]);
+
   const popoverContent = useMemo(
     () =>
       state.isOpen ? (
@@ -156,6 +183,7 @@ function Select<T extends object>(props: Props<T>, ref: ForwardedRef<HTMLSelectE
             </span>
             {endContent}
           </div>
+          {renderStatusIcon}
           {renderIndicator}
         </Component>
         {helperWrapper}

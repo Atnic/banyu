@@ -1,6 +1,6 @@
 {
   "name": "@jala-banyu/ripple",
-  "version": "5.0.4",
+  "version": "5.0.5",
   "description": "A simple implementation to display a ripple animation when the source component is clicked",
   "keywords": [
     "ripple"
@@ -37,7 +37,7 @@
     "react": ">=18",
     "react-dom": ">=18",
     "framer-motion": ">=4.0.0",
-    "@jala-banyu/theme": "1.5.4",
+    "@jala-banyu/theme": "1.5.5",
     "@jala-banyu/system": "1.1.0"
   },
   "dependencies": {
