@@ -129,9 +129,12 @@ function Select<T extends object>(props: Props<T>, ref: ForwardedRef<HTMLSelectE
   const renderStatusIcon = useMemo(() => {
     if (isInvalid) {
       return invalid;
-    } else {
+    }
+    if (!isInvalid && isValid) {
       return valid;
     }
+
+    return;
   }, [isInvalid]);
 
   const popoverContent = useMemo(
@@ -150,9 +153,7 @@ function Select<T extends object>(props: Props<T>, ref: ForwardedRef<HTMLSelectE
             <div {...getListboxWrapperProps()}>
               {state.selectedItems && state.selectedItems.length == 0 ? (
                 <div>
-                  <div {...getLoadingStateWrapperProps()}>
-                    Data not found! {state.selectedItems && state.selectedItems.length}
-                  </div>
+                  <div {...getLoadingStateWrapperProps()}>Data not found!</div>
                   <VisuallyHidden>
                     <Listbox {...getListboxProps()} />
                   </VisuallyHidden>

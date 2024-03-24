@@ -1,6 +1,6 @@
 {
   "name": "@jala-banyu/scroll-shadow",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "A component that applies top and bottom shadows when content overflows on scroll.",
   "keywords": [
     "scroll-shadow"
@@ -36,7 +36,7 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "@jala-banyu/theme": "1.5.5",
+    "@jala-banyu/theme": "1.5.6",
     "@jala-banyu/system": ">=1.0.0"
   },
   "dependencies": {

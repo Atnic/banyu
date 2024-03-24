@@ -1,5 +1,30 @@
 # @jala-banyu/select
 
+## 2.0.8
+
+### Patch Changes
+
+- fix invalid icon size
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.5.6
+  - @jala-banyu/listbox@2.0.6
+  - @jala-banyu/popover@4.0.6
+  - @jala-banyu/scroll-shadow@2.0.6
+  - @jala-banyu/spinner@5.0.6
+
+## 2.0.7
+
+### Patch Changes
+
+- fix valid icon show
+
+## 2.0.6
+
+### Patch Changes
+
+- fix select error
+
 ## 2.0.5
 
 ### Patch Changes

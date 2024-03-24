@@ -1,5 +1,11 @@
 # @jala-banyu/theme
 
+## 1.5.6
+
+### Patch Changes
+
+- fix invalid icon size
+
 ## 1.5.5
 
 ### Patch Changes

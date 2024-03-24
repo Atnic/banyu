@@ -87,14 +87,20 @@ const select = tv({
         label: "text-xs",
         trigger: "h-8 min-h-8 px-2 rounded-sm",
         value: "text-xs",
+        inValidIcon: "!text-md",
+        validIcon: "!text-md",
       },
       md: {
         trigger: "h-9 min-h-9 rounded-md",
         value: "text-sm",
+        inValidIcon: "!text-lg",
+        validIcon: "!text-lg",
       },
       lg: {
         trigger: "h-12 min-h-12 rounded-lg",
         value: "text-md",
+        inValidIcon: "!text-xl",
+        validIcon: "!text-xl",
       },
     },
     radius: {
@@ -298,7 +304,7 @@ const select = tv({
       radius: "full",
       size: ["sm"],
       class: {
-        trigger: "px-3",
+        inValidIcon: "px-3",
       },
     },
     {
@@ -556,7 +562,7 @@ const select = tv({
     // isDisabled & ghost
     {
       isDisabled: true,
-      variant: ["ghost", "dropdown"],
+      variant: ["default", "ghost", "dropdown"],
       class: {
         trigger: "bg-neutral-300",
       },

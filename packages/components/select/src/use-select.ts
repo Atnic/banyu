@@ -266,7 +266,7 @@ export function useSelect<T extends object>(originalProps: UseSelectProps<T>) {
   const hasPlaceholder = !!placeholder;
   const isInvalid = validationState === "invalid" || originalProps.isInvalid;
   const isValid = validationState === "valid" || originalProps.isValid;
-  const isSuccess = originalProps.isSuccess;
+  // const isSuccess = originalProps.isSuccess;
   const shouldLabelBeOutside =
     labelPlacement === "outside-left" ||
     (labelPlacement === "outside" && (hasPlaceholder || !!originalProps.isMultiline));
@@ -650,7 +650,7 @@ export function useSelect<T extends object>(originalProps: UseSelectProps<T>) {
     isValid,
     triggerRef,
     isLoading,
-    isSuccess,
+    // isSuccess,
     placeholder,
     startContent,
     endContent,

@@ -1,5 +1,63 @@
 # @jala-banyu/react
 
+## 1.2.11
+
+### Patch Changes
+
+- fix invalid icon size
+
+- Updated dependencies []:
+  - @jala-banyu/select@2.0.8
+  - @jala-banyu/theme@1.5.6
+  - @jala-banyu/pagination@1.1.21
+  - @jala-banyu/table@1.0.22
+  - @jala-banyu/accordion@2.0.6
+  - @jala-banyu/avatar@5.0.6
+  - @jala-banyu/breadcrumbs@5.0.6
+  - @jala-banyu/button@5.0.6
+  - @jala-banyu/card@5.0.6
+  - @jala-banyu/checkbox@2.0.6
+  - @jala-banyu/chip@2.0.6
+  - @jala-banyu/code@5.0.6
+  - @jala-banyu/image@5.0.6
+  - @jala-banyu/input@5.0.6
+  - @jala-banyu/kbd@5.0.6
+  - @jala-banyu/link@5.0.6
+  - @jala-banyu/menu@5.0.6
+  - @jala-banyu/modal@1.0.4
+  - @jala-banyu/popover@4.0.6
+  - @jala-banyu/radio@1.0.1
+  - @jala-banyu/ripple@5.0.6
+  - @jala-banyu/skeleton@5.0.6
+  - @jala-banyu/spinner@5.0.6
+  - @jala-banyu/switch@5.0.7
+  - @jala-banyu/tabs@1.1.2
+  - @jala-banyu/tooltip@5.0.6
+  - @jala-banyu/user@6.0.6
+  - @jala-banyu/progress@1.1.0
+
+## 1.2.10
+
+### Patch Changes
+
+- fix valid icon show
+
+- Updated dependencies []:
+  - @jala-banyu/select@2.0.7
+  - @jala-banyu/pagination@1.1.20
+  - @jala-banyu/table@1.0.21
+
+## 1.2.9
+
+### Patch Changes
+
+- fix select error
+
+- Updated dependencies []:
+  - @jala-banyu/select@2.0.6
+  - @jala-banyu/pagination@1.1.19
+  - @jala-banyu/table@1.0.20
+
 ## 1.2.8
 
 ### Patch Changes
