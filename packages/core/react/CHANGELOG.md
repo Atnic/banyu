@@ -1,5 +1,28 @@
 # @jala-banyu/react
 
+## 1.2.14
+
+### Patch Changes
+
+- fix miss build
+
+- Updated dependencies []:
+  - @jala-banyu/select@2.0.11
+  - @jala-banyu/pagination@1.1.24
+  - @jala-banyu/table@1.0.25
+
+## 1.2.13
+
+### Patch Changes
+
+- hide empty state
+
+## 1.2.12
+
+### Patch Changes
+
+- fix select & themes
+
 ## 1.2.11
 
 ### Patch Changes

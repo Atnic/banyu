@@ -207,8 +207,11 @@ const input = tv({
     isDisabled: {
       true: {
         base: "pointer-events-none",
-        inputWrapper: "opacity-disabled pointer-events-none bg-neutral-300 text-neutral-400",
+        inputWrapper: "pointer-events-none !bg-neutral-100 !text-neutral-400",
+        input: "!text-neutral-400",
         label: "!text-neutral-800",
+        startContentWrapper: "bg-neutral-50 text-neutral-400",
+        endContentWrapper: "bg-neutral-50 neutral-400",
       },
     },
     isInvalid: {

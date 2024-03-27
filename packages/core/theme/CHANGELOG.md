@@ -1,5 +1,11 @@
 # @jala-banyu/theme
 
+## 1.5.7
+
+### Patch Changes
+
+- fix loading state & empty state select component, update disable style input & select
+
 ## 1.5.6
 
 ### Patch Changes

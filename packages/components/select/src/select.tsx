@@ -29,6 +29,7 @@ function Select<T extends object>(props: Props<T>, ref: ForwardedRef<HTMLSelectE
     topContent,
     bottomContent,
     loadingStateContent,
+    // emptyStateContent,
     placeholder,
     renderValue,
     shouldLabelBeOutside,
@@ -151,16 +152,22 @@ function Select<T extends object>(props: Props<T>, ref: ForwardedRef<HTMLSelectE
             </div>
           ) : (
             <div {...getListboxWrapperProps()}>
-              {state.selectedItems && state.selectedItems.length == 0 ? (
-                <div>
-                  <div {...getLoadingStateWrapperProps()}>Data not found!</div>
-                  <VisuallyHidden>
-                    <Listbox {...getListboxProps()} />
-                  </VisuallyHidden>
-                </div>
-              ) : (
-                <Listbox {...getListboxProps()} />
-              )}
+              {/*{!getListboxProps ? (*/}
+              {/*  <div>*/}
+              {/*    <div {...getLoadingStateWrapperProps()}>*/}
+              {/*      {emptyStateContent || "Data not found!"}*/}
+              {/*    </div>*/}
+              {/*    <VisuallyHidden>*/}
+              {/*      <Listbox>*/}
+              {/*        <ListboxItem key={0}>*/}
+              {/*          <></>*/}
+              {/*        </ListboxItem>*/}
+              {/*      </Listbox>*/}
+              {/*    </VisuallyHidden>*/}
+              {/*  </div>*/}
+              {/*) : (*/}
+              <Listbox {...getListboxProps()} />
+              {/*)}*/}
             </div>
           )}
           <div {...getBottomContentProps()}>{bottomContent}</div>

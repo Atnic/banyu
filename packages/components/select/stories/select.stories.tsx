@@ -340,7 +340,7 @@ const WithTopAndBottomContentTemplate = ({variant, ...args}: SelectProps) => {
 
   const loadingStateContent = (
     <div className="flex gap-3 items-start h-5">
-      <span>Loading...</span>
+      <span>Memuat...</span>
     </div>
   );
 
@@ -359,9 +359,11 @@ const WithTopAndBottomContentTemplate = ({variant, ...args}: SelectProps) => {
   );
 };
 const EmptyContentTemplate = ({variant, ...args}: SelectProps) => {
+  // const {items, hasMore, isLoading, onLoadMore} = usePokemonList({fetchDelay: 1500});
+
   const topContent = (
     <div className="p-1 w-full">
-      <Input placeholder="Search" startIcon={<Search className={"text-lg"} />} />
+      <Input isClearable placeholder="Search" startIcon={<Search className={"text-lg"} />} />
     </div>
   );
   const bottomContent = (
@@ -375,21 +377,33 @@ const EmptyContentTemplate = ({variant, ...args}: SelectProps) => {
 
   const loadingStateContent = (
     <div className="flex gap-3 items-start h-5">
-      <span>Loading...</span>
+      <span>Memuat...</span>
+    </div>
+  );
+  const emptyStateContent = (
+    <div className="flex gap-3 items-start h-5">
+      <span>Data tidak ditemukan...</span>
     </div>
   );
 
   return (
     <Select
       className="max-w-xs"
+      isLoading={isLoading}
+      items={[]}
       label="Favorite Animal"
       variant={variant}
       {...args}
       bottomContent={bottomContent}
+      emptyStateContent={emptyStateContent}
       loadingStateContent={loadingStateContent}
       topContent={topContent}
     >
-      {items}
+      {(item: any) => (
+        <SelectItem key={item.name} className="capitalize">
+          {item.name}
+        </SelectItem>
+      )}
     </Select>
   );
 };

@@ -1,5 +1,12 @@
 # @jala-banyu/checkbox
 
+## 2.0.7
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.5.7
+
 ## 2.0.6
 
 ### Patch Changes

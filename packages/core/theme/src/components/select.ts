@@ -161,8 +161,9 @@ const select = tv({
     },
     isDisabled: {
       true: {
-        base: "opacity-disabled pointer-events-none",
-        trigger: "pointer-events-none bg-neutral-300",
+        base: "pointer-events-none",
+        trigger: "pointer-events-none !bg-neutral-100 !text-neutral-400",
+        value: "!text-neutral-400",
       },
     },
     isInvalid: {

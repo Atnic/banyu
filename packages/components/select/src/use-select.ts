@@ -127,6 +127,7 @@ interface Props<T> extends Omit<HTMLBanyuProps<"select">, keyof SelectVariantPro
    */
   bottomContent?: ReactNode;
   loadingStateContent?: ReactNode;
+  emptyStateContent?: ReactNode;
 }
 
 export type UseSelectProps<T> = Omit<Props<T>, keyof MultiSelectProps<T>> &
@@ -152,6 +153,7 @@ export function useSelect<T extends object>(originalProps: UseSelectProps<T>) {
     topContent,
     bottomContent,
     loadingStateContent,
+    emptyStateContent,
     description,
     errorMessage,
     renderValue,
@@ -657,6 +659,7 @@ export function useSelect<T extends object>(originalProps: UseSelectProps<T>) {
     topContent,
     bottomContent,
     loadingStateContent,
+    emptyStateContent,
     description,
     selectorIcon,
     errorMessage,

@@ -1,5 +1,30 @@
 # @jala-banyu/select
 
+## 2.0.11
+
+### Patch Changes
+
+- fix miss build
+
+## 2.0.10
+
+### Patch Changes
+
+- hide empty state
+
+## 2.0.9
+
+### Patch Changes
+
+- fix loading state & empty state select component, update disable style input & select
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.5.7
+  - @jala-banyu/listbox@2.0.7
+  - @jala-banyu/popover@4.0.7
+  - @jala-banyu/scroll-shadow@2.0.7
+  - @jala-banyu/spinner@5.0.7
+
 ## 2.0.8
 
 ### Patch Changes
