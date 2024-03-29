@@ -1,5 +1,11 @@
 # @jala-banyu/theme
 
+## 1.5.8
+
+### Patch Changes
+
+- fix token
+
 ## 1.5.7
 
 ### Patch Changes

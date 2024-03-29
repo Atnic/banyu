@@ -1,5 +1,12 @@
 # @jala-banyu/input
 
+## 5.0.8
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.5.8
+
 ## 5.0.7
 
 ### Patch Changes

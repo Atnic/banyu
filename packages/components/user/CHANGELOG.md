@@ -1,5 +1,13 @@
 # @jala-banyu/user
 
+## 6.0.8
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.5.8
+  - @jala-banyu/avatar@5.0.8
+
 ## 6.0.7
 
 ### Patch Changes

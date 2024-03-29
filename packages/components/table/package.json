@@ -1,6 +1,6 @@
 {
   "name": "@jala-banyu/table",
-  "version": "1.0.25",
+  "version": "1.0.26",
   "description": "Tables are used to display tabular data using rows and columns.",
   "keywords": [
     "table"

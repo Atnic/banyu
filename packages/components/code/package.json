@@ -1,6 +1,6 @@
 {
   "name": "@jala-banyu/code",
-  "version": "5.0.7",
+  "version": "5.0.8",
   "description": "Code is a component used to display inline code.",
   "keywords": [
     "code"
@@ -36,7 +36,7 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
-    "@jala-banyu/theme": "1.5.7",
+    "@jala-banyu/theme": "1.5.8",
     "@jala-banyu/system": "1.1.0"
   },
   "dependencies": {
