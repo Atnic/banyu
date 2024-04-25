@@ -1,5 +1,11 @@
 # @jala-banyu/react
 
+## 1.3.0
+
+### Minor Changes
+
+- update input component
+
 ## 1.2.14
 
 ### Patch Changes

@@ -241,8 +241,11 @@ const input = tv({
     },
     isReadOnly: {
       true: {
-        inputWrapper:
-          "!border-transparent hover:!border-transparent focus:!ring-0 focus:!border-transparent",
+        inputWrapper: "!bg-neutral-100 !text-neutral-800",
+        input: "!text-neutral-800",
+        label: "!text-neutral-800",
+        startContentWrapper: "bg-neutral-50 text-neutral-800",
+        endContentWrapper: "bg-neutral-50 text-neutral-800",
       },
     },
     isMultiline: {

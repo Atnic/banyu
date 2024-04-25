@@ -1,5 +1,12 @@
 # @jala-banyu/breadcrumbs
 
+## 6.0.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.6.0
+
 ## 5.0.8
 
 ### Patch Changes

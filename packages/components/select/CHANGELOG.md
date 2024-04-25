@@ -1,5 +1,16 @@
 # @jala-banyu/select
 
+## 3.0.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.6.0
+  - @jala-banyu/listbox@3.0.0
+  - @jala-banyu/popover@5.0.0
+  - @jala-banyu/scroll-shadow@3.0.0
+  - @jala-banyu/spinner@6.0.0
+
 ## 2.0.12
 
 ### Patch Changes

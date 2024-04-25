@@ -1,5 +1,11 @@
 # @jala-banyu/theme
 
+## 1.6.0
+
+### Minor Changes
+
+- Read Only Input
+
 ## 1.5.8
 
 ### Patch Changes

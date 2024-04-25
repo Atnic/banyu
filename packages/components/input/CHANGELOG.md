@@ -1,5 +1,16 @@
 # @jala-banyu/input
 
+## 6.0.0
+
+### Minor Changes
+
+- Read Only Input
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.6.0
+
 ## 5.0.8
 
 ### Patch Changes

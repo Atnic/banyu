@@ -1,5 +1,13 @@
 # @jala-banyu/spacer
 
+## 3.0.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.6.0
+  - @jala-banyu/system-rsc@6.0.0
+
 ## 2.0.8
 
 ### Patch Changes
