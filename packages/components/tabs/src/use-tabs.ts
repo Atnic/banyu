@@ -51,6 +51,8 @@ export interface Props extends Omit<HTMLBanyuProps, "children"> {
    * Content to be placed at the end of the tabs.
    */
   endContent?: React.ReactNode;
+  /** An accessibility label for this item. */
+  "aria-label"?: string;
 }
 
 export type UseTabsProps<T> = Props &

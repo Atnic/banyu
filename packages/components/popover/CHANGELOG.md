@@ -1,5 +1,23 @@
 # @jala-banyu/popover
 
+## 5.0.2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.6.2
+  - @jala-banyu/button@6.0.2
+
+## 5.0.1
+
+### Patch Changes
+
+- add aria-label props & change button hover
+
+- Updated dependencies []:
+  - @jala-banyu/button@6.0.1
+  - @jala-banyu/theme@1.6.1
+
 ## 5.0.0
 
 ### Patch Changes

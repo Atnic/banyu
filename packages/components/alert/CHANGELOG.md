@@ -1,5 +1,15 @@
 # @jala-banyu/alert
 
+## 1.1.6
+
+### Patch Changes
+
+- add aria-label props & change button hover
+
+- Updated dependencies []:
+  - @jala-banyu/avatar@6.0.1
+  - @jala-banyu/button@6.0.1
+
 ## 1.1.5
 
 ### Patch Changes

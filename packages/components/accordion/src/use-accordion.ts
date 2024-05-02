@@ -44,6 +44,8 @@ interface Props extends HTMLBanyuProps<"div"> {
    * The accordion items classNames.
    */
   itemClasses?: AccordionItemProps["classNames"];
+  /** An accessibility label for this item. */
+  "aria-label"?: string;
 }
 
 export type UseAccordionProps<T extends object = {}> = Props &

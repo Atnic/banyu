@@ -39,6 +39,8 @@ interface Props extends HTMLBanyuProps<"div"> {
    * The content of the alert.
    */
   children?: string | React.ReactNode;
+  /** An accessibility label for this item. */
+  "aria-label"?: string;
 }
 
 export type UseAlertProps = Props &

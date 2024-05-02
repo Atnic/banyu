@@ -1,5 +1,11 @@
 # @jala-banyu/progress
 
+## 1.1.1
+
+### Patch Changes
+
+- add aria-label props & change button hover
+
 ## 1.1.0
 
 ### Minor Changes

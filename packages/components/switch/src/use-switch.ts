@@ -69,6 +69,8 @@ interface Props extends HTMLBanyuProps<"input"> {
    * React aria onChange event.
    */
   onValueChange?: AriaSwitchProps["onChange"];
+  /** An accessibility label for this item. */
+  "aria-label"?: string;
 }
 
 export type UseSwitchProps = Omit<Props, "defaultChecked"> &

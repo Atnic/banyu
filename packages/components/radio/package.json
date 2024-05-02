@@ -1,6 +1,6 @@
 {
   "name": "@jala-banyu/radio",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Radios allow users to select a single option from a list of mutually exclusive options.",
   "keywords": [
     "radio"

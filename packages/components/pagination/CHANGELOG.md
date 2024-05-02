@@ -1,5 +1,21 @@
 # @jala-banyu/pagination
 
+## 1.1.28
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/select@3.0.2
+
+## 1.1.27
+
+### Patch Changes
+
+- add aria-label props & change button hover
+
+- Updated dependencies []:
+  - @jala-banyu/select@3.0.1
+
 ## 1.1.26
 
 ### Patch Changes

@@ -1,5 +1,29 @@
 # @jala-banyu/table
 
+## 1.0.29
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/checkbox@3.0.2
+  - @jala-banyu/input@6.0.2
+  - @jala-banyu/select@3.0.2
+  - @jala-banyu/spacer@3.0.2
+  - @jala-banyu/tooltip@6.0.2
+
+## 1.0.28
+
+### Patch Changes
+
+- add aria-label props & change button hover
+
+- Updated dependencies []:
+  - @jala-banyu/checkbox@3.0.1
+  - @jala-banyu/tooltip@6.0.1
+  - @jala-banyu/spacer@3.0.1
+  - @jala-banyu/input@6.0.1
+  - @jala-banyu/select@3.0.1
+
 ## 1.0.27
 
 ### Patch Changes

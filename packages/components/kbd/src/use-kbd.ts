@@ -32,6 +32,8 @@ interface Props extends HTMLBanyuProps<"kbd"> {
    * ```
    */
   classNames?: SlotsToClasses<KbdSlots>;
+  /** An accessibility label for this item. */
+  "aria-label"?: string;
 }
 
 export type UseKbdProps = Props & KbdVariantProps;

@@ -45,6 +45,8 @@ interface Props extends Omit<HTMLBanyuProps<"input">, keyof RadioVariantProps> {
    * ```
    */
   classNames?: SlotsToClasses<RadioSlots>;
+  /** An accessibility label for this item. */
+  "aria-label"?: string;
 }
 
 export type UseRadioProps = Omit<Props, "defaultChecked"> &

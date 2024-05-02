@@ -36,6 +36,8 @@ interface Props extends HTMLBanyuProps<"div"> {
    * @default true
    */
   closeOnSelect?: boolean;
+  /** An accessibility label for this item. */
+  "aria-label"?: string;
 }
 
 export type UseDropdownProps = Props & Omit<PopoverProps, "children" | "color" | "variant">;

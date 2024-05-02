@@ -104,6 +104,8 @@ export type PaginationItemRenderProps = {
    * Function to get the aria-label of the item.
    */
   getAriaLabel?: (page?: PaginationItemValue) => string | undefined;
+  /** An accessibility label for this item. */
+  "aria-label"?: string;
 };
 
 interface Props extends Omit<HTMLBanyuProps<"nav">, "onChange"> {

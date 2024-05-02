@@ -114,6 +114,8 @@ interface Props<T> extends HTMLBanyuProps<"table"> {
    * ```
    */
   classNames?: SlotsToClasses<TableSlots>;
+  /** An accessibility label for this item. */
+  "aria-label"?: string;
 }
 
 export type UseTableProps<T = object> = Props<T> &

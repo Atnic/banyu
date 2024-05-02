@@ -69,6 +69,8 @@ interface Props extends HTMLBanyuProps<"section"> {
    * ```
    */
   classNames?: SlotsToClasses<ModalSlots>;
+  /** An accessibility label for this item. */
+  "aria-label"?: string;
 }
 
 export type UseModalProps = Props & OverlayTriggerProps & AriaModalOverlayProps & ModalVariantProps;

@@ -65,6 +65,8 @@ interface Props extends HTMLBanyuProps<"img"> {
    * ```
    */
   classNames?: SlotsToClasses<ImageSlots>;
+  /** An accessibility label for this item. */
+  "aria-label"?: string;
 }
 
 export type UseImageProps = Props & ImageVariantProps;

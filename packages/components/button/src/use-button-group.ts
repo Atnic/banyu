@@ -16,6 +16,8 @@ interface Props extends HTMLBanyuProps, ButtonGroupVariantProps {
    * @default false
    */
   isDisabled?: ButtonProps["isDisabled"];
+  /** An accessibility label for this item. */
+  "aria-label"?: string;
 }
 
 export type ContextType = {

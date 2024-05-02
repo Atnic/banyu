@@ -11,6 +11,8 @@ export interface UseCodeProps extends HTMLBanyuProps<"code">, CodeVariantProps {
    * Ref to the DOM node.
    */
   ref?: ReactRef<HTMLElement | null>;
+  /** An accessibility label for this item. */
+  "aria-label"?: string;
 }
 
 export function useCode(originalProps: UseCodeProps) {

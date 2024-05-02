@@ -1,5 +1,11 @@
 # @jala-banyu/tabs
 
+## 1.1.3
+
+### Patch Changes
+
+- add aria-label props & change button hover
+
 ## 1.1.2
 
 ### Patch Changes

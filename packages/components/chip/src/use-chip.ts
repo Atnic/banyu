@@ -55,6 +55,8 @@ export interface UseChipProps extends HTMLBanyuProps, ChipVariantProps {
    * @param e PressEvent
    */
   onClose?: (e: PressEvent) => void;
+  /** An accessibility label for this item. */
+  "aria-label"?: string;
 }
 
 export function useChip(originalProps: UseChipProps) {

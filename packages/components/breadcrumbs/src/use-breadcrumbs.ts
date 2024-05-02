@@ -94,6 +94,8 @@ interface Props extends HTMLBanyuProps<"nav">, AriaBreadcrumbsProps {
    * @param key string
    */
   onAction?: (key: Key) => void;
+  /** An accessibility label for this item. */
+  "aria-label"?: string;
 }
 
 export type UseBreadcrumbsProps = Props &

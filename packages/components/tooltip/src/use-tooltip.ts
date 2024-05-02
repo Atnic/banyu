@@ -77,6 +77,8 @@ interface Props extends Omit<HTMLBanyuProps, "content"> {
    * ```
    */
   classNames?: SlotsToClasses<"base" | "arrow" | "content">;
+  /** An accessibility label for this item. */
+  "aria-label"?: string;
 }
 
 export type UseTooltipProps = Props &

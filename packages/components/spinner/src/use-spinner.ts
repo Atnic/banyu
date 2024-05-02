@@ -39,6 +39,8 @@ interface Props extends HTMLBanyuProps<"div"> {
    * ```
    */
   classNames?: SlotsToClasses<SpinnerSlots>;
+  /** An accessibility label for this item. */
+  "aria-label"?: string;
 }
 
 export type UseSpinnerProps = Props & SpinnerVariantProps;

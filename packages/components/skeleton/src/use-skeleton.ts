@@ -29,6 +29,8 @@ interface Props extends HTMLBanyuProps<"div"> {
    * ```
    */
   classNames?: SlotsToClasses<SkeletonSlots>;
+  /** An accessibility label for this item. */
+  "aria-label"?: string;
 }
 
 export type UseSkeletonProps = Props & SkeletonVariantProps;

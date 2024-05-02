@@ -170,6 +170,21 @@ export const IsLoading = {
     isLoading: true,
   },
 };
+export const IsLoadingWithText = {
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/T0TUGURgVGElV6MtU2EPYU/%5BJDS%5D-Design-System---Banyu-1.0?node-id=376%3A46775&mode=dev",
+    },
+  },
+  args: {
+    ...defaultProps,
+    children: "Loading",
+    color: "primary",
+    spinnerProps: {size: "sm"},
+    isLoading: true,
+  },
+};
 
 // export const WithState = {
 //   render: StateTemplate,

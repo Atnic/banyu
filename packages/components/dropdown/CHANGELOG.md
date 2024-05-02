@@ -1,5 +1,15 @@
 # @jala-banyu/dropdown
 
+## 1.2.2
+
+### Patch Changes
+
+- add aria-label props & change button hover
+
+- Updated dependencies []:
+  - @jala-banyu/popover@5.0.1
+  - @jala-banyu/menu@6.0.1
+
 ## 1.2.1
 
 ### Patch Changes

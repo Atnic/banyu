@@ -1,5 +1,17 @@
 # @jala-banyu/theme
 
+## 1.6.2
+
+### Patch Changes
+
+- rebuild theme
+
+## 1.6.1
+
+### Patch Changes
+
+- add aria-label props & change button hover
+
 ## 1.6.0
 
 ### Minor Changes

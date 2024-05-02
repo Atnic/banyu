@@ -19,6 +19,8 @@ interface Props extends HTMLBanyuProps<"div">, Omit<UseDataScrollOverflowProps, 
    * @default 40
    */
   size?: number;
+  /** An accessibility label for this item. */
+  "aria-label"?: string;
 }
 
 export type UseScrollShadowProps = Props & ScrollShadowVariantProps;

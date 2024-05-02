@@ -86,6 +86,8 @@ export interface Props<T extends HTMLInputElement | HTMLTextAreaElement = HTMLIn
    * React aria onChange event.
    */
   onValueChange?: (value: string) => void;
+  /** An accessibility label for this item. */
+  "aria-label"?: string;
 }
 
 export type UseInputProps<T extends HTMLInputElement | HTMLTextAreaElement = HTMLInputElement> =

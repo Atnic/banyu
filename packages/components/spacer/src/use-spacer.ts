@@ -28,6 +28,8 @@ interface Props extends HTMLBanyuProps<"span"> {
    * @see https://tailwindcss.com/docs/customizing-spacing#default-spacing-scale
    */
   y?: Space;
+  /** An accessibility label for this item. */
+  "aria-label"?: string;
 }
 
 export type UseSpacerProps = Props & SpacerVariantProps;

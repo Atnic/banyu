@@ -65,6 +65,8 @@ interface Props extends Omit<HTMLBanyuProps<"input">, keyof CheckboxVariantProps
    * ```
    */
   classNames?: SlotsToClasses<CheckboxSlots>;
+  /** An accessibility label for this item. */
+  "aria-label"?: string;
 }
 
 export type UseCheckboxProps = Omit<Props, "defaultChecked"> &

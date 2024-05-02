@@ -1,5 +1,19 @@
 # @jala-banyu/ripple
 
+## 6.0.2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.6.2
+
+## 6.0.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.6.1
+
 ## 6.0.0
 
 ### Patch Changes

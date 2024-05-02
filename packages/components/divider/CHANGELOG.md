@@ -1,5 +1,14 @@
 # @jala-banyu/divider
 
+## 4.1.1
+
+### Patch Changes
+
+- add aria-label props & change button hover
+
+- Updated dependencies []:
+  - @jala-banyu/system-rsc@6.0.1
+
 ## 4.2.0
 
 ### Minor Changes

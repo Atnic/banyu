@@ -47,6 +47,8 @@ interface Props {
    * ```
    */
   classNames?: SlotsToClasses<UserSlots>;
+  /** An accessibility label for this item. */
+  "aria-label"?: string;
 }
 
 export type UseUserProps = Props & Omit<HTMLBanyuProps<"div">, "children">;

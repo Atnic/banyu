@@ -186,6 +186,7 @@ const tabs = tv({
       class: {
         cursor: colorVariants.solid.primary,
         tabContent: "group-data-[selected=true]:text-white",
+        tab: "data-[hover-unselected=true]:bg-neutral-300 data-[hover-unselected=true]:text-brand",
       },
     },
     {
@@ -194,6 +195,7 @@ const tabs = tv({
       class: {
         cursor: colorVariants.solid.success,
         tabContent: "group-data-[selected=true]:text-white",
+        tab: "data-[hover-unselected=true]:bg-neutral-300 data-[hover-unselected=true]:text-brand",
       },
     },
     {
@@ -202,6 +204,7 @@ const tabs = tv({
       class: {
         cursor: colorVariants.solid.warning,
         tabContent: "group-data-[selected=true]:text-white",
+        tab: "data-[hover-unselected=true]:bg-neutral-300 data-[hover-unselected=true]:text-brand",
       },
     },
     {
@@ -210,6 +213,7 @@ const tabs = tv({
       class: {
         cursor: colorVariants.solid.danger,
         tabContent: "group-data-[selected=true]:text-white",
+        tab: "data-[hover-unselected=true]:bg-neutral-300 data-[hover-unselected=true]:text-brand",
       },
     },
     // underlined && color

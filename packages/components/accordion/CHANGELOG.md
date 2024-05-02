@@ -1,5 +1,22 @@
 # @jala-banyu/accordion
 
+## 3.0.2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.6.2
+
+## 3.0.1
+
+### Patch Changes
+
+- add aria-label props & change button hover
+
+- Updated dependencies []:
+  - @jala-banyu/divider@4.1.1
+  - @jala-banyu/theme@1.6.1
+
 ## 3.0.0
 
 ### Patch Changes

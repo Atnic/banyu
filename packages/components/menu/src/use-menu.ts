@@ -73,6 +73,8 @@ interface Props<T> {
    * The menu items classNames.
    */
   itemClasses?: MenuItemProps["classNames"];
+  /** An accessibility label for this item. */
+  "aria-label"?: string;
 }
 
 export type UseMenuProps<T = object> = Props<T> &

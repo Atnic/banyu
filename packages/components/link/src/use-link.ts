@@ -31,6 +31,8 @@ interface Props extends HTMLBanyuProps<"a">, LinkVariantProps {
    * @default <LinkIcon />
    */
   anchorIcon?: React.ReactNode;
+  /** An accessibility label for this item. */
+  "aria-label"?: string;
 }
 
 export type UseLinkProps = Props & AriaLinkProps;

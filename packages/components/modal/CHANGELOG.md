@@ -1,5 +1,11 @@
 # @jala-banyu/modal
 
+## 1.0.5
+
+### Patch Changes
+
+- add aria-label props & change button hover
+
 ## 1.0.4
 
 ### Patch Changes

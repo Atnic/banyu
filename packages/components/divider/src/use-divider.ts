@@ -23,6 +23,8 @@ interface Props extends HTMLBanyuProps<"hr"> {
    * Classname or List of classes to change the classNames of the element.
    */
   classNames?: SlotsToClasses<DividerSlots>;
+  /** An accessibility label for this item. */
+  "aria-label"?: string;
 }
 
 export type UseDividerProps = Props & DividerVariantProps & Omit<AriaSeparatorProps, "elementType">;

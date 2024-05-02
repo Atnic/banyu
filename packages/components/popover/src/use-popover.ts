@@ -67,6 +67,8 @@ export interface Props extends HTMLBanyuProps<"div"> {
    *  Callback fired when the popover is closed.
    */
   onClose?: () => void;
+  /** An accessibility label for this item. */
+  "aria-label"?: string;
 }
 
 export type UsePopoverProps = Props &

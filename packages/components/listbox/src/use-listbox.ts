@@ -84,6 +84,8 @@ interface Props<T> extends Omit<HTMLBanyuProps<"ul">, "children"> {
    * The menu items classNames.
    */
   itemClasses?: ListboxItemProps["classNames"];
+  /** An accessibility label for this item. */
+  "aria-label"?: string;
 }
 
 export type UseListboxProps<T = object> = Props<T> & AriaListBoxOptions<T> & ListboxVariantProps;

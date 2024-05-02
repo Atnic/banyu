@@ -42,6 +42,8 @@ interface Props extends HTMLBanyuProps<"div"> {
    * ```
    */
   classNames?: SlotsToClasses<ProgressSlots>;
+  /** An accessibility label for this item. */
+  "aria-label"?: string;
 }
 
 export type UseProgressProps = Props & AriaProgressBarProps & ProgressVariantProps;

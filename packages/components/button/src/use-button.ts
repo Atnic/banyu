@@ -56,6 +56,8 @@ interface Props extends HTMLBanyuProps<"button"> {
    * use `onPress` instead.
    */
   onClick?: MouseEventHandler<HTMLButtonElement>;
+  /** An accessibility label for this item. */
+  "aria-label"?: string;
 }
 
 export type UseButtonProps = Props &
@@ -202,8 +204,8 @@ export function useButton(props: UseButtonProps) {
   const spinnerSize = useMemo(() => {
     const buttonSpinnerSizeMap: Record<string, SpinnerProps["size"]> = {
       sm: "sm",
-      md: "sm",
-      lg: "md",
+      md: "md",
+      lg: "lg",
     };
 
     return buttonSpinnerSizeMap[size];

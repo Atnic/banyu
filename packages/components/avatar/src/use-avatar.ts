@@ -111,6 +111,8 @@ interface Props extends HTMLBanyuProps<"span"> {
    * ```
    */
   classNames?: SlotsToClasses<AvatarSlots>;
+  /** An accessibility label for this item. */
+  "aria-label"?: string;
 }
 
 export type UseAvatarProps = Props &

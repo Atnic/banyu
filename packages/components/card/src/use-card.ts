@@ -50,6 +50,8 @@ export interface Props extends HTMLBanyuProps<"div"> {
    * ```
    */
   classNames?: SlotsToClasses<CardSlots>;
+  /** An accessibility label for this item. */
+  "aria-label"?: string;
 }
 
 export type UseCardProps = Props & PressEvents & FocusableProps & CardVariantProps;

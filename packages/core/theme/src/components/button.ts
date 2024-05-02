@@ -417,7 +417,7 @@ const button = tv({
     {
       isLoading: true,
       size: "sm",
-      class: "!text-lg min-w-unit-7 min-h-unit-7",
+      class: "!text-lg min-w-unit-3 min-h-unit-3",
     },
     {
       isLoading: true,
@@ -432,7 +432,7 @@ const button = tv({
     {
       isLoading: true,
       size: "xl",
-      class: "!text-xl min-w-unit-12 min-h-unit-12",
+      class: "!text-xl min-w-unit-3 min-h-unit-3",
     },
 
     // variant / hover 👆
@@ -440,7 +440,7 @@ const button = tv({
     {
       variant: "solid",
       color: "primary",
-      class: "bg-brand-700 data-[hover=true]:bg-brand-800",
+      class: "bg-brand-700 data-[hover=true]:bg-brand-900",
     },
     //   danger
     {
@@ -625,49 +625,49 @@ const button = tv({
       variant: "solid",
       color: "primary",
       class:
-        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-brand-900 data-[focus=true]:ring-brand/60",
+        "data-[focus=true]:outline-none data-[focus=true]:ring-2 data-[focus=true]:bg-brand-900 data-[focus=true]:ring-brand/40",
     },
     //   danger
     {
       variant: "solid",
       color: "danger",
       class:
-        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-danger-600 data-[focus=true]:ring-danger/60",
+        "data-[focus=true]:outline-none data-[focus=true]:ring-2 data-[focus=true]:bg-danger-600 data-[focus=true]:ring-danger/40",
     },
     //   warning
     {
       variant: "solid",
       color: "warning",
       class:
-        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-warning-600 data-[focus=true]:ring-warning/60",
+        "data-[focus=true]:outline-none data-[focus=true]:ring-2 data-[focus=true]:bg-warning-600 data-[focus=true]:ring-warning/40",
     },
     //   success
     {
       variant: "solid",
       color: "success",
       class:
-        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-success-600 data-[focus=true]:ring-success/60",
+        "data-[focus=true]:outline-none data-[focus=true]:ring-2 data-[focus=true]:bg-success-600 data-[focus=true]:ring-success/40",
     },
     //   white
     {
       variant: "solid",
       color: "white",
       class:
-        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-brand-800 data-[focus=true]:border-brand-800 data-[focus=true]:ring-brand/60 data-[focus=true]:text-white",
+        "data-[focus=true]:outline-none data-[focus=true]:ring-2 data-[focus=true]:bg-brand-800 data-[focus=true]:border-brand-800 data-[focus=true]:ring-brand/40 data-[focus=true]:text-white",
     },
     //   secondary
     {
       variant: "solid",
       color: "secondary",
       class:
-        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:ring-neutral-200 data-[focus=true]:bg-neutral-400 data-[focus=true]:border-neutral-400",
+        "data-[focus=true]:outline-none data-[focus=true]:ring-2 data-[focus=true]:ring-neutral-200 data-[focus=true]:bg-neutral-400 data-[focus=true]:border-neutral-400",
     },
     //   transparent
     {
       variant: "solid",
       color: "transparent",
       class:
-        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:ring-white-20a data-[focus=true]:bg-brand-200 data-[focus=true]:border-brand-200",
+        "data-[focus=true]:outline-none data-[focus=true]:ring-2 data-[focus=true]:ring-brand/40 data-[focus=true]:bg-brand-200 data-[focus=true]:border-brand-200",
     },
 
     //   primary
@@ -675,28 +675,28 @@ const button = tv({
       variant: ["outline"],
       color: "primary",
       class:
-        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-brand-900 data-[focus=true]:border-brand-800 data-[focus=true]:ring-brand/60 data-[focus=true]:text-white",
+        "data-[focus=true]:outline-none data-[focus=true]:ring-2 data-[focus=true]:bg-brand-900 data-[focus=true]:border-brand-800 data-[focus=true]:ring-brand/40 data-[focus=true]:text-white",
     },
     //   danger
     {
       variant: ["outline"],
       color: "danger",
       class:
-        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-danger-600 data-[focus=true]:border-danger-600 data-[focus=true]:text-white data-[focus=true]:ring-danger/60",
+        "data-[focus=true]:outline-none data-[focus=true]:ring-2 data-[focus=true]:bg-danger-600 data-[focus=true]:border-danger-600 data-[focus=true]:text-white data-[focus=true]:ring-danger/40",
     },
     //   warning
     {
       variant: ["outline"],
       color: "warning",
       class:
-        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-warning-600 data-[focus=true]:border-warning-600 data-[focus=true]:text-white data-[focus=true]:ring-warning/60",
+        "data-[focus=true]:outline-none data-[focus=true]:ring-2 data-[focus=true]:bg-warning-600 data-[focus=true]:border-warning-600 data-[focus=true]:text-white data-[focus=true]:ring-warning/40",
     },
     //   success
     {
       variant: ["outline"],
       color: "success",
       class:
-        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-success-600 data-[focus=true]:border-success-600 data-[focus=true]:text-white data-[focus=true]:ring-success/60",
+        "data-[focus=true]:outline-none data-[focus=true]:ring-2 data-[focus=true]:bg-success-600 data-[focus=true]:border-success-600 data-[focus=true]:text-white data-[focus=true]:ring-success/40",
     },
     //   white
     {
@@ -709,14 +709,14 @@ const button = tv({
       variant: ["outline"],
       color: "secondary",
       class:
-        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-neutral-400 data-[focus=true]:border-neutral-400 data-[focus=true]:text-neutral-800 data-[focus=true]:ring-transparent",
+        "data-[focus=true]:outline-none data-[focus=true]:ring-2 data-[focus=true]:bg-neutral-400 data-[focus=true]:border-neutral-400 data-[focus=true]:text-neutral-800 data-[focus=true]:ring-transparent",
     },
     //   transparent
     {
       variant: ["outline"],
       color: "transparent",
       class:
-        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-brand-200 data-[focus=true]:border-brand data-[focus=true]:text-brand dark:ring-brand/60",
+        "data-[focus=true]:outline-none data-[focus=true]:ring-2 data-[focus=true]:bg-brand-200 data-[focus=true]:border-brand data-[focus=true]:text-brand dark:ring-brand/40",
     },
 
     //   primary
@@ -724,28 +724,28 @@ const button = tv({
       variant: "ghost",
       color: "primary",
       class:
-        "data-[focus=true]:ring-1 data-[focus=true]:bg-brand-50 data-[focus=true]:border-brand-50 data-[focus=true]:text-brand-900 data-[focus=true]:ring-brand-50",
+        "data-[focus=true]:ring-2 data-[focus=true]:bg-brand-50 data-[focus=true]:border-brand-50 data-[focus=true]:text-brand-900 data-[focus=true]:ring-brand-50",
     },
     //   danger
     {
       variant: "ghost",
       color: "danger",
       class:
-        "data-[focus=true]:ring-1 data-[focus=true]:bg-danger-50 data-[focus=true]:border-danger-50 data-[focus=true]:text-danger-900 data-[focus=true]:ring-danger-50",
+        "data-[focus=true]:ring-2 data-[focus=true]:bg-danger-50 data-[focus=true]:border-danger-50 data-[focus=true]:text-danger-900 data-[focus=true]:ring-danger-50",
     },
     //   warning
     {
       variant: "ghost",
       color: "warning",
       class:
-        "data-[focus=true]:ring-1 data-[focus=true]:bg-warning-50 data-[focus=true]:border-danger-50 data-[focus=true]:text-warning-900 data-[focus=true]:ring-warning-50",
+        "data-[focus=true]:ring-2 data-[focus=true]:bg-warning-50 data-[focus=true]:border-danger-50 data-[focus=true]:text-warning-900 data-[focus=true]:ring-warning-50",
     },
     //   success
     {
       variant: "ghost",
       color: "success",
       class:
-        "data-[focus=true]:ring-1 data-[focus=true]:bg-success-50 data-[focus=true]:border-success-50 data-[focus=true]:text-success-900 data-[focus=true]:ring-success-50",
+        "data-[focus=true]:ring-2 data-[focus=true]:bg-success-50 data-[focus=true]:border-success-50 data-[focus=true]:text-success-900 data-[focus=true]:ring-success-50",
     },
     //   white
     {
@@ -758,14 +758,14 @@ const button = tv({
       variant: "ghost",
       color: "secondary",
       class:
-        "data-[focus=true]:ring-1 data-[focus=true]:bg-none data-[focus=true]:border-transparent data-[focus=true]:text-brand-900 data-[focus=true]:bg-transparent data-[focus=true]:ring-black-10a",
+        "data-[focus=true]:ring-2 data-[focus=true]:bg-none data-[focus=true]:border-transparent data-[focus=true]:text-brand-900 data-[focus=true]:bg-transparent data-[focus=true]:ring-black-10a",
     },
     //   transparent
     {
       variant: "ghost",
       color: "transparent",
       class:
-        "data-[focus=true]:ring-1 data-[focus=true]:bg-brand-200 data-[focus=true]:border-brand-200 data-[focus=true]:text-brand-900 data-[focus=true]:ring-brand-50",
+        "data-[focus=true]:ring-2 data-[focus=true]:bg-brand-200 data-[focus=true]:border-brand-200 data-[focus=true]:text-brand-900 data-[focus=true]:ring-brand-50",
     },
 
     //   primary
@@ -773,28 +773,28 @@ const button = tv({
       isIconOnly: true,
       color: "primary",
       class:
-        "border-transparent text-brand-800 h-max data-[hover=true]:bg-brand-800 data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-brand-900 data-[focus=true]:border-brand-900 data-[focus=true]:ring-brand/60 data-[focus=true]:text-white",
+        "border-transparent text-brand-800 h-max data-[hover=true]:bg-brand-800 data-[focus=true]:outline-none data-[focus=true]:ring-2 data-[focus=true]:bg-brand-900 data-[focus=true]:border-brand-900 data-[focus=true]:ring-brand/60 data-[focus=true]:text-white",
     },
     //   danger
     {
       isIconOnly: true,
       color: "danger",
       class:
-        "border-transparent text-danger-600 h-max data-[hover=true]:bg-danger-200 data-[hover=true]:border-danger-200 data-[hover=true]:text-danger-600 data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:!bg-danger-200 data-[focus=true]:!border-danger-200 data-[focus=true]:ring-danger-20a data-[focus=true]:!text-danger-600",
+        "border-transparent text-danger-600 h-max data-[hover=true]:bg-danger-200 data-[hover=true]:border-danger-200 data-[hover=true]:text-danger-600 data-[focus=true]:outline-none data-[focus=true]:ring-2 data-[focus=true]:!bg-danger-200 data-[focus=true]:!border-danger-200 data-[focus=true]:ring-danger-20a data-[focus=true]:!text-danger-600",
     },
     //   warning
     {
       isIconOnly: true,
       color: "warning",
       class:
-        "border-transparent text-warning-600 h-max data-[hover=true]:bg-warning-200 data-[hover=true]:border-warning-200 data-[hover=true]:text-warning-600 data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:!bg-warning-200 data-[focus=true]:!border-warning-200 data-[focus=true]:ring-warning-20a data-[focus=true]:!text-warning-600",
+        "border-transparent text-warning-600 h-max data-[hover=true]:bg-warning-200 data-[hover=true]:border-warning-200 data-[hover=true]:text-warning-600 data-[focus=true]:outline-none data-[focus=true]:ring-2 data-[focus=true]:!bg-warning-200 data-[focus=true]:!border-warning-200 data-[focus=true]:ring-warning-20a data-[focus=true]:!text-warning-600",
     },
     //   success
     {
       isIconOnly: true,
       color: "success",
       class:
-        "border-transparent text-success-600 h-max data-[hover=true]:bg-success-200 data-[hover=true]:border-success-200 data-[hover=true]:text-success-600 data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:!bg-success-200 data-[focus=true]:!border-success-200 data-[focus=true]:ring-success-20a data-[focus=true]:!text-success-600",
+        "border-transparent text-success-600 h-max data-[hover=true]:bg-success-200 data-[hover=true]:border-success-200 data-[hover=true]:text-success-600 data-[focus=true]:outline-none data-[focus=true]:ring-2 data-[focus=true]:!bg-success-200 data-[focus=true]:!border-success-200 data-[focus=true]:ring-success-20a data-[focus=true]:!text-success-600",
     },
     //   white
     {
@@ -822,28 +822,28 @@ const button = tv({
       isIconOnly: true,
       color: "primary",
       class:
-        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-brand-800 data-[focus=true]:border-brand-800 data-[focus=true]:ring-brand/60 data-[focus=true]:text-white",
+        "data-[focus=true]:outline-none data-[focus=true]:ring-2 data-[focus=true]:bg-brand-800 data-[focus=true]:border-brand-800 data-[focus=true]:ring-brand/60 data-[focus=true]:text-white",
     },
     //   danger
     {
       isIconOnly: true,
       color: "danger",
       class:
-        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-danger-800 data-[focus=true]:border-danger-800 data-[focus=true]:text-white data-[focus=true]:ring-danger/60",
+        "data-[focus=true]:outline-none data-[focus=true]:ring-2 data-[focus=true]:bg-danger-800 data-[focus=true]:border-danger-800 data-[focus=true]:text-white data-[focus=true]:ring-danger/40",
     },
     //   warning
     {
       isIconOnly: true,
       color: "warning",
       class:
-        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-warning-800 data-[focus=true]:border-warning-800 data-[focus=true]:text-white data-[focus=true]:ring-warning/60",
+        "data-[focus=true]:outline-none data-[focus=true]:ring-2 data-[focus=true]:bg-warning-800 data-[focus=true]:border-warning-800 data-[focus=true]:text-white data-[focus=true]:ring-warning/40",
     },
     //   success
     {
       isIconOnly: true,
       color: "success",
       class:
-        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-success-800 data-[focus=true]:border-success-800 data-[focus=true]:text-white data-[focus=true]:ring-success/60",
+        "data-[focus=true]:outline-none data-[focus=true]:ring-2 data-[focus=true]:bg-success-800 data-[focus=true]:border-success-800 data-[focus=true]:text-white data-[focus=true]:ring-success/40",
     },
     //   white
     {
@@ -856,14 +856,14 @@ const button = tv({
       isIconOnly: true,
       color: "secondary",
       class:
-        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-neutral-300 data-[focus=true]:border-neutral-300 data-[focus=true]:text-neutral-800 data-[focus=true]:ring-transparent",
+        "data-[focus=true]:outline-none data-[focus=true]:ring-2 data-[focus=true]:bg-neutral-300 data-[focus=true]:border-neutral-300 data-[focus=true]:text-neutral-800 data-[focus=true]:ring-transparent",
     },
     //   transparent
     {
       isIconOnly: true,
       color: "transparent",
       class:
-        "data-[focus=true]:outline-none data-[focus=true]:ring-1 data-[focus=true]:bg-brand-200 data-[focus=true]:border-brand data-[focus=true]:text-brand dark:ring-brand/60",
+        "data-[focus=true]:outline-none data-[focus=true]:ring-2 data-[focus=true]:bg-brand-200 data-[focus=true]:border-brand data-[focus=true]:text-brand dark:ring-brand/40",
     },
   ],
 });
