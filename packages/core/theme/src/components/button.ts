@@ -768,6 +768,7 @@ const button = tv({
         "data-[focus=true]:ring-2 data-[focus=true]:bg-brand-200 data-[focus=true]:border-brand-200 data-[focus=true]:text-brand-900 data-[focus=true]:ring-brand-50",
     },
 
+    // isIconOnly--hover
     //   primary
     {
       isIconOnly: true,
@@ -814,9 +815,10 @@ const button = tv({
     {
       isIconOnly: true,
       color: "transparent",
-      class: "data-[hover=true]:bg-transparent data-[hover=true]:text-brand",
+      class: "data-[hover=true]:bg-brand-50 data-[hover=true]:text-brand",
     },
 
+    // isIconOnly--focus
     //   primary
     {
       isIconOnly: true,
@@ -863,7 +865,20 @@ const button = tv({
       isIconOnly: true,
       color: "transparent",
       class:
-        "data-[focus=true]:outline-none data-[focus=true]:ring-2 data-[focus=true]:bg-brand-200 data-[focus=true]:border-brand data-[focus=true]:text-brand dark:ring-brand/40",
+        "data-[focus=true]:outline-none data-[focus=true]:ring-2 data-[focus=true]:bg-transparent data-[focus=true]:text-brand dark:ring-brand/40",
+    },
+
+    {
+      isIconOnly: true,
+      color: ["primary", "danger", "success", "warning"],
+      variant: "solid",
+      class: "text-white",
+    },
+
+    {
+      variant: "outline",
+      color: "danger",
+      class: "text-danger-600 border-danger-600",
     },
   ],
 });

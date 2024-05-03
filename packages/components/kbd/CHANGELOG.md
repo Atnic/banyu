@@ -1,5 +1,37 @@
 # @jala-banyu/kbd
 
+## 6.0.6
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.6.6
+  - @jala-banyu/system-rsc@6.0.6
+
+## 6.0.5
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.6.5
+  - @jala-banyu/system-rsc@6.0.5
+
+## 6.0.4
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.6.4
+  - @jala-banyu/system-rsc@6.0.4
+
+## 6.0.3
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.6.3
+  - @jala-banyu/system-rsc@6.0.3
+
 ## 6.0.2
 
 ### Patch Changes

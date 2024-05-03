@@ -1,5 +1,33 @@
 # @jala-banyu/pagination
 
+## 1.1.32
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/select@3.0.6
+
+## 1.1.31
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/select@3.0.5
+
+## 1.1.30
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/select@3.0.4
+
+## 1.1.29
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/select@3.0.3
+
 ## 1.1.28
 
 ### Patch Changes

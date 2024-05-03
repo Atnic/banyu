@@ -47,7 +47,7 @@ const card = tv({
       "subpixel-antialiased",
     ],
     headerTitle: ["text-neutral-800", "font-semibold", "text-lg"],
-    headerSubtitle: ["text-neutral-400", "text-sm"],
+    headerSubtitle: ["text-neutral-500", "text-sm"],
     body: [
       "relative",
       "flex",

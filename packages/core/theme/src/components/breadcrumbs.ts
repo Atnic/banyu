@@ -145,28 +145,28 @@ const breadcrumbItem = tv({
       isCurrent: false,
       color: "primary",
       class: {
-        item: "hover:text-white text-brand hover:bg-brand-500",
+        item: "hover:text-white text-brand hover:bg-brand-700",
       },
     },
     {
       isCurrent: false,
       color: "success",
       class: {
-        item: "hover:text-white text-success hover:bg-success-500",
+        item: "hover:text-white text-success hover:bg-success-700",
       },
     },
     {
       isCurrent: false,
       color: "warning",
       class: {
-        item: "hover:text-white text-warning hover:bg-warning-500",
+        item: "hover:text-white text-warning hover:bg-warning-700",
       },
     },
     {
       isCurrent: false,
       color: "danger",
       class: {
-        item: "hover:text-white text-danger hover:bg-danger-500",
+        item: "hover:text-white text-danger hover:bg-danger-700",
       },
     },
     // !isCurrent && underline

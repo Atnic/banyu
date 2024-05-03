@@ -1,5 +1,29 @@
 # @jala-banyu/theme
 
+## 1.6.6
+
+### Patch Changes
+
+- fix themes
+
+## 1.6.5
+
+### Patch Changes
+
+- fix: pagination
+
+## 1.6.4
+
+### Patch Changes
+
+- fix breadcrumbs & button danger color
+
+## 1.6.3
+
+### Patch Changes
+
+- fix button icon style
+
 ## 1.6.2
 
 ### Patch Changes

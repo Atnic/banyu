@@ -1,5 +1,49 @@
 # @jala-banyu/table
 
+## 1.0.33
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/checkbox@3.0.6
+  - @jala-banyu/input@6.0.6
+  - @jala-banyu/select@3.0.6
+  - @jala-banyu/spacer@3.0.6
+  - @jala-banyu/tooltip@6.0.6
+
+## 1.0.32
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/checkbox@3.0.5
+  - @jala-banyu/input@6.0.5
+  - @jala-banyu/select@3.0.5
+  - @jala-banyu/spacer@3.0.5
+  - @jala-banyu/tooltip@6.0.5
+
+## 1.0.31
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/checkbox@3.0.4
+  - @jala-banyu/input@6.0.4
+  - @jala-banyu/select@3.0.4
+  - @jala-banyu/spacer@3.0.4
+  - @jala-banyu/tooltip@6.0.4
+
+## 1.0.30
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/checkbox@3.0.3
+  - @jala-banyu/input@6.0.3
+  - @jala-banyu/select@3.0.3
+  - @jala-banyu/spacer@3.0.3
+  - @jala-banyu/tooltip@6.0.3
+
 ## 1.0.29
 
 ### Patch Changes

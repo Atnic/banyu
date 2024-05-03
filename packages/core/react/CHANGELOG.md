@@ -1,5 +1,113 @@
 # @jala-banyu/react
 
+## 1.3.4
+
+### Patch Changes
+
+- fix themes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.6.6
+  - @jala-banyu/accordion@3.0.6
+  - @jala-banyu/avatar@6.0.6
+  - @jala-banyu/breadcrumbs@6.0.6
+  - @jala-banyu/button@6.0.6
+  - @jala-banyu/card@6.0.7
+  - @jala-banyu/checkbox@3.0.6
+  - @jala-banyu/chip@3.0.6
+  - @jala-banyu/code@6.0.6
+  - @jala-banyu/image@6.0.6
+  - @jala-banyu/input@6.0.6
+  - @jala-banyu/kbd@6.0.6
+  - @jala-banyu/link@6.0.6
+  - @jala-banyu/menu@6.0.6
+  - @jala-banyu/modal@1.0.5
+  - @jala-banyu/popover@5.0.6
+  - @jala-banyu/radio@1.0.2
+  - @jala-banyu/ripple@6.0.6
+  - @jala-banyu/select@3.0.6
+  - @jala-banyu/skeleton@6.0.6
+  - @jala-banyu/spinner@6.0.6
+  - @jala-banyu/switch@6.0.6
+  - @jala-banyu/tabs@1.1.3
+  - @jala-banyu/tooltip@6.0.6
+  - @jala-banyu/user@7.0.6
+  - @jala-banyu/table@1.0.33
+  - @jala-banyu/progress@1.1.1
+  - @jala-banyu/pagination@1.1.32
+
+## 1.3.3
+
+### Patch Changes
+
+- fix: pagination
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.6.5
+  - @jala-banyu/accordion@3.0.5
+  - @jala-banyu/avatar@6.0.5
+  - @jala-banyu/breadcrumbs@6.0.5
+  - @jala-banyu/button@6.0.5
+  - @jala-banyu/card@6.0.5
+  - @jala-banyu/checkbox@3.0.5
+  - @jala-banyu/chip@3.0.5
+  - @jala-banyu/code@6.0.5
+  - @jala-banyu/image@6.0.5
+  - @jala-banyu/input@6.0.5
+  - @jala-banyu/kbd@6.0.5
+  - @jala-banyu/link@6.0.5
+  - @jala-banyu/menu@6.0.5
+  - @jala-banyu/modal@1.0.5
+  - @jala-banyu/popover@5.0.5
+  - @jala-banyu/radio@1.0.2
+  - @jala-banyu/ripple@6.0.5
+  - @jala-banyu/select@3.0.5
+  - @jala-banyu/skeleton@6.0.5
+  - @jala-banyu/spinner@6.0.5
+  - @jala-banyu/switch@6.0.5
+  - @jala-banyu/tabs@1.1.3
+  - @jala-banyu/tooltip@6.0.5
+  - @jala-banyu/user@7.0.5
+  - @jala-banyu/table@1.0.32
+  - @jala-banyu/progress@1.1.1
+  - @jala-banyu/pagination@1.1.31
+
+## 1.3.2
+
+### Patch Changes
+
+- fix button icon style
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.6.3
+  - @jala-banyu/accordion@3.0.3
+  - @jala-banyu/avatar@6.0.3
+  - @jala-banyu/breadcrumbs@6.0.3
+  - @jala-banyu/button@6.0.3
+  - @jala-banyu/card@6.0.3
+  - @jala-banyu/checkbox@3.0.3
+  - @jala-banyu/chip@3.0.3
+  - @jala-banyu/code@6.0.3
+  - @jala-banyu/image@6.0.3
+  - @jala-banyu/input@6.0.3
+  - @jala-banyu/kbd@6.0.3
+  - @jala-banyu/link@6.0.3
+  - @jala-banyu/menu@6.0.3
+  - @jala-banyu/modal@1.0.5
+  - @jala-banyu/popover@5.0.3
+  - @jala-banyu/radio@1.0.2
+  - @jala-banyu/ripple@6.0.3
+  - @jala-banyu/select@3.0.3
+  - @jala-banyu/skeleton@6.0.3
+  - @jala-banyu/spinner@6.0.3
+  - @jala-banyu/switch@6.0.3
+  - @jala-banyu/tabs@1.1.3
+  - @jala-banyu/tooltip@6.0.3
+  - @jala-banyu/user@7.0.3
+  - @jala-banyu/table@1.0.30
+  - @jala-banyu/progress@1.1.1
+  - @jala-banyu/pagination@1.1.29
+
 ## 1.3.1
 
 ### Patch Changes
