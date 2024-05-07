@@ -99,6 +99,7 @@ const Tab = forwardRef<"button", TabItemProps>((props, ref) => {
       data-pressed={dataAttr(isPressed)}
       data-selected={dataAttr(isSelected)}
       data-slot="tab"
+      role="button"
       {...mergeProps(
         tabProps,
         !isDisabled

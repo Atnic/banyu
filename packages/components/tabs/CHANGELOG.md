@@ -1,5 +1,11 @@
 # @jala-banyu/tabs
 
+## 1.1.4
+
+### Patch Changes
+
+- fixing accessibility
+
 ## 1.1.3
 
 ### Patch Changes

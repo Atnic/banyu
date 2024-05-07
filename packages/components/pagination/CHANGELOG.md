@@ -1,5 +1,29 @@
 # @jala-banyu/pagination
 
+## 1.1.38
+
+### Patch Changes
+
+- fix typo aria attribute
+
+## 1.1.37
+
+### Patch Changes
+
+- testing change role to aria-role
+
+## 1.1.36
+
+### Patch Changes
+
+- remove duplicated role on pagination
+
+## 1.1.35
+
+### Patch Changes
+
+- fixing accessibility
+
 ## 1.1.34
 
 ### Patch Changes

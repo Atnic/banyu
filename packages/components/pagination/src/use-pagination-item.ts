@@ -87,7 +87,8 @@ export function usePaginationItem(props: UsePaginationItemProps) {
   const getItemProps: PropGetter = (props = {}) => {
     return {
       ref: domRef,
-      role: "button",
+      "aria-role": "button",
+      // role: "button",
       tabIndex: isDisabled ? -1 : 0,
       "aria-label": ariaLabel,
       "aria-current": dataAttr(isActive),

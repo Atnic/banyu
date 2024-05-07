@@ -1,5 +1,29 @@
 # @jala-banyu/react
 
+## 1.3.10
+
+### Patch Changes
+
+- fix aria attribute
+
+## 1.3.9
+
+### Patch Changes
+
+- testing aria label pagination
+
+## 1.3.8
+
+### Patch Changes
+
+- update pagination
+
+## 1.3.7
+
+### Patch Changes
+
+- fix accesibility
+
 ## 1.3.6
 
 ### Patch Changes
