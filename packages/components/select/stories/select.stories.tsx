@@ -389,7 +389,7 @@ const EmptyContentTemplate = ({variant, ...args}: SelectProps) => {
   return (
     <Select
       className="max-w-xs"
-      isLoading={isLoading}
+      // isLoading={isLoading}
       items={[]}
       label="Favorite Animal"
       variant={variant}

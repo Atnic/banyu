@@ -203,9 +203,9 @@ export function useButton(props: UseButtonProps) {
 
   const spinnerSize = useMemo(() => {
     const buttonSpinnerSizeMap: Record<string, SpinnerProps["size"]> = {
-      sm: "sm",
-      md: "md",
-      lg: "lg",
+      sm: "xs",
+      md: "sm",
+      lg: "md",
     };
 
     return buttonSpinnerSizeMap[size];

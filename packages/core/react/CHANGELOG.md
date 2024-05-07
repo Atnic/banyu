@@ -1,5 +1,22 @@
 # @jala-banyu/react
 
+## 1.3.6
+
+### Patch Changes
+
+- update theme
+
+## 1.3.5
+
+### Patch Changes
+
+- fix img component avatar
+
+- Updated dependencies []:
+  - @jala-banyu/avatar@6.0.7
+  - @jala-banyu/accordion@3.0.6
+  - @jala-banyu/select@3.0.6
+
 ## 1.3.4
 
 ### Patch Changes

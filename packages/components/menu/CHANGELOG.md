@@ -1,5 +1,21 @@
 # @jala-banyu/menu
 
+## 6.0.8
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.6.8
+  - @jala-banyu/checkbox@3.0.8
+
+## 6.0.7
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.6.7
+  - @jala-banyu/checkbox@3.0.7
+
 ## 6.0.6
 
 ### Patch Changes

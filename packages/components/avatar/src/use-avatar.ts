@@ -1,7 +1,7 @@
 import type {AvatarSlots, AvatarVariantProps, SlotsToClasses} from "@jala-banyu/theme";
 
 import {avatar} from "@jala-banyu/theme";
-import {HTMLBanyuProps, PropGetter} from "@jala-banyu/system";
+import {As, HTMLBanyuProps, PropGetter} from "@jala-banyu/system";
 import {mergeProps} from "@react-aria/utils";
 import {useDOMRef} from "@jala-banyu/react-utils";
 import {clsx, safeText, dataAttr} from "@jala-banyu/shared-utils";
@@ -90,7 +90,7 @@ interface Props extends HTMLBanyuProps<"span"> {
    * The component used to render the image.
    * @default "img"
    */
-  ImgComponent?: React.ElementType;
+  ImgComponent?: As<any>;
   /**
    * Props to pass to the image component.
    */

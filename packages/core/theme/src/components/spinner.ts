@@ -25,25 +25,26 @@ const spinner = tv({
   variants: {
     size: {
       xs: {
-        wrapper: "w-8 h-8",
+        wrapper: "w-4 h-4",
         label: "text-xs",
       },
       sm: {
-        wrapper: "w-10 h-10",
+        wrapper: "w-5 h-5",
         label: "text-sm",
       },
       md: {
-        wrapper: "w-12 h-12",
+        wrapper: "w-8 h-8",
         label: "text-md",
       },
       lg: {
-        wrapper: "w-16 h-16",
+        wrapper: "w-10 h-10",
         label: "text-lg",
       },
     },
     color: {
       current: {
-        circle: "text-current",
+        circle: "text-neutral-200",
+        circleBackground: "text-transparent stroke-current",
       },
       white: {
         circle: "text-white",

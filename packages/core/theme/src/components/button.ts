@@ -414,26 +414,26 @@ const button = tv({
       size: "xl",
       class: "!text-xl min-w-unit-12 min-h-unit-12",
     },
-    {
-      isLoading: true,
-      size: "sm",
-      class: "!text-lg min-w-unit-3 min-h-unit-3",
-    },
-    {
-      isLoading: true,
-      size: "md",
-      class: "!text-xl min-w-unit-8 min-h-unit-8",
-    },
-    {
-      isLoading: true,
-      size: "lg",
-      class: "!text-xl min-w-unit-10 min-h-unit-10",
-    },
-    {
-      isLoading: true,
-      size: "xl",
-      class: "!text-xl min-w-unit-3 min-h-unit-3",
-    },
+    // {
+    //   isLoading: true,
+    //   size: "sm",
+    //   class: "!text-lg min-w-unit-3 min-h-unit-3 opacity-0 cursor-wait",
+    // },
+    // {
+    //   isLoading: true,
+    //   size: "md",
+    //   class: "!text-xl min-w-unit-8 min-h-unit-8 text-brand opacity-0 cursor-wait",
+    // },
+    // {
+    //   isLoading: true,
+    //   size: "lg",
+    //   class: "!text-xl min-w-unit-10 min-h-unit-10",
+    // },
+    // {
+    //   isLoading: true,
+    //   size: "xl",
+    //   class: "!text-xl min-w-unit-3 min-h-unit-3",
+    // },
 
     // variant / hover 👆
     //   primary

@@ -1,5 +1,17 @@
 # @jala-banyu/theme
 
+## 1.6.8
+
+### Patch Changes
+
+- fix spinner
+
+## 1.6.7
+
+### Patch Changes
+
+- disable link focus
+
 ## 1.6.6
 
 ### Patch Changes

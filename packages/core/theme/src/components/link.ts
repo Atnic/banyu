@@ -22,17 +22,17 @@ const link = tv({
       lg: "text-xl",
     },
     color: {
-      dark: "text-neutral-800 focus:ring-1 focus:ring-brand-50 px-1 rounded-lg",
-      gray: "text-neutral-500 focus:ring-1 focus:ring-brand-50 px-1 rounded-lg",
-      white: "text-white focus:ring-1 focus:ring-brand-50 px-1 rounded-lg",
+      dark: "text-neutral-800 focus:ring-0 focus:ring-brand-50 px-1 rounded-lg",
+      gray: "text-neutral-500 focus:ring-0 focus:ring-brand-50 px-1 rounded-lg",
+      white: "text-white focus:ring-0 focus:ring-brand-50 px-1 rounded-lg",
       primary:
-        "text-brand-800 hover:text-brand-900 focus:ring-1 focus:ring-brand-50 px-1 rounded-lg",
+        "text-brand-800 hover:text-brand-900 focus:ring-0 focus:ring-brand-50 px-1 rounded-lg",
       success:
-        "text-success-700 hover:text-success-800 focus:ring-1 focus:ring-success-500 px-1 rounded-lg",
+        "text-success-700 hover:text-success-800 focus:ring-0 focus:ring-success-500 px-1 rounded-lg",
       warning:
-        "text-warning-800 hover:text-warning-800 focus:ring-1 focus:ring-warning-300 px-1 rounded-lg",
+        "text-warning-800 hover:text-warning-800 focus:ring-0 focus:ring-warning-300 px-1 rounded-lg",
       danger:
-        "text-danger-600 hover:text-danger-700 focus:ring-1 focus:ring-danger-400 px-1 rounded-lg",
+        "text-danger-600 hover:text-danger-700 focus:ring-0 focus:ring-danger-400 px-1 rounded-lg",
     },
     underline: {
       none: "no-underline",
