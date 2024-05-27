@@ -1,5 +1,17 @@
 # @jala-banyu/theme
 
+## 1.6.10
+
+### Patch Changes
+
+- restore select min width & set free solo popover placement to bottom-start
+
+## 1.6.9
+
+### Patch Changes
+
+- fix select content offside
+
 ## 1.6.8
 
 ### Patch Changes

@@ -451,6 +451,7 @@ export const Default = {
 
   args: {
     ...defaultProps,
+    popoverProps: {placement: "bottom-end"},
   },
 };
 

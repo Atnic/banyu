@@ -31,7 +31,7 @@ type FreeSoloPopoverWrapperProps = {
 const FreeSoloPopoverWrapper = ({
   children,
   motionProps,
-  placement,
+  placement = "bottom-start",
   disableAnimation,
   style = {},
   ...otherProps

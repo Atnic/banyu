@@ -483,7 +483,7 @@ export function useSelect<T extends object>(originalProps: UseSelectProps<T>) {
           }),
         },
         ...mergeProps(slotsProps.popoverProps, props),
-        placement: "bottom-end",
+        // placement: "bottom-end",
         offset:
           state.selectedItems && state.selectedItems.length > 0
             ? // forces the popover to update its position when the selected items change

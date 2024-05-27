@@ -1,5 +1,23 @@
 # @jala-banyu/popover
 
+## 5.0.10
+
+### Patch Changes
+
+- restore select min width & set free solo popover placement to bottom-start
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.6.10
+  - @jala-banyu/button@6.0.10
+
+## 5.0.9
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @jala-banyu/theme@1.6.9
+  - @jala-banyu/button@6.0.9
+
 ## 5.0.8
 
 ### Patch Changes

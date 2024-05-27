@@ -1,5 +1,47 @@
 # @jala-banyu/react
 
+## 1.3.12
+
+### Patch Changes
+
+- fix solo popover placement
+
+- Updated dependencies []:
+  - @jala-banyu/popover@5.0.10
+  - @jala-banyu/theme@1.6.10
+  - @jala-banyu/select@3.0.10
+  - @jala-banyu/accordion@3.0.10
+  - @jala-banyu/avatar@6.0.11
+  - @jala-banyu/breadcrumbs@6.0.10
+  - @jala-banyu/button@6.0.10
+  - @jala-banyu/card@6.0.11
+  - @jala-banyu/checkbox@3.0.10
+  - @jala-banyu/chip@3.0.10
+  - @jala-banyu/code@6.0.10
+  - @jala-banyu/image@6.0.10
+  - @jala-banyu/input@6.0.10
+  - @jala-banyu/kbd@6.0.10
+  - @jala-banyu/link@6.0.10
+  - @jala-banyu/menu@6.0.10
+  - @jala-banyu/modal@1.0.5
+  - @jala-banyu/radio@1.0.2
+  - @jala-banyu/ripple@6.0.10
+  - @jala-banyu/skeleton@6.0.10
+  - @jala-banyu/spinner@6.0.10
+  - @jala-banyu/switch@6.0.10
+  - @jala-banyu/tabs@1.1.4
+  - @jala-banyu/tooltip@6.0.10
+  - @jala-banyu/user@7.0.10
+  - @jala-banyu/pagination@1.1.40
+  - @jala-banyu/table@1.0.37
+  - @jala-banyu/progress@1.1.1
+
+## 1.3.11
+
+### Patch Changes
+
+- fix select content offside
+
 ## 1.3.10
 
 ### Patch Changes
